@@ -112,6 +112,13 @@ public class SyslogSinkConsumer implements MessageConsumer<SyslogConnection, Sys
     public void setGrokPatternsList(List<String> grokPatternsListValue) {
         grokPatternsList = grokPatternsListValue;
     }
+    
+    public SyslogSinkConsumer() {
+        consumerTimer = new Timer();
+        toEventTimer =new Timer();
+        broadcastTimer = new Timer();
+        localAddr = InetAddressUtils.getLocalHostName();
+    }
 
     public SyslogSinkConsumer(MetricRegistry registry) {
         consumerTimer = registry.timer("consumer");
@@ -218,8 +225,8 @@ public class SyslogSinkConsumer implements MessageConsumer<SyslogConnection, Sys
                 LOG.trace("}");
             }
         }
-        eventForwarder.sendNowSync(eventLog);
-
+        //eventForwarder.sendNowSync(eventLog);
+        System.out.println(eventLog);
         if (syslogdConfig.getNewSuspectOnMessage()) {
             eventLog.getEvents().getEventCollection().stream()
                 .filter(e -> !e.hasNodeid())
