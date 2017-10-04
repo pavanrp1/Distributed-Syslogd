@@ -56,10 +56,6 @@ public class DistributedUtil {
     	// 10000 sample syslogmessages from xml file are taken and passed as
 		InputStream stream = ConfigurationTestUtils.getInputStreamForResource(obj,
 				"/etc/syslogd-loadtest-configuration.xml");
-		// Inputstream to create syslogdconfiguration
-		// InputStream stream = new FileInputStream(
-		// "/Users/ms043660/OneDrive - Cerner
-		// Corporation/Office/ProjectWorkspace/POC/Vertex/syslog/src/test/resources/etc/syslogd-loadtest-configuration.xml");
 		SyslogdConfig config = new SyslogdConfigFactory(stream);
 		return config;
     }
