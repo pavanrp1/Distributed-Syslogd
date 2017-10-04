@@ -8,8 +8,8 @@
 		<artifactId>Distributed-Syslogd</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>Vertex</artifactId>
-	<name>Vertex</name>
+	<artifactId>Vertx</artifactId>
+	<name>Vertx</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
