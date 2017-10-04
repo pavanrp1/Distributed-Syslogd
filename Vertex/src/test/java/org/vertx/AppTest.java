@@ -1,4 +1,4 @@
-package org.Vertex;
+package org.vertx;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

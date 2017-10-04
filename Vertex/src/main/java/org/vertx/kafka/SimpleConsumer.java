@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.Vertx.kafka;
+package org.vertx.kafka;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,8 +11,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.Vertx.kafka.util.ConfigConstants;
-import org.Vertx.kafka.util.KafkaEvent;
+import org.vertx.kafka.util.ConfigConstants;
+import org.vertx.kafka.util.KafkaEvent;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;

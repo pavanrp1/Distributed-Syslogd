@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.Vertx.kafka.util;
+package org.vertx.kafka.util;
 
 import java.io.IOException;
 import java.io.InputStream;

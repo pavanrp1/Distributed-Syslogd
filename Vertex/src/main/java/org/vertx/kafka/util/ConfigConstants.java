@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.Vertx.kafka.util;
+package org.vertx.kafka.util;
 
 /**
  * @author pk015603

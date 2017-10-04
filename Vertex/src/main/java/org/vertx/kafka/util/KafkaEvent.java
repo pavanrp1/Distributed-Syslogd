@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.Vertx.kafka.util;
+package org.vertx.kafka.util;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 

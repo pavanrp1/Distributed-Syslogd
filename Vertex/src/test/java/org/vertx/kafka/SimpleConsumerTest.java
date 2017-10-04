@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.Vertex.kafka;
+package org.vertx.kafka;
 
 import static org.junit.Assert.assertTrue;
 
@@ -14,9 +14,9 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.Vertx.kafka.SimpleConsumer;
-import org.Vertx.kafka.util.ConfigConstants;
-import org.Vertx.kafka.util.KafkaEvent;
+import org.vertx.kafka.SimpleConsumer;
+import org.vertx.kafka.util.ConfigConstants;
+import org.vertx.kafka.util.KafkaEvent;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.opennms.core.test.ConfigurationTestUtils;
