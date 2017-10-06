@@ -82,6 +82,13 @@
 			<systemPath>${basedir}/Jar/opennms-dao-api-20.1.0-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
+			<groupId>org.opennms.core</groupId>
+			<artifactId>org.opennms.core.criteria</artifactId>
+			<version>20.1.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/Jar/org.opennms.core.criteria-20.1.0-SNAPSHOT.jar</systemPath>
+		</dependency>
+		<dependency>
 			<groupId>org.opennms.core.ipc.sink</groupId>
 			<artifactId>org.opennms.core.ipc.sink.xml</artifactId>
 			<version>20.1.0-SNAPSHOT</version>
@@ -443,12 +450,12 @@
 			<version>0.10.1.1</version>
 		</dependency>
 
-<!-- 		<dependency> -->
-<!-- 			<groupId>io.vertx</groupId> -->
-<!-- 			<artifactId>examples-utils</artifactId> -->
-<!-- 			<version>3.4.1</version> -->
-<!-- 			<optional>true</optional> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>io.vertx</groupId> -->
+		<!-- <artifactId>examples-utils</artifactId> -->
+		<!-- <version>3.4.1</version> -->
+		<!-- <optional>true</optional> -->
+		<!-- </dependency> -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>

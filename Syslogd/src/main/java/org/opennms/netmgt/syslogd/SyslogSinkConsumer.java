@@ -95,6 +95,8 @@ public class SyslogSinkConsumer implements MessageConsumer<SyslogConnection, Sys
 
     @Autowired
     private EventForwarder eventForwarder;
+    
+    public static int eventCount=0;
 
     private final String localAddr;
     private final Timer consumerTimer;
@@ -187,6 +189,7 @@ public class SyslogSinkConsumer implements MessageConsumer<SyslogConnection, Sys
                         parse(message.getBytes())
                     );
                 events.addEvent(re.getEvent());
+                eventCount++;
             } catch (final UnsupportedEncodingException e) {
                 LOG.info("Failure to convert package", e);
             } catch (final MessageDiscardedException e) {
@@ -290,10 +293,10 @@ public class SyslogSinkConsumer implements MessageConsumer<SyslogConnection, Sys
                         		 paramsMap = loadParamsMap(grokFactory
                                         .parse(incoming.asReadOnlyBuffer(), m_executor).get()
                                         .getParmCollection());
-                        		LOG.debug("Grok Pattern "+grokPattern+" matches syslog message.");
+                        //		LOG.debug("Grok Pattern "+grokPattern+" matches syslog message.");
                                 return paramsMap;
                         } catch (InterruptedException | ExecutionException e) {
-                                LOG.debug("Parse Exception occured !!!Grok Pattern "+grokPattern+" didn't match");
+                              //  LOG.debug("Parse Exception occured !!!Grok Pattern "+grokPattern+" didn't match");
                                 continue;
                         }
                 }

@@ -19,12 +19,11 @@
 			<groupId>org.distributed.syslogd</groupId>
 			<artifactId>Syslogd</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-<!-- 			<scope>test</scope> -->
+			<!-- <scope>test</scope> -->
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -67,12 +66,12 @@
 			<version>0.10.1.1</version>
 		</dependency>
 
-<!-- 		<dependency> -->
-<!-- 			<groupId>io.vertx</groupId> -->
-<!-- 			<artifactId>examples-utils</artifactId> -->
-<!-- 			<version>3.4.1</version> -->
-<!-- 			<optional>true</optional> -->
-<!-- 		</dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>io.vertx</groupId> -->
+		<!-- <artifactId>examples-utils</artifactId> -->
+		<!-- <version>3.4.1</version> -->
+		<!-- <optional>true</optional> -->
+		<!-- </dependency> -->
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
@@ -83,6 +82,11 @@
 			<groupId>org.glassfish.ozark</groupId>
 			<artifactId>ozark</artifactId>
 			<version>1.0.0-m02</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
 		</dependency>
 	</dependencies>
 </project>
