@@ -1,4 +1,4 @@
-package com.pavan.vertx.com.pavan.vertx.kafka;
+package org.vertx.kafka;
 
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
