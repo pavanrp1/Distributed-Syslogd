@@ -1,4 +1,4 @@
-package org.vertx.kafka;
+package org.vertx.kafka.util;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -31,7 +31,7 @@ public class EventdSyslogStresser {
 	private static long m_sleepMillis = 0;
 	private static String topicName;
 
-	private final static String syslogMessage = "<syslog-message-log source-address=\"127.0.0.1\" source-port=\"1514\" system-id=\"99\" location=\"loc\">\n"
+	private final static String syslogMessage = "<syslog-message-log source-address=\"127.0.0.1\" source-port=\"1514\" system-id=\"99\" location=\"MalaMac\">\n"
 			+ "   <messages timestamp=\"" + iso8601OffsetString(new Date(0), ZoneId.systemDefault(), ChronoUnit.SECONDS)
 			+ "\">PDMxPm1haW46IDIwMTctMTAtMDMgbG9jYWxob3N0IGZvbyVkOiBsb2FkIHRlc3RwYXZhbiAlZCBvbiB0dHkx</messages>\n"
 			+ "</syslog-message-log>";

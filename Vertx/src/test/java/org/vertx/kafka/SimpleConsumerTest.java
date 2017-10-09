@@ -7,6 +7,7 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,17 +21,20 @@ import org.opennms.core.test.ConfigurationTestUtils;
 import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.dao.api.DistPollerDao;
+import org.opennms.netmgt.dao.api.InterfaceToNodeCache;
+import org.opennms.netmgt.dao.api.InterfaceToNodeMap;
 import org.opennms.netmgt.dao.hibernate.InterfaceToNodeCacheDaoImpl;
 import org.opennms.netmgt.dao.mock.MockDistPollerDao;
-import org.opennms.netmgt.dao.mock.MockInterfaceToNodeCache;
 import org.opennms.netmgt.syslogd.SyslogSinkConsumer;
 import org.opennms.netmgt.syslogd.SyslogSinkModule;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.vertx.kafka.util.ConfigConstants;
+import org.vertx.kafka.util.MockInterfaceCacheDao;
 
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
+import io.vertx.core.VertxOptions;
 import io.vertx.core.eventbus.Message;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
@@ -69,7 +73,10 @@ public class SimpleConsumerTest {
     @Before
 	public void setUp() throws Exception {
     		SyslogSinkConsumer.eventCount=0;
-    		InterfaceToNodeCacheDaoImpl.setInstance(new MockInterfaceToNodeCache());
+    		MockInterfaceCacheDao mock=new MockInterfaceCacheDao();
+    		mock.setNodeId("MalaMac", InetAddress.getByName("localhost"), 1);
+    		mock.setNodeId("PavanMac", InetAddress.getByName("10.182.241.167"), 2);
+    		InterfaceToNodeCacheDaoImpl.setInstance(mock);
     		loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml");
 		System.setProperty("opennms.home", "src/test/resources");
 		consumerConfig = new JsonObject();
@@ -102,53 +109,46 @@ public class SimpleConsumerTest {
 	}
 
     @Test
-    public void testMessageReceipt(TestContext testContext) {
-        Async async = testContext.async();
+	public void testMessageReceipt(TestContext testContext) {
+		Async async = testContext.async();
+		VertxOptions vxOptions = new VertxOptions().setBlockedThreadCheckInterval(
+				2000000000); 
+		vxOptions.setMaxEventLoopExecuteTime(Long.MAX_VALUE);
+		vertx = Vertx.vertx(vxOptions);
+		new DeploymentOptions().setWorker(true);
+			vertx.deployVerticle(SimpleConsumer.class.getName(), new DeploymentOptions().setConfig(consumerConfig),
+					deploy -> {
+						if (deploy.failed()) {
+							logger.error("", deploy.cause());
+							testContext.fail("Could not deploy verticle");
+							async.complete();
+							vertx.close();
+						} else {
+							vertx.eventBus().consumer(SimpleConsumer.EVENTBUS_DEFAULT_ADDRESS,
+									(Message<JsonObject> message) -> {
+										assertTrue(message.body().toString().length() > 0);
+										logger.info("got message: " + message.body());
+										SyslogSinkConsumer consume = new SyslogSinkConsumer();
+										try {
+											consume.setSyslogdConfig(sylogConfig);
+											consume.handleMessage(getSyslogMessageLogDTO(message));
+										} catch (Exception e) {
+											logger.error("Failed to consume syslogd message", e.getMessage());
+										}
+										System.out.println("Event number recieved " + SyslogSinkConsumer.eventCount);
+						           
+									});
+						}
+					});
 
-        vertx = Vertx.vertx();
+			async.awaitSuccess();
+	}
 
-        vertx.deployVerticle(SimpleConsumer.class.getName(),
-            new DeploymentOptions().setConfig(consumerConfig), deploy -> {
-                if (deploy.failed()) {
-                    logger.error("", deploy.cause());
-                    testContext.fail("Could not deploy verticle");
-                    async.complete();
-                    vertx.close();
-                } else {
-                    // have the test run for 20 seconds to give you enough time to get a message off
-//                    long timerId = vertx.setTimer(60000, theTimerId ->
-//                    {
-//                        logger.info("Failed to get any messages");
-//                        testContext.fail("Test did not complete in 20 seconds");
-//                        async.complete();
-//                        vertx.close();
-//                    });
-
-                    logger.info("Registering listener on event bus for kafka messages");
-
-                    vertx.eventBus().consumer(SimpleConsumer.EVENTBUS_DEFAULT_ADDRESS, (Message<JsonObject> message) -> {
-                        assertTrue(message.body().toString().length() > 0);
-                        logger.info("got message: " + message.body());
-                        SyslogSinkConsumer consume = new SyslogSinkConsumer();
-                        try {
-                        	consume.setSyslogdConfig(sylogConfig);
-                        	consume.handleMessage(getSyslogMessageLogDTO(message));
-                        } catch (Exception e) {
-                        	 logger.error("Failed to consume syslogd message", e.getMessage());
-                        }
-//                        vertx.cancelTimer(timerId);
-//                        async.complete();
-//                        vertx.close();
-                        System.out.println("Event number recieved "+SyslogSinkConsumer.eventCount);
-                    });
-                }
-            }
-        );
-    }
-
-	protected SyslogMessageLogDTO getSyslogMessageLogDTO(Message<JsonObject> message) {
+	protected synchronized SyslogMessageLogDTO getSyslogMessageLogDTO(Message<JsonObject> message) {
 		try {
-			return messageConsumer.getModule().unmarshal(message.body().getValue("value").toString());
+			synchronized (message) {
+				return messageConsumer.getModule().unmarshal(message.body().getValue("value").toString());
+			}
 		} catch (Exception e) {
 			logger.error("Unable to load syslogmessagelogdto " + e.getMessage());
 			return null;
