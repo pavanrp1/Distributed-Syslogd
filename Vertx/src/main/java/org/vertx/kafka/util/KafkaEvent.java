@@ -51,6 +51,7 @@ public class KafkaEvent {
 			consume.handleMessage(SimpleConsumer.getSyslogMessageLogDTO(record.value()));
 			return consume.getEventLog();
 		} catch (Exception e) {
+			e.printStackTrace();
 			logger.error("Failed to consume syslogd message " + e.getMessage());
 		}
 		return null;

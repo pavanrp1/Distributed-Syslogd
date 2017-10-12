@@ -121,14 +121,14 @@ public final class DefaultEventHandlerImpl implements InitializingBean, EventHan
         	
         	//This will wait for 25 seconds to get login module up and also
         	//for karaf and its features to get loaded
-			if (isWaitingForLoginModule) {
-				try {
-					Thread.sleep(25000);
-				} catch (InterruptedException e) {
-					isWaitingForLoginModule = false;
-				}
-				isWaitingForLoginModule = false;
-			}
+//			if (isWaitingForLoginModule) {
+//				try {
+//					Thread.sleep(25000);
+//				} catch (InterruptedException e) {
+//					isWaitingForLoginModule = false;
+//				}
+//				isWaitingForLoginModule = false;
+//			}
         	
             Events events = m_eventLog.getEvents();
             if (events == null || events.getEventCount() <= 0) {

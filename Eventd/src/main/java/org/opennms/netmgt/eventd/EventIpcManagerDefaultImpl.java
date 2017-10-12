@@ -281,7 +281,8 @@ public class EventIpcManagerDefaultImpl implements EventIpcManager, EventIpcBroa
         // Create the runnable and invoke it using the current thread
         // Also set the logging prefix to ensure that the log messages are
         // properly routed to eventd's log file
-        Logging.withPrefix(Eventd.LOG4J_CATEGORY, m_eventHandler.createRunnable(eventLog, true));
+        m_eventHandler.createRunnable(eventLog, true).run();
+     //   Logging.withPrefix(Eventd.LOG4J_CATEGORY, m_eventHandler.createRunnable(eventLog, true));
     }
 
     @Override

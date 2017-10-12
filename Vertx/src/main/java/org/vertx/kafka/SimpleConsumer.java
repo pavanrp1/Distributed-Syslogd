@@ -14,15 +14,28 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.easymock.EasyMock;
 import org.opennms.core.ipc.sink.api.MessageConsumer;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
+import org.opennms.netmgt.dao.mock.MockEventIpcManager;
+import org.opennms.netmgt.eventd.DefaultEventHandlerImpl;
+import org.opennms.netmgt.eventd.EventIpcManagerDefaultImpl;
+import org.opennms.netmgt.eventd.processor.EventIpcBroadcastProcessor;
+import org.opennms.netmgt.events.api.EventHandler;
+import org.opennms.netmgt.events.api.EventIpcBroadcaster;
+import org.opennms.netmgt.events.api.EventListener;
+import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.syslogd.SyslogSinkConsumer;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
+import org.opennms.netmgt.xml.event.Event;
 import org.opennms.netmgt.xml.event.Log;
+import org.opennms.test.mock.EasyMockUtils;
 import org.vertx.kafka.util.ConfigConstants;
 import org.vertx.kafka.util.CustomMessageCodec;
 import org.vertx.kafka.util.KafkaEvent;
+
+import com.codahale.metrics.MetricRegistry;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.AsyncResult;
@@ -47,6 +60,7 @@ public class SimpleConsumer extends AbstractVerticle {
 	private String busAddress;
 	private static final Logger logger = LoggerFactory.getLogger(SimpleConsumer.class);
 	private EventBus bus;
+	
 
 	public EventBus getBus() {
 		return bus;
@@ -175,6 +189,33 @@ public class SimpleConsumer extends AbstractVerticle {
 			Log eventLog = KafkaEvent.createEventForBus(record);
 			bus.send(busAddress, eventLog);
 			System.out.println("Event number recieved " + SyslogSinkConsumer.eventCount);
+			
+			io.vertx.core.eventbus.MessageConsumer<Log> consumer1 = bus
+					.consumer(busAddress);
+			consumer1.handler(message -> {
+				System.out.println("I have received a message: " + message.body());
+				
+				
+				EventHandler m_eventHandler=EasyMock.createMock(EventHandler.class);
+				MetricRegistry metric=new MetricRegistry();
+				EventIpcManagerDefaultImpl eventImpl=new EventIpcManagerDefaultImpl(metric);
+				EventIpcBroadcastProcessor ipc=new EventIpcBroadcastProcessor(metric);
+		        DefaultEventHandlerImpl handler = new DefaultEventHandlerImpl(metric);
+				List<EventProcessor> eventProcessors=new ArrayList<EventProcessor>();
+				EventIpcBroadcaster broadcast=new MockEventIpcManager();
+				ipc.setEventIpcBroadcaster(broadcast);
+				eventProcessors.add(ipc);
+				//eventImpl.setEventHandler(m_eventHandler);
+				handler.setEventProcessors(eventProcessors);
+				eventImpl.setEventHandler(handler);
+				eventImpl.sendNowSync(message.body());
+				
+
+		
+				
+				
+			});
+			
 		} catch (Exception ex) {
 			String error = String.format("Error sending messages on event bus - record: %s", record.toString());
 			logger.error(error, ex);
