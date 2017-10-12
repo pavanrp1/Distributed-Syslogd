@@ -7,7 +7,6 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.opennms.netmgt.syslogd.SyslogSinkConsumer;
 import org.opennms.netmgt.xml.event.Log;
 import org.vertx.kafka.SimpleConsumer;
-import org.vertx.kafka.SimpleConsumerTest;
 
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.logging.Logger;

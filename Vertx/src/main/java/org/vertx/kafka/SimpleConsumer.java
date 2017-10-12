@@ -45,7 +45,7 @@ public class SimpleConsumer extends AbstractVerticle {
 	public static final String EVENTBUS_DEFAULT_ADDRESS = "kafka.message.consumer";
 	public static final int DEFAULT_POLL_MS = 100;
 	private String busAddress;
-	private static final Logger logger = LoggerFactory.getLogger(SimpleConsumerTest.class);
+	private static final Logger logger = LoggerFactory.getLogger(SimpleConsumer.class);
 	private EventBus bus;
 
 	public EventBus getBus() {
