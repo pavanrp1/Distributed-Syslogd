@@ -68,12 +68,18 @@
 			<systemPath>${basedir}/Jar/camel-core-2.16.5.jar</systemPath>
 		</dependency>
 		<dependency>
+			<groupId>org.distributed.syslogd</groupId>
+			<artifactId>Eventd</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<!-- <scope>test</scope> -->
+		</dependency>
+		<!-- <dependency>
 			<groupId>org.opennms.features.events</groupId>
 			<artifactId>org.opennms.features.events.api</artifactId>
 			<version>20.1.0-SNAPSHOT</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/Jar/org.opennms.features.events.api-20.1.0-SNAPSHOT.jar</systemPath>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.opennms</groupId>
 			<artifactId>opennms-dao-api</artifactId>
@@ -140,13 +146,13 @@
 			<scope>system</scope>
 			<systemPath>${basedir}/Jar/org.opennms.core.test-api.services-20.1.0-SNAPSHOT.jar</systemPath>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.opennms.features.events</groupId>
 			<artifactId>org.opennms.features.events.daemon</artifactId>
 			<version>20.1.0-SNAPSHOT</version>
 			<scope>system</scope>
 			<systemPath>${basedir}/Jar/org.opennms.features.events.daemon-20.1.0-SNAPSHOT.jar</systemPath>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.opennms.features.minion</groupId>
 			<artifactId>core-api</artifactId>
