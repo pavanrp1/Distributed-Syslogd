@@ -29,7 +29,11 @@
 package org.opennms.netmgt.eventd.processor;
 
 import java.util.Objects;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicBoolean;
 
+import org.opennms.netmgt.eventd.DefaultEventHandlerImpl;
 import org.opennms.netmgt.events.api.EventIpcBroadcaster;
 import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.events.api.EventProcessorException;
@@ -46,6 +50,9 @@ import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
 import com.codahale.metrics.Timer.Context;
 
+import io.vertx.core.AbstractVerticle;
+import io.vertx.core.Future;
+
 /**
  * EventProcessor that broadcasts events to other interested
  * daemons with EventIpcBroadcaster.broadcastNow(Event).
@@ -53,12 +60,18 @@ import com.codahale.metrics.Timer.Context;
  * @author ranger
  * @version $Id: $
  */
-public class EventIpcBroadcastProcessor implements EventProcessor, InitializingBean {
+public class EventIpcBroadcastProcessor extends AbstractVerticle implements EventProcessor, InitializingBean {
     private static final Logger LOG = LoggerFactory.getLogger(EventIpcBroadcastProcessor.class);
     private EventIpcBroadcaster m_eventIpcBroadcaster;
 
     private final Timer logBroadcastTimer;
     private final Meter eventBroadcastMeter;
+    
+	private AtomicBoolean running;
+
+	private ExecutorService backgroundConsumer;
+	
+	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
 
     public EventIpcBroadcastProcessor(MetricRegistry registry) {
         logBroadcastTimer = Objects.requireNonNull(registry).timer("eventlogs.process.broadcast");
@@ -121,4 +134,41 @@ public class EventIpcBroadcastProcessor implements EventProcessor, InitializingB
     public void setEventIpcBroadcaster(EventIpcBroadcaster eventIpcManager) {
         m_eventIpcBroadcaster = eventIpcManager;
     }
+    
+    @Override
+	public void start(final Future<Void> startedResult) throws Exception {
+		running = new AtomicBoolean(true);
+
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
+			try {
+
+				startedResult.complete();
+				consume();
+
+			} catch (Exception ex) {
+				String error = "Failed to startup";
+				startedResult.fail(ex);
+			}
+		});
+	}
+
+	private void consume() {
+		while (running.get()) {
+			try {
+				io.vertx.core.eventbus.MessageConsumer<Log> consumer1 = vertx.eventBus()
+						.consumer(BROADCAST_EVENTD_CONSUMER_ADDRESS);
+				consumer1.handler(message -> {
+
+					try {
+						process(message.body(), true);
+					} catch (EventProcessorException e) {
+						e.printStackTrace();
+					}
+				});
+			} catch (Exception ex) {
+			}
+		}
+	}
+
 }

@@ -50,6 +50,8 @@ import com.codahale.metrics.Histogram;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
 
+import io.vertx.core.AbstractVerticle;
+
 /**
  * The EventHandler builds Runnables that essentially do all the work on an
  * incoming event.
@@ -61,10 +63,10 @@ import com.codahale.metrics.Timer;
  * @author <A HREF="mailto:sowmya@opennms.org">Sowmya Nataraj </A>
  * @author <A HREF="http://www.opennms.org">OpenNMS.org </A>
  */
-public final class DefaultEventHandlerImpl implements InitializingBean, EventHandler {
+public final class DefaultEventHandlerImpl extends AbstractVerticle implements InitializingBean, EventHandler {
     
     private static final Logger LOG = LoggerFactory.getLogger(DefaultEventHandlerImpl.class);
-    
+
     private List<EventProcessor> m_eventProcessors;
 
     private boolean m_logEventSummaries;
@@ -73,8 +75,18 @@ public final class DefaultEventHandlerImpl implements InitializingBean, EventHan
 
     private final Histogram logSizes;
     
-    private boolean isWaitingForLoginModule=true;
+    private static Log m_eventdLog;
+    
+    public static Log getEventdLog() {
+		return m_eventdLog;
+	}
 
+	public static void setEventdLog(Log m_eventdLog) {
+		DefaultEventHandlerImpl.m_eventdLog = m_eventdLog;
+	}
+
+	private boolean isWaitingForLoginModule=true;
+    
     private NodeDao m_nodeDao;
 
     /**
@@ -101,7 +113,7 @@ public final class DefaultEventHandlerImpl implements InitializingBean, EventHan
          */
         private final Log m_eventLog;
 
-        private final boolean m_synchronous;
+		private final boolean m_synchronous;
 
         public EventHandlerRunnable(Log eventLog, boolean synchronous) {
             Assert.notNull(eventLog, "eventLog argument must not be null");
@@ -135,7 +147,6 @@ public final class DefaultEventHandlerImpl implements InitializingBean, EventHan
                 // no events to process
                 return;
             }
-
             for (final Event event : events.getEventCollection()) {
                 if (event.getNodeid() == 0) {
                     final Parm foreignSource = event.getParm("_foreignSource");
@@ -181,21 +192,23 @@ public final class DefaultEventHandlerImpl implements InitializingBean, EventHan
                     LOG.debug("}");
                 }
             }
-
-            try (Timer.Context context = processTimer.time()) {
-                for (final EventProcessor eventProcessor : m_eventProcessors) {
-                    try {
-                        eventProcessor.process(m_eventLog, m_synchronous);
-                        logSizes.update(events.getEventCount());
-                    } catch (EventProcessorException e) {
-                        LOG.warn("Unable to process event using processor {}; not processing with any later processors.", eventProcessor, e);
-                        break;
-                    } catch (Throwable t) {
-                        LOG.warn("Unknown exception processing event with processor {}; not processing with any later processors.", eventProcessor, t);
-                        break;
-                    }
-                }
-            }
+            setEventdLog(m_eventLog);
+           // vertx.eventBus().send(DEFAULT_EVENTD_CONSUMER_ADDRESS, m_eventLog);
+            
+//            try (Timer.Context context = processTimer.time()) {
+//                for (final EventProcessor eventProcessor : m_eventProcessors) {
+//                    try {
+//                        eventProcessor.process(m_eventLog, m_synchronous);
+//                        logSizes.update(events.getEventCount());
+//                    } catch (EventProcessorException e) {
+//                        LOG.warn("Unable to process event using processor {}; not processing with any later processors.", eventProcessor, e);
+//                        break;
+//                    } catch (Throwable t) {
+//                        LOG.warn("Unknown exception processing event with processor {}; not processing with any later processors.", eventProcessor, t);
+//                        break;
+//                    }
+//                }
+//            }
         }
 
     }

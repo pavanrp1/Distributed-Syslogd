@@ -1,4 +1,4 @@
-package org.vertx.kafka.util;
+package org.opennms.netmgt.syslogd.api;
 
 import org.opennms.netmgt.xml.event.Log;
 
@@ -6,11 +6,14 @@ import io.vertx.core.buffer.Buffer;
 import io.vertx.core.eventbus.MessageCodec;
 import io.vertx.core.json.JsonObject;
 
-public class CustomMessageCodec implements MessageCodec<Log, Log> {
+public class SyslogdMessageCodec implements MessageCodec<Log, Log> {
+
+	private final String EVENTLOG = "eventlog";
+
 	@Override
-	public void encodeToWire(Buffer buffer, Log customMessage) {
+	public void encodeToWire(Buffer buffer, Log eventLogMessage) {
 		JsonObject jsonToEncode = new JsonObject();
-		jsonToEncode.put("eventLog", customMessage.getEvents());
+		jsonToEncode.put(EVENTLOG, eventLogMessage.getEvents());
 		String jsonToStr = jsonToEncode.encode();
 		int length = jsonToStr.getBytes().length;
 		buffer.appendInt(length);
@@ -23,13 +26,13 @@ public class CustomMessageCodec implements MessageCodec<Log, Log> {
 		int length = buffer.getInt(_pos);
 		String jsonStr = buffer.getString(_pos += 4, _pos += length);
 		JsonObject contentJson = new JsonObject(jsonStr);
-		Log eventLog = (Log) contentJson.getValue("eventLog");
+		Log eventLog = (Log) contentJson.getValue(EVENTLOG);
 		return eventLog;
 	}
 
 	@Override
-	public Log transform(Log customMessage) {
-		return customMessage;
+	public Log transform(Log eventLogMessage) {
+		return eventLogMessage;
 	}
 
 	@Override

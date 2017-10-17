@@ -36,7 +36,6 @@ public class EventdSyslogStresser {
 			+ "\">PDMxPm1haW46IDIwMTctMTAtMDMgbG9jYWxob3N0IGZvbyVkOiBsb2FkIHRlc3RwYXZhbiAlZCBvbiB0dHkx</messages>\n"
 			+ "</syslog-message-log>";
 
-
 	public static void main(String[] args) throws UnknownHostException {
 
 		m_syslogRate = Double.valueOf(args[0]);
@@ -108,7 +107,8 @@ public class EventdSyslogStresser {
 			Integer batchSyslogsSent = 0;
 			Long batchElapsedMillis = 0L;
 			System.out.println("Sending batch " + i + " of " + Integer.valueOf(m_batchCount) + " batches of "
-					+ m_batchSize.intValue() + " syslogs at the rate of " + m_syslogRate.toString() + " syslogs/sec...");
+					+ m_batchSize.intValue() + " syslogs at the rate of " + m_syslogRate.toString()
+					+ " syslogs/sec...");
 			System.out.println("m_batchSize : " + m_batchSize.doubleValue());
 			System.out.println("m_syslogRate : " + m_syslogRate.doubleValue());
 
@@ -144,7 +144,8 @@ public class EventdSyslogStresser {
 		}
 
 		int remainingSyslogs = m_syslogCount - totalSyslogsSent;
-		//System.out.println("Sending batch remainder of " + remainingSyslogs + " syslogs...");
+		// System.out.println("Sending batch remainder of " + remainingSyslogs + "
+		// syslogs...");
 		Long batchBegin = Calendar.getInstance().getTimeInMillis();
 		Double currentRate = 0.0;
 		Long batchSyslogsSent = 0L;

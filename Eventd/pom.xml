@@ -280,6 +280,47 @@
 			<scope>system</scope>
 			<systemPath>${basedir}/Jar/org.opennms.tests.mock-elements-20.1.0-SNAPSHOT.jar</systemPath>
 		</dependency>
+		
+		
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-unit</artifactId>
+			<version>3.4.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-core</artifactId>
+			<version>3.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-web</artifactId>
+			<version>3.4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-kafka-client</artifactId>
+			<version>3.4.1</version>
+		</dependency>
+
+		<!-- For running Kafka easily -->
+		<dependency>
+			<groupId>io.debezium</groupId>
+			<artifactId>debezium-core</artifactId>
+			<version>0.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>io.debezium</groupId>
+			<artifactId>debezium-core</artifactId>
+			<version>0.4.0</version>
+			<type>test-jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka_2.11</artifactId>
+			<version>0.10.1.1</version>
+		</dependency>
 
 	</dependencies>
 </project>

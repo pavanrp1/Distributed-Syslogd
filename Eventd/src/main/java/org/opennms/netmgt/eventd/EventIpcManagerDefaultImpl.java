@@ -39,11 +39,13 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.opennms.core.concurrent.LogPreservingThreadFactory;
 import org.opennms.core.logging.Logging;
@@ -64,6 +66,9 @@ import org.springframework.util.StringUtils;
 import com.codahale.metrics.Gauge;
 import com.codahale.metrics.MetricRegistry;
 
+import io.vertx.core.AbstractVerticle;
+import io.vertx.core.Future;
+
 /**
  * An implementation of the EventIpcManager interface that can be used to
  * communicate between services in the same JVM
@@ -71,7 +76,7 @@ import com.codahale.metrics.MetricRegistry;
  * @author <A HREF="mailto:sowmya@opennms.org">Sowmya Nataraj </A>
  * @author <A HREF="http://www.opennms.org">OpenNMS.org </A>
  */
-public class EventIpcManagerDefaultImpl implements EventIpcManager, EventIpcBroadcaster, InitializingBean {
+public class EventIpcManagerDefaultImpl extends AbstractVerticle implements EventIpcManager, EventIpcBroadcaster, InitializingBean {
     
     
     private static final Logger LOG = LoggerFactory.getLogger(EventIpcManagerDefaultImpl.class);
@@ -126,6 +131,14 @@ public class EventIpcManagerDefaultImpl implements EventIpcManager, EventIpcBroa
     private Integer m_handlerQueueLength;
 
     private final MetricRegistry m_registry;
+    
+	private AtomicBoolean running;
+	
+	private ExecutorService backgroundConsumer;
+	
+	private static final String EVENTD_CONSUMER_ADDRESS = "eventd.message.consumer";
+	
+	private static final String DEFAULT_EVENTD_CONSUMER_ADDRESS = "default.eventd.message.consumer";
 
     /**
      * A thread dedicated to each listener. The events meant for each listener
@@ -198,6 +211,38 @@ public class EventIpcManagerDefaultImpl implements EventIpcManager, EventIpcBroa
             m_delegateThread.shutdown();
         }
     }
+    
+    @Override
+	public void start(final Future<Void> startedResult) throws Exception {
+		running = new AtomicBoolean(true);
+		
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
+			try {
+
+				startedResult.complete();
+				consume();
+				
+			} catch (Exception ex) {
+				String error = "Failed to startup";
+				startedResult.fail(ex);
+			}
+		});
+	}
+	
+	private void consume() {
+		while (running.get()) {
+			try {
+				io.vertx.core.eventbus.MessageConsumer<Log> consumer1 = vertx.eventBus().consumer(EVENTD_CONSUMER_ADDRESS);
+				consumer1.handler(message -> {
+
+					sendNowSync(message.body());
+					vertx.eventBus().send(DEFAULT_EVENTD_CONSUMER_ADDRESS, DefaultEventHandlerImpl.getEventdLog());
+				});
+			} catch (Exception ex) {
+			}
+		}
+	}
 
     /**
      * <p>Constructor for EventIpcManagerDefaultImpl.</p>
