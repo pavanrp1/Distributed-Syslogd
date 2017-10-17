@@ -1,5 +1,6 @@
 package org.vertx.kafka;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.InetAddress;
@@ -31,6 +32,7 @@ import org.opennms.netmgt.syslogd.SyslogSinkConsumer;
 import org.opennms.netmgt.syslogd.SyslogSinkModule;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
+import org.springframework.core.io.FileSystemResource;
 import org.vertx.kafka.util.ConfigConstants;
 import org.vertx.kafka.util.MockInterfaceCacheDao;
 
@@ -76,11 +78,11 @@ public class KafkaMessageConsumerTest {
 	private MessageConsumer<SyslogConnection, SyslogMessageLogDTO> messageConsumer;
 
 	private DeploymentOptions deploymentOption;
-	
+
 	private EventExpander eventExpander;
 
 	private EventIpcManagerDefaultImpl eventImpl;
-	
+
 	private MetricRegistry metric = new MetricRegistry();
 
 	private EventIpcBroadcastProcessor eventBroadCaster;
@@ -102,23 +104,25 @@ public class KafkaMessageConsumerTest {
 
 	}
 
-	private void EventImplProperties() {
+	private void EventImplProperties() throws IOException {
 		eventImpl = new EventIpcManagerDefaultImpl(metric);
-		
-		
+
 		DefaultEventHandlerImpl defaultEventHandler = new DefaultEventHandlerImpl(metric);
 		eventImpl.setEventHandler(defaultEventHandler);
-		
-		eventExpander=new EventExpander(metric);
-		DefaultEventConfDao eventConfDao=new DefaultEventConfDao();
+
+		eventExpander = new EventExpander(metric);
+		DefaultEventConfDao eventConfDao = new DefaultEventConfDao();
+
+		File test = new File(
+				"/Users/ms043660/OneDrive - Cerner Corporation/Office/ProjectWorkspace/DistributedSyslogdPoc/Distributed-Syslogd/Vertx/src/test/resources/etc/eventconf.xml");
+		eventConfDao.setConfigResource(new FileSystemResource(test));
+		eventConfDao.afterPropertiesSet();
 		eventExpander.setEventConfDao(eventConfDao);
-		
-		
+
 		EventUtilDaoImpl eventutil = new EventUtilDaoImpl(metric);
 		eventExpander.setEventUtil(eventutil);
 		eventExpander.afterPropertiesSet();
-		
-		
+
 		eventBroadCaster = new EventIpcBroadcastProcessor(metric);
 		eventBroadCaster.setEventIpcBroadcaster(eventImpl);
 	}
