@@ -15,6 +15,7 @@ import org.opennms.core.ipc.sink.api.MessageConsumer;
 import org.opennms.core.ipc.sink.api.SinkModule;
 import org.opennms.core.test.ConfigurationTestUtils;
 import org.opennms.core.utils.ConfigFileConstants;
+import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.dao.hibernate.InterfaceToNodeCacheDaoImpl;
 import org.opennms.netmgt.dao.mock.MockDistPollerDao;
@@ -102,22 +103,24 @@ public class KafkaMessageConsumerTest {
 	}
 
 	private void EventImplProperties() {
-		
 		eventImpl = new EventIpcManagerDefaultImpl(metric);
-		DefaultEventHandlerImpl handler = new DefaultEventHandlerImpl(metric);
-		eventImpl.setEventHandler(handler);
+		
+		
+		DefaultEventHandlerImpl defaultEventHandler = new DefaultEventHandlerImpl(metric);
+		eventImpl.setEventHandler(defaultEventHandler);
 		
 		eventExpander=new EventExpander(metric);
-		EmptyEventConfDao event = new EmptyEventConfDao();
-		eventExpander.setEventConfDao(event);
+		DefaultEventConfDao eventConfDao=new DefaultEventConfDao();
+		eventExpander.setEventConfDao(eventConfDao);
+		
+		
 		EventUtilDaoImpl eventutil = new EventUtilDaoImpl(metric);
 		eventExpander.setEventUtil(eventutil);
 		eventExpander.afterPropertiesSet();
 		
 		
 		eventBroadCaster = new EventIpcBroadcastProcessor(metric);
-		EventIpcBroadcaster broadcast = new MockEventIpcManager();
-		eventBroadCaster.setEventIpcBroadcaster(broadcast);
+		eventBroadCaster.setEventIpcBroadcaster(eventImpl);
 	}
 
 	private SyslogSinkConsumer SyslogSinkProperties() throws Exception {

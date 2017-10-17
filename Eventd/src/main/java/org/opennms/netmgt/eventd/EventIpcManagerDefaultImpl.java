@@ -49,6 +49,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.opennms.core.concurrent.LogPreservingThreadFactory;
 import org.opennms.core.logging.Logging;
+import org.opennms.netmgt.dao.mock.EventWrapper;
 import org.opennms.netmgt.events.api.EventHandler;
 import org.opennms.netmgt.events.api.EventIpcBroadcaster;
 import org.opennms.netmgt.events.api.EventIpcManager;
@@ -358,7 +359,8 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle implements Even
             }
             return;
         }
-
+        LOG.debug("Sending: {}", new EventWrapper(event));
+        
         /*
          * Send to listeners who are interested in this event UEI.
          * Loop to attempt partial wild card "directory" matches.
