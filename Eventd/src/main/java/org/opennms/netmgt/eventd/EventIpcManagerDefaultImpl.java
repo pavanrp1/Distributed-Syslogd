@@ -359,7 +359,7 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle implements Even
             }
             return;
         }
-        LOG.debug("Sending: {}", new EventWrapper(event));
+        System.out.println("\n"+new EventWrapper(event));
         
         /*
          * Send to listeners who are interested in this event UEI.

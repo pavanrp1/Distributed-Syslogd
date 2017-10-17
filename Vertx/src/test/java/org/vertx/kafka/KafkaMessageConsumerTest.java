@@ -7,7 +7,11 @@ import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.TransactionManager;
+
 import org.apache.commons.io.IOUtils;
+import org.easymock.EasyMock;
+import org.eclipse.persistence.internal.jpa.transaction.TransactionManagerImpl;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -18,28 +22,27 @@ import org.opennms.core.test.ConfigurationTestUtils;
 import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
+import org.opennms.netmgt.dao.DatabasePopulator;
 import org.opennms.netmgt.dao.hibernate.InterfaceToNodeCacheDaoImpl;
 import org.opennms.netmgt.dao.mock.MockDistPollerDao;
-import org.opennms.netmgt.dao.mock.MockEventIpcManager;
-import org.opennms.netmgt.dao.mock.MockEventIpcManager.EmptyEventConfDao;
 import org.opennms.netmgt.eventd.DefaultEventHandlerImpl;
 import org.opennms.netmgt.eventd.EventExpander;
 import org.opennms.netmgt.eventd.EventIpcManagerDefaultImpl;
 import org.opennms.netmgt.eventd.EventUtilDaoImpl;
 import org.opennms.netmgt.eventd.processor.EventIpcBroadcastProcessor;
-import org.opennms.netmgt.events.api.EventIpcBroadcaster;
+import org.opennms.netmgt.eventd.processor.HibernateEventWriter;
 import org.opennms.netmgt.syslogd.SyslogSinkConsumer;
 import org.opennms.netmgt.syslogd.SyslogSinkModule;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.transaction.support.TransactionOperations;
 import org.vertx.kafka.util.ConfigConstants;
 import org.vertx.kafka.util.MockInterfaceCacheDao;
 
 import com.codahale.metrics.MetricRegistry;
 
 import io.vertx.core.DeploymentOptions;
-import io.vertx.core.Future;
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
 import io.vertx.core.json.JsonArray;
@@ -87,6 +90,8 @@ public class KafkaMessageConsumerTest {
 
 	private EventIpcBroadcastProcessor eventBroadCaster;
 
+	private HibernateEventWriter hibernateWriter;
+
 	@Before
 	public void setUp() throws Exception {
 
@@ -113,6 +118,7 @@ public class KafkaMessageConsumerTest {
 		eventExpander = new EventExpander(metric);
 		DefaultEventConfDao eventConfDao = new DefaultEventConfDao();
 
+		// TODO
 		File test = new File(
 				"/Users/ms043660/OneDrive - Cerner Corporation/Office/ProjectWorkspace/DistributedSyslogdPoc/Distributed-Syslogd/Vertx/src/test/resources/etc/eventconf.xml");
 		eventConfDao.setConfigResource(new FileSystemResource(test));
@@ -125,6 +131,10 @@ public class KafkaMessageConsumerTest {
 
 		eventBroadCaster = new EventIpcBroadcastProcessor(metric);
 		eventBroadCaster.setEventIpcBroadcaster(eventImpl);
+
+		hibernateWriter = new HibernateEventWriter(metric);
+		DatabasePopulator pop = new DatabasePopulator();
+		hibernateWriter.setTransactionManager(pop.getTransactionTemplate());
 	}
 
 	private SyslogSinkConsumer SyslogSinkProperties() throws Exception {
@@ -186,12 +196,14 @@ public class KafkaMessageConsumerTest {
 	@Test
 	public void testForKafkaMessageConsumer(TestContext context) {
 		try {
+
 			Async asyncRunnable = context.async();
 			vertx = Vertx.vertx(vxOptions);
 			vertx.deployVerticle(kafkaMessageConsumer);
 			vertx.deployVerticle(syslogSinkConsumer);
 			vertx.deployVerticle(eventImpl);
 			vertx.deployVerticle(eventExpander);
+			vertx.deployVerticle(hibernateWriter);
 			vertx.deployVerticle(eventBroadCaster);
 			asyncRunnable.awaitSuccess();
 		} catch (Exception e) {

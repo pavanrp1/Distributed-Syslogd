@@ -133,13 +133,16 @@ public final class EventExpander extends AbstractVerticle
 	private AtomicBoolean running;
 
 	private ExecutorService backgroundConsumer;
-	
+
 	private EventBus eventExpanderBus;
 
 	private static final String DEFAULT_EVENTD_CONSUMER_ADDRESS = "default.eventd.message.consumer";
-	
+
+	private static final String HIBERNATE_EVENTD_CONSUMER_ADDRESS = "hibernate.eventd.message.consumer";
+
 	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
 
+	
 	public EventExpander(MetricRegistry registry) {
 		expandTimer = Objects.requireNonNull(registry).timer("eventlogs.process.expand");
 	}
@@ -810,7 +813,7 @@ public final class EventExpander extends AbstractVerticle
 				}
 			}
 		}
-		eventExpanderBus.send(BROADCAST_EVENTD_CONSUMER_ADDRESS, eventLog);
+		eventExpanderBus.send(HIBERNATE_EVENTD_CONSUMER_ADDRESS, eventLog);
 	}
 
 	/**
@@ -844,8 +847,8 @@ public final class EventExpander extends AbstractVerticle
 	public void start(final Future<Void> startedResult) throws Exception {
 		running = new AtomicBoolean(true);
 
-		eventExpanderBus=vertx.eventBus();
-		
+		eventExpanderBus = vertx.eventBus();
+
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
 			try {
@@ -863,8 +866,7 @@ public final class EventExpander extends AbstractVerticle
 	private void consume() {
 		while (running.get()) {
 			try {
-				MessageConsumer<Log> eventExanpderConsumer = eventExpanderBus
-						.consumer(DEFAULT_EVENTD_CONSUMER_ADDRESS);
+				MessageConsumer<Log> eventExanpderConsumer = eventExpanderBus.consumer(DEFAULT_EVENTD_CONSUMER_ADDRESS);
 				eventExanpderConsumer.handler(message -> {
 
 					try {

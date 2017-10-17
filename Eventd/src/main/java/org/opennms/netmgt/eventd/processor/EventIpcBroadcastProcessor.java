@@ -33,7 +33,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.opennms.netmgt.eventd.DefaultEventHandlerImpl;
 import org.opennms.netmgt.events.api.EventIpcBroadcaster;
 import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.events.api.EventProcessorException;
@@ -56,94 +55,103 @@ import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.eventbus.MessageConsumer;
 
 /**
- * EventProcessor that broadcasts events to other interested
- * daemons with EventIpcBroadcaster.broadcastNow(Event).
+ * EventProcessor that broadcasts events to other interested daemons with
+ * EventIpcBroadcaster.broadcastNow(Event).
  *
  * @author ranger
  * @version $Id: $
  */
 public class EventIpcBroadcastProcessor extends AbstractVerticle implements EventProcessor, InitializingBean {
-    private static final Logger LOG = LoggerFactory.getLogger(EventIpcBroadcastProcessor.class);
-    private EventIpcBroadcaster m_eventIpcBroadcaster;
+	private static final Logger LOG = LoggerFactory.getLogger(EventIpcBroadcastProcessor.class);
+	private EventIpcBroadcaster m_eventIpcBroadcaster;
 
-    private final Timer logBroadcastTimer;
-    private final Meter eventBroadcastMeter;
-    
+	private final Timer logBroadcastTimer;
+	private final Meter eventBroadcastMeter;
+
 	private AtomicBoolean running;
 
 	private ExecutorService backgroundConsumer;
 	private EventBus broadCastEventBus;
-	
+
 	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
 
-    public EventIpcBroadcastProcessor(MetricRegistry registry) {
-        logBroadcastTimer = Objects.requireNonNull(registry).timer("eventlogs.process.broadcast");
-        eventBroadcastMeter = registry.meter("events.process.broadcast");
-    }
+	public EventIpcBroadcastProcessor(MetricRegistry registry) {
+		logBroadcastTimer = Objects.requireNonNull(registry).timer("eventlogs.process.broadcast");
+		eventBroadcastMeter = registry.meter("events.process.broadcast");
+	}
 
-    /**
-     * <p>afterPropertiesSet</p>
-     *
-     * @throws java.lang.IllegalStateException if any.
-     */
-    @Override
-    public void afterPropertiesSet() throws IllegalStateException {
-        Assert.state(m_eventIpcBroadcaster != null, "property eventIpcBroadcaster must be set");
-    }
+	/**
+	 * <p>
+	 * afterPropertiesSet
+	 * </p>
+	 *
+	 * @throws java.lang.IllegalStateException
+	 *             if any.
+	 */
+	@Override
+	public void afterPropertiesSet() throws IllegalStateException {
+		Assert.state(m_eventIpcBroadcaster != null, "property eventIpcBroadcaster must be set");
+	}
 
-    /**
-     * If synchronous mode is not specified, the event is broadcasted 
-     * asynchronously by default.
-     */
-    @Override
-    public void process(Log eventLog) throws EventProcessorException {
-        process(eventLog, false);
-    }
+	/**
+	 * If synchronous mode is not specified, the event is broadcasted asynchronously
+	 * by default.
+	 */
+	@Override
+	public void process(Log eventLog) throws EventProcessorException {
+		process(eventLog, false);
+	}
 
-    @Override
-    public void process(Log eventLog, boolean synchronous) throws EventProcessorException {
-        if (eventLog != null && eventLog.getEvents() != null && eventLog.getEvents().getEvent() != null) {
-            try (Context context = logBroadcastTimer.time()) {
-                for(Event eachEvent : eventLog.getEvents().getEvent()) {
-                    process(eventLog.getHeader(), eachEvent, synchronous);
-                    eventBroadcastMeter.mark();
-                }
-            }
-        }
-    }
+	@Override
+	public void process(Log eventLog, boolean synchronous) throws EventProcessorException {
+		if (eventLog != null && eventLog.getEvents() != null && eventLog.getEvents().getEvent() != null) {
+			try (Context context = logBroadcastTimer.time()) {
+				for (Event eachEvent : eventLog.getEvents().getEvent()) {
+					process(eventLog.getHeader(), eachEvent, synchronous);
+					eventBroadcastMeter.mark();
+				}
+			}
+		}
+	}
 
-    private void process(Header eventHeader, Event event, boolean synchronous) {
-        if (event.getLogmsg() != null && event.getLogmsg().getDest().equals("suppress")) {
-            LOG.debug("process: skip sending event {} to other daemons because is marked as suppress", event.getUei());
-        } else {
-            m_eventIpcBroadcaster.broadcastNow(event, synchronous);
-        }
-    }
+	private void process(Header eventHeader, Event event, boolean synchronous) {
+		if (event.getLogmsg() != null && event.getLogmsg().getDest().equals("suppress")) {
+			LOG.debug("process: skip sending event {} to other daemons because is marked as suppress", event.getUei());
+		} else {
+			m_eventIpcBroadcaster.broadcastNow(event, synchronous);
+		}
+	}
 
-    /**
-     * <p>getEventIpcBroadcaster</p>
-     *
-     * @return a {@link org.opennms.netmgt.events.api.EventIpcBroadcaster} object.
-     */
-    public EventIpcBroadcaster getEventIpcBroadcaster() {
-        return m_eventIpcBroadcaster;
-    }
+	/**
+	 * <p>
+	 * getEventIpcBroadcaster
+	 * </p>
+	 *
+	 * @return a {@link org.opennms.netmgt.events.api.EventIpcBroadcaster} object.
+	 */
+	public EventIpcBroadcaster getEventIpcBroadcaster() {
+		return m_eventIpcBroadcaster;
+	}
 
-    /**
-     * <p>setEventIpcBroadcaster</p>
-     *
-     * @param eventIpcManager a {@link org.opennms.netmgt.events.api.EventIpcBroadcaster} object.
-     */
-    public void setEventIpcBroadcaster(EventIpcBroadcaster eventIpcManager) {
-        m_eventIpcBroadcaster = eventIpcManager;
-    }
-    
-    @Override
+	/**
+	 * <p>
+	 * setEventIpcBroadcaster
+	 * </p>
+	 *
+	 * @param eventIpcManager
+	 *            a {@link org.opennms.netmgt.events.api.EventIpcBroadcaster}
+	 *            object.
+	 */
+	public void setEventIpcBroadcaster(EventIpcBroadcaster eventIpcManager) {
+		m_eventIpcBroadcaster = eventIpcManager;
+	}
+
+	@Override
 	public void start(final Future<Void> startedResult) throws Exception {
 		running = new AtomicBoolean(true);
 
-		broadCastEventBus=vertx.eventBus();
-		
+		broadCastEventBus = vertx.eventBus();
+
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
 			try {

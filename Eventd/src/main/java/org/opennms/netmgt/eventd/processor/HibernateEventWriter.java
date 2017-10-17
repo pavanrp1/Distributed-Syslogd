@@ -32,6 +32,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
@@ -68,6 +71,11 @@ import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
 import com.codahale.metrics.Timer.Context;
 
+import io.vertx.core.AbstractVerticle;
+import io.vertx.core.Future;
+import io.vertx.core.eventbus.EventBus;
+import io.vertx.core.eventbus.MessageConsumer;
+
 /**
  * EventWriter loads the information in each 'Event' into the database.
  *
@@ -90,7 +98,7 @@ import com.codahale.metrics.Timer.Context;
  * @author <A HREF="mailto:sowmya@opennms.org">Sowmya Nataraj </A>
  * @author <A HREF="http://www.opennms.org">OpenNMS.org </A>
  */
-public class HibernateEventWriter implements EventWriter {
+public class HibernateEventWriter extends AbstractVerticle implements EventWriter {
     private static final Logger LOG = LoggerFactory.getLogger(HibernateEventWriter.class);
 
     public static final String LOG_MSG_DEST_DO_NOT_PERSIST = "donotpersist";
@@ -121,6 +129,17 @@ public class HibernateEventWriter implements EventWriter {
     private EventUtil eventUtil;
 
     private final Timer writeTimer;
+    
+	private AtomicBoolean running;
+
+	private ExecutorService backgroundConsumer;
+	private EventBus hibernateEventBus;
+	
+	private static final String HIBERNATE_EVENTD_CONSUMER_ADDRESS = "hibernate.eventd.message.consumer";
+
+	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
+	
+	private Log m_eventlog;
 
     public HibernateEventWriter(MetricRegistry registry) {
         writeTimer = Objects.requireNonNull(registry).timer("eventlogs.process.write");
@@ -177,18 +196,19 @@ public class HibernateEventWriter implements EventWriter {
 
             // If there are no events to persist, avoid creating a database transaction
             if (eventsToPersist.size() < 1) {
+            		m_eventlog=eventLog;
                 return;
             }
 
             // Time the transaction and insertions
             try (Context context = writeTimer.time()) {
                 final AtomicReference<EventProcessorException> exception = new AtomicReference<>();
-
                 m_transactionManager.execute(new TransactionCallbackWithoutResult() {
                     @Override
                     protected void doInTransactionWithoutResult(TransactionStatus status) {
                         for (Event eachEvent : eventsToPersist) {
                             try {
+                            		m_eventlog=eventLog;
                                 process(eventLog.getHeader(), eachEvent);
                             } catch (EventProcessorException e) {
                                 exception.set(e);
@@ -408,4 +428,43 @@ public class HibernateEventWriter implements EventWriter {
     public void setTransactionManager(TransactionOperations transactionManager) {
         m_transactionManager = transactionManager;
     }
+    
+    @Override
+  	public void start(final Future<Void> startedResult) throws Exception {
+  		running = new AtomicBoolean(true);
+
+  		hibernateEventBus=vertx.eventBus();
+  		
+  		backgroundConsumer = Executors.newSingleThreadExecutor();
+  		backgroundConsumer.submit(() -> {
+  			try {
+
+  				startedResult.complete();
+  				consume();
+
+  			} catch (Exception ex) {
+  				String error = "Failed to startup";
+  				startedResult.fail(ex);
+  			}
+  		});
+  	}
+
+  	private void consume() {
+  		while (running.get()) {
+  			try {
+  				MessageConsumer<Log> broadCastEventConsumer = hibernateEventBus
+  						.consumer(HIBERNATE_EVENTD_CONSUMER_ADDRESS);
+  				broadCastEventConsumer.handler(message -> {
+
+  					try {
+  						process(message.body(), true);
+  						 hibernateEventBus.send(BROADCAST_EVENTD_CONSUMER_ADDRESS, m_eventlog);
+  					} catch (EventProcessorException e) {
+  						e.printStackTrace();
+  					}
+  				});
+  			} catch (Exception ex) {
+  			}
+  		}
+  	}
 }
