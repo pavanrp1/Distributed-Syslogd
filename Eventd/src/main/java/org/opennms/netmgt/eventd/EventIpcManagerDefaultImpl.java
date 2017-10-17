@@ -68,6 +68,8 @@ import com.codahale.metrics.MetricRegistry;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
+import io.vertx.core.eventbus.EventBus;
+import io.vertx.core.eventbus.MessageConsumer;
 
 /**
  * An implementation of the EventIpcManager interface that can be used to
@@ -139,6 +141,8 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle implements Even
 	private static final String EVENTD_CONSUMER_ADDRESS = "eventd.message.consumer";
 	
 	private static final String DEFAULT_EVENTD_CONSUMER_ADDRESS = "default.eventd.message.consumer";
+	
+	private EventBus eventIpcEventBus;
 
     /**
      * A thread dedicated to each listener. The events meant for each listener
@@ -216,6 +220,8 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle implements Even
 	public void start(final Future<Void> startedResult) throws Exception {
 		running = new AtomicBoolean(true);
 		
+		eventIpcEventBus=vertx.eventBus();
+		
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
 			try {
@@ -233,11 +239,10 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle implements Even
 	private void consume() {
 		while (running.get()) {
 			try {
-				io.vertx.core.eventbus.MessageConsumer<Log> consumer1 = vertx.eventBus().consumer(EVENTD_CONSUMER_ADDRESS);
-				consumer1.handler(message -> {
-
+				MessageConsumer<Log> eventIpcConsumer = eventIpcEventBus.consumer(EVENTD_CONSUMER_ADDRESS);
+				eventIpcConsumer.handler(message -> {
 					sendNowSync(message.body());
-					vertx.eventBus().send(DEFAULT_EVENTD_CONSUMER_ADDRESS, DefaultEventHandlerImpl.getEventdLog());
+					eventIpcEventBus.send(DEFAULT_EVENTD_CONSUMER_ADDRESS, DefaultEventHandlerImpl.getEventdLog());
 				});
 			} catch (Exception ex) {
 			}

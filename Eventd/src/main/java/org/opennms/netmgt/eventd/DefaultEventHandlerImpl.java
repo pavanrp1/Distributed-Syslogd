@@ -63,7 +63,7 @@ import io.vertx.core.AbstractVerticle;
  * @author <A HREF="mailto:sowmya@opennms.org">Sowmya Nataraj </A>
  * @author <A HREF="http://www.opennms.org">OpenNMS.org </A>
  */
-public final class DefaultEventHandlerImpl extends AbstractVerticle implements InitializingBean, EventHandler {
+public final class DefaultEventHandlerImpl implements InitializingBean, EventHandler {
     
     private static final Logger LOG = LoggerFactory.getLogger(DefaultEventHandlerImpl.class);
 

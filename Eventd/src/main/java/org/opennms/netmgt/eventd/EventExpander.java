@@ -66,6 +66,8 @@ import com.codahale.metrics.Timer.Context;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
+import io.vertx.core.eventbus.EventBus;
+import io.vertx.core.eventbus.MessageConsumer;
 
 /**
  * <P>
@@ -131,6 +133,8 @@ public final class EventExpander extends AbstractVerticle
 	private AtomicBoolean running;
 
 	private ExecutorService backgroundConsumer;
+	
+	private EventBus eventExpanderBus;
 
 	private static final String DEFAULT_EVENTD_CONSUMER_ADDRESS = "default.eventd.message.consumer";
 	
@@ -806,7 +810,7 @@ public final class EventExpander extends AbstractVerticle
 				}
 			}
 		}
-		vertx.eventBus().send(BROADCAST_EVENTD_CONSUMER_ADDRESS, eventLog);
+		eventExpanderBus.send(BROADCAST_EVENTD_CONSUMER_ADDRESS, eventLog);
 	}
 
 	/**
@@ -840,6 +844,8 @@ public final class EventExpander extends AbstractVerticle
 	public void start(final Future<Void> startedResult) throws Exception {
 		running = new AtomicBoolean(true);
 
+		eventExpanderBus=vertx.eventBus();
+		
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
 			try {
@@ -857,9 +863,9 @@ public final class EventExpander extends AbstractVerticle
 	private void consume() {
 		while (running.get()) {
 			try {
-				io.vertx.core.eventbus.MessageConsumer<Log> consumer1 = vertx.eventBus()
+				MessageConsumer<Log> eventExanpderConsumer = eventExpanderBus
 						.consumer(DEFAULT_EVENTD_CONSUMER_ADDRESS);
-				consumer1.handler(message -> {
+				eventExanpderConsumer.handler(message -> {
 
 					try {
 						process(message.body(), true);
