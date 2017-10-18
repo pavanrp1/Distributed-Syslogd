@@ -38,7 +38,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
-import org.mockito.Mockito;
 import org.opennms.netmgt.dao.api.DistPollerDao;
 import org.opennms.netmgt.dao.api.EventDao;
 import org.opennms.netmgt.dao.api.MonitoringSystemDao;
@@ -80,8 +79,8 @@ import io.vertx.core.eventbus.MessageConsumer;
 /**
  * EventWriter loads the information in each 'Event' into the database.
  *
- * While loading multiple values of the same element into a single DB column, the
- * multiple values are delimited by MULTIPLE_VAL_DELIM.
+ * While loading multiple values of the same element into a single DB column,
+ * the multiple values are delimited by MULTIPLE_VAL_DELIM.
  *
  * When an element and its attribute are loaded into a single DB column, the
  * value and the attribute are separated by a DB_ATTRIB_DELIM.
@@ -100,33 +99,60 @@ import io.vertx.core.eventbus.MessageConsumer;
  * @author <A HREF="http://www.opennms.org">OpenNMS.org </A>
  */
 public class HibernateEventWriter extends AbstractVerticle implements EventWriter {
-    private static final Logger LOG = LoggerFactory.getLogger(HibernateEventWriter.class);
+	private static final Logger LOG = LoggerFactory.getLogger(HibernateEventWriter.class);
 
-    public static final String LOG_MSG_DEST_DO_NOT_PERSIST = "donotpersist";
-    public static final String LOG_MSG_DEST_SUPRRESS = "suppress";
-    public static final String LOG_MSG_DEST_LOG_AND_DISPLAY = "logndisplay";
-    public static final String LOG_MSG_DEST_LOG_ONLY = "logonly";
-    public static final String LOG_MSG_DEST_DISPLAY_ONLY = "displayonly";
-    
-    private TransactionOperations m_transactionManager;
-    
-    @Autowired
-    private NodeDao nodeDao;
-    
-    private MonitoringSystemDao monitoringSystemDao;
+	public static final String LOG_MSG_DEST_DO_NOT_PERSIST = "donotpersist";
+	public static final String LOG_MSG_DEST_SUPRRESS = "suppress";
+	public static final String LOG_MSG_DEST_LOG_AND_DISPLAY = "logndisplay";
+	public static final String LOG_MSG_DEST_LOG_ONLY = "logonly";
+	public static final String LOG_MSG_DEST_DISPLAY_ONLY = "displayonly";
 
-    public void setMonitoringSystemDao(MonitoringSystemDao monitoringSystemDao) {
+	private TransactionOperations m_transactionManager;
+
+	@Autowired
+	private NodeDao nodeDao;
+
+	private MonitoringSystemDao monitoringSystemDao;
+
+	private DistPollerDao distPollerDao;
+
+	private EventDao eventDao;
+
+	private ServiceTypeDao serviceTypeDao;
+
+	private EventUtil eventUtil;
+
+	private final Timer writeTimer;
+
+	private AtomicBoolean running;
+
+	private ExecutorService backgroundConsumer;
+
+	private EventBus hibernateEventBus;
+
+	private static final String HIBERNATE_EVENTD_CONSUMER_ADDRESS = "hibernate.eventd.message.consumer";
+
+	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
+
+	private Log m_eventLog;
+
+	public HibernateEventWriter(MetricRegistry registry) {
+		writeTimer = Objects.requireNonNull(registry).timer("eventlogs.process.write");
+	}
+
+	public void setNodeDao(NodeDao nodeDao) {
+		this.nodeDao = nodeDao;
+	}
+
+	public void setMonitoringSystemDao(MonitoringSystemDao monitoringSystemDao) {
 		this.monitoringSystemDao = monitoringSystemDao;
 	}
 
-    private DistPollerDao distPollerDao;
-    
-    public void setDistPollerDao(DistPollerDao distPollerDao) {
+	public void setDistPollerDao(DistPollerDao distPollerDao) {
 		this.distPollerDao = distPollerDao;
 	}
-    private EventDao eventDao;
 
-    public void setEventDao(EventDao eventDao) {
+	public void setEventDao(EventDao eventDao) {
 		this.eventDao = eventDao;
 	}
 
@@ -134,354 +160,351 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 		this.serviceTypeDao = serviceTypeDao;
 	}
 
-	private ServiceTypeDao serviceTypeDao;
-
-    private EventUtil eventUtil;
-
-    public EventUtil getEventUtil() {
-		return eventUtil;
-	}
-
 	public void setEventUtil(EventUtil eventUtil) {
 		this.eventUtil = eventUtil;
 	}
 
-	private final Timer writeTimer;
-    
-	private AtomicBoolean running;
+	/**
+	 * <p>
+	 * checkEventSanityAndDoWeProcess
+	 * </p>
+	 *
+	 * @param event
+	 *            a {@link org.opennms.netmgt.xml.event.Event} object.
+	 * @param logPrefix
+	 *            a {@link java.lang.String} object.
+	 * @return a boolean.
+	 */
+	private static boolean checkEventSanityAndDoWeProcess(Event event, String logPrefix) {
+		Assert.notNull(event, "event argument must not be null");
 
-	private ExecutorService backgroundConsumer;
-	private EventBus hibernateEventBus;
-	
-	private static final String HIBERNATE_EVENTD_CONSUMER_ADDRESS = "hibernate.eventd.message.consumer";
+		/*
+		 * Check value of <logmsg> attribute 'dest', if set to "donotpersist" or
+		 * "suppress" then simply return, the UEI is not to be persisted to the database
+		 */
+		Assert.notNull(event.getLogmsg(), "event does not have a logmsg");
+		if (LOG_MSG_DEST_DO_NOT_PERSIST.equalsIgnoreCase(event.getLogmsg().getDest())
+				|| LOG_MSG_DEST_SUPRRESS.equalsIgnoreCase(event.getLogmsg().getDest())) {
+			LOG.debug("{}: uei '{}' marked as '{}'; not processing event.", logPrefix, event.getUei(),
+					event.getLogmsg().getDest());
+			return false;
+		}
+		return true;
+	}
 
-	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
-	
-	private Log m_eventlog;
+	/**
+	 * Event writing is always synchronous so this method just delegates to
+	 * {@link #process(Log)}.
+	 */
+	@Override
+	public void process(Log eventLog, boolean synchronous) throws EventProcessorException {
+		process(eventLog);
+	}
 
-    public HibernateEventWriter(MetricRegistry registry) {
-        writeTimer = Objects.requireNonNull(registry).timer("eventlogs.process.write");
-    }
+	@Override
+	public void process(Log eventLog) throws EventProcessorException {
+		if (eventLog != null && eventLog.getEvents() != null) {
+			m_eventLog = eventLog;
+			final List<Event> eventsInLog = eventLog.getEvents().getEventCollection();
+			// This shouldn't happen, but just to be safe...
+			if (eventsInLog == null) {
+				return;
+			}
 
-    /**
-     * <p>checkEventSanityAndDoWeProcess</p>
-     *
-     * @param event a {@link org.opennms.netmgt.xml.event.Event} object.
-     * @param logPrefix a {@link java.lang.String} object.
-     * @return a boolean.
-     */
-    private static boolean checkEventSanityAndDoWeProcess(Event event, String logPrefix) {
-        Assert.notNull(event, "event argument must not be null");
+			// Find the events in the log that need to be persisted
+			final List<Event> eventsToPersist = eventsInLog.stream()
+					.filter(e -> checkEventSanityAndDoWeProcess(e, "HibernateEventWriter"))
+					.collect(Collectors.toList());
 
-        /*
-         * Check value of <logmsg> attribute 'dest', if set to
-         * "donotpersist" or "suppress" then simply return, the UEI is not to be
-         * persisted to the database
-         */
-        Assert.notNull(event.getLogmsg(), "event does not have a logmsg");
-        if (
-            LOG_MSG_DEST_DO_NOT_PERSIST.equalsIgnoreCase(event.getLogmsg().getDest()) ||
-            LOG_MSG_DEST_SUPRRESS.equalsIgnoreCase(event.getLogmsg().getDest())
-        ) {
-            LOG.debug("{}: uei '{}' marked as '{}'; not processing event.", logPrefix, event.getUei(), event.getLogmsg().getDest());
-            return false;
-        }
-        return true;
-    }
+			// If there are no events to persist, avoid creating a database transaction
+			if (eventsToPersist.size() < 1) {
+				return;
+			}
+			// Time the transaction and insertions
+			try (Context context = writeTimer.time()) {
+				final AtomicReference<EventProcessorException> exception = new AtomicReference<>();
+				m_transactionManager.execute(new TransactionCallbackWithoutResult() {
+					@Override
+					protected void doInTransactionWithoutResult(TransactionStatus status) {
+						for (Event eachEvent : eventsToPersist) {
+							try {
+								process(eventLog.getHeader(), eachEvent);
+								m_eventLog = eventLog;
+							} catch (EventProcessorException e) {
+								exception.set(e);
+								return;
+							}
+						}
+					}
+				});
 
-    /**
-     * Event writing is always synchronous so this method just 
-     * delegates to {@link #process(Log)}.
-     */
-    @Override
-    public void process(Log eventLog, boolean synchronous) throws EventProcessorException {
-        process(eventLog);
-    }
+				if (exception.get() != null) {
+					throw exception.get();
+				}
+			}
+		}
+	}
 
-    @Override
-    public void process(Log eventLog) throws EventProcessorException {
-        if (eventLog != null && eventLog.getEvents() != null) {
-            final List<Event> eventsInLog = eventLog.getEvents().getEventCollection();
-            // This shouldn't happen, but just to be safe...
-            if (eventsInLog == null) {
-                return;
-            }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * The method that inserts the event into the database
+	 */
+	private void process(final Header eventHeader, final Event event) throws EventProcessorException {
+		LOG.debug("HibernateEventWriter: processing {}, nodeid: {}, ipaddr: {}, serviceid: {}, time: {}",
+				event.getUei(), event.getNodeid(), event.getInterface(), event.getService(), event.getTime());
 
-            // Find the events in the log that need to be persisted
-            final List<Event> eventsToPersist = eventsInLog.stream()
-                .filter(e -> checkEventSanityAndDoWeProcess(e, "HibernateEventWriter"))
-                .collect(Collectors.toList());
+		try {
+			final OnmsEvent ovent = createOnmsEvent(eventHeader, event);
+			eventDao.save(ovent);
 
-            // If there are no events to persist, avoid creating a database transaction
-            if (eventsToPersist.size() < 1) {
-            		m_eventlog=eventLog;
-                return;
-            }
-            m_eventlog=eventLog;
-            // Time the transaction and insertions
-            try (Context context = writeTimer.time()) {
-                final AtomicReference<EventProcessorException> exception = new AtomicReference<>();
-                m_transactionManager.execute(new TransactionCallbackWithoutResult() {
-                    @Override
-                    protected void doInTransactionWithoutResult(TransactionStatus status) {
-                        for (Event eachEvent : eventsToPersist) {
-                            try {
-                                process(eventLog.getHeader(), eachEvent);
-                            } catch (EventProcessorException e) {
-                                exception.set(e);
-                                return;
-                            }
-                        }
-                    }
-                });
+			// Update the event with the database ID of the event stored in the database
+			event.setDbid(ovent.getId());
+		} catch (DeadlockLoserDataAccessException e) {
+			throw new EventProcessorException("Encountered deadlock when inserting event: " + event.toString(), e);
+		} catch (Throwable e) {
+			throw new EventProcessorException("Unexpected exception while storing event: " + event.toString(), e);
+		}
+	}
 
-                if (exception.get() != null) {
-                    throw exception.get();
-                }
-            }
-        }
-    }
+	/**
+	 * Creates OnmsEvent to be inserted afterwards.
+	 * 
+	 * @exception java.lang.NullPointerException
+	 *                Thrown if a required resource cannot be found in the
+	 *                properties file.
+	 */
+	private OnmsEvent createOnmsEvent(final Header eventHeader, final Event event) {
 
-    /**
-     * {@inheritDoc}
-     *
-     * The method that inserts the event into the database
-     */
-    private void process(final Header eventHeader, final Event event) throws EventProcessorException {
-        LOG.debug("HibernateEventWriter: processing {}, nodeid: {}, ipaddr: {}, serviceid: {}, time: {}", event.getUei(), event.getNodeid(), event.getInterface(), event.getService(), event.getTime());
+		OnmsEvent ovent = new OnmsEvent();
 
-        try {
-            final OnmsEvent ovent = createOnmsEvent(eventHeader, event);
-            eventDao.save(ovent);
+		// eventID
+		// ovent.setId(event.getDbid());
 
-            // Update the event with the database ID of the event stored in the database
-            event.setDbid(ovent.getId());
-        } catch (DeadlockLoserDataAccessException e) {
-            throw new EventProcessorException("Encountered deadlock when inserting event: " + event.toString(), e);
-        } catch (Throwable e) {
-            throw new EventProcessorException("Unexpected exception while storing event: " + event.toString(), e);
-        }
-    }
+		// eventUEI
+		ovent.setEventUei(EventDatabaseConstants.format(event.getUei(), EVENT_UEI_FIELD_SIZE));
 
-    /**
-     * Creates OnmsEvent to be inserted afterwards.
-     * 
-     * @exception java.lang.NullPointerException
-     *                Thrown if a required resource cannot be found in the
-     *                properties file.
-     */
-    private OnmsEvent createOnmsEvent(final Header eventHeader, final Event event) {
+		// nodeID
+		if (event.hasNodeid()) {
+			ovent.setNode(nodeDao.get(event.getNodeid().intValue()));
+		}
 
-        OnmsEvent ovent = new OnmsEvent();
+		// eventTime
+		ovent.setEventTime(event.getTime());
 
-        // eventID
-        //ovent.setId(event.getDbid());
+		// eventHost
+		// Resolve the event host to a hostname using the ipInterface table
+		ovent.setEventHost(EventDatabaseConstants.format(eventUtil.getEventHost(event), EVENT_HOST_FIELD_SIZE));
 
-        // eventUEI
-        ovent.setEventUei(EventDatabaseConstants.format(event.getUei(), EVENT_UEI_FIELD_SIZE));
+		// eventSource
+		ovent.setEventSource(EventDatabaseConstants.format(event.getSource(), EVENT_SOURCE_FIELD_SIZE));
 
-        // nodeID
-        if (event.hasNodeid()) {
-            ovent.setNode(nodeDao.get(event.getNodeid().intValue()));
-        }
+		// ipAddr
+		ovent.setIpAddr(event.getInterfaceAddress());
 
-        // eventTime
-        ovent.setEventTime(event.getTime());
+		// ifindex
+		if (event.hasIfIndex()) {
+			ovent.setIfIndex(event.getIfIndex());
+		} else {
+			ovent.setIfIndex(null);
+		}
 
-        // eventHost
-        // Resolve the event host to a hostname using the ipInterface table
-        ovent.setEventHost(EventDatabaseConstants.format(eventUtil.getEventHost(event), EVENT_HOST_FIELD_SIZE));
+		// systemId
 
-        // eventSource
-        ovent.setEventSource(EventDatabaseConstants.format(event.getSource(), EVENT_SOURCE_FIELD_SIZE));
+		// If available, use the header's distPoller
+		if (eventHeader != null && eventHeader.getDpName() != null && !"".equals(eventHeader.getDpName().trim())) {
+			// TODO: Should we also try a look up the value in the MinionDao and
+			// LocationMonitorDao here?
+			ovent.setDistPoller(distPollerDao.get(eventHeader.getDpName()));
+		}
+		// Otherwise, use the event's distPoller
+		if (ovent.getDistPoller() == null && event.getDistPoller() != null
+				&& !"".equals(event.getDistPoller().trim())) {
+			ovent.setDistPoller(monitoringSystemDao.get(event.getDistPoller()));
+		}
+		// And if both are unavailable, use the local system as the event's source
+		// system
+		if (ovent.getDistPoller() == null) {
+			ovent.setDistPoller(distPollerDao.whoami());
+		}
 
-        // ipAddr
-        ovent.setIpAddr(event.getInterfaceAddress());
+		// eventSnmpHost
+		ovent.setEventSnmpHost(EventDatabaseConstants.format(event.getSnmphost(), EVENT_SNMPHOST_FIELD_SIZE));
 
-        // ifindex
-        if (event.hasIfIndex()) {
-            ovent.setIfIndex(event.getIfIndex());
-        } else {
-            ovent.setIfIndex(null);
-        }
+		// service
+		ovent.setServiceType(serviceTypeDao.findByName(event.getService()));
 
-        // systemId
+		// eventSnmp
+		ovent.setEventSnmp(event.getSnmp() == null ? null : SnmpInfo.format(event.getSnmp(), EVENT_SNMP_FIELD_SIZE));
 
-        // If available, use the header's distPoller
-        if (eventHeader != null && eventHeader.getDpName() != null && !"".equals(eventHeader.getDpName().trim())) {
-            // TODO: Should we also try a look up the value in the MinionDao and LocationMonitorDao here?
-            ovent.setDistPoller(distPollerDao.get(eventHeader.getDpName()));
-        }
-        // Otherwise, use the event's distPoller
-//        if (ovent.getDistPoller() == null && event.getDistPoller() != null && !"".equals(event.getDistPoller().trim())) {
-//            ovent.setDistPoller(monitoringSystemDao.get(event.getDistPoller()));
-//        }
-        // And if both are unavailable, use the local system as the event's source system
-        if (ovent.getDistPoller() == null) {
-            ovent.setDistPoller(distPollerDao.whoami());
-        }
+		// eventParms
+		// Replace any null bytes with a space, otherwise postgres will complain about
+		// encoding in UNICODE
+		final String parametersString = EventParameterUtils.format(event);
+		ovent.setEventParms(EventDatabaseConstants.format(parametersString, 0));
 
-        // eventSnmpHost
-        ovent.setEventSnmpHost(EventDatabaseConstants.format(event.getSnmphost(), EVENT_SNMPHOST_FIELD_SIZE));
+		// eventCreateTime
+		// TODO: We are overriding the 'eventcreatetime' field of the event with a new
+		// Date
+		// representing the storage time of the event. 'eventcreatetime' should really
+		// be
+		// renamed to something like 'eventpersisttime' since that is closer to its
+		// meaning.
+		ovent.setEventCreateTime(new Date());
 
-        // service
-        ovent.setServiceType(serviceTypeDao.findByName(event.getService()));
+		// eventDescr
+		ovent.setEventDescr(EventDatabaseConstants.format(event.getDescr(), 0));
 
-        // eventSnmp
-        ovent.setEventSnmp(event.getSnmp() == null ? null : SnmpInfo.format(event.getSnmp(), EVENT_SNMP_FIELD_SIZE));
+		// eventLoggroup
+		ovent.setEventLogGroup(event.getLoggroupCount() > 0
+				? EventDatabaseConstants.format(event.getLoggroup(), EVENT_LOGGRP_FIELD_SIZE)
+				: null);
 
-        // eventParms
-        // Replace any null bytes with a space, otherwise postgres will complain about encoding in UNICODE
-        final String parametersString = EventParameterUtils.format(event);
-        ovent.setEventParms(EventDatabaseConstants.format(parametersString, 0));
+		// eventLogMsg
+		// eventLog
+		// eventDisplay
+		if (event.getLogmsg() != null) {
+			// set log message
+			ovent.setEventLogMsg(EventDatabaseConstants.format(event.getLogmsg().getContent(), 0));
+			String logdest = event.getLogmsg().getDest();
+			if (LOG_MSG_DEST_LOG_AND_DISPLAY.equals(logdest)) {
+				// if 'logndisplay' set both log and display column to yes
+				ovent.setEventLog(String.valueOf(MSG_YES));
+				ovent.setEventDisplay(String.valueOf(MSG_YES));
+			} else if (LOG_MSG_DEST_LOG_ONLY.equals(logdest)) {
+				// if 'logonly' set log column to true
+				ovent.setEventLog(String.valueOf(MSG_YES));
+				ovent.setEventDisplay(String.valueOf(MSG_NO));
+			} else if (LOG_MSG_DEST_DISPLAY_ONLY.equals(logdest)) {
+				// if 'displayonly' set display column to true
+				ovent.setEventLog(String.valueOf(MSG_NO));
+				ovent.setEventDisplay(String.valueOf(MSG_YES));
+			} else if (LOG_MSG_DEST_SUPRRESS.equals(logdest)) {
+				// if 'suppress' set both log and display to false
+				ovent.setEventLog(String.valueOf(MSG_NO));
+				ovent.setEventDisplay(String.valueOf(MSG_NO));
+			}
+		} else {
+			ovent.setEventLogMsg(null);
+			ovent.setEventLog(String.valueOf(MSG_YES));
+			ovent.setEventDisplay(String.valueOf(MSG_YES));
+		}
 
-        // eventCreateTime
-        // TODO: We are overriding the 'eventcreatetime' field of the event with a new Date
-        // representing the storage time of the event. 'eventcreatetime' should really be
-        // renamed to something like 'eventpersisttime' since that is closer to its meaning.
-        ovent.setEventCreateTime(new Date());
+		// eventSeverity
+		ovent.setEventSeverity(OnmsSeverity.get(event.getSeverity()).getId());
 
-        // eventDescr
-        ovent.setEventDescr(EventDatabaseConstants.format(event.getDescr(), 0));
+		// eventPathOutage
+		ovent.setEventPathOutage(event.getPathoutage() != null
+				? EventDatabaseConstants.format(event.getPathoutage(), EVENT_PATHOUTAGE_FIELD_SIZE)
+				: null);
 
-        // eventLoggroup
-        ovent.setEventLogGroup(event.getLoggroupCount() > 0 ? EventDatabaseConstants.format(event.getLoggroup(), EVENT_LOGGRP_FIELD_SIZE) : null);
+		// eventCorrelation
+		ovent.setEventCorrelation(event.getCorrelation() != null
+				? Correlation.format(event.getCorrelation(), EVENT_CORRELATION_FIELD_SIZE)
+				: null);
 
-        // eventLogMsg
-        // eventLog
-        // eventDisplay
-        if (event.getLogmsg() != null) {
-            // set log message
-            ovent.setEventLogMsg(EventDatabaseConstants.format(event.getLogmsg().getContent(), 0));
-            String logdest = event.getLogmsg().getDest();
-            if (LOG_MSG_DEST_LOG_AND_DISPLAY.equals(logdest)) {
-                // if 'logndisplay' set both log and display column to yes
-                ovent.setEventLog(String.valueOf(MSG_YES));
-                ovent.setEventDisplay(String.valueOf(MSG_YES));
-            } else if (LOG_MSG_DEST_LOG_ONLY.equals(logdest)) {
-                // if 'logonly' set log column to true
-                ovent.setEventLog(String.valueOf(MSG_YES));
-                ovent.setEventDisplay(String.valueOf(MSG_NO));
-            } else if (LOG_MSG_DEST_DISPLAY_ONLY.equals(logdest)) {
-                // if 'displayonly' set display column to true
-                ovent.setEventLog(String.valueOf(MSG_NO));
-                ovent.setEventDisplay(String.valueOf(MSG_YES));
-            } else if (LOG_MSG_DEST_SUPRRESS.equals(logdest)) {
-                // if 'suppress' set both log and display to false
-                ovent.setEventLog(String.valueOf(MSG_NO));
-                ovent.setEventDisplay(String.valueOf(MSG_NO));
-            }
-        } else {
-            ovent.setEventLogMsg(null);
-            ovent.setEventLog(String.valueOf(MSG_YES));
-            ovent.setEventDisplay(String.valueOf(MSG_YES));
-        }
+		// eventSuppressedCount
+		ovent.setEventSuppressedCount(null);
 
-        // eventSeverity
-        ovent.setEventSeverity(OnmsSeverity.get(event.getSeverity()).getId());
+		// eventOperInstruct
+		ovent.setEventOperInstruct(EventDatabaseConstants.format(event.getOperinstruct(), 0));
 
-        // eventPathOutage
-        ovent.setEventPathOutage(event.getPathoutage() != null ? EventDatabaseConstants.format(event.getPathoutage(), EVENT_PATHOUTAGE_FIELD_SIZE) : null);
+		// eventAutoAction
+		ovent.setEventAutoAction(
+				event.getAutoactionCount() > 0 ? AutoAction.format(event.getAutoaction(), EVENT_AUTOACTION_FIELD_SIZE)
+						: null);
 
-        // eventCorrelation
-        ovent.setEventCorrelation(event.getCorrelation() != null ? Correlation.format(event.getCorrelation(), EVENT_CORRELATION_FIELD_SIZE) : null);
+		// eventOperAction / eventOperActionMenuText
+		if (event.getOperactionCount() > 0) {
+			final List<Operaction> a = new ArrayList<Operaction>();
+			final List<String> b = new ArrayList<String>();
 
-        // eventSuppressedCount
-        ovent.setEventSuppressedCount(null);
+			for (final Operaction eoa : event.getOperactionCollection()) {
+				a.add(eoa);
+				b.add(eoa.getMenutext());
+			}
+			ovent.setEventOperAction(OperatorAction.format(a, EVENT_OPERACTION_FIELD_SIZE));
+			ovent.setEventOperActionMenuText(EventDatabaseConstants.format(b, EVENT_OPERACTION_FIELD_SIZE));
+		} else {
+			ovent.setEventOperAction(null);
+			ovent.setEventOperActionMenuText(null);
+		}
 
-        // eventOperInstruct
-        ovent.setEventOperInstruct(EventDatabaseConstants.format(event.getOperinstruct(), 0));
+		// eventNotification, this column no longer needed
+		ovent.setEventNotification(null);
 
-        // eventAutoAction
-        ovent.setEventAutoAction(event.getAutoactionCount() > 0 ? AutoAction.format(event.getAutoaction(), EVENT_AUTOACTION_FIELD_SIZE) : null);
+		// eventTroubleTicket / eventTroubleTicket state
+		if (event.getTticket() != null) {
+			ovent.setEventTTicket(
+					EventDatabaseConstants.format(event.getTticket().getContent(), EVENT_TTICKET_FIELD_SIZE));
+			ovent.setEventTTicketState("on".equals(event.getTticket().getState()) ? 1 : 0);
+		} else {
+			ovent.setEventTTicket(null);
+			ovent.setEventTTicketState(null);
+		}
 
-        // eventOperAction / eventOperActionMenuText
-        if (event.getOperactionCount() > 0) {
-            final List<Operaction> a = new ArrayList<Operaction>();
-            final List<String> b = new ArrayList<String>();
+		// eventForward
+		ovent.setEventForward(
+				event.getForwardCount() > 0 ? Forward.format(event.getForward(), EVENT_FORWARD_FIELD_SIZE) : null);
 
-            for (final Operaction eoa : event.getOperactionCollection()) {
-                a.add(eoa);
-                b.add(eoa.getMenutext());
-            }
-            ovent.setEventOperAction(OperatorAction.format(a, EVENT_OPERACTION_FIELD_SIZE));
-            ovent.setEventOperActionMenuText(EventDatabaseConstants.format(b, EVENT_OPERACTION_FIELD_SIZE));
-        } else {
-            ovent.setEventOperAction(null);
-            ovent.setEventOperActionMenuText(null);
-        }
+		// eventmouseOverText
+		ovent.setEventMouseOverText(
+				EventDatabaseConstants.format(event.getMouseovertext(), EVENT_MOUSEOVERTEXT_FIELD_SIZE));
 
-        // eventNotification, this column no longer needed
-        ovent.setEventNotification(null);
+		// eventAckUser
+		if (event.getAutoacknowledge() != null && "on".equals(event.getAutoacknowledge().getState())) {
+			ovent.setEventAckUser(
+					EventDatabaseConstants.format(event.getAutoacknowledge().getContent(), EVENT_ACKUSER_FIELD_SIZE));
+			// eventAckTime - if autoacknowledge is present,
+			// set time to event create time
+			ovent.setEventAckTime(ovent.getEventCreateTime());
+		} else {
+			ovent.setEventAckUser(null);
+			ovent.setEventAckTime(null);
+		}
+		return ovent;
+	}
 
-        // eventTroubleTicket / eventTroubleTicket state
-        if (event.getTticket() != null) {
-            ovent.setEventTTicket(EventDatabaseConstants.format(event.getTticket().getContent(), EVENT_TTICKET_FIELD_SIZE));
-            ovent.setEventTTicketState("on".equals(event.getTticket().getState()) ? 1 : 0);
-        } else {
-            ovent.setEventTTicket(null);
-            ovent.setEventTTicketState(null);
-        }
+	public void setTransactionManager(TransactionOperations transactionManager) {
+		m_transactionManager = transactionManager;
+	}
 
-        // eventForward
-        ovent.setEventForward(event.getForwardCount() > 0 ? Forward.format(event.getForward(), EVENT_FORWARD_FIELD_SIZE) : null);
+	@Override
+	public void start(final Future<Void> startedResult) throws Exception {
+		running = new AtomicBoolean(true);
 
-        // eventmouseOverText
-        ovent.setEventMouseOverText(EventDatabaseConstants.format(event.getMouseovertext(), EVENT_MOUSEOVERTEXT_FIELD_SIZE));
+		hibernateEventBus = vertx.eventBus();
 
-        // eventAckUser
-        if (event.getAutoacknowledge() != null && "on".equals(event.getAutoacknowledge().getState())) {
-            ovent.setEventAckUser(EventDatabaseConstants.format(event.getAutoacknowledge().getContent(), EVENT_ACKUSER_FIELD_SIZE));
-            // eventAckTime - if autoacknowledge is present,
-            // set time to event create time
-            ovent.setEventAckTime(ovent.getEventCreateTime());
-        } else {
-            ovent.setEventAckUser(null);
-            ovent.setEventAckTime(null);
-        }
-        return ovent;
-    }
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
+			try {
 
-    public void setTransactionManager(TransactionOperations transactionManager) {
-        m_transactionManager = transactionManager;
-    }
-    
-    @Override
-  	public void start(final Future<Void> startedResult) throws Exception {
-  		running = new AtomicBoolean(true);
+				startedResult.complete();
+				consume();
 
-  		hibernateEventBus=vertx.eventBus();
-  		
-  		backgroundConsumer = Executors.newSingleThreadExecutor();
-  		backgroundConsumer.submit(() -> {
-  			try {
+			} catch (Exception ex) {
+				String error = "Failed to startup";
+				startedResult.fail(ex);
+			}
+		});
+	}
 
-  				startedResult.complete();
-  				consume();
+	private void consume() {
+		while (running.get()) {
+			try {
+				MessageConsumer<Log> broadCastEventConsumer = hibernateEventBus
+						.consumer(HIBERNATE_EVENTD_CONSUMER_ADDRESS);
+				broadCastEventConsumer.handler(message -> {
 
-  			} catch (Exception ex) {
-  				String error = "Failed to startup";
-  				startedResult.fail(ex);
-  			}
-  		});
-  	}
-
-  	private void consume() {
-  		while (running.get()) {
-  			try {
-  				MessageConsumer<Log> broadCastEventConsumer = hibernateEventBus
-  						.consumer(HIBERNATE_EVENTD_CONSUMER_ADDRESS);
-  				broadCastEventConsumer.handler(message -> {
-
-  					try {
-  						process(message.body());
-  						 hibernateEventBus.send(BROADCAST_EVENTD_CONSUMER_ADDRESS, m_eventlog);
-  					} catch (EventProcessorException e) {
-  						e.printStackTrace();
-  					}
-  				});
-  			} catch (Exception ex) {
-  			}
-  		}
-  	}
+					try {
+						process(message.body());
+						hibernateEventBus.send(BROADCAST_EVENTD_CONSUMER_ADDRESS, m_eventLog);
+					} catch (EventProcessorException e) {
+						e.printStackTrace();
+					}
+				});
+			} catch (Exception ex) {
+			}
+		}
+	}
 }
