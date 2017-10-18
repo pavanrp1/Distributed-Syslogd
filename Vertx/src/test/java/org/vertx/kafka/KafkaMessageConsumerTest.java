@@ -6,9 +6,9 @@ import java.io.InputStream;
 import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 import org.apache.commons.io.IOUtils;
-import org.easymock.EasyMock;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -19,21 +19,13 @@ import org.opennms.core.test.ConfigurationTestUtils;
 import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
-import org.opennms.netmgt.dao.api.DistPollerDao;
-import org.opennms.netmgt.dao.api.EventDao;
-import org.opennms.netmgt.dao.api.MonitoringSystemDao;
-import org.opennms.netmgt.dao.api.ServiceTypeDao;
 import org.opennms.netmgt.dao.hibernate.DistPollerDaoHibernate;
 import org.opennms.netmgt.dao.hibernate.EventDaoHibernate;
 import org.opennms.netmgt.dao.hibernate.InterfaceToNodeCacheDaoImpl;
-import org.opennms.netmgt.dao.hibernate.MonitoredServiceDaoHibernate;
 import org.opennms.netmgt.dao.hibernate.MonitoringSystemDaoHibernate;
 import org.opennms.netmgt.dao.hibernate.NodeDaoHibernate;
 import org.opennms.netmgt.dao.hibernate.ServiceTypeDaoHibernate;
 import org.opennms.netmgt.dao.mock.MockDistPollerDao;
-import org.opennms.netmgt.dao.mock.MockEventDao;
-import org.opennms.netmgt.dao.mock.MockNodeDao;
-import org.opennms.netmgt.dao.mock.MockServiceTypeDao;
 import org.opennms.netmgt.eventd.DefaultEventHandlerImpl;
 import org.opennms.netmgt.eventd.EventExpander;
 import org.opennms.netmgt.eventd.EventIpcManagerDefaultImpl;
@@ -216,13 +208,35 @@ public class KafkaMessageConsumerTest {
 		try {
 
 			Async asyncRunnable = context.async();
-			vertx = Vertx.vertx(vxOptions);
-			vertx.deployVerticle(kafkaMessageConsumer);
-			vertx.deployVerticle(syslogSinkConsumer);
-			vertx.deployVerticle(eventImpl);
-			vertx.deployVerticle(eventExpander);
-			vertx.deployVerticle(hibernateWriter);
-			vertx.deployVerticle(eventBroadCaster);
+			vxOptions.setClustered(true);
+			// vertx = Vertx.vertx();
+			Consumer<Vertx> runner = vertx -> {
+				vertx.deployVerticle(kafkaMessageConsumer);
+				vertx.deployVerticle(SyslogSinkConsumer.class.getName(),new DeploymentOptions().setInstances(5));
+				vertx.deployVerticle(syslogSinkConsumer);
+				// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
+				// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
+				// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
+				// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
+				// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
+				// vertx.deployVerticle(eventImpl);
+				// vertx.deployVerticle(eventExpander);
+				// vertx.deployVerticle(hibernateWriter);
+				// vertx.deployVerticle(eventBroadCaster);
+			};
+			if (vxOptions.isClustered()) {
+				Vertx.clusteredVertx(vxOptions, res -> {
+					if (res.succeeded()) {
+						vertx = res.result();
+						runner.accept(vertx);
+					} else {
+						res.cause().printStackTrace();
+					}
+				});
+			} else {
+				vertx = Vertx.vertx(vxOptions);
+				runner.accept(vertx);
+			}
 			asyncRunnable.awaitSuccess();
 		} catch (Exception e) {
 			e.printStackTrace();

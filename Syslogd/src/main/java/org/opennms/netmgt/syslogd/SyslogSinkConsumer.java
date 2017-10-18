@@ -52,14 +52,19 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 
+import org.apache.commons.io.IOUtils;
 import org.opennms.core.ipc.sink.api.MessageConsumer;
 import org.opennms.core.ipc.sink.api.MessageConsumerManager;
 import org.opennms.core.logging.Logging;
 import org.opennms.core.logging.Logging.MDCCloseable;
+import org.opennms.core.test.ConfigurationTestUtils;
 import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.SyslogdConfig;
+import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.dao.api.DistPollerDao;
+import org.opennms.netmgt.dao.hibernate.DistPollerDaoHibernate;
+import org.opennms.netmgt.dao.mock.MockDistPollerDao;
 import org.opennms.netmgt.events.api.EventForwarder;
 import org.opennms.netmgt.syslogd.BufferParser.BufferParserFactory;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
@@ -171,18 +176,27 @@ public class SyslogSinkConsumer extends AbstractVerticle
 
 	@Override
 	public void start(final Future<Void> startedResult) throws Exception {
-
+		
+		System.out.println("Hi");
 		syslogdEventBus = vertx.eventBus();
 
-		// to ensure codec register is at start and its only once
-		if (isMessageCodeRegistered) {
-			syslogdEventBus.registerDefaultCodec(Log.class, new SyslogdMessageCodec());
-			isMessageCodeRegistered = false;
-		}
+		// syslogSinkConsumer = new SyslogSinkConsumer();
+		// SyslogSinkConsumer.eventCount = 0;
+		grokPatternsList = SyslogSinkConsumer.readPropertiesInOrderFrom(
+				ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
+		distPollerDao = new DistPollerDaoHibernate();
+		syslogdConfig = loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml");
+
 		concurrentRunning = new AtomicBoolean(true);
 
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
+
+			// to ensure codec register is at start and its only once
+			if (isMessageCodeRegistered) {
+				syslogdEventBus.registerDefaultCodec(Log.class, new SyslogdMessageCodec());
+				isMessageCodeRegistered = false;
+			}
 
 			startedResult.complete();
 			consumeFromKafkaEventBus();
@@ -243,6 +257,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 						parse(message.getBytes()));
 				events.addEvent(re.getEvent());
 				eventCount++;
+				System.out.println("Events at consumer " + eventCount);
 			} catch (final UnsupportedEncodingException e) {
 				LOG.info("Failure to convert package", e);
 			} catch (final MessageDiscardedException e) {
@@ -339,6 +354,18 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		grokPatternsList = new ArrayList<String>(grookSet);
 		reader.close();
 		return grokPatternsList;
+	}
+
+	private SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
+		InputStream stream = null;
+		try {
+			stream = ConfigurationTestUtils.getInputStreamForResource(this, configuration);
+			return new SyslogdConfigFactory(stream);
+		} finally {
+			if (stream != null) {
+				IOUtils.closeQuietly(stream);
+			}
+		}
 	}
 
 }

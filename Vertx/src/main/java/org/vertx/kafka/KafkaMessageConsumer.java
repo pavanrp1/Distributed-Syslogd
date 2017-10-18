@@ -62,7 +62,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 
 	private boolean isMessageCodeRegistered = true;
 
-	private int count=1;
+	private int count = 1;
 
 	public static String getSyslogdConsumerAddress() {
 		return SYSLOGD_CONSUMER_ADDRESS;
@@ -131,7 +131,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 		} catch (Exception ex) {
 			String error = "Failed to startup";
 			logger.error(error, ex);
-			kafkaEventBus.send(ConfigConstants.CONSUMER_ERROR_TOPIC,
+			kafkaEventBus.publish(ConfigConstants.CONSUMER_ERROR_TOPIC,
 					getErrorString("Failed to startup", ex.getMessage()));
 			startedResult.fail(ex);
 		}
