@@ -72,6 +72,7 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 
 	private ExecutorService backgroundConsumer;
 	private EventBus broadCastEventBus;
+	public static int eventWriter = 0;
 
 	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
 
@@ -174,7 +175,9 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 				broadCastEventConsumer.handler(message -> {
 
 					try {
-						process(message.body(), true);
+						process(message.body());
+						eventWriter++;
+						System.out.println("Event at broadcaster " + eventWriter);
 					} catch (EventProcessorException e) {
 						e.printStackTrace();
 					}

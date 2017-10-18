@@ -870,7 +870,7 @@ public final class EventExpander extends AbstractVerticle
 				eventExanpderConsumer.handler(message -> {
 
 					try {
-						process(message.body(), true);
+						process(message.body());
 					} catch (EventProcessorException e) {
 						e.printStackTrace();
 					}

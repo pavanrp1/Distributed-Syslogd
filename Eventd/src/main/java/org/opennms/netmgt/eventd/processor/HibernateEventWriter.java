@@ -38,6 +38,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
+import org.mockito.Mockito;
 import org.opennms.netmgt.dao.api.DistPollerDao;
 import org.opennms.netmgt.dao.api.EventDao;
 import org.opennms.netmgt.dao.api.MonitoringSystemDao;
@@ -107,28 +108,45 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
     public static final String LOG_MSG_DEST_LOG_ONLY = "logonly";
     public static final String LOG_MSG_DEST_DISPLAY_ONLY = "displayonly";
     
-    @Autowired
     private TransactionOperations m_transactionManager;
     
     @Autowired
     private NodeDao nodeDao;
     
-    @Autowired
     private MonitoringSystemDao monitoringSystemDao;
 
-    @Autowired
+    public void setMonitoringSystemDao(MonitoringSystemDao monitoringSystemDao) {
+		this.monitoringSystemDao = monitoringSystemDao;
+	}
+
     private DistPollerDao distPollerDao;
     
-    @Autowired
+    public void setDistPollerDao(DistPollerDao distPollerDao) {
+		this.distPollerDao = distPollerDao;
+	}
     private EventDao eventDao;
 
-    @Autowired
-    private ServiceTypeDao serviceTypeDao;
+    public void setEventDao(EventDao eventDao) {
+		this.eventDao = eventDao;
+	}
 
-    @Autowired
+	public void setServiceTypeDao(ServiceTypeDao serviceTypeDao) {
+		this.serviceTypeDao = serviceTypeDao;
+	}
+
+	private ServiceTypeDao serviceTypeDao;
+
     private EventUtil eventUtil;
 
-    private final Timer writeTimer;
+    public EventUtil getEventUtil() {
+		return eventUtil;
+	}
+
+	public void setEventUtil(EventUtil eventUtil) {
+		this.eventUtil = eventUtil;
+	}
+
+	private final Timer writeTimer;
     
 	private AtomicBoolean running;
 
@@ -199,7 +217,7 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
             		m_eventlog=eventLog;
                 return;
             }
-
+            m_eventlog=eventLog;
             // Time the transaction and insertions
             try (Context context = writeTimer.time()) {
                 final AtomicReference<EventProcessorException> exception = new AtomicReference<>();
@@ -208,7 +226,6 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
                     protected void doInTransactionWithoutResult(TransactionStatus status) {
                         for (Event eachEvent : eventsToPersist) {
                             try {
-                            		m_eventlog=eventLog;
                                 process(eventLog.getHeader(), eachEvent);
                             } catch (EventProcessorException e) {
                                 exception.set(e);
@@ -296,9 +313,9 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
             ovent.setDistPoller(distPollerDao.get(eventHeader.getDpName()));
         }
         // Otherwise, use the event's distPoller
-        if (ovent.getDistPoller() == null && event.getDistPoller() != null && !"".equals(event.getDistPoller().trim())) {
-            ovent.setDistPoller(monitoringSystemDao.get(event.getDistPoller()));
-        }
+//        if (ovent.getDistPoller() == null && event.getDistPoller() != null && !"".equals(event.getDistPoller().trim())) {
+//            ovent.setDistPoller(monitoringSystemDao.get(event.getDistPoller()));
+//        }
         // And if both are unavailable, use the local system as the event's source system
         if (ovent.getDistPoller() == null) {
             ovent.setDistPoller(distPollerDao.whoami());
@@ -457,7 +474,7 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
   				broadCastEventConsumer.handler(message -> {
 
   					try {
-  						process(message.body(), true);
+  						process(message.body());
   						 hibernateEventBus.send(BROADCAST_EVENTD_CONSUMER_ADDRESS, m_eventlog);
   					} catch (EventProcessorException e) {
   						e.printStackTrace();

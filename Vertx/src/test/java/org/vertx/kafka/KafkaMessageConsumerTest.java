@@ -7,11 +7,8 @@ import java.net.InetAddress;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.transaction.TransactionManager;
-
 import org.apache.commons.io.IOUtils;
 import org.easymock.EasyMock;
-import org.eclipse.persistence.internal.jpa.transaction.TransactionManagerImpl;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -22,21 +19,26 @@ import org.opennms.core.test.ConfigurationTestUtils;
 import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
-import org.opennms.netmgt.dao.DatabasePopulator;
+import org.opennms.netmgt.dao.api.DistPollerDao;
+import org.opennms.netmgt.dao.api.EventDao;
+import org.opennms.netmgt.dao.api.ServiceTypeDao;
+import org.opennms.netmgt.dao.hibernate.EventDaoHibernate;
 import org.opennms.netmgt.dao.hibernate.InterfaceToNodeCacheDaoImpl;
 import org.opennms.netmgt.dao.mock.MockDistPollerDao;
+import org.opennms.netmgt.dao.mock.MockEventDao;
+import org.opennms.netmgt.dao.mock.MockServiceTypeDao;
 import org.opennms.netmgt.eventd.DefaultEventHandlerImpl;
 import org.opennms.netmgt.eventd.EventExpander;
 import org.opennms.netmgt.eventd.EventIpcManagerDefaultImpl;
 import org.opennms.netmgt.eventd.EventUtilDaoImpl;
 import org.opennms.netmgt.eventd.processor.EventIpcBroadcastProcessor;
 import org.opennms.netmgt.eventd.processor.HibernateEventWriter;
+import org.opennms.netmgt.eventd.processor.SpringConfiguration;
 import org.opennms.netmgt.syslogd.SyslogSinkConsumer;
 import org.opennms.netmgt.syslogd.SyslogSinkModule;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.springframework.core.io.FileSystemResource;
-import org.springframework.transaction.support.TransactionOperations;
 import org.vertx.kafka.util.ConfigConstants;
 import org.vertx.kafka.util.MockInterfaceCacheDao;
 
@@ -109,7 +111,7 @@ public class KafkaMessageConsumerTest {
 
 	}
 
-	private void EventImplProperties() throws IOException {
+	private void EventImplProperties() throws Exception {
 		eventImpl = new EventIpcManagerDefaultImpl(metric);
 
 		DefaultEventHandlerImpl defaultEventHandler = new DefaultEventHandlerImpl(metric);
@@ -133,8 +135,14 @@ public class KafkaMessageConsumerTest {
 		eventBroadCaster.setEventIpcBroadcaster(eventImpl);
 
 		hibernateWriter = new HibernateEventWriter(metric);
-		DatabasePopulator pop = new DatabasePopulator();
-		hibernateWriter.setTransactionManager(pop.getTransactionTemplate());
+		// DatabasePopulator pop = new DatabasePopulator();
+		SpringConfiguration infra = new SpringConfiguration();
+		hibernateWriter.setEventUtil(eventutil);
+		hibernateWriter.setDistPollerDao(new MockDistPollerDao());
+		hibernateWriter.setServiceTypeDao(new MockServiceTypeDao());
+		hibernateWriter.setEventDao(new MockEventDao());
+		hibernateWriter
+				.setTransactionManager(infra.transactionTemplate(infra.transactionManager(infra.getSessionFactory())));
 	}
 
 	private SyslogSinkConsumer SyslogSinkProperties() throws Exception {
@@ -198,7 +206,7 @@ public class KafkaMessageConsumerTest {
 		try {
 
 			Async asyncRunnable = context.async();
-			vertx = Vertx.vertx(vxOptions);
+			vertx = Vertx.vertx();
 			vertx.deployVerticle(kafkaMessageConsumer);
 			vertx.deployVerticle(syslogSinkConsumer);
 			vertx.deployVerticle(eventImpl);
