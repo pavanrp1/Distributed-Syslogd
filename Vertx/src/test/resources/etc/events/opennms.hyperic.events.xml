@@ -7,7 +7,7 @@
             &lt;p>Alert reason: %parm[action.shortReason]% &lt;/p>
             &lt;p>Alert reason: %parm[action.longReason]% &lt;/p>
             &lt;p>&lt;a href=&quot;%parm[resource.url]%&quot; > %parm[resource.name]% &lt;/a>&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>&lt;a href=&quot;%parm[alert.url]%&quot; > Hyperic Alert: %parm[action.longReason]% &lt;/a>&lt;/p>
         </logmsg>
       <severity>Minor</severity>

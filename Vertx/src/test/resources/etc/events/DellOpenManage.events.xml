@@ -55,7 +55,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                 DellOpenManage Event: Server Administrator has initialized.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -140,7 +140,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                 DellOpenManage Event: Thermal Shutdown
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -225,7 +225,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Automatic system recovery (ASR) was performed
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -310,7 +310,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: User has initiated host system reset
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -395,7 +395,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: New power peak detected
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -480,7 +480,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: System software event occured
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -565,7 +565,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Temperature Now Normal.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -650,7 +650,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: High Temperature threshold reached.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -735,7 +735,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Temperature Probe Failure.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -820,7 +820,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Temperature Probe Error: non-recoverable value.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -905,7 +905,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Cooling Device Sensor Now Normal.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -990,7 +990,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Cooling Device Warning Alert
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1075,7 +1075,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Cooling Device Error: Failure value.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1160,7 +1160,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Cooling Device Error: non-recoverable value.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1245,7 +1245,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Voltage Now Normal
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1330,7 +1330,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Voltage Level Warning
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1415,7 +1415,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Voltage Failured
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1500,7 +1500,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Voltage Probe Error: non-recoverable value
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1585,7 +1585,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Amperage Now Normal.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1670,7 +1670,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Amperage at Warning Level
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1755,7 +1755,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Amperage at Failure Value.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1840,7 +1840,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Amperage Probe Failure: non-recoverable value
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -1925,7 +1925,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Chassis Intrusion Alert now cleared.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2010,7 +2010,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Chassis Intrusion detected.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2095,7 +2095,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Redundancy has returned to normal.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2180,7 +2180,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Redundancy degraded
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2265,7 +2265,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Redundancy Lost
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2350,7 +2350,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Power Supply now Normal
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2435,7 +2435,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Power Supply Warning
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2520,7 +2520,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Power Supply Failure
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2605,7 +2605,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Memory Device Warning
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2690,7 +2690,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Memory Device Failure
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2775,7 +2775,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Memory Device Status is non-recoverable
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2860,7 +2860,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Fan Enclosure insertion.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -2945,7 +2945,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Fan Enclosure Removal
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3030,7 +3030,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Extended Fan Enclosure Removal
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3116,7 +3116,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: AC Power Failure - non-redundant
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3201,7 +3201,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: AC Power Normal
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3286,7 +3286,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: AC Power Failure
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3371,7 +3371,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Log Size Now Normal
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3456,7 +3456,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Log Size Nearly Full
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3541,7 +3541,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Log Size Full
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3626,7 +3626,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Processor device status has returned to normal
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3711,7 +3711,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Processor device status has detected a warning
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3796,7 +3796,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Processor device status has detected a failure
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3881,7 +3881,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: ;Device added to system
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -3966,7 +3966,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Device removed from system
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -4051,7 +4051,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Device configuration error detected
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -4136,7 +4136,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Battery status is now normal.
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -4221,7 +4221,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Battery status warning
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -4306,7 +4306,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: Battery failure
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%
@@ -4391,7 +4391,7 @@
 
 		alertData&lt;/b>&lt;/td>&lt;td>
 		%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		DellOpenManage Event: SD Card failure
 		alertSystem=%parm[#1]%
 		alertTableIndexOID=%parm[#2]%

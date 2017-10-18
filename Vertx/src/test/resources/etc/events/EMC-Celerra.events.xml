@@ -23,7 +23,7 @@ serverity and a text description of the event.&lt;/p>&lt;table>
 
 	celEvent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			celReboot trap received 
 			celEvent=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -54,7 +54,7 @@ missing.&lt;/p>&lt;table>
 
 	celEvent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			celMasterCtlFault trap received 
 			celEvent=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -83,7 +83,7 @@ failure.&lt;/p>&lt;table>
 
 	celEvent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			celHWFailure trap received 
 			celEvent=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -112,7 +112,7 @@ reason code.&lt;/p>&lt;table>
 
 	celEvent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			celSlotStale trap received 
 			celEvent=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -141,7 +141,7 @@ slot.&lt;/p>&lt;table>
 
 	celEvent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			celSlotPanicked trap received 
 			celEvent=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -170,7 +170,7 @@ failure.&lt;/p>&lt;table>
 
 	celEvent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			celIntfFailure trap received 
 			celEvent=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -198,7 +198,7 @@ failure.&lt;/p>&lt;table>
 
 	celEvent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			celAAF trap received 
 			celEvent=%parm[#1]%&lt;/p>
 		</logmsg>

@@ -11,7 +11,7 @@
       <descr>&lt;p>A coldStart trap signifies that the sending protocol entity is reinitializing itself such that the
             agent's configuration or the protocol
             entity implementation may be altered.&lt;/p></descr>
-      <logmsg dest="logndisplay">Agent Up with Possible Changes (coldStart Trap) enterprise:%id% (%id%)
+      <logmsg dest="donotpersist">Agent Up with Possible Changes (coldStart Trap) enterprise:%id% (%id%)
             args(%parm[##]%):%parm[all]%
         </logmsg>
       <severity>Normal</severity>
@@ -28,7 +28,7 @@
       <descr>&lt;p>A warmStart trap signifies that the sending protocol entity is reinitializing itself such that
             neither the agent configuration nor the
             protocol entity implementation is altered.&lt;/p></descr>
-      <logmsg dest="logndisplay">Agent Up with No Changes (warmStart Trap) enterprise:%id% (%id%)
+      <logmsg dest="donotpersist">Agent Up with No Changes (warmStart Trap) enterprise:%id% (%id%)
             args(%parm[##]%):%parm[all]%
         </logmsg>
       <severity>Normal</severity>
@@ -64,7 +64,7 @@
             &lt;p>IfDescr: %parm[ifDescr]% &lt;/p>
             &lt;p>IfName: %parm[ifName]% &lt;/p>
             &lt;p>IfAlias: %parm[ifAlias]% &lt;/p></descr>
-      <logmsg dest="logndisplay">Agent Interface Down (linkDown Trap) on interface index:%parm[#1]%; ifDescr:
+      <logmsg dest="donotpersist">Agent Interface Down (linkDown Trap) on interface index:%parm[#1]%; ifDescr:
             %parm[ifDescr]%; ifName:%parm[ifName]%; ifAlias:%parm[ifAlias]%
         </logmsg>
       <severity>Minor</severity>
@@ -100,7 +100,7 @@
             &lt;p>IfDescr: %parm[ifDescr]% &lt;/p>
             &lt;p>IfName: %parm[ifName]% &lt;/p>
             &lt;p>IfAlias: %parm[ifAlias]% &lt;/p></descr>
-      <logmsg dest="logndisplay">Agent Interface Up (linkUp Trap) on interface index:%parm[#1]%;
+      <logmsg dest="donotpersist">Agent Interface Up (linkUp Trap) on interface index:%parm[#1]%;
             ifDescr:%parm[ifDescr]%; ifName:%parm[ifName]%; IfAlias:%parm[ifAlias]%
         </logmsg>
       <severity>Normal</severity>
@@ -118,7 +118,7 @@
       <descr>&lt;p>An authentication failure trap signifies that the sending protocol entity is the addressee of a
             protocol message that is not properly
             authenticated.&lt;/p></descr>
-      <logmsg dest="logndisplay">Incorrect Community Name (authenticationFailure Trap) enterprise:%id% (%id%)
+      <logmsg dest="donotpersist">Incorrect Community Name (authenticationFailure Trap) enterprise:%id% (%id%)
             args(%parm[##]%):%parm[all]%
         </logmsg>
       <severity>Warning</severity>
@@ -138,7 +138,7 @@
             peer relationship no longer obtains. The data passed with the event are The name and value of the ifIndex
             egpNeighAddr for the affected
             neighbor.&lt;/p></descr>
-      <logmsg dest="logndisplay">EGP Neighbor Down (egpNeighborLoss Trap) enterprise:%id% (%id%) neighbor %parm[#1]%
+      <logmsg dest="donotpersist">EGP Neighbor Down (egpNeighborLoss Trap) enterprise:%id% (%id%) neighbor %parm[#1]%
         </logmsg>
       <severity>Warning</severity>
    </event>

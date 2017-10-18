@@ -32,7 +32,7 @@ conservation mode.&lt;/p>&lt;table>
                 queueSpaceShortage(3)
                 queueFull(4)
         &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         IronPort Event: resourceConservationMode trap received 
                         resourceConservationReason=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -67,7 +67,7 @@ conservation mode.&lt;/p>&lt;table>
                 queueSpaceShortage(3)
                 queueFull(4)
         &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         IronPort Event: resourceConservationMode trap received 
                         resourceConservationReason=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -105,7 +105,7 @@ powerSupplyStatusChange</event-label>
                 powerSupplyNoAC(3)
                 powerSupplyFaulty(4)
         &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         IronPort Event: powerSupplyStatusChange trap received 
                         powerSupplyStatus=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -139,7 +139,7 @@ powerSupplyStatusChange</event-label>
                 powerSupplyNoAC(3)
                 powerSupplyFaulty(4)
         &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         IronPort Event: powerSupplyStatusChange trap received 
                         powerSupplyStatus=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -170,7 +170,7 @@ threshold.&lt;/p>&lt;table>
         temperatureName&lt;/b>&lt;/td>&lt;td>
        
 %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         IronPort Event: highTemperature trap received 
                         temperatureName=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -200,7 +200,7 @@ fanFailure</event-label>
         fanName&lt;/b>&lt;/td>&lt;td>
        
 %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         IronPort Event: fanFailure trap received 
                         fanName=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -230,7 +230,7 @@ keyExpiration</event-label>
         keyDescription&lt;/b>&lt;/td>&lt;td>
        
 %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         IronPort Event: keyExpiration trap received 
                         keyDescription=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -261,7 +261,7 @@ etc.)&lt;/p>&lt;table>
         updateServiceName&lt;/b>&lt;/td>&lt;td>
        
 %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         IronPort Event: updateFailure trap received 
                         updateServiceName=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -291,7 +291,7 @@ raidStatusChange</event-label>
         raidID&lt;/b>&lt;/td>&lt;td>
        
 %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         IronPort Event: raidStatusChange trap received 
                         raidID=%parm[#1]%&lt;/p>
                 </logmsg>

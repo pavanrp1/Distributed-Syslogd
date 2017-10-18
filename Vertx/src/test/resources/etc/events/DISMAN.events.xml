@@ -23,7 +23,7 @@
       <descr>&lt;p>The Net-SNMP agent has detected that free space on %parm[#6]% is below
 threshold. The error message is &lt;strong>%parm[#8]%&lt;/strong>.
 &lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Net-SNMP Event: A dskTable threshold has been exceeded 
                         %parm[#6]%&lt;/p>
                 </logmsg>
@@ -54,7 +54,7 @@ threshold. The error message is &lt;strong>%parm[#8]%&lt;/strong>.
       <descr>&lt;p>The Net-SNMP agent has detected an error with the %parm[#6]% process.
 The error message is &lt;strong>%parm[#7]%&lt;/strong>.
 &lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Net-SNMP Event: A procTable alert has fired for process 
                         %parm[#6]%&lt;/p>
                 </logmsg>
@@ -85,7 +85,7 @@ The error message is &lt;strong>%parm[#7]%&lt;/strong>.
       <descr>&lt;p>The Net-SNMP agent has detected an error with the configured extend/exec script %parm[#6]%.
 The error message is &lt;strong>%parm[#7]%&lt;/strong>.
 &lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Net-SNMP Event: A extTable alert has fired for script 
                         %parm[#6]%&lt;/p>
                 </logmsg>
@@ -116,7 +116,7 @@ The error message is &lt;strong>%parm[#7]%&lt;/strong>.
       <descr>&lt;p>The Net-SNMP agent has detected an error with the configured logMatchTable entry %parm[#6]%.
 The log file %parm[#7]% contains entries matching the pattern &quot;%parm[#8]%&quot;.
 &lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Net-SNMP Event: A logMatchTable alert has fired for entry %parm[#6]%
                         in log file %parm[#7]%&lt;/p>
                 </logmsg>
@@ -147,7 +147,7 @@ The log file %parm[#7]% contains entries matching the pattern &quot;%parm[#8]%&q
       <descr>&lt;p>The Net-SNMP agent has detected an error with the %parm[#6]% process.
 The error message is &lt;strong>%parm[#7]%&lt;/strong>.
 &lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Net-SNMP Event: A procTable rising alert has generated for process 
                         %parm[#6]%&lt;/p>
                 </logmsg>
@@ -177,7 +177,7 @@ The error message is &lt;strong>%parm[#7]%&lt;/strong>.
       <event-label>NET-SNMP: A procTable Falling Alert has been generated.</event-label>
       <descr>&lt;p>The Net-SNMP agent has detected that errors with the %parm[#6]% process are now resolved.
 &lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Net-SNMP Event: A procTable falling alert has generated for process 
                         %parm[#6]%&lt;/p>
                 </logmsg>
@@ -209,7 +209,7 @@ The error message is &lt;strong>%parm[#7]%&lt;/strong>.
 The filesystem is %parm[#7]% percent full.
 The error message is &lt;strong>%parm[#8]%&lt;/strong>.
 &lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Net-SNMP Event: A dskTable rising alert has generated for filesystem
                         %parm[#6]% (%parm[#7]% percent full)&lt;/p>
                 </logmsg>
@@ -240,7 +240,7 @@ The error message is &lt;strong>%parm[#8]%&lt;/strong>.
       <descr>&lt;p>The Net-SNMP agent has detected that errors with the filesystem mounted on %parm[#6]% are corrected.
 The filesystem is now %parm[#7]% percent full.
 &lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Net-SNMP Event: A dskTable falling alert has generated for filesystem %parm[#6]%. It is now %parm[#7]% percent full&lt;/p>
                 </logmsg>
       <severity>Normal</severity>
@@ -286,7 +286,7 @@ instances has fired, for triggers with mteTriggerType
 
         mteHotValue&lt;/b>&lt;/td>&lt;td>
         %parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Cisco Event: mteTriggerFired trap received
                         mteHotTrigger=%parm[#1]%
                         mteHotTargetName=%parm[#2]%
@@ -334,7 +334,7 @@ with mteTriggerType 'threshold'.&lt;/p>&lt;table>
 
         mteHotValue&lt;/b>&lt;/td>&lt;td>
         %parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Cisco Event: mteTriggerRising trap received
                         mteHotTrigger=%parm[#1]%
                         mteHotTargetName=%parm[#2]%
@@ -383,7 +383,7 @@ with mteTriggerType 'threshold'.&lt;/p>&lt;table>
 
         mteHotValue&lt;/b>&lt;/td>&lt;td>
         %parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Cisco Event: mteTriggerFalling trap received
                         mteHotTrigger=%parm[#1]%
                         mteHotTargetName=%parm[#2]%
@@ -463,7 +463,7 @@ be found otherwise.&lt;/p>&lt;table>
                 notWritable(17)
                 inconsistentName(18)
         &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Cisco Event: mteTriggerFailure trap received
                         mteHotTrigger=%parm[#1]%
                         mteHotTargetName=%parm[#2]%
@@ -544,7 +544,7 @@ be found otherwise.&lt;/p>&lt;table>
                 notWritable(17)
                 inconsistentName(18)
         &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         Cisco Event: mteEventSetFailure trap received
                         mteHotTrigger=%parm[#1]%
                         mteHotTargetName=%parm[#2]%

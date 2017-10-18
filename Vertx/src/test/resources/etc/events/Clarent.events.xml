@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/gatewayIsDown</uei>
       <event-label>CLARENT-MIB defined trap event: gatewayIsDown</event-label>
       <descr>&lt;p>Clarent Gateway is down&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gatewayIsDown trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -40,7 +40,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/restartGWSuccess</uei>
       <event-label>CLARENT-MIB defined trap event: restartGWSuccess</event-label>
       <descr>&lt;p>Clarent Gateway restarted successfully&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: restartGWSuccess trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -63,7 +63,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/restartGWFailed</uei>
       <event-label>CLARENT-MIB defined trap event: restartGWFailed</event-label>
       <descr>&lt;p>Clarent Gateway failed to restart&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: restartGWFailed trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -86,7 +86,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/ccIsDown</uei>
       <event-label>CLARENT-MIB defined trap event: ccIsDown</event-label>
       <descr>&lt;p>Clarent Command Center is down&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: ccIsDown trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -109,7 +109,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/restartCCSuccess</uei>
       <event-label>CLARENT-MIB defined trap event: restartCCSuccess</event-label>
       <descr>&lt;p>Clarent Command Center restarted successfully&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: restartCCSuccess trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -132,7 +132,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/restartCCFailed</uei>
       <event-label>CLARENT-MIB defined trap event: restartCCFailed</event-label>
       <descr>&lt;p>Clarent Command Center failed to restart&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: restartCCFailed trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -159,7 +159,7 @@
 
 	serverIpAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: lostCC trap received 
 			serverIpAddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -187,7 +187,7 @@
 
 	serverIpAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: connectCCFailed trap received 
 			serverIpAddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -215,7 +215,7 @@
 
 	portIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: portOutOfService trap received 
 			portIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -243,7 +243,7 @@
 
 	portIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: portInService trap received 
 			portIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -267,7 +267,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/dialUpNoVoicePort</uei>
       <event-label>CLARENT-MIB defined trap event: dialUpNoVoicePort</event-label>
       <descr>&lt;p>Clarent Gateway cannot dial number; no voice port is available&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: dialUpNoVoicePort trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -290,7 +290,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/connectNoVoicePort</uei>
       <event-label>CLARENT-MIB defined trap event: connectNoVoicePort</event-label>
       <descr>&lt;p>Clarent Gateway cannot connect to another gateway; not responding&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: connectNoVoicePort trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -317,7 +317,7 @@
 
 	serverIpAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gatewayConnect trap received 
 			serverIpAddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -345,7 +345,7 @@
 
 	serverIpAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gatewayDisconnect trap received 
 			serverIpAddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -373,7 +373,7 @@
 
 	gwId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gwNotRegistered trap received 
 			gwId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -401,7 +401,7 @@
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: callRatingFailed trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -425,7 +425,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/invalidCCLicense</uei>
       <event-label>CLARENT-MIB defined trap event: invalidCCLicense</event-label>
       <descr>&lt;p>Invalid Command Center license&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: invalidCCLicense trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -448,7 +448,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/validCCTmpLicense</uei>
       <event-label>CLARENT-MIB defined trap event: validCCTmpLicense</event-label>
       <descr>&lt;p>Valid temporary Command Center license&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: validCCTmpLicense trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -471,7 +471,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/ss7LinkUp</uei>
       <event-label>CLARENT-MIB defined trap event: ss7LinkUp</event-label>
       <descr>&lt;p>SS7 link is up&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: ss7LinkUp trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -494,7 +494,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/ss7LinkDown</uei>
       <event-label>CLARENT-MIB defined trap event: ss7LinkDown</event-label>
       <descr>&lt;p>SS7 link is down&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: ss7LinkDown trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -521,7 +521,7 @@
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gwAppShutdown trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -549,7 +549,7 @@
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: resettingDSPBrd trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -577,7 +577,7 @@
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: clrHseCreditSChg trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -605,7 +605,7 @@
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: ccCreditSChg trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -633,7 +633,7 @@
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: validateEGErr trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -657,7 +657,7 @@
       <uei>uei.opennms.org/vendor/Clarent/traps/licRollBack</uei>
       <event-label>CLARENT-MIB defined trap event: licRollBack</event-label>
       <descr>&lt;p>Clarent Command Center license key change rolled back&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: licRollBack trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -717,7 +717,7 @@ Descriptive text string&lt;/p>&lt;table>
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: clarentInfo trap received 
 			trapSeverity=%parm[#1]% 
 			trapClass=%parm[#2]% 
@@ -779,7 +779,7 @@ Error count&lt;/p>&lt;table>
 
 	errorCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: softwareUpdate trap received 
 			packageName=%parm[#1]% 
 			packageOperation=%parm[#2]% 
@@ -810,7 +810,7 @@ Error count&lt;/p>&lt;table>
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: numberIntercept trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -834,7 +834,7 @@ Error count&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Clarent/traps/tpIsDown</uei>
       <event-label>CLARENT-MIB defined trap event: tpIsDown</event-label>
       <descr>&lt;p>Clarent ThroughPacket server is down&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: tpIsDown trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -857,7 +857,7 @@ Error count&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Clarent/traps/restartTPFailed</uei>
       <event-label>CLARENT-MIB defined trap event: restartTPFailed</event-label>
       <descr>&lt;p>Clarent ThroughPacket server failed to restart&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: restartTPFailed trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -880,7 +880,7 @@ Error count&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Clarent/traps/tpRestarted</uei>
       <event-label>CLARENT-MIB defined trap event: tpRestarted</event-label>
       <descr>&lt;p>Clarent ThroughPacket server restarted successfully&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: tpRestarted trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -945,7 +945,7 @@ has been exceeded or rearmed by the named Application. This trap contains
 		exceeded(0)
 		rearmed(1)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: threshHoldTrap trap received 
 			trapSeverity=%parm[#1]% 
 			trapAppName=%parm[#2]% 
@@ -978,7 +978,7 @@ has been exceeded or rearmed by the named Application. This trap contains
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: systemReboot trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1006,7 +1006,7 @@ has been exceeded or rearmed by the named Application. This trap contains
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: rebootCommand trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1035,7 +1035,7 @@ if the condition persists.&lt;/p>&lt;table>
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: cDiskSpaceLow trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1064,7 +1064,7 @@ no more than once every 5 minutes.&lt;/p>&lt;table>
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: cNoConnectRoute trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1115,7 +1115,7 @@ Count of total number of database error traps sent since machine power up&lt;/p>
 
 	trapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: dbError trap received 
 			trapSeverity=%parm[#1]% 
 			trapNumber=%parm[#2]% 
@@ -1147,7 +1147,7 @@ clerks running.&lt;/p>&lt;table>
 
 	trapNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: dbClerkStarted trap received 
 			trapNumber=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1171,7 +1171,7 @@ clerks running.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Clarent/traps/restartDMFailed</uei>
       <event-label>CLARENT-MIB defined trap event: restartDMFailed</event-label>
       <descr>&lt;p>Clarent Distribution Service failed to restart&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: restartDMFailed trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1194,7 +1194,7 @@ clerks running.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Clarent/traps/dmRestarted</uei>
       <event-label>CLARENT-MIB defined trap event: dmRestarted</event-label>
       <descr>&lt;p>Clarent Distribution Service restarted successfully&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: dmRestarted trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1217,7 +1217,7 @@ clerks running.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Clarent/traps/dmIsDown</uei>
       <event-label>CLARENT-MIB defined trap event: dmIsDown</event-label>
       <descr>&lt;p>Clarent Distribution Service is down&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: dmIsDown trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1244,7 +1244,7 @@ clerks running.&lt;/p>&lt;table>
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: sigGWMTPPause trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1272,7 +1272,7 @@ clerks running.&lt;/p>&lt;table>
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: sigGWMTPResume trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1300,7 +1300,7 @@ clerks running.&lt;/p>&lt;table>
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: sigGWTaskActive trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1328,7 +1328,7 @@ clerks running.&lt;/p>&lt;table>
 
 	trapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: pinSuspended trap received 
 			trapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1370,7 +1370,7 @@ clerks running.&lt;/p>&lt;table>
 
 	trapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gkIsDown trap received 
 			trapSeverity=%parm[#1]% 
 			trapText=%parm[#2]% 
@@ -1414,7 +1414,7 @@ clerks running.&lt;/p>&lt;table>
 
 	trapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gkRestartFailed trap received 
 			trapSeverity=%parm[#1]% 
 			trapText=%parm[#2]% 
@@ -1458,7 +1458,7 @@ clerks running.&lt;/p>&lt;table>
 
 	trapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gkRestarted trap received 
 			trapSeverity=%parm[#1]% 
 			trapText=%parm[#2]% 
@@ -1502,7 +1502,7 @@ clerks running.&lt;/p>&lt;table>
 
 	trapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gkNotRegistered trap received 
 			trapSeverity=%parm[#1]% 
 			trapText=%parm[#2]% 
@@ -1554,7 +1554,7 @@ disabled (0), enabled (1).&lt;/p>&lt;table>
 
 	trapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gkOpStateChg trap received 
 			trapSeverity=%parm[#1]% 
 			trapText=%parm[#2]% 
@@ -1601,7 +1601,7 @@ Dangerously Heavy (4), and Critical (5).&lt;/p>&lt;table>
 
 	trapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gkLoadStateCritical trap received 
 			trapSeverity=%parm[#1]% 
 			trapText=%parm[#2]% 
@@ -1646,7 +1646,7 @@ Clarent::For Future Release&lt;/p>&lt;table>
 
 	trapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gkIsRejectingRasMsg trap received 
 			trapSeverity=%parm[#1]% 
 			trapText=%parm[#2]% 
@@ -1694,7 +1694,7 @@ Clarent::For Future Release&lt;/p>&lt;table>
 
 	trapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gkEndpointUnreachable trap received 
 			trapSeverity=%parm[#1]% 
 			trapText=%parm[#2]% 
@@ -1743,7 +1743,7 @@ Clarent::For Future Release&lt;/p>&lt;table>
 
 	trapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarent Event: gkEndPointURQFailed trap received 
 			trapSeverity=%parm[#1]% 
 			trapText=%parm[#2]% 

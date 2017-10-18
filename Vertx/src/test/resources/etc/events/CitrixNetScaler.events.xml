@@ -21,7 +21,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             changeToPrimary trap received
             sysIpAddress=%parm[#1]%&lt;/p>
         </logmsg>
@@ -49,7 +49,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             changeToSecondary trap received
             sysIpAddress=%parm[#1]%&lt;/p>
         </logmsg>
@@ -85,7 +85,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             cpuUtilization trap received
             nsCPUusage=%parm[#1]%
             alarmHighThreshold=%parm[#2]%
@@ -111,7 +111,7 @@
       <uei>uei.opennms.org/vendor/citrix/netscaler/traps/linkUp</uei>
       <event-label>NS-ROOT-MIB defined trap event: linkUp</event-label>
       <descr>&lt;p>...OBSOLETE&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             linkUp trap received&lt;/p>
         </logmsg>
       <severity>Indeterminate</severity>
@@ -134,7 +134,7 @@
       <uei>uei.opennms.org/vendor/citrix/netscaler/traps/linkDown</uei>
       <event-label>NS-ROOT-MIB defined trap event: linkDown</event-label>
       <descr>&lt;p>...OBSOLETE&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             linkDown trap received&lt;/p>
         </logmsg>
       <severity>Indeterminate</severity>
@@ -157,7 +157,7 @@
       <uei>uei.opennms.org/vendor/citrix/netscaler/traps/discoverFailure</uei>
       <event-label>NS-ROOT-MIB defined trap event: discoverFailure</event-label>
       <descr>&lt;p>...OBSOLETE&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             discoverFailure trap received&lt;/p>
         </logmsg>
       <severity>Indeterminate</severity>
@@ -180,7 +180,7 @@
       <uei>uei.opennms.org/vendor/citrix/netscaler/traps/memUtilization</uei>
       <event-label>NS-ROOT-MIB defined trap event: memUtilization</event-label>
       <descr>&lt;p>...OBSOLETE&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             memUtilization trap received&lt;/p>
         </logmsg>
       <severity>Indeterminate</severity>
@@ -211,7 +211,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             entitydown trap received
             entityName=%parm[#1]%
             sysIpAddress=%parm[#2]%&lt;/p>
@@ -244,7 +244,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             entityup trap received
             entityName=%parm[#1]%
             sysIpAddress=%parm[#2]%&lt;/p>
@@ -281,7 +281,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             synflood trap received
             unackSynCount=%parm[#1]%
             alarmHighThreshold=%parm[#2]%
@@ -319,7 +319,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             cpuUtilizationNormal trap received
             nsCPUusage=%parm[#1]%
             alarmNormalThreshold=%parm[#2]%
@@ -357,7 +357,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             synfloodNormal trap received
             unackSynCount=%parm[#1]%
             alarmNormalThreshold=%parm[#2]%
@@ -395,7 +395,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             memoryUtilization trap received
             resMemUsage=%parm[#1]%
             alarmHighThreshold=%parm[#2]%
@@ -433,7 +433,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             memoryUtilizationNormal trap received
             resMemUsage=%parm[#1]%
             alarmNormalThreshold=%parm[#2]%
@@ -475,7 +475,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             vServerRequestRate trap received
             vsvrName=%parm[#1]%
             vsvrRequestRate=%parm[#2]%
@@ -518,7 +518,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             vServerRequestRateNormal trap received
             vsvrName=%parm[#1]%
             vsvrRequestRate=%parm[#2]%
@@ -561,7 +561,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             serviceRequestRate trap received
             svcServiceName=%parm[#1]%
             svcRequestRate=%parm[#2]%
@@ -604,7 +604,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             serviceRequestRateNormal trap received
             svcServiceName=%parm[#1]%
             svcRequestRate=%parm[#2]%
@@ -631,7 +631,7 @@
       <uei>uei.opennms.org/vendor/citrix/netscaler/traps/entityRxRate</uei>
       <event-label>NS-ROOT-MIB defined trap event: entityRxRate</event-label>
       <descr>&lt;p>...OBSOLETE&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             entityRxRate trap received&lt;/p>
         </logmsg>
       <severity>Indeterminate</severity>
@@ -654,7 +654,7 @@
       <uei>uei.opennms.org/vendor/citrix/netscaler/traps/entityRxRateNormal</uei>
       <event-label>NS-ROOT-MIB defined trap event: entityRxRateNormal</event-label>
       <descr>&lt;p>...OBSOLETE&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             entityRxRateNormal trap received&lt;/p>
         </logmsg>
       <severity>Indeterminate</severity>
@@ -677,7 +677,7 @@
       <uei>uei.opennms.org/vendor/citrix/netscaler/traps/entityTxRate</uei>
       <event-label>NS-ROOT-MIB defined trap event: entityTxRate</event-label>
       <descr>&lt;p>...OBSOLETE&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             entityTxRate trap received&lt;/p>
         </logmsg>
       <severity>Indeterminate</severity>
@@ -700,7 +700,7 @@
       <uei>uei.opennms.org/vendor/citrix/netscaler/traps/entityTxRateNormal</uei>
       <event-label>NS-ROOT-MIB defined trap event: entityTxRateNormal</event-label>
       <descr>&lt;p>...OBSOLETE&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             entityTxRateNormal trap received&lt;/p>
         </logmsg>
       <severity>Indeterminate</severity>
@@ -723,7 +723,7 @@
       <uei>uei.opennms.org/vendor/citrix/netscaler/traps/entitySynflood</uei>
       <event-label>NS-ROOT-MIB defined trap event: entitySynflood</event-label>
       <descr>&lt;p>...OBSOLETE&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             entitySynflood trap received&lt;/p>
         </logmsg>
       <severity>Indeterminate</severity>
@@ -746,7 +746,7 @@
       <uei>uei.opennms.org/vendor/citrix/netscaler/traps/entitySynfloodNormal</uei>
       <event-label>NS-ROOT-MIB defined trap event: entitySynfloodNormal</event-label>
       <descr>&lt;p>...OBSOLETE&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             entitySynfloodNormal trap received&lt;/p>
         </logmsg>
       <severity>Indeterminate</severity>
@@ -795,7 +795,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             netScalerConfigChange trap received
             nsUserName=%parm[#1]%
             configurationCmd=%parm[#2]%
@@ -839,7 +839,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             maxClients trap received
             svcServiceName=%parm[#1]%
             svcEstablishedConn=%parm[#2]%
@@ -882,7 +882,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             maxClientsNormal trap received
             svcServiceName=%parm[#1]%
             svcEstablishedConn=%parm[#2]%
@@ -917,7 +917,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             netScalerConfigSave trap received
             nsUserName=%parm[#1]%
             sysIpAddress=%parm[#2]%&lt;/p>
@@ -958,7 +958,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             serviceRxBytesRate trap received
             svcServiceName=%parm[#1]%
             svcRxBytesRate=%parm[#2]%
@@ -1001,7 +1001,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             serviceRxBytesRateNormal trap received
             svcServiceName=%parm[#1]%
             svcRxBytesRate=%parm[#2]%
@@ -1044,7 +1044,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             vserverRxBytesRate trap received
             vsvrName=%parm[#1]%
             vsvrRxBytesRate=%parm[#2]%
@@ -1087,7 +1087,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             vserverRxBytesRateNormal trap received
             vsvrName=%parm[#1]%
             vsvrRxBytesRate=%parm[#2]%
@@ -1130,7 +1130,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             serviceTxBytesRate trap received
             svcServiceName=%parm[#1]%
             svcTxBytesRate=%parm[#2]%
@@ -1173,7 +1173,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             serviceTxBytesRateNormal trap received
             svcServiceName=%parm[#1]%
             svcTxBytesRate=%parm[#2]%
@@ -1216,7 +1216,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             vserverTxBytesRate trap received
             vsvrName=%parm[#1]%
             vsvrTxBytesRate=%parm[#2]%
@@ -1259,7 +1259,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             vserverTxBytesRateNormal trap received
             vsvrName=%parm[#1]%
             vsvrTxBytesRate=%parm[#2]%
@@ -1302,7 +1302,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             serviceSynfloodRate trap received
             svcServiceName=%parm[#1]%
             svcSynfloodRate=%parm[#2]%
@@ -1345,7 +1345,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             serviceSynfloodNormal trap received
             svcServiceName=%parm[#1]%
             svcSynfloodRate=%parm[#2]%
@@ -1388,7 +1388,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             vserverSynfloodRate trap received
             vsvrName=%parm[#1]%
             vsvrSynfloodRate=%parm[#2]%
@@ -1431,7 +1431,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             vserverSynfloodNormal trap received
             vsvrName=%parm[#1]%
             vsvrSynfloodRate=%parm[#2]%
@@ -1474,7 +1474,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             svcGroupMemberRequestRate trap received
             svcGrpMemberName=%parm[#1]%
             svcGrpMemberRequestRate=%parm[#2]%
@@ -1517,7 +1517,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             svcGroupMemberRequestRateNormal trap received
             svcGrpMemberName=%parm[#1]%
             svcGrpMemberRequestRate=%parm[#2]%
@@ -1560,7 +1560,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             svcGroupMemberRxBytesRate trap received
             svcGrpMemberName=%parm[#1]%
             svcGrpMemberRxBytesRate=%parm[#2]%
@@ -1603,7 +1603,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             svcGroupMemberRxBytesRateNormal trap received
             svcGrpMemberName=%parm[#1]%
             svcGrpMemberRxBytesRate=%parm[#2]%
@@ -1646,7 +1646,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             svcGroupMemberTxBytesRate trap received
             svcGrpMemberName=%parm[#1]%
             svcGrpMemberTxBytesRate=%parm[#2]%
@@ -1689,7 +1689,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             svcGroupMemberTxBytesRateNormal trap received
             svcGrpMemberName=%parm[#1]%
             svcGrpMemberTxBytesRate=%parm[#2]%
@@ -1732,7 +1732,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             svcGroupMemberSynfloodRate trap received
             svcGrpMemberName=%parm[#1]%
             svcGrpMemberSynfloodRate=%parm[#2]%
@@ -1775,7 +1775,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             svcGroupMemberSynfloodNormal trap received
             svcGrpMemberName=%parm[#1]%
             svcGrpMemberSynfloodRate=%parm[#2]%
@@ -1818,7 +1818,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             svcGroupMemberMaxClients trap received
             svcGrpMemberName=%parm[#1]%
             svcGrpMemberEstablishedConn=%parm[#2]%
@@ -1861,7 +1861,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             svcGroupMemberMaxClientsNormal trap received
             svcGrpMemberName=%parm[#1]%
             svcGrpMemberEstablishedConn=%parm[#2]%
@@ -1900,7 +1900,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             averageCpuUtilization trap received
             resCpuUsage=%parm[#1]%
             alarmHighThreshold=%parm[#2]%
@@ -1938,7 +1938,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             averageCpuUtilizationNormal trap received
             resCpuUsage=%parm[#1]%
             alarmNormalThreshold=%parm[#2]%
@@ -1984,7 +1984,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             monRespTimeoutAboveThresh trap received
             monServiceName=%parm[#1]%
             monitorName=%parm[#2]%
@@ -2032,7 +2032,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             monRespTimeoutBelowThresh trap received
             monServiceName=%parm[#1]%
             monitorName=%parm[#2]%
@@ -2068,7 +2068,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             netScalerLoginFailure trap received
             nsUserName=%parm[#1]%
             sysIpAddress=%parm[#2]%&lt;/p>
@@ -2105,7 +2105,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             sslCertificateExpiry trap received
             sslCertKeyName=%parm[#1]%
             sslDaysToExpire=%parm[#2]%
@@ -2147,7 +2147,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             fanSpeedLow trap received
             sysHealthCounterName=%parm[#1]%
             sysHealthCounterValue=%parm[#2]%
@@ -2190,7 +2190,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             fanSpeedNormal trap received
             sysHealthCounterName=%parm[#1]%
             sysHealthCounterValue=%parm[#2]%
@@ -2233,7 +2233,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             voltageLow trap received
             sysHealthCounterName=%parm[#1]%
             sysHealthCounterValue=%parm[#2]%
@@ -2276,7 +2276,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             voltageNormal trap received
             sysHealthCounterName=%parm[#1]%
             sysHealthCounterValue=%parm[#2]%
@@ -2319,7 +2319,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             voltageHigh trap received
             sysHealthCounterName=%parm[#1]%
             sysHealthCounterValue=%parm[#2]%
@@ -2362,7 +2362,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             temperatureHigh trap received
             sysHealthCounterName=%parm[#1]%
             sysHealthCounterValue=%parm[#2]%
@@ -2405,7 +2405,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             temperatureNormal trap received
             sysHealthCounterName=%parm[#1]%
             sysHealthCounterValue=%parm[#2]%
@@ -2448,7 +2448,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             diskUsageHigh trap received
             sysHealthDiskName=%parm[#1]%
             sysHealthDiskPerusage=%parm[#2]%
@@ -2491,7 +2491,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             diskUsageNormal trap received
             sysHealthDiskName=%parm[#1]%
             sysHealthDiskPerusage=%parm[#2]%
@@ -2534,7 +2534,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             interfaceThroughputLow trap received
             ifName=%parm[#1]%
             ifThroughput=%parm[#2]%
@@ -2577,7 +2577,7 @@
 
             sysIpAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             interfaceThroughputNormal trap received
             ifName=%parm[#1]%
             ifThroughput=%parm[#2]%

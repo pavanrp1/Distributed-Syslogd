@@ -39,7 +39,7 @@ Details can be found in Variables data.&lt;/p>&lt;table>
 
 	storageSystem&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			EventMonitorTrap trap received 
 			hostName=%parm[#1]% 
 			deviceID=%parm[#2]% 
@@ -89,7 +89,7 @@ Details can be found in Variables data.&lt;/p>&lt;table>
 
 	storageSystem&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			EventMonitorTrapInfo trap received 
 			hostName=%parm[#1]% 
 			deviceID=%parm[#2]% 
@@ -139,7 +139,7 @@ Details can be found in Variables data.&lt;/p>&lt;table>
 
 	storageSystem&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			EventMonitorTrapWarn trap received 
 			hostName=%parm[#1]% 
 			deviceID=%parm[#2]% 
@@ -189,7 +189,7 @@ Details can be found in Variables data.&lt;/p>&lt;table>
 
 	storageSystem&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			EventMonitorTrapError trap received 
 			hostName=%parm[#1]% 
 			deviceID=%parm[#2]% 
@@ -239,7 +239,7 @@ Details can be found in Variables data.&lt;/p>&lt;table>
 
 	storageSystem&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			EventMonitorTrapFault trap received 
 			hostName=%parm[#1]% 
 			deviceID=%parm[#2]% 

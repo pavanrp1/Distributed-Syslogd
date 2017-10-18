@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vendor/TUT/traps/tutTemperatureAlarm</uei>
       <event-label>TUT-T2-MIB defined trap event: tutTemperatureAlarm</event-label>
       <descr>&lt;p>A temperature alarm has occurred.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			tutTemperatureAlarm trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -40,7 +40,7 @@
       <uei>uei.opennms.org/vendor/TUT/traps/tutTemperatureAlarmClear</uei>
       <event-label>TUT-T2-MIB defined trap event: tutTemperatureAlarmClear</event-label>
       <descr>&lt;p>A temperature alarm has occurred.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			tutTemperatureAlarmClear trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -67,7 +67,7 @@
 
 	tutSystemFanId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			tutFanAlarm trap received 
 			tutSystemFanId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -95,7 +95,7 @@
 
 	tutSystemFanId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			tutFanAlarmClear trap received 
 			tutSystemFanId=%parm[#1]%&lt;/p>
 		</logmsg>

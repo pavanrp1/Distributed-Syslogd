@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/CallService</uei>
       <event-label>Call service</event-label>
       <descr>Please call service. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">CallService</logmsg>
+      <logmsg dest="donotpersist">CallService</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -38,7 +38,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/PaperJam</uei>
       <event-label>Paper jam</event-label>
       <descr>A paperjam has occured. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">PaperJam</logmsg>
+      <logmsg dest="donotpersist">PaperJam</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -59,7 +59,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/NoPaper</uei>
       <event-label>No paper</event-label>
       <descr>Paper tray is empty. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">NoPaper</logmsg>
+      <logmsg dest="donotpersist">NoPaper</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -80,7 +80,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/TonerEmpty</uei>
       <event-label>Toner empty</event-label>
       <descr>Toner is empty. %parm[all]% For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">TonerEmpty</logmsg>
+      <logmsg dest="donotpersist">TonerEmpty</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -101,7 +101,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/StapleEmpty</uei>
       <event-label>Staple empty</event-label>
       <descr>Staple supply empty. Please refill staple supply. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">StapleEmpty</logmsg>
+      <logmsg dest="donotpersist">StapleEmpty</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -122,7 +122,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/RemainingOutputTray</uei>
       <event-label>Paper remaining output tray</event-label>
       <descr>%parm=[#1]%</descr>
-      <logmsg dest="logndisplay">%parm=[#1]%</logmsg>
+      <logmsg dest="donotpersist">%parm=[#1]%</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -143,7 +143,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/PunchDustFull</uei>
       <event-label>Punch dust full</event-label>
       <descr>Punch dust full. Please remove punch waste. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">PunchDust</logmsg>
+      <logmsg dest="donotpersist">PunchDust</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -164,7 +164,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/MaintenanceRequired</uei>
       <event-label>Maintenance required</event-label>
       <descr>Maintenance required. Please call service. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">MaintenanceRequired</logmsg>
+      <logmsg dest="donotpersist">MaintenanceRequired</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -185,7 +185,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/JobEnd</uei>
       <event-label>Job end</event-label>
       <descr>A job has been ended.</descr>
-      <logmsg dest="logndisplay">JobEnded</logmsg>
+      <logmsg dest="donotpersist">JobEnded</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -206,7 +206,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/WasteTonerFull</uei>
       <event-label>Waste toner full</event-label>
       <descr>Waste toner is full. Please insert a new waste container. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">WasteTonerFull</logmsg>
+      <logmsg dest="donotpersist">WasteTonerFull</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -227,7 +227,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/LifeLimitImagingUnit</uei>
       <event-label>Life limit imaging unit</event-label>
       <descr>Imaging unit has been reached life limit. Please replace this unit. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">LifeLimitImagingUnit</logmsg>
+      <logmsg dest="donotpersist">LifeLimitImagingUnit</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -248,7 +248,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/LifeLimitFuserUnit</uei>
       <event-label>Life limit fuser unit</event-label>
       <descr>Fuser unit has been reached life limit. Please replace this unit. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">LifeLimitFuserUnit</logmsg>
+      <logmsg dest="donotpersist">LifeLimitFuserUnit</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -269,7 +269,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/LifeLimitTransferRoller</uei>
       <event-label>Life limit transfer roller</event-label>
       <descr>Transfer roller has been reached life limit. Please replace this unit. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">LifeLimitTransferRoller</logmsg>
+      <logmsg dest="donotpersist">LifeLimitTransferRoller</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -290,7 +290,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/LifeLimitTransferBelt</uei>
       <event-label>Life limit transfer belt</event-label>
       <descr>Transfer belt has been reached life limit. Please replace this unit. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">LifeLimitTransferBelt</logmsg>
+      <logmsg dest="donotpersist">LifeLimitTransferBelt</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -311,7 +311,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/LifeLimitOtherParts</uei>
       <event-label>Life limit other parts</event-label>
       <descr>Some parts reached life limit. Please replace them. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">LifeLimitOtherParts</logmsg>
+      <logmsg dest="donotpersist">LifeLimitOtherParts</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -332,7 +332,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/OperatorCall</uei>
       <event-label>Operator call</event-label>
       <descr>Please call operator. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">OperatorCall</logmsg>
+      <logmsg dest="donotpersist">OperatorCall</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -353,7 +353,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/JobEnd</uei>
       <event-label>Job end</event-label>
       <descr>A job has been ended.</descr>
-      <logmsg dest="logndisplay">JobEnded</logmsg>
+      <logmsg dest="donotpersist">JobEnded</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -374,7 +374,7 @@
       <uei>uei.opennms.org/vendor/konica/minolta/traps/JobError</uei>
       <event-label>Job error</event-label>
       <descr>While executing a job, an error occured. For details see: http://%interface%</descr>
-      <logmsg dest="logndisplay">JobError</logmsg>
+      <logmsg dest="donotpersist">JobError</logmsg>
       <severity>Warning</severity>
    </event>
 </events>

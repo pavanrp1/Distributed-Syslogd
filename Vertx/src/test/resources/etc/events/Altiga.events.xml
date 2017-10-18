@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vender/altiga/traps/altigaGenTrap</uei>
       <event-label>ALTIGA trap event: Altiga Generic Trap</event-label>
       <descr>&lt;p>This is Altiga's (Cisco's) generic trap event. The event text is: %parm[#1]%.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		Altiga Event: %parm[#1]%
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -67,7 +67,7 @@
       <uei>uei.opennms.org/vender/altiga/traps/altigaGenTrap2</uei>
       <event-label>ALTIGA trap event: Altiga Generic Trap #2</event-label>
       <descr>&lt;p>This is Altiga's (Cisco's) generic trap event. The event text is: %parm[#1]%.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                 Altiga Event: %parm[#1]%
                 </logmsg>
       <severity>Indeterminate</severity>

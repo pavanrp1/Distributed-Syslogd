@@ -55,7 +55,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  xcmHrDevInfoXConditions&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Xerox Event: Device Status Change Notification.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Xerox Event: Device Status Change Notification.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -132,7 +132,7 @@
  wrongValue(10) noCreation(11) inconsistentValue(12) resourceUnavailable(13) commitFailed(14) undoFailed(15) 
  authorizationError(16) notWritable(17) inconsistentName(18)
  &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Xerox Event: Command Completed Notification.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Xerox Event: Command Completed Notification.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -204,7 +204,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  xcmHrDevDetailIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Xerox Event: Detail Event Notification.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Xerox Event: Detail Event Notification.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -224,7 +224,7 @@
  enterprise specific event (trap) is received from a Xerox device for which no
  format has been configured (i.e. no event definition
  exists).&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
  Received unformatted enterprise event (enterprise:%id% generic:%generic%
  specific:%specific%). %parm[##]%
  args: %parm[all]%

@@ -45,7 +45,7 @@
 
 	alIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alAlarmRisingTrap trap received 
 			alSeverity=%parm[#1]% 
 			alDescription=%parm[#2]% 
@@ -110,7 +110,7 @@
 
 	alIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alAlarmRisingTrap trap received 
 			alSeverity=%parm[#1]% 
 			alDescription=%parm[#2]% 
@@ -175,7 +175,7 @@
 
 	alIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alAlarmRisingTrap trap received 
 			alSeverity=%parm[#1]% 
 			alDescription=%parm[#2]% 
@@ -240,7 +240,7 @@
 
 	alIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alAlarmRisingTrap trap received 
 			alSeverity=%parm[#1]% 
 			alDescription=%parm[#2]% 
@@ -301,7 +301,7 @@
 
 	alIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alAlarmRisingTrap trap received 
 			alSeverity=%parm[#1]% 
 			alDescription=%parm[#2]% 
@@ -362,7 +362,7 @@
 
 	alIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alAlarmFallingTrap trap received 
 			alSeverity=%parm[#1]% 
 			alDescription=%parm[#2]% 

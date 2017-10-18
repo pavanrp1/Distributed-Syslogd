@@ -29,7 +29,7 @@ object in this MIB has changed to 'operational(3)'.&lt;/p>&lt;table>
 		warning(4)
 		failure(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			operationalStatusOperationalTrap trap received 
 			sysOperationalStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -66,7 +66,7 @@ in this MIB has changed to 'warning(4)'.&lt;/p>&lt;table>
 		warning(4)
 		failure(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			operationalStatusWarningTrap trap received 
 			sysOperationalStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -103,7 +103,7 @@ this MIB has changed to 'failure(5)'.&lt;/p>&lt;table>
 		warning(4)
 		failure(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			operationalStatusFailureTrap trap received 
 			sysOperationalStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -130,7 +130,7 @@ this MIB has changed to 'failure(5)'.&lt;/p>&lt;table>
       <descr>&lt;p>A systemReset notification signifies that the agent entity
 is about to reset itself either per user's request or 
 due to a fatal event.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemResetTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -165,7 +165,7 @@ MIB has changed to the 'on(3)' state
 		off(2)
 		on(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			chassisTempAlarmOnTrap trap received 
 			pchassisTempAlarm=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -201,7 +201,7 @@ MIB has changed to the 'off(2)' state
 		off(2)
 		on(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			chassisTempAlarmOffTrap trap received 
 			pchassisTempAlarm=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -237,7 +237,7 @@ MIB has changed to the 'on(3)' state
 		off(2)
 		on(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			chassisVoltageAlarmOnTrap trap received 
 			pchassisVoltageAlarm=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -272,7 +272,7 @@ MIB has changed to the 'on(3)' state.&lt;/p>&lt;table>
 		off(2)
 		on(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			chassisFansAlarmOnTrap trap received 
 			pchassisFansAlarm=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -307,7 +307,7 @@ in this MIB has changed to the 'on(3)' state.&lt;/p>&lt;table>
 		off(2)
 		on(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			chassisPowerSupplyAlarmOnTrap trap received 
 			pchassisPowerSupplyAlarm=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -346,7 +346,7 @@ object in this MIB has changed to the 'active(2)' state.&lt;/p>&lt;table>
 		active(2)
 		standby(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rdrActiveConnectionTrap trap received 
 			rdrFormatterDestIPAddr=%parm[#1]% 
 			rdrFormatterDestStatus=%parm[#2]%&lt;/p>
@@ -374,7 +374,7 @@ object in this MIB has changed to the 'active(2)' state.&lt;/p>&lt;table>
 agent entity has detected  there is no active 
 connection between the RDR-formatter and any 
 Data Collector.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rdrNoActiveConnectionTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -411,7 +411,7 @@ object in this MIB has changed to 'up(2)'.&lt;/p>&lt;table>
 		up(2)
 		down(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rdrConnectionUpTrap trap received 
 			rdrFormatterDestIPAddr=%parm[#1]% 
 			rdrFormatterDestConnectionStatus=%parm[#2]%&lt;/p>
@@ -451,7 +451,7 @@ object in this MIB has changed to 'down(3)'.&lt;/p>&lt;table>
 		up(2)
 		down(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rdrConnectionDownTrap trap received 
 			rdrFormatterDestIPAddr=%parm[#1]% 
 			rdrFormatterDestConnectionStatus=%parm[#2]%&lt;/p>
@@ -477,7 +477,7 @@ object in this MIB has changed to 'down(3)'.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/pcube/traps/telnetSessionStartedTrap</uei>
       <event-label>PCUBE-SE-MIB defined trap event: telnetSessionStartedTrap</event-label>
       <descr>&lt;p>Replaced by the more generic sessionStartedTrap.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			telnetSessionStartedTrap trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -500,7 +500,7 @@ object in this MIB has changed to 'down(3)'.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/pcube/traps/telnetSessionEndedTrap</uei>
       <event-label>PCUBE-SE-MIB defined trap event: telnetSessionEndedTrap</event-label>
       <descr>&lt;p>Replaced by the more generic sessionEndedTrap.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			telnetSessionEndedTrap trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -523,7 +523,7 @@ object in this MIB has changed to 'down(3)'.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/pcube/traps/telnetSessionDeniedAccessTrap</uei>
       <event-label>PCUBE-SE-MIB defined trap event: telnetSessionDeniedAccessTrap</event-label>
       <descr>&lt;p>Replaced by the more generic sessionDeniedAccessTrap.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			telnetSessionDeniedAccessTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -546,7 +546,7 @@ object in this MIB has changed to 'down(3)'.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/pcube/traps/telnetSessionBadLoginTrap</uei>
       <event-label>PCUBE-SE-MIB defined trap event: telnetSessionBadLoginTrap</event-label>
       <descr>&lt;p>Replaced by the more generic sessionBadLoginTrap.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			telnetSessionBadLoginTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -571,7 +571,7 @@ object in this MIB has changed to 'down(3)'.&lt;/p>&lt;table>
       <descr>&lt;p>A loggerUserLogIsFull notification signifies that the agent 
 entity has detected the User log file is full.
 In such case the agent entity rolls to the next file.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			loggerUserLogIsFullTrap trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -596,7 +596,7 @@ In such case the agent entity rolls to the next file.&lt;/p>&lt;table>&lt;/table
       <descr>&lt;p>An sntpClockDriftWarn notification signifies that the entity's
 SNTP agent did not receive time update for 
 a long period, this may cause a time drift.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sntpClockDriftWarnTrap trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -631,7 +631,7 @@ has changed to 'bypass(2)'.&lt;/p>&lt;table>
 		cutoff(4)
 		sniffing(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			linkModeBypassTrap trap received 
 			linkOperMode=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -668,7 +668,7 @@ in this MIB has changed to 'forwarding(3)'.&lt;/p>&lt;table>
 		cutoff(4)
 		sniffing(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			linkModeForwardingTrap trap received 
 			linkOperMode=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -705,7 +705,7 @@ in this MIB has changed to 'cutoff(4)'.&lt;/p>&lt;table>
 		cutoff(4)
 		sniffing(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			linkModeCutoffTrap trap received 
 			linkOperMode=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -741,7 +741,7 @@ is the type of attack-filter, which was activated.&lt;/p>&lt;table>
 
 	pcubeSeEventGenericString1&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			moduleAttackFilterActivatedTrap trap received 
 			pmoduleIndex=%parm[#1]% 
 			pcubeSeEventGenericString1=%parm[#2]%&lt;/p>
@@ -785,7 +785,7 @@ for deactivating the filter.&lt;/p>&lt;table>
 
 	pcubeSeEventGenericString2&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			moduleAttackFilterDeactivatedTrap trap received 
 			pmoduleIndex=%parm[#1]% 
 			pcubeSeEventGenericString1=%parm[#2]% 
@@ -826,7 +826,7 @@ is the relevant parameter.&lt;/p>&lt;table>
 
 	pcubeSeEventGenericString2&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			moduleEmAgentGenericTrap trap received 
 			pmoduleIndex=%parm[#1]% 
 			pcubeSeEventGenericString1=%parm[#2]% 
@@ -864,7 +864,7 @@ object in this MIB has changed to 'sniffing(5)'.&lt;/p>&lt;table>
 		cutoff(4)
 		sniffing(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			linkModeSniffingTrap trap received 
 			linkOperMode=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -903,7 +903,7 @@ and is now ready to handle fail-over if needed.&lt;/p>&lt;table>
 		active(2)
 		standby(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			moduleRedundancyReadyTrap trap received 
 			pmoduleIndex=%parm[#1]% 
 			pmoduleOperStatus=%parm[#2]%&lt;/p>
@@ -936,7 +936,7 @@ module and the redundant entity.&lt;/p>&lt;table>
 
 	pmoduleIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			moduleRedundantConfigurationMismatchTrap trap received 
 			pmoduleIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -973,7 +973,7 @@ has lost the ability to perform the fail-over procedure.&lt;/p>&lt;table>
 		active(2)
 		standby(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			moduleLostRedundancyTrap trap received 
 			pmoduleIndex=%parm[#1]% 
 			pmoduleOperStatus=%parm[#2]%&lt;/p>
@@ -1004,7 +1004,7 @@ manager is broken.&lt;/p>&lt;table>
 
 	pmoduleIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			moduleSmConnectionDownTrap trap received 
 			pmoduleIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1035,7 +1035,7 @@ is up and working.&lt;/p>&lt;table>
 
 	pmoduleIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			moduleSmConnectionUpTrap trap received 
 			pmoduleIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1073,7 +1073,7 @@ that the moduleOperStatus has changed its value.&lt;/p>&lt;table>
 		active(2)
 		standby(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			moduleOperStatusChangeTrap trap received 
 			pmoduleIndex=%parm[#1]% 
 			pmoduleOperStatus=%parm[#2]%&lt;/p>
@@ -1120,7 +1120,7 @@ down was released.&lt;/p>&lt;table>
 		redundancyForcingDown(4)
 		otherDown(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portOperStatusChangeTrap trap received 
 			pmoduleIndex=%parm[#1]% 
 			pportIndex=%parm[#2]% 
@@ -1157,7 +1157,7 @@ MIB has changed to the 'on(3)' state.&lt;/p>&lt;table>
 		off(2)
 		on(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			chassisLineFeedAlarmOnTrap trap received 
 			pchassisLineFeedAlarm=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1189,7 +1189,7 @@ this MIB is counting the amount of discarded reports.&lt;/p>&lt;table>
 
 	rdrFormatterCategoryIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rdrFormatterCategoryDiscardingReportsTrap trap received 
 			rdrFormatterCategoryIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1221,7 +1221,7 @@ MIB is counting the amount of discarded reports.&lt;/p>&lt;table>
 
 	rdrFormatterCategoryIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rdrFormatterCategoryStoppedDiscardingReportsTrap trap received 
 			rdrFormatterCategoryIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1252,7 +1252,7 @@ type (telnet/SSH) and client IP address.&lt;/p>&lt;table>
 
 	pcubeSeEventGenericString1&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sessionStartedTrap trap received 
 			pcubeSeEventGenericString1=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1283,7 +1283,7 @@ type (telnet/SSH) and client IP address.&lt;/p>&lt;table>
 
 	pcubeSeEventGenericString1&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sessionEndedTrap trap received 
 			pcubeSeEventGenericString1=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1310,7 +1310,7 @@ type (telnet/SSH) and client IP address.&lt;/p>&lt;table>
 entity has refused a session from unauthorized source.
 The pcubeSeEventGenericString1 is the session type 
 (telnet/SSH) and client IP address.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sessionDeniedAccessTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1336,7 +1336,7 @@ The pcubeSeEventGenericString1 is the session type
 entity has detected attempt to login with a wrong
 password. The pcubeSeEventGenericString1 
 is the session type (telnet/SSH) and client IP address.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sessionBadLoginTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1371,7 +1371,7 @@ describing the problem.&lt;/p>&lt;table>
 
 	pcubeSeEventGenericString1&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			illegalSubscriberMappingTrap trap received 
 			pmoduleIndex=%parm[#1]% 
 			pcubeSeEventGenericString1=%parm[#2]%&lt;/p>
@@ -1399,7 +1399,7 @@ describing the problem.&lt;/p>&lt;table>
       <descr>&lt;p>Signifies that the agent entity has detected 
 the line-attack log file is full. In such case the 
 agent entity rolls to the next file.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			loggerLineAttackLogFullTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1443,7 +1443,7 @@ that the vas server operational status has changed.&lt;/p>&lt;table>
 		up(2)
 		down(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			vasServerOpertionalStatusChangeTrap trap received 
 			pmoduleIndex=%parm[#1]% 
 			vasServerIndex=%parm[#2]% 
@@ -1482,7 +1482,7 @@ pull requests made on this sub.&lt;/p>&lt;table>
 
 	pullRequestNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			pullRequestRetryFailedTrap trap received 
 			pcubeSeEventGenericString1=%parm[#1]% 
 			pullRequestNumber=%parm[#2]%&lt;/p>
@@ -1512,7 +1512,7 @@ exceeds the allowed threshold.&lt;/p>&lt;table>
 
 	mplsVpnCurrentHWMappings&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			mplsVpnTotalHWMappingsThresholdExceededTrap trap received 
 			mplsVpnCurrentHWMappings=%parm[#1]%&lt;/p>
 		</logmsg>

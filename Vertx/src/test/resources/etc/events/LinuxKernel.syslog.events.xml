@@ -15,7 +15,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
                         &lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>Linux OOM killer killed process %parm[killedProcName]% (PID %parm[killedProcID]%) &lt;/p>
                 </logmsg>
       <severity>Major</severity>

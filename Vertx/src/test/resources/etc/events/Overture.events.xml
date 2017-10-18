@@ -242,7 +242,7 @@ ovnFaultChannel: the channel of the fault. Only applicaple for
 		chan27(27)
 		chan28(28)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ovnFaultActive trap received 
 			ovnFaultTrapSeverity=%parm[#1]% 
 			ovnFaultTrapSlot=%parm[#2]% 
@@ -500,7 +500,7 @@ ovnFaultChannel: the channel of the fault. Only applicaple for
 		chan27(27)
 		chan28(28)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ovnFaultCleared trap received 
 			ovnFaultTrapSeverity=%parm[#1]% 
 			ovnFaultTrapSlot=%parm[#2]% 

@@ -32,7 +32,7 @@ battery.&lt;/p>&lt;table>
 
 	upsConfigLowBattTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			upsTrapOnBattery trap received 
 			upsEstimatedMinutesRemaining=%parm[#1]% 
 			upsSecondsOnBattery=%parm[#2]% 
@@ -90,7 +90,7 @@ test.&lt;/p>&lt;table>
 
 	upsTestElapsedTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			upsTrapTestCompleted trap received 
 			upsTestId=%parm[#1]% 
 			upsTestSpinLock=%parm[#2]% 
@@ -130,7 +130,7 @@ upsAlarmTestInProgress.&lt;/p>&lt;table>
 
 	upsAlarmDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			upsTrapAlarmEntryAdded trap received 
 			upsAlarmId=%parm[#1]% 
 			upsAlarmDescr=%parm[#2]%&lt;/p>
@@ -165,7 +165,7 @@ alarms except for upsAlarmTestInProgress.&lt;/p>&lt;table>
 
 	upsAlarmDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			upsTrapAlarmEntryRemoved trap received 
 			upsAlarmId=%parm[#1]% 
 			upsAlarmDescr=%parm[#2]%&lt;/p>

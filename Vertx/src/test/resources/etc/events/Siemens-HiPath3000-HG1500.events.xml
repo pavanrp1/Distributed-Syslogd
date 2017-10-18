@@ -55,7 +55,7 @@
 
             trapDescription&lt;/b>&lt;/td>&lt;td>
             %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             sendAlarmWithValues trap received
             trapIndex=%parm[#1]%
             trapDateTime=%parm[#2]%
@@ -106,7 +106,7 @@
 
             numberOfTrapHistoryEntries&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             fileOverflowError trap received
             numberOfTrapHistoryEntries=%parm[#1]%&lt;/p>
         </logmsg>
@@ -161,7 +161,7 @@
 
             voIPQualityNotificationCounter&lt;/b>&lt;/td>&lt;td>
             %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             sendVoIPQualityNotification trap received
             statIndVoiceCliIndex=%parm[#1]%
             statIndVoiceConnectionConfId=%parm[#2]%
@@ -229,7 +229,7 @@
             critical(5)
             unknown(6)
             &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             sendIpPhoneTableNotification trap received
             indexOfLastIpPhoneNotification=%parm[#1]%
             typeOfLastIpPhoneNotification=%parm[#2]%

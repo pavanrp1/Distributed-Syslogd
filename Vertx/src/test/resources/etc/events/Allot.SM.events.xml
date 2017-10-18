@@ -64,7 +64,7 @@
 
 	alSubscriberIp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alSMPProvisionErrTrap trap received 
 			alIniatingProcess=%parm[#1]% 
 			alProvisioningType=%parm[#2]% 
@@ -123,7 +123,7 @@
 		ipNotAssignedToHost(12)
 		unknownIp(14)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alSMPMultiFailTrap trap received 
 			alIniatingProcess=%parm[#1]% 
 			alFailCause=%parm[#2]%&lt;/p>
@@ -175,7 +175,7 @@
 		passive(1)
 		dead(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alSmpHighAvailabilityTrap trap received 
 			alFailCause=%parm[#1]% 
 			alHighAvailabilityStatus=%parm[#2]%&lt;/p>
@@ -230,7 +230,7 @@
 
 	alSysInfo&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alSMPSystemTrap trap received 
 			alIniatingProcess=%parm[#1]% 
 			alSysSubject=%parm[#2]% 

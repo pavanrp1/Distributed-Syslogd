@@ -52,7 +52,7 @@ outlets on the tower.&lt;/p>&lt;table>
 		fanFail(2)
 		overTemp(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: towerStatus is now normal trap received 
 			systemLocation=%parm[#1]% 
 			towerID=%parm[#2]% 
@@ -114,7 +114,7 @@ outlets on the tower.&lt;/p>&lt;table>
 		fanFail(2)
 		overTemp(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: towerStatus comm failure trap received 
 			systemLocation=%parm[#1]% 
 			towerID=%parm[#2]% 
@@ -176,7 +176,7 @@ outlets on the tower.&lt;/p>&lt;table>
 		fanFail(2)
 		overTemp(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: towerStatus fan failure trap received 
 			systemLocation=%parm[#1]% 
 			towerID=%parm[#2]% 
@@ -238,7 +238,7 @@ outlets on the tower.&lt;/p>&lt;table>
 		fanFail(2)
 		overTemp(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: towerStatus over temperature trap received 
 			systemLocation=%parm[#1]% 
 			towerID=%parm[#2]% 
@@ -296,7 +296,7 @@ outlets on the tower.&lt;/p>&lt;table>
 		fanFail(2)
 		overTemp(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: towerStatusEvent trap received 
 			systemLocation=%parm[#1]% 
 			towerID=%parm[#2]% 
@@ -362,7 +362,7 @@ load traps are suppressed for outlets on the input feed.&lt;/p>&lt;table>
 		onError(5)
 		noComm(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: Input Feed Status off (normal)
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -428,7 +428,7 @@ load traps are suppressed for outlets on the input feed.&lt;/p>&lt;table>
 		onError(5)
 		noComm(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: Input Feed Status on (normal)
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -494,7 +494,7 @@ load traps are suppressed for outlets on the input feed.&lt;/p>&lt;table>
 		onError(5)
 		noComm(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: Input Feed Status offWait (error)
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -560,7 +560,7 @@ load traps are suppressed for outlets on the input feed.&lt;/p>&lt;table>
 		onError(5)
 		noComm(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: Input Feed Status onWait (error)
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -626,7 +626,7 @@ load traps are suppressed for outlets on the input feed.&lt;/p>&lt;table>
 		onError(5)
 		noComm(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: Input Feed Status offError (error)
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -692,7 +692,7 @@ load traps are suppressed for outlets on the input feed.&lt;/p>&lt;table>
 		onError(5)
 		noComm(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: Input Feed Status onError (error)
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -758,7 +758,7 @@ load traps are suppressed for outlets on the input feed.&lt;/p>&lt;table>
 		onError(5)
 		noComm(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: Input Feed Status noComm (error)
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -820,7 +820,7 @@ load traps are suppressed for outlets on the input feed.&lt;/p>&lt;table>
 		onError(5)
 		noComm(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: infeedStatusEvent trap received 
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -890,7 +890,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	infeedLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: infeedLoadEvent normal trap received 
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -964,7 +964,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	infeedLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: infeedLoadEvent notOn trap received 
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -1038,7 +1038,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	infeedLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: infeedLoadEvent reading trap received 
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -1112,7 +1112,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	infeedLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: infeedLoadEvent low load trap received 
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -1186,7 +1186,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	infeedLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: infeedLoadEvent high load trap received 
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -1260,7 +1260,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	infeedLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: infeedLoadEvent over load trap received 
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -1334,7 +1334,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	infeedLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: infeedLoadEvent read error trap received 
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -1408,7 +1408,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	infeedLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: infeedLoadEvent noComm trap received 
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -1478,7 +1478,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	infeedLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: infeedLoadEvent trap received 
 			systemLocation=%parm[#1]% 
 			infeedID=%parm[#2]% 
@@ -1547,7 +1547,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent off trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -1615,7 +1615,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent on trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -1683,7 +1683,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent offWait trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -1751,7 +1751,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent onWait trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -1819,7 +1819,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent offError trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -1887,7 +1887,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent onError trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -1955,7 +1955,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent noComm trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2023,7 +2023,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent reading trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2091,7 +2091,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent offFuse trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2159,7 +2159,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent onFuse trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2223,7 +2223,7 @@ are suppressed for the outlet.&lt;/p>&lt;table>
 		offFuse(8)
 		onFuse(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletStatusEvent trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2298,7 +2298,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	outletLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletLoadEvent normal trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2373,7 +2373,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	outletLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletLoadEvent notOn trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2448,7 +2448,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	outletLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletLoadEvent reading trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2523,7 +2523,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	outletLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletLoadEvent low load trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2598,7 +2598,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	outletLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletLoadEvent high load trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2673,7 +2673,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	outletLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletLoadEvent over load trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2748,7 +2748,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	outletLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletLoadEvent read error trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2823,7 +2823,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	outletLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletLoadEvent noComm trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2894,7 +2894,7 @@ stops being repeated.&lt;/p>&lt;table>
 
 	outletLoadHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletLoadEvent trap received 
 			systemLocation=%parm[#1]% 
 			outletID=%parm[#2]% 
@@ -2977,7 +2977,7 @@ when the outletStatus changes from any 'on' state ('on',
 		eventReboot(16)
 		eventShutdown(17)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: outletChangeEvent trap received 
 			outletID=%parm[#2]% 
 			outletName=%parm[#3]% 
@@ -3036,7 +3036,7 @@ monitor.&lt;/p>&lt;table>
 		normal(0)
 		noComm(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonStatusEvent normal trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3097,7 +3097,7 @@ monitor.&lt;/p>&lt;table>
 		normal(0)
 		noComm(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonStatusEvent noComm trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3154,7 +3154,7 @@ monitor.&lt;/p>&lt;table>
 		normal(0)
 		noComm(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonStatusEvent trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3211,7 +3211,7 @@ envMonWaterSensorStatus, and then stops being repeated.&lt;/p>&lt;table>
 		alarm(1)
 		noComm(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonWaterSensorEvent normal trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3268,7 +3268,7 @@ envMonWaterSensorStatus, and then stops being repeated.&lt;/p>&lt;table>
 		alarm(1)
 		noComm(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonWaterSensorEvent error trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3325,7 +3325,7 @@ envMonWaterSensorStatus, and then stops being repeated.&lt;/p>&lt;table>
 		alarm(1)
 		noComm(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonWaterSensorEvent noComm trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3378,7 +3378,7 @@ envMonWaterSensorStatus, and then stops being repeated.&lt;/p>&lt;table>
 		alarm(1)
 		noComm(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonWaterSensorEvent trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3451,7 +3451,7 @@ repeated.&lt;/p>&lt;table>
 
 	envMonADCHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonADCEvent normal trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3524,7 +3524,7 @@ repeated.&lt;/p>&lt;table>
 
 	envMonADCHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonADCEvent reading trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3597,7 +3597,7 @@ repeated.&lt;/p>&lt;table>
 
 	envMonADCHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonADCEvent countLow trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3670,7 +3670,7 @@ repeated.&lt;/p>&lt;table>
 
 	envMonADCHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonADCEvent countHigh trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3743,7 +3743,7 @@ repeated.&lt;/p>&lt;table>
 
 	envMonADCHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonADCEvent readError trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3816,7 +3816,7 @@ repeated.&lt;/p>&lt;table>
 
 	envMonADCHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonADCEvent noComm trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3885,7 +3885,7 @@ repeated.&lt;/p>&lt;table>
 
 	envMonADCHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: envMonADCEvent trap received 
 			systemLocation=%parm[#1]% 
 			envMonID=%parm[#2]% 
@@ -3950,7 +3950,7 @@ temperature/humudity sensor.&lt;/p>&lt;table>
 		lost(2)
 		noComm(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorStatusEvent found trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4012,7 +4012,7 @@ temperature/humudity sensor.&lt;/p>&lt;table>
 		lost(2)
 		noComm(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorStatusEvent not found trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4074,7 +4074,7 @@ temperature/humudity sensor.&lt;/p>&lt;table>
 		lost(2)
 		noComm(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorStatusEvent lost trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4136,7 +4136,7 @@ temperature/humudity sensor.&lt;/p>&lt;table>
 		lost(2)
 		noComm(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorStatusEvent noComm trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4194,7 +4194,7 @@ temperature/humudity sensor.&lt;/p>&lt;table>
 		lost(2)
 		noComm(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorStatusEvent trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4276,7 +4276,7 @@ tempHumidSensorTempStatus, and then stops being repeated.&lt;/p>&lt;table>
 		celsius(0)
 		fahrenheit(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorTempEvent normal trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4358,7 +4358,7 @@ tempHumidSensorTempStatus, and then stops being repeated.&lt;/p>&lt;table>
 		celsius(0)
 		fahrenheit(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorTempEvent notFound trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4440,7 +4440,7 @@ tempHumidSensorTempStatus, and then stops being repeated.&lt;/p>&lt;table>
 		celsius(0)
 		fahrenheit(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorTempEvent reading trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4522,7 +4522,7 @@ tempHumidSensorTempStatus, and then stops being repeated.&lt;/p>&lt;table>
 		celsius(0)
 		fahrenheit(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorTempEvent low temp trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4604,7 +4604,7 @@ tempHumidSensorTempStatus, and then stops being repeated.&lt;/p>&lt;table>
 		celsius(0)
 		fahrenheit(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorTempEvent high temp trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4686,7 +4686,7 @@ tempHumidSensorTempStatus, and then stops being repeated.&lt;/p>&lt;table>
 		celsius(0)
 		fahrenheit(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorTempEvent readError trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4768,7 +4768,7 @@ tempHumidSensorTempStatus, and then stops being repeated.&lt;/p>&lt;table>
 		celsius(0)
 		fahrenheit(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorTempEvent lost trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4850,7 +4850,7 @@ tempHumidSensorTempStatus, and then stops being repeated.&lt;/p>&lt;table>
 		celsius(0)
 		fahrenheit(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorTempEvent noComm trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -4928,7 +4928,7 @@ tempHumidSensorTempStatus, and then stops being repeated.&lt;/p>&lt;table>
 		celsius(0)
 		fahrenheit(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorTempEvent trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -5007,7 +5007,7 @@ tempHumidSensorHumidStatus, and then stops being repeated.&lt;/p>&lt;table>
 
 	tempHumidSensorHumidHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorHumidEvent normal trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -5082,7 +5082,7 @@ tempHumidSensorHumidStatus, and then stops being repeated.&lt;/p>&lt;table>
 
 	tempHumidSensorHumidHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorHumidEvent notFound trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -5157,7 +5157,7 @@ tempHumidSensorHumidStatus, and then stops being repeated.&lt;/p>&lt;table>
 
 	tempHumidSensorHumidHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorHumidEvent reading trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -5232,7 +5232,7 @@ tempHumidSensorHumidStatus, and then stops being repeated.&lt;/p>&lt;table>
 
 	tempHumidSensorHumidHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorHumidEvent humidLow trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -5307,7 +5307,7 @@ tempHumidSensorHumidStatus, and then stops being repeated.&lt;/p>&lt;table>
 
 	tempHumidSensorHumidHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorHumidEvent humidHigh trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -5382,7 +5382,7 @@ tempHumidSensorHumidStatus, and then stops being repeated.&lt;/p>&lt;table>
 
 	tempHumidSensorHumidHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorHumidEvent readError trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -5457,7 +5457,7 @@ tempHumidSensorHumidStatus, and then stops being repeated.&lt;/p>&lt;table>
 
 	tempHumidSensorHumidHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorHumidEvent lost trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -5532,7 +5532,7 @@ tempHumidSensorHumidStatus, and then stops being repeated.&lt;/p>&lt;table>
 
 	tempHumidSensorHumidHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorHumidEvent noComm trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -5603,7 +5603,7 @@ tempHumidSensorHumidStatus, and then stops being repeated.&lt;/p>&lt;table>
 
 	tempHumidSensorHumidHighThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: tempHumidSensorHumidEvent trap received 
 			systemLocation=%parm[#1]% 
 			tempHumidSensorID=%parm[#2]% 
@@ -5663,7 +5663,7 @@ contactClosureStatus, and then stops being repeated.&lt;/p>&lt;table>
 		alarm(1)
 		noComm(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: contactClosureEvent normal trap received 
 			systemLocation=%parm[#1]% 
 			contactClosureID=%parm[#2]% 
@@ -5720,7 +5720,7 @@ contactClosureStatus, and then stops being repeated.&lt;/p>&lt;table>
 		alarm(1)
 		noComm(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: contactClosureEvent alarm trap received 
 			systemLocation=%parm[#1]% 
 			contactClosureID=%parm[#2]% 
@@ -5777,7 +5777,7 @@ contactClosureStatus, and then stops being repeated.&lt;/p>&lt;table>
 		alarm(1)
 		noComm(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: contactClosureEvent noComm trap received 
 			systemLocation=%parm[#1]% 
 			contactClosureID=%parm[#2]% 
@@ -5830,7 +5830,7 @@ contactClosureStatus, and then stops being repeated.&lt;/p>&lt;table>
 		alarm(1)
 		noComm(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Sentry Event: contactClosureEvent trap received 
 			systemLocation=%parm[#1]% 
 			contactClosureID=%parm[#2]% 

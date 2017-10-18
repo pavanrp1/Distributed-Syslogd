@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vendor/redline/traps/vipStateUp</uei>
       <event-label>REDLINE-TRAPv2-MIB defined trap event: vipStateUp</event-label>
       <descr>&lt;p>This trap indicates that the current VIP state is up.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Redline Event: vipStateUp trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -40,7 +40,7 @@
       <uei>uei.opennms.org/vendor/redline/traps/vipStateDown</uei>
       <event-label>REDLINE-TRAPv2-MIB defined trap event: vipStateDown</event-label>
       <descr>&lt;p>This trap indicates that the current VIP state is down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Redline Event: vipStateDown trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -63,7 +63,7 @@
       <uei>uei.opennms.org/vendor/redline/traps/targetServerStateUp</uei>
       <event-label>REDLINE-TRAPv2-MIB defined trap event: targetServerStateUp</event-label>
       <descr>&lt;p>This trap indicates that the current target server state is up.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Redline Event: targetServerStateUp trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -86,7 +86,7 @@
       <uei>uei.opennms.org/vendor/redline/traps/targetServerStateDown</uei>
       <event-label>REDLINE-TRAPv2-MIB defined trap event: targetServerStateDown</event-label>
       <descr>&lt;p>This trap indicates that the current target server state is down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Redline Event: targetServerStateDown trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -109,7 +109,7 @@
       <uei>uei.opennms.org/vendor/redline/traps/failoverStateActive</uei>
       <event-label>REDLINE-TRAPv2-MIB defined trap event: failoverStateActive</event-label>
       <descr>&lt;p>This trap indicates that the redline accelerator is running in Active mode.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Redline Event: failoverStateActive trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -132,7 +132,7 @@
       <uei>uei.opennms.org/vendor/redline/traps/connectionThresholdTrap</uei>
       <event-label>REDLINE-TRAPv2-MIB defined trap event: connectionThresholdTrap</event-label>
       <descr>&lt;p>This trap indicates that user defined maximum connection threshold limit is reached.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Redline Event: connectionThresholdTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>

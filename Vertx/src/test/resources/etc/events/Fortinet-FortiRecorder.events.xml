@@ -21,7 +21,7 @@
 
 	frcSysSerial&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	frcTrapVideoDiskHighThreshold trap received
 	frcSysSerial=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -61,7 +61,7 @@
 		logdiskFormat(6)
 		videodiskFormat(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	frcTrapSystemEvent trap received
 	frcSysSerial=%parm[#1]%
 	frcSysEventCode=%parm[#2]%&lt;/p>
@@ -107,7 +107,7 @@
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	frcTrapRemoteStorage trap received
 	frcSysSerial=%parm[#1]%
 	frcRemoteStorageStatus=%parm[#2]%&lt;/p>
@@ -156,7 +156,7 @@
 		ipChange(5)
 		reboot(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	frcTrapCameraEvent trap received
 	frcSysSerial=%parm[#1]%
 	frcCameraName=%parm[#2]%

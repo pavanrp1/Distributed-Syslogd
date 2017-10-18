@@ -25,7 +25,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: arrayDiskFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -58,7 +58,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: arrayDiskRemoved trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -91,7 +91,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: arrayDiskOffline trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -124,7 +124,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: arrayDiskDegraded trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -157,7 +157,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: arrayDiskInserted trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -190,7 +190,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: virtualDiskCreated trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -223,7 +223,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: virtualDiskDeleted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -264,7 +264,7 @@
 
 	newVDConfigEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: virtualDiskConfigChanged trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]% 
@@ -299,7 +299,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: virtualDiskFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -332,7 +332,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: virtualDiskDegraded trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -365,7 +365,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdFailedRedundancy trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -398,7 +398,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: checkConsistencyStarted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -431,7 +431,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdFormatStarted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -464,7 +464,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adFormatStarted trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -497,7 +497,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdInitializeStarted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -530,7 +530,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adInitializeStarted trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -572,7 +572,7 @@
 
 	newVDConfigEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdReconfigStarted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]% 
@@ -607,7 +607,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdRebuildStarted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -640,7 +640,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adRebuildStarted trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -673,7 +673,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adDiagStarted trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -706,7 +706,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: checkConsistencyCancelled trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -739,7 +739,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdFormatCancelled trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -772,7 +772,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adFormatCancelled trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -805,7 +805,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdInitializeCancelled trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -838,7 +838,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adInitializeCancelled trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -871,7 +871,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdReconfigCancelled trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -904,7 +904,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdRebuildCancelled trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -937,7 +937,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adRebuildCancelled trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -970,7 +970,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adDiagCancelled trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1003,7 +1003,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: checkConsistencyFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -1036,7 +1036,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdFormatFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -1069,7 +1069,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adFormatFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1102,7 +1102,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdInitializeFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -1135,7 +1135,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adInitializeFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1168,7 +1168,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdReconfigFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -1201,7 +1201,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdRebuildFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -1234,7 +1234,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adRebuildFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1267,7 +1267,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adDiagFailed trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1300,7 +1300,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: checkConsistencyCompleted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -1333,7 +1333,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdFormatCompleted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -1366,7 +1366,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adFormatCompleted trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1399,7 +1399,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdInitializeCompleted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -1432,7 +1432,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adInitializeCompleted trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1465,7 +1465,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdReconfigCompleted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -1498,7 +1498,7 @@
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: vdRebuildCompleted trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -1531,7 +1531,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adRebuildCompleted trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1564,7 +1564,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: adDiagCompleted trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1597,7 +1597,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: percPredictiveFailure trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1630,7 +1630,7 @@
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: percSCSISenseData trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1668,7 +1668,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         timeEv&lt;/b>&lt;/td>&lt;td>
         %parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         percPauseIO trap received
                         controllerNameEv=%parm[#1]%
                         channelNumberEv=%parm[#2]%
@@ -1702,7 +1702,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         channelNumberEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         percResumeIO trap received
                         controllerNameEv=%parm[#1]%
                         channelNumberEv=%parm[#2]%&lt;/p>
@@ -1735,7 +1735,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         percHotSpareAssign trap received
                         controllerNameEv=%parm[#1]%
                         arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1768,7 +1768,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         percHotSpareUnAssign trap received
                         controllerNameEv=%parm[#1]%
                         arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -1797,7 +1797,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: cntrlBatteryNeedsReconditioning trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1825,7 +1825,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: cntrlBatteryLow trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1853,7 +1853,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: cntrlBatteryRecondition trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1881,7 +1881,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: cntrlBatteryReconComplete trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1909,7 +1909,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: cntrlPauseIO trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1937,7 +1937,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: cntrlResumeIO trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1969,7 +1969,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: perc2SmartFPTExceeded trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -2002,7 +2002,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: perc2SmartConfigChange trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -2035,7 +2035,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: perc2SmartWarning trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -2068,7 +2068,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: perc2SmartWarningTemp trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -2101,7 +2101,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: perc2SmartWarningDegraded trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -2134,7 +2134,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
 	arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: perc2SmartFPTExceededTest trap received 
 			controllerNameEv=%parm[#1]% 
 			arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -2167,7 +2167,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         unitNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureAlertTempWarnMax trap received
                         enclosureNameEv=%parm[#1]%
                         unitNameEv=%parm[#2]%&lt;/p>
@@ -2200,7 +2200,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         unitNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureAlertTempWarnMin trap received
                         enclosureNameEv=%parm[#1]%
                         unitNameEv=%parm[#2]%&lt;/p>
@@ -2233,7 +2233,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         unitNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureAlertTempErrMax trap received
                         enclosureNameEv=%parm[#1]%
                         unitNameEv=%parm[#2]%&lt;/p>
@@ -2266,7 +2266,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         unitNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureAlertTempErrMin trap received
                         enclosureNameEv=%parm[#1]%
                         unitNameEv=%parm[#2]%&lt;/p>
@@ -2299,7 +2299,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         unitNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureGenericFailed trap received
                         enclosureNameEv=%parm[#1]%
                         unitNameEv=%parm[#2]%&lt;/p>
@@ -2332,7 +2332,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         unitNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureGenericOffline trap received
                         enclosureNameEv=%parm[#1]%
                         unitNameEv=%parm[#2]%&lt;/p>
@@ -2365,7 +2365,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         unitNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureGenericUnknown trap received
                         enclosureNameEv=%parm[#1]%
                         unitNameEv=%parm[#2]%&lt;/p>
@@ -2398,7 +2398,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         unitNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureGenericWarning trap received
                         enclosureNameEv=%parm[#1]%
                         unitNameEv=%parm[#2]%&lt;/p>
@@ -2431,7 +2431,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         enclosureUnitNamesEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureGenericDegraded trap received
                         controllerNameEv=%parm[#1]%
                         enclosureUnitNamesEv=%parm[#2]%&lt;/p>
@@ -2464,7 +2464,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         enclosureNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertShutdownEnclosure trap received
                         controllerNameEv=%parm[#1]%
                         enclosureNameEv=%parm[#2]%&lt;/p>
@@ -2497,7 +2497,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         enclosureNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertShutdownServer trap received
                         controllerNameEv=%parm[#1]%
                         enclosureNameEv=%parm[#2]%&lt;/p>
@@ -2530,7 +2530,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertPausedCheckConsistency trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -2563,7 +2563,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertResumedCheckConsistency trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -2596,7 +2596,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertVirtualDiskSplitMirror trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -2629,7 +2629,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertVirtualDiskUnmirror trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -2666,7 +2666,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         virtualDiskNameNewEv&lt;/b>&lt;/td>&lt;td>
         %parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertRenameVirtualDisk trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%
@@ -2700,7 +2700,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         device1NameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertGenericReady trap received
                         controllerNameEv=%parm[#1]%
                         device1NameEv=%parm[#2]%&lt;/p>
@@ -2733,7 +2733,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         device1NameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertCommTimeout trap received
                         controllerNameEv=%parm[#1]%
                         device1NameEv=%parm[#2]%&lt;/p>
@@ -2766,7 +2766,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         device1NameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertCommFailure trap received
                         controllerNameEv=%parm[#1]%
                         device1NameEv=%parm[#2]%&lt;/p>
@@ -2799,7 +2799,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
 
         device1NameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertCommRestored trap received
                         controllerNameEv=%parm[#1]%
                         device1NameEv=%parm[#2]%&lt;/p>
@@ -2825,7 +2825,7 @@ resume after the allotted time (%d seconds).&lt;/p>&lt;table>
       <event-label>ArrayManager-MIB defined trap event: genericEvent_DATABASE_UP</event-label>
       <descr>&lt;p>Communication with the Array Manager database is now
 possible.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         genericEvent_DATABASE_UP trap received&lt;/p>
                 </logmsg>
       <severity>Cleared</severity>
@@ -2849,7 +2849,7 @@ possible.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>ArrayManager-MIB defined trap event: genericEvent_DATABASE_DOWN</event-label>
       <descr>&lt;p>Communication with the Array Manager database is NOT
 possible.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         genericEvent_DATABASE_DOWN trap received&lt;/p>
                 </logmsg>
       <severity>Warning</severity>
@@ -2876,7 +2876,7 @@ possible.&lt;/p>&lt;table>&lt;/table></descr>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertMegalibTimeout trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -2921,7 +2921,7 @@ unit operation was interrupted prior to completion.&lt;/p>&lt;table>
 
         senseQualifierEv&lt;/b>&lt;/td>&lt;td>
         %parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertScsiSenseFormatFail trap received
                         controllerNameEv=%parm[#1]%
                         arrayDiskNameEv=%parm[#2]%
@@ -2970,7 +2970,7 @@ If this disk is part of a non-redundant virtual disk, the data for this block ca
 
         senseQualifierEv&lt;/b>&lt;/td>&lt;td>
         %parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertScsiSenseSectorReassign trap received
                         controllerNameEv=%parm[#1]%
                         arrayDiskNameEv=%parm[#2]%
@@ -3016,7 +3016,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         eMMFWVersion1Ev&lt;/b>&lt;/td>&lt;td>
         %parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertEmmFwMismatch trap received
                         controllerNameEv=%parm[#1]%
                         enclosureNameEv=%parm[#2]%
@@ -3051,7 +3051,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         enclosureNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertConserveCacheModeEnable trap received
                         controllerNameEv=%parm[#1]%
                         enclosureNameEv=%parm[#2]%&lt;/p>
@@ -3084,7 +3084,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         enclosureNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertConserveCacheModeDisable trap received
                         controllerNameEv=%parm[#1]%
                         enclosureNameEv=%parm[#2]%&lt;/p>
@@ -3121,7 +3121,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         eMMFWVersion0Ev&lt;/b>&lt;/td>&lt;td>
         %parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertEnclosureFwDownload trap received
                         controllerNameEv=%parm[#1]%
                         enclosureNameEv=%parm[#2]%
@@ -3155,7 +3155,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         enclosureNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertEnclosureAlarmEnable trap received
                         controllerNameEv=%parm[#1]%
                         enclosureNameEv=%parm[#2]%&lt;/p>
@@ -3188,7 +3188,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         enclosureNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertEnclosureAlarmDisable trap received
                         controllerNameEv=%parm[#1]%
                         enclosureNameEv=%parm[#2]%&lt;/p>
@@ -3217,7 +3217,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertControllerAlarmEnable trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -3245,7 +3245,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertControllerAlarmDisable trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -3277,7 +3277,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         rebuildRateEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertControllerRebuildRate trap received
                         controllerNameEv=%parm[#1]%
                         rebuildRateEv=%parm[#2]%&lt;/p>
@@ -3310,7 +3310,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertArrayDiskForcedOnline trap received
                         controllerNameEv=%parm[#1]%
                         arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -3343,7 +3343,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertArrayDiskForcedOffline trap received
                         controllerNameEv=%parm[#1]%
                         arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -3376,7 +3376,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertTaskBGI trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -3409,7 +3409,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertCancelBGI trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -3442,7 +3442,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertFailBGI trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -3475,7 +3475,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertCompleteBGI trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -3508,7 +3508,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         enclosureUnitNamesEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureGenericNotInstalled trap received
                         controllerNameEv=%parm[#1]%
                         enclosureUnitNamesEv=%parm[#2]%&lt;/p>
@@ -3553,7 +3553,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         scsiStatusEv&lt;/b>&lt;/td>&lt;td>
         %parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureGenericCommTimeout trap received
                         controllerNameEv=%parm[#1]%
                         enclosureNameEv=%parm[#2]%
@@ -3601,7 +3601,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         scsiStatusEv&lt;/b>&lt;/td>&lt;td>
         %parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         enclosureGenericCommLost trap received
                         controllerNameEv=%parm[#1]%
                         enclosureNameEv=%parm[#2]%
@@ -3637,7 +3637,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         arrayDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertCompWithErrDiskRebuild trap received
                         controllerNameEv=%parm[#1]%
                         arrayDiskNameEv=%parm[#2]%&lt;/p>
@@ -3670,7 +3670,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         additionalInfoEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         alertControllerMiscError trap received
                         controllerNameEv=%parm[#1]%
                         additionalInfoEv=%parm[#2]%&lt;/p>
@@ -3707,7 +3707,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         reqVerEv&lt;/b>&lt;/td>&lt;td>
         %parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         installedDriverVerUnsupported trap received
                         controllerNameEv=%parm[#1]%
                         instVerEv=%parm[#2]%
@@ -3745,7 +3745,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         reqVerEv&lt;/b>&lt;/td>&lt;td>
         %parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         installedFirmwareVerUnsupported trap received
                         controllerNameEv=%parm[#1]%
                         instVerEv=%parm[#2]%
@@ -3779,7 +3779,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         instVerEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         unsupportedConfig trap received
                         controllerNameEv=%parm[#1]%
                         instVerEv=%parm[#2]%&lt;/p>
@@ -3816,7 +3816,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-ONLINE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -3854,7 +3854,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-HOTSPARE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -3892,7 +3892,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-HARD-ERROR trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -3930,7 +3930,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-PFA trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -3968,7 +3968,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-AUTO-REBUILD-START trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4006,7 +4006,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-MANUAL-REBUILD-START trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4044,7 +4044,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-REBUILD-DONE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4082,7 +4082,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-REBUILD-CANCELED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4120,7 +4120,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-REBUILD-ERROR trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4158,7 +4158,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-REBUILD-NEWDEV-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4196,7 +4196,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-REBUILD-SYSDEV-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4234,7 +4234,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4272,7 +4272,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-FOUND trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4310,7 +4310,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-GONE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4348,7 +4348,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-UNCONFIGURED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4386,7 +4386,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-EXPANDCAPACITY-START trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4424,7 +4424,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-EXPANDCAPACITY-DONE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4462,7 +4462,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-EXPANDCAPACITY-ERROR trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4500,7 +4500,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-COMMAND-TIMEOUT trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4538,7 +4538,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-COMMAND-ABORT trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4576,7 +4576,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-COMMAND-RETRIED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4614,7 +4614,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-PARITY-ERROR trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4652,7 +4652,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-SOFT-ERROR trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4690,7 +4690,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-MISC-ERROR trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4728,7 +4728,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-RESET trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4766,7 +4766,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-ACTIVESPARE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4804,7 +4804,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-WARMSPARE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4842,7 +4842,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-REQSENSE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4880,7 +4880,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-INIT-STARTED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4918,7 +4918,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-INIT-DONE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4956,7 +4956,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-INIT-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -4994,7 +4994,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-INIT-CANCELED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5032,7 +5032,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-WRITEREC-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5070,7 +5070,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-RESET-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5108,7 +5108,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-DBLCC-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5146,7 +5146,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-REMOVED-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5184,7 +5184,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-GROSSERR-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5222,7 +5222,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-BADTAG-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5260,7 +5260,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-SCSITMO-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5298,7 +5298,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-SYSRESET-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5336,7 +5336,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-BSYPAR-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5374,7 +5374,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-BYCMD-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5412,7 +5412,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-SELTMO-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5450,7 +5450,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-SEQERR-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5488,7 +5488,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-UNKNOWNSTS-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5526,7 +5526,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-NOTRDY-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5564,7 +5564,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			pv660fEvent-PHYSDEV-MISSING-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5602,7 +5602,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-CODWRFAIL-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5640,7 +5640,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-BDTWRFAIL-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5678,7 +5678,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-OFFLINE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5716,7 +5716,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-STANDBY trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5754,7 +5754,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-REBUILD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5792,7 +5792,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-ID-MISMATCH trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5830,7 +5830,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-FAILED-START trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5868,7 +5868,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-OFFSET-SET trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5906,7 +5906,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-SET-BUS-WIDTH trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5944,7 +5944,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-MISSING-ONSTARTUP trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -5982,7 +5982,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-REBUILD-START-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -6020,7 +6020,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-MOVING-TO-OTHER-CHN trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -6058,7 +6058,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-OFFLINE-DEVICE-MADE-ONLINE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -6096,7 +6096,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-PHYSDEV-STANDBY-REBUILD-START trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -6130,7 +6130,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FIBREDEV-LOOPID-SOFTADDR-OCCURRED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -6163,7 +6163,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-CHECK-START trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6196,7 +6196,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-CHECK-DONE trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6229,7 +6229,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-CHECK-CANCELED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6262,7 +6262,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-CHECK-ERROR trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6295,7 +6295,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-CHECK-SYSDEV-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6328,7 +6328,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-CHECK-PHYSDEV-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6361,7 +6361,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-OFFLINE trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6394,7 +6394,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-CRITICAL trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6427,7 +6427,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-ONLINE trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6460,7 +6460,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-AUTO-REBUILD-START trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6493,7 +6493,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-MANUAL-REBUILD-START trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6526,7 +6526,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-REBUILD-DONE trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6559,7 +6559,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-REBUILD-CANCELED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6592,7 +6592,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-REBUILD-ERROR trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6625,7 +6625,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-REBUILD-NEWDEV-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6658,7 +6658,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-REBUILD-SYSDEV-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6691,7 +6691,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-INIT-STARTED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6724,7 +6724,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-INIT-DONE trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6757,7 +6757,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-INIT-CANCELED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6790,7 +6790,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-INIT-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6823,7 +6823,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-FOUND trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6856,7 +6856,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-GONE trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6889,7 +6889,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-EXPANDCAPACITY-START trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6922,7 +6922,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-EXPANDCAPACITY-DONE trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6955,7 +6955,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-EXPANDCAPACITY-ERROR trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -6988,7 +6988,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-BADBLOCK trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -7021,7 +7021,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-SIZECHANGED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -7054,7 +7054,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-TYPECHANGED trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -7087,7 +7087,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-BADDATABLOCK trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -7116,7 +7116,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-WR-LUN-MAP trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -7148,7 +7148,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-DATAREAD-FROM-BLOCK-IN-BDT trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -7181,7 +7181,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-DATA-FOR-BLOCK-LOST trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -7214,7 +7214,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-OFFLINE-DEVICE-MADE-AVAILABLE-WITH-DATALOSS trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -7247,7 +7247,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-OFFLINE-DEVICE-MADE-AVAILABLE trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -7280,7 +7280,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSDEV-STANDBY-REBUILD-START trap received 
 			controllerNameEv=%parm[#1]% 
 			virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -7317,7 +7317,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTFAN-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -7355,7 +7355,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTFAN-OK trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -7397,7 +7397,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-AEMI-FAN-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -7432,7 +7432,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	enclosureNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTFAN-NOTPRESENT trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]%&lt;/p>
@@ -7469,7 +7469,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTPOWER-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -7507,7 +7507,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTPOWER-OK trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -7549,7 +7549,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-AEMI-PWR-SUPPLY-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -7584,7 +7584,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	enclosureNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTPOWER-NOTPRESENT trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]%&lt;/p>
@@ -7625,7 +7625,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTHEAT-BAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -7664,7 +7664,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTHEAT-CRITICAL trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -7702,7 +7702,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTHEAT-OK trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -7744,7 +7744,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-AEMI-OVER-TEMPERATURE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -7779,7 +7779,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	enclosureNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTHEAT-NOTPRESENT trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]%&lt;/p>
@@ -7812,7 +7812,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTSTWK-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -7845,7 +7845,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTSTWK-CRITICAL trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -7878,7 +7878,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMTSTWK-OK trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -7907,7 +7907,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMT-UPS-DISABLED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -7935,7 +7935,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMT-UPS-AC-FAIL trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -7963,7 +7963,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMT-UPS-BAT-LOW trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -7991,7 +7991,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMT-UPS-FAILED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8019,7 +8019,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FMT-UPS-OK trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8055,7 +8055,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLFAN-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8093,7 +8093,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLFAN-OK trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8131,7 +8131,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLFAN-NOTPRESENT trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8169,7 +8169,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLPOWER-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8207,7 +8207,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLPOWER-OK trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8245,7 +8245,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLPOWER-NOTPRESENT trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8283,7 +8283,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLHEAT-BAD trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8321,7 +8321,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLHEAT-CRITICAL trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8359,7 +8359,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLHEAT-OK trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8397,7 +8397,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLHEAT-NOTPRESENT trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8431,7 +8431,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	enclosureNumberE&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLACCESS-CRITICAL trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberE=%parm[#2]%&lt;/p>
@@ -8464,7 +8464,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	enclosureNumberE&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLACCESS-OK trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberE=%parm[#2]%&lt;/p>
@@ -8501,7 +8501,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLACCESS-OFFLINE trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8535,7 +8535,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	enclosureNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLSES-SOFTADDR-OCCURRED trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]%&lt;/p>
@@ -8564,7 +8564,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLACCESS-READY trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8600,7 +8600,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLHEAT-UNKNOWN trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8638,7 +8638,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLPOWER-UNKNOWN trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8676,7 +8676,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	unitNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-ENCLFAN-UNKNOWN trap received 
 			controllerNameEv=%parm[#1]% 
 			enclosureNumberEv=%parm[#2]% 
@@ -8702,7 +8702,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-SYSTEM-STARTED</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-SYSTEM-STARTED</event-label>
       <descr>&lt;p>Array management server software started successfully.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSTEM-STARTED trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -8729,7 +8729,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-WRITEBACK-ERROR trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8757,7 +8757,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-STATE-TABLE-FULL trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8785,7 +8785,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-DEAD trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8813,7 +8813,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-RESET trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8841,7 +8841,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-FOUND trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8869,7 +8869,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-GONE trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8897,7 +8897,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BBU-FOUND trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8925,7 +8925,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BBU-POWER-LOW trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8953,7 +8953,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BBU-POWER-OK trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8981,7 +8981,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-POWER-OFF trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9009,7 +9009,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-POWER-ON trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9037,7 +9037,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-ONLINE trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9065,7 +9065,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-OFFLINE trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9093,7 +9093,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-CRITICAL trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9121,7 +9121,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BBU-RECOND-START trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9149,7 +9149,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BBU-RECOND-DONE trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9177,7 +9177,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BBU-RECOND-ABORT trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9205,7 +9205,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-INSTALLATION-ABORTED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9241,7 +9241,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-FIRMWARE-MISMATCH trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -9279,7 +9279,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BBU-NORESPONSE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -9317,7 +9317,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-WARM-BOOT-ERROR trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -9347,7 +9347,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-CONSERV-CACHE-MODE trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9375,7 +9375,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-NORMAL-CACHE-MODE trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9403,7 +9403,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-DEV-START-CMPLT trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9431,7 +9431,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-SOFT-ECC-CORRECTED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9467,7 +9467,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-HARD-ECC-CORRECTED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -9497,7 +9497,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BBU-RECOND-NEEDED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9525,7 +9525,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-REMOVED-PTNR trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9553,7 +9553,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BBU-OUT-OF-SERVICE trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9581,7 +9581,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-UPDATE-PTNR-STATUS trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9609,7 +9609,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-RELINQUISH-PTNR trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9637,7 +9637,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-INSERTED-PTNR trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9665,7 +9665,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-DUAL-ENABLED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9693,7 +9693,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-KILL-PTNR trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9721,7 +9721,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-NEXUS trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9749,7 +9749,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BAD-BOOTROM-IMAGE trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9777,7 +9777,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-BAD-MAC-ADDRESS trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9805,7 +9805,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-MIRROR-RACE-RECOVERY-FAILED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9833,7 +9833,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CTLDEV-MIRROR-CRITICAL-DRIVE trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9857,7 +9857,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-SYSTEM-STARTED-NEW</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-SYSTEM-STARTED-NEW</event-label>
       <descr>&lt;p>System started.-&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSTEM-STARTED-NEW trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -9880,7 +9880,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-SYSTEM-SIZE-TABLE-FULL</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-SYSTEM-SIZE-TABLE-FULL</event-label>
       <descr>&lt;p>Size table full.-&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSTEM-SIZE-TABLE-FULL trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -9903,7 +9903,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-SYSTEM-USER-LOGGED-IN</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-SYSTEM-USER-LOGGED-IN</event-label>
       <descr>&lt;p>User logged in.-&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSTEM-USER-LOGGED-IN trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -9926,7 +9926,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-SYSTEM-USER-LOGGED-OUT</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-SYSTEM-USER-LOGGED-OUT</event-label>
       <descr>&lt;p>User logged out.-&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSTEM-USER-LOGGED-OUT trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -9949,7 +9949,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-SYSTEM-ALIVE</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-SYSTEM-ALIVE</event-label>
       <descr>&lt;p>Server alive.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSTEM-ALIVE trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -9972,7 +9972,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-SYSTEM-DEAD</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-SYSTEM-DEAD</event-label>
       <descr>&lt;p>Lost connection to server, or server is down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SYSTEM-DEAD trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -9999,7 +9999,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-AUTOBOOT-CHANGED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10031,7 +10031,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CHANNEL-FAILED trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -10064,7 +10064,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CHANNEL-OK trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -10097,7 +10097,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CHANNEL-SCSI-BUS-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -10130,7 +10130,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CHANNEL-SCSI-BUS-ALIVE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -10163,7 +10163,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CHANNEL-FIBER-DEAD trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -10196,7 +10196,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CHANNEL-FIBER-ALIVE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -10225,7 +10225,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-LOG-EMPTY trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10253,7 +10253,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-LOG-OUT-SYNC trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10289,7 +10289,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	targetIDEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-LOG-REQUEST-SENSE trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]% 
@@ -10323,7 +10323,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	channelNumberEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-LOG-SET-RTC trap received 
 			controllerNameEv=%parm[#1]% 
 			channelNumberEv=%parm[#2]%&lt;/p>
@@ -10352,7 +10352,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CFG-NEW trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10380,7 +10380,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CFG-CLEAR trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10408,7 +10408,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CFG-INVALID trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10436,7 +10436,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CFG-COD-ACCESS-ERROR trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10464,7 +10464,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CFG-COD-CONVERTED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10492,7 +10492,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-CFG-COD-IMPORT-FAILED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10520,7 +10520,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-DEBUG-DUMP-GENERATED trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10548,7 +10548,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
 	controllerNameEv&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-DEBUG-DUMP-GENERATED-PARTNER trap received 
 			controllerNameEv=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10572,7 +10572,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-FATAL-HANG</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-FATAL-HANG</event-label>
       <descr>&lt;p>Internal Controller is in the hung state.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FATAL-HANG trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -10595,7 +10595,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-FATAL-BRKP</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-FATAL-BRKP</event-label>
       <descr>&lt;p>Internal Controller has encountered a Firmware breakpoint.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-FATAL-BRKP trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -10618,7 +10618,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-I960-HW-ERR</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-I960-HW-ERR</event-label>
       <descr>&lt;p>Internal Controller has encountered i960 processor specific error.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-I960-HW-ERR trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -10641,7 +10641,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent-SARM-HW-ERR</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent-SARM-HW-ERR</event-label>
       <descr>&lt;p>Internal Controller has encountered Strong-ARM processor specific error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Dell ArrayManager: pv660fEvent-SARM-HW-ERR trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -10672,7 +10672,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_SYSDEV_BG_INIT_STARTED trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -10705,7 +10705,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_SYSDEV_BG_INIT_STOPPED trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -10738,7 +10738,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_SYSDEV_BG_INIT_PAUSED trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -10771,7 +10771,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_SYSDEV_BG_INIT_RESTARTED trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -10804,7 +10804,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_SYSDEV_BG_INIT_FAILED trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -10837,7 +10837,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_SYSDEV_BG_INIT_COMPLETED trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -10866,7 +10866,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_BBU_CALIBRATE_START trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -10894,7 +10894,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_BBU_CALIBRATE_DONE trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -10922,7 +10922,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_BBU_CALIBRATE_ABORT trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -10950,7 +10950,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_BBU_NO_BATTERY trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -10982,7 +10982,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_SYSDEV_BBULOW_POSSIBLE_DATA_LOSS trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -11007,7 +11007,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent_CTLDEV_IN_CLUSTER</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent_CTLDEV_IN_CLUSTER</event-label>
       <descr>&lt;p>Controller connected to cluster.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_IN_CLUSTER trap received&lt;/p>
                 </logmsg>
       <severity>Normal</severity>
@@ -11030,7 +11030,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Dell/traps/pv660fEvent_CTLDEV_NOT_IN_CLUSTER</uei>
       <event-label>ArrayManager-MIB defined trap event: pv660fEvent_CTLDEV_NOT_IN_CLUSTER</event-label>
       <descr>&lt;p>Controller disconnected from cluster.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_NOT_IN_CLUSTER trap received&lt;/p>
                 </logmsg>
       <severity>Warning</severity>
@@ -11061,7 +11061,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         virtualDiskNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_IMPROPERLY_SHUTDOWN trap received
                         controllerNameEv=%parm[#1]%
                         virtualDiskNameEv=%parm[#2]%&lt;/p>
@@ -11090,7 +11090,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_AUTOMATIC_FLASH_STARTED trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11118,7 +11118,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_NEGOTIATION_FAILED_JUMPERS trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11146,7 +11146,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_NEGOTIATION_SAME_ID trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11174,7 +11174,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_NEGOTIATION_BOARD_TYPE trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11202,7 +11202,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_NEGOTIATION_DISK_CHANNELS trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11230,7 +11230,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_NEGOTIATION_HOST_CHANNELS trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11258,7 +11258,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_NEGOTIATION_MEMORY_SIZE trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11286,7 +11286,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_CTLDEV_NEGOTIATION_CACHE_SIZE trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11322,7 +11322,7 @@ firmware to this enclosure again to correct this condition.&lt;/p>&lt;table>
 
         targetIDEv&lt;/b>&lt;/td>&lt;td>
         %parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_PHYSDEV_HOT_SPARE_SMALLER trap received
                         controllerNameEv=%parm[#1]%
                         channelNumberEv=%parm[#2]%
@@ -11353,7 +11353,7 @@ This trap is similar to 981 but may occur for older firmware versions.&lt;/p>&lt
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_SES_ERR trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11382,7 +11382,7 @@ This trap is similar to 980 but may occur for more recent firmware versions.&lt;
 
         controllerNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         pv660fEvent_ENC_SES_ERR trap received
                         controllerNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11410,7 +11410,7 @@ This trap is similar to 980 but may occur for more recent firmware versions.&lt;
 
         volumeNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         fsysPro_DISK_CAPACITY_WARNING trap received
                         volumeNameEv=%parm[#1]%&lt;/p>
                 </logmsg>
@@ -11438,7 +11438,7 @@ This trap is similar to 980 but may occur for more recent firmware versions.&lt;
 
         volumeNameEv&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         fsysPro_DISK_CAPACITY_ERROR trap received
                         volumeNameEv=%parm[#1]%&lt;/p>
                 </logmsg>

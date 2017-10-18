@@ -21,7 +21,7 @@
 
 	swSerialNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarinet Event: heartBeat trap received 
 			swSerialNumber=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -53,7 +53,7 @@
 
 	fatalMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Clarinet Event: fatal trap received 
 			swSerialNumber=%parm[#1]% 
 			fatalMessage=%parm[#2]%&lt;/p>

@@ -39,7 +39,7 @@ of the alarm.&lt;/p>&lt;table>
                                                                                                                                                                                               
         sipxecsAlarmDescr&lt;/b>&lt;/td>&lt;td>
         %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         sipxecsAlarmNotification trap received 
                         sipxecsAlarmId=%parm[#1]% 
                         sipxecsAlarmSource=%parm[#2]% 

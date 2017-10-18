@@ -7,7 +7,7 @@
 
       &lt;p>Long reason: %parm[action.longReason]% &lt;/p>
       &lt;p>&lt;a href=&quot;%parm[resource.url]%&quot; > %parm[resource.name]% &lt;/a>&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
       &lt;p>Hyperic HQ Alert: %parm[action.longReason]% &lt;/p>
     </logmsg>
       <severity>Warning</severity>

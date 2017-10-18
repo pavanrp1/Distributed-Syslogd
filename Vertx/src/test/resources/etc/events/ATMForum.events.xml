@@ -39,7 +39,7 @@ reconfigured VPC at this ATM Interface.&lt;/p>&lt;table>
                 localUpEnd2endUnknown(4)
                 localDown(5)
         &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         atmfVpcChange trap received 
                         atmfVpcPortIndex=%parm[#1]% 
                         atmfVpcVpi=%parm[#2]% 
@@ -93,7 +93,7 @@ Interface.&lt;/p>&lt;table>
                 localUpEnd2endUnknown(4)
                 localDown(5)
         &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         atmfVccChange trap received 
                         atmfVccPortIndex=%parm[#1]% 
                         atmfVccVci=%parm[#2]% 

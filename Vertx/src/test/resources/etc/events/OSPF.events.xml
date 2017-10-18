@@ -46,7 +46,7 @@ state (i.e., Point-to-Point).&lt;/p>&lt;table>
 		down(1)
 		pointToPoint(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfVirtIfStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -103,7 +103,7 @@ state (i.e., Point-to-Point).&lt;/p>&lt;table>
 		down(1)
 		pointToPoint(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfVirtIfStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -171,7 +171,7 @@ ospfIfStateChange.&lt;/p>&lt;table>
 		loading(7)
 		full(8)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfNbrStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfNbrIpAddr=%parm[#2]% 
@@ -233,7 +233,7 @@ progresses to a terminal state (e.g., Full).&lt;/p>&lt;table>
 		loading(7)
 		full(8)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfVirtNbrStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtNbrArea=%parm[#2]% 
@@ -295,7 +295,7 @@ progresses to a terminal state (e.g., Full).&lt;/p>&lt;table>
 		loading(7)
 		full(8)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfVirtNbrStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtNbrArea=%parm[#2]% 
@@ -353,7 +353,7 @@ progresses to a terminal state (e.g., Full).&lt;/p>&lt;table>
 		loading(7)
 		full(8)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfVirtNbrStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtNbrArea=%parm[#2]% 
@@ -428,7 +428,7 @@ prevents an adjacency from forming.&lt;/p>&lt;table>
 		lsUpdate(4)
 		lsAck(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfIfConfigError trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -501,7 +501,7 @@ jacency from forming.&lt;/p>&lt;table>
 		lsUpdate(4)
 		lsAck(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfVirtIfConfigError trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -576,7 +576,7 @@ type.&lt;/p>&lt;table>
 		lsUpdate(4)
 		lsAck(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfIfAuthFailure trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -647,7 +647,7 @@ authentication key or authentication type.&lt;/p>&lt;table>
 		lsUpdate(4)
 		lsAck(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfVirtIfAuthFailure trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -704,7 +704,7 @@ interface that cannot be parsed.&lt;/p>&lt;table>
 		lsUpdate(4)
 		lsAck(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfIfRxBadPacket trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -757,7 +757,7 @@ that cannot be parsed.&lt;/p>&lt;table>
 		lsUpdate(4)
 		lsAck(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfVirtIfRxBadPacket trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -980,7 +980,7 @@ MaxAge.&lt;/p>&lt;table>
 
 	ospfLsdbRouterId&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfOriginateLsa trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfLsdbAreaId=%parm[#2]% 
@@ -1039,7 +1039,7 @@ aged to MaxAge.&lt;/p>&lt;table>
 
 	ospfLsdbRouterId&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfMaxAgeLsa trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfLsdbAreaId=%parm[#2]% 
@@ -1078,7 +1078,7 @@ base has exceeded ospfExtLsdbLimit.&lt;/p>&lt;table>
 
 	ospfExtLsdbLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfLsdbOverflow trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfExtLsdbLimit=%parm[#2]%&lt;/p>
@@ -1115,7 +1115,7 @@ ospfExtLsdbLimit.&lt;/p>&lt;table>
 
 	ospfExtLsdbLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfLsdbApproachingOverflow trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfExtLsdbLimit=%parm[#2]%&lt;/p>
@@ -1175,7 +1175,7 @@ Backup).&lt;/p>&lt;table>
 		backupDesignatedRouter(6)
 		otherDesignatedRouter(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfIfStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -1237,7 +1237,7 @@ Backup).&lt;/p>&lt;table>
 		backupDesignatedRouter(6)
 		otherDesignatedRouter(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfIfStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -1299,7 +1299,7 @@ Backup).&lt;/p>&lt;table>
 		backupDesignatedRouter(6)
 		otherDesignatedRouter(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfIfStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -1361,7 +1361,7 @@ Backup).&lt;/p>&lt;table>
 		backupDesignatedRouter(6)
 		otherDesignatedRouter(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfIfStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -1419,7 +1419,7 @@ Backup).&lt;/p>&lt;table>
 		backupDesignatedRouter(6)
 		otherDesignatedRouter(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ospfIfStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -1472,7 +1472,7 @@ a per-area basis.&lt;/p>&lt;table>
 		elected(2)
 		disabled(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	ospfNssaTranslatorStatusChange trap received
 	ospfRouterId=%parm[#1]%
 	ospfAreaId=%parm[#2]%
@@ -1524,7 +1524,7 @@ a per-area basis.&lt;/p>&lt;table>
 		elected(2)
 		disabled(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	ospfNssaTranslatorStatusChange trap received
 	ospfRouterId=%parm[#1]%
 	ospfAreaId=%parm[#2]%
@@ -1576,7 +1576,7 @@ a per-area basis.&lt;/p>&lt;table>
 		elected(2)
 		disabled(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	ospfNssaTranslatorStatusChange trap received
 	ospfRouterId=%parm[#1]%
 	ospfAreaId=%parm[#2]%
@@ -1633,7 +1633,7 @@ changes.&lt;/p>&lt;table>
 		timedOut(4)
 		topologyChanged(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	ospfRestartStatusChange trap received
 	ospfRouterId=%parm[#1]%
 	ospfRestartStatus=%parm[#2]%
@@ -1706,7 +1706,7 @@ transitions for a neighbor.&lt;/p>&lt;table>
 		timedOut(4)
 		topologyChanged(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	ospfNbrRestartHelperStatusChange trap received
 	ospfRouterId=%parm[#1]%
 	ospfNbrIpAddr=%parm[#2]%
@@ -1782,7 +1782,7 @@ transitions for a neighbor.&lt;/p>&lt;table>
 		timedOut(4)
 		topologyChanged(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	ospfNbrRestartHelperStatusChange trap received
 	ospfRouterId=%parm[#1]%
 	ospfNbrIpAddr=%parm[#2]%
@@ -1854,7 +1854,7 @@ status transitions for a virtual neighbor.&lt;/p>&lt;table>
 		timedOut(4)
 		topologyChanged(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	ospfVirtNbrRestartHelperStatusChange trap received
 	ospfRouterId=%parm[#1]%
 	ospfVirtNbrArea=%parm[#2]%
@@ -1925,7 +1925,7 @@ status transitions for a virtual neighbor.&lt;/p>&lt;table>
 		timedOut(4)
 		topologyChanged(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	ospfVirtNbrRestartHelperStatusChange trap received
 	ospfRouterId=%parm[#1]%
 	ospfVirtNbrArea=%parm[#2]%

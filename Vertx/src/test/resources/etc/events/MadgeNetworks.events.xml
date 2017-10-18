@@ -26,7 +26,7 @@ ring changes.&lt;/p>&lt;table>
 		normal(2)
 		badly-cabled(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			backupPathStateChange trap received 
 			madgeCauTopBackupRing=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -58,7 +58,7 @@ usage changes.&lt;/p>&lt;table>
 		unUsed(1)
 		used(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			backupPathStateUse trap received 
 			madgeCauTopBackupUsed=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -92,7 +92,7 @@ changes.&lt;/p>&lt;table>
 		wrap-ro(3)
 		wrap-both(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			wrapStateChange trap received 
 			madgeCauTopWrap=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -118,7 +118,7 @@ changes.&lt;/p>&lt;table>
       <descr>&lt;p>This trap is sent when a LAM port is disabled due to
 either a wrong speed node inserting or a faulty node
 being detected.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lamPortDisabled trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -145,7 +145,7 @@ being detected.&lt;/p>&lt;table>&lt;/table></descr>
 
 	madgeCauInfoFanSpeed&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			mCaufanSpeedFailed trap received 
 			madgeCauInfoFanSpeed=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -174,7 +174,7 @@ device has exceeded safe limits.&lt;/p>&lt;table>
 
 	madgeCauInfoTherm&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			temperatureExceeded trap received 
 			madgeCauInfoTherm=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -229,7 +229,7 @@ reinserted onto the ring.&lt;/p>&lt;table>
 		killAbandoned(5)
 		resurrected(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			killInformation trap received 
 			madgeCauKillNodeAddress=%parm[#1]% 
 			madgeCauKillReason=%parm[#2]% 
@@ -295,7 +295,7 @@ but with extra information.&lt;/p>&lt;table>
 
 	madgeCauKillPortNo&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			killInformation2 trap received 
 			madgeCauKillNodeAddress=%parm[#1]% 
 			madgeCauKillReason=%parm[#2]% 
@@ -342,7 +342,7 @@ being detected.&lt;/p>&lt;table>
 		wrongSpeed(3)
 		fault(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lamPortDisabled2 trap received 
 			madgeCauTrapInfoLamNo=%parm[#1]% 
 			madgeCauTrapInfoPortNo=%parm[#2]% 
@@ -381,7 +381,7 @@ being detected.&lt;/p>&lt;table>
 		wrongSpeed(3)
 		fault(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lamStateChanged trap received 
 			madgeCauTrapInfoLamNo=%parm[#1]% 
 			madgeCauTrapInfoState=%parm[#2]%&lt;/p>

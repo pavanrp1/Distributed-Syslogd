@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapIPMIAlertTest</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapIPMIAlertTest</event-label>
       <descr>&lt;p>IPMI Alert Configuration Test&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapIPMIAlertTest trap received&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
@@ -40,7 +40,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapFanSpeedWarning</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapFanSpeedWarning</event-label>
       <descr>&lt;p>Generic Predictive Fan Failure ( predictive failure asserted )&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapFanSpeedWarning trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -63,7 +63,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapFanSPeedWarningCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapFanSPeedWarningCleared</event-label>
       <descr>&lt;p>Generic Predictive Fan Failure Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapFanSPeedWarningCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -86,7 +86,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapFanSpeedProblem</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapFanSpeedProblem</event-label>
       <descr>&lt;p>Generic Critical Fan Failure&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapFanSpeedProblem trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -109,7 +109,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapFanSPeedProblemCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapFanSPeedProblemCleared</event-label>
       <descr>&lt;p>Generic Critical Fan Failure Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapFanSPeedProblemCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -132,7 +132,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapBatteryLowWarning</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapBatteryLowWarning</event-label>
       <descr>&lt;p>Battery Low (Predictive Failure)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapBatteryLowWarning trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -155,7 +155,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapBatteryLowWarningCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapBatteryLowWarningCleared</event-label>
       <descr>&lt;p>Battery Low (Predictive Failure) Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapBatteryLowWarningCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -178,7 +178,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapBatteryFailure</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapBatteryFailure</event-label>
       <descr>&lt;p>Battery Failure&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapBatteryFailure trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -201,7 +201,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapBatteryFailCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapBatteryFailCleared</event-label>
       <descr>&lt;p>Battery Failure Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapBatteryFailCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -224,7 +224,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapUnderVoltageWarning</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapUnderVoltageWarning</event-label>
       <descr>&lt;p>Under-Voltage Warning (Lower Non Critical - going low)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapUnderVoltageWarning trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -247,7 +247,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapUnderVoltageWarningCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapUnderVoltageWarningCleared</event-label>
       <descr>&lt;p>Under-Voltage Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapUnderVoltageWarningCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -270,7 +270,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapUnderVoltage</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapUnderVoltage</event-label>
       <descr>&lt;p>Under-Voltage Problem (Lower Critical - going low)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapUnderVoltage trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -293,7 +293,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapUnderVoltageCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapUnderVoltageCleared</event-label>
       <descr>&lt;p>Under-Voltage Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapUnderVoltageCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -316,7 +316,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverVoltageWarning</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverVoltageWarning</event-label>
       <descr>&lt;p>Over-Voltage Warning (Upper Non Critical - going high)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverVoltageWarning trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -339,7 +339,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverVoltageWarningCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverVoltageWarningCleared</event-label>
       <descr>&lt;p>Over-Voltage Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverVoltageWarningCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -362,7 +362,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverVoltage</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverVoltage</event-label>
       <descr>&lt;p>Over-Voltage Problem (Upper Critical - going high)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverVoltage trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -385,7 +385,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapVoltageCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapVoltageCleared</event-label>
       <descr>&lt;p>Over-Voltage Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapVoltageCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -408,7 +408,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCriticalDiscreteVoltage</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCriticalDiscreteVoltage</event-label>
       <descr>&lt;p>Generic Critical Voltage Problem&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCriticalDiscreteVoltage trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -431,7 +431,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCriticalDiscreteVoltageCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCriticalDiscreteVoltageCleared</event-label>
       <descr>&lt;p>Generic Critical Voltage Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCriticalDiscreteVoltageCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -454,7 +454,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapUnderTemperatureWarning</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapUnderTemperatureWarning</event-label>
       <descr>&lt;p>Under-Temperature Warning (Lower non-critical,going low)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapUnderTemperatureWarning trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -477,7 +477,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapUnderTemperatureWarningCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapUnderTemperatureWarningCleared</event-label>
       <descr>&lt;p>Under-Temperature Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapUnderTemperatureWarningCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -500,7 +500,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapUnderTemperature</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapUnderTemperature</event-label>
       <descr>&lt;p>Under-Temperature Problem (Lower Critical - going low)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapUnderTemperature trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -523,7 +523,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapUnderTemperatureCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapUnderTemperatureCleared</event-label>
       <descr>&lt;p>Under-Temperature Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapUnderTemperatureCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -546,7 +546,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverTemperatureWarning</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverTemperatureWarning</event-label>
       <descr>&lt;p>Over-Temperature warning (Upper non-critical,going high)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverTemperatureWarning trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -569,7 +569,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverTemperatureWarningCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverTemperatureWarningCleared</event-label>
       <descr>&lt;p>Over-Temperature warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverTemperatureWarningCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -592,7 +592,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverTemperature</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverTemperature</event-label>
       <descr>&lt;p>Over-Temperature Problem (Upper Critical - going high)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverTemperature trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -615,7 +615,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverTemperatureCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverTemperatureCleared</event-label>
       <descr>&lt;p>Over-Temperature Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverTemperatureCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -638,7 +638,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCaseIntrusion</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCaseIntrusion</event-label>
       <descr>&lt;p>Chassis Intrusion - Physical Security Violation&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCaseIntrusion trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -661,7 +661,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCaseIntrusionCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCaseIntrusionCleared</event-label>
       <descr>&lt;p>Chassis Intrusion(Physical Security Violation) Event Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCaseIntrusionCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -684,7 +684,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapFanRedundancyDegraded</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapFanRedundancyDegraded</event-label>
       <descr>&lt;p>Fan redundancy has been degraded&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapFanRedundancyDegraded trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -707,7 +707,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapFanRedundancyLost</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapFanRedundancyLost</event-label>
       <descr>&lt;p>Fan redundancy has been lost&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapFanRedundancyLost trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -730,7 +730,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapFanFullRedundancy</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapFanFullRedundancy</event-label>
       <descr>&lt;p>Fan redundancy Has Returned to Normal&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapFanFullRedundancy trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -753,7 +753,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPSRedundancyDegraded</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPSRedundancyDegraded</event-label>
       <descr>&lt;p>Power Supply Redundancy Degraded&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPSRedundancyDegraded trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -776,7 +776,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPSRedundancyLost</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPSRedundancyLost</event-label>
       <descr>&lt;p>Power Supply Redundancy Lost&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPSRedundancyLost trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -799,7 +799,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPSFullRedundancy</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPSFullRedundancy</event-label>
       <descr>&lt;p>Power Supply Redundancy Has Returned to Normal&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPSFullRedundancy trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -822,7 +822,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuThermalTrip</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuThermalTrip</event-label>
       <descr>&lt;p>CPU Thermal Trip (Over Temperature Shutdown)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuThermalTrip trap received&lt;/p>
 	</logmsg>
       <severity>Major</severity>
@@ -845,7 +845,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuThermalTripCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuThermalTripCleared</event-label>
       <descr>&lt;p>CPU Thermal Trip (Over Temperature Shutdown) Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuThermalTripCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -868,7 +868,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuBistError</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuBistError</event-label>
       <descr>&lt;p>CPU BIST (Built In Self Test) Failure&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuBistError trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -891,7 +891,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuBistErrorCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuBistErrorCleared</event-label>
       <descr>&lt;p>CPU BIST (Built In Self Test) Failure Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuBistErrorCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -914,7 +914,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuIErr</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuIErr</event-label>
       <descr>&lt;p>CPU internal error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuIErr trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -937,7 +937,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuIErrCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuIErrCleared</event-label>
       <descr>&lt;p>CPU Internal Error Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuIErrCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -960,7 +960,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuConfigError</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuConfigError</event-label>
       <descr>&lt;p>CPU Configuration Error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuConfigError trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -983,7 +983,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuDisabled</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuDisabled</event-label>
       <descr>&lt;p>CPU Disabled (Processor Disabled)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuDisabled trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1006,7 +1006,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuEnabled</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuEnabled</event-label>
       <descr>&lt;p>CPU Enabled (Processor Enabled)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuEnabled trap received&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
@@ -1029,7 +1029,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuConfigErrorCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuConfigErrorCleared</event-label>
       <descr>&lt;p>CPU Configuration Error Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuConfigErrorCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1052,7 +1052,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuPresence</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuPresence</event-label>
       <descr>&lt;p>CPU Presence (Processor Presence detected)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuPresence trap received&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
@@ -1075,7 +1075,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuNotPresent</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuNotPresent</event-label>
       <descr>&lt;p>CPU Not Present (Processor Not Present)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuNotPresent trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -1098,7 +1098,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuThrottle</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuThrottle</event-label>
       <descr>&lt;p>CPU Throttle (Processor Speed Reduced)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuThrottle trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1121,7 +1121,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapCpuThrottleCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapCpuThrottleCleared</event-label>
       <descr>&lt;p>CPU Throttle Cleared (Normal Processor Speed)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapCpuThrottleCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1144,7 +1144,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPsPresenceDeteced</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPsPresenceDeteced</event-label>
       <descr>&lt;p>Power Supply Inserted&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPsPresenceDeteced trap received&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
@@ -1167,7 +1167,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPsPresenceRemoved</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPsPresenceRemoved</event-label>
       <descr>&lt;p>Power Supply Removed&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPsPresenceRemoved trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1190,7 +1190,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPsFailure</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPsFailure</event-label>
       <descr>&lt;p>Power Supply Failure&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPsFailure trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -1213,7 +1213,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPsFailureCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPsFailureCleared</event-label>
       <descr>&lt;p>Power Supply Failure Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPsFailureCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1236,7 +1236,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPsPredictiveFailure</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPsPredictiveFailure</event-label>
       <descr>&lt;p>Power Supply Warning&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPsPredictiveFailure trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1259,7 +1259,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPsPredictiveFailureCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPsPredictiveFailureCleared</event-label>
       <descr>&lt;p>Power Supply Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPsPredictiveFailureCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1282,7 +1282,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPsAcLost</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPsAcLost</event-label>
       <descr>&lt;p>Power Supply AC Lost&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPsAcLost trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -1305,7 +1305,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPsAcBack</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPsAcBack</event-label>
       <descr>&lt;p>Power Supply AC Restored&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPsAcBack trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1328,7 +1328,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapSelCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapSelCleared</event-label>
       <descr>&lt;p>System Event Log (SEL) Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapSelCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1351,7 +1351,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapSelFull</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapSelFull</event-label>
       <descr>&lt;p>System Event Log (SEL) Full (Logging Disabled)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapSelFull trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1374,7 +1374,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapASRTimeout</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapASRTimeout</event-label>
       <descr>&lt;p>ASR (Automatic System Recovery) Timer Expired&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapASRTimeout trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1397,7 +1397,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapASROsReset</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapASROsReset</event-label>
       <descr>&lt;p>ASR (Automatic System Recovery) Reset Occurred&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapASROsReset trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1420,7 +1420,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapASRPowerDown</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapASRPowerDown</event-label>
       <descr>&lt;p>ASR (Automatic System Recovery) Power Down Occurred&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapASRPowerDown trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1443,7 +1443,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapASRPowerCycle</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapASRPowerCycle</event-label>
       <descr>&lt;p>ASR (Automatic System Recovery) Power Cycle Occurred&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapASRPowerCycle trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1466,7 +1466,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverSystemPowerWarning</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverSystemPowerWarning</event-label>
       <descr>&lt;p>Over-System Power Utilization Warning (Upper non-critical,going high)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverSystemPowerWarning trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -1489,7 +1489,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverSystemPowerWarningCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverSystemPowerWarningCleared</event-label>
       <descr>&lt;p>Over-System Power Utilization Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverSystemPowerWarningCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1512,7 +1512,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverSystemPowerCritical</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverSystemPowerCritical</event-label>
       <descr>&lt;p>Over-System Power Utilization Problem (Upper Critical - going high)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverSystemPowerCritical trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1535,7 +1535,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapOverSystemPowerCriticalCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapOverSystemPowerCriticalCleared</event-label>
       <descr>&lt;p>Over-System Power Utilization Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapOverSystemPowerCriticalCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1558,7 +1558,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPSUMismatch</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPSUMismatch</event-label>
       <descr>&lt;p>Power Supply Mismatch (Configuration error)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPSUMismatch trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1581,7 +1581,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapPSUMismatchNormal</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapPSUMismatchNormal</event-label>
       <descr>&lt;p>Power Supply Mismatch Error Cleared(Configuration error Cleared)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapPSUMismatchNormal trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1604,7 +1604,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapSystemPowerExceedsWarning</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapSystemPowerExceedsWarning</event-label>
       <descr>&lt;p>System Power Exceeds than PSU Wattage(Warning)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapSystemPowerExceedsWarning trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1627,7 +1627,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapSystemPowerNormal</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapSystemPowerNormal</event-label>
       <descr>&lt;p>System Power Exceeds Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapSystemPowerNormal trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1650,7 +1650,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapSystemPowerExceedsError</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapSystemPowerExceedsError</event-label>
       <descr>&lt;p>System Power Exceeds than PSU Wattage(Error)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapSystemPowerExceedsError trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1673,7 +1673,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapSystemPowerExceedsCleared</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapSystemPowerExceedsCleared</event-label>
       <descr>&lt;p>System Power Exceeds Error Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapSystemPowerExceedsCleared trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>
@@ -1696,7 +1696,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapModuleSDCardFailedError</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapModuleSDCardFailedError</event-label>
       <descr>&lt;p>Module SD Card Failure Error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapModuleSDCardFailedError trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -1719,7 +1719,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapModuleSDWriteProtectWarning</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapModuleSDWriteProtectWarning</event-label>
       <descr>&lt;p>Module SD Card Write Protect warning&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapModuleSDWriteProtectWarning trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -1742,7 +1742,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapModuleSDCardPresence</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapModuleSDCardPresence</event-label>
       <descr>&lt;p>Module SD Card Present (SD Card Presence Detected)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapModuleSDCardPresence trap received&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
@@ -1765,7 +1765,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapModuleSDCardNotPresent</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapModuleSDCardNotPresent</event-label>
       <descr>&lt;p>Module SD Card not Present&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapModuleSDCardNotPresent trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -1788,7 +1788,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapSDRedundancyDegraded</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapSDRedundancyDegraded</event-label>
       <descr>&lt;p>SD Card redundancy has been degraded&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapSDRedundancyDegraded trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -1811,7 +1811,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapSDRedundancyLost</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapSDRedundancyLost</event-label>
       <descr>&lt;p>SD Card redundancy has been lost&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapSDRedundancyLost trap received&lt;/p>
 	</logmsg>
       <severity>Warning</severity>
@@ -1834,7 +1834,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/asfTrapSDFullRedundancy</uei>
       <event-label>DELL-ASF-MIB defined trap event: asfTrapSDFullRedundancy</event-label>
       <descr>&lt;p>SD Card redundancy Has Returned to Normal&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		asfTrapSDFullRedundancy trap received&lt;/p>
 	</logmsg>
       <severity>Cleared</severity>

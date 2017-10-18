@@ -23,7 +23,7 @@ Not Ready conditions.&lt;/p>&lt;table>
 
 	symmEventDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			emcDeviceStatusTrap trap received 
 			symmEventDescr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -61,7 +61,7 @@ an example of which is:
 
 	symmEventDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			emcSymmetrixStatusTrap trap received 
 			symmEventDescr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -93,7 +93,7 @@ startup, and apply to all Symmetrixes attached.&lt;/p>&lt;table>
 
 	symmEventDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			emcRatiosOutofRangeTrap trap received 
 			symmEventDescr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -123,7 +123,7 @@ in the configuration of previously attached Symmetrixes.&lt;/p>&lt;table>
 
 	discoveryChangeTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			discoveryTableChange trap received 
 			discoveryChangeTime=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -152,7 +152,7 @@ event occurs in the agent, or for a specific Symmetrix.&lt;/p>&lt;table>
 
 	symmEventDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			emcSymmetrixEventTrap trap received 
 			symmEventDescr=%parm[#1]%&lt;/p>
 		</logmsg>

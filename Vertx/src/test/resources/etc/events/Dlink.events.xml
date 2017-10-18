@@ -269,7 +269,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">SSH login from %parm[#3]% on %parm[#1]%.</logmsg>
+      <logmsg dest="donotpersist">SSH login from %parm[#3]% on %parm[#1]%.</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -542,7 +542,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">Web login from %parm[#3]% on %parm[#1]%.</logmsg>
+      <logmsg dest="donotpersist">Web login from %parm[#3]% on %parm[#1]%.</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -815,7 +815,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">Telnet login from %parm[#3]% on %parm[#1]%.</logmsg>
+      <logmsg dest="donotpersist">Telnet login from %parm[#3]% on %parm[#1]%.</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -1070,7 +1070,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">CPU load override.</logmsg>
+      <logmsg dest="donotpersist">CPU load override.</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1325,7 +1325,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">Memory is poor.</logmsg>
+      <logmsg dest="donotpersist">Memory is poor.</logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -1589,7 +1589,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">Authentication failed from %parm[#3]% on %parm[#1]%.</logmsg>
+      <logmsg dest="donotpersist">Authentication failed from %parm[#3]% on %parm[#1]%.</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1844,7 +1844,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">Wireless link is up.</logmsg>
+      <logmsg dest="donotpersist">Wireless link is up.</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -2099,7 +2099,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">De-Authentication attack attack on %parm[#1]%.</logmsg>
+      <logmsg dest="donotpersist">De-Authentication attack attack on %parm[#1]%.</logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2354,7 +2354,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">De-association attack on %parm[#1]%.</logmsg>
+      <logmsg dest="donotpersist">De-association attack on %parm[#1]%.</logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2609,7 +2609,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">Broadcast attack on %parm[#1]%.</logmsg>
+      <logmsg dest="donotpersist">Broadcast attack on %parm[#1]%.</logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2882,7 +2882,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">Web user from %parm[#3]% logged out from %parm[#1]%.</logmsg>
+      <logmsg dest="donotpersist">Web user from %parm[#3]% logged out from %parm[#1]%.</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -3128,7 +3128,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">Firmware update.</logmsg>
+      <logmsg dest="donotpersist">Firmware update.</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -3383,7 +3383,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">Wireless link is down.</logmsg>
+      <logmsg dest="donotpersist">Wireless link is down.</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3656,7 +3656,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">STA %parm[#3]% associated to %parm[#1]%</logmsg>
+      <logmsg dest="donotpersist">STA %parm[#3]% associated to %parm[#1]%</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -3929,7 +3929,7 @@
                     &lt;/tr>
 
                 &lt;/table></descr>
-      <logmsg dest="logndisplay">STA %parm[#3]% de-associated to %parm[#1]%</logmsg>
+      <logmsg dest="donotpersist">STA %parm[#3]% de-associated to %parm[#1]%</logmsg>
       <severity>Normal</severity>
    </event>
 </events>

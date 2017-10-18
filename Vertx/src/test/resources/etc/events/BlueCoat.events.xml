@@ -33,7 +33,7 @@
 
 	sgDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorSgChgSgAdded trap received 
 			sgHostname=%parm[#1]% 
 			sgSerialNumber=%parm[#2]% 
@@ -76,7 +76,7 @@
 
 	sgDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorSgChgSgDeleted trap received 
 			sgHostname=%parm[#1]% 
 			sgSerialNumber=%parm[#2]% 
@@ -124,7 +124,7 @@ SG.&lt;/p>&lt;table>
 
 	sgDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorSgChgSgConnected trap received 
 			sgHostname=%parm[#1]% 
 			sgSerialNumber=%parm[#2]% 
@@ -167,7 +167,7 @@ SG.&lt;/p>&lt;table>
 
 	sgDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorSgChgSgDisconnected trap received 
 			sgHostname=%parm[#1]% 
 			sgSerialNumber=%parm[#2]% 
@@ -210,7 +210,7 @@ SG.&lt;/p>&lt;table>
 
 	sgDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorSgChgSgOk trap received 
 			sgHostname=%parm[#1]% 
 			sgSerialNumber=%parm[#2]% 
@@ -260,7 +260,7 @@ sent.&lt;/p>&lt;table>
 
 	sgDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorSgChgSgWarning trap received 
 			sgHostname=%parm[#1]% 
 			sgSerialNumber=%parm[#2]% 
@@ -310,7 +310,7 @@ still in state critical.&lt;/p>&lt;table>
 
 	sgDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorSgChgSgCritical trap received 
 			sgHostname=%parm[#1]% 
 			sgSerialNumber=%parm[#2]% 
@@ -353,7 +353,7 @@ still in state critical.&lt;/p>&lt;table>
 
 	sgDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorSgChgSgAutoregistered trap received 
 			sgHostname=%parm[#1]% 
 			sgSerialNumber=%parm[#2]% 
@@ -396,7 +396,7 @@ still in state critical.&lt;/p>&lt;table>
 
 	sgDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorSgChgSgAutoregistrationFailed trap received 
 			sgHostname=%parm[#1]% 
 			sgSerialNumber=%parm[#2]% 
@@ -442,7 +442,7 @@ where you have two Active Directors with changes on each.&lt;/p>&lt;table>
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgPartnerReachabilityLost trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -472,7 +472,7 @@ Partner Director.&lt;/p>&lt;table>
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgPartnerReachabilityRegained trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -501,7 +501,7 @@ Director in a Standby pair by Operator command.&lt;/p>&lt;table>
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgForcedToPrimary trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -530,7 +530,7 @@ Director in a Standby pair by Operator command.&lt;/p>&lt;table>
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgForcedToSecondary trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -559,7 +559,7 @@ Director in a Standby pair by Operator command.&lt;/p>&lt;table>
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgForcedToStandalone trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -588,7 +588,7 @@ by Operator command.&lt;/p>&lt;table>
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgForcedToActiveState trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -616,7 +616,7 @@ by Operator command.&lt;/p>&lt;table>
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgSyncFailed trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -648,7 +648,7 @@ sync completes).&lt;/p>&lt;table>
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgSyncReestablished trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -698,7 +698,7 @@ changes to keep when they make the Primary Active again.&lt;/p>&lt;table>
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgPrimaryBackingOffToInactive trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -749,7 +749,7 @@ configuration on either/both Directors in the pair.&lt;/p>&lt;table>
 
 	standbyPartnersPrimary&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgPartnerConfigInvalid trap received 
 			standbyPartnerIpaddr=%parm[#1]% 
 			standbyPartnersPrimary=%parm[#2]%&lt;/p>
@@ -780,7 +780,7 @@ Director once again found its Secondary to correctly
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgPartnerConfigValidated trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -829,7 +829,7 @@ lost).&lt;/p>&lt;table>
 
 	standbyPartnerIpaddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			blueCoatDirectorStandbyChgIndirectlyForcedToReserve trap received 
 			standbyPartnerIpaddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -867,7 +867,7 @@ At the end of an attack a notification is generated with
 		noAttack(1)
 		underAttack(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			deviceAttackTrap trap received 
 			deviceAttackName=%parm[#1]% 
 			deviceAttackStatus=%parm[#2]%&lt;/p>
@@ -906,7 +906,7 @@ At the end of an attack a notification is generated with
 		bad(8)
 		unknown(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			deviceDiskTrap trap received 
 			deviceDiskStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -935,7 +935,7 @@ of a monitored system changes.&lt;/p>&lt;table>
 
 	deviceHealthCheckMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			deviceHealthCheckTrap trap received 
 			deviceHealthCheckMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -964,7 +964,7 @@ of the SG system changes.&lt;/p>&lt;table>
 
 	bluecoatSgHealthMonitorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bluecoatSgHealthMonitorTrap trap received 
 			bluecoatSgHealthMonitorMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -992,7 +992,7 @@ of the SG system changes.&lt;/p>&lt;table>
 
 	devicePolicyMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			devicePolicyTrap trap received 
 			devicePolicyMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1044,7 +1044,7 @@ of the SG system changes.&lt;/p>&lt;table>
 		fanSlowCritical(14)
 		fanStopped(15)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			deviceSensorTrap trap received 
 			deviceSensorName=%parm[#1]% 
 			deviceSensorValue=%parm[#2]% 
@@ -1087,7 +1087,7 @@ Use health monitoring instead.&lt;/p>&lt;table>
 		ok(1)
 		high(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			deviceUsageTrap trap received 
 			deviceUsageName=%parm[#1]% 
 			deviceUsagePercent=%parm[#2]% 
@@ -1129,7 +1129,7 @@ Use health monitoring instead.&lt;/p>&lt;table>
 
 	avPatternDateTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			avAntivirusUpdateSuccess trap received 
 			avVendorName=%parm[#1]% 
 			avEngineVersion=%parm[#2]% 
@@ -1176,7 +1176,7 @@ Use health monitoring instead.&lt;/p>&lt;table>
 
 	avPatternDateTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			avAntivirusUpdateFailed trap received 
 			avUpdateFailureReason=%parm[#1]% 
 			avVendorName=%parm[#2]% 
@@ -1216,7 +1216,7 @@ Use health monitoring instead.&lt;/p>&lt;table>
 
 	avVirusDetails&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			avVirusDetected trap received 
 			avUrl=%parm[#1]% 
 			avVirusName=%parm[#2]% 
@@ -1254,7 +1254,7 @@ Use health monitoring instead.&lt;/p>&lt;table>
 
 	avErrorDetails&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			avFileServed trap received 
 			avUrl=%parm[#1]% 
 			avErrorCode=%parm[#2]% 
@@ -1292,7 +1292,7 @@ Use health monitoring instead.&lt;/p>&lt;table>
 
 	avErrorDetails&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			avFileBlocked trap received 
 			avUrl=%parm[#1]% 
 			avErrorCode=%parm[#2]% 
@@ -1326,7 +1326,7 @@ Use health monitoring instead.&lt;/p>&lt;table>
 
 	avPublishedFirmwareVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			avNewFirmwareAvailable trap received 
 			avInstalledFirmwareVersion=%parm[#1]% 
 			avPublishedFirmwareVersion=%parm[#2]%&lt;/p>
@@ -1359,7 +1359,7 @@ Use health monitoring instead.&lt;/p>&lt;table>
 
 	avInstalledFirmwareVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			avFirmwareUpdateSuccess trap received 
 			avPreviousFirmwareVersion=%parm[#1]% 
 			avInstalledFirmwareVersion=%parm[#2]%&lt;/p>
@@ -1396,7 +1396,7 @@ Use health monitoring instead.&lt;/p>&lt;table>
 
 	avUpdateFailureReason&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			avFirmwareUpdateFailed trap received 
 			avInstalledFirmwareVersion=%parm[#1]% 
 			avPublishedFirmwareVersion=%parm[#2]% 
@@ -1430,7 +1430,7 @@ Use health monitoring instead.&lt;/p>&lt;table>
 
 	avLicenseDaysRemaining&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			avAntivirusLicenseWarning trap received 
 			avVendorName=%parm[#1]% 
 			avLicenseDaysRemaining=%parm[#2]%&lt;/p>
@@ -1465,7 +1465,7 @@ threshold value.&lt;/p>&lt;table>
 
 	avSlowICAPConnections&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			avICTMWarning trap received 
 			avICTMWarningReason=%parm[#1]% 
 			avSlowICAPConnections=%parm[#2]%&lt;/p>
@@ -1504,7 +1504,7 @@ At the end of an attack a notification is generated with
 		no-attack(1)
 		under-attack(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			deviceAttackTrap trap received 
 			deviceAttackName=%parm[#1]% 
 			deviceAttackStatus=%parm[#2]%&lt;/p>
@@ -1533,7 +1533,7 @@ At the end of an attack a notification is generated with
 
 	devicePolicyMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			devicePolicyTrap trap received 
 			devicePolicyMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1585,7 +1585,7 @@ At the end of an attack a notification is generated with
 		fan-slow-critical(14)
 		fan-stopped(15)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			deviceSensorTrap trap received 
 			deviceSensorName=%parm[#1]% 
 			deviceSensorValue=%parm[#2]% 
@@ -1627,7 +1627,7 @@ exceeds a threshold.&lt;/p>&lt;table>
 		ok(1)
 		high(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			deviceUsageTrap trap received 
 			deviceUsageName=%parm[#1]% 
 			deviceUsagePercent=%parm[#2]% 

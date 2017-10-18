@@ -25,7 +25,7 @@
 
 		  itaAlertNode&lt;/b>&lt;/td>&lt;td>
 		  %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertSystemUp trap received
 		  itaAlertMessage=%parm[#1]%
 		  itaAlertNode=%parm[#2]%&lt;/p>
@@ -58,7 +58,7 @@
 
 		  itaAlertNode&lt;/b>&lt;/td>&lt;td>
 		  %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertSystemDown trap received
 		  itaAlertMessage=%parm[#1]%
 		  itaAlertNode=%parm[#2]%&lt;/p>
@@ -95,7 +95,7 @@
 
 		  itaAlertSeverity&lt;/b>&lt;/td>&lt;td>
 		  %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertForwardedAlert trap received
 		  itaAlertMessage=%parm[#1]%
 		  itaAlertNode=%parm[#2]%
@@ -137,7 +137,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertSystemMonitoringCriticalAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -180,7 +180,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertSystemMonitoringWarningAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -223,7 +223,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertCPUMonitoringCriticalAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -266,7 +266,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertCPUMonitoringWarningAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -309,7 +309,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertMemoryMonitoringCriticalAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -352,7 +352,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertMemoryMonitoringWarningAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -395,7 +395,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertNetworkMonitoringCriticalAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -438,7 +438,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertNetworkMonitoringWarningAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -481,7 +481,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertPhysicalDiskMonitoringCriticalAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -524,7 +524,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertPhysicalDiskMonitoringWarningAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -567,7 +567,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertLogicalDiskMonitoringCriticalAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -610,7 +610,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaAlertLogicalDiskMonitoringWarningAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -653,7 +653,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaPowerManagementCriticalAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -696,7 +696,7 @@
 
 		  itaAlertThresholdCount&lt;/b>&lt;/td>&lt;td>
 		  %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaPowerManagementWarningAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -743,7 +743,7 @@
 
 		  itaAlertTaskName&lt;/b>&lt;/td>&lt;td>
 		  %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaPowerManagementGroupWarningAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%
@@ -791,7 +791,7 @@
 
 		  itaAlertTaskName&lt;/b>&lt;/td>&lt;td>
 		  %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 		  itaPowerManagementGroupCriticalAlert trap received
 		  itaAlertCounterName=%parm[#1]%
 		  itaAlertThresholdOperator=%parm[#2]%

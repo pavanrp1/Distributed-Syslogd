@@ -6,7 +6,7 @@
 
             &lt;p>Deleted Alarm Values&lt;p>
             &lt;p>%parm[oldalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm %parm[alarmid]% Deleted&lt;p>
         </logmsg>
       <severity>Normal</severity>
@@ -20,7 +20,7 @@
 
             &lt;p>New Alarm Values&lt;p>
             &lt;p>%parm[newalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>New Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a>
             Created&lt;p>
         </logmsg>
@@ -38,7 +38,7 @@
 
             &lt;p>Old Alarm Values&lt;p>
             &lt;p>%parm[oldalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a>
             Cleared&lt;p>
         </logmsg>
@@ -56,7 +56,7 @@
 
             &lt;p>Old Alarm Values&lt;p>
             &lt;p>%parm[oldalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a>
             Changed&lt;p>
         </logmsg>
@@ -75,7 +75,7 @@
 
             &lt;p>New Alarm Values&lt;p>
             &lt;p>%parm[newalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a>
             Severity Changed to %parm[alarmseverity]%&lt;p>
         </logmsg>
@@ -94,7 +94,7 @@
 
             &lt;p>New Alarm Values&lt;p>
             &lt;p>%parm[newalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a>
             Acknowledged by user %parm[alarmackuser]%&lt;p>
         </logmsg>
@@ -109,7 +109,7 @@
 
             &lt;p>New Alarm Values&lt;p>
             &lt;p>%parm[newalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a>
             UnAcknowledged&lt;p>
         </logmsg>
@@ -130,7 +130,7 @@
 
             &lt;p>New Alarm Values&lt;p>
             &lt;p>%parm[newalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a>
             Suppressed by user %parm[suppresseduser]% until %parm[suppresseduntil]%&lt;p>
         </logmsg>
@@ -144,7 +144,7 @@
 
         &lt;p>New Alarm Values&lt;p>
         &lt;p>%parm[newalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
         &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a> UnSuppressed &lt;p>
         </logmsg>
       <severity>Normal</severity>
@@ -160,7 +160,7 @@
 
             &lt;p>New Alarm Values&lt;p>
             &lt;p>%parm[newalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a>
             Trouble Ticket State Change
             Trouble Ticket ID %parm[tticketid]% State %parm[tticketstate]%&lt;p>
@@ -182,7 +182,7 @@
 
             &lt;p>Old Alarm Values&lt;p>
             &lt;p>%parm[oldalarmvalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a> Sticky
             Memo Added&lt;p>
         </logmsg>
@@ -197,7 +197,7 @@
             &lt;p>Author : %parm[author]%&lt;p>
             &lt;p>Updated Memo : %parm[body]%&lt;p>
             &lt;p>All Memo Values : %parm[memovalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a> Sticky
             Memo Update by %parm[author]%&lt;p>
         </logmsg>
@@ -213,7 +213,7 @@
             &lt;p>Updated Memo : %parm[body]%&lt;p>
             &lt;p>Reduction Key : %parm[reductionkey]%&lt;p>
             &lt;p>All Memo Values : %parm[memovalues]%&lt;p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Alarm &lt;a href=&quot;/opennms/alarm/detail.htm?id=%parm[alarmid]%&quot;>%parm[alarmid]%&lt;/a>
             Journal Memo Update by %parm[author]%&lt;p>
         </logmsg>
@@ -227,7 +227,7 @@
       <uei>uei.opennms.org/plugin/AlarmChangeNotificationTest/TestAlarm/genericAlarmRaise</uei>
       <event-label>Generic AlarmChangeNotifier Alarm Raise %parm[testParam]%</event-label>
       <descr>Generic AlarmChangeNotifier Alarm Raise %parm[testParam]%</descr>
-      <logmsg dest="logndisplay">Generic AlarmChangeNotifier Alarm Raise %parm[testParam]%</logmsg>
+      <logmsg dest="donotpersist">Generic AlarmChangeNotifier Alarm Raise %parm[testParam]%</logmsg>
       <severity>Minor</severity>
       <operinstruct></operinstruct>
       <alarm-data reduction-key="%uei%:%nodeid%:%interface%:%parm[testParam]%" alarm-type="1" auto-clean="false"/>
@@ -236,7 +236,7 @@
       <uei>uei.opennms.org/plugin/AlarmChangeNotificationTest/TestAlarm/genericAlarmClear</uei>
       <event-label>Generic AlarmChangeNotifier Alarm Clear %parm[testParam]%</event-label>
       <descr>Generic AlarmChangeNotifier Alarm Clear %parm[testParam]%</descr>
-      <logmsg dest="logndisplay">Generic AlarmChangeNotifier Alarm Clear %parm[testParam]%</logmsg>
+      <logmsg dest="donotpersist">Generic AlarmChangeNotifier Alarm Clear %parm[testParam]%</logmsg>
       <severity>Cleared</severity>
       <operinstruct></operinstruct>
       <alarm-data reduction-key="%uei%:%nodeid%:%interface%:%parm[testParam]%" alarm-type="2" clear-key="uei.opennms.org/plugin/AlarmChangeNotificationTest/TestAlarm/genericAlarmRaise:%parm[testParam]%" auto-clean="false"/>

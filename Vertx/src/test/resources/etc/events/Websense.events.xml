@@ -212,7 +212,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: This event is for testing use</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: This event is for testing use</logmsg>
       <severity>Indeterminate</severity>
    </event>
    <event>
@@ -468,7 +468,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: High CPU Usage</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: High CPU Usage</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -756,7 +756,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: High Memory Usage</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: High Memory Usage</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1012,7 +1012,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Heavy network traffic on interface</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Heavy network traffic on interface</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1252,7 +1252,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Low Disk Free Space</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Low Disk Free Space</logmsg>
       <severity>Indeterminate</severity>
    </event>
    <event>
@@ -1492,7 +1492,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Low Swap Free Space</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Low Swap Free Space</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1732,7 +1732,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Heavy System Load</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Heavy System Load</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1972,7 +1972,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Too large log file size</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Too large log file size</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2204,7 +2204,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance Module Down</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance Module Down</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2444,7 +2444,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Applicance Service Down</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Applicance Service Down</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2676,7 +2676,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Applicance Backup Failure</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Applicance Backup Failure</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2916,7 +2916,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Applicance Hostname Changed</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Applicance Hostname Changed</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -3164,7 +3164,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Applicance IP Address Changed</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Applicance IP Address Changed</logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -3420,7 +3420,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance Power Supply Warning</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance Power Supply Warning</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3676,7 +3676,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance Redundancy Warning</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance Redundancy Warning</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3948,7 +3948,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance Temperatures Warning</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance Temperatures Warning</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4220,7 +4220,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance Fans Warning</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance Fans Warning</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4492,7 +4492,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance Voltages Warning</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance Voltages Warning</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4748,7 +4748,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance Logs Warning</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance Logs Warning</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -5004,7 +5004,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance Memory Warning</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance Memory Warning</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -5260,7 +5260,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance Chassis Intrusion Detected</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance Chassis Intrusion Detected</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -5516,7 +5516,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance Battery Warning</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance Battery Warning</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -5796,7 +5796,7 @@
                 &lt;/tr>
 
             &lt;/table></descr>
-      <logmsg dest="logndisplay">Websense Alert: Appliance RAID Controller Warning</logmsg>
+      <logmsg dest="donotpersist">Websense Alert: Appliance RAID Controller Warning</logmsg>
       <severity>Warning</severity>
    </event>
 </events>

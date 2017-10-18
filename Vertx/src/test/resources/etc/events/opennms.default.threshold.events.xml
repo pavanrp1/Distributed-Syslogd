@@ -14,7 +14,7 @@
             tempered with real-world experience in working
             deployments.&lt;/p> &lt;p>This specific event
             indicates that a high threshold was exceeded.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             High threshold exceeded for %service% datasource %parm[ds]% on interface
             %interface%, parms: %parm[all]%
         </logmsg>
@@ -36,7 +36,7 @@
             real deployments, not vendor recommendation alone.&lt;/p>
             &lt;p>This specific event indicates that a low threshold
             was exceeded.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Low threshold exceeded for %service% datasource %parm[ds]% on interface
             %interface%, parms: %parm[all]%
         </logmsg>
@@ -59,7 +59,7 @@
             deployments.&lt;/p> &lt;p>This specific event
             indicates that a high threshold was exceeded but then dropped
             below the rearm threshold..&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             High threshold rearmed for %service% datasource %parm[ds]% on interface
             %interface%, parms: %parm[all]%
         </logmsg>
@@ -81,7 +81,7 @@
             real deployments, not vendor recommendation alone.&lt;/p>
             &lt;p>This specific event indicates that a low threshold
             was exceeded but then dropped below the rearm threshold.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Low threshold rearmed for %service% datasource %parm[ds]% on interface
             %interface%, parms: %parm[all]%
         </logmsg>
@@ -93,7 +93,7 @@
       <event-label>OpenNMS-defined threshold event: relativeChangeExceeded</event-label>
       <descr>&lt;p>Relative change exceeded for %service% datasource %parm[ds]% on interface %interface%, parms:
             %parm[all]%&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Relative change exceeded for %service% datasource %parm[ds]% on interface %interface%, parms: %parm[all]%
         </logmsg>
       <severity>Warning</severity>
@@ -103,7 +103,7 @@
       <event-label>OpenNMS-defined threshold event: absoluteChangeExceeded</event-label>
       <descr>&lt;p>Absolute change exceeded for %service% datasource %parm[ds]% on interface %interface%, parms:
             %parm[all]%&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Absolute change exceeded for %service% datasource %parm[ds]% on interface %interface%, parms: %parm[all]%
         </logmsg>
       <severity>Warning</severity>

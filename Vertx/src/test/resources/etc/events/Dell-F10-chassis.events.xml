@@ -73,7 +73,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmCardDown trap received
                 chAlarmVarInteger=%parm1%
@@ -158,7 +158,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmCardUp trap received
                 chAlarmVarInteger=%parm1%
@@ -243,7 +243,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmCardReset trap received
                 chAlarmVarInteger=%parm1%
@@ -328,7 +328,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmCardOffline trap received
                 chAlarmVarInteger=%parm1%
@@ -413,7 +413,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmCardMismatch trap received
                 chAlarmVarInteger=%parm1%
@@ -498,7 +498,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmCardRemove trap received
                 chAlarmVarInteger=%parm1%
@@ -583,7 +583,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmCardProblem trap received
                 chAlarmVarInteger=%parm1%
@@ -668,7 +668,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmCutoff trap received
                 chAlarmVarInteger=%parm1%
@@ -753,7 +753,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmSfmUp trap received
                 chAlarmVarInteger=%parm1%
@@ -838,7 +838,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmSfmDown trap received
                 chAlarmVarInteger=%parm1%
@@ -923,7 +923,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmRpmUp trap received
                 chAlarmVarInteger=%parm1%
@@ -1009,7 +1009,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmRpmDown trap received
                 chAlarmVarInteger=%parm1%
@@ -1094,7 +1094,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmPowersupplyDown trap received
                 chAlarmVarInteger=%parm1%
@@ -1264,7 +1264,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMajorTemperatureHigh trap received
                 chAlarmVarInteger=%parm1%
@@ -1349,7 +1349,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmFanTrayDown trap received
                 chAlarmVarInteger=%parm1%
@@ -1434,7 +1434,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmPowersupplyClear trap received
                 chAlarmVarInteger=%parm1%
@@ -1604,7 +1604,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMajorTemperatureClear trap received
                 chAlarmVarInteger=%parm1%
@@ -1689,7 +1689,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmFanTrayClear trap received
                 chAlarmVarInteger=%parm1%
@@ -1774,7 +1774,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMinorFanBadClear trap received
                 chAlarmVarInteger=%parm1%
@@ -1859,7 +1859,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMajorSfmDown trap received
                 chAlarmVarInteger=%parm1%
@@ -1944,7 +1944,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMajorSfmDownClr trap received
                 chAlarmVarInteger=%parm1%
@@ -2029,7 +2029,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMinorSfmDown trap received
                 chAlarmVarInteger=%parm1%
@@ -2114,7 +2114,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMinorSfmDownClr trap received
                 chAlarmVarInteger=%parm1%
@@ -2199,7 +2199,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmTaskSuspend trap received
                 chAlarmVarInteger=%parm1%
@@ -2284,7 +2284,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmTaskTerm trap received
                 chAlarmVarInteger=%parm1%
@@ -2369,7 +2369,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmVrrpGoMaster trap received
                 chAlarmVarInteger=%parm1%
@@ -2454,7 +2454,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmVrrpGiveupMaster trap received
                 chAlarmVarInteger=%parm1%
@@ -2537,7 +2537,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmBgpEstb trap received
                 chAlarmVarInteger=%parm1%
@@ -2620,7 +2620,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmBgpXsition trap received
                 chAlarmVarInteger=%parm1%
@@ -2705,7 +2705,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMajorPS trap received
                 chAlarmVarInteger=%parm1%
@@ -2790,7 +2790,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMajorPSClr trap received
                 chAlarmVarInteger=%parm1%
@@ -2875,7 +2875,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMinorPS trap received
                 chAlarmVarInteger=%parm1%
@@ -2960,7 +2960,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMinorPSClr trap received
                 chAlarmVarInteger=%parm1%
@@ -3045,7 +3045,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMinorFanBad trap received
                 chAlarmVarInteger=%parm1%
@@ -3300,7 +3300,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmExdMemThreshold trap received
                 chAlarmVarInteger=%parm1%
@@ -3385,7 +3385,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmClrMemThreshold trap received
                 chAlarmVarInteger=%parm1%
@@ -3470,7 +3470,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmMacStationMove trap received
                 chAlarmVarInteger=%parm1%
@@ -3553,7 +3553,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmSfmAdd trap received
                 chAlarmVarInteger=%parm1%
@@ -3636,7 +3636,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmSfmRemove trap received
                 chAlarmVarInteger=%parm1%
@@ -3721,7 +3721,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmRpmPrimary trap received
                 chAlarmVarInteger=%parm1%
@@ -3806,7 +3806,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chSnmpIpAclDeny trap received
                 chAlarmVarInteger=%parm1%
@@ -3892,7 +3892,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmSRAMParityErrorDetect trap received
                 chAlarmVarInteger=%parm1%
@@ -3978,7 +3978,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 chAlarmAcDcMixedPowerSupplyDetect trap received
                 chAlarmVarInteger=%parm1%

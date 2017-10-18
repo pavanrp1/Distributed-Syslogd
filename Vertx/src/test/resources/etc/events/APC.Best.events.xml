@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapPowerFail</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapPowerFail</event-label>
       <descr>&lt;p>WARNING: Utility power not available.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapPowerFail trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -40,7 +40,7 @@
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapPowerRestored</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapPowerRestored</event-label>
       <descr>&lt;p>INFORMATION: Utility power has been restored.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapPowerRestored trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -79,7 +79,7 @@
 
 	upsBatteryVoltage&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSOnBattery trap received 
 			upsBatteryTimeOnBattery=%parm[#1]% 
 			upsBatteryRuntimeRemaining=%parm[#2]% 
@@ -106,7 +106,7 @@
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapUPSNotOnBattery</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapUPSNotOnBattery</event-label>
       <descr>&lt;p>INFORMATION: The UPS is not on battery power.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSNotOnBattery trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -130,7 +130,7 @@
       <event-label>BESTPOWER-MIB defined trap event: upsTrapLowRuntime</event-label>
       <descr>&lt;p>SEVERE: The runtime remaining on battery power is very short,
 and the UPS will soon shut down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapLowRuntime trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -154,7 +154,7 @@ and the UPS will soon shut down.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapUPSCanRunOnBattery</event-label>
       <descr>&lt;p>INFORMATION: The UPS has returned from a low runtime
 condition.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSCanRunOnBattery trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -183,7 +183,7 @@ to 'sleep' and immediately cut power to the load.&lt;/p>&lt;table>
 
 	upsBatteryVoltage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapNearLowBattery trap received 
 			upsBatteryVoltage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -212,7 +212,7 @@ value that is too high for safe battery maintenance.&lt;/p>&lt;table>
 
 	upsBatteryVoltage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapHighBattery trap received 
 			upsBatteryVoltage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -237,7 +237,7 @@ value that is too high for safe battery maintenance.&lt;/p>&lt;table>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapBatteryOK</event-label>
       <descr>&lt;p>INFORMATION: The UPS has returned from a near low or high battery
 condition.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapBatteryOK trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -265,7 +265,7 @@ put itself to sleep to prevent a complete discharge of the batteries.&lt;/p>&lt;
 
 	upsBatteryVoltage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapLowBattery trap received 
 			upsBatteryVoltage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -289,7 +289,7 @@ put itself to sleep to prevent a complete discharge of the batteries.&lt;/p>&lt;
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapCheckBattery</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCheckBattery</event-label>
       <descr>&lt;p>SEVERE: The UPS has failed a scheduled or manual battery test.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCheckBattery trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -312,7 +312,7 @@ put itself to sleep to prevent a complete discharge of the batteries.&lt;/p>&lt;
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapReplaceBattery</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapReplaceBattery</event-label>
       <descr>&lt;p>SEVERE: One or more UPS batteries need to be replaced.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapReplaceBattery trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -335,7 +335,7 @@ put itself to sleep to prevent a complete discharge of the batteries.&lt;/p>&lt;
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapCheckInverter</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCheckInverter</event-label>
       <descr>&lt;p>SEVERE: The UPS has failed a scheduled or manual inverter test.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCheckInverter trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -358,7 +358,7 @@ put itself to sleep to prevent a complete discharge of the batteries.&lt;/p>&lt;
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapBatteriesDisconnected</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapBatteriesDisconnected</event-label>
       <descr>&lt;p>WARNING: The UPS battery voltage is either too low or missing to start up.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapBatteriesDisconnected trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -381,7 +381,7 @@ put itself to sleep to prevent a complete discharge of the batteries.&lt;/p>&lt;
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapOutputOverload</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapOutputOverload</event-label>
       <descr>&lt;p>WARNING: The output load exceeds the UPS output capacity.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapOutputOverload trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -405,7 +405,7 @@ put itself to sleep to prevent a complete discharge of the batteries.&lt;/p>&lt;
       <event-label>BESTPOWER-MIB defined trap event: upsTrapUPSNoLongerOverloaded</event-label>
       <descr>&lt;p>INFORMATION: The UPS has returned from an output overload
 condition.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSNoLongerOverloaded trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -428,7 +428,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapLowAcOut</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapLowAcOut</event-label>
       <descr>&lt;p>SEVERE: The output load has exceeded the UPS output capacity, and the UPS has shut down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapLowAcOut trap received&lt;/p>
 		</logmsg>
       <severity>Critical</severity>
@@ -452,7 +452,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCircuitBreakerWarning</event-label>
       <descr>&lt;p>SEVERE: To much load equipment has been connected to the UPS and
 has has caused excess current draw  from the output.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCircuitBreakerWarning trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -476,7 +476,7 @@ has has caused excess current draw  from the output.&lt;/p>&lt;table>&lt;/table>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCircuitBreakerOK</event-label>
       <descr>&lt;p>INFORMATION: The UPS has returned from a circuit breaker warning
 condition.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCircuitBreakerOK trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -500,7 +500,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCircuitBreakerShdn</event-label>
       <descr>&lt;p>SEVERE: The UPS has shut down due to an extended excess of current
 draw from the output.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCircuitBreakerShdn trap received&lt;/p>
 		</logmsg>
       <severity>Critical</severity>
@@ -523,7 +523,7 @@ draw from the output.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapBypassOn</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapBypassOn</event-label>
       <descr>&lt;p>SEVERE: The Bypass is presently engaged on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapBypassOn trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -546,7 +546,7 @@ draw from the output.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapUPSOnline</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapUPSOnline</event-label>
       <descr>&lt;p>INFORMATION: The UPS has returned from an on bypass condition.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSOnline trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -569,7 +569,7 @@ draw from the output.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapSiteWiringFault</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapSiteWiringFault</event-label>
       <descr>&lt;p>SEVERE: The UPS has found a problem in your wall outlet.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapSiteWiringFault trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -592,7 +592,7 @@ draw from the output.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapCheckFan</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCheckFan</event-label>
       <descr>&lt;p>SEVERE: The fan on the UPS has stopped .&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCheckFan trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -615,7 +615,7 @@ draw from the output.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapHighUPSTemp</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapHighUPSTemp</event-label>
       <descr>&lt;p>SEVERE: The internal temperature inside the UPS is too hot.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapHighUPSTemp trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -639,7 +639,7 @@ draw from the output.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapTempOK</event-label>
       <descr>&lt;p>INFORMATION: The UPS has returned from a high ambient temp
 condition.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapTempOK trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -662,7 +662,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapHighHSTemp</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapHighHSTemp</event-label>
       <descr>&lt;p>SEVERE: The Inverter heatsink assembly inside the UPS is too hot .&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapHighHSTemp trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -685,7 +685,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapHSTempOK</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapHSTempOK</event-label>
       <descr>&lt;p>INFORMATION: The UPS has returned from a high heatsink temp condition.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapHSTempOK trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -708,7 +708,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapHighXFMRTemp</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapHighXFMRTemp</event-label>
       <descr>&lt;p>SEVERE: The temperature of the main transformer inside the UPS is too hot .&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapHighXFMRTemp trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -731,7 +731,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapHighPFMTemp</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapHighPFMTemp</event-label>
       <descr>&lt;p>SEVERE: The temperature of the PFM module inside the UPS is too hot.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapHighPFMTemp trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -754,7 +754,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapProbeMissing</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapProbeMissing</event-label>
       <descr>&lt;p>SEVERE: One or all of the temperature probes has been disconnected on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapProbeMissing trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -777,7 +777,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapProbeReconnected</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapProbeReconnected</event-label>
       <descr>&lt;p>INFORMATION: The UPS has returned from a probe missing condition.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapProbeReconnected trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -800,7 +800,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapCheckPowerSupply</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCheckPowerSupply</event-label>
       <descr>&lt;p>SEVERE: The internal DC supply voltages are attenuated or missing.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCheckPowerSupply trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -823,7 +823,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapTapRegulatorFault</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapTapRegulatorFault</event-label>
       <descr>&lt;p>SEVERE: The UPS detected a possible failure in the tap changer (open or welded relay, etc.)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapTapRegulatorFault trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -846,7 +846,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapRelayFailure</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapRelayFailure</event-label>
       <descr>&lt;p>SEVERE: There is a hardware problem inside the UPS.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapRelayFailure trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -869,7 +869,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapCheckFuse</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCheckFuse</event-label>
       <descr>&lt;p>SEVERE: The failure of one or more fuses has been detected.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCheckFuse trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -892,7 +892,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapCheckMOV</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCheckMOV</event-label>
       <descr>&lt;p>SEVERE: One or more MOVs have failed due to a voltage surge.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCheckMOV trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -915,7 +915,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapMemoryError</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapMemoryError</event-label>
       <descr>&lt;p>SEVERE: The UPS has lost the programmed settings in the memory of the logic board.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapMemoryError trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -939,7 +939,7 @@ condition.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCallService</event-label>
       <descr>&lt;p>SEVERE: A hardware malfunction has occurred inside the UPS.
 Please consult a factory authorized service  representative for assistance.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCallService trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -963,7 +963,7 @@ Please consult a factory authorized service  representative for assistance.&lt;/
       <event-label>BESTPOWER-MIB defined trap event: upsTrapManualAlarmBeeperTestInitiated</event-label>
       <descr>&lt;p>INFORMATION: A  manual test of the alarm beeper is being performed
 on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapManualAlarmBeeperTestInitiated trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -986,7 +986,7 @@ on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapManualAlarmBeeperTestAborted</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapManualAlarmBeeperTestAborted</event-label>
       <descr>&lt;p>INFORMATION: The test of UPS has completed.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapManualAlarmBeeperTestAborted trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -1009,7 +1009,7 @@ on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapScheduledTestInProgress</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapScheduledTestInProgress</event-label>
       <descr>&lt;p>INFORMATION: A test is in progress.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapScheduledTestInProgress trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1032,7 +1032,7 @@ on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapScheduledTestFailed</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapScheduledTestFailed</event-label>
       <descr>&lt;p>SEVERE: The last test performed failed.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapScheduledTestFailed trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1056,7 +1056,7 @@ on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCommunicationLost</event-label>
       <descr>&lt;p>SEVERE: Communication to the UPS has been lost.  Steps
 to reestablish communication are in progress.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCommunicationLost trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -1080,7 +1080,7 @@ to reestablish communication are in progress.&lt;/p>&lt;table>&lt;/table></descr
       <event-label>BESTPOWER-MIB defined trap event: upsTrapCommunicationRestored</event-label>
       <descr>&lt;p>INFORMATION: Communication with the UPS has been
 restored.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapCommunicationRestored trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -1104,7 +1104,7 @@ restored.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapUPSGoingDown</event-label>
       <descr>&lt;p>WARNING: The ups has been given shutdown command
 by the management station.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSGoingDown trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -1128,7 +1128,7 @@ by the management station.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapUPSTurnedOff</event-label>
       <descr>&lt;p>INFORMATION: The ups has been turned off
 by the management station.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSTurnedOff trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -1152,7 +1152,7 @@ by the management station.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapUPSSleeping</event-label>
       <descr>&lt;p>INFORMATION: The UPS has entered in 'sleep' mode. Power to the
 load has been cut off.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSSleeping trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -1175,7 +1175,7 @@ load has been cut off.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapUPSWokeUp</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapUPSWokeUp</event-label>
       <descr>&lt;p>INFORMATION: The UPS woke up from 'sleep' mode. Power to the load has been restored.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSWokeUp trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -1198,7 +1198,7 @@ load has been cut off.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapUPSRebooted</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapUPSRebooted</event-label>
       <descr>&lt;p>INFORMATION: The UPS is rebooted.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSRebooted trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1222,7 +1222,7 @@ load has been cut off.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapEmergencyPowerOFF</event-label>
       <descr>&lt;p>SEVERE: The Emergency Power OFF feature has been activiated at
 the RS-232 port on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapEmergencyPowerOFF trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -1245,7 +1245,7 @@ the RS-232 port on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapHistLogWarn</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapHistLogWarn</event-label>
       <descr>&lt;p>WARNING: The ups history log buffer is almost full.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapHistLogWarn trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1268,7 +1268,7 @@ the RS-232 port on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/APC/traps/upsTrapEventLogWarn</uei>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapEventLogWarn</event-label>
       <descr>&lt;p>WARNING: The ups event log buffer is almost full.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapEventLogWarn trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1292,7 +1292,7 @@ the RS-232 port on the UPS.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BESTPOWER-MIB defined trap event: upsTrapUPSFail</event-label>
       <descr>&lt;p>SEVERE: A critical fault has been detected inside the UPS.
 Power to the load has been shut off.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			APC-Best Power event: upsTrapUPSFail trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -1313,7 +1313,7 @@ Power to the load has been shut off.&lt;/p>&lt;table>&lt;/table></descr>
       <descr>&lt;p>An event was received with the Best Power (APC) enterprise ID, but no configuration exists
 for this event in eventconf.xml.&lt;/p>&lt;
 &lt;p>(enterprise:%id% generic:%generic% specific:%specific%). %parm[##]%&lt;/p>&lt;</descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
                         APC XUPS Event: Generic Unknown Event
                         xupsAlarmID=%parm[#1]%
                         xupsAlarmDescr=%parm[#2]%

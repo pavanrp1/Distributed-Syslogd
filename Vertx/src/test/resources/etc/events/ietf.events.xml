@@ -27,7 +27,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             dsx3LineStatusLastChange&lt;/b>&lt;/td>&lt;td>%parm[#2]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DS3 Event: Line Status Change.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DS3 Event: Line Status Change.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -71,7 +71,7 @@
             notification-events, e.g., due to throttling or transmission
             loss.&lt;/p>&lt;table>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>ENTITY Configuration Change Notification.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>ENTITY Configuration Change Notification.&lt;/p></logmsg>
       <severity>Warning</severity>
       <alarm-data reduction-key="%uei%:%dpname%:%nodeid%" alarm-type="3" auto-clean="false"/>
    </event>
@@ -141,7 +141,7 @@
             &lt;/td>&lt;td>&lt;p;>
             unknown(1) originate(2) answer(3) callback(4)&lt;/p>
             &lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>ISDN Call Information Event.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>ISDN Call Information Event.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -201,7 +201,7 @@
             &lt;/td>&lt;td>&lt;p;>
             originate(1) answer(2) callback(3)&lt;/p>
             &lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Dial Control Event: Peer Call Information.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Dial Control Event: Peer Call Information.&lt;/p></logmsg>
       <severity>Warning</severity>
       <alarm-data reduction-key="%uei%:%dpname%:%nodeid%" alarm-type="3" auto-clean="false"/>
    </event>
@@ -251,7 +251,7 @@
             &lt;/td>&lt;td>&lt;p;>
             originate(1) answer(2) callback(3)&lt;/p>
             &lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Dial Control Event: Peer Call Setup Notification.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Dial Control Event: Peer Call Setup Notification.&lt;/p></logmsg>
       <severity>Normal</severity>
       <alarm-data reduction-key="%uei%:%dpname%:%nodeid%" alarm-type="3" auto-clean="false"/>
    </event>
@@ -280,7 +280,7 @@
             its election. Implementation of this trap is
             optional.&lt;/p>&lt;table>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Bridge MIB: New Spanning Tree Root.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Bridge MIB: New Spanning Tree Root.&lt;/p></logmsg>
       <severity>Warning</severity>
       <alarm-data reduction-key="%uei%:%dpname%:%nodeid%" alarm-type="3" auto-clean="true"/>
    </event>
@@ -309,7 +309,7 @@
             same transition. Implementation of this trap is
             optional.&lt;/p>&lt;table>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Bridge MIB: Topology Change.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Bridge MIB: Topology Change.&lt;/p></logmsg>
       <severity>Warning</severity>
       <alarm-data reduction-key="%uei%:%dpname%:%nodeid%" alarm-type="3" auto-clean="true"/>
    </event>
@@ -343,7 +343,7 @@
             &lt;/td>&lt;td>&lt;p;>
             invalid(1) active(2) inactive(3)
             &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>RFC1315 Event: Frame Relay DLCI Status Change.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>RFC1315 Event: Frame Relay DLCI Status Change.&lt;/p></logmsg>
       <severity>Warning</severity>
       <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%parm[#1]%:%parm[#2]%" alarm-type="3" auto-clean="false"/>
    </event>
@@ -381,7 +381,7 @@
             imaAlarmGroupInsuffLinks(11) imaAlarmGroupInsuffLinksFe(12) imaAlarmGroupBlockedFe(13)
             imaAlarmGroupTimingSynch(14)&lt;/p>
             &lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>ATM Event: IMA Failure Alarm.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>ATM Event: IMA Failure Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
 </events>

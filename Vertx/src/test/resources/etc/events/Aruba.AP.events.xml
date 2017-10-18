@@ -51,7 +51,7 @@
 
 	wlsrRogueInfoURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrUnsecureApDetected trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -91,7 +91,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrStaImpersonation trap received
 	wlsrNodeMac=%parm[#1]%
 	wlsrLocation=%parm[#2]%&lt;/p></logmsg>
@@ -135,7 +135,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrReservedChannelViolation trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -180,7 +180,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrValidSSIDViolation trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -225,7 +225,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrChannelMisconfiguration trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -270,7 +270,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrOUIMisconfiguration trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -315,7 +315,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrSSIDMisconfiguration trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -360,7 +360,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrShortPreableMisconfiguration trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -405,7 +405,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrWPAMisconfiguration trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -450,7 +450,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrAdhocNetworkDetected trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -494,7 +494,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrStaPolicyViolation trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrNodeMac=%parm[#2]%
@@ -538,7 +538,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrRepeatWEPIVViolation trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -582,7 +582,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrWeakWEPIVViolation trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -620,7 +620,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrChannelInterferenceDetected trap received
 	wlsrLocation=%parm[#1]%
 	wlsrCurrentChannel=%parm[#2]%&lt;/p></logmsg>
@@ -664,7 +664,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrAPInterferenceDetected trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -714,7 +714,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrStaInterferenceDetected trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -761,7 +761,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrFrameRetryRateExceeded trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -808,7 +808,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrFrameReceiveErrorRateExceeded trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -855,7 +855,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrFrameFragmentationRateExceeded trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -905,7 +905,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrFrameBandWidthRateExceeded trap received
 	wlsrNodeMac=%parm[#1]%
 	wlsrTargetApBSSID=%parm[#2]%
@@ -956,7 +956,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrFrameLowSpeedRateExceeded trap received
 	wlsrNodeMac=%parm[#1]%
 	wlsrTargetApBSSID=%parm[#2]%
@@ -1007,7 +1007,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrFrameNonUnicastRateExceeded trap received
 	wlsrNodeMac=%parm[#1]%
 	wlsrTargetApBSSID=%parm[#2]%
@@ -1054,7 +1054,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrLoadbalancingEnabled trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -1092,7 +1092,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrChannelFrameRetryRateExceeded trap received
 	wlsrLocation=%parm[#1]%
 	wlsrCurrentChannel=%parm[#2]%&lt;/p></logmsg>
@@ -1128,7 +1128,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrChannelFrameFragmentationRateExceeded trap received
 	wlsrLocation=%parm[#1]%
 	wlsrCurrentChannel=%parm[#2]%&lt;/p></logmsg>
@@ -1164,7 +1164,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrChannelFrameErrorRateExceeded trap received
 	wlsrLocation=%parm[#1]%
 	wlsrCurrentChannel=%parm[#2]%&lt;/p></logmsg>
@@ -1206,7 +1206,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrSignatureMatch trap received
 	wlsrSignatureName=%parm[#1]%
 	wlsrSourceMac=%parm[#2]%
@@ -1260,7 +1260,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrChannelRateAnomaly trap received
 	wlsrFrameType=%parm[#1]%
 	wlsrLocation=%parm[#2]%
@@ -1331,7 +1331,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrNodeRateAnomaly trap received
 	wlsrFrameType=%parm[#1]%
 	wlsrNodeMac=%parm[#2]%
@@ -1383,7 +1383,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrEAPRateAnomaly trap received
 	wlsrLocation=%parm[#1]%
 	wlsrCurrentChannel=%parm[#2]%&lt;/p></logmsg>
@@ -1418,7 +1418,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrSignalAnomaly trap received
 	wlsrLocation=%parm[#1]%
 	wlsrCurrentChannel=%parm[#2]%&lt;/p></logmsg>
@@ -1458,7 +1458,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrSequenceNumberAnomaly trap received
 	wlsrSourceMac=%parm[#1]%
 	wlsrRSSI=%parm[#2]%
@@ -1513,7 +1513,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrDisconnectStationAttack trap received
 	wlsrFrameType=%parm[#1]%
 	wlsrSourceMac=%parm[#2]%
@@ -1560,7 +1560,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrApFloodAttack trap received
 	wlsrLocation=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -1607,7 +1607,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrAdhocNetwork trap received
 	wlsrSourceMac=%parm[#1]%
 	wlsrTargetApBSSID=%parm[#2]%
@@ -1654,7 +1654,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrWirelessBridge trap received
 	wlsrTransmitterMac=%parm[#1]%
 	wlsrReceiverMac=%parm[#2]%
@@ -1704,7 +1704,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrInvalidMacOUI trap received
 	wlsrAddressType=%parm[#1]%
 	wlsrNodeMac=%parm[#2]%
@@ -1756,7 +1756,7 @@
 
 	wlsrLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrLoadbalancingDisabled trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -1801,7 +1801,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrWEPMisconfiguration trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -1850,7 +1850,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrStaRepeatWEPIVViolation trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -1900,7 +1900,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrStaWeakWEPIVViolation trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -1957,7 +1957,7 @@
 
 	wlsrRogueInfoURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrStaAssociatedToUnsecureAp trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%
@@ -2008,7 +2008,7 @@
 
 	wlsrCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrAdhocNetworkBridgeDetected trap received
 	wlsrSourceMac=%parm[#1]%
 	wlsrTargetApBSSID=%parm[#2]%
@@ -2060,7 +2060,7 @@
 
 	wlsrInterferingAPInfoURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsrInterferingApDetected trap received
 	wlsrTargetApBSSID=%parm[#1]%
 	wlsrTargetApSSID=%parm[#2]%

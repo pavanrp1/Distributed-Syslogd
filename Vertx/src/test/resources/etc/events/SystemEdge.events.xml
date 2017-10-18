@@ -67,7 +67,7 @@ is: 'monCurrVal monOperator monValue'.&lt;/p>&lt;table>
 
 	monFlags&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: monitorTrap trap received 
 			monDescr=%parm[#1]% 
 			monOID=%parm[#2]% 
@@ -158,7 +158,7 @@ all properly configured managers.&lt;/p>&lt;table>
 
 	monFlags&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: monitorEntryNotReadyTrap trap received 
 			monDescr=%parm[#1]% 
 			monOID=%parm[#2]% 
@@ -226,7 +226,7 @@ logging daemons.&lt;/p>&lt;table>
 
 	logMonitorFlags&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: logMonMatchTrap trap received 
 			logMonitorLogFile=%parm[#1]% 
 			logMonitorRegularExpression=%parm[#2]% 
@@ -291,7 +291,7 @@ becomes 'active(1)'.&lt;/p>&lt;table>
 
 	logMonitorFlags&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: logMonNotReadyTrap trap received 
 			logMonitorLogFile=%parm[#1]% 
 			logMonitorRegularExpression=%parm[#2]% 
@@ -374,7 +374,7 @@ ntEventMonMatch events.&lt;/p>&lt;table>
 
 	ntEventMonFlags&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: ntEventMonMatchTrap trap received 
 			ntEventMonLog=%parm[#1]% 
 			ntEventMonTypeLastMatch=%parm[#2]% 
@@ -455,7 +455,7 @@ becomes 'active(1)'.&lt;/p>&lt;table>
 
 	ntEventMonFlags&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: ntEventMonNotReadyTrap trap received 
 			ntEventMonLog=%parm[#1]% 
 			ntEventMonTypeFilter=%parm[#2]% 
@@ -543,7 +543,7 @@ from True to false.&lt;/p>&lt;table>
 
 	monFlags&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: monitorClearTrap trap received 
 			monDescr=%parm[#1]% 
 			monOID=%parm[#2]% 
@@ -642,7 +642,7 @@ of pmonFlags does not preclude sending Traps.&lt;/p>&lt;table>
 
 	pmonCurrentPID&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: processStopTrap trap received 
 			pmonIndex=%parm[#1]% 
 			pmonDescr=%parm[#2]% 
@@ -742,7 +742,7 @@ specifies  that processStart Traps should be pay.&lt;/p>&lt;table>
 
 	pmonCurrentPID&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: processStartTrap trap received 
 			pmonIndex=%parm[#1]% 
 			pmonDescr=%parm[#2]% 
@@ -844,7 +844,7 @@ not preclude the sending of Traps.&lt;/p>&lt;table>
 
 	pmonCurrentPID&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: processThresholdTrap trap received 
 			pmonIndex=%parm[#1]% 
 			pmonDescr=%parm[#2]% 
@@ -945,7 +945,7 @@ to False, this Trap is sent.&lt;/p>&lt;table>
 
 	pmonCurrentPID&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: processClearTrap trap received 
 			pmonIndex=%parm[#1]% 
 			pmonDescr=%parm[#2]% 
@@ -989,7 +989,7 @@ the license information for that product or module.&lt;/p>&lt;table>
 
 	sysedgeLicenseString&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: licenseTrap trap received 
 			sysedgeLicenseString=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1029,7 +1029,7 @@ be useless on multi-homed systems.&lt;/p>&lt;table>
 
 	sysedgeAddressList&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: addrChangeTrap trap received 
 			nodename=%parm[#1]% 
 			sysedgeAddressList=%parm[#2]%&lt;/p>
@@ -1094,7 +1094,7 @@ be useless on multi-homed systems.&lt;/p>&lt;table>
 
 	pgmonStatusList&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SystemEdge Event: procGroupChangeTrap trap received 
 			pgmonIndex=%parm[#1]% 
 			pgmonDescr=%parm[#2]% 

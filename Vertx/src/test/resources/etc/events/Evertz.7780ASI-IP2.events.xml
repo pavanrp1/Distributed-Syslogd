@@ -19,7 +19,7 @@
       <descr>&lt;p>Board Status OK&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> faultReservedData&lt;/b>&lt;/td>&lt;td>
             %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr> &lt;tr>&lt;td>&lt;b>
             faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultboardStatusFalse trap received
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultboardStatusFalse trap received
             faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Cleared</severity>
@@ -45,7 +45,7 @@
       <descr>&lt;p>Board Status Fault&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> faultReservedData&lt;/b>&lt;/td>&lt;td>
             %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr> &lt;tr>&lt;td>&lt;b>
             faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultboardStatusTrue trap received
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultboardStatusTrue trap received
             faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Major</severity>
@@ -71,7 +71,7 @@
       <descr>&lt;p>ASI Input signal Present on Asi1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             faultReservedData&lt;/b>&lt;/td>&lt;td> %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputPresentAsi1False trap received
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputPresentAsi1False trap received
             faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Cleared</severity>
@@ -97,7 +97,7 @@
       <descr>&lt;p>ASI Input signal Not present on Asi1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             faultReservedData&lt;/b>&lt;/td>&lt;td> %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputPresentAsi1True trap received
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputPresentAsi1True trap received
             faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Minor</severity>
@@ -123,7 +123,7 @@
       <descr>&lt;p>ASI Input signal Present on Asi2&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             faultReservedData&lt;/b>&lt;/td>&lt;td> %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputPresentAsi2False trap received
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputPresentAsi2False trap received
             faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Cleared</severity>
@@ -149,7 +149,7 @@
       <descr>&lt;p>ASI Input signal Not present on Asi2&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             faultReservedData&lt;/b>&lt;/td>&lt;td> %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputPresentAsi2True trap received
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputPresentAsi2True trap received
             faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Minor</severity>
@@ -175,7 +175,7 @@
       <descr>&lt;p>ASI Input sync OK on Asi1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> faultReservedData&lt;/b>&lt;/td>&lt;td>
             %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr> &lt;tr>&lt;td>&lt;b>
             faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputSyncErrorAsi1False trap received
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputSyncErrorAsi1False trap received
             faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Cleared</severity>
@@ -201,7 +201,7 @@
       <descr>&lt;p>ASI Input sync Error on Asi1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             faultReservedData&lt;/b>&lt;/td>&lt;td> %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputSyncErrorAsi1True trap received
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputSyncErrorAsi1True trap received
             faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Minor</severity>
@@ -227,7 +227,7 @@
       <descr>&lt;p>ASI Input sync OK on Asi2&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> faultReservedData&lt;/b>&lt;/td>&lt;td>
             %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr> &lt;tr>&lt;td>&lt;b>
             faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputSyncErrorAsi2False trap received
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputSyncErrorAsi2False trap received
             faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Cleared</severity>
@@ -253,7 +253,7 @@
       <descr>&lt;p>ASI Input sync Error on Asi2&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             faultReservedData&lt;/b>&lt;/td>&lt;td> %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputSyncErrorAsi2True trap received
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputSyncErrorAsi2True trap received
             faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Minor</severity>
@@ -279,7 +279,7 @@
       <descr>&lt;p>ASI Input continuity count OK on Asi1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             faultReservedData&lt;/b>&lt;/td>&lt;td> %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputContinuityErrorAsi1False trap
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputContinuityErrorAsi1False trap
             received faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Cleared</severity>
@@ -305,7 +305,7 @@
       <descr>&lt;p>ASI Input continuity count Error on Asi1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             faultReservedData&lt;/b>&lt;/td>&lt;td> %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputContinuityErrorAsi1True trap
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputContinuityErrorAsi1True trap
             received faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Minor</severity>
@@ -331,7 +331,7 @@
       <descr>&lt;p>ASI Input continuity count OK on Asi2&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             faultReservedData&lt;/b>&lt;/td>&lt;td> %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputContinuityErrorAsi2False trap
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputContinuityErrorAsi2False trap
             received faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Cleared</severity>
@@ -357,7 +357,7 @@
       <descr>&lt;p>ASI Input continuity count Error on Asi2&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             faultReservedData&lt;/b>&lt;/td>&lt;td> %parm[#1]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> faultExtraData&lt;/b>&lt;/td>&lt;td> %parm[#2]&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputContinuityErrorAsi2True trap
+      <logmsg dest="donotpersist">%nodelabel%: Evertz ASIIP27780 Event: faultasiInputContinuityErrorAsi2True trap
             received faultReservedData=%parm[#1]% faultExtraData=%parm[#2]%
         </logmsg>
       <severity>Minor</severity>

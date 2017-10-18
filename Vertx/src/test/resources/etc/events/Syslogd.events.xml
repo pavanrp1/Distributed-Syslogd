@@ -10,7 +10,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -27,7 +27,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -44,7 +44,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -61,7 +61,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -78,7 +78,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -95,7 +95,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -112,7 +112,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -129,7 +129,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -146,7 +146,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -163,7 +163,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -180,7 +180,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -197,7 +197,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -214,7 +214,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -231,7 +231,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -248,7 +248,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -265,7 +265,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -282,7 +282,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -299,7 +299,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -316,7 +316,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -333,7 +333,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -350,7 +350,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -367,7 +367,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -384,7 +384,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -401,7 +401,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -418,7 +418,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -435,7 +435,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -452,7 +452,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -469,7 +469,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -486,7 +486,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -503,7 +503,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -520,7 +520,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -537,7 +537,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -554,7 +554,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -571,7 +571,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -588,7 +588,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -605,7 +605,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -622,7 +622,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -639,7 +639,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -656,7 +656,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -673,7 +673,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -690,7 +690,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -707,7 +707,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -724,7 +724,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -741,7 +741,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -758,7 +758,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -775,7 +775,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -792,7 +792,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -809,7 +809,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -826,7 +826,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -843,7 +843,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -860,7 +860,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -877,7 +877,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -894,7 +894,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -911,7 +911,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -928,7 +928,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -945,7 +945,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -962,7 +962,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -979,7 +979,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -996,7 +996,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1013,7 +1013,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1030,7 +1030,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1047,7 +1047,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1064,7 +1064,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1081,7 +1081,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1098,7 +1098,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1115,7 +1115,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1132,7 +1132,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1149,7 +1149,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1166,7 +1166,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1183,7 +1183,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1200,7 +1200,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1217,7 +1217,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1234,7 +1234,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1251,7 +1251,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1268,7 +1268,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1285,7 +1285,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1302,7 +1302,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1319,7 +1319,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1336,7 +1336,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1353,7 +1353,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1370,7 +1370,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1387,7 +1387,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1404,7 +1404,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1421,7 +1421,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1438,7 +1438,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1455,7 +1455,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1472,7 +1472,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1489,7 +1489,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1506,7 +1506,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1523,7 +1523,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1540,7 +1540,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1557,7 +1557,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1574,7 +1574,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1591,7 +1591,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1608,7 +1608,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1625,7 +1625,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1642,7 +1642,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1659,7 +1659,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1676,7 +1676,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1693,7 +1693,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1710,7 +1710,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1727,7 +1727,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1744,7 +1744,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1761,7 +1761,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1778,7 +1778,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1795,7 +1795,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1812,7 +1812,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1829,7 +1829,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1846,7 +1846,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1863,7 +1863,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1880,7 +1880,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1897,7 +1897,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1914,7 +1914,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1931,7 +1931,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1948,7 +1948,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1965,7 +1965,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1982,7 +1982,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -1999,7 +1999,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2016,7 +2016,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2033,7 +2033,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2050,7 +2050,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2067,7 +2067,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2084,7 +2084,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2101,7 +2101,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2118,7 +2118,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2135,7 +2135,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2152,7 +2152,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2169,7 +2169,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2186,7 +2186,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2203,7 +2203,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2220,7 +2220,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2237,7 +2237,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2254,7 +2254,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2271,7 +2271,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2288,7 +2288,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2305,7 +2305,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2322,7 +2322,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2339,7 +2339,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2356,7 +2356,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2373,7 +2373,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2390,7 +2390,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2407,7 +2407,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2424,7 +2424,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2441,7 +2441,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2458,7 +2458,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2475,7 +2475,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2492,7 +2492,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2509,7 +2509,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2526,7 +2526,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2543,7 +2543,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2560,7 +2560,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2577,7 +2577,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2594,7 +2594,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2611,7 +2611,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2628,7 +2628,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2645,7 +2645,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2662,7 +2662,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2679,7 +2679,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2696,7 +2696,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2713,7 +2713,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2730,7 +2730,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2747,7 +2747,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2764,7 +2764,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2781,7 +2781,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2798,7 +2798,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2815,7 +2815,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2832,7 +2832,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2849,7 +2849,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2866,7 +2866,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2883,7 +2883,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2900,7 +2900,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2917,7 +2917,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2934,7 +2934,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2951,7 +2951,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2968,7 +2968,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -2985,7 +2985,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -3002,7 +3002,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -3019,7 +3019,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -3036,7 +3036,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -3053,7 +3053,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -3070,7 +3070,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -3087,7 +3087,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -3104,7 +3104,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -3121,7 +3121,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -3138,7 +3138,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>
@@ -3155,7 +3155,7 @@
                         Process: %parm[process]% &lt;br>
                         PID: %parm[processid]%
 			&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
                         &lt;p>An OpenNMS Event has been received as a Syslog Message &lt;/p>
                         Message: %parm[syslogmessage]% &lt;br>
                  </logmsg>

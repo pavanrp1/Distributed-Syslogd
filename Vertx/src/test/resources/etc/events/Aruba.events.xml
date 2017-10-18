@@ -42,7 +42,7 @@
 		down(2)
 		testing(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxVlanLinkUp trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapVlanId=%parm[#2]%
@@ -105,7 +105,7 @@
 		down(2)
 		testing(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxVlanLinkDown trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapVlanId=%parm[#2]%
@@ -169,7 +169,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignatureMatch trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -237,7 +237,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNodeRateAnomaly trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapFrameType=%parm[#2]%
@@ -291,7 +291,7 @@
 
 	wlsxTrapTemperatureValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNormalTemperature trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTemperatureValue=%parm[#2]%&lt;/p>
@@ -326,7 +326,7 @@
 
 	wlsxTrapProcessName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxProcessRestart trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapProcessName=%parm[#2]%&lt;/p>
@@ -358,7 +358,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxFlashSpaceOK trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -389,7 +389,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxMemoryUsageOK trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -420,7 +420,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxPowerSupplyOK trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -454,7 +454,7 @@
 
 	wlsxTrapFanNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxFanOK trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapFanNumber=%parm[#2]%&lt;/p>
@@ -493,7 +493,7 @@
 
 	wlsxTrapVoltageValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxInRangeVoltage trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapVoltageType=%parm[#2]%
@@ -542,7 +542,7 @@
 
 	wlsxTrapNodeMac&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxCoverageHoleResolved trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPBSSID=%parm[#2]%
@@ -580,7 +580,7 @@
 
 	wlsxTrapSwitchIp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSwitchIPChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSwitchIp=%parm[#2]%&lt;/p>
@@ -620,7 +620,7 @@
 		local(2)
 		backupmaster(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSwitchRoleChange trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSwitchRole=%parm[#2]%&lt;/p>
@@ -665,7 +665,7 @@
 
 	wlsxTrapUserPhyAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNUserEntryCreated trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapUserIpAddress=%parm[#2]%
@@ -705,7 +705,7 @@
 
 	wlsxTrapUserPhyAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNUserEntryDeleted trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapUserIpAddress=%parm[#2]%
@@ -770,7 +770,7 @@
 
 	wlsxTrapUserRole&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNUserEntryAuthenticated trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapUserIpAddress=%parm[#2]%
@@ -828,7 +828,7 @@
 
 	wlsxTrapUserPhyAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNUserEntryDeAuthenticated trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapUserIpAddress=%parm[#2]%
@@ -868,7 +868,7 @@
 
 	wlsxTrapUserPhyAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNUserAuthenticationFailed trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapUserIpAddress=%parm[#2]%
@@ -904,7 +904,7 @@
 
 	wlsxTrapAuthServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAuthServerReqTimedOut trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAuthServerName=%parm[#2]%&lt;/p>
@@ -943,7 +943,7 @@
 
 	wlsxTrapAuthServerTimeout&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAuthServerTimedOut trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAuthServerName=%parm[#2]%
@@ -979,7 +979,7 @@
 
 	wlsxTrapAuthServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAuthServerIsUp trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAuthServerName=%parm[#2]%&lt;/p>
@@ -1011,7 +1011,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAuthMaxUserEntries trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1042,7 +1042,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAuthMaxAclEntries trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1073,7 +1073,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAuthMaxBWContracts trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1103,7 +1103,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNPowerSupplyFailure trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1137,7 +1137,7 @@
 
 	wlsxTrapFanNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNFanFailure trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapFanNumber=%parm[#2]%&lt;/p>
@@ -1176,7 +1176,7 @@
 
 	wlsxTrapVoltageValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNOutOfRangeVoltage trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapVoltageType=%parm[#2]%
@@ -1213,7 +1213,7 @@
 
 	wlsxTrapTemperatureValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNOutOfRangeTemperature trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTemperatureValue=%parm[#2]%&lt;/p>
@@ -1248,7 +1248,7 @@
 
 	wlsxTrapCardSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNLCInserted trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapCardSlot=%parm[#2]%&lt;/p>
@@ -1283,7 +1283,7 @@
 
 	wlsxTrapCardSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSCInserted trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapCardSlot=%parm[#2]%&lt;/p>
@@ -1314,7 +1314,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNGBICInserted trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1348,7 +1348,7 @@
 
 	wlsxTrapProcessName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNProcessDied trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapProcessName=%parm[#2]%&lt;/p>
@@ -1384,7 +1384,7 @@
 
 	wlsxTrapProcessName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNProcessExceedsMemoryLimits trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapProcessName=%parm[#2]%&lt;/p>
@@ -1415,7 +1415,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNLowOnFlashSpace trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1445,7 +1445,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNLowMemory trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1475,7 +1475,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNFanTrayRemoved trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1505,7 +1505,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNFanTrayInserted trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1539,7 +1539,7 @@
 
 	wlsxTrapCardSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNLCRemoved trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapCardSlot=%parm[#2]%&lt;/p>
@@ -1570,7 +1570,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNPowerSupplyMissing trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1604,7 +1604,7 @@
 
 	wlsxTrapAPMacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAccessPointIsUp trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%&lt;/p>
@@ -1639,7 +1639,7 @@
 
 	wlsxTrapAPMacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAccessPointIsDown trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%&lt;/p>
@@ -1687,7 +1687,7 @@
 
 	wlsxTrapNodeMac&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNCoverageHoleDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPBSSID=%parm[#2]%
@@ -1734,7 +1734,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNChannelChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPBSSID=%parm[#2]%
@@ -1786,7 +1786,7 @@
 		esiBlacklist(9)
 		other(100)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNStationAddedToBlackList trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapNodeMac=%parm[#2]%
@@ -1835,7 +1835,7 @@
 
 	wlsxTrapNodeMac&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNStationRemovedFromBlackList trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapNodeMac=%parm[#2]%&lt;/p>
@@ -1878,7 +1878,7 @@
 
 	wlsxTrapSpoofedNewPhyAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNIpSpoofingDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSpoofedIpAddress=%parm[#2]%
@@ -1930,7 +1930,7 @@
 		mssql(1)
 		mysql(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNDBCommunicationFailure trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapDBName=%parm[#2]%
@@ -1985,7 +1985,7 @@
 		backup(2)
 		master(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNVrrpStateChange trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapVrrpID=%parm[#2]%
@@ -2045,7 +2045,7 @@
 
 	wlsxTrapAPTxPower&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNRadioAttributesChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -2092,7 +2092,7 @@
 
 	wlsxTrapESIServerIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNESIServerUp trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapESIServerGrpName=%parm[#2]%
@@ -2137,7 +2137,7 @@
 
 	wlsxTrapESIServerIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNESIServerDown trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapESIServerGrpName=%parm[#2]%
@@ -2174,7 +2174,7 @@
 
 	wlsxTrapLicenseDaysRemaining&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNLicenseExpiry trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapLicenseDaysRemaining=%parm[#2]%&lt;/p>
@@ -2239,7 +2239,7 @@
 
 	wlsxTrapRogueInfoURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxUnsecureAPDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2303,7 +2303,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxUnsecureAPResolved trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2355,7 +2355,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxStaImpersonation trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapNodeMac=%parm[#2]%
@@ -2414,7 +2414,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxReservedChannelViolation trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2475,7 +2475,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxValidSSIDViolation trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2536,7 +2536,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxChannelMisconfiguration trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2597,7 +2597,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxOUIMisconfiguration trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2658,7 +2658,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSSIDMisconfiguration trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2719,7 +2719,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxShortPreableMisconfiguration trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2779,7 +2779,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxWPAMisconfiguration trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2840,7 +2840,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAdhocNetworkDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2901,7 +2901,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAdhocNetworkRemoved trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -2963,7 +2963,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxStaPolicyViolation trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3023,7 +3023,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxRepeatWEPIVViolation trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3084,7 +3084,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxWeakWEPIVViolation trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3136,7 +3136,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxChannelInterferenceDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -3187,7 +3187,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxChannelInterferenceCleared trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -3245,7 +3245,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPInterferenceDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3306,7 +3306,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPInterferenceCleared trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3370,7 +3370,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxStaInterferenceDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3436,7 +3436,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxStaInterferenceCleared trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3497,7 +3497,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxFrameRetryRateExceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3557,7 +3557,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxFrameReceiveErrorRateExceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3617,7 +3617,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxFrameFragmentationRateExceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3681,7 +3681,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxFrameBandWidthRateExceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapNodeMac=%parm[#2]%
@@ -3746,7 +3746,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxFrameLowSpeedRateExceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapNodeMac=%parm[#2]%
@@ -3811,7 +3811,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxFrameNonUnicastRateExceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapNodeMac=%parm[#2]%
@@ -3873,7 +3873,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxLoadbalancingEnabled trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3934,7 +3934,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxLoadbalancingDisabled trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -3986,7 +3986,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxChannelFrameRetryRateExceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -4036,7 +4036,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxChannelFrameFragmentationRateExceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -4086,7 +4086,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxChannelFrameErrorRateExceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -4148,7 +4148,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignatureMatchAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -4209,7 +4209,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignatureMatchSta trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -4283,7 +4283,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxChannelRateAnomaly trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapFrameType=%parm[#2]%
@@ -4378,7 +4378,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNodeRateAnomalyAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapFrameType=%parm[#2]%
@@ -4466,7 +4466,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNodeRateAnomalySta trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapFrameType=%parm[#2]%
@@ -4534,7 +4534,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxEAPRateAnomaly trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -4584,7 +4584,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignalAnomaly trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -4652,7 +4652,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSequenceNumberAnomalyAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -4718,7 +4718,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSequenceNumberAnomalySta trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSourceMac=%parm[#2]%
@@ -4793,7 +4793,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxDisconnectStationAttack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapFrameType=%parm[#2]%
@@ -4857,7 +4857,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxApFloodAttack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -4919,7 +4919,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAdhocNetwork trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSourceMac=%parm[#2]%
@@ -4980,7 +4980,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxWirelessBridge trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTransmitterMac=%parm[#2]%
@@ -5048,7 +5048,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxInvalidMacOUIAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAddressType=%parm[#2]%
@@ -5119,7 +5119,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxInvalidMacOUISta trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAddressType=%parm[#2]%
@@ -5185,7 +5185,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxWEPMisconfiguration trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -5249,7 +5249,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxStaRepeatWEPIVViolation trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -5314,7 +5314,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxStaWeakWEPIVViolation trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -5384,7 +5384,7 @@
 
 	wlsxTrapRogueInfoURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxStaAssociatedToUnsecureAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -5443,7 +5443,7 @@
 
 	wlsxTrapNodeMac&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxStaUnAssociatedFromUnsecureAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -5507,7 +5507,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAdhocNetworkBridgeDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSourceMac=%parm[#2]%
@@ -5573,7 +5573,7 @@
 
 	wlsxTrapInterferingAPInfoURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxInterferingApDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -5633,7 +5633,7 @@
 		down(2)
 		testing(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxPortUp trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapCardSlot=%parm[#2]%
@@ -5701,7 +5701,7 @@
 		down(2)
 		testing(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxPortDown trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapCardSlot=%parm[#2]%
@@ -5758,7 +5758,7 @@
 
 	wlsxTrapAPBSSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxBSSIDIsUp trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -5803,7 +5803,7 @@
 
 	wlsxTrapAPBSSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxBSSIDIsDown trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -5836,7 +5836,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxColdStart trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -5866,7 +5866,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxWarmStart trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -5921,7 +5921,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPImpersonation trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -5965,7 +5965,7 @@
 
 	wlsxTrapHostPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxInformQueueOverFlow trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapHostIp=%parm[#2]%
@@ -6001,7 +6001,7 @@
 
 	wlsxTrapAuthServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAuthServerIsDown trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAuthServerName=%parm[#2]%&lt;/p>
@@ -6040,7 +6040,7 @@
 
 	wlsxTrapCTSURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxCTSTransferError trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapCTSTransferType=%parm[#2]%
@@ -6080,7 +6080,7 @@
 
 	wlsxTrapCTSURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxCTSTransferSucceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapCTSTransferType=%parm[#2]%
@@ -6124,7 +6124,7 @@
 
 	wlsxTrapUpdateFailedObj&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxConfigurationUpdateError trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapConfigurationId=%parm[#2]%
@@ -6161,7 +6161,7 @@
 
 	wlsxTrapConfigurationId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxConfigurationUpdateSucceeded trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapConfigurationId=%parm[#2]%&lt;/p>
@@ -6200,7 +6200,7 @@
 
 	wlsxTrapGlobalConfigObj&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxGlobalConfigurationChangeNotification trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapConfigurationId=%parm[#2]%
@@ -6252,7 +6252,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxUserEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6316,7 +6316,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPBssidEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6377,7 +6377,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPRadioEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6433,7 +6433,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6488,7 +6488,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSwitchListEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6547,7 +6547,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxPortEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6603,7 +6603,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxVlanEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6658,7 +6658,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxVlanInterfaceEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6727,7 +6727,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxWindowsBridgeDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSourceMac=%parm[#2]%
@@ -6780,7 +6780,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxLicenseEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6835,7 +6835,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxEsiServerChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6898,7 +6898,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxMonAPEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -6963,7 +6963,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxMonStationEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -7033,7 +7033,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignAPNetstumbler trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -7095,7 +7095,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignStaNetstumbler trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -7160,7 +7160,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignAPAsleap trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -7222,7 +7222,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignStaAsleap trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -7287,7 +7287,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignAPAirjack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -7349,7 +7349,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignStaAirjack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -7414,7 +7414,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignAPNullProbeResp trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -7476,7 +7476,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignStaNullProbeResp trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -7542,7 +7542,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignAPDeauthBcast trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -7605,7 +7605,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSignStaDeauthBcast trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSignatureName=%parm[#2]%
@@ -7666,7 +7666,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxWindowsBridgeDetectedAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -7731,7 +7731,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxWindowsBridgeDetectedSta trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSourceMac=%parm[#2]%
@@ -7793,7 +7793,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAdhocNetworkBridgeDetectedAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -7858,7 +7858,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAdhocNetworkBridgeDetectedSta trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSourceMac=%parm[#2]%
@@ -7939,7 +7939,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxDisconnectStationAttackAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapFrameType=%parm[#2]%
@@ -8030,7 +8030,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxDisconnectStationAttackSta trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapFrameType=%parm[#2]%
@@ -8114,7 +8114,7 @@
 
 	wlsxTrapRogueInfoURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSuspectUnsecureAPDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -8166,7 +8166,7 @@
 
 	wlsxTrapAPRadioNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxSuspectUnsecureAPResolved trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -8208,7 +8208,7 @@
 
 	wlsxTrapMissingLicenses&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxConfigurationLicenseMismatch trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapConfigurationId=%parm[#2]%
@@ -8244,7 +8244,7 @@
 
 	wlsxVoiceCurrentNumCdr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxVoiceCdrBufferThresholdReached trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxVoiceCurrentNumCdr=%parm[#2]%&lt;/p>
@@ -8287,7 +8287,7 @@
 
 	wlsxTrapTunnelStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxTunnelUp trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTunnelId=%parm[#2]%
@@ -8332,7 +8332,7 @@
 
 	wlsxTrapTunnelStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxTunnelDown trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTunnelId=%parm[#2]%
@@ -8381,7 +8381,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxMeshNodeEntryChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTableGenNumber=%parm[#2]%
@@ -8445,7 +8445,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxHtGreenfieldSupported trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -8506,7 +8506,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxHT40MHzIntoleranceAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -8583,7 +8583,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxHT40MHzIntoleranceSta trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSourceMac=%parm[#2]%
@@ -8638,7 +8638,7 @@
 
 	wlsxTrapESIServerGrpName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAuthServerAllInService trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapESIServerGrpName=%parm[#2]%&lt;/p>
@@ -8702,7 +8702,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAdhocNetwork trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSourceMac=%parm[#2]%
@@ -8769,7 +8769,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAdhocNetworkBridgeDetectedAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -8839,7 +8839,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAdhocNetworkBridgeDetectedSta trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapSourceMac=%parm[#2]%
@@ -8877,7 +8877,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAuthMaxXsecUserEntries trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -8907,7 +8907,7 @@
 
 	wlsxTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNVpnMaxSessions trap received
 	wlsxTrapTime=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -8945,7 +8945,7 @@
 
 	wlsxTrapApSerialNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNRapExpiredPSK trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPIpAddress=%parm[#2]%
@@ -8981,7 +8981,7 @@
 
 	wlsxTrapTimeStr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNRapWarnExpiredPSK trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTimeStr=%parm[#2]%&lt;/p>
@@ -9032,7 +9032,7 @@
 
 	wlsxTrapTimeStr&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNConnectionResetWithLocal trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapMasterName=%parm[#2]%
@@ -9079,7 +9079,7 @@
 
 	wlsxTrapPrimaryControllerIp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNApOnBackupController trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -9126,7 +9126,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxClientFloodAttack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -9195,7 +9195,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxValidClientNotUsingEncryption trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -9263,7 +9263,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAdhocUsingValidSSID trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -9337,7 +9337,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPSpoofingDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -9413,7 +9413,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxClientAssociatingOnWrongChannel trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -9488,7 +9488,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNDisconnectStationAttack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -9554,7 +9554,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNStaUnAssociatedFromUnsecureAP trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -9624,7 +9624,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxOmertaAttack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -9696,7 +9696,7 @@
 
 	wlsxTrapSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxTKIPReplayAttack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -9767,7 +9767,7 @@
 
 	wlsxTrapSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxChopChopAttack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -9838,7 +9838,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxFataJackAttack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -9905,7 +9905,7 @@
 
 	wlsxTrapSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxInvalidAddressCombination trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -9978,7 +9978,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxValidClientMisassociation trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -10049,7 +10049,7 @@
 
 	wlsxTrapSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxMalformedHTIEDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -10120,7 +10120,7 @@
 
 	wlsxTrapSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxMalformedAssocReqDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -10191,7 +10191,7 @@
 
 	wlsxTrapSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxOverflowIEDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -10262,7 +10262,7 @@
 
 	wlsxTrapSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxOverflowEAPOLKeyDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -10325,7 +10325,7 @@
 
 	wlsxTrapSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxMalformedFrameLargeDurationDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -10398,7 +10398,7 @@
 
 	wlsxTrapSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxMalformedFrameWrongChannelDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -10471,7 +10471,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxMalformedAuthFrame trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -10526,7 +10526,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxCTSRateAnomaly trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -10577,7 +10577,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxRTSRateAnomaly trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -10624,7 +10624,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNRogueAPDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -10670,7 +10670,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNRogueAPResolved trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -10715,7 +10715,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNeighborAPDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -10761,7 +10761,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNInterferingAPDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -10812,7 +10812,7 @@
 
 	wlsxTrapConfidenceLevel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSuspectRogueAPDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -10860,7 +10860,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSuspectRogueAPResolved trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -10928,7 +10928,7 @@
 
 	wlsxTrapSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxBlockAckAttackDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -11005,7 +11005,7 @@
 
 	wlsxTrapTargetAPSSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxHotspotterAttackDetected trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -11080,7 +11080,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSignatureMatch trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -11156,7 +11156,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSignatureMatchNetstumbler trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -11232,7 +11232,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSignatureMatchAsleap trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -11308,7 +11308,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSignatureMatchAirjack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -11384,7 +11384,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSignatureMatchNullProbeResp trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -11461,7 +11461,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSignatureMatchDeauthBcast trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -11538,7 +11538,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSignatureMatchDisassocBcast trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -11614,7 +11614,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNSignatureMatchWellenreiter trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -11677,7 +11677,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPDeauthContainment trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -11737,7 +11737,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxClientDeauthContainment trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapNodeMac=%parm[#2]%
@@ -11801,7 +11801,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPWiredContainment trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -11866,7 +11866,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxClientWiredContainment trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapNodeMac=%parm[#2]%
@@ -11935,7 +11935,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPTaggedWiredContainment trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -12005,7 +12005,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxClientTaggedWiredContainment trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapNodeMac=%parm[#2]%
@@ -12075,7 +12075,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxTarpitContainment trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -12141,7 +12141,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxVoiceClientLocationUpdate trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapVcIpAddress=%parm[#2]%
@@ -12236,7 +12236,7 @@
 		armTurnOffRadio(16)
 		armTurnOnRadio(17)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPChannelChange trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPChannel=%parm[#2]%
@@ -12326,7 +12326,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPPowerChange trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPTxPower=%parm[#2]%
@@ -12397,7 +12397,7 @@
 
 	wlsxTrapAPLocation&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxAPModeChange trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPCurMode=%parm[#2]%
@@ -12484,7 +12484,7 @@
 		delete(2)
 		modify(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxUserEntryAttributesChanged trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapUserIpAddress=%parm[#2]%
@@ -12559,7 +12559,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxPowerSaveDosAttack trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -12614,7 +12614,7 @@
 		down(2)
 		move(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAPMasterStatusChange trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapAPMacAddress=%parm[#2]%
@@ -12686,7 +12686,7 @@
 
 	wlsxTrapAPChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxNAdhocUsingValidSSID trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapTargetAPBSSID=%parm[#2]%
@@ -12732,7 +12732,7 @@
 
 	wlsxTrapCrlName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxCRLExpired trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapCaName=%parm[#2]%
@@ -12776,7 +12776,7 @@
 
 	wlsxTrapAuthServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	wlsxMgmtUserAuthenticationFailed trap received
 	wlsxTrapTime=%parm[#1]%
 	wlsxTrapUserName=%parm[#2]%

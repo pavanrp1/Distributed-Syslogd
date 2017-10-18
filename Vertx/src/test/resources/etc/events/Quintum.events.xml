@@ -28,7 +28,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  &lt;/b>&lt;/td>&lt;td>
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Quintum Event - Critical Alarm - %parm[#3]%&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Quintum Event - Critical Alarm - %parm[#3]%&lt;/p></logmsg>
       <severity>Critical</severity>
    </event>
    <event>
@@ -60,7 +60,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  &lt;/b>&lt;/td>&lt;td>
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Quintum Event - Major Alarm - %parm[#3]%&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Quintum Event - Major Alarm - %parm[#3]%&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -92,7 +92,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  &lt;/b>&lt;/td>&lt;td>
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Quintum Event - Minor Alarm - %parm[#3]%&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Quintum Event - Minor Alarm - %parm[#3]%&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -124,7 +124,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  &lt;/b>&lt;/td>&lt;td>
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Quintum Event - Warning - %parm[#3]%&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Quintum Event - Warning - %parm[#3]%&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -156,7 +156,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  &lt;/b>&lt;/td>&lt;td>
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Quintum Event - Status Normal - %parm[#3]%&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Quintum Event - Status Normal - %parm[#3]%&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
 </events>

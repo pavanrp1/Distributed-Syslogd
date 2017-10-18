@@ -45,7 +45,7 @@ on the Atlas 550.&lt;/p>&lt;table>&lt;/table></descr>
 been activated via the short circuiting of pins on
 the RELAY MON connector located on the rear panel
 of the Atlas 550.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAS550ExtAlarmActive trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -72,7 +72,7 @@ of the Atlas 550.&lt;/p>&lt;table>&lt;/table></descr>
 been deactivated via the open circuiting of pins on
 the RELAY MON connector located on the rear panel
 of the Atlas 550.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAS550ExtAlarmInactive trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -118,7 +118,7 @@ user-defined threshold value.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASHSSIV35IfceDeact trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -170,7 +170,7 @@ manually reactivated it.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASHSSIV35IfceReact trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -211,7 +211,7 @@ manually reactivated it.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASModuleOffline trap received 
 			adATLASModuleInfoIndex=%parm[#1]% 
 			adATLASModuleInfoFPStatus=%parm[#2]% 
@@ -250,7 +250,7 @@ manually reactivated it.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASModuleOnline trap received 
 			adATLASModuleInfoIndex=%parm[#1]% 
 			adATLASModuleInfoFPStatus=%parm[#2]% 
@@ -298,7 +298,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASCbuBackupAttempt trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -347,7 +347,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASCbuBackupAttemptFailed trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -396,7 +396,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASCbuBackupActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -445,7 +445,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASCbuPrimaryRestored trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -494,7 +494,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASCbuTestCallOriginated trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -543,7 +543,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASCbuTestCallConnected trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -592,7 +592,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASCbuTestCallPassed trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -641,7 +641,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	adATLASUnitFPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASCbuTestCallFailed trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -694,7 +694,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1RxYellowActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -748,7 +748,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1RxYellowInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -802,7 +802,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1RxAISActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -856,7 +856,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1RxAISInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -910,7 +910,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1RedAlarmActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -964,7 +964,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1RedAlarmInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1018,7 +1018,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1LOSActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1072,7 +1072,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1LOSInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1126,7 +1126,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TxAISActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1180,7 +1180,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TxAISInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1234,7 +1234,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TxYellowActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1288,7 +1288,7 @@ and is attempting a backup call.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TxYellowInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1343,7 +1343,7 @@ threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1CurrentES trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1398,7 +1398,7 @@ threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1CurrentSES trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1453,7 +1453,7 @@ framing second threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1CurrentSEFS trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1508,7 +1508,7 @@ second threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Current Unavailable Seconds Threshold Exceeded: Slot %parm[#2]%, Port %parm[#3]%
 		&lt;/p>
 		</logmsg>
@@ -1558,7 +1558,7 @@ second threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1CurrentCSS trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1613,7 +1613,7 @@ threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1CurrentPCV trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1668,7 +1668,7 @@ second threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1CurrentLES trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1723,7 +1723,7 @@ violations threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1CurrentLCV trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1778,7 +1778,7 @@ threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TotalES trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1833,7 +1833,7 @@ threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TotalSES trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1888,7 +1888,7 @@ framing second threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TotalSEFS trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1943,7 +1943,7 @@ second threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TotalUAS trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -1998,7 +1998,7 @@ second threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TotalCSS trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2053,7 +2053,7 @@ threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TotalPCV trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2108,7 +2108,7 @@ second threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TotalLES trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2163,7 +2163,7 @@ violations threshold has been exceeded.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLAST1TotalLCV trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2202,7 +2202,7 @@ Circuit has switched to a backup state.&lt;/p>&lt;table>
 
 	frCircuitDlci&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASFrSwToBkup trap received 
 			frCircuitIfIndex=%parm[#1]% 
 			frCircuitDlci=%parm[#2]%&lt;/p>
@@ -2237,7 +2237,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	frCircuitDlci&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASFrSwToPrimary trap received 
 			frCircuitIfIndex=%parm[#1]% 
 			frCircuitDlci=%parm[#2]%&lt;/p>
@@ -2287,7 +2287,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfAlarmStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxSlipAlarmActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2341,7 +2341,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfAlarmStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxSlipAlarmInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2395,7 +2395,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfAlarmStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxPLLAlarmActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2449,7 +2449,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfAlarmStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxPLLAlarmInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2503,7 +2503,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfAlarmStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxZeroAlarmActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2557,7 +2557,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfAlarmStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxZeroAlarmInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2611,7 +2611,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfAlarmStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxExtClkAlarmActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2665,7 +2665,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfAlarmStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxExtClkAlarmInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2719,7 +2719,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxRTSActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2773,7 +2773,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxRTSInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2827,7 +2827,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxCTSActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2881,7 +2881,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxCTSInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2935,7 +2935,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxDTRActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -2989,7 +2989,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxDTRInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3043,7 +3043,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxDSRActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3097,7 +3097,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxDSRInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3151,7 +3151,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxDCDActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3205,7 +3205,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxDCDInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3259,7 +3259,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxRIActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3313,7 +3313,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxRIInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3367,7 +3367,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxTDActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3421,7 +3421,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxTDInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3475,7 +3475,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxRDActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3529,7 +3529,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxRDInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3583,7 +3583,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxECActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 
@@ -3637,7 +3637,7 @@ Circuit has been restored to the primary state.&lt;/p>&lt;table>
 
 	adATLASV35NxIfDTEStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			adATLASV35NxECInActive trap received 
 			ifIndex=%parm[#1]% 
 			adATLASUnitSlotAddress=%parm[#2]% 

@@ -9,7 +9,7 @@
             &lt;p>ATAG: %parm[atag]% &lt;/p>
             &lt;p>Verb: %parm[verb]% &lt;/p>
             &lt;p>Auto Block: %parm[autoblock]% &lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p> %host%:%parm[verb]%:%parm[autoblock]% &lt;/p>
         </logmsg>
       <severity>Warning</severity>

@@ -81,7 +81,7 @@
 
             jnxJsScreenAttackDescr&lt;/b>&lt;/td>&lt;td>
             %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             jnxJsScreenAttack trap received
             jnxJsScreenZoneName=%parm[#1]%
             ifName=%parm[#2]%
@@ -199,7 +199,7 @@
             disabled(1)
             enabled(2)
             &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
             jnxJsScreenCfgChange trap received
             jnxJsScreenZoneName=%parm[#1]%
             jnxJsScreenAttackType=%parm[#2]%

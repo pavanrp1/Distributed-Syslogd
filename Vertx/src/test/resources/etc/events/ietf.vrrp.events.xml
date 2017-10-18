@@ -21,7 +21,7 @@
             &lt;tr>&lt;td>&lt;b>
             vrrpOperMasterIpAddr&lt;/b>&lt;/td>&lt;td>%parm[#1]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>VRRP Event: New Master.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>VRRP Event: New Master.&lt;/p></logmsg>
       <severity>Warning</severity>
       <alarm-data reduction-key="%uei%:%dpname%:%nodeid%" alarm-type="3" auto-clean="false"/>
    </event>
@@ -54,7 +54,7 @@
             &lt;/td>&lt;td>&lt;p;>
             invalidAuthType(1) authTypeMismatch(2) authFailure(3)&lt;/p>
             &lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>VRRP Event: Authentication Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>VRRP Event: Authentication Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
 </events>

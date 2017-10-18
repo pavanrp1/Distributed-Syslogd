@@ -27,7 +27,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	unknownDeviceTrapContents&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			unParsedEvent trap received 
 			unknownDeviceTrapContents=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -83,7 +83,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	file&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			styxProducerConnect trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -142,7 +142,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	file&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			styxProducerUnReadable trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -201,7 +201,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	file&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			styxProducerDisconnect trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -266,7 +266,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	minutes&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			styxProducerUnReachable trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -321,7 +321,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	reason&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			logFileChanged trap received 
 			oldFile=%parm[#1]% 
 			newFile=%parm[#2]% 
@@ -379,7 +379,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	matePort&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			styxFTMateConnect trap received 
 			snName=%parm[#1]% 
 			myHost=%parm[#2]% 
@@ -440,7 +440,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	matePort&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			styxFTMateDisconnect trap received 
 			snName=%parm[#1]% 
 			myHost=%parm[#2]% 
@@ -472,7 +472,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	cdrClient&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cDRBufferOverflow trap received 
 			cdrClient=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -502,7 +502,7 @@ OBJECTS DEFINITION:
 
 	cdrCallState&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cDRInconsistentState trap received 
 			cdrCallState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -532,7 +532,7 @@ VARIABLES DEFINITION:
 
 	cdrClient&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cDRNewClient trap received 
 			cdrClient=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -562,7 +562,7 @@ VARIABLES DEFINITION:
 
 	cdrClient&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cDRClientDisconnected trap received 
 			cdrClient=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -592,7 +592,7 @@ VARIABLES DEFINITION:
 
 	cdrClient&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cDRClientBufferOverflow trap received 
 			cdrClient=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -627,7 +627,7 @@ VARIABLES DEFINITION:
 
 	fCAppInstance&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cDRFCAppInfoTimeOut trap received 
 			fCAppID=%parm[#1]% 
 			fCAppInstance=%parm[#2]%&lt;/p>
@@ -684,7 +684,7 @@ VARIABLES DEFINITION:
 
 	callId&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cDRLDCDetected trap received 
 			severity=%parm[#1]% 
 			originationNumber=%parm[#2]% 
@@ -745,7 +745,7 @@ VARIABLES DEFINITION:
 
 	callId&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cDRLDCContinued trap received 
 			severity=%parm[#1]% 
 			originationNumber=%parm[#2]% 
@@ -786,7 +786,7 @@ VARIABLES DEFINITION:
 
 	fileSystem&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cDRDiskFull trap received 
 			fullPercent=%parm[#1]% 
 			fileSystem=%parm[#2]%&lt;/p>
@@ -835,7 +835,7 @@ VARIABLES DEFINITION:
 
 	errorNo&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cDRClientAlarm trap received 
 			subType=%parm[#1]% 
 			severity=%parm[#2]% 
@@ -905,7 +905,7 @@ first time.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardUpTrap trap received 
 			excelSysLastAlarmStatus=%parm[#1]% 
 			excelDeviceCardSlotIndex=%parm[#2]% 
@@ -973,7 +973,7 @@ for some reason is no longer recognized by the matrix.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardDownTrap trap received 
 			excelSysLastAlarmStatus=%parm[#1]% 
 			excelDeviceCardSlotIndex=%parm[#2]% 
@@ -1042,7 +1042,7 @@ indicate the slot of the new active card.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardActiveTrap trap received 
 			excelSysLastAlarmStatus=%parm[#1]% 
 			excelDeviceCardSlotIndex=%parm[#2]% 
@@ -1087,7 +1087,7 @@ the trap.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelFaultLoggedTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -1145,7 +1145,7 @@ the trap.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelRingUpTrap trap received 
 			excelSysLastAlarmStatus=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1182,7 +1182,7 @@ the trap.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelRingDownTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1221,7 +1221,7 @@ until the alarm is cleared.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSystemBusyTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1258,7 +1258,7 @@ until the alarm is cleared.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSystemBusyWarningTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1295,7 +1295,7 @@ until the alarm is cleared.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSystemBusyClearedTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1335,7 +1335,7 @@ available clock source.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelClockModeChangeTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1395,7 +1395,7 @@ available clock source.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelDSPResourceBlockTrap trap received 
 			excelSysLastAlarmDSPLastBlocked=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -1433,7 +1433,7 @@ available clock source.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelDSPFuncNotCfgTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1470,7 +1470,7 @@ available clock source.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelDSPMgmtInconsistentTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1507,7 +1507,7 @@ available clock source.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelDldTimeoutTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1545,7 +1545,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelRANUnAvailableTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1582,7 +1582,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelResourceUtilThreshTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -1623,7 +1623,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardNotSuppTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -1665,7 +1665,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardDldCorruptTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -1707,7 +1707,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardNotRecTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -1749,7 +1749,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardCfgResetTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -1791,7 +1791,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardConnMapFailTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -1833,7 +1833,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardNoSWTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -1875,7 +1875,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardNoALawTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -1917,7 +1917,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardRevNotSuppTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -1966,7 +1966,7 @@ This can be prevented by increasing the polling interval.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelEthernetErrTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2008,7 +2008,7 @@ This can be prevented by increasing the polling interval.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelNoFanTrayTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2050,7 +2050,7 @@ This can be prevented by increasing the polling interval.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelExnetACommFailTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2092,7 +2092,7 @@ This can be prevented by increasing the polling interval.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelExnetBCommFailTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2134,7 +2134,7 @@ This can be prevented by increasing the polling interval.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelExnetAFiberFailTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2176,7 +2176,7 @@ This can be prevented by increasing the polling interval.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelExnetBFiberFailTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2218,7 +2218,7 @@ This can be prevented by increasing the polling interval.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelEXSAPITrap trap received 
 			excelNodePhysicalID=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2260,7 +2260,7 @@ This can be prevented by increasing the polling interval.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelEXSConfTSTrap trap received 
 			excelNodePhysicalID=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2303,7 +2303,7 @@ card represented by excelExnetConnectIndex resides on has changed.&lt;/p>&lt;tab
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelEXSSCbusMasterChangedTrap trap received 
 			excelNodePhysicalID=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2346,7 +2346,7 @@ excelExnetConnectIndex resides has failed.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelEXSSCbusFailureTrap trap received 
 			excelNodePhysicalID=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2384,7 +2384,7 @@ excelExnetConnectIndex resides has failed.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSS7NetCongestionTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -2421,7 +2421,7 @@ excelExnetConnectIndex resides has failed.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSS7RemISUPUnavailTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -2469,7 +2469,7 @@ available clock source.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelClockSourceLostTrap trap received 
 			excelSysLastAlarmRefClockSrc=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2516,7 +2516,7 @@ automatically by the switch.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelClockSourceLostClearedTrap trap received 
 			excelSysLastAlarmRefClockSrc=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2558,7 +2558,7 @@ automatically by the switch.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelNoSupportDSPFuncTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2600,7 +2600,7 @@ automatically by the switch.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPartialMessageReceivedTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2642,7 +2642,7 @@ automatically by the switch.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelUnackedMsgTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2684,7 +2684,7 @@ automatically by the switch.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelNodeIDAlreadyExistsTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2726,7 +2726,7 @@ automatically by the switch.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelInvalidMsgLenTrap trap received 
 			excelDeviceCardSlotIndex=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -2764,7 +2764,7 @@ automatically by the switch.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelLogSpanIDExistsTrap trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -2802,7 +2802,7 @@ system.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelNodeUpTrap trap received 
 			excelNodePhysicalID=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -2840,7 +2840,7 @@ switch.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelNodeDownTrap trap received 
 			excelNodePhysicalID=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -2870,7 +2870,7 @@ connects with the master agent.&lt;/p>&lt;table>
 
 	excelNodeIdentifier&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSubagentConnect trap received 
 			excelNodeIdentifier=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2903,7 +2903,7 @@ connects to the switch interface process.&lt;/p>&lt;table>
 
 	excelNodeIdentifier&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSwitchConnect trap received 
 			excelCurrentNode=%parm[#1]% 
 			excelNodeIdentifier=%parm[#2]%&lt;/p>
@@ -2933,7 +2933,7 @@ connectivity with the switch interface process&lt;/p>&lt;table>
 
 	excelNodeIdentifier&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSwitchLossConnectivity trap received 
 			excelNodeIdentifier=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2974,7 +2974,7 @@ Alarm for more then some customer configured time.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSpanCarrierGroupAlarm trap received 
 			excelLogicalSpanId=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -3017,7 +3017,7 @@ number of slips occurring&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSpanExcessiveSlips trap received 
 			excelLogicalSpanId=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -3055,7 +3055,7 @@ number of slips occurring&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSpanJ1Failure trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -3081,7 +3081,7 @@ number of slips occurring&lt;/p>&lt;table>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelLineCardBusy</event-label>
       <descr>&lt;p>This trap will occur when the line card exceeds it's final 
 traffic threshold level&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelLineCardBusy trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3105,7 +3105,7 @@ traffic threshold level&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelLineCardApproachBusy</event-label>
       <descr>&lt;p>This trap will occur when the line card reaches it's initial 
 traffic threshold level&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelLineCardApproachBusy trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3129,7 +3129,7 @@ traffic threshold level&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelLowMemory</event-label>
       <descr>&lt;p>This trap will occur when memory usage on the line card 
 exceeds the defined threshold level&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelLowMemory trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3192,7 +3192,7 @@ exceeds the defined threshold level&lt;/p>&lt;table>&lt;/table></descr>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelCardStatusChange trap received 
 			excelSysLastAlarmStatus=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -3220,7 +3220,7 @@ exceeds the defined threshold level&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelLowMemoryCleared</event-label>
       <descr>&lt;p>This trap will occur when memory usage on the line card 
 returns below the defined threshold level&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelLowMemoryCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3255,7 +3255,7 @@ returns below the defined threshold level&lt;/p>&lt;table>&lt;/table></descr>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelGenericEvent trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -3280,7 +3280,7 @@ returns below the defined threshold level&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/mib2opennms/excelSubrateSwitchOver</uei>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelSubrateSwitchOver</event-label>
       <descr>&lt;p>&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSubrateSwitchOver trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3303,7 +3303,7 @@ returns below the defined threshold level&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/mib2opennms/excelSwitchOverInterrupt</uei>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelSwitchOverInterrupt</event-label>
       <descr>&lt;p>The D-channel has gone from being In Service to Out Of Service&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSwitchOverInterrupt trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3327,7 +3327,7 @@ returns below the defined threshold level&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelSwitchOverSuccess</event-label>
       <descr>&lt;p>The controller switchover was successful.  The new D channel is 
 now the controller&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSwitchOverSuccess trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3351,7 +3351,7 @@ now the controller&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelSwitchOverFailure</event-label>
       <descr>&lt;p>The controller switchover failed.  The existing D channel is 
 still controlling the D channel&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSwitchOverFailure trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3374,7 +3374,7 @@ still controlling the D channel&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/mib2opennms/excelBackupDiagnostics</uei>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelBackupDiagnostics</event-label>
       <descr>&lt;p>Information Alarm when the state of the D channel changes&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelBackupDiagnostics trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3403,7 +3403,7 @@ backup clock master and the EXNET Connect is then configured
 NOT to be master or fails to drive the clock, the backup 
 master will take over and drive the clock. This alarm is sent 
 when the EXNET Connect detects this.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSCbusMasterChange trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3428,7 +3428,7 @@ when the EXNET Connect detects this.&lt;/p>&lt;table>&lt;/table></descr>
       <descr>&lt;p>This event occurs wheneve a matrix has lost contact with a 
 remote SS7 card that is controlling CIC's that are located on 
 that node&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelSCBusFail trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3451,7 +3451,7 @@ that node&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/mib2opennms/excelGeneralSoftwareError</uei>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelGeneralSoftwareError</event-label>
       <descr>&lt;p>Default error message for unexpected errors.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelGeneralSoftwareError trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3487,7 +3487,7 @@ corresponding rear slot&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelRearSlotController trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -3525,7 +3525,7 @@ corresponding front slot&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelFrontSlotController trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -3550,7 +3550,7 @@ corresponding front slot&lt;/p>&lt;table>
       <uei>uei.opennms.org/mib2opennms/excelConnectNotification</uei>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelConnectNotification</event-label>
       <descr>&lt;p>&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelConnectNotification trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3577,7 +3577,7 @@ corresponding front slot&lt;/p>&lt;table>
 
 	excelNodePhysicalID&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelRouteTableUpdated trap received 
 			excelNodePhysicalID=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3605,7 +3605,7 @@ corresponding front slot&lt;/p>&lt;table>
 
 	excelNodePhysicalID&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelResourceGroupTableUpdated trap received 
 			excelNodePhysicalID=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3633,7 +3633,7 @@ corresponding front slot&lt;/p>&lt;table>
 
 	excelNodePhysicalID&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelOldRouteTableDeleted trap received 
 			excelNodePhysicalID=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3661,7 +3661,7 @@ corresponding front slot&lt;/p>&lt;table>
 
 	excelNodePhysicalID&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelRouteTableForcefullyDeleted trap received 
 			excelNodePhysicalID=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3689,7 +3689,7 @@ corresponding front slot&lt;/p>&lt;table>
 
 	excelNodePhysicalID&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelResourceGroupTableForceDelete trap received 
 			excelNodePhysicalID=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3714,7 +3714,7 @@ corresponding front slot&lt;/p>&lt;table>
       <event-label>EXCEL-SWITCH-MIB defined trap event: excelLoadProblem</event-label>
       <descr>&lt;p>This event will occur when a problem occurs during the flash or 
 RAM loading&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelLoadProblem trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -3750,7 +3750,7 @@ processing&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelTFTPFailure trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -3794,7 +3794,7 @@ The possible event ID's are :
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventL3PCIC trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3835,7 +3835,7 @@ C	Link Out-of-service, L5_OOS3&lt;/p>&lt;table>
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventL3PLINK trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3872,7 +3872,7 @@ C	Link Out-of-service, L5_OOS3&lt;/p>&lt;table>
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventCPC trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3908,7 +3908,7 @@ The possible eventID's are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventSPRC trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3944,7 +3944,7 @@ possible eventID's are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventBLS trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3975,7 +3975,7 @@ component ID 23.  The possible eventID's are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventBLR trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4006,7 +4006,7 @@ possible eventID's are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventCRS trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4037,7 +4037,7 @@ The possible eventID's are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventCRR trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4068,7 +4068,7 @@ The possible eventID's are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventUCIC trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4100,7 +4100,7 @@ The possible eventID's are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventCGRS trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4131,7 +4131,7 @@ The possible eventID's are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventCGRR trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4167,7 +4167,7 @@ Id 29.  The possible eventID's are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventGBUS trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4198,7 +4198,7 @@ component Id 30.  The possible eventID's are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventGBUR trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4230,7 +4230,7 @@ are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventHGBR trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4265,7 +4265,7 @@ are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventMTP3Hmdt trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4299,7 +4299,7 @@ are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventMTP3Lsac trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4335,7 +4335,7 @@ are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventMTP3Tlac trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4367,7 +4367,7 @@ are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventMTP3Tsfc trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4399,7 +4399,7 @@ be received are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventISUPHlb trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4432,7 +4432,7 @@ be received are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventCRCR trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4467,7 +4467,7 @@ received are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventMGBS trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4502,7 +4502,7 @@ eventID's  are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventHGBS trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4532,7 +4532,7 @@ eventID's  are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventCQS trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4562,7 +4562,7 @@ eventID's  are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventCVS trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4595,7 +4595,7 @@ eventID's  are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventCRCS trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4628,7 +4628,7 @@ eventID's  are:
 
 	excelPPLComponentId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelPPLEventCRO trap received 
 			excelPPLComponentId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4665,7 +4665,7 @@ communicating on the D-channel.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelDchannelFailure trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -4702,7 +4702,7 @@ communicating on the D-channel.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelVoIPModuleOOS trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -4739,7 +4739,7 @@ communicating on the D-channel.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelVoipModuleDead trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -4776,7 +4776,7 @@ communicating on the D-channel.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelVoipModuleDspDead trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -4813,7 +4813,7 @@ communicating on the D-channel.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelVoipModuleReset trap received 
 			excelSysLastAlarmNode=%parm[#1]% 
 			excelSysLastAlarmSeverity=%parm[#2]%&lt;/p>
@@ -4878,7 +4878,7 @@ communicating on the D-channel.&lt;/p>&lt;table>
 		minor(2)
 		major(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			excelMatrixSwitchover trap received 
 			excelSysLastAlarmStatus=%parm[#1]% 
 			excelSysLastAlarmNode=%parm[#2]% 
@@ -4914,7 +4914,7 @@ Severity: CRITICAL&lt;/p>&lt;table>
 
 	fCServer&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fcSwitchRegnError trap received 
 			fCServer=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4947,7 +4947,7 @@ VARIABLE DEFINITIONS:
 
 	fCServer&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fCSwitchRegnSucc trap received 
 			fCServer=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4980,7 +4980,7 @@ VARIABLE DEFINITIONS:
 
 	fCServer&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fcAddLLCNodeError trap received 
 			fCServer=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -5013,7 +5013,7 @@ VARIABLE DEFINITIONS:
 
 	fCServer&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fcAddLLCNodeSucc trap received 
 			fCServer=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -5050,7 +5050,7 @@ VARIBLE DEFINITIONS:
 
 	fCApp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fcAppStartSucc trap received 
 			fCServer=%parm[#1]% 
 			fCApp=%parm[#2]%&lt;/p>
@@ -5087,7 +5087,7 @@ VARIBLE DEFINITIONS:
 
 	fCApp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fcAppEndSucc trap received 
 			fCServer=%parm[#1]% 
 			fCApp=%parm[#2]%&lt;/p>
@@ -5124,7 +5124,7 @@ VARIBLE DEFINITIONS:
 
 	fCApp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fcAppStartError trap received 
 			fCServer=%parm[#1]% 
 			fCApp=%parm[#2]%&lt;/p>
@@ -5166,7 +5166,7 @@ VARIBLE DEFINITIONS:
 
 	fCDescText&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fcAppInfoError trap received 
 			fCServer=%parm[#1]% 
 			fCApp=%parm[#2]% 
@@ -5210,7 +5210,7 @@ VARIBLE DEFINITIONS:
 
 	fCDescText&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fcAppMajorError trap received 
 			fCServer=%parm[#1]% 
 			fCApp=%parm[#2]% 
@@ -5253,7 +5253,7 @@ VARIBLE DEFINITIONS:
 
 	fCDescText&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fcAppCritError trap received 
 			fCServer=%parm[#1]% 
 			fCApp=%parm[#2]% 
@@ -5286,7 +5286,7 @@ VARIBLE DEFINITIONS:
 
 	fCDescText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fcUnparsedEvent trap received 
 			fCDescText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -5363,7 +5363,7 @@ CRITICAL for failed registration.&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			h323CSConnectionStatus trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -5430,7 +5430,7 @@ Severity: INFO/MINOR depending on the preset value.&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			h323GatewayUtilization trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -5491,7 +5491,7 @@ INFO (unknownError - any other errors).&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			h323DSError trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -5562,7 +5562,7 @@ Severity: MINOR depending on the preset value.&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			h323UnreachableGateway trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -5620,7 +5620,7 @@ Severity: MINOR (or may be command sensitive).&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			h323CommandFailed trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -5689,7 +5689,7 @@ Severity: CRITICAL&lt;/p>&lt;table>
 
 	runStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssProcessUnstartable trap received 
 			deviceType=%parm[#1]% 
 			domain=%parm[#2]% 
@@ -5762,7 +5762,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	runStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssProcessCreated trap received 
 			deviceType=%parm[#1]% 
 			domain=%parm[#2]% 
@@ -5833,7 +5833,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	runStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssProcessDied trap received 
 			deviceType=%parm[#1]% 
 			domain=%parm[#2]% 
@@ -5907,7 +5907,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	runStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssProcessKilled trap received 
 			deviceType=%parm[#1]% 
 			domain=%parm[#2]% 
@@ -5981,7 +5981,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	runStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssProcessStateChange trap received 
 			deviceType=%parm[#1]% 
 			domain=%parm[#2]% 
@@ -6021,7 +6021,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	unknownDeviceTrapContents&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssInternalError trap received 
 			unknownDeviceTrapContents=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -6077,7 +6077,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	file&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssElementSuccessfulConnection trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -6136,7 +6136,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	file&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssElementFileUnReadable trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -6195,7 +6195,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	file&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssElementDisconnect trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -6260,7 +6260,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	minutes&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssElementUnReachable trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -6315,7 +6315,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	reason&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			logFileChanged trap received 
 			oldFile=%parm[#1]% 
 			newFile=%parm[#2]% 
@@ -6373,7 +6373,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	matePort&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssFTMateConnect trap received 
 			snName=%parm[#1]% 
 			myHost=%parm[#2]% 
@@ -6434,7 +6434,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	matePort&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lssFTMateDisconnect trap received 
 			snName=%parm[#1]% 
 			myHost=%parm[#2]% 
@@ -6487,7 +6487,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	sbProducerPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sbProducerUnreachable trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -6539,7 +6539,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	sbProducerPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sbProducerConnected trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -6591,7 +6591,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	sbProducerPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sbProducerRegistered trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -6643,7 +6643,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	sbProducerPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sbProducerDisconnected trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -6695,7 +6695,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	sbProducerPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sbProducerCannotRegister trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -6747,7 +6747,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	sbProducerPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sbProducerCannotDisconnect trap received 
 			pepName=%parm[#1]% 
 			devName=%parm[#2]% 
@@ -6827,7 +6827,7 @@ CRITICAL for failed registration.&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			psaxCSConnectionStatus trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -6894,7 +6894,7 @@ Severity: INFO/MINOR depending on the preset value.&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			psaxGatewayUtilization trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -6955,7 +6955,7 @@ INFO (unknownError - any other errors).&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			psaxDSError trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -7026,7 +7026,7 @@ Severity: MINOR depending on the preset value.&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			psaxUnreachableGateway trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -7084,7 +7084,7 @@ Severity: MINOR (or may be command sensitive).&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			psaxCommandFailed trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -7123,7 +7123,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	percentage&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cpuUtilWarning trap received 
 			host=%parm[#1]% 
 			percentage=%parm[#2]%&lt;/p>
@@ -7160,7 +7160,7 @@ Severity: CRITICAL&lt;/p>&lt;table>
 
 	percentage&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cpuUtilAlarm trap received 
 			host=%parm[#1]% 
 			percentage=%parm[#2]%&lt;/p>
@@ -7203,7 +7203,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	status&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cpuUtilInform trap received 
 			host=%parm[#1]% 
 			percentage=%parm[#2]% 
@@ -7241,7 +7241,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	load&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cpuLoadWarning trap received 
 			host=%parm[#1]% 
 			load=%parm[#2]%&lt;/p>
@@ -7278,7 +7278,7 @@ Severity: CRITICAL&lt;/p>&lt;table>
 
 	load&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cpuLoadAlarm trap received 
 			host=%parm[#1]% 
 			load=%parm[#2]%&lt;/p>
@@ -7321,7 +7321,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	status&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cpuLoadInform trap received 
 			host=%parm[#1]% 
 			load=%parm[#2]% 
@@ -7359,7 +7359,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	percentage&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			diskUsageWarning trap received 
 			disk=%parm[#1]% 
 			percentage=%parm[#2]%&lt;/p>
@@ -7396,7 +7396,7 @@ Severity: CRITICAL&lt;/p>&lt;table>
 
 	percentage&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			diskUsageAlarm trap received 
 			disk=%parm[#1]% 
 			percentage=%parm[#2]%&lt;/p>
@@ -7439,7 +7439,7 @@ Severity: INFO&lt;/p>&lt;table>
 
 	status&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			diskUsageInform trap received 
 			disk=%parm[#1]% 
 			percentage=%parm[#2]% 
@@ -7484,7 +7484,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	maxSize&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fileSizeEvent trap received 
 			file=%parm[#1]% 
 			curSize=%parm[#2]% 
@@ -7526,7 +7526,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	processID&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			unixProcessDied trap received 
 			host=%parm[#1]% 
 			processName=%parm[#2]% 
@@ -7573,7 +7573,7 @@ Severity: CRITICAL&lt;/p>&lt;table>
 
 	cpuUsage&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			procCpuAlarm trap received 
 			host=%parm[#1]% 
 			processName=%parm[#2]% 
@@ -7621,7 +7621,7 @@ Severity: MAJOR&lt;/p>&lt;table>
 
 	cpuUsage&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			procCpuWarn trap received 
 			host=%parm[#1]% 
 			processName=%parm[#2]% 
@@ -7669,7 +7669,7 @@ Severity: CRITICAL&lt;/p>&lt;table>
 
 	memUsage&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			procMemAlarm trap received 
 			host=%parm[#1]% 
 			processName=%parm[#2]% 
@@ -7712,7 +7712,7 @@ The variables are:
 
 	processID&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			procCpuInform trap received 
 			host=%parm[#1]% 
 			processName=%parm[#2]% 
@@ -7753,7 +7753,7 @@ The variables are:
 
 	processID&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			procMemInform trap received 
 			host=%parm[#1]% 
 			processName=%parm[#2]% 
@@ -7832,7 +7832,7 @@ CRITICAL for failed registration.&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sipCSConnectionStatus trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -7892,7 +7892,7 @@ INFO (unknownError - any other errors).&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sipDSError trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -7947,7 +7947,7 @@ Severity: MINOR (or may be command sensitive).&lt;/p>&lt;table>
 
 	comment&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sipCommandFailed trap received 
 			timeOccurred=%parm[#1]% 
 			code=%parm[#2]% 
@@ -7977,7 +7977,7 @@ Severity: MINOR (or may be command sensitive).&lt;/p>&lt;table>
 SPINS and SMBI cannot be made.
        VARIABLE DEFINITIONS: NONE
 Severity: CRITICAL&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			spinsSmbiSocketConnError trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -8003,7 +8003,7 @@ Severity: CRITICAL&lt;/p>&lt;table>&lt;/table></descr>
 SPINS and SMBI is successful.
        VARIABLE DEFINITIONS: NONE
 Severity: INFO&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			spinsSmbiSocketConnOpen trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -8029,7 +8029,7 @@ Severity: INFO&lt;/p>&lt;table>&lt;/table></descr>
 SPINS and SMBI is closed.
        VARIABLE DEFINITIONS: NONE
 Severity: CRITICAL&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			spinsSbiSocketConnLost trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -8055,7 +8055,7 @@ Severity: CRITICAL&lt;/p>&lt;table>&lt;/table></descr>
 and LNP services has failed.
 VARIABLE DEFINITIONS: NONE
 Severity: CRITICAL&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			spinsSwitchRegnError trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -8081,7 +8081,7 @@ Severity: CRITICAL&lt;/p>&lt;table>&lt;/table></descr>
 and LNP services is successful.
 VARIABLE DEFINITIONS: NONE
 Severity: INFO&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			spinsSwitchRegnSucc trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -8107,7 +8107,7 @@ Severity: INFO&lt;/p>&lt;table>&lt;/table></descr>
 (add_LLC_Node) has failed.
 VARIABLE DEFINITIONS: NONE
 Severity: CRITICAL&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			spinsAddLLCNodeError trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -8133,7 +8133,7 @@ Severity: CRITICAL&lt;/p>&lt;table>&lt;/table></descr>
 (add_LLC_Node) is successful.
 VARIABLE DEFINITIONS: NONE
 Severity: INFO&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			spinsAddLLCNodeSucc trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -8180,7 +8180,7 @@ alarmActiveResourceType and alarmACtiveResourceId.&lt;/p>&lt;table>
 
 	alarmActiveResourceId&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alarmRaise trap received 
 			alarmModelIndex=%parm[#1]% 
 			alarmModelState=%parm[#2]% 
@@ -8227,7 +8227,7 @@ alarmActiveResourceType and alarmACtiveResourceId.&lt;/p>&lt;table>
 
 	alarmActiveResourceId&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			alarmCleared trap received 
 			alarmModelIndex=%parm[#1]% 
 			alarmActiveResourceType=%parm[#2]% 

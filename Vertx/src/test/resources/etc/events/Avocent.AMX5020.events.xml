@@ -28,7 +28,7 @@ following string
 
 	amx5020TrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			amx5020RebootStartedTrap trap received 
 			amx5020TrapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -79,7 +79,7 @@ amx5020TrapObjectAmiqConnectMode&lt;/p>&lt;table>
 		nspmPRIVATE(3)
 		nspmMAINTAIN(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			amx5020RouteConnectTrap trap received 
 			amx5020TrapObjectUserStationUid=%parm[#1]% 
 			amx5020TrapObjectAmiqUid=%parm[#2]% 
@@ -113,7 +113,7 @@ in amx5020TrapObjectUserStationUid.&lt;/p>&lt;table>
 
 	amx5020TrapObjectUserStationUid&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			amx5020RouteDisconnectTrap trap received 
 			amx5020TrapObjectUserStationUid=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -240,7 +240,7 @@ in amx5020TrapObjectAmiqPortNum.&lt;/p>&lt;table>
 		portNumAmiqSide64(192)
 		portNumNULL(255)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			amx5020AmiqConnectedTrap trap received 
 			amx5020TrapObjectAmiqUid=%parm[#1]% 
 			amx5020TrapObjectAmiqName=%parm[#2]% 
@@ -273,7 +273,7 @@ in amx5020TrapObjectAmiqUid.&lt;/p>&lt;table>
 
 	amx5020TrapObjectAmiqUid&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			amx5020AmiqDisconnectedTrap trap received 
 			amx5020TrapObjectAmiqUid=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -400,7 +400,7 @@ in amx5020TrapObjectUserStnPortNum.&lt;/p>&lt;table>
 		portNumAmiqSide64(192)
 		portNumNULL(255)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			amx5020UserStationConnectedTrap trap received 
 			amx5020TrapObjectUserStationUid=%parm[#1]% 
 			amx5020TrapObjectUserStationName=%parm[#2]% 
@@ -433,7 +433,7 @@ in amx5020TrapObjectUserStationUid.&lt;/p>&lt;table>
 
 	amx5020TrapObjectUserStationUid&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			amx5020UserStnDisconnectedTrap trap received 
 			amx5020TrapObjectUserStationUid=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -471,7 +471,7 @@ in amx5020TrapObjectUserStationName.&lt;/p>&lt;table>
 
 	amx5020TrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			amx5020UserStationLoginTrap trap received 
 			amx5020TrapObjectUserStationUid=%parm[#1]% 
 			amx5020TrapObjectUserName=%parm[#2]%&lt;/p>
@@ -503,7 +503,7 @@ in amx5020TrapObjectUserStationUid.&lt;/p>&lt;table>
 
 	amx5020TrapObjectUserStationUid&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			amx5020UserStationLogoutTrap trap received 
 			amx5020TrapObjectUserStationUid=%parm[#1]%&lt;/p>
 		</logmsg>

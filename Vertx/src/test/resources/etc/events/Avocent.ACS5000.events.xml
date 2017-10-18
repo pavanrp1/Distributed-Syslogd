@@ -23,7 +23,7 @@ in cyAcsTrapObjectUserName.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsRebootStartedTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -63,7 +63,7 @@ is contained in cyAcsTrapObjectSessionType.&lt;/p>&lt;table>
 		webui(3)
 		console(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsUserLoginTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectSessionType=%parm[#2]%&lt;/p>
@@ -104,7 +104,7 @@ is contained in cyAcsTrapObjectSessionType.&lt;/p>&lt;table>
 		webui(3)
 		console(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsUserLogoutTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectSessionType=%parm[#2]%&lt;/p>
@@ -134,7 +134,7 @@ The name of the user who failed to authenticate is contained in cyAcsTrapObjectU
 
 	cyAcsTrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsAuthenticationFailureTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -185,7 +185,7 @@ cyAcsTrapObjectSerialSessionType. &lt;/p>&lt;table>
 		ts(4)
 		dial-in(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsSerialSessionStartedTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectSerialPortName=%parm[#2]% 
@@ -239,7 +239,7 @@ cyAcsTrapObjectSerialSessionType.&lt;/p>&lt;table>
 		ts(4)
 		dial-in(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsSerialSessionStoppedTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectSerialPortName=%parm[#2]% 
@@ -292,7 +292,7 @@ The type of protocol configured on this port is contained in cyAcsTrapObjectSeri
 		ts(4)
 		dial-in(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsPortAuthenticationFailureTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectSerialPortName=%parm[#2]% 
@@ -349,7 +349,7 @@ contained in cyAcsTrapObjectAlertMessage.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectAlertMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsPortAlertTrap trap received 
 			cyAcsTrapObjectSerialPortName=%parm[#1]% 
 			cyAcsTrapObjectSerialPort=%parm[#2]% 
@@ -392,7 +392,7 @@ The affected serial port name is contained in cyAcsTrapObjectSerialPortName.&lt;
 
 	cyAcsTrapObjectSerialPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsPortPowerOnDetectTrap trap received 
 			cyAcsTrapObjectSerialPortName=%parm[#1]% 
 			cyAcsTrapObjectSerialPort=%parm[#2]%&lt;/p>
@@ -432,7 +432,7 @@ The affected serial port name is contained in cyAcsTrapObjectSerialPortName.&lt;
 
 	cyAcsTrapObjectSerialPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsPortPowerOffDetectTrap trap received 
 			cyAcsTrapObjectSerialPortName=%parm[#1]% 
 			cyAcsTrapObjectSerialPort=%parm[#2]%&lt;/p>
@@ -467,7 +467,7 @@ The name of the user who start the daemon is contained in cyAcsTrapObjectUserNam
 
 	cyAcsTrapObjectDaemonName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsDaemonStarted trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectDaemonName=%parm[#2]%&lt;/p>
@@ -503,7 +503,7 @@ The name of the user who stop the daemon is contained in cyAcsTrapObjectUserName
 
 	cyAcsTrapObjectDaemonName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsDaemonStoped trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectDaemonName=%parm[#2]%&lt;/p>
@@ -540,7 +540,7 @@ in cyAcsTrapObjectTargetUserName.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectTargetUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsAdminSessionTerminatedTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectTargetUserName=%parm[#2]%&lt;/p>
@@ -570,7 +570,7 @@ cyAcsTrapObjectUserName is name of the user who executed saveconf.&lt;/p>&lt;tab
 
 	cyAcsTrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsConfigurationSavedTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -599,7 +599,7 @@ cyAcsTrapObjectUserName is name of the user who activated new configuration.&lt;
 
 	cyAcsTrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsConfigurationActivatedTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -633,7 +633,7 @@ The name of the new user is contained in cyAcsTrapObjectTargetUserName.&lt;/p>&l
 
 	cyAcsTrapObjectTargetUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsLocalUserAddedTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectTargetUserName=%parm[#2]%&lt;/p>
@@ -668,7 +668,7 @@ The name of the user who was deleted is contained in cyAcsTrapObjectTargetUserNa
 
 	cyAcsTrapObjectTargetUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsLocalUserDeletedTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectTargetUserName=%parm[#2]%&lt;/p>
@@ -699,7 +699,7 @@ cyAcsTrapObjectDataBufferSize is current size of the buffer.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectDataBufferSize&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsDataBufferFullThresholdLowTrap trap received 
 			cyAcsTrapObjectDataBufferSize=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -729,7 +729,7 @@ cyAcsTrapObjectDataBufferSize is current size of the buffer.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectDataBufferSize&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsDataBufferFullThresholdMedTrap trap received 
 			cyAcsTrapObjectDataBufferSize=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -754,7 +754,7 @@ cyAcsTrapObjectDataBufferSize is current size of the buffer.&lt;/p>&lt;table>
       <event-label>CYCLADES-ACS5000-TRAP-MIB defined trap event: cyAcsDataBufferFullLostDataTrap</event-label>
       <descr>&lt;p>This trap is generated when the appliance is managed by DsView and 
 global data buffer has exceeded beyond the size of buffer and data lost has occurred.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsDataBufferFullLostDataTrap trap received&lt;/p>
 		</logmsg>
       <severity>Critical</severity>
@@ -788,7 +788,7 @@ cyAcsTrapObjectUserName is name of user who session is active and data lost occu
 
 	cyAcsTrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsApplianceLostDataTrap trap received 
 			cyAcsTrapObjectProcessID=%parm[#1]% 
 			cyAcsTrapObjectUserName=%parm[#2]%&lt;/p>
@@ -843,7 +843,7 @@ The vendor of the power device is contained in cyAcsTrapObjectPMType&lt;/p>&lt;t
 		spc(2)
 		serverTech(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMOnlineTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -901,7 +901,7 @@ The vendor of the power device is contained in cyAcsTrapObjectPMType&lt;/p>&lt;t
 		spc(2)
 		serverTech(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMOfflineTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -963,7 +963,7 @@ cyAcsTrapObjectPMSocketName.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMOutletOnTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectSerialPort=%parm[#2]% 
@@ -1026,7 +1026,7 @@ in cyAcsTrapObjectUserName.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMOutletOffTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectSerialPort=%parm[#2]% 
@@ -1089,7 +1089,7 @@ in cyAcsTrapObjectUserName.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMOutletCycleFinishedTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectSerialPort=%parm[#2]% 
@@ -1149,7 +1149,7 @@ cyAcsTrapObjectPMCurrentValue.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectPMCurrentValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMMaxLoadThresholdReachedTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -1208,7 +1208,7 @@ cyAcsTrapObjectPMCurrentValue.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectPMCurrentValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMMinLoadThresholdReachedTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -1259,7 +1259,7 @@ in cyAcsTrapObjectAlertMessage.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectAlertMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsApplianceAlertTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectAlertIndex=%parm[#2]% 
@@ -1302,7 +1302,7 @@ The new firmware version is contained in cyAcsTrapNewFirmwareVersion.&lt;/p>&lt;
 
 	cyAcsTrapNewFirmwareVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsFirmwareUpgradeStarted trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapFirmwareVersion=%parm[#2]% 
@@ -1341,7 +1341,7 @@ The result of the process is contained in cyAcsTrapFirmwareUpgradeResult.&lt;/p>
 
 	cyAcsTrapNewFirmwareVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsFirmwareUpgradeResultsTrap trap received 
 			cyAcsTrapFirmwareUpgradeResult=%parm[#1]% 
 			cyAcsTrapNewFirmwareVersion=%parm[#2]%&lt;/p>
@@ -1392,7 +1392,7 @@ The new firmware version is contained in cyAcsTrapNewFirmwareVersion.&lt;/p>&lt;
 
 	cyAcsTrapNewFirmwareVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsPMFirmwareUpgradeStarted trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectSerialPort=%parm[#2]% 
@@ -1444,7 +1444,7 @@ The result of the process is contained in cyAcsTrapFirmwareUpgradeResult.&lt;/p>
 
 	cyAcsTrapNewFirmwareVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsPMFirmwareUpgradeResultsTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -1498,7 +1498,7 @@ The type of protocol running on this port is contained in cyAcsTrapObjectSerialS
 		ts(4)
 		dial-in(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyAcsSerialSessionStoppedPortInUseTrap trap received 
 			cyAcsTrapObjectUserName=%parm[#1]% 
 			cyAcsTrapObjectSerialPortName=%parm[#2]% 
@@ -1553,7 +1553,7 @@ cyAcsTrapObjectPMSocketName.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMOutletStatusOnTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -1609,7 +1609,7 @@ cyAcsTrapObjectPMSocketName.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMOutletStatusOffTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -1668,7 +1668,7 @@ cyAcsTrapObjectPMSocketName.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMOutletOnSenseFailTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -1727,7 +1727,7 @@ cyAcsTrapObjectPMSocketName.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMOutletOffSenseFailTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -1787,7 +1787,7 @@ cyAcsTrapObjectPMSocketName.&lt;/p>&lt;table>
 
 	cyAcsTrapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMOutletNameChangedTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -1840,7 +1840,7 @@ The inlet of the power device is contained in the cyAcsTrapObjectPMPhase.&lt;/p>
 
 	cyAcsTrapObjectPMPhase&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMInletTotalLoadHighTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 
@@ -1891,7 +1891,7 @@ The inlet of the power device is contained in the cyAcsTrapObjectPMPhase.&lt;/p>
 
 	cyAcsTrapObjectPMPhase&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cyPMInletTotalLoadLowTrap trap received 
 			cyAcsTrapObjectSerialPort=%parm[#1]% 
 			cyAcsTrapObjectPMNumber=%parm[#2]% 

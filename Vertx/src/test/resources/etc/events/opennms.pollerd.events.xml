@@ -27,7 +27,7 @@
             on interface %interface% as no longer part of any poller package,
             or the service has been unmanaged.
             &lt;/p> Polling will be discontinued.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Polling will be discontinued for %service% service on interface
             %interface%.
         </logmsg>
@@ -41,7 +41,7 @@
             managed.
             &lt;/p> Polling will begin in accordance with the package and
             any applicable outage calendar.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Polling will begin/resume for %service% service on interface
             %interface%.
         </logmsg>
@@ -52,7 +52,7 @@
       <event-label>OpenNMS-defined internal event: serviceUnmanaged</event-label>
       <descr>&lt;p>The service %service% on interface %interface% is
             being forcibly unmanaged.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             The service %service% on interface %interface% is being
             forcibly unmanaged.
         </logmsg>
@@ -63,7 +63,7 @@
       <event-label>OpenNMS-defined node event: dataCollectionFailed</event-label>
       <descr>&lt;p>%service% data collection on interface %interface%
             failed because of the following condition: '%parm[reason]%'.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             %service% data collection on interface %interface% failed.
         </logmsg>
       <severity>Minor</severity>
@@ -74,7 +74,7 @@
       <event-label>OpenNMS-defined node event: dataCollectionSucceeded</event-label>
       <descr>&lt;p>%service% data collection on interface %interface%
             previously failed and has been restored.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             %service% data collection on interface %interface% previously
             failed and has been restored.
         </logmsg>
@@ -94,7 +94,7 @@
             associated with an interface, the interface will be
             scheduled for deletion as well, with the generation of the
             deleteInterface event.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             The %service% service on interface %interface% has been
             scheduled for deletion.
         </logmsg>
@@ -105,7 +105,7 @@
       <event-label>OpenNMS-defined node event: duplicateNodeDeleted</event-label>
       <descr>&lt;p>Node :%nodeid% labled: %nodelabel%; was determined to be a
             duplicate node and is has been deleted.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Node #&lt;a
             href=&quot;element/node.jsp?node=%nodeid%&quot;>%nodeid%&lt;/a>
             was determined to be a duplicate node and is being flagged
@@ -124,7 +124,7 @@
             interface. If the service is later rediscovered, a new
             interface will be added and the service will be associated
             with that new interface.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Interface %interface% deleted from node #&lt;a
             href=&quot;element/node.jsp?node=%nodeid%&quot;>%nodeid%&lt;/a>
             with ifIndex %ifindex%.
@@ -141,7 +141,7 @@
             New outage records have been created and service level
             availability calculations will be impacted until this outage
             is resolved.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Interface %interface% is down.
         </logmsg>
       <severity>Minor</severity>
@@ -154,7 +154,7 @@
             &lt;/p> &lt;p>This event is generated when an snmp poll on interface find the operational status down.
             &lt;/p>
             &lt;p>Params %parm[all]% &lt;/p></descr>
-      <logmsg dest="logndisplay">Operational status Down on interface ifname:%parm[snmpifname]%
+      <logmsg dest="donotpersist">Operational status Down on interface ifname:%parm[snmpifname]%
             ifindex:%parm[snmpifindex]% ifdescr:%parm[snmpifdescr]%
         </logmsg>
       <severity>Minor</severity>
@@ -168,7 +168,7 @@
             down.
             &lt;/p>
             &lt;p>Params %parm[all]% &lt;/p></descr>
-      <logmsg dest="logndisplay">Administration status Down on interface ifname:%parm[snmpifname]%
+      <logmsg dest="donotpersist">Administration status Down on interface ifname:%parm[snmpifname]%
             ifindex:%parm[snmpifindex]% ifdescr:%parm[snmpifdescr]%
         </logmsg>
       <severity>Minor</severity>
@@ -186,7 +186,7 @@
             identifier.&lt;/p> &lt;p>This is typically not a
             reason for concern, but you should be aware that the node
             association of this interface has changed.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             %interface% has been reparented under node %parm[newNodeID]%
             from node %parm[oldNodeID]%.
         </logmsg>
@@ -201,7 +201,7 @@
             or all services on the interface are restored. &lt;/p>
             &lt;p>This event will cause any active outages associated
             with this interface to be cleared.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Interface %interface% is up.
         </logmsg>
       <severity>Normal</severity>
@@ -214,7 +214,7 @@
             &lt;/p> &lt;p>This event is generated when an snmp poll on interface find the operational status up.
             &lt;/p>
             &lt;p>Params %parm[all]% &lt;/p></descr>
-      <logmsg dest="logndisplay">Operational status Up on interface ifname:%parm[snmpifname]%
+      <logmsg dest="donotpersist">Operational status Up on interface ifname:%parm[snmpifname]%
             ifindex:%parm[snmpifindex]% ifdescr:%parm[snmpifdescr]%
         </logmsg>
       <severity>Normal</severity>
@@ -228,7 +228,7 @@
             up.
             &lt;/p>
             &lt;p>Params %parm[all]% &lt;/p></descr>
-      <logmsg dest="logndisplay">Administration status Up on interface ifname:%parm[snmpifname]%
+      <logmsg dest="donotpersist">Administration status Up on interface ifname:%parm[snmpifname]%
             ifindex:%parm[snmpifindex]% ifdescr:%parm[snmpifdescr]%
         </logmsg>
       <severity>Normal</severity>
@@ -239,7 +239,7 @@
       <event-label>OpenNMS-defined node event: nodeAdded</event-label>
       <descr>&lt;p>A new node (%parm[nodelabel]%) was discovered by
             OpenNMS.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             A new node (%parm[nodelabel]%) was discovered by OpenNMS.
         </logmsg>
       <severity>Warning</severity>
@@ -249,7 +249,7 @@
       <event-label>OpenNMS-defined node event: nodeUpdated</event-label>
       <descr>&lt;p>A currently provisioned node (%parm[nodelabel]%) was updated by
             OpenNMS.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             A provisioned node (%parm[nodelabel]%) was updated by OpenNMS.
         </logmsg>
       <severity>Warning</severity>
@@ -259,7 +259,7 @@
       <event-label>OpenNMS-defined node event: nodeCategoryMembershipChanged</event-label>
       <descr>&lt;p>Node category membership has changed for node
             (%parm[nodelabel]%)&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Node category membership has changed for node (%parm[nodelabel]%).
         </logmsg>
       <severity>Warning</severity>
@@ -278,7 +278,7 @@
             re-added to OpenNMS's database as a new node. It will be
             disassociated with any historic outage
             information.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Node &lt;a
             href=&quot;element/node.jsp?node=%nodeid%&quot;>%nodeid%&lt;/a>
             was deleted.
@@ -295,7 +295,7 @@
             New outage records have been created and service level
             availability calculations will be impacted until this outage
             is resolved.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Node %parm[nodelabel]% is down.
         </logmsg>
       <severity>Major</severity>
@@ -309,7 +309,7 @@
             &lt;p>This event is generated when node outage processing
             determines that the critical path IP address/service for
             this node is not responding..&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             %parm[nodelabel]% path outage. Critical path =
             %parm[criticalPathIp]% %parm[criticalPathServiceName]%
         </logmsg>
@@ -322,7 +322,7 @@
       <descr>&lt;p>Interface %interface% has been associated with Node
             #&lt;a
             href=&quot;element/node.jsp?node=%nodeid%&quot;>%nodeid%&lt;/a>.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Interface %interface% has been associated with Node #&lt;a
             href=&quot;element/node.jsp?node=%nodeid%&quot;>%nodeid%&lt;/a>.
         </logmsg>
@@ -336,7 +336,7 @@
             interface (%interface%) is within the list of ranges and
             specific addresses to be managed by OpenNMS, this service
             will be scheduled for regular availability checks.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             The %service% service has been discovered on interface
             %interface%.
         </logmsg>
@@ -347,7 +347,7 @@
       <event-label>OpenNMS-defined node event: nodeInfoChanged</event-label>
       <descr>&lt;p>Node information has changed for node
             #%nodeid%.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Node information has changed for &lt;a
             href=&quot;element/node.jsp?node=%nodeid%&quot;>%nodeid%&lt;/a>.&lt;/p>
         </logmsg>
@@ -360,7 +360,7 @@
             href=&quot;element/node.jsp?node=%nodeid%&quot;>%nodeid%&lt;/a>'s
             label was changed from &quot;%parm[oldNodeLabel]%&quot; to
             &quot;%parm[newNodeLabel]%&quot;.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Node #&lt;a
             href=&quot;element/node.jsp?node=%nodeid%&quot;>%nodeid%&lt;/a>'s
             label was changed from &quot;%parm[oldNodeLabel]%&quot; to
@@ -376,7 +376,7 @@
             A new Outage record has been created and service level
             availability calculations will be impacted until this outage is
             resolved.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             %service% outage identified on interface %interface%.
         </logmsg>
       <severity>Minor</severity>
@@ -392,7 +392,7 @@
             polls by OpenNMS. &lt;/p> &lt;p>This event will cause
             any active outages associated with this service/interface
             combination to be cleared.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             The %service% outage on interface %interface% has been
             cleared. Service is restored.
         </logmsg>
@@ -407,7 +407,7 @@
             outage processing determines that all interfaces on the node
             are up.&lt;/p> &lt;p>This event will cause any active
             outages associated with this node to be cleared.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Node %parm[nodelabel]% is up.
         </logmsg>
       <severity>Normal</severity>
@@ -420,7 +420,7 @@
             for SNMP data collection for this node has changed. This is
             usually due to a network or address reconfiguration
             impacting this device.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             Primary SNMP interface for node &lt;a
             href=&quot;element/node.jsp?node=%nodeid%&quot;>%nodeid%&lt;/a>
             has changed from %parm[oldPrimarySnmpAddress]% to
@@ -435,7 +435,7 @@
             detected and the SNMP data collection mechanism is being
             triggered to refresh its required profile of the remote
             node.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             SNMP information on %interface% is being refreshed for data
             collection purposes.
         </logmsg>
@@ -446,7 +446,7 @@
       <event-label>OpenNMS-defined node event: serviceResponsive</event-label>
       <descr>&lt;p>The %service% service which was previously unresponsive
             is now responding normally on interface %interface%.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             %service% is responding normally on interface %interface%.
         </logmsg>
       <severity>Normal</severity>
@@ -462,7 +462,7 @@
             becomes active again on an interface, it will be re-added to
             the OpenNMS database as a new occurrence of that service and
             will be disassociated with any historic outages.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             The %service% service was deleted from interface
             %interface%.
         </logmsg>
@@ -473,7 +473,7 @@
       <event-label>OpenNMS-defined node event: serviceUnresponsive</event-label>
       <descr>&lt;p>The %service% service is up but was unresponsive
             during the last poll on interface %interface%.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             %service% is up but unresponsive on interface %interface%.
         </logmsg>
       <severity>Minor</severity>
@@ -483,7 +483,7 @@
       <event-label>OpenNMS-defined node event: assetInfoChanged</event-label>
       <descr>&lt;p>The Asset info for node %nodeid% (%nodelabel%)
             has been changed via the webUI.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>The Asset info for node %nodeid% (%nodelabel%)
             has been changed via the webUI.&lt;/p>
         </logmsg>

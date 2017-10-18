@@ -25,7 +25,7 @@
 
 	arcServetrapdesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ARCServe: arcServetrapHigh trap received 
 			arcServeServerName=%parm[#1]% 
 			arcServetrapdesc=%parm[#2]%&lt;/p>
@@ -58,7 +58,7 @@
 
 	arcServetrapdesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ARCServe: arcServetrapMed trap received 
 			arcServeServerName=%parm[#1]% 
 			arcServetrapdesc=%parm[#2]%&lt;/p>
@@ -91,7 +91,7 @@
 
 	arcServetrapdesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ARCServe: arcServetrapLow trap received 
 			arcServeServerName=%parm[#1]% 
 			arcServetrapdesc=%parm[#2]%&lt;/p>

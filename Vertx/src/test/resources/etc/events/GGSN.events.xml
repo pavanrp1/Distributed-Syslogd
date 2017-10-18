@@ -67,7 +67,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapNew trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -149,7 +149,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapChanged trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -231,7 +231,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapNew trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -313,7 +313,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapChanged trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -395,7 +395,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapNew trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -477,7 +477,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapChanged trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -555,7 +555,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapNew trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -633,7 +633,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapNew trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -711,7 +711,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapNew trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -789,7 +789,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapNew trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -863,7 +863,7 @@ the nature of the problem.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapNew trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -942,7 +942,7 @@ of the change.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapChanged trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -1021,7 +1021,7 @@ of the change.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapChanged trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -1100,7 +1100,7 @@ of the change.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapChanged trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -1179,7 +1179,7 @@ of the change.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapChanged trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -1254,7 +1254,7 @@ of the change.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapChanged trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 
@@ -1326,7 +1326,7 @@ of the change.&lt;/p>&lt;table>
 
 	ggsnAlarmDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ggsnTrapCleared trap received 
 			ggsnAlarmId=%parm[#1]% 
 			ggsnAlarmName=%parm[#2]% 

@@ -86,7 +86,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 camUsageThresholdExceed trap received
                 sysCompAlarmLevel=%parm1%
@@ -185,7 +185,7 @@
                     &lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>
                 camIsFull trap received
                 sysCompAlarmLevel=%parm1%

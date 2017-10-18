@@ -18,7 +18,7 @@
       <event-label>BEA Weblogic Server Startup Event</event-label>
       <descr>&lt;p>The following Weblogic Server has started: %parm[#2]%
  at the following time: %parm[#1]%</descr>
-      <logmsg dest="logndisplay">&lt;p>BEA Event: Server Startup. Server: %parm[#2]% Time: %parm[#1]%.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>BEA Event: Server Startup. Server: %parm[#2]% Time: %parm[#1]%.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -40,7 +40,7 @@
       <event-label>BEA Weblogic Server Shutdown Event</event-label>
       <descr>&lt;p>The following Weblogic Server has shutdown: %parm[#2]%
  at the following time: %parm[#1]%</descr>
-      <logmsg dest="logndisplay">&lt;p>BEA Event: Server Shutdown. Server: %parm[#2]% Time: %parm[#1]%.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>BEA Event: Server Shutdown. Server: %parm[#2]% Time: %parm[#1]%.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -70,7 +70,7 @@
  &lt;br>MBean Name: %parm[#7]%
  &lt;br>Attribute Name: %parm[#8]%
  &lt;br>Attribute Type: %parm[#9]%</descr>
-      <logmsg dest="logndisplay">&lt;p>BEA Event: Attribute Change on %parm[#2]%: &lt;br> %parm[#7]%.%parm[#8]% changed to %parm[#4]% &lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>BEA Event: Attribute Change on %parm[#2]%: &lt;br> %parm[#7]%.%parm[#8]% changed to %parm[#4]% &lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -99,7 +99,7 @@
  &lt;br>MBean Type: %parm[#6]%
  &lt;br>MBean Name: %parm[#7]%
  &lt;br>Attribute Name: %parm[#8]%</descr>
-      <logmsg dest="logndisplay">&lt;p>BEA Event: A %parm[#3]% Monitor Trap has been triggered on %parm[#2]%.&lt;br>MBean Type: %parm[#6]% Attribute Name: %parm[#8]%&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>BEA Event: A %parm[#3]% Monitor Trap has been triggered on %parm[#2]%.&lt;br>MBean Type: %parm[#6]% Attribute Name: %parm[#8]%&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -130,7 +130,7 @@
  &lt;br>Message ID: %parm[#8]%
  &lt;br>Severity: %parm[#9]%
  &lt;br>Log Message: %parm[#10]%</descr>
-      <logmsg dest="logndisplay">&lt;p>BEA Event: A Log Filter Trap has been triggered.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>BEA Event: A Log Filter Trap has been triggered.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
 </events>

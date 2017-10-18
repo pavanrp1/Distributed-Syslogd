@@ -28,7 +28,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  Instance Number&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Cricket Threshold alert at %parm[#3]%.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Cricket Threshold alert at %parm[#3]%.&lt;/p></logmsg>
       <severity>Minor</severity>
       <operinstruct>&lt;p>check &lt;a href=&quot;http://%nodelabel%/cricket/grapher.cgi?target=%parm[#3]%&quot;>cricket&lt;/a> for current values&lt;/p></operinstruct>
    </event>
@@ -61,7 +61,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  Instance Number&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Cricket Threshold cleared at %parm[#3]%.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Cricket Threshold cleared at %parm[#3]%.&lt;/p></logmsg>
       <severity>Minor</severity>
       <operinstruct>&lt;p>check &lt;a href=&quot;http://%nodelabel%/cricket/grapher.cgi?target=%parm[#3]%&quot;>cricket&lt;/a> for current values&lt;/p></operinstruct>
    </event>

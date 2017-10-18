@@ -37,7 +37,7 @@
 
 	fgVpnTrapPhase1Name&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapVpnTunUp trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -85,7 +85,7 @@
 
 	fgVpnTrapPhase1Name&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapVpnTunDown trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -121,7 +121,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapHaSwitch trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -151,7 +151,7 @@
 
 	fnSysSerial&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapHaStateChange trap received
 	fnSysSerial=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -179,7 +179,7 @@
 
 	fnSysSerial&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapHaHBFail trap received
 	fnSysSerial=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -207,7 +207,7 @@
 
 	fnSysSerial&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapHaMemberDown trap received
 	fnSysSerial=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -235,7 +235,7 @@
 
 	fnSysSerial&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapHaMemberUp trap received
 	fnSysSerial=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -279,7 +279,7 @@
 
 	fgIpsTrapSigMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapIpsSignature trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -327,7 +327,7 @@
 
 	fgIpsTrapSigMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapIpsAnomaly trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -363,7 +363,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapIpsPkgUpdate trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -396,7 +396,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapIpsFailOpen trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -433,7 +433,7 @@
 
 	fgAvTrapVirName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapAvVirus trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -467,7 +467,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapAvOversize trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -500,7 +500,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapAvPattern trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -533,7 +533,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapAvFragmented trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -566,7 +566,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapAvEnterConserve trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -599,7 +599,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapAvBypass trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -633,7 +633,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapAvOversizePass trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -667,7 +667,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapAvOversizeBlock trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -696,7 +696,7 @@
 
 	fnSysSerial&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapFazDisconnect trap received
 	fnSysSerial=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -740,7 +740,7 @@
 
 	fgWcApName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapWcApUp trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -788,7 +788,7 @@
 
 	fgWcApName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapWcApDown trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -836,7 +836,7 @@
 
 	fgFcSwName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapFcSwUp trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -884,7 +884,7 @@
 
 	fgFcSwName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapFcSwDown trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -916,7 +916,7 @@
 
 	fnSysSerial&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapDeployComplete trap received
 	fnSysSerial=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -944,7 +944,7 @@
 
 	fnSysSerial&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapDeployInProgress trap received
 	fnSysSerial=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -972,7 +972,7 @@
 
 	fnSysSerial&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapConfChange trap received
 	fnSysSerial=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -1016,7 +1016,7 @@
 
 	fgManIfIp6&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapIfChange trap received
 	fnSysSerial=%parm[#1]%
 	ifName=%parm[#2]%
@@ -1060,7 +1060,7 @@
 
 	fgServerLoadBalanceVirtualServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fgTrapServerLoadBalanceRealServerDown trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%

@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vendor/f5/traps/threednsTrapVSGreenToRed</uei>
       <event-label>F5-3DNS-MIB defined trap event: threednsTrapVSGreenToRed</event-label>
       <descr>&lt;p>Virtual server change from green to red status.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			threednsTrapVSGreenToRed trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -41,7 +41,7 @@
       <uei>uei.opennms.org/vendor/f5/traps/threednsTrapVSRedToGreen</uei>
       <event-label>F5-3DNS-MIB defined trap event: threednsTrapVSRedToGreen</event-label>
       <descr>&lt;p>Virtual server change from red to green status.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			threednsTrapVSRedToGreen trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -65,7 +65,7 @@
       <uei>uei.opennms.org/vendor/f5/traps/threednsTrapServerRedToGreen</uei>
       <event-label>F5-3DNS-MIB defined trap event: threednsTrapServerRedToGreen</event-label>
       <descr>&lt;p>Server change from red to green status.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			threednsTrapServerRedToGreen trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -89,7 +89,7 @@
       <uei>uei.opennms.org/vendor/f5/traps/threednsTrapServerGreenToRed</uei>
       <event-label>F5-3DNS-MIB defined trap event: threednsTrapServerGreenToRed</event-label>
       <descr>&lt;p>Server change from green to red status.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			threednsTrapServerGreenToRed trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -113,7 +113,7 @@
       <uei>uei.opennms.org/vendor/f5/traps/threednsTrapCRCFailure</uei>
       <event-label>F5-3DNS-MIB defined trap event: threednsTrapCRCFailure</event-label>
       <descr>&lt;p>CRC failure.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			threednsTrapCRCFailure trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -141,7 +141,7 @@
 
 	loadBalTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			loadBalTrapMisc trap received 
 			loadBalTrapMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -178,7 +178,7 @@
 
 	memberPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			loadBalTrapServiceDown trap received 
 			loadBalTrapMessage=%parm[#1]% 
 			ipAddressString=%parm[#2]% 
@@ -217,7 +217,7 @@
 
 	memberPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			loadBalTrapServiceUP trap received 
 			loadBalTrapMessage=%parm[#1]% 
 			ipAddressString=%parm[#2]% 
@@ -248,7 +248,7 @@
 
 	loadBalTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			loadBalTrapReset trap received 
 			loadBalTrapMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -277,7 +277,7 @@
 
 	loadBalTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			loadBalTrapDenial trap received 
 			loadBalTrapMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -306,7 +306,7 @@
 
 	loadBalTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			loadBalTrapLogin trap received 
 			loadBalTrapMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -335,7 +335,7 @@
 
 	loadBalTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			loadBalTrapRemoveUnit trap received 
 			loadBalTrapMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -364,7 +364,7 @@
 
 	loadBalTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			loadBalTrapAddUnit trap received 
 			loadBalTrapMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -389,7 +389,7 @@
       <uei>uei.opennms.org/vendor/F5/traps/bigipAgentStart</uei>
       <event-label>F5-BIGIP-COMMON-MIB defined trap event: bigipAgentStart</event-label>
       <descr>&lt;p>An indication that the agent has started running.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipAgentStart trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -413,7 +413,7 @@
       <uei>uei.opennms.org/vendor/F5/traps/bigipAgentShutdown</uei>
       <event-label>F5-BIGIP-COMMON-MIB defined trap event: bigipAgentShutdown</event-label>
       <descr>&lt;p>An indication that the agent is in the process of being shut down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipAgentShutdown trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -439,7 +439,7 @@
       <descr>&lt;p>An indication that the agent has been restarted.
 This does not imply anything about whether the configuration has
 changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipAgentRestart trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -467,7 +467,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipCpuTempHigh trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -496,7 +496,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipCpuFanSpeedLow trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -525,7 +525,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipCpuFanSpeedBad trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -554,7 +554,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipChassisTempHigh trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -583,7 +583,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipChassisFanBad trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -612,7 +612,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipChassisPowerSupplyBad trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -649,7 +649,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipServiceDown trap received 
 			bigipNotifyObjMsg=%parm[#1]% 
 			bigipNotifyObjNode=%parm[#2]% 
@@ -688,7 +688,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipServiceUp trap received 
 			bigipNotifyObjMsg=%parm[#1]% 
 			bigipNotifyObjNode=%parm[#2]% 
@@ -723,7 +723,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjNode&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipNodeDown trap received 
 			bigipNotifyObjMsg=%parm[#1]% 
 			bigipNotifyObjNode=%parm[#2]%&lt;/p>
@@ -757,7 +757,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjNode&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipNodeUp trap received 
 			bigipNotifyObjMsg=%parm[#1]% 
 			bigipNotifyObjNode=%parm[#2]%&lt;/p>
@@ -787,7 +787,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipStandby trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -816,7 +816,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipActive trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -845,7 +845,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipActiveActive trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -874,7 +874,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipFeatureFailed trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -903,7 +903,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipFeatureOnline trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -932,7 +932,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipLicenseFailed trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -961,7 +961,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipLicenseExpired trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -990,7 +990,7 @@ changed (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipTamdAlert trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1021,7 +1021,7 @@ for DOS prevention.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipAggrReaperStateChange trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1050,7 +1050,7 @@ for DOS prevention.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipARPConflict trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1082,7 +1082,7 @@ If they do, it indicates a serious problem.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipNetLinkDown trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1111,7 +1111,7 @@ If they do, it indicates a serious problem.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipDiskPartitionWarn trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1140,7 +1140,7 @@ If they do, it indicates a serious problem.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipDiskPartitionGrowth trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1169,7 +1169,7 @@ If they do, it indicates a serious problem.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipAuthFailed trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1198,7 +1198,7 @@ If they do, it indicates a serious problem.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipConfigLoaded trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1227,7 +1227,7 @@ If they do, it indicates a serious problem.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipLogEmerg trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1257,7 +1257,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipLogAlert trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1286,7 +1286,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipLogCrit trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1315,7 +1315,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipLogErr trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1344,7 +1344,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipLogWarning trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1373,7 +1373,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipPacketRejected trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1402,7 +1402,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			bigipCompLimitExceeded trap received 
 			bigipNotifyObjMsg=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1433,7 +1433,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipSslLimitExceeded trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -1467,7 +1467,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipExternalLinkChange trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -1497,7 +1497,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipAsmRequestBlocked trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -1527,7 +1527,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipAsmRequestViolation trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -1555,7 +1555,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmPoolAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -1583,7 +1583,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmPoolNotAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -1612,7 +1612,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmPoolDisabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -1640,7 +1640,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmPoolEnabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -1668,7 +1668,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmLinkAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -1696,7 +1696,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmLinkNotAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -1724,7 +1724,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmLinkDisabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -1752,7 +1752,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmLinkEnabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -1780,7 +1780,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmWideIpAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -1808,7 +1808,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmWideIpNotAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -1836,7 +1836,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmWideIpDisabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -1864,7 +1864,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmWideIpEnabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -1892,7 +1892,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmPoolMbrAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -1920,7 +1920,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmPoolMbrNotAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -1948,7 +1948,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmPoolMbrDisabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -1976,7 +1976,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmPoolMbrEnabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2004,7 +2004,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmServerAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2032,7 +2032,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmServerNotAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -2060,7 +2060,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmServerDisabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2088,7 +2088,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmServerEnabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2116,7 +2116,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmVsAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2144,7 +2144,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmVsNotAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -2172,7 +2172,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmVsDisabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2200,7 +2200,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmVsEnabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2228,7 +2228,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmDcAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2256,7 +2256,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmDcNotAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Critical</severity>
@@ -2284,7 +2284,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmDcDisabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2312,7 +2312,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmDcEnabled trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2340,7 +2340,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipHardDiskFailure trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -2368,7 +2368,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmAppObjAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2396,7 +2396,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmAppObjNotAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2424,7 +2424,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmAppAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2452,7 +2452,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmAppNotAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -2480,7 +2480,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmJoinedGroup trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2508,7 +2508,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmLeftGroup trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2536,7 +2536,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipStandByFail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -2564,7 +2564,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipInetPortExhaustion trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -2592,7 +2592,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmBoxAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Normal</severity>
@@ -2620,7 +2620,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmBoxNotAvail trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2650,7 +2650,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipAsmFtpRequestBlocked trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2680,7 +2680,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipAsmFtpRequestViolation trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2708,7 +2708,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmBig3dSslCertExpired trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Major</severity>
@@ -2736,7 +2736,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmBig3dSslCertWillExpire trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2764,7 +2764,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmSslCertExpired trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Major</severity>
@@ -2792,7 +2792,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipGtmSslCertWillExpire trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2822,7 +2822,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipAsmSmtpRequestBlocked trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2852,7 +2852,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipAsmSmtpRequestViolation trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2880,7 +2880,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipBladeTempHigh trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Warning</severity>
@@ -2908,7 +2908,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipBladeNoPower trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -2936,7 +2936,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipClusterdNoResponse trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -2964,7 +2964,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipBladeOffline trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -2992,7 +2992,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipAsmDosAttackDetected trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>
@@ -3020,7 +3020,7 @@ properly.&lt;/p>&lt;table>
 
 	bigipNotifyObjMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	bigipAsmBruteForceAttackDetected trap received
 	bigipNotifyObjMsg=%parm[#1]%&lt;/p></logmsg>
       <severity>Minor</severity>

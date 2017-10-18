@@ -22,7 +22,7 @@ FSM enters the ESTABLISHED state.&lt;/p>&lt;table>
 
 	msdpPeerFsmEstablishedTransitions&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			msdpEstablished trap received 
 			msdpPeerFsmEstablishedTransitions=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -59,7 +59,7 @@ lower numbered state.&lt;/p>&lt;table>
 		established(4)
 		disabled(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			msdpBackwardTransition trap received 
 			msdpPeerState=%parm[#1]%&lt;/p>
 		</logmsg>

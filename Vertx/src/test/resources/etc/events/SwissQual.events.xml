@@ -304,7 +304,7 @@
 		ttCSDataRTT(161)
 		ttVMS(192)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			nqAgentAlarm trap received 
 			nqaaPerceivedSeverity=%parm[#1]% 
 			nqaaProbableCause=%parm[#2]% 
@@ -622,7 +622,7 @@
 		ttCSDataRTT(161)
 		ttVMS(192)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			nqAgentAlarm trap received 
 			nqaaPerceivedSeverity=%parm[#1]% 
 			nqaaProbableCause=%parm[#2]% 
@@ -936,7 +936,7 @@
 		ttCSDataRTT(161)
 		ttVMS(192)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			nqAgentAlarm trap received 
 			nqaaPerceivedSeverity=%parm[#1]% 
 			nqaaProbableCause=%parm[#2]% 

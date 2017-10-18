@@ -3,7 +3,7 @@
       <uei>uei.opennms.org/internal/discoveryConfigChange</uei>
       <event-label>OpenNMS-defined internal event: discovery configuration changed</event-label>
       <descr>This event is sent by the WebUI or the user when discovery configuration has changed and should be reloaded</descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             The discovery configuration has been changed and should be reloaded
         </logmsg>
       <severity>Normal</severity>
@@ -12,7 +12,7 @@
       <uei>uei.opennms.org/internal/discovery/hardwareInventoryFailed</uei>
       <event-label>OpenNMS-defined internal event: reload specified daemon configuration failed</event-label>
       <descr>&lt;p>The hardware discovery on node %nodelabel% (IP address %interface%) has failed with the following reason: %parm[reason]%.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>The hardware discovery on node %nodelabel% (IP address %interface%) has failed.&lt;/p>
         </logmsg>
       <severity>Minor</severity>
@@ -21,7 +21,7 @@
       <uei>uei.opennms.org/internal/discovery/hardwareInventorySuccessful</uei>
       <event-label>OpenNMS-defined internal event: hardware discovery successful</event-label>
       <descr>&lt;p>The hardware discovery on node %nodelabel% (IP address %interface%) has been completed successfuly.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>The hardware discovery on node %nodelabel% (IP address %interface%) has been completed successfuly.&lt;/p>
         </logmsg>
       <severity>Normal</severity>
@@ -31,7 +31,7 @@
       <event-label>OpenNMS-defined internal event: discovery newSuspect</event-label>
       <descr>&lt;p>Interface %interface% has been discovered and is
             being queued for a services scan.&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             A new interface (%interface%) has been discovered and is
             being queued for a services scan.
         </logmsg>

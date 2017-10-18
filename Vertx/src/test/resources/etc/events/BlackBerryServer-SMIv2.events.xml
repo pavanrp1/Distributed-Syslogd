@@ -21,7 +21,7 @@
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besSRPConnectEvent trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -52,7 +52,7 @@ indicating that the SRP connection is down.
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besSRPDisconnectEvent trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -81,7 +81,7 @@ in Exchange BES.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besHungThreadEvent trap received&lt;/p>
 	&lt;p>
 	Trap Varbinds (parameters):&lt;br/>
@@ -116,7 +116,7 @@ Access Control related.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMailServerDownEvent trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -150,7 +150,7 @@ back up.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMailServerUpEvent trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -178,7 +178,7 @@ back up.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMDStoBESConnectionEvent trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -209,7 +209,7 @@ as indicating that the connection is back up.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMDStoBESConnectionUpEvent trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -237,7 +237,7 @@ as indicating that the connection is back up.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMDSStartEvent trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -267,7 +267,7 @@ it as indicating that the MDS has started.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMDSStopEvent trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -295,7 +295,7 @@ it as indicating that the MDS has started.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMDStoDBConnectionEvent trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -326,7 +326,7 @@ disconnected from the DB.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMDStoDBDisconnectionEvent trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -355,7 +355,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besCriticalEvent trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -384,7 +384,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besSRPConnectionEstablished trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -412,7 +412,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besSRPConnectionDropped trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -440,7 +440,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMailServerUp trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -468,7 +468,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMailServerDown trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -496,7 +496,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMDStoBESConnectionEstablished trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -524,7 +524,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMDStoBESConnectionDropped trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -552,7 +552,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			mdsStarted trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -580,7 +580,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			mdsStopped trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -608,7 +608,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			mdsDBConnectionEstablished trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -636,7 +636,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			mdsDBConnectionDropped trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -664,7 +664,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMailAgentStarted trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -692,7 +692,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besMailAgentStopped trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -720,7 +720,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			besFailedUsers trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -748,7 +748,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			dispSRPConnectionEstablished trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -776,7 +776,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			dispSRPConnectionDropped trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -804,7 +804,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			dispStarted trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -832,7 +832,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			dispStopped trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -860,7 +860,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			dispDBConnectionEstablished trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -888,7 +888,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			dispDBConnectionDropped trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -916,7 +916,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			routSRPConnectionEstablished trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -944,7 +944,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			routSRPConnectionDropped trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -972,7 +972,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			routStarted trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -1000,7 +1000,7 @@ logged with 1xxxx and 5xxxx event IDs.&lt;/p>
 	Trap Varbinds (parameters):&lt;br/>
 	%parm[all]%
 	&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			routStopped trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>

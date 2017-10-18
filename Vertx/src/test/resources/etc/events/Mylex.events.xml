@@ -37,7 +37,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevOnline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -85,7 +85,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevHotspare trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -133,7 +133,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevHardError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -181,7 +181,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevPfa trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -229,7 +229,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevAutoRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -277,7 +277,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevManualRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -325,7 +325,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -373,7 +373,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -421,7 +421,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -469,7 +469,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildNewdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -517,7 +517,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildSysdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -565,7 +565,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -613,7 +613,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -661,7 +661,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevGone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -709,7 +709,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevUnconfigured trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -757,7 +757,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevExpandcapacityStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -805,7 +805,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevExpandcapacityDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -853,7 +853,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevExpandcapacityError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -901,7 +901,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevCommandTimeout trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -949,7 +949,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevCommandAbort trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -997,7 +997,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevCommandRetried trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1045,7 +1045,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevParityError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1093,7 +1093,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSoftError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1141,7 +1141,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevMiscError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1189,7 +1189,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevReset trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1237,7 +1237,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevActivespare trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1285,7 +1285,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevWarmspare trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1337,7 +1337,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevReqsense trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1386,7 +1386,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevInitStarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1434,7 +1434,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevInitDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1482,7 +1482,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevInitFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1530,7 +1530,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevInitCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1578,7 +1578,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevWriterecDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1626,7 +1626,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevResetDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1674,7 +1674,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevDblccDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1722,7 +1722,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRemovedDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1770,7 +1770,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevGrosserrDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1818,7 +1818,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevBadtagDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1866,7 +1866,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevScsitmoDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1914,7 +1914,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSysresetDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -1962,7 +1962,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevBsyparDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2010,7 +2010,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevBycmdDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2058,7 +2058,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSeltmoDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2106,7 +2106,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSeqerrDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2154,7 +2154,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevUnknownstsDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2202,7 +2202,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevNotrdyDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2250,7 +2250,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevMissingDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2298,7 +2298,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevCodwrfailDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2346,7 +2346,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevBdtwrfailDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2394,7 +2394,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevOffline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2442,7 +2442,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevStandby trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2490,7 +2490,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuild trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2538,7 +2538,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevIdMismatch trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2586,7 +2586,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevFailedStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2634,7 +2634,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevOffsetSet trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2682,7 +2682,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSetBusWidth trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2730,7 +2730,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevMissingOnstartup trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2778,7 +2778,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildStartFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2826,7 +2826,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevMovingToOtherChn trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2874,7 +2874,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevOfflineDeviceMadeOnline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2922,7 +2922,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevStandbyRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -2970,7 +2970,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevHotSpareSmaller trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3006,7 +3006,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ppilotLogicalDiskOnline trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -3039,7 +3039,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ppilotLogicalDiskOffline trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -3072,7 +3072,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ppilotLogicalDiskPathFailover trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -3105,7 +3105,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ppilotLogicalDiskPathFailback trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -3150,7 +3150,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevNonRedundantAccess trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3198,7 +3198,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevTypeInvalid trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3246,7 +3246,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSoftId trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3294,7 +3294,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevPortFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3338,7 +3338,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevMirrorRaceEntryFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3377,7 +3377,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevCtrlParamsChecksumFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3415,7 +3415,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			firmwareUpgradeStarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3453,7 +3453,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			firmwareUpgradeComplete trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3491,7 +3491,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			firmwareUpgradeFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3529,7 +3529,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodDropped trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3567,7 +3567,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuNewBattery trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3605,7 +3605,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuChargerError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3643,7 +3643,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuBatteryError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3685,7 +3685,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildFailedOnPartner trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3728,7 +3728,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckConsistencyFailedOnPartner trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3771,7 +3771,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevForegroundInitFailedOnPartner trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3814,7 +3814,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBackgroundInitFailedOnPartner trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3861,7 +3861,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevUnrecoverableError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3909,7 +3909,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildResume trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -3957,7 +3957,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevPatrolreadMovedNxtTgt trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4001,7 +4001,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevPatrolreadMovedNxtChn trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4048,7 +4048,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevTgtSpeedChange trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4092,7 +4092,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			chnSuspended trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4139,7 +4139,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			replacedPhysdevSmaller trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4183,7 +4183,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fibredevLoopidSoftaddrOccurred trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4230,7 +4230,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevMediaerrorCorrected trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4278,7 +4278,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckDoneWithError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4322,7 +4322,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4365,7 +4365,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4408,7 +4408,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4451,7 +4451,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4494,7 +4494,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckSysdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4537,7 +4537,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckPhysdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4580,7 +4580,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevOffline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4623,7 +4623,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4666,7 +4666,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevOnline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4709,7 +4709,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevAutoRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4752,7 +4752,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevManualRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4795,7 +4795,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4838,7 +4838,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4881,7 +4881,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4924,7 +4924,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildNewdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -4967,7 +4967,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildSysdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5010,7 +5010,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevInitStarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5053,7 +5053,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevInitDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5096,7 +5096,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevInitCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5139,7 +5139,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevInitFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5182,7 +5182,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5225,7 +5225,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevGone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5268,7 +5268,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevExpandcapacityStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5311,7 +5311,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevExpandcapacityDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5354,7 +5354,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevExpandcapacityError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5397,7 +5397,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBadblock trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5440,7 +5440,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevSizechanged trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5483,7 +5483,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevTypechanged trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5526,7 +5526,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBaddatablock trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5565,7 +5565,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevWrLunMap trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5607,7 +5607,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevDatareadFromBlockInBdt trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5650,7 +5650,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevDataForBlockLost trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5693,7 +5693,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevOfflineDeviceMadeAvailableWithDataloss trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5736,7 +5736,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevOfflineDeviceMadeAvailable trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5779,7 +5779,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevStandbyRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5822,7 +5822,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitStarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5865,7 +5865,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitStopped trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5908,7 +5908,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitPaused trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5951,7 +5951,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitRestarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -5994,7 +5994,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6037,7 +6037,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitCompleted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6080,7 +6080,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevDataLossLowBbuCharge trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6123,7 +6123,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckConsMismatch trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6166,7 +6166,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevClusterChange trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6209,7 +6209,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBginitError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6256,7 +6256,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtfanFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6304,7 +6304,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtfanOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6356,7 +6356,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			aemiFanFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6401,7 +6401,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtfanNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6448,7 +6448,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtpowerFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6496,7 +6496,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtpowerOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6548,7 +6548,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			aemiPwrSupplyFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6593,7 +6593,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtpowerNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6644,7 +6644,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtheatBad trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6693,7 +6693,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtheatCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6741,7 +6741,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtheatOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6793,7 +6793,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			aemiOverTemperature trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6838,7 +6838,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtheatNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6881,7 +6881,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtstwkFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6924,7 +6924,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtstwkCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -6967,7 +6967,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtstwkOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7006,7 +7006,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtUpsDisabled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7044,7 +7044,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtUpsAcFail trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7082,7 +7082,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtUpsBatLow trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7120,7 +7120,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtUpsFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7158,7 +7158,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtUpsOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7204,7 +7204,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclfanFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7252,7 +7252,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclfanOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7300,7 +7300,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclfanNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7348,7 +7348,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclpowerFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7396,7 +7396,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclpowerOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7444,7 +7444,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclpowerNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7492,7 +7492,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclheatBad trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7540,7 +7540,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclheatCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7588,7 +7588,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclheatOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7636,7 +7636,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclheatNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7680,7 +7680,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclaccessCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7723,7 +7723,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclaccessOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7766,7 +7766,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclaccessOffline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7809,7 +7809,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclsesSoftaddrOccurred trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7848,7 +7848,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclaccessReady trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7894,7 +7894,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclheatUnknown trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7942,7 +7942,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclpowerUnknown trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -7990,7 +7990,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclfanUnknown trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8038,7 +8038,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclosureShutdown trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8082,7 +8082,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclcoldWarn trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8125,7 +8125,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclcoldFail trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8160,7 +8160,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemStarted trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -8197,7 +8197,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevWritebackError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8235,7 +8235,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevStateTableFull trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8273,7 +8273,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8311,7 +8311,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevReset trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8349,7 +8349,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8387,7 +8387,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevGone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8425,7 +8425,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8463,7 +8463,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuPowerLow trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8501,7 +8501,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuPowerOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8539,7 +8539,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevPowerOff trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8577,7 +8577,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevPowerOn trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8615,7 +8615,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevOnline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8653,7 +8653,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevOffline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8691,7 +8691,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8729,7 +8729,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuRecondStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8767,7 +8767,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuRecondDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8805,7 +8805,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuRecondAbort trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8843,7 +8843,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevInstallationAborted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8889,7 +8889,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevFirmwareMismatch trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8929,7 +8929,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuNoresponse trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -8967,7 +8967,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevWarmBootError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9005,7 +9005,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuCalibrateStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9043,7 +9043,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuCalibrateDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9081,7 +9081,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuCalibrateAbort trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9119,7 +9119,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuNoBattery trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9157,7 +9157,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevConservCacheMode trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9195,7 +9195,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNormalCacheMode trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9233,7 +9233,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevDevStartCmplt trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9271,7 +9271,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevSoftEccCorrected trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9317,7 +9317,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevHardEccCorrected trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9357,7 +9357,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuRecondNeeded trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9395,7 +9395,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevRemovedPtnr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9433,7 +9433,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuOutOfService trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9471,7 +9471,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevUpdatePtnrStatus trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9509,7 +9509,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevRelinquishPtnr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9547,7 +9547,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevInsertedPtnr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9585,7 +9585,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevDualEnabled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9623,7 +9623,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevKillPtnr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9661,7 +9661,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNexus trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9699,7 +9699,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBadBootromImage trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9737,7 +9737,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBadMacAddress trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9775,7 +9775,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevMirrorRaceRecoveryFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9813,7 +9813,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevMirrorCriticalDrive trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9847,7 +9847,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevInCluster trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -9880,7 +9880,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNotInCluster trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -9921,7 +9921,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevDataLossImproperShutdown trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9960,7 +9960,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevAutomaticFlashStarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -9998,7 +9998,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationFailedJumpers trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10036,7 +10036,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationSameId trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10074,7 +10074,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationBoardType trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10112,7 +10112,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationDiskChannels trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10150,7 +10150,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationHostChannels trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10188,7 +10188,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationMemorySize trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10226,7 +10226,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationCacheSize trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10268,7 +10268,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevMirrorRaceTableError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10307,7 +10307,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevStopRejected trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10345,7 +10345,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevPatrolreadIterationDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10383,7 +10383,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevWritebackToWritethru trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10421,7 +10421,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevWritethruToWriteback trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10459,7 +10459,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevUpdateFromPeer trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10497,7 +10497,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevCacheFlushed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10535,7 +10535,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevCacheNotFlushed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10569,7 +10569,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemStartedNew trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -10602,7 +10602,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemSizeTableFull trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -10635,7 +10635,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemUserLoggedIn trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -10668,7 +10668,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemUserLoggedOut trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -10701,7 +10701,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemAlive trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -10734,7 +10734,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemDead trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -10771,7 +10771,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			autobootChanged trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10809,7 +10809,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuBattTestStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10847,7 +10847,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuBattTestComplete trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10885,7 +10885,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuBattTestCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10923,7 +10923,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuBattTestFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -10965,7 +10965,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11008,7 +11008,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11051,7 +11051,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelScsiBusDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11094,7 +11094,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelScsiBusAlive trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11137,7 +11137,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelFiberDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11180,7 +11180,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelFiberAlive trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11219,7 +11219,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			logEmpty trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11257,7 +11257,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			logOutSync trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11303,7 +11303,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			logRequestSense trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11347,7 +11347,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			logSetRtc trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11386,7 +11386,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgNew trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11424,7 +11424,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgClear trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11462,7 +11462,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgInvalid trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11500,7 +11500,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodAccessError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11538,7 +11538,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodConverted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11576,7 +11576,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodImportFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11614,7 +11614,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			debugDumpGenerated trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11652,7 +11652,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			debugDumpGeneratedPartner trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11690,7 +11690,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodNotFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11728,7 +11728,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodLunMapNotFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11754,7 +11754,7 @@
       <uei>uei.opennms.org/vendor/Mylex/traps/linux/fatalHang</uei>
       <event-label>MYLEXRAID-MIB defined trap event: linux agent: fatalHang</event-label>
       <descr>&lt;p>Internal controller hung.&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fatalHang trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11783,7 +11783,7 @@
       <uei>uei.opennms.org/vendor/Mylex/traps/linux/fatalBrkp</uei>
       <event-label>MYLEXRAID-MIB defined trap event: linux agent: fatalBrkp</event-label>
       <descr>&lt;p>Internal controller firmware breakpoint.&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fatalBrkp trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11812,7 +11812,7 @@
       <uei>uei.opennms.org/vendor/Mylex/traps/linux/i960HwErr</uei>
       <event-label>MYLEXRAID-MIB defined trap event: linux agent: i960HwErr</event-label>
       <descr>&lt;p>Internal controller i960 processor error.&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			i960HwErr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11841,7 +11841,7 @@
       <uei>uei.opennms.org/vendor/Mylex/traps/linux/sarmHwErr</uei>
       <event-label>MYLEXRAID-MIB defined trap event: linux agent: sarmHwErr</event-label>
       <descr>&lt;p>Internal controller Strong-ARM processor error.&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sarmHwErr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11870,7 +11870,7 @@
       <uei>uei.opennms.org/vendor/Mylex/traps/linux/scsiHwErr</uei>
       <event-label>MYLEXRAID-MIB defined trap event: linux agent: scsiHwErr</event-label>
       <descr>&lt;p>Internal Controller Backend Hardware Error.&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			scsiHwErr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11919,7 +11919,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevOnline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -11967,7 +11967,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevHotspare trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12015,7 +12015,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevHardError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12063,7 +12063,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevPfa trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12111,7 +12111,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevAutoRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12159,7 +12159,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevManualRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12207,7 +12207,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12255,7 +12255,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12303,7 +12303,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12351,7 +12351,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildNewdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12399,7 +12399,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildSysdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12447,7 +12447,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12495,7 +12495,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12543,7 +12543,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevGone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12591,7 +12591,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevUnconfigured trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12639,7 +12639,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevExpandcapacityStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12687,7 +12687,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevExpandcapacityDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12735,7 +12735,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevExpandcapacityError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12783,7 +12783,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevCommandTimeout trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12831,7 +12831,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevCommandAbort trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12879,7 +12879,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevCommandRetried trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12927,7 +12927,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevParityError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -12975,7 +12975,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSoftError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13023,7 +13023,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevMiscError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13071,7 +13071,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevReset trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13119,7 +13119,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevActivespare trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13167,7 +13167,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevWarmspare trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13219,7 +13219,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevReqsense trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13268,7 +13268,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevInitStarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13316,7 +13316,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevInitDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13364,7 +13364,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevInitFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13412,7 +13412,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevInitCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13460,7 +13460,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevWriterecDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13508,7 +13508,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevResetDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13556,7 +13556,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevDblccDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13604,7 +13604,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRemovedDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13652,7 +13652,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevGrosserrDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13700,7 +13700,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevBadtagDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13748,7 +13748,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevScsitmoDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13796,7 +13796,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSysresetDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13844,7 +13844,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevBsyparDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13892,7 +13892,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevBycmdDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13940,7 +13940,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSeltmoDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -13988,7 +13988,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSeqerrDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14036,7 +14036,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevUnknownstsDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14084,7 +14084,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevNotrdyDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14132,7 +14132,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevMissingDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14180,7 +14180,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevCodwrfailDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14228,7 +14228,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevBdtwrfailDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14276,7 +14276,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevOffline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14324,7 +14324,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevStandby trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14372,7 +14372,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuild trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14420,7 +14420,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevIdMismatch trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14468,7 +14468,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevFailedStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14516,7 +14516,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevOffsetSet trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14564,7 +14564,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSetBusWidth trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14612,7 +14612,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevMissingOnstartup trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14660,7 +14660,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildStartFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14708,7 +14708,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevMovingToOtherChn trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14756,7 +14756,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevOfflineDeviceMadeOnline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14804,7 +14804,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevStandbyRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14852,7 +14852,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevHotSpareSmaller trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -14888,7 +14888,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ppilotLogicalDiskOnline trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -14921,7 +14921,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ppilotLogicalDiskOffline trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -14954,7 +14954,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ppilotLogicalDiskPathFailover trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -14987,7 +14987,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ppilotLogicalDiskPathFailback trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -15032,7 +15032,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevNonRedundantAccess trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15080,7 +15080,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevTypeInvalid trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15128,7 +15128,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevSoftId trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15176,7 +15176,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevPortFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15220,7 +15220,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevMirrorRaceEntryFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15259,7 +15259,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevCtrlParamsChecksumFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15297,7 +15297,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			firmwareUpgradeStarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15335,7 +15335,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			firmwareUpgradeComplete trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15373,7 +15373,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			firmwareUpgradeFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15411,7 +15411,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodDropped trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15449,7 +15449,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuNewBattery trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15487,7 +15487,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuChargerError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15525,7 +15525,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuBatteryError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15567,7 +15567,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildFailedOnPartner trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15610,7 +15610,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckConsistencyFailedOnPartner trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15653,7 +15653,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevForegroundInitFailedOnPartner trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15696,7 +15696,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBackgroundInitFailedOnPartner trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15743,7 +15743,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevUnrecoverableError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15791,7 +15791,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevRebuildResume trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15839,7 +15839,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevPatrolreadMovedNxtTgt trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15883,7 +15883,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevPatrolreadMovedNxtChn trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15930,7 +15930,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevTgtSpeedChange trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -15974,7 +15974,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			chnSuspended trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16021,7 +16021,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			replacedPhysdevSmaller trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16065,7 +16065,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fibredevLoopidSoftaddrOccurred trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16112,7 +16112,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physdevMediaerrorCorrected trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16160,7 +16160,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckDoneWithError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16204,7 +16204,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16247,7 +16247,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16290,7 +16290,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16333,7 +16333,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16376,7 +16376,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckSysdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16419,7 +16419,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckPhysdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16462,7 +16462,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevOffline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16505,7 +16505,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16548,7 +16548,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevOnline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16591,7 +16591,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevAutoRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16634,7 +16634,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevManualRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16677,7 +16677,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16720,7 +16720,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16763,7 +16763,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16806,7 +16806,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildNewdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16849,7 +16849,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevRebuildSysdevFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16892,7 +16892,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevInitStarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16935,7 +16935,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevInitDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -16978,7 +16978,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevInitCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17021,7 +17021,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevInitFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17064,7 +17064,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17107,7 +17107,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevGone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17150,7 +17150,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevExpandcapacityStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17193,7 +17193,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevExpandcapacityDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17236,7 +17236,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevExpandcapacityError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17279,7 +17279,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBadblock trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17322,7 +17322,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevSizechanged trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17365,7 +17365,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevTypechanged trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17408,7 +17408,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBaddatablock trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17447,7 +17447,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevWrLunMap trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17489,7 +17489,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevDatareadFromBlockInBdt trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17532,7 +17532,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevDataForBlockLost trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17575,7 +17575,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevOfflineDeviceMadeAvailableWithDataloss trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17618,7 +17618,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevOfflineDeviceMadeAvailable trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17661,7 +17661,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevStandbyRebuildStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17704,7 +17704,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitStarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17747,7 +17747,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitStopped trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17790,7 +17790,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitPaused trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17833,7 +17833,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitRestarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17876,7 +17876,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17919,7 +17919,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBgInitCompleted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -17962,7 +17962,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevDataLossLowBbuCharge trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18005,7 +18005,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevCheckConsMismatch trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18048,7 +18048,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevClusterChange trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18091,7 +18091,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevBginitError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18138,7 +18138,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtfanFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18186,7 +18186,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtfanOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18238,7 +18238,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			aemiFanFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18283,7 +18283,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtfanNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18330,7 +18330,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtpowerFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18378,7 +18378,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtpowerOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18430,7 +18430,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			aemiPwrSupplyFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18475,7 +18475,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtpowerNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18526,7 +18526,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtheatBad trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18575,7 +18575,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtheatCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18623,7 +18623,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtheatOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18675,7 +18675,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			aemiOverTemperature trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18720,7 +18720,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtheatNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18763,7 +18763,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtstwkFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18806,7 +18806,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtstwkCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18849,7 +18849,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtstwkOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18888,7 +18888,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtUpsDisabled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18926,7 +18926,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtUpsAcFail trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -18964,7 +18964,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtUpsBatLow trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19002,7 +19002,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtUpsFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19040,7 +19040,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fmtUpsOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19086,7 +19086,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclfanFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19134,7 +19134,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclfanOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19182,7 +19182,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclfanNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19230,7 +19230,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclpowerFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19278,7 +19278,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclpowerOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19326,7 +19326,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclpowerNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19374,7 +19374,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclheatBad trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19422,7 +19422,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclheatCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19470,7 +19470,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclheatOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19518,7 +19518,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclheatNotpresent trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19562,7 +19562,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclaccessCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19605,7 +19605,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclaccessOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19648,7 +19648,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclaccessOffline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19691,7 +19691,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclsesSoftaddrOccurred trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19730,7 +19730,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclaccessReady trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19776,7 +19776,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclheatUnknown trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19824,7 +19824,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclpowerUnknown trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19872,7 +19872,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclfanUnknown trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19920,7 +19920,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclosureShutdown trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -19964,7 +19964,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclcoldWarn trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20007,7 +20007,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			enclcoldFail trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20042,7 +20042,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemStarted trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -20079,7 +20079,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevWritebackError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20117,7 +20117,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevStateTableFull trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20155,7 +20155,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20193,7 +20193,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevReset trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20231,7 +20231,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20269,7 +20269,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevGone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20307,7 +20307,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20345,7 +20345,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuPowerLow trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20383,7 +20383,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuPowerOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20421,7 +20421,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevPowerOff trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20459,7 +20459,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevPowerOn trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20497,7 +20497,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevOnline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20535,7 +20535,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevOffline trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20573,7 +20573,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevCritical trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20611,7 +20611,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuRecondStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20649,7 +20649,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuRecondDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20687,7 +20687,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuRecondAbort trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20725,7 +20725,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevInstallationAborted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20771,7 +20771,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevFirmwareMismatch trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20811,7 +20811,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuNoresponse trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20849,7 +20849,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevWarmBootError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20887,7 +20887,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuCalibrateStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20925,7 +20925,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuCalibrateDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -20963,7 +20963,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuCalibrateAbort trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21001,7 +21001,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuNoBattery trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21039,7 +21039,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevConservCacheMode trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21077,7 +21077,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNormalCacheMode trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21115,7 +21115,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevDevStartCmplt trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21153,7 +21153,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevSoftEccCorrected trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21199,7 +21199,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevHardEccCorrected trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21239,7 +21239,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuRecondNeeded trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21277,7 +21277,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevRemovedPtnr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21315,7 +21315,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuOutOfService trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21353,7 +21353,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevUpdatePtnrStatus trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21391,7 +21391,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevRelinquishPtnr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21429,7 +21429,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevInsertedPtnr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21467,7 +21467,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevDualEnabled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21505,7 +21505,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevKillPtnr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21543,7 +21543,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNexus trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21581,7 +21581,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBadBootromImage trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21619,7 +21619,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBadMacAddress trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21657,7 +21657,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevMirrorRaceRecoveryFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21695,7 +21695,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevMirrorCriticalDrive trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21729,7 +21729,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevInCluster trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -21762,7 +21762,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNotInCluster trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -21803,7 +21803,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysdevDataLossImproperShutdown trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21842,7 +21842,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevAutomaticFlashStarted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21880,7 +21880,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationFailedJumpers trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21918,7 +21918,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationSameId trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21956,7 +21956,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationBoardType trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -21994,7 +21994,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationDiskChannels trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22032,7 +22032,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationHostChannels trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22070,7 +22070,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationMemorySize trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22108,7 +22108,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevNegotiationCacheSize trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22150,7 +22150,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevMirrorRaceTableError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22189,7 +22189,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevStopRejected trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22227,7 +22227,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevPatrolreadIterationDone trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22265,7 +22265,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevWritebackToWritethru trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22303,7 +22303,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevWritethruToWriteback trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22341,7 +22341,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevUpdateFromPeer trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22379,7 +22379,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevCacheFlushed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22417,7 +22417,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevCacheNotFlushed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22451,7 +22451,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemStartedNew trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -22484,7 +22484,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemSizeTableFull trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -22517,7 +22517,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemUserLoggedIn trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -22550,7 +22550,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemUserLoggedOut trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -22583,7 +22583,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemAlive trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -22616,7 +22616,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemDead trap received 
 			EventCode=%parm[#1]% 
 			EventTimeStamp=%parm[#2]%&lt;/p>
@@ -22653,7 +22653,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			autobootChanged trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22691,7 +22691,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuBattTestStart trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22729,7 +22729,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuBattTestComplete trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22767,7 +22767,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuBattTestCanceled trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22805,7 +22805,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ctldevBbuBattTestFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22847,7 +22847,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22890,7 +22890,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelOk trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22933,7 +22933,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelScsiBusDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -22976,7 +22976,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelScsiBusAlive trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23019,7 +23019,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelFiberDead trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23062,7 +23062,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			channelFiberAlive trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23101,7 +23101,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			logEmpty trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23139,7 +23139,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			logOutSync trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23185,7 +23185,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			logRequestSense trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23229,7 +23229,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			logSetRtc trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23268,7 +23268,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgNew trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23306,7 +23306,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgClear trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23344,7 +23344,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgInvalid trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23382,7 +23382,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodAccessError trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23420,7 +23420,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodConverted trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23458,7 +23458,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodImportFailed trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23496,7 +23496,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			debugDumpGenerated trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23534,7 +23534,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			debugDumpGeneratedPartner trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23572,7 +23572,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodNotFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23610,7 +23610,7 @@
 
 	EventTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cfgCodLunMapNotFound trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23636,7 +23636,7 @@
       <uei>uei.opennms.org/vendor/Mylex/traps/windows/fatalHang</uei>
       <event-label>MYLEXRAID-MIB defined trap event: windows agent: fatalHang</event-label>
       <descr>&lt;p>Internal controller hung.&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fatalHang trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23665,7 +23665,7 @@
       <uei>uei.opennms.org/vendor/Mylex/traps/windows/fatalBrkp</uei>
       <event-label>MYLEXRAID-MIB defined trap event: windows agent: fatalBrkp</event-label>
       <descr>&lt;p>Internal controller firmware breakpoint.&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			fatalBrkp trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23694,7 +23694,7 @@
       <uei>uei.opennms.org/vendor/Mylex/traps/windows/i960HwErr</uei>
       <event-label>MYLEXRAID-MIB defined trap event: windows agent: i960HwErr</event-label>
       <descr>&lt;p>Internal controller i960 processor error.&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			i960HwErr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23723,7 +23723,7 @@
       <uei>uei.opennms.org/vendor/Mylex/traps/windows/sarmHwErr</uei>
       <event-label>MYLEXRAID-MIB defined trap event: windows agent: sarmHwErr</event-label>
       <descr>&lt;p>Internal controller Strong-ARM processor error.&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sarmHwErr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 
@@ -23752,7 +23752,7 @@
       <uei>uei.opennms.org/vendor/Mylex/traps/windows/scsiHwErr</uei>
       <event-label>MYLEXRAID-MIB defined trap event: windows agent: scsiHwErr</event-label>
       <descr>&lt;p>Internal Controller Backend Hardware Error.&lt;/p></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			scsiHwErr trap received 
 			EventCode=%parm[#1]% 
 			ControllerNumber=%parm[#2]% 

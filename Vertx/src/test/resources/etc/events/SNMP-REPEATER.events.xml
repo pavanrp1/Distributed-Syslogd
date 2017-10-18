@@ -50,7 +50,7 @@ configured recipients.)&lt;/p>&lt;table>
 		portFailure(5)
 		generalFailure(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rptrHealth trap received 
 			rptrOperStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -95,7 +95,7 @@ recipients.)&lt;/p>&lt;table>
 
 	rptrGroupIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rptrGroupChange trap received 
 			rptrGroupIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -160,7 +160,7 @@ well.&lt;/p>&lt;table>
 		portFailure(5)
 		generalFailure(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rptrResetEvent trap received 
 			rptrOperStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -210,7 +210,7 @@ to all configured recipients.)&lt;/p>&lt;table>
 		ok(2)
 		failure(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rptrInfoHealth trap received 
 			rptrInfoOperStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -260,7 +260,7 @@ to all configured recipients.)&lt;/p>&lt;table>
 		ok(2)
 		failure(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rptrInfoHealth trap received 
 			rptrInfoOperStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -319,7 +319,7 @@ and warmStart trap PDUs.&lt;/p>&lt;table>
 		ok(2)
 		failure(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			rptrInfoResetEvent trap received 
 			rptrInfoOperStatus=%parm[#1]%&lt;/p>
 		</logmsg>

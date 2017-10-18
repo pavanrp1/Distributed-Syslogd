@@ -9,7 +9,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Postfix: Obsolete database file %parm[databaseName]% on node %nodelabel%&lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -23,7 +23,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Postfix: TLS support disabled on node %nodelabel%&lt;/p>
         </logmsg>
       <severity>Warning</severity>

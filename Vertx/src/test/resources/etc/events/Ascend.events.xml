@@ -22,7 +22,7 @@ has changed to the inactive state.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portInactive trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -53,7 +53,7 @@ close succession.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portDualDelay trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -83,7 +83,7 @@ for an HDLC controller to come on line.  CTS is off.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portWaitSerial trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -112,7 +112,7 @@ is ready to accept V.25bis commands.  CTS is on.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portHaveSerial trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -141,7 +141,7 @@ is has been notified of an incoming call.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portRinging trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -171,7 +171,7 @@ interface.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portCollectDigits trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -201,7 +201,7 @@ after dialing or answer notification has been issued.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portWaiting trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -231,7 +231,7 @@ flow has not yet been enabled.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portConnected trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -261,7 +261,7 @@ flow.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portCarrier trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -290,7 +290,7 @@ has been placed in local loopback mode.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portLoopback trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -320,7 +320,7 @@ waiting for the host device to detect the transition.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portAcrPending trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -350,7 +350,7 @@ when performing X.21 dialing.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portDteNotReady trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -384,7 +384,7 @@ can be read to see what its current state is.&lt;/p>&lt;table>
 
 	ssnStatusUserIPAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			consoleStateChange trap received 
 			consoleIndex=%parm[#1]% 
 			ssnStatusUserIPAddress=%parm[#2]%&lt;/p>
@@ -414,7 +414,7 @@ exceeded the number of DS0 minutes allocated to it.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			portUseExceeded trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -438,7 +438,7 @@ exceeded the number of DS0 minutes allocated to it.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Ascend/traps/systemUseExceeded</uei>
       <event-label>ASCEND-TRAP defined trap event: systemUseExceeded</event-label>
       <descr>&lt;p>The system DS0 usage has been exceeded.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemUseExceeded trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -466,7 +466,7 @@ session has been exceeded.&lt;/p>&lt;table>
 
 	ssnStatusUserIPAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			maxTelnetAttempts trap received 
 			ssnStatusUserIPAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -495,7 +495,7 @@ This trap is sent only for systems which
  Once sent, additional overwrites will not
  cause another trap to be sent until at least
  1 table's worth of new events have occured.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			eventTableOverwrite trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -526,7 +526,7 @@ This trap is sent only for systems which
 
 	radAuthHostIPAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			radiusServerChange trap received 
 			radAuthServerIndex=%parm[#1]% 
 			radAuthHostIPAddress=%parm[#2]%&lt;/p>
@@ -573,7 +573,7 @@ heartBeat servers&lt;/p>&lt;table>
 
 	heartBeatPacketCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			multicastHeartBeatMonitor trap received 
 			heartBeatMulticastGroupAddress=%parm[#1]% 
 			heartBeatSourceAddress=%parm[#2]% 
@@ -625,7 +625,7 @@ description.&lt;/p>&lt;table>
 
 	suspectLanModemLast32&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			lanModemMovedToSuspectList trap received 
 			suspectLanModemSlotIndex=%parm[#1]% 
 			suspectLanModemPortIndex=%parm[#2]% 
@@ -659,7 +659,7 @@ no answer/subaddresses have been received.&lt;/p>&lt;table>
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			dirdoListFailure trap received 
 			sysName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -707,7 +707,7 @@ slotTable.slotStatus descriptions.&lt;/p>&lt;table>
 		operStateNone(7)
 		operStateOccupied(8)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysSlotStateChange trap received 
 			slotIndex=%parm[#1]% 
 			slotStatus=%parm[#2]%&lt;/p>
@@ -742,7 +742,7 @@ added or removed.&lt;/p>&lt;table>
 		present(2)
 		absent(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			powerSupplyStateChange trap received 
 			powerSupplyState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -776,7 +776,7 @@ failure(s).&lt;/p>&lt;table>
 		noFailure(2)
 		failed(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			powerSupplyOperationalStateChange trap received 
 			powerSupplyOperationalState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -812,7 +812,7 @@ configuration.&lt;/p>&lt;table>
 		inComing(3)
 		up(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			multiShelfStateChange trap received 
 			multiShelfState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1020,7 +1020,7 @@ is not unknown (value of 0).&lt;/p>&lt;table>
 
 	sysAbsoluteCurrentTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysLastRestartReasonTrap trap received 
 			sysLastRestartReason=%parm[#1]% 
 			fatalLogIndex=%parm[#2]% 
@@ -1053,7 +1053,7 @@ connection profile.&lt;/p>&lt;table>
 
 	atmpHNProfileName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			atmpMaxTunnelExceeded trap received 
 			atmpHNProfileName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1097,7 +1097,7 @@ with Tunnel creation.&lt;/p>&lt;table>
 
 	atmpAgentSentErrorTo&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			atmpAgentErrorSentTrap trap received 
 			atmpLastErrorGenerated=%parm[#1]% 
 			atmpAgentSentErrorTo=%parm[#2]%&lt;/p>
@@ -1140,7 +1140,7 @@ agent.&lt;/p>&lt;table>
 
 	atmpAgentRecvErrorFrom&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			atmpAgentErrorRecvTrap trap received 
 			atmpLastErrorRecv=%parm[#1]% 
 			atmpAgentRecvErrorFrom=%parm[#2]%&lt;/p>
@@ -1169,7 +1169,7 @@ agent.&lt;/p>&lt;table>
 
 	sysConfigChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sysConfigChangeTrap trap received 
 			sysConfigChange=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1194,7 +1194,7 @@ agent.&lt;/p>&lt;table>
       <event-label>ASCEND-TRAP defined trap event: sdtnPrimaryListEmptyTrap</event-label>
       <descr>&lt;p>This trap indicates that the Transaction Server 
 Primary list has become empty.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sdtnPrimaryListEmptyTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1218,7 +1218,7 @@ Primary list has become empty.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>ASCEND-TRAP defined trap event: sdtnSecondaryListEmptyTrap</event-label>
       <descr>&lt;p>This trap indicates that the Transaction Server 
 Secondary list has become empty.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sdtnSecondaryListEmptyTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1247,7 +1247,7 @@ and clock drifted params are set to YES in a
 trap profile. If the clock drifting problem
 persists, the trap will only be sent every
 24 hours.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			systemClockDrifted trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1295,7 +1295,7 @@ pool exhausted.&lt;/p>&lt;table>
 
 	resourceLast32&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			suspectAccessResource trap received 
 			resourceSlotIndex=%parm[#1]% 
 			resourcePortIndex=%parm[#2]% 
@@ -1344,7 +1344,7 @@ occurred.&lt;/p>&lt;table>
 
 	sysAbsoluteCurrentTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			watchdogWarningTrap trap received 
 			watchdogIndex=%parm[#1]% 
 			watchdogName=%parm[#2]% 
@@ -1558,7 +1558,7 @@ alarm condition enabled&lt;/p>&lt;table>
 
 	slotIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			slotCardResetTrap trap received 
 			fatalLogIndex=%parm[#1]% 
 			fatalLogReason=%parm[#2]% 
@@ -1608,7 +1608,7 @@ to cntrReduCurrentIndex.&lt;/p>&lt;table>
 
 	cntrReduCurrentIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			controllerSwitchoverTrap trap received 
 			sysAbsoluteCurrentTime=%parm[#1]% 
 			cntrReduSwitchReason=%parm[#2]% 
@@ -1648,7 +1648,7 @@ logging server has changed.&lt;/p>&lt;table>
 
 	sysAbsoluteCurrentTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			callLogServChange trap received 
 			callLoggingServerIndex=%parm[#1]% 
 			callLoggingServerIPAddress=%parm[#2]% 
@@ -1688,7 +1688,7 @@ in a VOIP configuration.&lt;/p>&lt;table>
 
 	sysAbsoluteCurrentTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			voipGkChange trap received 
 			voipCfgGkIndex=%parm[#1]% 
 			voipCfgGkIpAddress=%parm[#2]% 
@@ -1737,7 +1737,7 @@ of a T1/E1 line : trunk, quiesced or disabled&lt;/p>&lt;table>
 
 	sysAbsoluteCurrentTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			wanLineStateChange trap received 
 			wanLineIfIndex=%parm[#1]% 
 			wanLineUsage=%parm[#2]% 
@@ -1770,7 +1770,7 @@ of 0 indicates that all is well again.&lt;/p>&lt;table>
 
 	callLoggingDroppedPacketCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			callLogDroppedPkt trap received 
 			callLoggingDroppedPacketCount=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1807,7 +1807,7 @@ of a media gateway control link has changed.&lt;/p>&lt;table>
 		down(2)
 		unknown(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			megacoLinkStatusTrap trap received 
 			mgLinkName=%parm[#1]% 
 			mgOperStatus=%parm[#2]%&lt;/p>
@@ -1864,7 +1864,7 @@ The slot affected is sparingSlotPrimaryIndex.&lt;/p>&lt;table>
 		automatic(3)
 		test(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sparingSlotStatusChange trap received 
 			sparingSlotPrimaryIndex=%parm[#1]% 
 			sparingSlotSparingIndex=%parm[#2]% 
@@ -1923,7 +1923,7 @@ The slot affected is sparingIfPrimaryIndex.&lt;/p>&lt;table>
 		manual(2)
 		automatic(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			sparingIfStatusChange trap received 
 			sparingIfPrimaryIndex=%parm[#1]% 
 			sparingIfSparingIndex=%parm[#2]% 
@@ -1969,7 +1969,7 @@ to cntrReduAvailCurrState at cntrReduAvailLastTime.&lt;/p>&lt;table>
 
 	cntrReduAvailCurrState&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			cntrReduAvailTrap trap received 
 			cntrReduAvailLastTime=%parm[#1]% 
 			cntrReduAvailSlotIndex=%parm[#2]% 

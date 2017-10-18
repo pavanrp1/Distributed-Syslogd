@@ -34,7 +34,7 @@
  noAccess(1) readOnly(2) writeOnly(3) readWrite(4) readOnlySecureSNMPObjects(5) 
  readWriteSecureSNMPObjects(6)
  &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Snmp Authentication Violation.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Snmp Authentication Violation.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -59,7 +59,7 @@
  &lt;/p>&lt;table>&lt;tr>&lt;td>&lt;b>
  chassisIndex&lt;/b>&lt;/td>&lt;td>%parm[#1]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Chassis Inserted.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Chassis Inserted.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -84,7 +84,7 @@
  &lt;/p>&lt;table>&lt;tr>&lt;td>&lt;b>
  chassisIndex&lt;/b>&lt;/td>&lt;td>%parm[#1]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Chassis Removed.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Chassis Removed.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -111,7 +111,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  moduleIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Module Inserted into Chassis.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Module Inserted into Chassis.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -138,7 +138,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  moduleIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Module Removed from Chassis.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Module Removed from Chassis.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -167,7 +167,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  mediaModuleIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Media Module Inserted.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Media Module Inserted.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -196,7 +196,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  mediaModuleIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Media Module Removed.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Media Module Removed.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -232,7 +232,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  portConfIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Permanent Entry Violation.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Permanent Entry Violation.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -273,7 +273,7 @@
  cutThrough(1) adaptiveCutThrough(2) fragmentFree(3) adaptiveFragmentFree(4) storeAndForward(5) 
  adaptiveStoreAndForward(6) notAvailable(99)
  &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Forwarding Mode Changed.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Forwarding Mode Changed.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -299,7 +299,7 @@
  temperatureLevel&lt;/b>&lt;/td>&lt;td>%parm[#1]%
  &lt;/td>&lt;td>&lt;p;>normal(1) high(2) critical(3)
  &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Temperature Status Change.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Temperature Status Change.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -326,7 +326,7 @@
  &lt;/td>&lt;td>&lt;p;>
  notPresent(1) present(2) active(3)
  &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>Intel Event: Redundant Power Supply Status Change.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>Intel Event: Redundant Power Supply Status Change.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -348,7 +348,7 @@
       <event-label>RMM2-MIB defined trap event: DummyTrap</event-label>
       <descr>&lt;p>Dummy Trap for testing&lt;/p>&lt;table>
 	&lt;tr>&lt;td>&lt;b></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
 		&lt;p>Dummy Trap for testing trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -381,7 +381,7 @@
 	remoteHost&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 	&lt;tr>&lt;td>&lt;b></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Loginfailed trap received 
 			userLoginName=%parm[#1]% 
 			remoteHost=%parm[#2]%&lt;/p>
@@ -416,7 +416,7 @@
 	remoteHost&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 	&lt;tr>&lt;td>&lt;b></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Loginsuccess trap received 
 			userLoginName=%parm[#1]% 
 			remoteHost=%parm[#2]%&lt;/p>
@@ -451,7 +451,7 @@
 	remoteHost&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 	&lt;tr>&lt;td>&lt;b></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			SecurityViolation trap received 
 			userLoginName=%parm[#1]% 
 			remoteHost=%parm[#2]%&lt;/p>
@@ -486,7 +486,7 @@
 	eventDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 	&lt;tr>&lt;td>&lt;b></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Generic trap received 
 			eventType=%parm[#1]% 
 			eventDesc=%parm[#2]%&lt;/p>
@@ -521,7 +521,7 @@
 	remoteHost&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 	&lt;tr>&lt;td>&lt;b></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Logout trap received 
 			userLoginName=%parm[#1]% 
 			remoteHost=%parm[#2]%&lt;/p>
@@ -546,7 +546,7 @@
  enterprise specific event (trap) is received from a Intel device for which no
  format has been configured (i.e. no event definition
  exists).&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
  Received unformatted enterprise event (enterprise:%id% generic:%generic%
  specific:%specific%). %parm[##]%
  args: %parm[all]%
@@ -571,7 +571,7 @@
       <uei>uei.opennms.org/vendor/Intel/pET_Temperature</uei>
       <event-label>PET-MIB defined trap event: pET_Temperature</event-label>
       <descr>&lt;p>Temperature Out of Specification&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: pET_Temperature trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -594,7 +594,7 @@
       <uei>uei.opennms.org/vendor/Intel/pET_Voltage</uei>
       <event-label>PET-MIB defined trap event: pET_Voltage</event-label>
       <descr>&lt;p>Voltage Out of Specification&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: pET_Voltage trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -617,7 +617,7 @@
       <uei>uei.opennms.org/vendor/Intel/pET_Fan</uei>
       <event-label>PET-MIB defined trap event: pET_Fan</event-label>
       <descr>&lt;p>Fan Out of Specification&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: pET_Fan trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -640,7 +640,7 @@
       <uei>uei.opennms.org/vendor/Intel/pET_ProcessorMissing</uei>
       <event-label>PET-MIB defined trap event: pET_ProcessorMissing</event-label>
       <descr>&lt;p>Processor Missing&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: pET_ProcessorMissing trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -663,7 +663,7 @@
       <uei>uei.opennms.org/vendor/Intel/pET_LANLeash</uei>
       <event-label>PET-MIB defined trap event: pET_LANLeash</event-label>
       <descr>&lt;p>LAN Leash Tamper&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: pET_LANLeash trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -686,7 +686,7 @@
       <uei>uei.opennms.org/vendor/Intel/pET_Undock</uei>
       <event-label>PET-MIB defined trap event: pET_Undock</event-label>
       <descr>&lt;p>Surprised Undock event&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: pET_Undock trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -709,7 +709,7 @@
       <uei>uei.opennms.org/vendor/Intel/pET_Fan_Temperature</uei>
       <event-label>PET-MIB defined trap event: pET_Fan_Temperature</event-label>
       <descr>&lt;p>Fan/Temperature Out of Specification&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: pET_Fan_Temperature trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -732,7 +732,7 @@
       <uei>uei.opennms.org/vendor/Intel/pET_Watchdog</uei>
       <event-label>PET-MIB defined trap event: pET_Watchdog</event-label>
       <descr>&lt;p>Watchdog Event&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: pET_Watchdog trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -755,7 +755,7 @@
       <uei>uei.opennms.org/vendor/Intel/pET_AlertOnLAN</uei>
       <event-label>PET-MIB defined trap event: pET_AlertOnLAN</event-label>
       <descr>&lt;p>Alert on LAN 2 Event has occured&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: pET_AlertOnLAN trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -778,7 +778,7 @@
       <uei>uei.opennms.org/vendor/Intel/pET_PresenceHeartbeat</uei>
       <event-label>PET-MIB defined trap event: pET_PresenceHeartbeat</event-label>
       <descr>&lt;p>Presence Heartbeat Expired&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: pET_PresenceHeartbeat trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -805,7 +805,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: presenceHeartbeat trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -833,7 +833,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: coverTamper trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -861,7 +861,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: voltage_Fan_Temperature trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -889,7 +889,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: lANLeash trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -917,7 +917,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: temperature trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -945,7 +945,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: processorMissing trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -973,7 +973,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: processorTemperature trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1001,7 +1001,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: watchdog trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1029,7 +1029,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: p_O_S_T trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1057,7 +1057,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: unknownEvent trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1085,7 +1085,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: processor_0_Missing trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1113,7 +1113,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: processor_1_Missing trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1141,7 +1141,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: voltage_Fan trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1169,7 +1169,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: voltage trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1197,7 +1197,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: fan trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1225,7 +1225,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: fan_Temperature trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1253,7 +1253,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: voltage_Temperature trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1281,7 +1281,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: undock trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1309,7 +1309,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: eventClear trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1337,7 +1337,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: clientAdded trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1365,7 +1365,7 @@
 
 	systemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			Intel: clientDeleted trap received 
 			systemName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1389,7 +1389,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapUnderTemperatureWarning</uei>
       <event-label>PET_EVENTS defined trap event: TrapUnderTemperatureWarning</event-label>
       <descr>&lt;p>Under-Temperature Warning (Lower non-critical, going low)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapUnderTemperatureWarning trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1412,7 +1412,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapUnderTemperatureCritical</uei>
       <event-label>PET_EVENTS defined trap event: TrapUnderTemperatureCritical</event-label>
       <descr>&lt;p>Critical Under-Temperature Problem (Lower Critical - going low)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapUnderTemperatureCritical trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1435,7 +1435,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapOverTemperatureWarning</uei>
       <event-label>PET_EVENTS defined trap event: TrapOverTemperatureWarning</event-label>
       <descr>&lt;p>Over-Temperature Warning (Upper non-critical, going high)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapOverTemperatureWarning trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1458,7 +1458,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapOverTemperatureCritical</uei>
       <event-label>PET_EVENTS defined trap event: TrapOverTemperatureCritical</event-label>
       <descr>&lt;p>Critical Over-Temperature Problem (Upper Critical - going high)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapOverTemperatureCritical trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1481,7 +1481,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapUnderTemperatureWarningCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapUnderTemperatureWarningCleared</event-label>
       <descr>&lt;p>Under-Temperature Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapUnderTemperatureWarningCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1504,7 +1504,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapUnderTemperatureCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapUnderTemperatureCleared</event-label>
       <descr>&lt;p>Under-Temperature Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapUnderTemperatureCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1527,7 +1527,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapOverTemperatureWarningCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapOverTemperatureWarningCleared</event-label>
       <descr>&lt;p>Over-Temperature warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapOverTemperatureWarningCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1550,7 +1550,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapOverTemperatureCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapOverTemperatureCleared</event-label>
       <descr>&lt;p>Over-Temperature Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapOverTemperatureCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1573,7 +1573,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapGenericCriticalTemperature</uei>
       <event-label>PET_EVENTS defined trap event: TrapGenericCriticalTemperature</event-label>
       <descr>&lt;p>Generic Critical Temperature Problem (Transition to Critical from less severe)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapGenericCriticalTemperature trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1596,7 +1596,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapGenericTemperatureWarning</uei>
       <event-label>PET_EVENTS defined trap event: TrapGenericTemperatureWarning</event-label>
       <descr>&lt;p>Generic Temperature Warning (Transition to Warning from less severe)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapGenericTemperatureWarning trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1619,7 +1619,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapUnderAnalogVoltageWarning</uei>
       <event-label>PET_EVENTS defined trap event: TrapUnderAnalogVoltageWarning</event-label>
       <descr>&lt;p>Under-Voltage Warning (Lower Non Critical - going low)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapUnderAnalogVoltageWarning trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1642,7 +1642,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapUnderAnalogVoltageCritical</uei>
       <event-label>PET_EVENTS defined trap event: TrapUnderAnalogVoltageCritical</event-label>
       <descr>&lt;p>Critical Under-Voltage Problem (Lower Critical - going low)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapUnderAnalogVoltageCritical trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1665,7 +1665,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapOverAnalogVoltageWarning</uei>
       <event-label>PET_EVENTS defined trap event: TrapOverAnalogVoltageWarning</event-label>
       <descr>&lt;p>Over-Voltage Warning (Upper Non Critical - going high)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapOverAnalogVoltageWarning trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1688,7 +1688,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapOverAnalogVoltageCritical</uei>
       <event-label>PET_EVENTS defined trap event: TrapOverAnalogVoltageCritical</event-label>
       <descr>&lt;p>Critical Over-Voltage Problem (Upper Critical - going high)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapOverAnalogVoltageCritical trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1711,7 +1711,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapUnderAnalogVoltageWarningCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapUnderAnalogVoltageWarningCleared</event-label>
       <descr>&lt;p>Under-Voltage Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapUnderAnalogVoltageWarningCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1734,7 +1734,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapUnderAnalogVoltageCriticalCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapUnderAnalogVoltageCriticalCleared</event-label>
       <descr>&lt;p>Under-Voltage Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapUnderAnalogVoltageCriticalCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1757,7 +1757,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapOverAnalogVoltageWarningCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapOverAnalogVoltageWarningCleared</event-label>
       <descr>&lt;p>Over-Voltage Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapOverAnalogVoltageWarningCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1780,7 +1780,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapOverAnalogVoltageCriticalCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapOverAnalogVoltageCriticalCleared</event-label>
       <descr>&lt;p>Over-Voltage Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapOverAnalogVoltageCriticalCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1803,7 +1803,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapGenericCriticalDiscreteVoltageCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapGenericCriticalDiscreteVoltageCleared</event-label>
       <descr>&lt;p>Generic Critical Voltage Problem Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapGenericCriticalDiscreteVoltageCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1826,7 +1826,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapGenericCriticalDiscreteVoltage</uei>
       <event-label>PET_EVENTS defined trap event: TrapGenericCriticalDiscreteVoltage</event-label>
       <descr>&lt;p>Generic Critical Voltage Problem (Transition to Critical from less severe)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapGenericCriticalDiscreteVoltage trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1849,7 +1849,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapGenericCriticalDiscreteVoltage2</uei>
       <event-label>PET_EVENTS defined trap event: TrapGenericCriticalDiscreteVoltage2</event-label>
       <descr>&lt;p>Generic Critical Voltage Problem (Transition to Critical from less severe)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapGenericCriticalDiscreteVoltage2 trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1872,7 +1872,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapGenericDiscreteVoltageWarning</uei>
       <event-label>PET_EVENTS defined trap event: TrapGenericDiscreteVoltageWarning</event-label>
       <descr>&lt;p>Generic Voltage Warning (Transition to Non-Critical from less severe)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapGenericDiscreteVoltageWarning trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1895,7 +1895,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapFanUnderSpeedWarning</uei>
       <event-label>PET_EVENTS defined trap event: TrapFanUnderSpeedWarning</event-label>
       <descr>&lt;p>Fan speed warning (Fan speed below expected speed)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapFanUnderSpeedWarning trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1918,7 +1918,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapFanCriticalUnderSpeed</uei>
       <event-label>PET_EVENTS defined trap event: TrapFanCriticalUnderSpeed</event-label>
       <descr>&lt;p>Generic Critical Fan Failure (Transition to Critical from less severe)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapFanCriticalUnderSpeed trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1941,7 +1941,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapFanUnderSpeedWarningCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapFanUnderSpeedWarningCleared</event-label>
       <descr>&lt;p>Fan speed Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapFanUnderSpeedWarningCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1964,7 +1964,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapFanCriticalUnderSpeedCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapFanCriticalUnderSpeedCleared</event-label>
       <descr>&lt;p>Critical Fan Failure Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapFanCriticalUnderSpeedCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -1987,7 +1987,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapFanFullRedundancy</uei>
       <event-label>PET_EVENTS defined trap event: TrapFanFullRedundancy</event-label>
       <descr>&lt;p>Fan redundancy has returned to Normal&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapFanFullRedundancy trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2010,7 +2010,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapFanRedundancyLost</uei>
       <event-label>PET_EVENTS defined trap event: TrapFanRedundancyLost</event-label>
       <descr>&lt;p>Fan Redundancy has been Lost&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapFanRedundancyLost trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2033,7 +2033,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapFanRedundancyDegraded</uei>
       <event-label>PET_EVENTS defined trap event: TrapFanRedundancyDegraded</event-label>
       <descr>&lt;p>Fan Redundancy is in a degraded state&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapFanRedundancyDegraded trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2056,7 +2056,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapChassisIntrusion</uei>
       <event-label>PET_EVENTS defined trap event: TrapChassisIntrusion</event-label>
       <descr>&lt;p>Chassis Intrusion - Physical Security Violation&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapChassisIntrusion trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2079,7 +2079,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapChassisIntrusionCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapChassisIntrusionCleared</event-label>
       <descr>&lt;p>Chassis Intrusion (Physical Security Violation) Event Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapChassisIntrusionCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2102,7 +2102,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorInternalError</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorInternalError</event-label>
       <descr>&lt;p>Processor Internal Error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorInternalError trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2125,7 +2125,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorThermalTrip</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorThermalTrip</event-label>
       <descr>&lt;p>Processor Thermal Trip (Over Temperature Shutdown)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorThermalTrip trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2148,7 +2148,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorBistError</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorBistError</event-label>
       <descr>&lt;p>Processor Fault Resilient Booting (FRB) 1 / BIST (Built In Self Test) Failure&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorBistError trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2171,7 +2171,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorFRB2Failure</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorFRB2Failure</event-label>
       <descr>&lt;p>Processor Fault Resilient Booting (FRB) 2 / Hang in Power On Self Test (POST) Failure&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorFRB2Failure trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2194,7 +2194,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorFRB3Failure</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorFRB3Failure</event-label>
       <descr>&lt;p>Processor Fault Resilient Booting (FRB) 3 / Processor Setup / Initialization Failure&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorFRB3Failure trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2217,7 +2217,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorConfigError</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorConfigError</event-label>
       <descr>&lt;p>Processor Configuration Error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorConfigError trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2240,7 +2240,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorThrottle</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorThrottle</event-label>
       <descr>&lt;p>Processor Throttled (Processor Speed Reduced)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorThrottle trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2263,7 +2263,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorInternalErrorCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorInternalErrorCleared</event-label>
       <descr>&lt;p>Processor Internal Error Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorInternalErrorCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2286,7 +2286,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorThermalTripCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorThermalTripCleared</event-label>
       <descr>&lt;p>Processor Thermal Trip (Over Temperature Shutdown) Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorThermalTripCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2309,7 +2309,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorBistErrorCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorBistErrorCleared</event-label>
       <descr>&lt;p>Processor BIST (Built In Self Test) Failure Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorBistErrorCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2332,7 +2332,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorConfigErrorCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorConfigErrorCleared</event-label>
       <descr>&lt;p>Processor Configuration Error Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorConfigErrorCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2355,7 +2355,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapProcessorThrottleCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapProcessorThrottleCleared</event-label>
       <descr>&lt;p>Processor Throttle Cleared (Normal Processor Speed)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapProcessorThrottleCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2378,7 +2378,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyFullRedundancy</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyFullRedundancy</event-label>
       <descr>&lt;p>Power Supply Redundancy Has Returned to Normal&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyFullRedundancy trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2401,7 +2401,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyRedundancyLost</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyRedundancyLost</event-label>
       <descr>&lt;p>Power Supply Redundancy has been Lost&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyRedundancyLost trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2424,7 +2424,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyRedundancyDegraded</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyRedundancyDegraded</event-label>
       <descr>&lt;p>Power Supply Redundancy is in a degraded state&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyRedundancyDegraded trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2447,7 +2447,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyPresenceDeteced</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyPresenceDeteced</event-label>
       <descr>&lt;p>Power Supply Inserted&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyPresenceDeteced trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2470,7 +2470,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyFailureDetected</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyFailureDetected</event-label>
       <descr>&lt;p>Power supply Failure detected&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyFailureDetected trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2493,7 +2493,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyWarning</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyWarning</event-label>
       <descr>&lt;p>Power supply Warning&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyWarning trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2516,7 +2516,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyACLost</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyACLost</event-label>
       <descr>&lt;p>Power Supply AC Lost&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyACLost trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2539,7 +2539,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyPresenceRemoved</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyPresenceRemoved</event-label>
       <descr>&lt;p>Power Supply Removed&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyPresenceRemoved trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2562,7 +2562,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyFailureCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyFailureCleared</event-label>
       <descr>&lt;p>Power Supply Failure Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyFailureCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2585,7 +2585,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyWarningCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyWarningCleared</event-label>
       <descr>&lt;p>Power Supply Warning Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyWarningCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2608,7 +2608,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapPowerSupplyACBack</uei>
       <event-label>PET_EVENTS defined trap event: TrapPowerSupplyACBack</event-label>
       <descr>&lt;p>Power Supply AC Restored&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapPowerSupplyACBack trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2631,7 +2631,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapMemoryUncorrectableECC</uei>
       <event-label>PET_EVENTS defined trap event: TrapMemoryUncorrectableECC</event-label>
       <descr>&lt;p>Uncorrectable ECC or other uncorrectable memory error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapMemoryUncorrectableECC trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2654,7 +2654,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapBIOSPOSTCodeError</uei>
       <event-label>PET_EVENTS defined trap event: TrapBIOSPOSTCodeError</event-label>
       <descr>&lt;p>System Firmware Progress: BIOS POST code error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapBIOSPOSTCodeError trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2677,7 +2677,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapSystemEventLogCleared</uei>
       <event-label>PET_EVENTS defined trap event: TrapSystemEventLogCleared</event-label>
       <descr>&lt;p>System Event Log (SEL) Cleared&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapSystemEventLogCleared trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2700,7 +2700,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapSystemEventLogFull</uei>
       <event-label>PET_EVENTS defined trap event: TrapSystemEventLogFull</event-label>
       <descr>&lt;p>System Event Log (SEL) Full (Logging Disabled)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapSystemEventLogFull trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2723,7 +2723,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapSystemBootEvent</uei>
       <event-label>PET_EVENTS defined trap event: TrapSystemBootEvent</event-label>
       <descr>&lt;p>System Boot Event&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapSystemBootEvent trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2746,7 +2746,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapCriticalInterruptBusTimeout</uei>
       <event-label>PET_EVENTS defined trap event: TrapCriticalInterruptBusTimeout</event-label>
       <descr>&lt;p>Critical Interrupt, Bus Timeout error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapCriticalInterruptBusTimeout trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2769,7 +2769,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapCriticalInterruptIOChannelNMI</uei>
       <event-label>PET_EVENTS defined trap event: TrapCriticalInterruptIOChannelNMI</event-label>
       <descr>&lt;p>Critical Interrupt, IO Channel check NMI error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapCriticalInterruptIOChannelNMI trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2792,7 +2792,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapCriticalInterruptSoftwareNMI</uei>
       <event-label>PET_EVENTS defined trap event: TrapCriticalInterruptSoftwareNMI</event-label>
       <descr>&lt;p>Critical Interrupt, software NMI error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapCriticalInterruptSoftwareNMI trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2815,7 +2815,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapCriticalInterruptPCIPERR</uei>
       <event-label>PET_EVENTS defined trap event: TrapCriticalInterruptPCIPERR</event-label>
       <descr>&lt;p>Critical Interrupt, PCI PERR parity error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapCriticalInterruptPCIPERR trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2838,7 +2838,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapCriticalInterruptPCISERR</uei>
       <event-label>PET_EVENTS defined trap event: TrapCriticalInterruptPCISERR</event-label>
       <descr>&lt;p>Critical Interrupt, PCI SERR parity error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapCriticalInterruptPCISERR trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2861,7 +2861,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapCriticalInterruptBusUncorrect</uei>
       <event-label>PET_EVENTS defined trap event: TrapCriticalInterruptBusUncorrect</event-label>
       <descr>&lt;p>Critical Interrupt, Bus Uncorrectable error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapCriticalInterruptBusUncorrect trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2884,7 +2884,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapCriticalInterruptFatalNMI</uei>
       <event-label>PET_EVENTS defined trap event: TrapCriticalInterruptFatalNMI</event-label>
       <descr>&lt;p>Critical Interrupt, Fatal NMI error&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapCriticalInterruptFatalNMI trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2907,7 +2907,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapOSCriticalStop</uei>
       <event-label>PET_EVENTS defined trap event: TrapOSCriticalStop</event-label>
       <descr>&lt;p>OS Critical Stop occurred&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapOSCriticalStop trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2930,7 +2930,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapWatchdogReset</uei>
       <event-label>PET_EVENTS defined trap event: TrapWatchdogReset</event-label>
       <descr>&lt;p>Watchdog Reset&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapWatchdogReset trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2953,7 +2953,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapWatchdogPowerDown</uei>
       <event-label>PET_EVENTS defined trap event: TrapWatchdogPowerDown</event-label>
       <descr>&lt;p>Watchdog Power Down&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapWatchdogPowerDown trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2976,7 +2976,7 @@
       <uei>uei.opennms.org/vendor/Intel/pet/TrapWatchdogPowerCycle</uei>
       <event-label>PET_EVENTS defined trap event: TrapWatchdogPowerCycle</event-label>
       <descr>&lt;p>Watchdog Power Cycle&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			TrapWatchdogPowerCycle trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>

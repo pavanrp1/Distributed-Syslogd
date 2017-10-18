@@ -21,7 +21,7 @@
 
 			physicalAdapterIndex&lt;/b>&lt;/td>&lt;td>
 			%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physicalAdapterLinkUpTrap trap received
 			physicalAdapterIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -49,7 +49,7 @@
 
 			physicalAdapterIndex&lt;/b>&lt;/td>&lt;td>
 			%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physicalAdapterLinkDownTrap trap received
 			physicalAdapterIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -77,7 +77,7 @@
 
 			physicalAdapterIndex&lt;/b>&lt;/td>&lt;td>
 			%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physicalAdapterAddedTrap trap received
 			physicalAdapterIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -105,7 +105,7 @@
 
 			physicalAdapterIndex&lt;/b>&lt;/td>&lt;td>
 			%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physicalAdapterRemovedTrap trap received
 			physicalAdapterIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -133,7 +133,7 @@
 
 			physicalAdapterIndex&lt;/b>&lt;/td>&lt;td>
 			%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physicalAdapterOnlineDiagPassedTrap trap received
 			physicalAdapterIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -162,7 +162,7 @@
 
 			physicalAdapterIndex&lt;/b>&lt;/td>&lt;td>
 			%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			physicalAdapterOnlineDiagFailedTrap trap received
 			physicalAdapterIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -194,7 +194,7 @@
 
 			ansId&lt;/b>&lt;/td>&lt;td>
 			%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			virtualAdapterAddedTrap trap received
 			virtualAdapterIndex=%parm[#1]%
 			ansId=%parm[#2]%&lt;/p>
@@ -223,7 +223,7 @@
 
 			virtualAdapterIndex&lt;/b>&lt;/td>&lt;td>
 			%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			virtualAdapterRemovedTrap trap received
 			virtualAdapterIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -263,7 +263,7 @@
 			%parm[#3]%;&lt;/td>&lt;td>&lt;p>
 			not-available(-1)
 			&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ansTeamFailoverTrap trap received
 			ansId=%parm[#1]%
 			ansTeamCurrentPrimaryIndex=%parm[#2]%
@@ -301,7 +301,7 @@
 
 			ansId&lt;/b>&lt;/td>&lt;td>
 			%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ansAddedTrap trap received
 			ansId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -329,7 +329,7 @@
 
 			ansId&lt;/b>&lt;/td>&lt;td>
 			%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			ansRemovedTrap trap received
 			ansId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -361,7 +361,7 @@
 
 			ansId&lt;/b>&lt;/td>&lt;td>
 			%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			teamMemberAddedTrap trap received
 			ansMemberIndex=%parm[#1]%
 			ansId=%parm[#2]%&lt;/p>
@@ -390,7 +390,7 @@
 
 			ansMemberIndex&lt;/b>&lt;/td>&lt;td>
 			%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			teamMemberRemovedTrap trap received
 			ansMemberIndex=%parm[#1]%&lt;/p>
 		</logmsg>

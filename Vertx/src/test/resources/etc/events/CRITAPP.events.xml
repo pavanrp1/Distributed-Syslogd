@@ -30,7 +30,7 @@ critAppIndex changed status to down (exited.)&lt;/p>&lt;table>
 
 	critAppLastExitStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			critAppDown trap received 
 			critAppName=%parm[#1]% 
 			critAppProcID=%parm[#2]% 
@@ -66,7 +66,7 @@ critAppIndex changed status to up.&lt;/p>&lt;table>
 
 	critAppProcID&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			critAppUp trap received 
 			critAppName=%parm[#1]% 
 			critAppProcID=%parm[#2]%&lt;/p>
@@ -92,7 +92,7 @@ critAppIndex changed status to up.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/snmpResearch/traps/critAppAllRunning</uei>
       <event-label>CRITAPP-MIB defined trap event: critAppAllRunning</event-label>
       <descr>&lt;p>This trap means that all applications are up.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			critAppAllRunning trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -117,7 +117,7 @@ critAppIndex changed status to up.&lt;/p>&lt;table>
       <event-label>CRITAPP-MIB defined trap event: critAppNotAllRunning</event-label>
       <descr>&lt;p>This trap means that at least one applications is
 down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			critAppNotAllRunning trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>

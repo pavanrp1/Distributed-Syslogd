@@ -52,7 +52,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsIfCmCmtsAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Unknown TLV.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Unknown TLV.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -96,7 +96,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsIfCmCmtsAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Dynamic Service Request Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Dynamic Service Request Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -140,7 +140,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsIfCmCmtsAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Dynamic Service Response Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Dynamic Service Response Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -184,7 +184,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsIfCmCmtsAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Dynamic Service Acknowledgement Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Dynamic Service Acknowledgement Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -228,7 +228,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsIfCmCmtsAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: BPI Initialization Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: BPI Initialization Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -271,7 +271,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsIfCmCmtsAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: BPKM Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: BPKM Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -315,7 +315,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsIfCmCmtsAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Dynamic Security Association Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Dynamic Security Association Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -362,7 +362,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsDevServerDhcp&lt;/b>&lt;/td>&lt;td>%parm[#8]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: DHCP Server %parm[#8]% has failed.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: DHCP Server %parm[#8]% has failed.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -412,7 +412,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsDevSwServer&lt;/b>&lt;/td>&lt;td>%parm[#9]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Software Upgrade Initiated. File: %parm[#8]% from %parm[#9]%.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Software Upgrade Initiated. File: %parm[#8]% from %parm[#9]%.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -462,7 +462,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsDevSwServer&lt;/b>&lt;/td>&lt;td>%parm[#9]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Software Upgrade Failed. File: %parm[#8]% from %parm[#9]%.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Software Upgrade Failed. File: %parm[#8]% from %parm[#9]%.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -512,7 +512,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsDevSwServer&lt;/b>&lt;/td>&lt;td>%parm[#9]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Software Upgrade Succeeded. File: %parm[#8]% from %parm[#9]%.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Software Upgrade Succeeded. File: %parm[#8]% from %parm[#9]%.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -557,7 +557,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsIfCmCmtsAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Software Upgrade File Failed Verification.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Software Upgrade File Failed Verification.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -605,7 +605,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsDevServerTime&lt;/b>&lt;/td>&lt;td>%parm[#8]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Time of Day Server %parm[#8]% Failed.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Time of Day Server %parm[#8]% Failed.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -650,7 +650,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsIfCmCmtsAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Dynamic Channel Change Request Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Dynamic Channel Change Request Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -696,7 +696,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             docsIfCmCmtsAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Dynamic Channel Change Response Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Dynamic Channel Change Response Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -742,7 +742,7 @@
             docsIfCmCmtsAddress&lt;/b>
             &lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Dynamic Channel Change Acknowledgement
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Dynamic Channel Change Acknowledgement
             Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
@@ -801,7 +801,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Registraton Request Failure During CM Initialization.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Registraton Request Failure During CM Initialization.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -845,7 +845,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Registraton Respnse Failure During CM Initialization.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Registraton Respnse Failure During CM Initialization.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -890,7 +890,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: Registraton Acknowledgement Failure During CM Initialization.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: Registraton Acknowledgement Failure During CM Initialization.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -935,7 +935,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: CMTS Detected Dynamic Service Request
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: CMTS Detected Dynamic Service Request
             Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
@@ -981,7 +981,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: CMTS Detected Dynamic Service Response
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: CMTS Detected Dynamic Service Response
             Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
@@ -1027,7 +1027,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: CMTS Detected Dynamic Service Acknowledgement Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: CMTS Detected Dynamic Service Acknowledgement Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1072,7 +1072,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: CMTS Detected BPI Initialization Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: CMTS Detected BPI Initialization Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1116,7 +1116,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: CMTS Detected BPKM Failure.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: CMTS Detected BPKM Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1160,7 +1160,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: CMTS Detected Dynamic Security Association
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: CMTS Detected Dynamic Security Association
             Failure.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
@@ -1207,7 +1207,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: CMTS Detected Dynamic Channel Change Request
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: CMTS Detected Dynamic Channel Change Request
             Failed.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
@@ -1253,7 +1253,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: CMTS Detected Dynamic Channel Change Response Failed.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: CMTS Detected Dynamic Channel Change Response Failed.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1298,7 +1298,7 @@
             &lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ifPhysAddress&lt;/b>&lt;/td>&lt;td>%parm[#7]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>DOCSIS Event: CMTS Detected Dynamic Channel Change Acknowledgement Failed.&lt;/p></logmsg>
+      <logmsg dest="donotpersist">&lt;p>DOCSIS Event: CMTS Detected Dynamic Channel Change Acknowledgement Failed.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
 </events>

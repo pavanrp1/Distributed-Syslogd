@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vendor/mikrotik/traps/routeros/mtxrTrap</uei>
       <event-label>MIKROTIK-MIB defined trap event: mtxrTrap</event-label>
       <descr>&lt;p>Mikrotik trap OID&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	mtxrTrap trap received&lt;/p>
 	</logmsg>
       <severity>Indeterminate</severity>
@@ -40,7 +40,7 @@
       <uei>uei.opennms.org/vendor/mikrotik/traps/routeros/mtxrTemperatureException</uei>
       <event-label>MIKROTIK-MIB defined trap event: mtxrTemperatureException</event-label>
       <descr>&lt;p>Mikrotik CPU temperature exception trap&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	mtxrTemperatureException trap received&lt;/p>
 	</logmsg>
       <severity>Indeterminate</severity>

@@ -122,7 +122,7 @@ by devices of interest.&lt;/p>&lt;table>
 
 	xcmHrDevInfoXConditions&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmHrDevInfoV2Event trap received 
 			hrDeviceIndex=%parm[#1]% 
 			hrDeviceStatus=%parm[#2]% 
@@ -363,7 +363,7 @@ by requests they have submitted.&lt;/p>&lt;table>
 		notWritable(17)
 		inconsistentName(18)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmHrDevMgmtV2Event trap received 
 			hrDeviceIndex=%parm[#1]% 
 			hrDeviceStatus=%parm[#2]% 
@@ -559,7 +559,7 @@ by device details of interest.&lt;/p>&lt;table>
 
 	xcmHrDevDetailIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmHrDevDetailV2Event trap received 
 			hrDeviceIndex=%parm[#1]% 
 			xcmHrDevDetailType=%parm[#2]% 
@@ -632,7 +632,7 @@ Systems MAY add other variable-bindings from any MIB.&lt;/p>&lt;table>
 
 	xcmHrDevAlertCodeString&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmHrDevAlertV2Event trap received 
 			xcmHrDevAlertRowStatus=%parm[#1]% 
 			xcmHrDevAlertSeverityLevel=%parm[#2]% 
@@ -726,7 +726,7 @@ Additional variable-bindings MAY be appended to this trap:
 		notWritable(17)
 		inconsistentName(18)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmJmxJobOperationV2Trap trap received 
 			jmJobState=%parm[#1]% 
 			jmJobStateReasons1=%parm[#2]% 
@@ -780,7 +780,7 @@ Additional variable-bindings MAY be appended to this trap:
 
 	jmJobStateReasons1&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmJmxJobStateV2Trap trap received 
 			jmJobState=%parm[#1]% 
 			jmJobStateReasons1=%parm[#2]%&lt;/p>
@@ -826,7 +826,7 @@ Additional variable-bindings MAY be appended to this trap:
 
 	jmNumberOfInterveningJobs&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmJmxJobCreatedV2Trap trap received 
 			jmJobState=%parm[#1]% 
 			jmJobStateReasons1=%parm[#2]% 
@@ -877,7 +877,7 @@ Additional variable-bindings MAY be appended to this trap:
 
 	jmJobImpressionsCompleted&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmJmxJobCompletedV2Trap trap received 
 			jmJobState=%parm[#1]% 
 			jmJobStateReasons1=%parm[#2]% 
@@ -929,7 +929,7 @@ Additional variable-bindings MAY be appended to this trap:
 
 	jmJobImpressionsCompleted&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmJmxJobStoppedV2Trap trap received 
 			jmJobState=%parm[#1]% 
 			jmJobStateReasons1=%parm[#2]% 
@@ -977,7 +977,7 @@ Additional variable-bindings MAY be appended to this trap:
 
 	jmNumberOfInterveningJobs&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmJmxJobConfigV2Trap trap received 
 			jmJobState=%parm[#1]% 
 			jmJobStateReasons1=%parm[#2]% 
@@ -1019,7 +1019,7 @@ Additional variable-bindings MAY be appended to this trap:
 
 	jmJobImpressionsCompleted&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmJmxJobProgressV2Trap trap received 
 			jmJobKOctetsPerCopyRequested=%parm[#1]% 
 			jmJobKOctetsProcessed=%parm[#2]% 
@@ -1145,7 +1145,7 @@ of the xcmJobClientId and xcmJobIdentifierOnSystem objects.&lt;/p>&lt;table>
 
 	xcmJobIdentifierOnSystem&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmJobV2AlertNew trap received 
 			hrDeviceIndex=%parm[#1]% 
 			xcmJobIdentifierOnSystem=%parm[#2]%&lt;/p>
@@ -1225,7 +1225,7 @@ of the xcmJobClientId and xcmJobIdentifierOnSystem objects.&lt;/p>&lt;table>
 
 	xcmDocSequenceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmDocV2AlertNew trap received 
 			hrDeviceIndex=%parm[#1]% 
 			xcmJobIdentifierOnSystem=%parm[#2]% 
@@ -1275,7 +1275,7 @@ between SNMP manager and SNMP agent implementers.&lt;/p>&lt;table>
 		createAndWait(5)
 		destroy(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmRsrcV2Event trap received 
 			xcmRsrcRowStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1356,7 +1356,7 @@ by associated queues of interest.&lt;/p>&lt;table>
 
 	xcmSvcMonQueueFaultString&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmSvcMonQueueExtV2Event trap received 
 			xcmSvcMonQueueIndex=%parm[#1]% 
 			xcmSvcMonQueueOnSystem=%parm[#2]% 
@@ -1434,7 +1434,7 @@ by services of interest.&lt;/p>&lt;table>
 
 	xcmSvcMonServiceConditions&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmSvcMonServiceV2Event trap received 
 			xcmSvcMonServiceIndex=%parm[#1]% 
 			xcmSvcMonServiceCurrentState=%parm[#2]% 
@@ -1541,7 +1541,7 @@ by requests they have submitted.&lt;/p>&lt;table>
 		notWritable(17)
 		inconsistentName(18)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmSvcMonServiceMgmtV2Event trap received 
 			xcmSvcMonServiceIndex=%parm[#1]% 
 			xcmSvcMonServiceMgmtOperation=%parm[#2]% 
@@ -1661,7 +1661,7 @@ of the 'xcmJobClientId' and 'xcmJobIdentifierOnSystem' objects.&lt;/p>&lt;table>
 		notWritable(17)
 		inconsistentName(18)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmSimpleJobMgmtV2Event trap received 
 			hrDeviceIndex=%parm[#1]% 
 			xcmJobIdentifierOnSystem=%parm[#2]% 
@@ -1770,7 +1770,7 @@ of the 'xcmJobClientId' and 'xcmJobIdentifierOnSystem' objects.&lt;/p>&lt;table>
 		notWritable(17)
 		inconsistentName(18)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 			xcmSimpleJobInterceptV2Event trap received 
 			xcmSimpleJobInterceptClientId=%parm[#1]% 
 			xcmSimpleJobInterceptOperation=%parm[#2]% 
@@ -1795,7 +1795,7 @@ of the 'xcmJobClientId' and 'xcmJobIdentifierOnSystem' objects.&lt;/p>&lt;table>
  enterprise specific event (trap) is received from a Xerox device for which no
  format has been configured (i.e. no event definition
  exists).&lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
  Received unformatted enterprise event (enterprise:%id% generic:%generic%
  specific:%specific%). %parm[##]%
  args: %parm[all]%

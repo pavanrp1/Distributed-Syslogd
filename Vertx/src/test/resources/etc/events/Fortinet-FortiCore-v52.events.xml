@@ -25,7 +25,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fnTrapCpuThreshold trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -58,7 +58,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fnTrapMemThreshold trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -92,7 +92,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fnTrapLogDiskThreshold trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -126,7 +126,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fnTrapTempHigh trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -160,7 +160,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fnTrapVoltageOutOfRange trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -195,7 +195,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fnTrapPowerSupplyFailure trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -229,7 +229,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fnTrapAmcIfBypassMode trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -263,7 +263,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fnTrapFanFailure trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -300,7 +300,7 @@
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fnTrapIpChange trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -334,7 +334,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="logndisplay">&lt;p>
+      <logmsg dest="donotpersist">&lt;p>
 	fnTrapTest trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>

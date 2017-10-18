@@ -8,7 +8,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>Procmail: Suspicious rcfile %parm[rcfile]% on node %nodelabel%&lt;/p>
         </logmsg>
       <severity>Warning</severity>

@@ -14,7 +14,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>User %parm[user]% not authorized on host %nodelabel% to sudo command %parm[command]% &lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -35,7 +35,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>User %parm[user]% not allowed to sudo command %parm[command]% &lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -56,7 +56,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>User %parm[user]% not in sudoers but tried to use sudo &lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -78,7 +78,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>User %parm[user]% failed %parm[attempts]% times to sudo %parm[command]% as user %[targetUser]% &lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -95,7 +95,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="logndisplay">
+      <logmsg dest="donotpersist">
             &lt;p>An unknown sudo syslog message has been received &lt;/p>
             Message: %parm[syslogmessage]% &lt;br>
         </logmsg>
