@@ -187,7 +187,7 @@ public class KafkaMessageConsumerTest {
 			}
 
 		};
-		kafkaMessageConsumer = new KafkaMessageConsumer(vertx);
+		kafkaMessageConsumer = new KafkaMessageConsumer();
 		kafkaMessageConsumer.setVerticleConfig(consumerConfig);
 		kafkaMessageConsumer.setMessageConsumer(messageConsumer);
 		return kafkaMessageConsumer;

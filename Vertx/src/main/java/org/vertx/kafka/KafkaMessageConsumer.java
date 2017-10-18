@@ -68,10 +68,6 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 		return SYSLOGD_CONSUMER_ADDRESS;
 	}
 
-	public KafkaMessageConsumer(Vertx vertx) {
-		this.vertx = vertx;
-	}
-	
 	public KafkaMessageConsumer() {
 	}
 
