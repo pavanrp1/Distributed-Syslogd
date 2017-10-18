@@ -206,7 +206,7 @@ public class KafkaMessageConsumerTest {
 		try {
 
 			Async asyncRunnable = context.async();
-			vertx = Vertx.vertx();
+			vertx = Vertx.vertx(vxOptions);
 			vertx.deployVerticle(kafkaMessageConsumer);
 			vertx.deployVerticle(syslogSinkConsumer);
 			vertx.deployVerticle(eventImpl);
