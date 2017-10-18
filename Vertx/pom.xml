@@ -72,6 +72,13 @@
 		<!-- <version>3.4.1</version> -->
 		<!-- <optional>true</optional> -->
 		<!-- </dependency> -->
+
+		<dependency>
+			<groupId>org.easymock</groupId>
+			<artifactId>easymock</artifactId>
+			<version>2.5</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
@@ -87,6 +94,11 @@
 			<groupId>javax.mail</groupId>
 			<artifactId>mail</artifactId>
 			<version>1.4</version>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-hazelcast</artifactId>
+			<version>3.4.2</version>
 		</dependency>
 	</dependencies>
 </project>

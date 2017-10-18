@@ -34,6 +34,7 @@
 		<module>Syslogd</module>
 		<module>Vertx</module>
 		<module>SpringCloudStreams</module>
+		<module>Eventd</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>

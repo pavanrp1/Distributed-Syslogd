@@ -39,14 +39,17 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.RejectedExecutionHandler;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.opennms.core.concurrent.LogPreservingThreadFactory;
 import org.opennms.core.logging.Logging;
+import org.opennms.netmgt.dao.mock.EventWrapper;
 import org.opennms.netmgt.events.api.EventHandler;
 import org.opennms.netmgt.events.api.EventIpcBroadcaster;
 import org.opennms.netmgt.events.api.EventIpcManager;
@@ -64,6 +67,11 @@ import org.springframework.util.StringUtils;
 import com.codahale.metrics.Gauge;
 import com.codahale.metrics.MetricRegistry;
 
+import io.vertx.core.AbstractVerticle;
+import io.vertx.core.Future;
+import io.vertx.core.eventbus.EventBus;
+import io.vertx.core.eventbus.MessageConsumer;
+
 /**
  * An implementation of the EventIpcManager interface that can be used to
  * communicate between services in the same JVM
@@ -71,7 +79,7 @@ import com.codahale.metrics.MetricRegistry;
  * @author <A HREF="mailto:sowmya@opennms.org">Sowmya Nataraj </A>
  * @author <A HREF="http://www.opennms.org">OpenNMS.org </A>
  */
-public class EventIpcManagerDefaultImpl implements EventIpcManager, EventIpcBroadcaster, InitializingBean {
+public class EventIpcManagerDefaultImpl extends AbstractVerticle implements EventIpcManager, EventIpcBroadcaster, InitializingBean {
     
     
     private static final Logger LOG = LoggerFactory.getLogger(EventIpcManagerDefaultImpl.class);
@@ -126,6 +134,16 @@ public class EventIpcManagerDefaultImpl implements EventIpcManager, EventIpcBroa
     private Integer m_handlerQueueLength;
 
     private final MetricRegistry m_registry;
+    
+	private AtomicBoolean running;
+	
+	private ExecutorService backgroundConsumer;
+	
+	private static final String EVENTD_CONSUMER_ADDRESS = "eventd.message.consumer";
+	
+	private static final String DEFAULT_EVENTD_CONSUMER_ADDRESS = "default.eventd.message.consumer";
+	
+	private EventBus eventIpcEventBus;
 
     /**
      * A thread dedicated to each listener. The events meant for each listener
@@ -198,6 +216,39 @@ public class EventIpcManagerDefaultImpl implements EventIpcManager, EventIpcBroa
             m_delegateThread.shutdown();
         }
     }
+    
+    @Override
+	public void start(final Future<Void> startedResult) throws Exception {
+		running = new AtomicBoolean(true);
+		
+		eventIpcEventBus=vertx.eventBus();
+		
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
+			try {
+
+				startedResult.complete();
+				consume();
+				
+			} catch (Exception ex) {
+				String error = "Failed to startup";
+				startedResult.fail(ex);
+			}
+		});
+	}
+	
+	private void consume() {
+		while (running.get()) {
+			try {
+				MessageConsumer<Log> eventIpcConsumer = eventIpcEventBus.consumer(EVENTD_CONSUMER_ADDRESS);
+				eventIpcConsumer.handler(message -> {
+					sendNowSync(message.body());
+					eventIpcEventBus.send(DEFAULT_EVENTD_CONSUMER_ADDRESS, DefaultEventHandlerImpl.getEventdLog());
+				});
+			} catch (Exception ex) {
+			}
+		}
+	}
 
     /**
      * <p>Constructor for EventIpcManagerDefaultImpl.</p>
@@ -281,7 +332,8 @@ public class EventIpcManagerDefaultImpl implements EventIpcManager, EventIpcBroa
         // Create the runnable and invoke it using the current thread
         // Also set the logging prefix to ensure that the log messages are
         // properly routed to eventd's log file
-        Logging.withPrefix(Eventd.LOG4J_CATEGORY, m_eventHandler.createRunnable(eventLog, true));
+        m_eventHandler.createRunnable(eventLog, true).run();
+     //   Logging.withPrefix(Eventd.LOG4J_CATEGORY, m_eventHandler.createRunnable(eventLog, true));
     }
 
     @Override
@@ -307,7 +359,8 @@ public class EventIpcManagerDefaultImpl implements EventIpcManager, EventIpcBroa
             }
             return;
         }
-
+      //  System.out.println("\n"+new EventWrapper(event));
+        
         /*
          * Send to listeners who are interested in this event UEI.
          * Loop to attempt partial wild card "directory" matches.
