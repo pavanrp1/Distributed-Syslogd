@@ -109,7 +109,6 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 
 	private TransactionOperations m_transactionManager;
 
-	@Autowired
 	private NodeDao nodeDao;
 
 	private MonitoringSystemDao monitoringSystemDao;

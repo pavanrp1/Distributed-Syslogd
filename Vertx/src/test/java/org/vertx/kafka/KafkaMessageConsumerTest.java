@@ -26,6 +26,7 @@ import org.opennms.netmgt.dao.hibernate.EventDaoHibernate;
 import org.opennms.netmgt.dao.hibernate.InterfaceToNodeCacheDaoImpl;
 import org.opennms.netmgt.dao.mock.MockDistPollerDao;
 import org.opennms.netmgt.dao.mock.MockEventDao;
+import org.opennms.netmgt.dao.mock.MockNodeDao;
 import org.opennms.netmgt.dao.mock.MockServiceTypeDao;
 import org.opennms.netmgt.eventd.DefaultEventHandlerImpl;
 import org.opennms.netmgt.eventd.EventExpander;
@@ -143,6 +144,8 @@ public class KafkaMessageConsumerTest {
 		hibernateWriter.setDistPollerDao(new MockDistPollerDao());
 		hibernateWriter.setServiceTypeDao(new MockServiceTypeDao());
 		hibernateWriter.setEventDao(new MockEventDao());
+		hibernateWriter.setNodeDao(new MockNodeDao());
+
 		hibernateWriter.setTransactionManager(hibernateSessionFactory.getTransactionTemplate());
 	}
 
