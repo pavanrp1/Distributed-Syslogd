@@ -36,7 +36,7 @@ configured time interval.&lt;/p>&lt;table>
 
 	ciscoIpMRouteHeartBeatCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoIpMRouteMissingHeartBeats trap received 
 			ciscoIpMRouteHeartBeatSourceAddr=%parm[#1]% 
 			ciscoIpMRouteHeartBeatInterval=%parm[#2]% 
@@ -98,7 +98,7 @@ event only.&lt;/p>&lt;table>
 		modifiedMvrfDefMdtConfig(3)
 		modifiedMvrfDataMdtConfig(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoMvpnMvrfChange trap received  - MVRF Created
 			ciscoMvpnGenOperStatusChange=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -157,7 +157,7 @@ event only.&lt;/p>&lt;table>
 		modifiedMvrfDefMdtConfig(3)
 		modifiedMvrfDataMdtConfig(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoMvpnMvrfChange trap received - MVRF Deleted
 			ciscoMvpnGenOperStatusChange=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -216,7 +216,7 @@ event only.&lt;/p>&lt;table>
 		modifiedMvrfDefMdtConfig(3)
 		modifiedMvrfDataMdtConfig(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoMvpnMvrfChange trap received - Modified default MDT Config
 			ciscoMvpnGenOperStatusChange=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -275,7 +275,7 @@ event only.&lt;/p>&lt;table>
 		modifiedMvrfDefMdtConfig(3)
 		modifiedMvrfDataMdtConfig(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoMvpnMvrfChange trap received - Modified Data MDT Config
 			ciscoMvpnGenOperStatusChange=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -330,7 +330,7 @@ event only.&lt;/p>&lt;table>
 		modifiedMvrfDefMdtConfig(3)
 		modifiedMvrfDataMdtConfig(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoMvpnMvrfChange trap received 
 			ciscoMvpnGenOperStatusChange=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -371,7 +371,7 @@ was involved in the generation of this notification.&lt;/p>&lt;table>
 		createAndWait(5)
 		destroy(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoPimInterfaceUp trap received 
 			pimInterfaceStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -412,7 +412,7 @@ was involved in the generation of this notification.&lt;/p>&lt;table>
 		createAndWait(5)
 		destroy(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoPimInterfaceDown trap received 
 			pimInterfaceStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -473,7 +473,7 @@ exists, enable this notification with utmost care.&lt;/p>&lt;table>
 		modifiedOldMapping(3)
 		modifiedNewMapping(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoPimRPMappingChange trap received - New Mapping
 			pimRPSetHoldTime=%parm[#1]% 
 			cpimRPMappingChangeType=%parm[#2]%&lt;/p>
@@ -535,7 +535,7 @@ exists, enable this notification with utmost care.&lt;/p>&lt;table>
 		modifiedOldMapping(3)
 		modifiedNewMapping(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoPimRPMappingChange trap received - Mapping Deleted
 			pimRPSetHoldTime=%parm[#1]% 
 			cpimRPMappingChangeType=%parm[#2]%&lt;/p>
@@ -597,7 +597,7 @@ exists, enable this notification with utmost care.&lt;/p>&lt;table>
 		modifiedOldMapping(3)
 		modifiedNewMapping(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoPimRPMappingChange trap received - Modified Old Mapping
 			pimRPSetHoldTime=%parm[#1]% 
 			cpimRPMappingChangeType=%parm[#2]%&lt;/p>
@@ -659,7 +659,7 @@ exists, enable this notification with utmost care.&lt;/p>&lt;table>
 		modifiedOldMapping(3)
 		modifiedNewMapping(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoPimRPMappingChange trap received - Modified New Mapping
 			pimRPSetHoldTime=%parm[#1]% 
 			cpimRPMappingChangeType=%parm[#2]%&lt;/p>
@@ -717,7 +717,7 @@ exists, enable this notification with utmost care.&lt;/p>&lt;table>
 		modifiedOldMapping(3)
 		modifiedNewMapping(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoPimRPMappingChange trap received 
 			pimRPSetHoldTime=%parm[#1]% 
 			cpimRPMappingChangeType=%parm[#2]%&lt;/p>
@@ -800,7 +800,7 @@ packet.&lt;/p>&lt;table>
 
 	cpimInvalidRegisterMsgsRcvd&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoPimInvalidRegister trap received 
 			cpimLastErrorOriginType=%parm[#1]% 
 			cpimLastErrorOrigin=%parm[#2]% 
@@ -888,7 +888,7 @@ packet.&lt;/p>&lt;table>
 
 	cpimInvalidJoinPruneMsgsRcvd&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoPimInvalidJoinPrune trap received 
 			cpimLastErrorOriginType=%parm[#1]% 
 			cpimLastErrorOrigin=%parm[#2]% 

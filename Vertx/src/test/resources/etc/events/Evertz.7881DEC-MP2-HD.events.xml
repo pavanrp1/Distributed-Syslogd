@@ -18,7 +18,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultvideoPresentFalse</event-label>
       <descr>&lt;p>Video Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoPresentFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoPresentFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -43,7 +43,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultvideoPresentTrue</event-label>
       <descr>&lt;p>Video Not Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoPresentTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoPresentTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Minor</severity>
@@ -68,7 +68,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultpictureBlackFalse</event-label>
       <descr>&lt;p>Video Not Black&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultpictureBlackFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultpictureBlackFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -93,7 +93,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultpictureBlackTrue</event-label>
       <descr>&lt;p>Video Black&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultpictureBlackTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultpictureBlackTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -118,7 +118,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultpictureFreezeFalse</event-label>
       <descr>&lt;p>Video Not Frozen&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultpictureFreezeFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultpictureFreezeFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -143,7 +143,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultpictureFreezeTrue</event-label>
       <descr>&lt;p>Video Frozen&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultpictureFreezeTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultpictureFreezeTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Minor</severity>
@@ -168,7 +168,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio1ServiceMissingFalse</event-label>
       <descr>&lt;p>Audio1 Service Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1ServiceMissingFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1ServiceMissingFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -193,7 +193,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio1ServiceMissingTrue</event-label>
       <descr>&lt;p>Audio1 Service Missing&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1ServiceMissingTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1ServiceMissingTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -218,7 +218,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio2ServiceMissingFalse</event-label>
       <descr>&lt;p>Audio2 Service Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2ServiceMissingFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2ServiceMissingFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -243,7 +243,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio2ServiceMissingTrue</event-label>
       <descr>&lt;p>Audio2 Service Missing&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2ServiceMissingTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2ServiceMissingTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -268,7 +268,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio1PIDMissingFalse</event-label>
       <descr>&lt;p>Audio1 PID Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1PIDMissingFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1PIDMissingFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -293,7 +293,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio1PIDMissingTrue</event-label>
       <descr>&lt;p>Audio1 PID Missing&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1PIDMissingTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1PIDMissingTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -318,7 +318,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio2PIDMissingFalse</event-label>
       <descr>&lt;p>Audio2 PID Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2PIDMissingFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2PIDMissingFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -343,7 +343,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio2PIDMissingTrue</event-label>
       <descr>&lt;p>Audio2 PID Missing&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2PIDMissingTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2PIDMissingTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -368,7 +368,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultscte35DataPresentFalse</event-label>
       <descr>&lt;p>SCTE35 Data Missing&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -393,7 +393,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultscte35DataPresentTrue</event-label>
       <descr>&lt;p>SCTE35 Data Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -418,7 +418,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio3ServiceMissingFalse</event-label>
       <descr>&lt;p>Audio3 Service Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3ServiceMissingFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3ServiceMissingFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -443,7 +443,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio3ServiceMissingTrue</event-label>
       <descr>&lt;p>Audio3 Service Missing&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3ServiceMissingTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3ServiceMissingTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -468,7 +468,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio4ServiceMissingFalse</event-label>
       <descr>&lt;p>Audio4 Service Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4ServiceMissingFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4ServiceMissingFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -493,7 +493,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio4ServiceMissingTrue</event-label>
       <descr>&lt;p>Audio4 Service Missing&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4ServiceMissingTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4ServiceMissingTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -518,7 +518,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio3PIDMissingFalse</event-label>
       <descr>&lt;p>Audio3 PID Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3PIDMissingFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3PIDMissingFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -543,7 +543,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio3PIDMissingTrue</event-label>
       <descr>&lt;p>Audio3 PID Missing&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3PIDMissingTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3PIDMissingTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -568,7 +568,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio4PIDMissingFalse</event-label>
       <descr>&lt;p>Audio4 PID Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4PIDMissingFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4PIDMissingFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -593,7 +593,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio4PIDMissingTrue</event-label>
       <descr>&lt;p>Audio4 PID Missing&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4PIDMissingTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4PIDMissingTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -618,7 +618,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faulttsInputMissingInputASI1False</event-label>
       <descr>&lt;p>TS Input Present on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsInputMissingInputASI1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsInputMissingInputASI1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -643,7 +643,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faulttsInputMissingInputASI1True</event-label>
       <descr>&lt;p>TS Input Missing on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsInputMissingInputASI1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsInputMissingInputASI1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -668,7 +668,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faulttsInputMissingInputIP1False</event-label>
       <descr>&lt;p>TS Input Present on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsInputMissingInputIP1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsInputMissingInputIP1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -693,7 +693,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faulttsInputMissingInputIP1True</event-label>
       <descr>&lt;p>TS Input Missing on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsInputMissingInputIP1True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsInputMissingInputIP1True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -718,7 +718,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faulttsSyncByteMissingInputASI1False</event-label>
       <descr>&lt;p>TS Sync Byte Present on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsSyncByteMissingInputASI1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsSyncByteMissingInputASI1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -743,7 +743,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faulttsSyncByteMissingInputASI1True</event-label>
       <descr>&lt;p>TS Sync Byte Missing on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsSyncByteMissingInputASI1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsSyncByteMissingInputASI1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -768,7 +768,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faulttsSyncByteMissingInputIP1False</event-label>
       <descr>&lt;p>TS Sync Byte Present on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsSyncByteMissingInputIP1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsSyncByteMissingInputIP1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -793,7 +793,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faulttsSyncByteMissingInputIP1True</event-label>
       <descr>&lt;p>TS Sync Byte Missing on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsSyncByteMissingInputIP1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faulttsSyncByteMissingInputIP1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -818,7 +818,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioGroup1False</event-label>
       <descr>&lt;p>Audio Group1 Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioGroup1False trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioGroup1False trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -843,7 +843,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioGroup1True</event-label>
       <descr>&lt;p>Audio Group1 Not Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioGroup1True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioGroup1True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -868,7 +868,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioGroup2False</event-label>
       <descr>&lt;p>Audio Group2 Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioGroup2False trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioGroup2False trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -893,7 +893,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioGroup2True</event-label>
       <descr>&lt;p>Audio Group2 Not Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioGroup2True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioGroup2True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -918,7 +918,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh1OverFalse</event-label>
       <descr>&lt;p>Channel 1 Audio Level Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh1OverFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh1OverFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -943,7 +943,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh1OverTrue</event-label>
       <descr>&lt;p>Channel 1 Audio Level Over&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh1OverTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh1OverTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -968,7 +968,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh2OverFalse</event-label>
       <descr>&lt;p>Channel 2 Audio Level Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh2OverFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh2OverFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -993,7 +993,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh2OverTrue</event-label>
       <descr>&lt;p>Channel 2 Audio Level Over&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh2OverTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh2OverTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1018,7 +1018,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh3OverFalse</event-label>
       <descr>&lt;p>Channel 3 Audio Level Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh3OverFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh3OverFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1043,7 +1043,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh3OverTrue</event-label>
       <descr>&lt;p>Channel 3 Audio Level Over&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh3OverTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh3OverTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1068,7 +1068,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh4OverFalse</event-label>
       <descr>&lt;p>Channel 4 Audio Level Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh4OverFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh4OverFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1093,7 +1093,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh4OverTrue</event-label>
       <descr>&lt;p>Channel 4 Audio Level Over&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh4OverTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh4OverTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1118,7 +1118,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh5OverFalse</event-label>
       <descr>&lt;p>Channel 5 Audio Level Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh5OverFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh5OverFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1143,7 +1143,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh5OverTrue</event-label>
       <descr>&lt;p>Channel 5 Audio Level Over&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh5OverTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh5OverTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1168,7 +1168,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh6OverFalse</event-label>
       <descr>&lt;p>Channel 6 Audio Level Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh6OverFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh6OverFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1193,7 +1193,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh6OverTrue</event-label>
       <descr>&lt;p>Channel 6 Audio Level Over&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh6OverTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh6OverTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1218,7 +1218,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh7OverFalse</event-label>
       <descr>&lt;p>Channel 7 Audio Level Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh7OverFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh7OverFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1243,7 +1243,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh7OverTrue</event-label>
       <descr>&lt;p>Channel 7 Audio Level Over&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh7OverTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh7OverTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1268,7 +1268,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh8OverFalse</event-label>
       <descr>&lt;p>Channel 8 Audio Level Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh8OverFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh8OverFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1293,7 +1293,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh8OverTrue</event-label>
       <descr>&lt;p>Channel 8 Audio Level Over&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh8OverTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh8OverTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1318,7 +1318,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh1SilenceFalse</event-label>
       <descr>&lt;p>Channel 1 Audio Not Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh1SilenceFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh1SilenceFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1343,7 +1343,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh1SilenceTrue</event-label>
       <descr>&lt;p>Channel 1 Audio Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh1SilenceTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh1SilenceTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1368,7 +1368,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh2SilenceFalse</event-label>
       <descr>&lt;p>Channel 2 Audio Not Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh2SilenceFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh2SilenceFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1393,7 +1393,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh2SilenceTrue</event-label>
       <descr>&lt;p>Channel 2 Audio Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh2SilenceTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh2SilenceTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1418,7 +1418,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh3SilenceFalse</event-label>
       <descr>&lt;p>Channel 3 Audio Not Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh3SilenceFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh3SilenceFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1443,7 +1443,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh3SilenceTrue</event-label>
       <descr>&lt;p>Channel 3 Audio Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh3SilenceTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh3SilenceTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1468,7 +1468,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh4SilenceFalse</event-label>
       <descr>&lt;p>Channel 4 Audio Not Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh4SilenceFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh4SilenceFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1493,7 +1493,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh4SilenceTrue</event-label>
       <descr>&lt;p>Channel 4 Audio Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh4SilenceTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh4SilenceTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1518,7 +1518,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh5SilenceFalse</event-label>
       <descr>&lt;p>Channel 5 Audio Not Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh5SilenceFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh5SilenceFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1543,7 +1543,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh5SilenceTrue</event-label>
       <descr>&lt;p>Channel 5 Audio Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh5SilenceTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh5SilenceTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1568,7 +1568,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh6SilenceFalse</event-label>
       <descr>&lt;p>Channel 6 Audio Not Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh6SilenceFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh6SilenceFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1593,7 +1593,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh6SilenceTrue</event-label>
       <descr>&lt;p>Channel 6 Audio Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh6SilenceTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh6SilenceTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1618,7 +1618,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh7SilenceFalse</event-label>
       <descr>&lt;p>Channel 7 Audio Not Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh7SilenceFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh7SilenceFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1643,7 +1643,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh7SilenceTrue</event-label>
       <descr>&lt;p>Channel 7 Audio Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh7SilenceTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh7SilenceTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1668,7 +1668,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh8SilenceFalse</event-label>
       <descr>&lt;p>Channel 8 Audio Not Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh8SilenceFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh8SilenceFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1693,7 +1693,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudioCh8SilenceTrue</event-label>
       <descr>&lt;p>Channel 8 Audio Silence&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh8SilenceTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudioCh8SilenceTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1718,7 +1718,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp1PhaseReversal12False</event-label>
       <descr>&lt;p>Sel Grp 1 Audio 1 and 2 phase Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1PhaseReversal12False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1PhaseReversal12False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1743,7 +1743,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp1PhaseReversal12True</event-label>
       <descr>&lt;p>Sel Grp 1 Audio 1 and 2 phase Reversed&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1PhaseReversal12True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1PhaseReversal12True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1768,7 +1768,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp1PhaseReversal34False</event-label>
       <descr>&lt;p>Sel Grp 1 Audio 3 and 4 phase Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1PhaseReversal34False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1PhaseReversal34False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1793,7 +1793,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp1PhaseReversal34True</event-label>
       <descr>&lt;p>Sel Grp 1 Audio 3 and 4 phase Reversed&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1PhaseReversal34True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1PhaseReversal34True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1818,7 +1818,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp2PhaseReversal12False</event-label>
       <descr>&lt;p>Sel Grp 2 Audio 1 and 2 phase Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2PhaseReversal12False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2PhaseReversal12False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1843,7 +1843,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp2PhaseReversal12True</event-label>
       <descr>&lt;p>Sel Grp 2 Audio 1 and 2 phase Reversed&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2PhaseReversal12True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2PhaseReversal12True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1868,7 +1868,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp2PhaseReversal34False</event-label>
       <descr>&lt;p>Sel Grp 2 Audio 3 and 4 phase Ok&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2PhaseReversal34False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2PhaseReversal34False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1893,7 +1893,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp2PhaseReversal34True</event-label>
       <descr>&lt;p>Sel Grp 2 Audio 3 and 4 phase Reversed&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2PhaseReversal34True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2PhaseReversal34True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1918,7 +1918,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp1AudioMono12False</event-label>
       <descr>&lt;p>Sel Grp 1 Audio 1 and 2 Stereo&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1AudioMono12False trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1AudioMono12False trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1943,7 +1943,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp1AudioMono12True</event-label>
       <descr>&lt;p>Sel Grp 1 Audio 1 and 2 Mono&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1AudioMono12True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1AudioMono12True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -1968,7 +1968,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp1AudioMono34False</event-label>
       <descr>&lt;p>Sel Grp 1 Audio 3 and 4 Stereo&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1AudioMono34False trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1AudioMono34False trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -1993,7 +1993,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp1AudioMono34True</event-label>
       <descr>&lt;p>Sel Grp 1 Audio 3 and 4 Mono&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1AudioMono34True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp1AudioMono34True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2018,7 +2018,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp2AudioMono12False</event-label>
       <descr>&lt;p>Sel Grp 2 Audio 1 and 2 Stereo&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2AudioMono12False trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2AudioMono12False trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2043,7 +2043,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp2AudioMono12True</event-label>
       <descr>&lt;p>Sel Grp 2 Audio 1 and 2 Mono&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2AudioMono12True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2AudioMono12True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2068,7 +2068,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp2AudioMono34False</event-label>
       <descr>&lt;p>Sel Grp 2 Audio 3 and 4 Stereo&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2AudioMono34False trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2AudioMono34False trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2093,7 +2093,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultselGrp2AudioMono34True</event-label>
       <descr>&lt;p>Sel Grp 2 Audio 3 and 4 Mono&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2AudioMono34True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultselGrp2AudioMono34True trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2118,7 +2118,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultgenlockPresentFalse</event-label>
       <descr>&lt;p>Genlock Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultgenlockPresentFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultgenlockPresentFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2143,7 +2143,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultgenlockPresentTrue</event-label>
       <descr>&lt;p>Genlock Not Present&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultgenlockPresentTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultgenlockPresentTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2168,7 +2168,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultgenlockChangeFalse</event-label>
       <descr>&lt;p>Genlock Standard Not Changed&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultgenlockChangeFalse trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultgenlockChangeFalse trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Normal</severity>
@@ -2192,7 +2192,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultgenlockChangeTrue</event-label>
       <descr>&lt;p>Genlock Standard Changed&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultgenlockChangeTrue trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultgenlockChangeTrue trap received
             decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Normal</severity>
@@ -2216,7 +2216,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultinputGenlockStdMismatchFalse</event-label>
       <descr>&lt;p>Genlock Standard Match&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputGenlockStdMismatchFalse trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputGenlockStdMismatchFalse trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2241,7 +2241,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultinputGenlockStdMismatchTrue</event-label>
       <descr>&lt;p>Genlock Standard Not Match&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b> decmp2hdInstance&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputGenlockStdMismatchTrue trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputGenlockStdMismatchTrue trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2267,7 +2267,7 @@
       <descr>&lt;p>Input Bit Error Not Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> inputBitErrorID&lt;/b>&lt;/td>&lt;td> %parm[#2]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputBitErrorInputASI1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputBitErrorInputASI1False trap
             received decmp2hdInstance=%parm[#1]% inputBitErrorID=%parm[#2]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2293,7 +2293,7 @@
       <descr>&lt;p>Input Bit Error Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> inputBitErrorID&lt;/b>&lt;/td>&lt;td> %parm[#2]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputBitErrorInputASI1True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputBitErrorInputASI1True trap received
             decmp2hdInstance=%parm[#1]% inputBitErrorID=%parm[#2]%
         </logmsg>
       <severity>Warning</severity>
@@ -2319,7 +2319,7 @@
       <descr>&lt;p>Input Bit Error Not Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> inputBitErrorID&lt;/b>&lt;/td>&lt;td> %parm[#2]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputBitErrorInputIP1False trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputBitErrorInputIP1False trap received
             decmp2hdInstance=%parm[#1]% inputBitErrorID=%parm[#2]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2345,7 +2345,7 @@
       <descr>&lt;p>Input Bit Error Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>
             &lt;tr>&lt;td>&lt;b> inputBitErrorID&lt;/b>&lt;/td>&lt;td> %parm[#2]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputBitErrorInputIP1True trap received
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultinputBitErrorInputIP1True trap received
             decmp2hdInstance=%parm[#1]% inputBitErrorID=%parm[#2]%
         </logmsg>
       <severity>Warning</severity>
@@ -2370,7 +2370,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultvideoTimestampErrorInputASI1False</event-label>
       <descr>&lt;p>Video Timestamp Error Not Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoTimestampErrorInputASI1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoTimestampErrorInputASI1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2395,7 +2395,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultvideoTimestampErrorInputASI1True</event-label>
       <descr>&lt;p>Video Timestamp Error Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoTimestampErrorInputASI1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoTimestampErrorInputASI1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2420,7 +2420,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultvideoTimestampErrorInputIP1False</event-label>
       <descr>&lt;p>Video Timestamp Error Not Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoTimestampErrorInputIP1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoTimestampErrorInputIP1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2445,7 +2445,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultvideoTimestampErrorInputIP1True</event-label>
       <descr>&lt;p>Video Timestamp Error Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoTimestampErrorInputIP1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultvideoTimestampErrorInputIP1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2470,7 +2470,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio1TimestampErrorInputASI1False</event-label>
       <descr>&lt;p>Audio 1 Timestamp Error Not Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1TimestampErrorInputASI1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1TimestampErrorInputASI1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2495,7 +2495,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio1TimestampErrorInputASI1True</event-label>
       <descr>&lt;p>Audio 1 Timestamp Error Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1TimestampErrorInputASI1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1TimestampErrorInputASI1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2520,7 +2520,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio1TimestampErrorInputIP1False</event-label>
       <descr>&lt;p>Audio 1 Timestamp Error Not Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1TimestampErrorInputIP1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1TimestampErrorInputIP1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2545,7 +2545,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio1TimestampErrorInputIP1True</event-label>
       <descr>&lt;p>Audio 1 Timestamp Error Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1TimestampErrorInputIP1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio1TimestampErrorInputIP1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2570,7 +2570,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio2TimestampErrorInputASI1False</event-label>
       <descr>&lt;p>Audio 2 Timestamp Error Not Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2TimestampErrorInputASI1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2TimestampErrorInputASI1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2595,7 +2595,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio2TimestampErrorInputASI1True</event-label>
       <descr>&lt;p>Audio 2 Timestamp Error Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2TimestampErrorInputASI1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2TimestampErrorInputASI1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2620,7 +2620,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio2TimestampErrorInputIP1False</event-label>
       <descr>&lt;p>Audio 2 Timestamp Error Not Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2TimestampErrorInputIP1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2TimestampErrorInputIP1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2645,7 +2645,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio2TimestampErrorInputIP1True</event-label>
       <descr>&lt;p>Audio 2 Timestamp Error Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2TimestampErrorInputIP1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio2TimestampErrorInputIP1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2670,7 +2670,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio3TimestampErrorInputASI1False</event-label>
       <descr>&lt;p>Audio 3 Timestamp Error Not Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3TimestampErrorInputASI1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3TimestampErrorInputASI1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2695,7 +2695,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio3TimestampErrorInputASI1True</event-label>
       <descr>&lt;p>Audio 3 Timestamp Error Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3TimestampErrorInputASI1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3TimestampErrorInputASI1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2720,7 +2720,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio3TimestampErrorInputIP1False</event-label>
       <descr>&lt;p>Audio 3 Timestamp Error Not Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3TimestampErrorInputIP1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3TimestampErrorInputIP1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2745,7 +2745,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio3TimestampErrorInputIP1True</event-label>
       <descr>&lt;p>Audio 3 Timestamp Error Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3TimestampErrorInputIP1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio3TimestampErrorInputIP1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2770,7 +2770,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio4TimestampErrorInputASI1False</event-label>
       <descr>&lt;p>Audio 4 Timestamp Error Not Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4TimestampErrorInputASI1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4TimestampErrorInputASI1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2795,7 +2795,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio4TimestampErrorInputASI1True</event-label>
       <descr>&lt;p>Audio 4 Timestamp Error Detected on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4TimestampErrorInputASI1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4TimestampErrorInputASI1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2820,7 +2820,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio4TimestampErrorInputIP1False</event-label>
       <descr>&lt;p>Audio 4 Timestamp Error Not Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4TimestampErrorInputIP1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4TimestampErrorInputIP1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2845,7 +2845,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultaudio4TimestampErrorInputIP1True</event-label>
       <descr>&lt;p>Audio 4 Timestamp Error Detected on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4TimestampErrorInputIP1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultaudio4TimestampErrorInputIP1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2870,7 +2870,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultscte35DataPresentInputASI1False</event-label>
       <descr>&lt;p>SCTE35 Data Missing on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentInputASI1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentInputASI1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2895,7 +2895,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultscte35DataPresentInputASI1True</event-label>
       <descr>&lt;p>SCTE35 Data Present on InputASI1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentInputASI1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentInputASI1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>
@@ -2920,7 +2920,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultscte35DataPresentInputIP1False</event-label>
       <descr>&lt;p>SCTE35 Data Missing on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentInputIP1False trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentInputIP1False trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Cleared</severity>
@@ -2945,7 +2945,7 @@
       <event-label>DECMP2HD7881-TRAPS defined trap event: faultscte35DataPresentInputIP1True</event-label>
       <descr>&lt;p>SCTE35 Data Present on InputIP1&lt;/p>&lt;table> &lt;tr>&lt;td>&lt;b>
             decmp2hdInstance&lt;/b>&lt;/td>&lt;td> %parm[#1]%&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentInputIP1True trap
+      <logmsg dest="logndisplay">%nodelabel%: Evertz DECMP2HD7881 Event: faultscte35DataPresentInputIP1True trap
             received decmp2hdInstance=%parm[#1]%
         </logmsg>
       <severity>Warning</severity>

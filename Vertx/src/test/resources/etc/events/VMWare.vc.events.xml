@@ -47,7 +47,7 @@ for details.&lt;/p>&lt;table>
 
 	vmwVpxdObjValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vpxdAlarm trap received 
 			vmwVpxdTrapType=%parm[#1]% 
 			vmwVpxdHostName=%parm[#2]% 
@@ -79,7 +79,7 @@ for details.&lt;/p>&lt;table>
 on requesting a test notification explicitly, and can also be
 configured to be sent periodically at a specified time interval via
 vCenter Server configuration by the vCenter Server SNMP agent.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vpxdDiagnostic trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -133,7 +133,7 @@ for details.&lt;/p>&lt;table>
 
 	vmwVpxdTargetObj&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vpxdAlarmInfo trap received 
 			vmwVpxdTargetObjType=%parm[#1]% 
 			vmwVpxdOldStatus=%parm[#2]% 

@@ -26,7 +26,7 @@ or a powered off state.&lt;/p>&lt;table>
 
 	vmConfigFile&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vmPoweredOn trap received 
 			vmID=%parm[#1]% 
 			vmConfigFile=%parm[#2]%&lt;/p>
@@ -59,7 +59,7 @@ or a powered off state.&lt;/p>&lt;table>
 
 	vmConfigFile&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vmPoweredOff trap received 
 			vmID=%parm[#1]% 
 			vmConfigFile=%parm[#2]%&lt;/p>
@@ -92,7 +92,7 @@ or a powered off state.&lt;/p>&lt;table>
 
 	vmConfigFile&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vmHBLost trap received 
 			vmID=%parm[#1]% 
 			vmConfigFile=%parm[#2]%&lt;/p>
@@ -125,7 +125,7 @@ or a powered off state.&lt;/p>&lt;table>
 
 	vmConfigFile&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vmHBDetected trap received 
 			vmID=%parm[#1]% 
 			vmConfigFile=%parm[#2]%&lt;/p>
@@ -158,7 +158,7 @@ or a powered off state.&lt;/p>&lt;table>
 
 	vmConfigFile&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vmSuspended trap received 
 			vmID=%parm[#1]% 
 			vmConfigFile=%parm[#2]%&lt;/p>
@@ -208,7 +208,7 @@ or a powered off state.&lt;/p>&lt;table>
 
 	vpxdObjValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vpxdTrap trap received 
 			vpxdTrapType=%parm[#1]% 
 			vpxdHostName=%parm[#2]% 
@@ -262,7 +262,7 @@ or a powered off state.&lt;/p>&lt;table>
 
 	vpxdObjValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vpxdTrap trap received 
 			vpxdTrapType=%parm[#1]% 
 			vpxdHostName=%parm[#2]% 

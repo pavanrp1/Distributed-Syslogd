@@ -38,7 +38,7 @@
 
             sysCompCamPartId&lt;/b>&lt;/td>&lt;td>
             %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             camUsageThresholdExceed trap received
             sysCompAlarmLevel=%parm[#1]%
             sysCompAlarmVarString=%parm[#2]%
@@ -86,7 +86,7 @@
 
             sysCompCamPartId&lt;/b>&lt;/td>&lt;td>
             %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             camIsFull trap received
             sysCompAlarmLevel=%parm[#1]%
             sysCompAlarmVarString=%parm[#2]%

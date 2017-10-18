@@ -46,7 +46,7 @@ reading comes back in normal range.&lt;/p>&lt;table>
 
 	voltReading&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapVoltageGood trap received 
 			voltTrapSystem=%parm[#1]% 
 			voltTrapGroup=%parm[#2]% 
@@ -103,7 +103,7 @@ reading goes out of warning range.&lt;/p>&lt;table>
 
 	voltReading&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapVoltageWarning trap received 
 			voltTrapSystem=%parm[#1]% 
 			voltTrapGroup=%parm[#2]% 
@@ -160,7 +160,7 @@ reading goes out of critical range.&lt;/p>&lt;table>
 
 	voltReading&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapVoltageCritical trap received 
 			voltTrapSystem=%parm[#1]% 
 			voltTrapGroup=%parm[#2]% 
@@ -217,7 +217,7 @@ reading	comes back in normal range.&lt;/p>&lt;table>
 
 	tempReading&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapTemperatureGood trap received 
 			tempTrapSystem=%parm[#1]% 
 			tempTrapGroup=%parm[#2]% 
@@ -274,7 +274,7 @@ reading goes out of warning range.&lt;/p>&lt;table>
 
 	tempReading&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapTemperatureWarning trap received 
 			tempTrapSystem=%parm[#1]% 
 			tempTrapGroup=%parm[#2]% 
@@ -331,7 +331,7 @@ reading goes out of warning range.&lt;/p>&lt;table>
 
 	tempReading&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapTemperatureCritical trap received 
 			tempTrapSystem=%parm[#1]% 
 			tempTrapGroup=%parm[#2]% 
@@ -389,7 +389,7 @@ threshold.&lt;/p>&lt;table>
 
 	batteryChargePercent&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapBatteryGood trap received 
 			batteryTrapSystem=%parm[#1]% 
 			batteryTrapGroup=%parm[#2]% 
@@ -446,7 +446,7 @@ is under the specified low threshold.&lt;/p>&lt;table>
 
 	batteryChargePercent&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapBatteryLow trap received 
 			batteryTrapSystem=%parm[#1]% 
 			batteryTrapGroup=%parm[#2]% 

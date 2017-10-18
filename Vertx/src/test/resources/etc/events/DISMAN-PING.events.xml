@@ -88,7 +88,7 @@ before this notification can be generated.&lt;/p>&lt;table>
 
 	pingResultsLastGoodProbe&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pingProbeFailed trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -193,7 +193,7 @@ consider the test as failed.&lt;/p>&lt;table>
 
 	pingResultsLastGoodProbe&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pingTestFailed trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -295,7 +295,7 @@ testCompletion(4).&lt;/p>&lt;table>
 
 	pingResultsLastGoodProbe&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pingTestCompleted trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 

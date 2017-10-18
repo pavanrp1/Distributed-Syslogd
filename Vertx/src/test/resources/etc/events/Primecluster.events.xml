@@ -29,7 +29,7 @@
 
 	cvNodeState&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cvNodeStateChanged trap received 
 			cvNodeNumber=%parm[#1]% 
 			cvNodeName=%parm[#2]% 
@@ -67,7 +67,7 @@
 
 	cvServiceState&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cvServiceStateChanged trap received 
 			cvServiceNumber=%parm[#1]% 
 			cvServiceName=%parm[#2]% 
@@ -105,7 +105,7 @@
 
 	cvProductState&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cvProductStateChanged trap received 
 			cvProductNumber=%parm[#1]% 
 			cvProductName=%parm[#2]% 

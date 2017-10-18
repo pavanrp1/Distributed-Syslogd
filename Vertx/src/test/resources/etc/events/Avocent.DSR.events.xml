@@ -42,7 +42,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrRebootStartedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -118,7 +118,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSwitchChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrVideoSessionStartedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -205,7 +205,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectActiveSessions&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrVideoSessionStoppedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -305,7 +305,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectActiveSessions&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrVideoSessionTerminatedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectTargetUserName=%parm[#2]% 
@@ -389,7 +389,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSwitchChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrLocalPortViewingStartedTrap trap received 
 			avctDsrTrapObjectServerName=%parm[#1]% 
 			avctDsrTrapObjectUserName=%parm[#2]% 
@@ -478,7 +478,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectActiveSessions&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrLocalPortViewingStoppedTrap trap received 
 			avctDsrTrapObjectServerName=%parm[#1]% 
 			avctDsrTrapObjectUserName=%parm[#2]% 
@@ -577,7 +577,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectActiveSessions&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrLocalPortViewingTerminatedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -652,7 +652,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSwitchChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrIqAdaptorAddedTrap trap received 
 			avctDsrTrapObjectIqAdaptorId=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -724,7 +724,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSwitchChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrIqAdaptorRemovedTrap trap received 
 			avctDsrTrapObjectIqAdaptorId=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -820,7 +820,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSwitchChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrScreenResolutionChangedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -879,7 +879,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectAggregatedServerStatusChanged&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrAggregatedServerStatusChangedTrap trap received 
 			avctDsrTrapObjectAggregatedServerStatusChanged=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -951,7 +951,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectImageCurrentVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrImageFileUpgradeStarted trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectTypeOfImage=%parm[#2]% 
@@ -1034,7 +1034,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectImageCurrentVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrImageFileUpgradeResultTrap trap received 
 			avctDsrTrapObjectImageFileUpgradeResult=%parm[#1]% 
 			avctDsrTrapObjectUserName=%parm[#2]% 
@@ -1139,7 +1139,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSwitchChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrIqAdaptorImageUpgradeStarted trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectTypeOfImage=%parm[#2]% 
@@ -1256,7 +1256,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSwitchChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrIqAdaptorImageUpgradeResultTrap trap received 
 			avctDsrTrapObjectIqAdaptorImageUpgradeResult=%parm[#1]% 
 			avctDsrTrapObjectUserName=%parm[#2]% 
@@ -1334,7 +1334,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSwitchChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrIqAdaptorRestartedTrap trap received 
 			avctDsrTrapObjectServerName=%parm[#1]% 
 			avctDsrTrapObjectInputPort=%parm[#2]% 
@@ -1385,7 +1385,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrUserAuthFailureTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1439,7 +1439,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectTargetUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrUserAddedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectTargetUserName=%parm[#2]%&lt;/p>
@@ -1494,7 +1494,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectTargetUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrUserDeletedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectTargetUserName=%parm[#2]%&lt;/p>
@@ -1549,7 +1549,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectTargetUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrUserModifiedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectTargetUserName=%parm[#2]%&lt;/p>
@@ -1597,7 +1597,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrUserLoginTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1644,7 +1644,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrUserLogoutTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1699,7 +1699,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectFileName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrConfigurationFileLoadedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectFileName=%parm[#2]%&lt;/p>
@@ -1755,7 +1755,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectFileName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrUserDatabaseFileLoadedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectFileName=%parm[#2]%&lt;/p>
@@ -1801,7 +1801,7 @@ Supported by the following appliance types:
    DSR2035
    DSR8035
    DSR1031&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrFactoryDefaultsSetTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1861,7 +1861,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectIqAdaptorId&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrServerNameChangedTrap trap received 
 			avctDsrTrapObjectOldServerName=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -1924,7 +1924,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectIqAdaptorId&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrCascadeSwitchNameChangedTrap trap received 
 			avctDsrTrapObjectOldCascadeSwitchName=%parm[#1]% 
 			avctDsrTrapObjectCascadeSwitchName=%parm[#2]% 
@@ -1980,7 +1980,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectIqAdaptorId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrCascadeSwitchAddedTrap trap received 
 			avctDsrTrapObjectCascadeSwitchName=%parm[#1]% 
 			avctDsrTrapObjectIqAdaptorId=%parm[#2]%&lt;/p>
@@ -2035,7 +2035,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectIqAdaptorId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrCascadeSwitchRemovedTrap trap received 
 			avctDsrTrapObjectCascadeSwitchName=%parm[#1]% 
 			avctDsrTrapObjectIqAdaptorId=%parm[#2]%&lt;/p>
@@ -2101,7 +2101,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcDeviceOnlineTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -2168,7 +2168,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcDeviceOfflineTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -2241,7 +2241,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcLoginErrTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -2323,7 +2323,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcSocketOnCommandTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#2]% 
@@ -2407,7 +2407,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcSocketOffCommandTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#2]% 
@@ -2491,7 +2491,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcSocketRebootCommandTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#2]% 
@@ -2575,7 +2575,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcSocketOnSenseFailTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -2658,7 +2658,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcSocketOffSenseFailTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -2724,7 +2724,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcTotalLoadHighTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -2788,7 +2788,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcTotalLoadLowTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -2865,7 +2865,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcStatusSocketOnTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -2944,7 +2944,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcStatusSocketOffTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -3019,7 +3019,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSwitchChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrVirtualMediaSessionStartedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -3099,7 +3099,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectActiveSessions&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrVirtualMediaSessionStoppedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -3192,7 +3192,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectActiveSessions&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrVirtualMediaSessionTerminatedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectTargetUserName=%parm[#2]% 
@@ -3269,7 +3269,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSwitchChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrLocalPortVirtualMediaSessionStartedTrap trap received 
 			avctDsrTrapObjectServerName=%parm[#1]% 
 			avctDsrTrapObjectUserName=%parm[#2]% 
@@ -3351,7 +3351,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectActiveSessions&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrLocalPortVirtualMediaSessionStoppedTrap trap received 
 			avctDsrTrapObjectServerName=%parm[#1]% 
 			avctDsrTrapObjectUserName=%parm[#2]% 
@@ -3443,7 +3443,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectActiveSessions&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrLocalPortVirtualMediaSessionTerminatedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -3524,7 +3524,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcPortNameChangedTrap trap received 
 			avctDsrTrapObjectOldName=%parm[#1]% 
 			avctDsrTrapObjectItemName=%parm[#2]% 
@@ -3610,7 +3610,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcSocket&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcSocketNameChangedTrap trap received 
 			avctDsrTrapObjectOldName=%parm[#1]% 
 			avctDsrTrapObjectItemName=%parm[#2]% 
@@ -3684,7 +3684,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceInlet&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcInletTotalLoadHighTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -3756,7 +3756,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceInlet&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcInletTotalLoadLowTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -3834,7 +3834,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcDeviceNameChangedTrap trap received 
 			avctDsrTrapObjectOldName=%parm[#1]% 
 			avctDsrTrapObjectItemName=%parm[#2]% 
@@ -3920,7 +3920,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceInlet&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcInletNameChangedTrap trap received 
 			avctDsrTrapObjectOldName=%parm[#1]% 
 			avctDsrTrapObjectItemName=%parm[#2]% 
@@ -3994,7 +3994,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectOldInputPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrIqAdaptorMovedTrap trap received 
 			avctDsrTrapObjectIqAdaptorId=%parm[#1]% 
 			avctDsrTrapObjectServerName=%parm[#2]% 
@@ -4080,7 +4080,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcSocketLockCommandTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#2]% 
@@ -4168,7 +4168,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcSocketUnlockCommandTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#2]% 
@@ -4248,7 +4248,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcStatusSocketLockTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -4327,7 +4327,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctDsrSpcStatusSocketUnlockTrap trap received 
 			avctDsrTrapObjectSpcDeviceLocation=%parm[#1]% 
 			avctDsrTrapObjectSpcDevicePort=%parm[#2]% 
@@ -4422,7 +4422,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctSpcImageFileUpgradeStartedTrap trap received 
 			avctDsrTrapObjectUserName=%parm[#1]% 
 			avctDsrTrapObjectTypeOfImage=%parm[#2]% 
@@ -4527,7 +4527,7 @@ Supported by the following appliance types:
 
 	avctDsrTrapObjectSpcDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			avctSpcImageFileUpgradeResultTrap trap received 
 			avctDsrTrapObjectImageFileUpgradeResult=%parm[#1]% 
 			avctDsrTrapObjectUserName=%parm[#2]% 

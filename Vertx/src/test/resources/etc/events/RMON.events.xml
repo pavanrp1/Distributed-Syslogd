@@ -43,7 +43,7 @@ traps.&lt;/p>&lt;table>
 
 	alarmRisingThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			risingAlarm trap received 
 			alarmIndex=%parm[#1]% 
 			alarmVariable=%parm[#2]% 
@@ -98,7 +98,7 @@ traps.&lt;/p>&lt;table>
 
 	alarmFallingThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			fallingAlarm trap received 
 			alarmIndex=%parm[#1]% 
 			alarmVariable=%parm[#2]% 

@@ -23,7 +23,7 @@ specific trap.&lt;/p>&lt;table>
 
 	rancidFailureMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rancidTrapGenericFailure trap received 
 			rancidFailureMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -56,7 +56,7 @@ the configuration from a device.&lt;/p>&lt;table>
 
 	rancidDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rancidTrapDownloadSuccess trap received 
 			rancidGroupName=%parm[#1]% 
 			rancidDeviceName=%parm[#2]%&lt;/p>
@@ -90,7 +90,7 @@ configuration from a device.&lt;/p>&lt;table>
 
 	rancidDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rancidTrapDownloadFailure trap received 
 			rancidGroupName=%parm[#1]% 
 			rancidDeviceName=%parm[#2]%&lt;/p>
@@ -121,7 +121,7 @@ file.&lt;/p>&lt;table>
 
 	rancidGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rancidTrapGroupLocked trap received 
 			rancidGroupName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -154,7 +154,7 @@ device was added to a group's configuration file.&lt;/p>&lt;table>
 
 	rancidDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rancidTrapNodeAdded trap received 
 			rancidGroupName=%parm[#1]% 
 			rancidDeviceName=%parm[#2]%&lt;/p>
@@ -188,7 +188,7 @@ was deleted from a group's configuration file.&lt;/p>&lt;table>
 
 	rancidDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rancidTrapNodeDeleted trap received 
 			rancidGroupName=%parm[#1]% 
 			rancidDeviceName=%parm[#2]%&lt;/p>
@@ -222,7 +222,7 @@ configuration of a device has changed.&lt;/p>&lt;table>
 
 	rancidDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rancidTrapConfigurationChanged trap received 
 			rancidGroupName=%parm[#1]% 
 			rancidDeviceName=%parm[#2]%&lt;/p>
@@ -252,7 +252,7 @@ lockfile and starts processing the corresponding devices.&lt;/p>&lt;table>
 
 	rancidGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rancidTrapGroupProcessingStarted trap received 
 			rancidGroupName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -281,7 +281,7 @@ lockfile after having processed the corresponding devices.&lt;/p>&lt;table>
 
 	rancidGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rancidTrapGroupProcessingCompleted trap received 
 			rancidGroupName=%parm[#1]%&lt;/p>
 		</logmsg>

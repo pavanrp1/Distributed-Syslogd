@@ -33,7 +33,7 @@
 		l1Active(2)Layer 1 Up
 		l2Active(3)Layer 2 Up
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: demandNbrLayer2Change trap received 
 			ifIndex=%parm[#1]% 
 			Line Status Down
@@ -74,7 +74,7 @@
 		l1Active(2)Layer 1 Up
 		l2Active(3)Layer 2 Up
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			demandNbrLayer2Change trap received 
 			ifIndex=%parm[#1]% 
 			Layer 1 UP
@@ -115,7 +115,7 @@
 		l1Active(2)Layer 1 Up
 		l2Active(3)Layer 2 Up
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: demandNbrLayer2Change trap received 
 			ifIndex=%parm[#1]% 
 			Layer 2 UP-PRI Up

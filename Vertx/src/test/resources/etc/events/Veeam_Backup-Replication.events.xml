@@ -33,7 +33,7 @@
 
 	backupJobComment&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	onBackupJobCompleted trap received
 	backupJobId=%parm[#1]%
 	backupJobName=%parm[#2]%
@@ -79,7 +79,7 @@
 
 	vmBackupComment&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	onVmBackupCompleted trap received
 	backupJobName=%parm[#1]%
 	vmName=%parm[#2]%

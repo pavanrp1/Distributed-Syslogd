@@ -48,7 +48,7 @@ disassociation&lt;/p>&lt;table>
 
 	bsnStationMacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDot11StationDisassociate trap received 
 			bsnStationAPMacAddr=%parm[#1]% 
 			bsnStationAPIfSlotId=%parm[#2]% 
@@ -107,7 +107,7 @@ deauthentication.&lt;/p>&lt;table>
 
 	bsnStationMacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDot11StationDeauthenticate trap received 
 			bsnStationAPMacAddr=%parm[#1]% 
 			bsnStationAPIfSlotId=%parm[#2]% 
@@ -166,7 +166,7 @@ frame was sent and the reason for the authentication failure.&lt;/p>&lt;table>
 
 	bsnStationMacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDot11StationAuthenticateFail trap received 
 			bsnStationAPMacAddr=%parm[#1]% 
 			bsnStationAPIfSlotId=%parm[#2]% 
@@ -226,7 +226,7 @@ authentication failure.&lt;/p>&lt;table>
 
 	bsnStationMacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDot11StationAssociateFail trap received 
 			bsnStationAPMacAddr=%parm[#1]% 
 			bsnStationAPIfSlotId=%parm[#2]% 
@@ -259,7 +259,7 @@ sent&lt;/p>&lt;table>
 
 	bsnAPDot3MacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPUp trap received 
 			bsnAPDot3MacAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -289,7 +289,7 @@ sent&lt;/p>&lt;table>
 
 	bsnAPDot3MacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPDown trap received 
 			bsnAPDot3MacAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -325,7 +325,7 @@ Airespace AP and add to system.&lt;/p>&lt;table>
 
 	bsnAPPortNumberTrapVariable&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPAssociated trap received 
 			bsnAPMacAddrTrapVariable=%parm[#1]% 
 			bsnAPPortNumberTrapVariable=%parm[#2]%&lt;/p>
@@ -358,7 +358,7 @@ this Airespace Switch&lt;/p>&lt;table>
 
 	bsnAPMacAddrTrapVariable&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPDisassociated trap received 
 			bsnAPMacAddrTrapVariable=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -409,7 +409,7 @@ trap will be sent&lt;/p>&lt;table>
 		configRadio(6)
 		configNetwork(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPIfUp trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -473,7 +473,7 @@ this trap will be sent.&lt;/p>&lt;table>
 		configRadio(6)
 		configNetwork(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPIfDown trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -513,7 +513,7 @@ enable/disable using bsnRrmProfileTrapControlFlag &lt;/p>&lt;table>
 
 	bsnAPIfSlotId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPLoadProfileFailed trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]%&lt;/p>
@@ -550,7 +550,7 @@ enable/disable using bsnRrmProfileTrapControlFlag &lt;/p>&lt;table>
 
 	bsnAPIfSlotId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPNoiseProfileFailed trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]%&lt;/p>
@@ -587,7 +587,7 @@ enable/disable using bsnRrmProfileTrapControlFlag &lt;/p>&lt;table>
 
 	bsnAPIfSlotId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPInterferenceProfileFailed trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]%&lt;/p>
@@ -652,7 +652,7 @@ enable/disable using bsnRrmProfileTrapControlFlag &lt;/p>&lt;table>
 
 	bsnClientSnr&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPCoverageProfileFailed trap received 
 			bsnAPMacAddrTrapVariable=%parm[#1]% 
 			bsnAPNameTrapVariable=%parm[#2]% 
@@ -702,7 +702,7 @@ currentTxPower for this Airespace AP IF&lt;/p>&lt;table>
 
 	bsnAPIfPhyTxPowerLevel&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPCurrentTxPowerChanged trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -754,7 +754,7 @@ with the currentChannel for this Airespace AP IF&lt;/p>&lt;table>
 
 	bsnInterferenceEnergyAfterChannelUpdate&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPCurrentChannelChanged trap received 
 			bsnAPMacAddrTrapVariable=%parm[#1]% 
 			bsnAPSlotIdTrapVariable=%parm[#2]% 
@@ -789,7 +789,7 @@ MAC address of the new Group Leader.&lt;/p>&lt;table>
 
 	bsnRrmDot11aGroupLeaderMacAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRrmDot11aGroupingDone trap received 
 			bsnRrmDot11aGroupLeaderMacAddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -820,7 +820,7 @@ MAC address of the new Group Leader.&lt;/p>&lt;table>
 
 	bsnRrmDot11bGroupLeaderMacAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRrmDot11bGroupingDone trap received 
 			bsnRrmDot11bGroupLeaderMacAddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -846,7 +846,7 @@ MAC address of the new Group Leader.&lt;/p>&lt;table>
       <event-label>AIRESPACE-WIRELESS-MIB defined trap event: bsnConfigSaved</event-label>
       <descr>&lt;p>When configuration is save either from CLI or web interface
 This trap will be sent to inform NMS to do refresh&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnConfigSaved trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -874,7 +874,7 @@ be sent along with EssIndex&lt;/p>&lt;table>
 
 	bsnDot11EssIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDot11EssCreated trap received 
 			bsnDot11EssIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -904,7 +904,7 @@ sent along with EssIndex&lt;/p>&lt;table>
 
 	bsnDot11EssIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDot11EssDeleted trap received 
 			bsnDot11EssIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -931,7 +931,7 @@ sent along with EssIndex&lt;/p>&lt;table>
       <descr>&lt;p>This trap is to indicate that no RADIUS server(s) are responding
 to authentication requests sent by the RADIUS client within the
 MWAR device(Switch).&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRADIUSServerNotResponding trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -975,7 +975,7 @@ MacAddress of Mac Authorized User&lt;/p>&lt;table>
 
 	bsnAuthFailureUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAuthenticationFailure trap received 
 			bsnAuthFailureUserType=%parm[#1]% 
 			bsnAuthFailureUserName=%parm[#2]%&lt;/p>
@@ -1017,7 +1017,7 @@ MacAddress of Mac Authorized User&lt;/p>&lt;table>
 
 	bsnAuthFailureUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAuthenticationFailure trap received 
 			bsnAuthFailureUserType=%parm[#1]% 
 			bsnAuthFailureUserName=%parm[#2]%&lt;/p>
@@ -1059,7 +1059,7 @@ packet.&lt;/p>&lt;table>
 
 	bsnIpsecErrorCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnIpsecEspAuthFailureTrap trap received 
 			bsnRemoteIPv4Address=%parm[#1]% 
 			bsnIpsecErrorCount=%parm[#2]%&lt;/p>
@@ -1101,7 +1101,7 @@ packet.&lt;/p>&lt;table>
 
 	bsnIpsecErrorCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnIpsecEspReplayFailureTrap trap received 
 			bsnRemoteIPv4Address=%parm[#1]% 
 			bsnIpsecErrorCount=%parm[#2]%&lt;/p>
@@ -1148,7 +1148,7 @@ packet.&lt;/p>&lt;table>
 
 	bsnIpsecSPI&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnIpsecEspInvalidSpiTrap trap received 
 			bsnRemoteIPv4Address=%parm[#1]% 
 			bsnIpsecSPI=%parm[#2]%&lt;/p>
@@ -1209,7 +1209,7 @@ counters for ISAKMP.&lt;/p>&lt;table>
 
 	bsnNotifiesReceived&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnIpsecIkeNegFailure trap received 
 			bsnRemoteIPv4Address=%parm[#1]% 
 			bsnRemoteUdpPort=%parm[#2]% 
@@ -1265,7 +1265,7 @@ failure.&lt;/p>&lt;table>
 
 	bsnNotifiesReceived&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnIpsecSuiteNegFailure trap received 
 			bsnRemoteIPv4Address=%parm[#1]% 
 			bsnSuiteInitFailures=%parm[#2]% 
@@ -1325,7 +1325,7 @@ packet.&lt;/p>&lt;table>
 
 	bsnIsakmpInvalidCookies&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnIpsecInvalidCookieTrap trap received 
 			bsnRemoteIPv4Address=%parm[#1]% 
 			bsnRemoteUdpPort=%parm[#2]% 
@@ -1409,7 +1409,7 @@ with APMacAddress on which its detected&lt;/p>&lt;table>
 
 	bsnRogueAPAirespaceAPName&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRogueAPDetected trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnRogueAPAirespaceAPMacAddress=%parm[#2]% 
@@ -1455,7 +1455,7 @@ enable/disable using bsnRrmProfileTrapControlFlag &lt;/p>&lt;table>
 
 	bsnAPIfSlotId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPLoadProfileUpdatedToPass trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]%&lt;/p>
@@ -1492,7 +1492,7 @@ enable/disable using bsnRrmProfileTrapControlFlag &lt;/p>&lt;table>
 
 	bsnAPIfSlotId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPNoiseProfileUpdatedToPass trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]%&lt;/p>
@@ -1529,7 +1529,7 @@ enable /disable using bsnRrmProfileTrapControlFlag &lt;/p>&lt;table>
 
 	bsnAPIfSlotId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPInterferenceProfileUpdatedToPass trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]%&lt;/p>
@@ -1566,7 +1566,7 @@ enable/disable using bsnRrmProfileTrapControlFlag &lt;/p>&lt;table>
 
 	bsnAPIfSlotId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPCoverageProfileUpdatedToPass trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]%&lt;/p>
@@ -1618,7 +1618,7 @@ with APMacAddress on which its detected&lt;/p>&lt;table>
 
 	bsnRogueAPAirespaceAPName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRogueAPRemoved trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnRogueAPAirespaceAPMacAddress=%parm[#2]% 
@@ -1656,7 +1656,7 @@ This trap will be sent to annoy the Customer&lt;/p>&lt;table>
 
 	bsnLicenseRadioCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRadiosExceedLicenseCount trap received 
 			bsnCurrentRadiosCount=%parm[#1]% 
 			bsnLicenseRadioCount=%parm[#2]%&lt;/p>
@@ -1687,7 +1687,7 @@ Immediate action should be taken&lt;/p>&lt;table>
 
 	bsnSensorTemperature&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnSensedTemperatureTooHigh trap received 
 			bsnSensorTemperature=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1717,7 +1717,7 @@ Immediate action should be taken&lt;/p>&lt;table>
 
 	bsnSensorTemperature&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnSensedTemperatureTooLow trap received 
 			bsnSensorTemperature=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1743,7 +1743,7 @@ Immediate action should be taken&lt;/p>&lt;table>
       <event-label>AIRESPACE-WIRELESS-MIB defined trap event: bsnTemperatureSensorFailure</event-label>
       <descr>&lt;p>Temperature sensor hw failure - temp sensor has failed.  
 Temperature is unknown&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTemperatureSensorFailure trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -1772,7 +1772,7 @@ sensor is operating within proper temp range&lt;/p>&lt;table>
 
 	bsnSensorTemperature&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTemperatureSensorClear trap received 
 			bsnSensorTemperature=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1798,7 +1798,7 @@ sensor is operating within proper temp range&lt;/p>&lt;table>
       <event-label>AIRESPACE-WIRELESS-MIB defined trap event: bsnPOEControllerFailure</event-label>
       <descr>&lt;p>POE Controller has failed. Its a very critical trap.
 User intervention is required.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnPOEControllerFailure trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -1826,7 +1826,7 @@ User intervention is required.&lt;/p>&lt;table>&lt;/table></descr>
 
 	bsnMaxRogueCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnMaxRogueCountExceeded trap received 
 			bsnMaxRogueCount=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1855,7 +1855,7 @@ User intervention is required.&lt;/p>&lt;table>&lt;/table></descr>
 
 	bsnMaxRogueCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnMaxRogueCountClear trap received 
 			bsnMaxRogueCount=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1889,7 +1889,7 @@ the AP&lt;/p>&lt;table>
 
 	bsnMaxRogueCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnApMaxRogueCountExceeded trap received 
 			bsnAPMacAddrTrapVariable=%parm[#1]% 
 			bsnMaxRogueCount=%parm[#2]%&lt;/p>
@@ -1924,7 +1924,7 @@ AP&lt;/p>&lt;table>
 
 	bsnMaxRogueCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnApMaxRogueCountClear trap received 
 			bsnAPMacAddrTrapVariable=%parm[#1]% 
 			bsnMaxRogueCount=%parm[#2]%&lt;/p>
@@ -1978,7 +1978,7 @@ reason for black listing.&lt;/p>&lt;table>
 
 	bsnStationMacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDot11StationBlacklisted trap received 
 			bsnStationAPMacAddr=%parm[#1]% 
 			bsnStationAPIfSlotId=%parm[#2]% 
@@ -2026,7 +2026,7 @@ to which the station Associated.&lt;/p>&lt;table>
 
 	bsnStationUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDot11StationAssociate trap received 
 			bsnStationAPMacAddr=%parm[#1]% 
 			bsnStationAPIfSlotId=%parm[#2]% 
@@ -2067,7 +2067,7 @@ to which the station Associated.&lt;/p>&lt;table>
 
 	bsnNavDosAttackSourceMacAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnApBigNavDosAttack trap received 
 			bsnAPMacAddrTrapVariable=%parm[#1]% 
 			bsnAPSlotIdTrapVariable=%parm[#2]% 
@@ -2102,7 +2102,7 @@ to which the station Associated.&lt;/p>&lt;table>
 
 	bsnStationUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTooManyUnsuccessLoginAttempts trap received 
 			bsnUserIpAddress=%parm[#1]% 
 			bsnStationUserName=%parm[#2]%&lt;/p>
@@ -2141,7 +2141,7 @@ the station may be wrong.&lt;/p>&lt;table>
 
 	bsnStationAPIfSlotId&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnWepKeyDecryptError trap received 
 			bsnStationMacAddress=%parm[#1]% 
 			bsnStationAPMacAddr=%parm[#2]% 
@@ -2185,7 +2185,7 @@ activated at the AP.&lt;/p>&lt;table>
 
 	bsnWlanIdTrapVariable&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnWpaMicErrorCounterActivated trap received 
 			bsnStationMacAddress=%parm[#1]% 
 			bsnStationAPMacAddr=%parm[#2]% 
@@ -2231,7 +2231,7 @@ clear the previous trap.&lt;/p>&lt;table>
 		no(0)
 		yes(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRogueAPDetectedOnWiredNetwork trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnRogueAPOnWiredNetwork=%parm[#2]%&lt;/p>
@@ -2271,7 +2271,7 @@ clear the previous trap.&lt;/p>&lt;table>
 		no(0)
 		yes(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRogueAPDetectedOnWiredNetwork trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnRogueAPOnWiredNetwork=%parm[#2]%&lt;/p>
@@ -2302,7 +2302,7 @@ sends this trap.&lt;/p>&lt;table>
 
 	bsnAPMacAddrTrapVariable&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnApHasNoRadioCards trap received 
 			bsnAPMacAddrTrapVariable=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2367,7 +2367,7 @@ be using the duplicate IP.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDuplicateIpAddressReported trap received 
 			bsnDuplicateIpReportedByAP=%parm[#1]% 
 			bsnAPMacAddrTrapVariable=%parm[#2]% 
@@ -2432,7 +2432,7 @@ be using the duplicate IP.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDuplicateIpAddressReported trap received 
 			bsnDuplicateIpReportedByAP=%parm[#1]% 
 			bsnAPMacAddrTrapVariable=%parm[#2]% 
@@ -2497,7 +2497,7 @@ be using the duplicate IP.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDuplicateIpAddressReported trap received 
 			bsnDuplicateIpReportedByAP=%parm[#1]% 
 			bsnAPMacAddrTrapVariable=%parm[#2]% 
@@ -2558,7 +2558,7 @@ be using the duplicate IP.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnDuplicateIpAddressReported trap received 
 			bsnDuplicateIpReportedByAP=%parm[#1]% 
 			bsnAPMacAddrTrapVariable=%parm[#2]% 
@@ -2616,7 +2616,7 @@ longer being contained.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPContainedAsARogue trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -2669,7 +2669,7 @@ longer being contained.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPContainedAsARogue trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -2715,7 +2715,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTrustedApHasInvalidSsid trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnClearTrapVariable=%parm[#2]%&lt;/p>
@@ -2755,7 +2755,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTrustedApHasInvalidSsid trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnClearTrapVariable=%parm[#2]%&lt;/p>
@@ -2798,7 +2798,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTrustedApIsMissing trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnClearTrapVariable=%parm[#2]%&lt;/p>
@@ -2837,7 +2837,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTrustedApIsMissing trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnClearTrapVariable=%parm[#2]%&lt;/p>
@@ -2880,7 +2880,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAdhocRogueAutoContained trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnClearTrapVariable=%parm[#2]%&lt;/p>
@@ -2919,7 +2919,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAdhocRogueAutoContained trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnClearTrapVariable=%parm[#2]%&lt;/p>
@@ -2962,7 +2962,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRogueApAutoContained trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnClearTrapVariable=%parm[#2]%&lt;/p>
@@ -3001,7 +3001,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRogueApAutoContained trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnClearTrapVariable=%parm[#2]%&lt;/p>
@@ -3064,7 +3064,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTrustedApHasInvalidEncryption trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnTrustedApEncryptionUsed=%parm[#2]% 
@@ -3125,7 +3125,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTrustedApHasInvalidEncryption trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnTrustedApEncryptionUsed=%parm[#2]% 
@@ -3190,7 +3190,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTrustedApHasInvalidRadioPolicy trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnTrustedApRadioPolicyUsed=%parm[#2]% 
@@ -3251,7 +3251,7 @@ earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTrustedApHasInvalidRadioPolicy trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnTrustedApRadioPolicyUsed=%parm[#2]% 
@@ -3298,7 +3298,7 @@ is issued.&lt;/p>&lt;table>
 		disable(0)
 		enable(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnNetworkStateChanged trap received 
 			bsnNetworkType=%parm[#1]% 
 			bsnNetworkState=%parm[#2]%&lt;/p>
@@ -3339,7 +3339,7 @@ is issued.&lt;/p>&lt;table>
 		disable(0)
 		enable(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnNetworkStateChanged trap received 
 			bsnNetworkType=%parm[#1]% 
 			bsnNetworkState=%parm[#2]%&lt;/p>
@@ -3449,7 +3449,7 @@ bsnSignatureMacInfo. &lt;/p>&lt;table>
 		bsnSignatureMacIndividual(1)
 		bsnSignatureMacBoth(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnSignatureAttackDetected trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -3566,7 +3566,7 @@ bsnSignatureMacInfo. &lt;/p>&lt;table>
 		bsnSignatureMacIndividual(1)
 		bsnSignatureMacBoth(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnSignatureAttackDetected trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -3620,7 +3620,7 @@ stops transmitting.&lt;/p>&lt;table>
 		dot11a(2)
 		uwb(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPRadioCardTxFailure trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -3664,7 +3664,7 @@ starts transmitting again after a prior failure.&lt;/p>&lt;table>
 		dot11a(2)
 		uwb(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPRadioCardTxFailureClear trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -3708,7 +3708,7 @@ stops receiving.&lt;/p>&lt;table>
 		dot11a(2)
 		uwb(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPRadioCardRxFailure trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -3752,7 +3752,7 @@ starts receiving again after a prior failure.&lt;/p>&lt;table>
 		dot11a(2)
 		uwb(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPRadioCardRxFailureClear trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -3802,7 +3802,7 @@ authenticated neighbor of the detecting AP.&lt;/p>&lt;table>
 		dot11a(2)
 		uwb(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPImpersonationDetected trap received 
 			bsnImpersonatedAPMacAddr=%parm[#1]% 
 			bsnAPDot3MacAddress=%parm[#2]% 
@@ -3864,7 +3864,7 @@ true, then the trap clears the earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTrustedApHasInvalidPreamble trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnTrustedApPreambleUsed=%parm[#2]% 
@@ -3922,7 +3922,7 @@ true, then the trap clears the earlier alert.&lt;/p>&lt;table>
 		false(0)
 		true(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnTrustedApHasInvalidPreamble trap received 
 			bsnRogueAPDot11MacAddress=%parm[#1]% 
 			bsnTrustedApPreambleUsed=%parm[#2]% 
@@ -3964,7 +3964,7 @@ and starts using DHCP as a fallback option.&lt;/p>&lt;table>
 
 	bsnAPStaticIPAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPIPAddressFallback trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnApIpAddress=%parm[#2]% 
@@ -4013,7 +4013,7 @@ or has been deleted or doesn't match the switch image.&lt;/p>&lt;table>
 		wps(1)
 		all(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPFunctionalityDisabled trap received 
 			bsnApFunctionalityDisableReasonCode=%parm[#1]% 
 			bsnLicenseKeyTrapVariable=%parm[#2]% 
@@ -4138,7 +4138,7 @@ mismatch, the AP will fail to associate with the Switch.&lt;/p>&lt;table>
 		venezuela(67)
 		philippines(68)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPRegulatoryDomainMismatch trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPName=%parm[#2]% 
@@ -4167,7 +4167,7 @@ mismatch, the AP will fail to associate with the Switch.&lt;/p>&lt;table>
       <event-label>AIRESPACE-WIRELESS-MIB defined trap event: bsnRxMulticastQueueFull</event-label>
       <descr>&lt;p>This trap indicates that the CPU's Receive Multicast Queue is
 Full.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRxMulticastQueueFull trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -4248,7 +4248,7 @@ current channel&lt;/p>&lt;table>
 		ch165(165)
 		ch169(169)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRadarChannelDetected trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -4332,7 +4332,7 @@ generated earlier, after the expiry of Non-Occupancy Period.&lt;/p>&lt;table>
 		ch165(165)
 		ch169(169)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnRadarChannelCleared trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -4388,7 +4388,7 @@ bsnAPName is name of AP&lt;/p>&lt;table>
 		invalidCertifcate(3)
 		entryIsMIC(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bsnAPAuthorizationFailure trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPName=%parm[#2]% 
@@ -4426,7 +4426,7 @@ on demand.&lt;/p>&lt;table>
 
 	bsnAPIfSlotId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			radioCoreDumpTrap trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]%&lt;/p>
@@ -4468,7 +4468,7 @@ used.&lt;/p>&lt;table>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>
 		unsupportedRadio(0)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			invalidRadioTrap trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPIfSlotId=%parm[#2]% 
@@ -4567,7 +4567,7 @@ country of operation. New country code will be sent in trap.&lt;/p>&lt;table>
 		venezuela(67)
 		philippines(68)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			countryChangeTrap trap received 
 			bsnGlobalDot11CountryIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4601,7 +4601,7 @@ country of operation. New country code will be sent in trap.&lt;/p>&lt;table>
 
 	bsnAPName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			unsupportedAPTrap trap received 
 			bsnAPDot3MacAddress=%parm[#1]% 
 			bsnAPName=%parm[#2]%&lt;/p>
@@ -4630,7 +4630,7 @@ country of operation. New country code will be sent in trap.&lt;/p>&lt;table>
 connection with the Supervisor Switch in which it
 is physically embedded and doesn't hear the
 heartbeat keepalives from the Supervisor. &lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			heartbeatLossTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -4659,7 +4659,7 @@ for notifications of location events.&lt;/p>&lt;table>
 
 	locationNotifyContent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			locationNotifyTrap trap received 
 			locationNotifyContent=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4710,7 +4710,7 @@ configured at the station may be wrong.&lt;/p>&lt;table>
 		dot11a(2)
 		uwb(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoLwappDot11ClientKeyDecryptError trap received 
 			cldcAssociationMode=%parm[#1]% 
 			cldcApMacAddress=%parm[#2]% 
@@ -4763,7 +4763,7 @@ configured at the station may be wrong.&lt;/p>&lt;table>
 		dot11a(2)
 		uwb(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoLwappDot11ClientKeyDecryptError trap received 
 			cldcAssociationMode=%parm[#1]% 
 			cldcApMacAddress=%parm[#2]% 
@@ -4816,7 +4816,7 @@ configured at the station may be wrong.&lt;/p>&lt;table>
 		dot11a(2)
 		uwb(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoLwappDot11ClientKeyDecryptError trap received 
 			cldcAssociationMode=%parm[#1]% 
 			cldcApMacAddress=%parm[#2]% 
@@ -4865,7 +4865,7 @@ configured at the station may be wrong.&lt;/p>&lt;table>
 		dot11a(2)
 		uwb(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoLwappDot11ClientKeyDecryptError trap received 
 			cldcAssociationMode=%parm[#1]% 
 			cldcApMacAddress=%parm[#2]% 

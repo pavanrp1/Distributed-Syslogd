@@ -91,7 +91,7 @@
 
             ibTrapDesc&lt;/b>&lt;/td>&lt;td>
             %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             ibEquipmentFailureTrap trap received
             ibNodeName=%parm[#1]%
             ibTrapSeverity=%parm[#2]%
@@ -249,7 +249,7 @@
 
             ibTrapDesc&lt;/b>&lt;/td>&lt;td>
             %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             ibProcessingFailureTrap trap received
             ibNodeName=%parm[#1]%
             ibTrapSeverity=%parm[#2]%
@@ -359,7 +359,7 @@
 
             ibTrapDesc&lt;/b>&lt;/td>&lt;td>
             %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             ibThresholdCrossingEvent trap received
             ibNodeName=%parm[#1]%
             ibObjectName=%parm[#2]%
@@ -439,7 +439,7 @@
 
             ibTrapDesc&lt;/b>&lt;/td>&lt;td>
             %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             ibStateChangeEvent trap received
             ibNodeName=%parm[#1]%
             ibObjectName=%parm[#2]%
@@ -514,7 +514,7 @@
 
             ibTrapDesc&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             ibProcStartStopTrap trap received
             ibNodeName=%parm[#1]%
             ibSubsystemName=%parm[#2]%

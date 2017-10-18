@@ -37,7 +37,7 @@ incorrectly configured networks at an EUM or attempts to spoof MAC addresses.&lt
 
 	ccuTrapACNewId&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ccuAddressChangeTrap trap received 
 			ccuTrapACMacAddress=%parm[#1]% 
 			ccuTrapACOldId=%parm[#2]% 
@@ -72,7 +72,7 @@ configured with the same IP address as the CCU.&lt;/p>&lt;table>
 
 	ccuTrapDupEumId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ccuDuplicateIpTrap trap received 
 			ccuTrapDupEumId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -96,7 +96,7 @@ configured with the same IP address as the CCU.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/waverider/traps/ccuAddressTableFullTrap</uei>
       <event-label>CCU3000PMAC-TRAPS-MIB defined trap event: ccuAddressTableFullTrap</event-label>
       <descr>&lt;p>This trap is sent when the CCU attempts to add an entry to a full address table.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ccuAddressTableFullTrap trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -119,7 +119,7 @@ configured with the same IP address as the CCU.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/waverider/traps/ccuAuthTableFullTrap</uei>
       <event-label>CCU3000PMAC-TRAPS-MIB defined trap event: ccuAuthTableFullTrap</event-label>
       <descr>&lt;p>This trap is sent when the CCU attempts to add an entry to a full authorization table.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ccuAuthTableFullTrap trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -142,7 +142,7 @@ configured with the same IP address as the CCU.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/waverider/traps/ccuRegTableFullTrap</uei>
       <event-label>CCU3000PMAC-TRAPS-MIB defined trap event: ccuRegTableFullTrap</event-label>
       <descr>&lt;p>This trap is sent when the CCU attempts to add an entry to a full registration table.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ccuRegTableFullTrap trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>

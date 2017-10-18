@@ -51,7 +51,7 @@ Diagnostic Monitor. No action is required.&lt;/p>&lt;table>
 
 	nhElementId&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	netHealthInfo trap received
 	nhdErrorDate=%parm[#1]%
 	nhdErrorTime=%parm[#2]%
@@ -110,7 +110,7 @@ Diagnostic Monitor.&lt;/p>&lt;table>
 
 	nhdServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	netHealthWarning trap received
 	nhdErrorDate=%parm[#1]%
 	nhdErrorTime=%parm[#2]%
@@ -167,7 +167,7 @@ Diagnostic Monitor.&lt;/p>&lt;table>
 
 	nhdServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	netHealthReset trap received
 	nhdErrorDate=%parm[#1]%
 	nhdErrorTime=%parm[#2]%
@@ -224,7 +224,7 @@ Diagnostic Monitor.&lt;/p>&lt;table>
 
 	nhdServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	netHealthUrgent trap received
 	nhdErrorDate=%parm[#1]%
 	nhdErrorTime=%parm[#2]%
@@ -303,7 +303,7 @@ exceptions for an element.&lt;/p>&lt;table>
 
 	nhdServerIPv6&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	netHealthException trap received
 	nhdErrorDate=%parm[#1]%
 	nhdErrorTime=%parm[#2]%
@@ -403,7 +403,7 @@ active. Deprecated in eHealth 5.6 Release.&lt;/p>&lt;table>
 
 	nhTechType&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhLiveException trap received
 	nhServerIp=%parm[#1]%
 	nhServerName=%parm[#2]%
@@ -563,7 +563,7 @@ sends detailed information about an alarm.&lt;/p>&lt;table>
 
 	nhElementIPv6&lt;/b>&lt;/td>&lt;td>
 	%parm[#27]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhLiveAlarm trap received
 	nhServerIp=%parm[#1]%
 	nhServerName=%parm[#2]%
@@ -693,7 +693,7 @@ the corresponding exception no longer exist. Deprecated in eHealth 5.6 Release.&
 
 	nhProblemDuration&lt;/b>&lt;/td>&lt;td>
 	%parm[#16]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhLiveClearException trap received
 	nhServerIp=%parm[#1]%
 	nhServerName=%parm[#2]%
@@ -855,7 +855,7 @@ the corresponding alarm no longer exist.&lt;/p>&lt;table>
 
 	nhElementIPv6&lt;/b>&lt;/td>&lt;td>
 	%parm[#27]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhLiveClearAlarm trap received
 	nhServerIp=%parm[#1]%
 	nhServerName=%parm[#2]%
@@ -977,7 +977,7 @@ Deprecated in eHealth 5.6 Release.&lt;/p>&lt;table>
 
 	nhTechType&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhLiveUpdateException trap received
 	nhServerIp=%parm[#1]%
 	nhServerName=%parm[#2]%
@@ -1050,7 +1050,7 @@ and exceptions sent before this time will NOT be cleared automatically. All trap
 
 	nhServerIPv6&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhLiveResetExceptions trap received
 	nhServerIp=%parm[#1]%
 	nhServerName=%parm[#2]%
@@ -1089,7 +1089,7 @@ belong to this PathSetAggregate element is at the warning level.&lt;/p>&lt;table
 
 	nhElementName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhPathSetAggregateWarning trap received
 	nhElementId=%parm[#1]%
 	nhElementName=%parm[#2]%&lt;/p>
@@ -1122,7 +1122,7 @@ belong to this PathSetAggregate element is at the warning level.&lt;/p>&lt;table
 
 	nhElementName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhPathSetAggregateWarningClear trap received
 	nhElementId=%parm[#1]%
 	nhElementName=%parm[#2]%&lt;/p>
@@ -1156,7 +1156,7 @@ belong to this PathSetAggregate element is at the minor level.&lt;/p>&lt;table>
 
 	nhElementName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhPathSetAggregateMinor trap received
 	nhElementId=%parm[#1]%
 	nhElementName=%parm[#2]%&lt;/p>
@@ -1189,7 +1189,7 @@ belong to this PathSetAggregate element is at the minor level.&lt;/p>&lt;table>
 
 	nhElementName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhPathSetAggregateMinorClear trap received
 	nhElementId=%parm[#1]%
 	nhElementName=%parm[#2]%&lt;/p>
@@ -1223,7 +1223,7 @@ belong to this PathSetAggregate element is at the major level.&lt;/p>&lt;table>
 
 	nhElementName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhPathSetAggregateMajor trap received
 	nhElementId=%parm[#1]%
 	nhElementName=%parm[#2]%&lt;/p>
@@ -1256,7 +1256,7 @@ belong to this PathSetAggregate element is at the major level.&lt;/p>&lt;table>
 
 	nhElementName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhPathSetAggregateMajorClear trap received
 	nhElementId=%parm[#1]%
 	nhElementName=%parm[#2]%&lt;/p>
@@ -1290,7 +1290,7 @@ belong to this PathSetAggregate element is at the critical level.&lt;/p>&lt;tabl
 
 	nhElementName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhPathSetAggregateCritical trap received
 	nhElementId=%parm[#1]%
 	nhElementName=%parm[#2]%&lt;/p>
@@ -1323,7 +1323,7 @@ belong to this PathSetAggregate element is at the critical level.&lt;/p>&lt;tabl
 
 	nhElementName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	nhPathSetAggregateCriticalClear trap received
 	nhElementId=%parm[#1]%
 	nhElementName=%parm[#2]%&lt;/p>

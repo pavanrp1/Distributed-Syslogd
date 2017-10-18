@@ -26,7 +26,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Link Down.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Link Down.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -56,7 +56,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Link Up.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Link Up.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -86,7 +86,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Host Link Down.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Host Link Down.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -116,7 +116,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Host Link Up.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Host Link Up.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -147,7 +147,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Network Module Down.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Network Module Down.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -178,7 +178,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Network Module Up.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Network Module Up.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -208,7 +208,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Power Supply Input Voltage Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Power Supply Input Voltage Failed.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -236,7 +236,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Power Supply Input Voltage Restored.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Power Supply Input Voltage Restored.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -265,7 +265,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Power Supply Output Down.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Power Supply Output Down.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -293,7 +293,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Power Supply Output Up.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Power Supply Output Up.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -320,7 +320,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Fan Bank Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Fan Bank Failed.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -347,7 +347,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Fan Bank Restored.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Fan Bank Restored.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -378,7 +378,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Link Down.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Link Down.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -407,7 +407,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Link Up.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Link Up.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -438,7 +438,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Links SPANS Down.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Links SPANS Down.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -469,7 +469,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Link SPANS Up.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Link SPANS Up.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -499,7 +499,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Device Over Temperature.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Device Over Temperature.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -529,7 +529,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Device Temperature now Normal.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Device Temperature now Normal.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -557,7 +557,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Fabric Over Temperature.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Fabric Over Temperature.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -585,7 +585,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Fabric Temperature Now Normal.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Fabric Temperature Now Normal.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -623,7 +623,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Sonet Loss of Service.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Sonet Loss of Service.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -656,7 +656,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Sonet Loss of Service Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Sonet Loss of Service Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -692,7 +692,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET Errored C2 Path Label Byte.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET Errored C2 Path Label Byte.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -726,7 +726,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET Errored C2 Path Label Byte Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET Errored C2 Path Label Byte Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -760,7 +760,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET Line Level Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET Line Level Alarm.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -793,7 +793,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET Line Level Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET Line Level Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -826,7 +826,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Yellow Alarm on DS3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Yellow Alarm on DS3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -859,7 +859,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Yellow Alarm on DS3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Yellow Alarm on DS3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -892,7 +892,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Loss of Frame Alarm on DS3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Loss of Frame Alarm on DS3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -925,7 +925,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Loss of Frame Alarm on DS3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Loss of Frame Alarm on DS3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -957,7 +957,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Loss of Frame Alarm on DS3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Loss of Frame Alarm on DS3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -990,7 +990,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Loss of Frame Alarm on DS3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Loss of Frame Alarm on DS3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1023,7 +1023,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm on DS3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm on DS3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1056,7 +1056,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm on DS3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm on DS3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1089,7 +1089,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Yellow Alarm on DS1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Yellow Alarm on DS1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1122,7 +1122,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Yellow Alarm on DS1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Yellow Alarm on DS1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1155,7 +1155,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Loss of Frame Alarm on DS1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Loss of Frame Alarm on DS1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1188,7 +1188,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Loss of Frame Alarm on DS1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Loss of Frame Alarm on DS1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1221,7 +1221,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Yellow Alarm on DS1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Yellow Alarm on DS1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1254,7 +1254,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Yellow Alarm on DS1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Yellow Alarm on DS1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1287,7 +1287,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm on DS1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm on DS1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1320,7 +1320,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm on DS1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm on DS1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1353,7 +1353,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm on DS1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm on DS1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1386,7 +1386,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm on DS1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm on DS1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1419,7 +1419,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOF Alarm on DS1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOF Alarm on DS1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1452,7 +1452,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>LOF Alarm on DS1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>LOF Alarm on DS1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1485,7 +1485,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: FERF Alarm on DS3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: FERF Alarm on DS3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1518,7 +1518,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: FERF Alarm on DS3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: FERF Alarm on DS3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1551,7 +1551,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Yellow Alarm on E3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Yellow Alarm on E3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1584,7 +1584,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Yellow Alarm on E3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Yellow Alarm on E3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1617,7 +1617,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: OOF Alarm on E3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: OOF Alarm on E3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1650,7 +1650,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: OOF Alarm on E3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: OOF Alarm on E3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1685,7 +1685,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LCD Alarm on E3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LCD Alarm on E3.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -1720,7 +1720,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LCD Alarm on E3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LCD Alarm on E3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1753,7 +1753,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Yellow Alarm on E3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Yellow Alarm on E3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1786,7 +1786,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Yellow Alarm on E3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Yellow Alarm on E3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1819,7 +1819,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Yellow Alarm on E1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Yellow Alarm on E1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1852,7 +1852,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Yellow Alarm on E1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Yellow Alarm on E1.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1885,7 +1885,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOF Alarm on E1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOF Alarm on E1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1918,7 +1918,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOF Alarm on E1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOF Alarm on E1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -1951,7 +1951,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Yellow Alarm on E1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Yellow Alarm on E1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -1984,7 +1984,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP Yellow Alarm on E1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP Yellow Alarm on E1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2017,7 +2017,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP LOF Alarm on E1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP LOF Alarm on E1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2050,7 +2050,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP LOF Alarm on E1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP LOF Alarm on E1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2083,7 +2083,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm on E1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm on E1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2116,7 +2116,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm on E1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm on E1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2149,7 +2149,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm on E1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm on E1.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2182,7 +2182,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm on E1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm on E1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2215,7 +2215,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm on E3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm on E3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2248,7 +2248,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm on E3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm on E3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2281,7 +2281,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm on E3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm on E3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2314,7 +2314,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm on E3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm on E3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2347,7 +2347,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP LOF Alarm on E3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP LOF Alarm on E3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2380,7 +2380,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PLCP LOF Alarm on E3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PLCP LOF Alarm on E3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2413,7 +2413,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Yellow Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Yellow Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2446,7 +2446,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Yellow Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Yellow Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2479,7 +2479,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2512,7 +2512,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2545,7 +2545,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2578,7 +2578,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2611,7 +2611,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOF Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOF Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2644,7 +2644,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOF Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOF Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2677,7 +2677,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm on DS3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm on DS3.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2710,7 +2710,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm on DS3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm on DS3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2746,7 +2746,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET LOF Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET LOF Alarm.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -2782,7 +2782,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET LOF Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET LOF Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2817,7 +2817,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET LRDI Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET LRDI Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2852,7 +2852,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET LRDI Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET LRDI Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2887,7 +2887,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET PAIS Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET PAIS Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2922,7 +2922,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET PAIS Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET PAIS Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -2957,7 +2957,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET LOP Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET LOP Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -2992,7 +2992,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET LOP Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET LOP Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3027,7 +3027,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET UNEQ Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET UNEQ Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3062,7 +3062,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET UNEQ Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET UNEQ Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3097,7 +3097,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET PRDI Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET PRDI Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3132,7 +3132,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET PRDI Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET PRDI Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3167,7 +3167,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET LCD Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET LCD Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3202,7 +3202,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET LCD Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET LCD Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3237,7 +3237,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET BIP Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET BIP Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3272,7 +3272,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SONET BIP Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SONET BIP Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3305,7 +3305,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Idle Maintenance Signal on DS3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Idle Maintenance Signal on DS3.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3338,7 +3338,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Idle Maintenance Signal on DS3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Idle Maintenance Signal on DS3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3373,7 +3373,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Loss of Cell Deliniation on DS3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Loss of Cell Deliniation on DS3.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3408,7 +3408,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Loss of Cell Deliniation on DS3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Loss of Cell Deliniation on DS3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3443,7 +3443,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: P-bit Parity Errors on DS3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: P-bit Parity Errors on DS3.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3478,7 +3478,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: P-bit Parity Errors on DS3 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: P-bit Parity Errors on DS3 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3511,7 +3511,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: P-bit PRBS Pattern on DS1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: P-bit PRBS Pattern on DS1.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3544,7 +3544,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: P-bit PRBS Pattern on DS1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: P-bit PRBS Pattern on DS1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3579,7 +3579,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Loss of Cell Deliniation on DS1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Loss of Cell Deliniation on DS1.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3614,7 +3614,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Loss of Cell Deliniation on DS1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Loss of Cell Deliniation on DS1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3649,7 +3649,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: CRC-6 Errors on DS1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: CRC-6 Errors on DS1.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3684,7 +3684,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: CRC-6 Errors on DS1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: CRC-6 Errors on DS1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3717,7 +3717,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Trail Trace Message Change on E3.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Trail Trace Message Change on E3.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3752,7 +3752,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Loss of Cell Deliniation on E1.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Loss of Cell Deliniation on E1.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3787,7 +3787,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Loss of Cell Deliniation on E1 Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Loss of Cell Deliniation on E1 Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3820,7 +3820,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: RLOC Event.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: RLOC Event.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3853,7 +3853,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: RLOC Event Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: RLOC Event Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3886,7 +3886,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: HBER Event.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: HBER Event.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3919,7 +3919,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: HBER Event Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: HBER Event Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -3952,7 +3952,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PAIS Event.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PAIS Event.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -3985,7 +3985,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PAIS Event Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PAIS Event Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -4020,7 +4020,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Loss of Cell Deliniation Event.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Loss of Cell Deliniation Event.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4055,7 +4055,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Loss of Cell Deliniation Event Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Loss of Cell Deliniation Event Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -4088,7 +4088,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Transmit Loss of Clock Event.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Transmit Loss of Clock Event.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4121,7 +4121,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Transmit Loss of Clock Event Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Transmit Loss of Clock Event Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -4154,7 +4154,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4187,7 +4187,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: LOS Alarm Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: LOS Alarm Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -4220,7 +4220,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Output Queue Congested.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Output Queue Congested.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -4252,7 +4252,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Output Queue Cell Loss.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Output Queue Cell Loss.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -4284,7 +4284,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Extended Mode Violation.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Extended Mode Violation.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -4314,7 +4314,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Nonextended Mode Warning.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Nonextended Mode Warning.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -4341,7 +4341,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Callrecord Memory Overflow.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Callrecord Memory Overflow.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -4375,7 +4375,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Call Record Transfer to Primary Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Call Record Transfer to Primary Failed.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -4409,7 +4409,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Call Record Transfer to Secondary Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Call Record Transfer to Secondary Failed.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -4439,7 +4439,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Call Record Memory Allocation Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Call Record Memory Allocation Failed.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -4470,7 +4470,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Call Record Failure.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Call Record Failure.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -4499,7 +4499,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Automatic CDB Syncronization Disabled.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Automatic CDB Syncronization Disabled.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4532,7 +4532,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Backup SCP now in Control.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Backup SCP now in Control.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4567,7 +4567,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SCP Hotswap.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SCP Hotswap.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -4600,7 +4600,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm on Virtual Path.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm on Virtual Path.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4633,7 +4633,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: AIS Alarm on Virtual Path Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: AIS Alarm on Virtual Path Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -4666,7 +4666,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: RDI Alarm on Virtual Path.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: RDI Alarm on Virtual Path.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4699,7 +4699,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: RDI Alarm on Virtual Path Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: RDI Alarm on Virtual Path Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -4731,7 +4731,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Series D Netowrk Module Inserted.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Series D Netowrk Module Inserted.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -4760,7 +4760,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Unsupported Network Module Inserted.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Unsupported Network Module Inserted.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -4793,7 +4793,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Dual SCP Redundancy Established.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Dual SCP Redundancy Established.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -4823,7 +4823,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  ipFilterStatsIfName&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: IP Filter Violation.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: IP Filter Violation.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4864,7 +4864,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: q2391 UNI Setup Rejected.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: q2391 UNI Setup Rejected.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4904,7 +4904,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: q2391 UNI Setup Rejected: Does Not Match Template.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: q2391 UNI Setup Rejected: Does Not Match Template.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -4936,7 +4936,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: q2391 UNI Creation Failure.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: q2391 UNI Creation Failure.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -4964,7 +4964,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Power Supply Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Power Supply Failed.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -4992,7 +4992,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Power Supply Failure Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Power Supply Failure Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -5020,7 +5020,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Power Supply +5V Failure.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Power Supply +5V Failure.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -5048,7 +5048,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Power Supply +5V Failure Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Power Supply +5V Failure Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -5077,7 +5077,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: User Logged onto Switch.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: User Logged onto Switch.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5106,7 +5106,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Log On Attempt Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Log On Attempt Failed.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -5146,7 +5146,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: TDB Guardband Memory Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: TDB Guardband Memory Failed.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -5186,7 +5186,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: TDB Inconsistant State.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: TDB Inconsistant State.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -5219,7 +5219,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Output Queue Exceeded Length.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Output Queue Exceeded Length.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -5251,7 +5251,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Output Queue Overflow.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Output Queue Overflow.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -5283,7 +5283,7 @@
  &lt;/p>&lt;table>&lt;tr>&lt;td>&lt;b>
  boardIndex&lt;/b>&lt;/td>&lt;td>%parm[#1]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Excessive Level 3 Lookup Errors.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Excessive Level 3 Lookup Errors.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -5310,7 +5310,7 @@
  &lt;/p>&lt;table>&lt;tr>&lt;td>&lt;b>
  boardIndex&lt;/b>&lt;/td>&lt;td>%parm[#1]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Inconsistant HDCOMP Lookup.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Inconsistant HDCOMP Lookup.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -5341,7 +5341,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  spvcSrcInVCI&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SPVC Rerouted.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SPVC Rerouted.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5371,7 +5371,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: UNI Signalling Down.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: UNI Signalling Down.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5402,7 +5402,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: UNI Signalling Up.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: UNI Signalling Up.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5431,7 +5431,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Fabric Down.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Fabric Down.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5460,7 +5460,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Fabric Up.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Fabric Up.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5494,7 +5494,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#4]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: q2931 Call Clearing.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: q2931 Call Clearing.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5538,7 +5538,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  pnniSpvcSrcLastLocation&lt;/b>&lt;/td>&lt;td>%parm[#8]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SPVC Call Cleared or Deleted.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SPVC Call Cleared or Deleted.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5578,7 +5578,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  pnniSpvcSrcRouteCost&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SPVC Call Established.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SPVC Call Established.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5620,7 +5620,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  pnniSpvcSrcLastLocation&lt;/b>&lt;/td>&lt;td>%parm[#8]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SPVC Call Connection Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SPVC Call Connection Failed.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5662,7 +5662,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  pnniSpvpcSrcLastLocation&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SPVP Call Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SPVP Call Cleared.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5700,7 +5700,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  pnniSpvpcSrcRouteCost&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SPVP Call Established.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SPVP Call Established.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5740,7 +5740,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  pnniSpvpcSrcLastLocation&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SPVP Call Connection Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SPVP Call Connection Failed.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5769,7 +5769,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Port Card Down.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Port Card Down.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -5798,7 +5798,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: ATM Switch Port Card Up.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: ATM Switch Port Card Up.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5829,7 +5829,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Service Category Output Queue Congested.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Service Category Output Queue Congested.&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -5859,7 +5859,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: Service Category Output Queue Cell Loss.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: Service Category Output Queue Cell Loss.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -5896,7 +5896,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PNNI Overload.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PNNI Overload.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -5933,7 +5933,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PNNI Overload Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PNNI Overload Cleared.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -5962,7 +5962,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  pnniPmpSpvccSrcRootVCI&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PMP ReRoute Initiated..&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PMP ReRoute Initiated..&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -5995,7 +5995,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  pnniPmpSpvccSrcPartyRouteCost&lt;/b>&lt;/td>&lt;td>%parm[#5]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PMP SPVC Call Established.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PMP SPVC Call Established.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -6036,7 +6036,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  pnniPmpSpvccSrcPartyLastLocation&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PMP SPVC Call Cleared.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PMP SPVC Call Cleared.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -6076,7 +6076,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  pnniPmpSpvccSrcPartyLastLocation&lt;/b>&lt;/td>&lt;td>%parm[#7]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: PMP SPVC Call Failure.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: PMP SPVC Call Failure.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -6108,7 +6108,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#3]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SPVC Automatic Switch Over.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SPVC Automatic Switch Over.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -6140,7 +6140,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SVx/SPVx State Transfer Failed.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SVx/SPVx State Transfer Failed.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -6171,7 +6171,7 @@
  &lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#2]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SVx/SPVx State Transfer Restarted.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SVx/SPVx State Transfer Restarted.&lt;/p></logmsg>
       <severity>Cleared</severity>
    </event>
    <event>
@@ -6204,7 +6204,7 @@
  &lt;/p>&lt;table>&lt;tr>&lt;td>&lt;b>
  trapLogIndex&lt;/b>&lt;/td>&lt;td>%parm[#1]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Fore Event: SVx/SPVx State Dropped Call.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Fore Event: SVx/SPVx State Dropped Call.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -6224,7 +6224,7 @@
  enterprise specific event (trap) is received from a Fore device for which no
  format has been configured (i.e. no event definition
  exists).&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
  Received unformatted enterprise event (enterprise:%id% generic:%generic%
  specific:%specific%). %parm[##]%
  args: %parm[all]%

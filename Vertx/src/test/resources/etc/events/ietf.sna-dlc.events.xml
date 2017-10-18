@@ -35,7 +35,7 @@
             &lt;/td>&lt;td>&lt;p;>
             undefined(1) physical(2)&lt;/p>
             &lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>SNA-SDLC Event: Port Status Change.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>SNA-SDLC Event: Port Status Change.&lt;/p></logmsg>
       <severity>Warning</severity>
       <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%parm[#1]%" alarm-type="3" auto-clean="false"/>
    </event>
@@ -87,7 +87,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             sdlcLSOperLastFailREPLYTOs&lt;/b>&lt;/td>&lt;td>%parm[#10]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>SNA-SDLC Event: SDLC Link Station Status Change.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>SNA-SDLC Event: SDLC Link Station Status Change.&lt;/p></logmsg>
       <severity>Warning</severity>
       <alarm-data reduction-key="%uei%:%dpname%:%nodeid%:%parm[#1]%" alarm-type="3" auto-clean="false"/>
    </event>
@@ -135,7 +135,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             sdlcLSOperLastFailREPLYTOs&lt;/b>&lt;/td>&lt;td>%parm[#8]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>SNA-SDLC Event: SDLC Link Station Status Change.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>SNA-SDLC Event: SDLC Link Station Status Change.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
 </events>

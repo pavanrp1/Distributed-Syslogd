@@ -30,7 +30,7 @@ seconds equal to upsControlOutputOffTrapDelay.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdControlOff trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -69,7 +69,7 @@ seconds equal to upsControlOutputOnTrapDelay.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdControlOn trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -108,7 +108,7 @@ battery.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdOnBattery trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -147,7 +147,7 @@ alarm condition.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdLowBattery trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -185,7 +185,7 @@ alarm condition.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdUtilityPowerRestored trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -223,7 +223,7 @@ alarm condition.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdReturnFromLowBattery trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -262,7 +262,7 @@ alarm condition.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdOutputOverload trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -302,7 +302,7 @@ cating failure.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdInternalFailure trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -340,7 +340,7 @@ cating failure.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdBatteryDischarged trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -378,7 +378,7 @@ cating failure.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdInverterFailure trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -416,7 +416,7 @@ cating failure.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdOnBypass trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -454,7 +454,7 @@ cating failure.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdBypassNotAvailable trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -492,7 +492,7 @@ cating failure.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdOutputOff trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -531,7 +531,7 @@ frequency, or phase rotation.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdInputFailure trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -569,7 +569,7 @@ frequency, or phase rotation.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdBuildingAlarm trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -607,7 +607,7 @@ frequency, or phase rotation.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdShutdownImminent trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -646,7 +646,7 @@ after either a transfer to bypass or a run on battery.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdOnInverter trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -684,7 +684,7 @@ after either a transfer to bypass or a run on battery.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdBreakerOpen trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -724,7 +724,7 @@ has been added to the Alarm Table.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAlarmEntryAdded trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -763,7 +763,7 @@ has been removed from the Alarm Table.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAlarmEntryRemoved trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -801,7 +801,7 @@ has been removed from the Alarm Table.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAlarmBatteryBad trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -839,7 +839,7 @@ has been removed from the Alarm Table.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdOutputOffAsRequested trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -877,7 +877,7 @@ has been removed from the Alarm Table.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdDiagnosticTestFailed trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -916,7 +916,7 @@ between the agent and the UPS.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdCommunicationsLost trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -954,7 +954,7 @@ between the agent and the UPS.&lt;/p>&lt;table>
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdUpsShutdownPending trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -996,7 +996,7 @@ When the test is complete, one of the following traps will be sent:
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAlarmTestInProgress trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1048,7 +1048,7 @@ the set upper limit, xupsEnvAmbientUpperLimit.&lt;/p>&lt;table>
 
 	xupsEnvAmbientUpperLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAmbientTempBad trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1108,7 +1108,7 @@ The following are the situations that generate this trap:
 
 	xupsContactDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdContactActiveNotice trap received 
 			xupsContactIndex=%parm[#1]% 
 			xupsContactType=%parm[#2]% 
@@ -1161,7 +1161,7 @@ The following are the situations that generate this trap:
 
 	xupsContactDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdContactInactiveNotice trap received 
 			xupsContactIndex=%parm[#1]% 
 			xupsContactType=%parm[#2]% 
@@ -1201,7 +1201,7 @@ this may be due to module failure or removal, or due to overloading.&lt;/p>&lt;t
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdLossOfRedundancy trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1239,7 +1239,7 @@ this may be due to module failure or removal, or due to overloading.&lt;/p>&lt;t
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAlarmTempBad trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1277,7 +1277,7 @@ this may be due to module failure or removal, or due to overloading.&lt;/p>&lt;t
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAlarmChargerFailed trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1315,7 +1315,7 @@ this may be due to module failure or removal, or due to overloading.&lt;/p>&lt;t
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAlarmFanFailure trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1353,7 +1353,7 @@ this may be due to module failure or removal, or due to overloading.&lt;/p>&lt;t
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAlarmFuseFailure trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1391,7 +1391,7 @@ this may be due to module failure or removal, or due to overloading.&lt;/p>&lt;t
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdPowerSwitchBad trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1429,7 +1429,7 @@ this may be due to module failure or removal, or due to overloading.&lt;/p>&lt;t
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdModuleFailure trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1482,7 +1482,7 @@ or fuel cell.&lt;/p>&lt;table>
 		flywheel(7)
 		fuelcell(8)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdOnAlternatePowerSource trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1524,7 +1524,7 @@ of time longer than that for which the internal batteries can supply power.&lt;/
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAltPowerNotAvailable trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1563,7 +1563,7 @@ This is like an xupstdInternalFailure, but at a lower severity level.&lt;/p>&lt;
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdNoticeCondition trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1615,7 +1615,7 @@ the set upper limit, xupsEnvRemoteTempUpperLimit.&lt;/p>&lt;table>
 
 	xupsEnvRemoteTempUpperLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdRemoteTempBad trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1670,7 +1670,7 @@ the set upper limit, xupsEnvRemoteHumidityUpperLimit.&lt;/p>&lt;table>
 
 	xupsEnvRemoteHumidityUpperLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdRemoteHumidityBad trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1734,7 +1734,7 @@ The included variables provide a brief statement of the UPS status.&lt;/p>&lt;ta
 
 	xupsAlarms&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdHeartbeat trap received 
 			xupsInputSource=%parm[#1]% 
 			xupsOutputSource=%parm[#2]% 
@@ -1794,7 +1794,7 @@ The included variables provide additional information on the test.&lt;/p>&lt;tab
 		inhibited(6)
 		scheduled(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdDiagnosticTestPassed trap received 
 			xupsTestBatteryStatus=%parm[#1]% 
 			xupsLastGeneralTest=%parm[#2]% 
@@ -1832,7 +1832,7 @@ The included variables provide additional information on the test.&lt;/p>&lt;tab
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdOutputBad trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1870,7 +1870,7 @@ The included variables provide additional information on the test.&lt;/p>&lt;tab
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdAwaitingPower trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1908,7 +1908,7 @@ The included variables provide additional information on the test.&lt;/p>&lt;tab
 
 	xupsTrapMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			APC XUPS Event: xupstdOnMaintenanceBypass trap received 
 			xupsAlarmID=%parm[#1]% 
 			xupsAlarmDescr=%parm[#2]% 
@@ -1932,7 +1932,7 @@ The included variables provide additional information on the test.&lt;/p>&lt;tab
       <descr>&lt;p>An event was received with the Exide (APC) enterprise ID, but no configuration exists
 for this event in eventconf.xml.&lt;/p>
 &lt;p>(enterprise:%id% generic:%generic% specific:%specific%). %parm[##]%&lt;/p></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
                         APC XUPS Event: Generic Unknown Event
                         xupsAlarmID=%parm[#1]%
                         xupsAlarmDescr=%parm[#2]%

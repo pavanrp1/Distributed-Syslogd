@@ -40,7 +40,7 @@ occured.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asDataBaseError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -85,7 +85,7 @@ occured.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asDataBaseError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -132,7 +132,7 @@ asTrapInfoString gives the detailed description of the error.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asWrapperCriticalError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -175,7 +175,7 @@ asTrapInfoString gives the detailed description of the error.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asWrapperCriticalError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -222,7 +222,7 @@ asTrapInfoString gives the detailed description of the error.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asProcMgrCriticalError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -265,7 +265,7 @@ asTrapInfoString gives the detailed description of the error.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asProcMgrCriticalError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -319,7 +319,7 @@ for the current interval exceeds the threshold value fcOverloadThreshold1.&lt;/p
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asOverloadThreshold1Exceed trap received 
 			asTrapSeverity=%parm[#1]% 
 			fcOverloadThreshold1=%parm[#2]% 
@@ -371,7 +371,7 @@ for the current interval exceeds the threshold value fcOverloadThreshold1.&lt;/p
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asOverloadThreshold1Exceed trap received 
 			asTrapSeverity=%parm[#1]% 
 			fcOverloadThreshold1=%parm[#2]% 
@@ -427,7 +427,7 @@ for the current interval exceeds the threshold value fcOverloadThreshold2.&lt;/p
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asOverloadThreshold2Exceed trap received 
 			asTrapSeverity=%parm[#1]% 
 			fcOverloadThreshold2=%parm[#2]% 
@@ -479,7 +479,7 @@ for the current interval exceeds the threshold value fcOverloadThreshold2.&lt;/p
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asOverloadThreshold2Exceed trap received 
 			asTrapSeverity=%parm[#1]% 
 			fcOverloadThreshold2=%parm[#2]% 
@@ -535,7 +535,7 @@ for the current interval exceeds the threshold value fcOverloadThreshold3.&lt;/p
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asOverloadThreshold3Exceed trap received 
 			asTrapSeverity=%parm[#1]% 
 			fcOverloadThreshold3=%parm[#2]% 
@@ -587,7 +587,7 @@ for the current interval exceeds the threshold value fcOverloadThreshold3.&lt;/p
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asOverloadThreshold3Exceed trap received 
 			asTrapSeverity=%parm[#1]% 
 			fcOverloadThreshold3=%parm[#2]% 
@@ -636,7 +636,7 @@ the detail description of the disk path and freespace left etc.,&lt;/p>&lt;table
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNoDiskSpace trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -679,7 +679,7 @@ the detail description of the disk path and freespace left etc.,&lt;/p>&lt;table
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNoDiskSpace trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -725,7 +725,7 @@ that the Master SNMP Agent is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asSnmpAgentDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -767,7 +767,7 @@ that the Master SNMP Agent is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asSnmpAgentDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -813,7 +813,7 @@ that its heart beat software is down or not functioning.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asHeartBeatSWDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -855,7 +855,7 @@ that its heart beat software is down or not functioning.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asHeartBeatSWDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -901,7 +901,7 @@ that FIP interface is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asFipIfDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -943,7 +943,7 @@ that FIP interface is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asFipIfDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -990,7 +990,7 @@ asTrapInfoString gives the detailed description of the error.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asFwJVMOutOfMemory trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1033,7 +1033,7 @@ asTrapInfoString gives the detailed description of the error.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asFwJVMOutOfMemory trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1076,7 +1076,7 @@ howmany days the password expires.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asUserPwdExpireWarn trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1118,7 +1118,7 @@ expired. This is a major trap. asTrapInfoString gives the user name.&lt;/p>&lt;t
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asUserPwdExpired trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1164,7 +1164,7 @@ that the Media Server it is interacting with is down or not responding.&lt;/p>&l
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMediaServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1206,7 +1206,7 @@ that the Media Server it is interacting with is down or not responding.&lt;/p>&l
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMediaServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1252,7 +1252,7 @@ that the EJB Server it is interacting with is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asEJBServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1294,7 +1294,7 @@ that the EJB Server it is interacting with is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asEJBServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1340,7 +1340,7 @@ that the Tomcat Server it is interacting with is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asTomcatServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1382,7 +1382,7 @@ that the Tomcat Server it is interacting with is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asTomcatServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1429,7 +1429,7 @@ asTrapInfoString gives the detailed description.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asLDAPServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1472,7 +1472,7 @@ asTrapInfoString gives the detailed description.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asLDAPServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1518,7 +1518,7 @@ that the Web Server is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asWebServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1560,7 +1560,7 @@ that the Web Server is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asWebServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1602,7 +1602,7 @@ that the NAS Server it is using is down.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNASServerDown trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1639,7 +1639,7 @@ that the NAS Server it is using is down.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNASServerDown trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1684,7 +1684,7 @@ that the database server it is using is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asDataBaseDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1726,7 +1726,7 @@ that the database server it is using is down.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asDataBaseDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1768,7 +1768,7 @@ that the Verity Application it is using is down.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asVerityAppDown trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1805,7 +1805,7 @@ that the Verity Application it is using is down.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asVerityAppDown trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1851,7 +1851,7 @@ imap, pop and smtp servers.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMessagingServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1894,7 +1894,7 @@ imap, pop and smtp servers.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMessagingServerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -1932,7 +1932,7 @@ responding.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMGCPTimeOut trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1981,7 +1981,7 @@ occured.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asAppError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -2027,7 +2027,7 @@ occured.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asAppError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -2069,7 +2069,7 @@ resources allocated on the Media Server.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNoResources trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2106,7 +2106,7 @@ resources allocated on the Media Server.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNoResources trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2136,7 +2136,7 @@ status changes from up(1) to down(2).&lt;/p>&lt;table>
 
 	asAppName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asAppDown trap received 
 			asAppName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2172,7 +2172,7 @@ status changes from up(1) to down(2).&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMGCPDown trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2213,7 +2213,7 @@ app server.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNoAlarmLog trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2250,7 +2250,7 @@ app server.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNoAlarmLog trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2291,7 +2291,7 @@ app server.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNoDebugLog trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2328,7 +2328,7 @@ app server.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNoDebugLog trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2369,7 +2369,7 @@ app server.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNoCDRLog trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2406,7 +2406,7 @@ app server.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNoCDRLog trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2458,7 +2458,7 @@ Object umTrapDescr object gives the description of the notification.&lt;/p>&lt;t
 
 	umTrapDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			umNotResponding trap received 
 			asTrapSeverity=%parm[#1]% 
 			umTrapDescr=%parm[#2]%&lt;/p>
@@ -2507,7 +2507,7 @@ Object umTrapDescr object gives the description of the notification.&lt;/p>&lt;t
 
 	umTrapDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			umNotResponding trap received 
 			asTrapSeverity=%parm[#1]% 
 			umTrapDescr=%parm[#2]%&lt;/p>
@@ -2555,7 +2555,7 @@ the actual notification.&lt;/p>&lt;table>
 
 	umTrapDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			umMajorException trap received 
 			asTrapSeverity=%parm[#1]% 
 			umTrapDescr=%parm[#2]%&lt;/p>
@@ -2599,7 +2599,7 @@ the actual notification.&lt;/p>&lt;table>
 
 	umTrapDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			umMajorException trap received 
 			asTrapSeverity=%parm[#1]% 
 			umTrapDescr=%parm[#2]%&lt;/p>
@@ -2655,7 +2655,7 @@ changed to asProcessState.&lt;/p>&lt;table>
 		unableToRestart(4)
 		notResponding(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asProcessStateChange trap received 
 			asTrapSeverity=%parm[#1]% 
 			asProcessName=%parm[#2]% 
@@ -2708,7 +2708,7 @@ changed to asProcessState.&lt;/p>&lt;table>
 		unableToRestart(4)
 		notResponding(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asProcessStateChange trap received 
 			asTrapSeverity=%parm[#1]% 
 			asProcessName=%parm[#2]% 
@@ -2756,7 +2756,7 @@ information.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asProcessManagerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -2799,7 +2799,7 @@ information.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asProcessManagerDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -2842,7 +2842,7 @@ information.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asDBTaskError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -2887,7 +2887,7 @@ occured.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asLicensedHardLimitCrossed trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -2925,7 +2925,7 @@ server detects the split brain condition.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asSplitBrainDetected trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2967,7 +2967,7 @@ the details like name of the node that wentdown.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNodeDown trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -3010,7 +3010,7 @@ the detailed information and the actual reason for restarting.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asRestartingProcMgr trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -3054,7 +3054,7 @@ the actual notification.&lt;/p>&lt;table>
 
 	confTrapDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			confMajorException trap received 
 			asTrapSeverity=%parm[#1]% 
 			confTrapDescr=%parm[#2]%&lt;/p>
@@ -3101,7 +3101,7 @@ asTrapInfoString gives the detailed description of the error.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asFwJVMHighMemUsage trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -3144,7 +3144,7 @@ asTrapInfoString gives the detailed description of the error.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asFwJVMHighMemUsage trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -3182,7 +3182,7 @@ ipuMGCPHigherBoundForPacketLoss.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMGCPPktLossCrossed trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3219,7 +3219,7 @@ ipuMGCPHigherBoundForJitter.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMGCPJitterCrossed trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3256,7 +3256,7 @@ ipuMGCPHigherBoundForLatency.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMGCPLatencyCrossed trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3299,7 +3299,7 @@ the actual notification.&lt;/p>&lt;table>
 
 	umTrapDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			umMinorException trap received 
 			asTrapSeverity=%parm[#1]% 
 			umTrapDescr=%parm[#2]%&lt;/p>
@@ -3337,7 +3337,7 @@ a call with no Application.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asCallWithNoApp trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3381,7 +3381,7 @@ occured.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asLicensedSoftLimitCrossed trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -3425,7 +3425,7 @@ occured.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asProcMgrMinorError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -3469,7 +3469,7 @@ occured.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asWrapperMinorError trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -3513,7 +3513,7 @@ occured.&lt;/p>&lt;table>
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asDbSwitch trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>
@@ -3557,7 +3557,7 @@ the actual notification.&lt;/p>&lt;table>
 
 	confTrapDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			confMinorException trap received 
 			asTrapSeverity=%parm[#1]% 
 			confTrapDescr=%parm[#2]%&lt;/p>
@@ -3594,7 +3594,7 @@ the actual notification.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMGCPUp trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3631,7 +3631,7 @@ ipuMGCPLowerBoundForPacketLoss.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMGCPPktLossFalls trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3668,7 +3668,7 @@ ipuMGCPLowerBoundForJitter.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMGCPJitterFalls trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3705,7 +3705,7 @@ ipuMGCPLowerBoundForLatency.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asMGCPLatencyFalls trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3745,7 +3745,7 @@ ipuMGCPLowerBoundForLatency.&lt;/p>&lt;table>
 
 	asAppName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asAppUp trap received 
 			asTrapSeverity=%parm[#1]% 
 			asAppName=%parm[#2]%&lt;/p>
@@ -3790,7 +3790,7 @@ Servers are switched over.&lt;/p>&lt;table>
 		active(1)
 		stand-by(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asSwitchover trap received 
 			asTrapSeverity=%parm[#1]% 
 			asMode=%parm[#2]%&lt;/p>
@@ -3828,7 +3828,7 @@ server corrects the split brain condition.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asSplitBrainCorrected trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3865,7 +3865,7 @@ becomes the Captain of the cluster. This is informational.&lt;/p>&lt;table>
 		major(5)
 		critical(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asBecameCaptain trap received 
 			asTrapSeverity=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3907,7 +3907,7 @@ asTrapInfoString gives the details like name of the node that wentdown.&lt;/p>&l
 
 	asTrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			asNodeUp trap received 
 			asTrapSeverity=%parm[#1]% 
 			asTrapInfoString=%parm[#2]%&lt;/p>

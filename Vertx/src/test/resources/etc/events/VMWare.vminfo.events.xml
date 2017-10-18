@@ -33,7 +33,7 @@ poll the vmwVmTable to obtain current status.&lt;/p>&lt;table>
 
 	vmwVmDisplayName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vmwVmPoweredOn trap received 
 			vmwVmID=%parm[#1]% 
 			vmwVmConfigFilePath=%parm[#2]% 
@@ -75,7 +75,7 @@ poll the vmwVmTable to obtain current status.&lt;/p>&lt;table>
 
 	vmwVmDisplayName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vmwVmPoweredOff trap received 
 			vmwVmID=%parm[#1]% 
 			vmwVmConfigFilePath=%parm[#2]% 
@@ -118,7 +118,7 @@ poll the vmwVmTable to obtain current status.&lt;/p>&lt;table>
 
 	vmwVmDisplayName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vmwVmHBLost trap received 
 			vmwVmID=%parm[#1]% 
 			vmwVmConfigFilePath=%parm[#2]% 
@@ -160,7 +160,7 @@ poll the vmwVmTable to obtain current status.&lt;/p>&lt;table>
 
 	vmwVmDisplayName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vmwVmHBDetected trap received 
 			vmwVmID=%parm[#1]% 
 			vmwVmConfigFilePath=%parm[#2]% 
@@ -202,7 +202,7 @@ poll the vmwVmTable to obtain current status.&lt;/p>&lt;table>
 
 	vmwVmDisplayName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vmwVmSuspended trap received 
 			vmwVmID=%parm[#1]% 
 			vmwVmConfigFilePath=%parm[#2]% 

@@ -101,7 +101,7 @@ alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			commAlarm trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -223,7 +223,7 @@ alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			commAlarm trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -341,7 +341,7 @@ alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			commAlarm trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -459,7 +459,7 @@ alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			commAlarm trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -577,7 +577,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qualityOfService trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -695,7 +695,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qualityOfService trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -812,7 +812,7 @@ and log are correlated based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			processingError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -929,7 +929,7 @@ and log are correlated based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			processingError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -1051,7 +1051,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			equipmentError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -1174,7 +1174,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			equipmentError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -1297,7 +1297,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			equipmentError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -1420,7 +1420,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			equipmentError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -1542,7 +1542,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			equipmentError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -1664,7 +1664,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			equipmentError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -1782,7 +1782,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			equipmentError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -1900,7 +1900,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			equipmentError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -2018,7 +2018,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			environmentError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 
@@ -2136,7 +2136,7 @@ based on the alarm time.&lt;/p>&lt;table>
 
 	tpAlarmTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			environmentError trap received 
 			tpAlarmId=%parm[#1]% 
 			tpAlarmCatId=%parm[#2]% 

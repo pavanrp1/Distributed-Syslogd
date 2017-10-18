@@ -63,7 +63,7 @@
             openconfirm(5)
             established(6)
             &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             f10BgpM2Established trap received
             f10BgpM2PeerLocalAddrType=%parm[#1]%
             f10BgpM2PeerLocalAddr=%parm[#2]%
@@ -142,7 +142,7 @@
             openconfirm(5)
             established(6)
             &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             f10BgpM2BackwardTransition trap received
             f10BgpM2PeerLocalAddrType=%parm[#1]%
             f10BgpM2PeerLocalAddr=%parm[#2]%

@@ -44,7 +44,7 @@ ipCurCfgGwAddr is the IP address of the default gateway.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwDefGwUp trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			ipCurCfgGwIndex=%parm[#2]% 
@@ -100,7 +100,7 @@ ipCurCfgGwAddr is the IP address of the default gateway.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwDefGwDown trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			ipCurCfgGwIndex=%parm[#2]% 
@@ -157,7 +157,7 @@ ipCurCfgGwAddr is the IP address of the default gateway.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwDefGwInService trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			ipCurCfgGwIndex=%parm[#2]% 
@@ -214,7 +214,7 @@ ipCurCfgGwAddr is the IP address of the default gateway.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwDefGwNotInService trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			ipCurCfgGwIndex=%parm[#2]% 
@@ -272,7 +272,7 @@ vrrpCurCfgVirtRtrAddr is the VRRP virtual router IP address.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwVrrpNewMaster trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			vrrpCurCfgVirtRtrIndx=%parm[#2]% 
@@ -330,7 +330,7 @@ vrrpCurCfgVirtRtrAddr is the VRRP virtual router IP address.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwVrrpNewBackup trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			vrrpCurCfgVirtRtrIndx=%parm[#2]% 
@@ -390,7 +390,7 @@ DisplayString of 0 to 7 characters.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwVrrpAuthFailure trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			vrrpCurCfgIfIndx=%parm[#2]% 
@@ -439,7 +439,7 @@ address of the host from which the attempt was made.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwLoginFailure trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -483,7 +483,7 @@ switch temperature has exceeded maximum safety limits.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwTempExceedThreshold trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -526,7 +526,7 @@ switch temperature has exceeded maximum safety limits.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwValidLogin trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -570,7 +570,7 @@ has been applied.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwApplyComplete trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -614,7 +614,7 @@ has been saved.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSaveComplete trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -658,7 +658,7 @@ has been downloaded to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwFwDownloadSucess trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -702,7 +702,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwFwDownloadFailure trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -749,7 +749,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStgNewRoot trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			stgCurCfgIndex=%parm[#2]% 
@@ -793,7 +793,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwCistNewRoot trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -840,7 +840,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStgTopologyChanged trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			stgCurCfgIndex=%parm[#2]% 
@@ -884,7 +884,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwCistTopologyChanged trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -927,7 +927,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwHotlinksMasterUp trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -970,7 +970,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwHotlinksMasterDn trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1013,7 +1013,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwHotlinksBackupUp trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1056,7 +1056,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwHotlinksBackupDn trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1099,7 +1099,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwHotlinksNone trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1138,7 +1138,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwNtpNotServer trap received 
 			sysName=%parm[#1]% 
 			sysLocation=%parm[#2]% 
@@ -1176,7 +1176,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwNtpUpdateClock trap received 
 			sysName=%parm[#1]% 
 			sysLocation=%parm[#2]% 
@@ -1218,7 +1218,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwValidLogout trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1257,7 +1257,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStgBlockingState trap received 
 			sysName=%parm[#1]% 
 			sysLocation=%parm[#2]% 
@@ -1299,7 +1299,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwECMPGatewayUp trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1342,7 +1342,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwECMPGatewayDown trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1385,7 +1385,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwLACPPortBlocked trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1428,7 +1428,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwLACPPortUnblocked trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1471,7 +1471,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackSwitchAttached trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1514,7 +1514,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackSwitchDettached trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1557,7 +1557,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackBackupPresent trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1600,7 +1600,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackBackupGone trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1643,7 +1643,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altVMGroupVMotion trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1686,7 +1686,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altVMGroupVMOnline trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1729,7 +1729,7 @@ downloaded failed to [image1|image2|boot image].&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altVMGroupVMVlanChange trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1773,7 +1773,7 @@ has become master after init&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackMasterAfterInit trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1817,7 +1817,7 @@ has become master from backup.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackMasterFromBackup trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1861,7 +1861,7 @@ with duplicate UUID/bay has tried to join the stack.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackDuplicateJoinAttempt trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1904,7 +1904,7 @@ with duplicate UUID/bay has tried to join the stack.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackLinkUp trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1948,7 +1948,7 @@ has become down.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackLinkDown trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1992,7 +1992,7 @@ the master and a member has terminated with error.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackXferError trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2036,7 +2036,7 @@ the master and a member has terminated with no errors.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackXferSuccess trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2080,7 +2080,7 @@ of different type has attempted to join the stack.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackSwitchTypeMismatch trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2124,7 +2124,7 @@ image of a newly attached switch does not match that of the master.&lt;/p>&lt;ta
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackImageSlotMismatch trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2169,7 +2169,7 @@ that of the master.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackImageVersMismatch trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2214,7 +2214,7 @@ type has attempted to join the stack.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackChassisTypeMismatch trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2259,7 +2259,7 @@ has attempted to join the stack.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackBcsBayMismatch trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2303,7 +2303,7 @@ of a newly attached switch does not match that of the master.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackBootCfgMismatch trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2347,7 +2347,7 @@ configured as a master in NVRAM has attached to the stack.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackNvramMasterJoin trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2391,7 +2391,7 @@ a FORCE DETACH message to a member.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwStackForceDetach trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2435,7 +2435,7 @@ switch temperature has returned below maximum safety limits.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwTempReturnThreshold trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2480,7 +2480,7 @@ the trap message.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwAmpTopologyUp trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2525,7 +2525,7 @@ in the trap message.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwAmpTopologyDown trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 

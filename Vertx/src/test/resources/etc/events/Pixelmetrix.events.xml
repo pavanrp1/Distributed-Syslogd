@@ -54,7 +54,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventSectionLossOfSignal trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -121,7 +121,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventSectionLossOfFrame trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -188,7 +188,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventSectionOutOfFrame trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -255,7 +255,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventSectionBIP trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -322,7 +322,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventLineFERF trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -389,7 +389,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventLineAIS trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -456,7 +456,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventLineBIP trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -523,7 +523,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventLineFEBE trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -590,7 +590,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventPathRDI trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -657,7 +657,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventPathAIS trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -724,7 +724,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventPathBIP trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -791,7 +791,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventPathFEBE trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -858,7 +858,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventPathLOP trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -925,7 +925,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventAtmCellDelineation trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -992,7 +992,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			atmEventAtmUncorrectableHEC trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1059,7 +1059,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventSNRBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1126,7 +1126,7 @@
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventRSUncorrectedError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1194,7 +1194,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventPreViterbiBERAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1263,7 +1263,7 @@ exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventPreRSBERAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1330,7 +1330,7 @@ exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventSignalPowerBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1397,7 +1397,7 @@ exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventSignalPowerAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1464,7 +1464,7 @@ exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventLockAcquired trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1531,7 +1531,7 @@ exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventLockLost trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1599,7 +1599,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventCarrierConfidenceError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1666,7 +1666,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventConstellationMismatch trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1733,7 +1733,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventHierarchyMismatch trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1800,7 +1800,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventHighPriorityCodeRateMismatch trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1867,7 +1867,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventLowPriorityCodeRateMismatch trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -1934,7 +1934,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventGuardIntervalMismatch trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2001,7 +2001,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventModeMismatch trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2068,7 +2068,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventMERBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2135,7 +2135,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventSNRAboveMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2203,7 +2203,7 @@ is applied is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventPreViterbiBERBelowMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2272,7 +2272,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventPreRSBERBelowMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2339,7 +2339,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventSignalPowerWithinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2406,7 +2406,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventCarrierConfidenceErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2473,7 +2473,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventConstellationMismatchCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2540,7 +2540,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventHierarchyMismatchCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2607,7 +2607,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventHighPriorityCodeRateMismatchCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2674,7 +2674,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventLowPriorityCodeRateMismatchCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2741,7 +2741,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventGuardIntervalMismatchCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2808,7 +2808,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventModeMismatchCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2875,7 +2875,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventMERAboveMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -2942,7 +2942,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventImpulseResponseMaskNoPeakError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3009,7 +3009,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cofdmEventImpulseResponseMaskNoPeakErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3076,7 +3076,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventLockAcquired trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3143,7 +3143,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventLockLost trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3210,7 +3210,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventSignalLockEventBetweenReports trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3277,7 +3277,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventLockCountExceedMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3344,7 +3344,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventRSUncorrectedError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3411,7 +3411,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventRSUncorrectedCountExceedMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3478,7 +3478,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventFreqOffsetBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3545,7 +3545,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventFreqOffsetExceedMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3612,7 +3612,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventSymbolOffsetBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3679,7 +3679,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventSymbolOffsetExceedMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3746,7 +3746,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventCarrierLevelBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3813,7 +3813,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventCarrierLevelExceedMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3880,7 +3880,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventSNRBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -3947,7 +3947,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventMERBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4014,7 +4014,7 @@ is below the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventEVMExceedMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4082,7 +4082,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventPreViterbiBERExceedMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4150,7 +4150,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventPostViterbiBERExceedMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4217,7 +4217,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedModulationMode trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4284,7 +4284,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedModulationGuardInterval trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4351,7 +4351,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedModulationConstellation trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4418,7 +4418,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedModulationHierarchy trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4485,7 +4485,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedModulationHighPriorityCodeRate trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4552,7 +4552,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedModulationLowPriorityCodeRate trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4619,7 +4619,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedModulationSpectralInversion trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4686,7 +4686,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedTPSMode trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4753,7 +4753,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedTPSGuardInterval trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4820,7 +4820,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedTPSConstellation trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4887,7 +4887,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedTPSHierarchy trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -4954,7 +4954,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedTPSHighPriorityCodeRate trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5021,7 +5021,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedTPSLowPriorityCodeRate trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5088,7 +5088,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventUnexpectedTPSCellIdentifier trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5155,7 +5155,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventModulationTPSMismatch trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5223,7 +5223,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventCarrierConfidenceError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5290,7 +5290,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventCarrierConfidenceErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5357,7 +5357,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventImpulseResponseMaskNoPeakError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5424,7 +5424,7 @@ specified minimum confidence level.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvbtEventImpulseResponseMaskNoPeakErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5492,7 +5492,7 @@ with a Card1 module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventPTPCommFailed trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5560,7 +5560,7 @@ from a Card1 module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventPTPReceiveFailed trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5628,7 +5628,7 @@ to a Card1 module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventPTPSendFailed trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5696,7 +5696,7 @@ from an SNMP agent.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventSNMPTimeout trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5763,7 +5763,7 @@ from an SNMP agent.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventPTPQueueFull trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5830,7 +5830,7 @@ from an SNMP agent.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventHwNoMon trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5898,7 +5898,7 @@ DVStation is shutting down.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventHwExceedShutdownTemp trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -5965,7 +5965,7 @@ DVStation is shutting down.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventHwExceedWarningTemp trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6034,7 +6034,7 @@ have been sent out of sequence.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventSystemTimeChanged trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6101,7 +6101,7 @@ have been sent out of sequence.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventIPAddressChanged trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6168,7 +6168,7 @@ have been sent out of sequence.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventIPAddressChangedFailed trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6235,7 +6235,7 @@ have been sent out of sequence.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventVolumeChanged trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6314,7 +6314,7 @@ have been sent out of sequence.&lt;/p>&lt;table>
 		bad(6)
 		masked(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventOverallPortStatus trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6382,7 +6382,7 @@ have been sent out of sequence.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventCardCagePowerFailed trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6449,7 +6449,7 @@ have been sent out of sequence.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventHostPowerFailing trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6517,7 +6517,7 @@ Other Card1 modules will be started without a timebase from the TRM.&lt;/p>&lt;t
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventTRMSyncNotAcquired trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6585,7 +6585,7 @@ from the Timing Reference Module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventTRMReceiveFailed trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6653,7 +6653,7 @@ to the Timing Reference Module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventTRMSendFailed trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6720,7 +6720,7 @@ to the Timing Reference Module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventCardReset trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6787,7 +6787,7 @@ to the Timing Reference Module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventReboot trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6854,7 +6854,7 @@ to the Timing Reference Module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventShutdown trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6921,7 +6921,7 @@ to the Timing Reference Module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventClockSourceChanged trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -6988,7 +6988,7 @@ to the Timing Reference Module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationEventSyncSourceChanged trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7064,7 +7064,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	dvstationCardCPUUsageMaxThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dvstationCardCPUUsageAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7133,7 +7133,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventStreamDetection trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7200,7 +7200,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventStreamLoss trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7267,7 +7267,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventMonitorPortUp trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7334,7 +7334,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventMonitorPortDown trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7401,7 +7401,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventDelayFactorAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7468,7 +7468,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventDelayFactorBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7535,7 +7535,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventDelayFactorWithinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7602,7 +7602,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventMediaLossRateAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7669,7 +7669,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventMediaLossRateBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7736,7 +7736,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventMediaLossRateWithinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7803,7 +7803,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventBitrateAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7870,7 +7870,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventBitrateBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -7937,7 +7937,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventBitrateWithinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8004,7 +8004,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventProtocolMismatch trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8071,7 +8071,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			iqEventProtocolMatch trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8138,7 +8138,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventLockAcquired trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8205,7 +8205,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventLockLost trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8272,7 +8272,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventSignalPowerBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8339,7 +8339,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventSignalPowerAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8406,7 +8406,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventSNRBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8473,7 +8473,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventRSUncorrectedError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8540,7 +8540,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventBERAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8607,7 +8607,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventLockCountAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8674,7 +8674,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventEVMAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8741,7 +8741,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventMERBelowThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8808,7 +8808,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventSymbolOffsetBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8875,7 +8875,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventSymbolOffsetAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -8942,7 +8942,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventFreqOffsetBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9009,7 +9009,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventFreqOffsetAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9076,7 +9076,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventRSUncorrectedCountAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9143,7 +9143,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventSignalLockEventBetweenReports trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9210,7 +9210,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qamEventInterleaveFactorMismatch trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9277,7 +9277,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventVideoQualityBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9344,7 +9344,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventVideoBlackout trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9411,7 +9411,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventVideoFreezeFrame trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9478,7 +9478,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventVideoQualityCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9545,7 +9545,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventVideoBlackoutCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9612,7 +9612,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventVideoFreezeFrameCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9679,7 +9679,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventAudioMuteDetected trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9746,7 +9746,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventVideoSignalLoss trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9813,7 +9813,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventAudioClipDetected trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9880,7 +9880,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventAudioMuteCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -9947,7 +9947,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventAudioClipCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10014,7 +10014,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventAudioSignalLoss trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10081,7 +10081,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventVideoSignalAcquired trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10148,7 +10148,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qmmEventAudioSignalAcquired trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10223,7 +10223,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	qpskCfgSNRMinThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qpskEventSNRBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10300,7 +10300,7 @@ maximum value allowed.&lt;/p>&lt;table>
 
 	qpskCfgEVMMaxThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qpskEventEVMAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10378,7 +10378,7 @@ is applied exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	qpskCfgPreViterbiBERMaxThresholdString&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qpskEventPreViterbiBERAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10457,7 +10457,7 @@ exceeded the maximum threshold.&lt;/p>&lt;table>
 
 	qpskCfgPreRSBERMaxThresholdString&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qpskEventPreRSBERAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10535,7 +10535,7 @@ maximum threshold.&lt;/p>&lt;table>
 
 	qpskCfgCarrierLevelMaxThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qpskEventCarrierLevelAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10613,7 +10613,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	qpskCfgCarrierLevelMinThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qpskEventCarrierLevelBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10682,7 +10682,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qpskEventEbNoBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10749,7 +10749,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qpskEventMERBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10816,7 +10816,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			qpskEventURSAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10883,7 +10883,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventLockAcquired trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -10950,7 +10950,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventLockLost trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11017,7 +11017,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventSignalPowerBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11084,7 +11084,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventSignalPowerAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11151,7 +11151,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventSNRBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11218,7 +11218,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventRSUncorrectedError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11285,7 +11285,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventPreRSBERAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11352,7 +11352,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventLockCountAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11419,7 +11419,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventEVMAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11486,7 +11486,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventMERBelowThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11553,7 +11553,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventSymbolOffsetBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11620,7 +11620,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventSymbolOffsetAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11687,7 +11687,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventFreqOffsetBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11754,7 +11754,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventFreqOffsetAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11821,7 +11821,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventRSUncorrectedCountAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11888,7 +11888,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventSignalLockEventBetweenReports trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -11955,7 +11955,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventEbNoBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12022,7 +12022,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventPreTurboBERAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12089,7 +12089,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventBlockErrorRatioAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12156,7 +12156,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventTSUncorrectedError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12223,7 +12223,7 @@ the minimum threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			slfEventTSUncorrectedCountAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12303,7 +12303,7 @@ given PID is above the maximum threshold configured for this PID.&lt;/p>&lt;tabl
 
 	pidDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPIDBandwidthAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12386,7 +12386,7 @@ given PID is below the minimum threshold configured for this PID.&lt;/p>&lt;tabl
 
 	pidDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPIDBandwidthBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12457,7 +12457,7 @@ is above the maximum configured threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSelectedPIDsBandwidthAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12525,7 +12525,7 @@ is below the minimum configured threshold.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSelectedPIDsBandwidthBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12593,7 +12593,7 @@ given PID is within the thresholds configured for this PID.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPIDBandwidthWithinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12661,7 +12661,7 @@ is within the configured thresholds.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSelectedPIDsBandwidthWithinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12741,7 +12741,7 @@ threshold configured for this PID.&lt;/p>&lt;table>
 
 	pidDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPCRJitterAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12824,7 +12824,7 @@ threshold configured for this PID.&lt;/p>&lt;table>
 
 	pidDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPCRJitterBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12895,7 +12895,7 @@ the threshold configured for this PID.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPCRJitterOffsetAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -12963,7 +12963,7 @@ the threshold configured for this PID.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPCRPeakToPeakJitterAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13043,7 +13043,7 @@ the maximum threshold configured for this PID.&lt;/p>&lt;table>
 
 	pidDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPacketIntAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13126,7 +13126,7 @@ the minimum threshold configured for this PID.&lt;/p>&lt;table>
 
 	pidDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPacketIntBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13198,7 +13198,7 @@ field set to '1' were received, but no Conditional Access Table
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMissingCAT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13270,7 +13270,7 @@ a CAT) was received on PID 0x0001.&lt;/p>&lt;table>
 
 	tspETR290TableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventInvalidCAT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13342,7 +13342,7 @@ a CAT) was received on PID 0x0001.&lt;/p>&lt;table>
 
 	tspETR290TableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventCATError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13414,7 +13414,7 @@ a CAT) was received on PID 0x0001.&lt;/p>&lt;table>
 
 	tspETR290TableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventCATKeyChangeError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13492,7 +13492,7 @@ a packet which occurred more than twice, or a lost packet.&lt;/p>&lt;table>
 
 	pidDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventContinuityCountError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13562,7 +13562,7 @@ field was received, indicating a damaged table section.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventCRCError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13664,7 +13664,7 @@ maximum allowed interval.&lt;/p>&lt;table>
 
 	svcName&lt;/b>&lt;/td>&lt;td>
 	%parm[#15]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMissingEIT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13757,7 +13757,7 @@ Allowed values are 0x4E..0x6F and 0x72.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventInvalidEIT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13792,7 +13792,7 @@ Allowed values are 0x4E..0x6F and 0x72.&lt;/p>&lt;table>
       <event-label>PIXMET-TSP-MIB defined trap event: tspEventEITArrivedLate</event-label>
       <descr>&lt;p>This notification is obsolete, and will no longer be generated.
 The tspEventMissingEIT notification is now sent instead.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventEITArrivedLate trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -13879,7 +13879,7 @@ EIT sections are arriving too quickly.&lt;/p>&lt;table>
 
 	svcName&lt;/b>&lt;/td>&lt;td>
 	%parm[#13]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventEITArrivedEarly trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -13953,7 +13953,7 @@ tspEventEITActualErrorNew.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventEITActualError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14026,7 +14026,7 @@ error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventEITActualErrorNew trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14093,7 +14093,7 @@ error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventEITOtherError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14160,7 +14160,7 @@ error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventEITPFError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14257,7 +14257,7 @@ the table were received within the maximum allowed interval.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableSections&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMissingNIT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14349,7 +14349,7 @@ Allowed values are 0x40, 0x41, and 0x72.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventInvalidNIT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14384,7 +14384,7 @@ Allowed values are 0x40, 0x41, and 0x72.&lt;/p>&lt;table>
       <event-label>PIXMET-TSP-MIB defined trap event: tspEventNITArrivedLate</event-label>
       <descr>&lt;p>This notification is obsolete, and will no longer be generated.
 The tspEventMissingNIT notification is now sent instead.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventNITArrivedLate trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -14467,7 +14467,7 @@ NIT sections are arriving too quickly.&lt;/p>&lt;table>
 
 	tspETR290TableSectionInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventNITArrivedEarly trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14545,7 +14545,7 @@ error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventNITActualError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14612,7 +14612,7 @@ error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventNITOtherError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14681,7 +14681,7 @@ field set to '1' were received on the Program Association Table
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventScrambledPacketsOnPATPID trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14766,7 +14766,7 @@ Allowed value is 0x00.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventInvalidPAT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14867,7 +14867,7 @@ were received within the maximum allowed interval.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableSections&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPATArrivedLate trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -14947,7 +14947,7 @@ cleared only when all three error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPATError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15032,7 +15032,7 @@ Allowed values are 0x71 and 0x72.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventInvalidRST trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15126,7 +15126,7 @@ RST sections are arriving too quickly.&lt;/p>&lt;table>
 
 	tspETR290TableSectionInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventRSTArrivedEarly trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15204,7 +15204,7 @@ error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventRSTError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15301,7 +15301,7 @@ the table were received within the maximum allowed interval.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableSections&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMissingSDT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15393,7 +15393,7 @@ Allowed values are 0x42, 0x46, 0x4A, and 0x72.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventInvalidSDT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15428,7 +15428,7 @@ Allowed values are 0x42, 0x46, 0x4A, and 0x72.&lt;/p>&lt;table>
       <event-label>PIXMET-TSP-MIB defined trap event: tspEventSDTArrivedLate</event-label>
       <descr>&lt;p>This notification is obsolete, and will no longer be generated.
 The tspEventMissingSDT notification is now sent instead.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSDTArrivedLate trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -15511,7 +15511,7 @@ SDT sections are arriving too quickly.&lt;/p>&lt;table>
 
 	tspETR290TableSectionInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSDTArrivedEarly trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15589,7 +15589,7 @@ error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSDTActualError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15656,7 +15656,7 @@ error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSDTOtherError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15724,7 +15724,7 @@ error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSyncByteError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15792,7 +15792,7 @@ input of this Transport Stream Processor module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSyncLost trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15859,7 +15859,7 @@ input of this Transport Stream Processor module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPktStall trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15927,7 +15927,7 @@ input of this Transport Stream Processor module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSyncAcquired trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -15999,7 +15999,7 @@ transport stream has changed.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTSIDChanged trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16076,7 +16076,7 @@ has changed.&lt;/p>&lt;table>
 
 	tspOCVReceivedPATVersionNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPATVersionNumberChanged trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16163,7 +16163,7 @@ interval.&lt;/p>&lt;table>
 
 	tspETR290TableSectionMaxThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMissingTDT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16252,7 +16252,7 @@ Allowed values are 0x70, 0x72, and 0x73.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventInvalidTDT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16287,7 +16287,7 @@ Allowed values are 0x70, 0x72, and 0x73.&lt;/p>&lt;table>
       <event-label>PIXMET-TSP-MIB defined trap event: tspEventTDTArrivedLate</event-label>
       <descr>&lt;p>This notification is obsolete, and will no longer be generated.
 The tspEventMissingTDT notification is now sent instead.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTDTArrivedLate trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -16370,7 +16370,7 @@ TDT sections are arriving too quickly.&lt;/p>&lt;table>
 
 	tspETR290TableSectionInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTDTArrivedEarly trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16448,7 +16448,7 @@ error conditions have been cleared.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTDTError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16516,7 +16516,7 @@ set to '1' was received on one or more PIDs.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTransportPacketError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16593,7 +16593,7 @@ contains at least one uncorrectable bit error.&lt;/p>&lt;table>
 
 	pidDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTransportError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16667,7 +16667,7 @@ being received on all referenced PIDs.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPIDError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16747,7 +16747,7 @@ PID within the maximum interval allowed.&lt;/p>&lt;table>
 
 	pidDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMissingPacketsOnPID trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16781,7 +16781,7 @@ PID within the maximum interval allowed.&lt;/p>&lt;table>
       <event-label>PIXMET-TSP-MIB defined trap event: tspEventMissingPMT</event-label>
       <descr>&lt;p>This notification is obsolete, and will no longer be generated.
 The tspEventPMTMissing notification is now sent instead.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMissingPMT trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -16847,7 +16847,7 @@ PMT PID in the Program Association Table (PAT).&lt;/p>&lt;table>
 
 	tspETR290TablePID&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventScrambledPacketsOnPMTPID trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -16879,7 +16879,7 @@ PMT PID in the Program Association Table (PAT).&lt;/p>&lt;table>
       <event-label>PIXMET-TSP-MIB defined trap event: tspEventPMTArrivedLate</event-label>
       <descr>&lt;p>This notification is obsolete, and will no longer be generated.
 The tspEventPMTMissing notification is now sent instead.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPMTArrivedLate trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -16965,7 +16965,7 @@ PMT PID in the Program Association Table (PAT).&lt;/p>&lt;table>
 
 	svcName&lt;/b>&lt;/td>&lt;td>
 	%parm[#13]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPMTMissing trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -17043,7 +17043,7 @@ PMT PID in the Program Association Table (PAT).&lt;/p>&lt;table>
 
 	pidNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPCRRepetitionError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -17117,7 +17117,7 @@ discontinuity_indicator field.&lt;/p>&lt;table>
 
 	pidNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPCRDiscontinuityError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -17190,7 +17190,7 @@ specified tspPCRLossCheckInterval.&lt;/p>&lt;table>
 
 	pidNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMissingPCR trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -17264,7 +17264,7 @@ received as expected on all PCR PIDs.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPCRError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -17348,7 +17348,7 @@ PCR PID within the specified tspPCRLossCheckInterval.&lt;/p>&lt;table>
 
 	pidDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMissingPCROnPID trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -17420,7 +17420,7 @@ have not been referenced by any System Information (SI) tables.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventPacketOnUnreferencedPID trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -17492,7 +17492,7 @@ been referenced by any System Information (SI) tables.&lt;/p>&lt;table>
 
 	pidNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventUnreferencedPID trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -17561,7 +17561,7 @@ outside the specified limits.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventSIRepetitionRateError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -17652,7 +17652,7 @@ outside the specified limits.&lt;/p>&lt;table>
 
 	svcName&lt;/b>&lt;/td>&lt;td>
 	%parm[#13]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventDSMCCDCIITableMissing trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -17749,7 +17749,7 @@ outside the specified limits.&lt;/p>&lt;table>
 
 	svcName&lt;/b>&lt;/td>&lt;td>
 	%parm[#13]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventDSMCCDDBTableMissing trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18023,7 +18023,7 @@ module.&lt;/p>&lt;table>
 		disabled(3)
 		masked(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventETR290ResultsChanged trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18112,7 +18112,7 @@ module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventETR290ErrorCountsReset trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18179,7 +18179,7 @@ module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMIPError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18246,7 +18246,7 @@ module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMIPTimingError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18314,7 +18314,7 @@ specification.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMIPStructureError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18382,7 +18382,7 @@ in a mega-frame.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMIPPresenceError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18449,7 +18449,7 @@ in a mega-frame.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMIPPointerError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18517,7 +18517,7 @@ or the number of packets between MIP is different.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMIPPeriodicityError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18584,7 +18584,7 @@ or the number of packets between MIP is different.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMIPTsRateError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18651,7 +18651,7 @@ or the number of packets between MIP is different.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventMIPErrorCountReset trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18731,7 +18731,7 @@ carrying an MPEG-2 video elementary stream.&lt;/p>&lt;table>
 
 	tspVideoServiceNames&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventVideoFreezeFrame trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18814,7 +18814,7 @@ an MPEG-2 video elementary stream.&lt;/p>&lt;table>
 
 	tspVideoServiceNames&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventVideoBlackout trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18903,7 +18903,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspAudioServiceNames&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventAudioTone trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -18993,7 +18993,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspAudioServiceNames&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventAudioSilence trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19092,7 +19092,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableSections&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCMissingSTT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19182,7 +19182,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCInvalidSTT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19253,7 +19253,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCNoSTT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19340,7 +19340,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290TableSectionInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCSTTTableEarly trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19412,7 +19412,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCSTTActualError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19479,7 +19479,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCSTTOtherError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19574,7 +19574,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableSections&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCMissingMGT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19664,7 +19664,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCInvalidMGT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19735,7 +19735,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCNoMGT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19822,7 +19822,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290TableSectionInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCMGTEarly trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19894,7 +19894,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCMGTActualError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -19961,7 +19961,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCMGTOtherError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20056,7 +20056,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableSections&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCMissingTVCT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20146,7 +20146,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCInvalidTVCT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20217,7 +20217,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCNoTVCT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20304,7 +20304,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290TableSectionInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCTVCTEarly trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20376,7 +20376,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCTVCTActualError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20443,7 +20443,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCTVCTOtherError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20538,7 +20538,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableSections&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCMissingCVCT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20628,7 +20628,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCInvalidCVCT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20699,7 +20699,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCNoCVCT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20786,7 +20786,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290TableSectionInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCCVCTEarly trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20858,7 +20858,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCCVCTActualError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -20925,7 +20925,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCCVCTOtherError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21020,7 +21020,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableSections&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCMissingRRT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21110,7 +21110,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290ReceivedTableID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCInvalidRRT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21181,7 +21181,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCNoRRT trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21268,7 +21268,7 @@ was detected.&lt;/p>&lt;table>
 
 	tspETR290TableSectionInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCRRTEarly trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21340,7 +21340,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCRRTActualError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21407,7 +21407,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventATSCRRTOtherError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21474,7 +21474,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTSCaptureOK trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21541,7 +21541,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTSCaptureFail trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21608,7 +21608,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTSCaptureAborted trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21675,7 +21675,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventURPServerSocketError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21742,7 +21742,7 @@ was detected.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventURPClientSocketError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21854,7 +21854,7 @@ undecoded octets of the received table section.&lt;/p>&lt;table>
 
 	tspTableOctets&lt;/b>&lt;/td>&lt;td>
 	%parm[#18]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTableSectionOctetsReceived trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -21978,7 +21978,7 @@ with an element corresponding to each field.&lt;/p>&lt;table>
 
 	tspTableFields&lt;/b>&lt;/td>&lt;td>
 	%parm[#18]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTableSectionFieldsReceived trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22057,7 +22057,7 @@ this Transport Stream Processor module.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventASIPhysicalLayerError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22125,7 +22125,7 @@ module has overflowed.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventTransportDMABufferError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22204,7 +22204,7 @@ module has overflowed.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVNetworkIDError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22290,7 +22290,7 @@ module has overflowed.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVNetworkNameError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22369,7 +22369,7 @@ module has overflowed.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVTransportStreamIDError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22451,7 +22451,7 @@ the specified minimum rate.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVTransportStreamMinRateError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22534,7 +22534,7 @@ specified maximum rate.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVTransportStreamMaxRateError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22617,7 +22617,7 @@ different than the expected value.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVTSNumServicesError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22713,7 +22713,7 @@ will be reported.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceIDError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22796,7 +22796,7 @@ will be reported.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceNameError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22882,7 +22882,7 @@ will be reported.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceCATError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -22970,7 +22970,7 @@ than the expected value.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceComponentError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23057,7 +23057,7 @@ than the expected value.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServicePMTPIDError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23151,7 +23151,7 @@ the expected status.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceCAError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23230,7 +23230,7 @@ the expected status.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVUnexpectedServiceError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23307,7 +23307,7 @@ the expected status.&lt;/p>&lt;table>
 
 	tspOCVExpectedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceMissingError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23397,7 +23397,7 @@ this error should never be reported.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVMinorServiceIDError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23489,7 +23489,7 @@ stream was different than the expected category.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVComponentStreamCategoryError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23586,7 +23586,7 @@ stream was different than the expected language code.&lt;/p>&lt;table>
 
 	tspOCVReceivedStreamCategoryName&lt;/b>&lt;/td>&lt;td>
 	%parm[#13]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVComponentLanguageError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23680,7 +23680,7 @@ this transport stream.&lt;/p>&lt;table>
 
 	tspOCVReceivedStreamLanguageCode&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVUnexpectedComponentError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23773,7 +23773,7 @@ this transport stream.&lt;/p>&lt;table>
 
 	tspOCVExpectedStreamLanguageCode&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVMissingComponentError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23857,7 +23857,7 @@ this transport stream.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVNetworkIDErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -23943,7 +23943,7 @@ this transport stream.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVNetworkNameErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24022,7 +24022,7 @@ this transport stream.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVTransportStreamIDErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24104,7 +24104,7 @@ the specified minimum rate.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVTransportStreamMinRateErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24187,7 +24187,7 @@ the specified maximum rate.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVTransportStreamMaxRateErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24270,7 +24270,7 @@ now the same as the expected value.&lt;/p>&lt;table>
 
 	tspOCVReceivedTSID&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVTSNumServicesErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24357,7 +24357,7 @@ value.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceIDErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24440,7 +24440,7 @@ value.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceNameErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24526,7 +24526,7 @@ value.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceCATErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24614,7 +24614,7 @@ same as the expected value.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceComponentErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24701,7 +24701,7 @@ same as the expected value.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServicePMTPIDErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24795,7 +24795,7 @@ the expected status.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceCAErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24874,7 +24874,7 @@ the expected status.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVUnexpectedServiceErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -24951,7 +24951,7 @@ the expected status.&lt;/p>&lt;table>
 
 	tspOCVExpectedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVServiceMissingErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25037,7 +25037,7 @@ value.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVMinorServiceIDErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25129,7 +25129,7 @@ stream is now the same as the expected category.&lt;/p>&lt;table>
 
 	tspOCVReceivedServiceProgramNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVComponentStreamCategoryErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25226,7 +25226,7 @@ stream is now the same as the expected language code.&lt;/p>&lt;table>
 
 	tspOCVReceivedStreamCategoryName&lt;/b>&lt;/td>&lt;td>
 	%parm[#13]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVComponentLanguageErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25320,7 +25320,7 @@ this transport stream.&lt;/p>&lt;table>
 
 	tspOCVReceivedStreamLanguageCode&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVUnexpectedComponentErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25413,7 +25413,7 @@ on this transport stream.&lt;/p>&lt;table>
 
 	tspOCVExpectedStreamLanguageCode&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventOCVMissingComponentErrorCleared trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25486,7 +25486,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventIPVideoTrafficLoss trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25554,7 +25554,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tspEventIPVideoTrafficRestored trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25621,7 +25621,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventLockAcquired trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25688,7 +25688,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventLockLost trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25755,7 +25755,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventSignalPowerBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25822,7 +25822,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventSignalPowerAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25889,7 +25889,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventSNRBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -25956,7 +25956,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventRSUncorrectedError trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -26023,7 +26023,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventLineBERAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -26090,7 +26090,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventLockCountAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -26157,7 +26157,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventEVMAboveThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -26224,7 +26224,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventMERBelowThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -26291,7 +26291,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventSymbolOffsetBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -26358,7 +26358,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventSymbolOffsetAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -26425,7 +26425,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventFreqOffsetBelowMinThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -26492,7 +26492,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventFreqOffsetAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -26559,7 +26559,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventRSUncorrectedCountAboveMaxThreshold trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 
@@ -26626,7 +26626,7 @@ Applies to DVStation-IP only.&lt;/p>&lt;table>
 
 	pmEventDescription&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			vsbEventSignalLockEventBetweenReports trap received 
 			pmEventClockTimestamp=%parm[#1]% 
 			pmEventDeviceTimestamp=%parm[#2]% 

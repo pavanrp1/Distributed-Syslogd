@@ -6,7 +6,7 @@
             &lt;p>Acknowledgement Request:%parm[refId]% of type:%parm[ackType]% was received with the
             action:%parm[ackAction]% was received for User: %parm[ackUser]%&lt;/p>
             Typically received from an external source or as a choice of an AckReader implementation.</descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>Acknowledgement Request:%parm[refId]% of type:%parm[ackType]% was received with the
             action:%parm[ackAction]% was received for User: %parm[ackUser]%.&lt;/p>
         </logmsg>

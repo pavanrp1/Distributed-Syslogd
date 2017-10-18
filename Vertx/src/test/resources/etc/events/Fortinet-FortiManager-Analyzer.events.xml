@@ -25,7 +25,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fmTrapHASwitch trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -79,7 +79,7 @@
 
 	fmRAIDDevIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fmTrapRAIDStatusChange trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -134,7 +134,7 @@
 
 	fnGenTrapMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fmTrapLogAlert trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -176,7 +176,7 @@
 
 	fmLogRateThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fmTrapLogRateThreshold trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -219,7 +219,7 @@
 
 	fmLogDataRateThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fmTrapLogDataRateThreshold trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -262,7 +262,7 @@
 
 	fmLicGbDayThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fmTrapLicGbDayThreshold trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -305,7 +305,7 @@
 
 	fmLicDevQuotaThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fmTrapLicDevQuotaThreshold trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -340,7 +340,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fmTrapCpuThresholdExcludeNice trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>

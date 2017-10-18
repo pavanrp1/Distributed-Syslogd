@@ -25,7 +25,7 @@
 
             logName&lt;/b>&lt;/td>&lt;td>
             %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveLogNearlyFull trap received
             logFullPercent=%parm[#1]%
             logName=%parm[#2]%&lt;/p>
@@ -54,7 +54,7 @@
 
             logName&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveLogFull trap received
             logName=%parm[#1]%&lt;/p>
         </logmsg>
@@ -78,7 +78,7 @@
       <uei>uei.opennms.org/mib2events/iveMaxConcurrentUsersSignedIn</uei>
       <event-label>JUNIPER-IVE-MIB defined trap event: iveMaxConcurrentUsersSignedIn</event-label>
       <descr>&lt;p>Maximum number of concurrent users signed in&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveMaxConcurrentUsersSignedIn trap received&lt;/p>
         </logmsg>
       <severity>Minor</severity>
@@ -105,7 +105,7 @@
 
             blockedIP&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveTooManyFailedLoginAttempts trap received
             blockedIP=%parm[#1]%&lt;/p>
         </logmsg>
@@ -133,7 +133,7 @@
 
             authServerName&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             externalAuthServerUnreachable trap received
             authServerName=%parm[#1]%&lt;/p>
         </logmsg>
@@ -157,7 +157,7 @@
       <uei>uei.opennms.org/mib2events/iveStart</uei>
       <event-label>JUNIPER-IVE-MIB defined trap event: iveStart</event-label>
       <descr>&lt;p>IVE startup&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveStart trap received&lt;/p>
         </logmsg>
       <severity>Normal</severity>
@@ -180,7 +180,7 @@
       <uei>uei.opennms.org/mib2events/iveShutdown</uei>
       <event-label>JUNIPER-IVE-MIB defined trap event: iveShutdown</event-label>
       <descr>&lt;p>IVE shutdown&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveShutdown trap received&lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -203,7 +203,7 @@
       <uei>uei.opennms.org/mib2events/iveReboot</uei>
       <event-label>JUNIPER-IVE-MIB defined trap event: iveReboot</event-label>
       <descr>&lt;p>IVE reboot&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveReboot trap received&lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -226,7 +226,7 @@
       <uei>uei.opennms.org/mib2events/archiveServerUnreachable</uei>
       <event-label>JUNIPER-IVE-MIB defined trap event: archiveServerUnreachable</event-label>
       <descr>&lt;p>Archive server is not responding&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             archiveServerUnreachable trap received&lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -249,7 +249,7 @@
       <uei>uei.opennms.org/mib2events/archiveServerLoginFailed</uei>
       <event-label>JUNIPER-IVE-MIB defined trap event: archiveServerLoginFailed</event-label>
       <descr>&lt;p>Could not login into archive server. Verify FTP username and password.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             archiveServerLoginFailed trap received&lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -276,7 +276,7 @@
 
             fileName&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             archiveFileTransferFailed trap received
             fileName=%parm[#1]%&lt;/p>
         </logmsg>
@@ -304,7 +304,7 @@
 
             meetingUserCount&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             meetingUserLimit trap received
             meetingUserCount=%parm[#1]%&lt;/p>
         </logmsg>
@@ -328,7 +328,7 @@
       <uei>uei.opennms.org/mib2events/iveRestart</uei>
       <event-label>JUNIPER-IVE-MIB defined trap event: iveRestart</event-label>
       <descr>&lt;p>IVE has restarted under administrator's instruction.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveRestart trap received&lt;/p>
         </logmsg>
       <severity>Normal</severity>
@@ -355,7 +355,7 @@
 
             meetingCount&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             meetingLimit trap received
             meetingCount=%parm[#1]%&lt;/p>
         </logmsg>
@@ -383,7 +383,7 @@
 
             diskFullPercent&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveDiskNearlyFull trap received
             diskFullPercent=%parm[#1]%&lt;/p>
         </logmsg>
@@ -407,7 +407,7 @@
       <uei>uei.opennms.org/mib2events/iveDiskFull</uei>
       <event-label>JUNIPER-IVE-MIB defined trap event: iveDiskFull</event-label>
       <descr>&lt;p>Disk space full&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveDiskFull trap received&lt;/p>
         </logmsg>
       <severity>Minor</severity>
@@ -442,7 +442,7 @@
 
             logDescription&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             logMessageTrap trap received
             logID=%parm[#1]%
             logType=%parm[#2]%
@@ -472,7 +472,7 @@
 
             iveMemoryUtil&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             memUtilNotify trap received
             iveMemoryUtil=%parm[#1]%&lt;/p>
         </logmsg>
@@ -500,7 +500,7 @@
 
             iveCpuUtil&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             cpuUtilNotify trap received
             iveCpuUtil=%parm[#1]%&lt;/p>
         </logmsg>
@@ -528,7 +528,7 @@
 
             iveSwapUtil&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             swapUtilNotify trap received
             iveSwapUtil=%parm[#1]%&lt;/p>
         </logmsg>
@@ -556,7 +556,7 @@
 
             ivsName&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveMaxConcurrentUsersVirtualSystem trap received
             ivsName=%parm[#1]%&lt;/p>
         </logmsg>
@@ -584,7 +584,7 @@
 
             ocspResponderURL&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             ocspResponderUnreachable trap received
             ocspResponderURL=%parm[#1]%&lt;/p>
         </logmsg>
@@ -612,7 +612,7 @@
 
             fanDescription&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveFanNotify trap received
             fanDescription=%parm[#1]%&lt;/p>
         </logmsg>
@@ -640,7 +640,7 @@
 
             psDescription&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             ivePowerSupplyNotify trap received
             psDescription=%parm[#1]%&lt;/p>
         </logmsg>
@@ -668,7 +668,7 @@
 
             raidDescription&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveRaidNotify trap received
             raidDescription=%parm[#1]%&lt;/p>
         </logmsg>
@@ -700,7 +700,7 @@
 
             nodeList&lt;/b>&lt;/td>&lt;td>
             %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveClusterDisableNodeTrap trap received
             clusterName=%parm[#1]%
             nodeList=%parm[#2]%&lt;/p>
@@ -737,7 +737,7 @@
 
             newVIP&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveClusterChangedVIPTrap trap received
             vipType=%parm[#1]%
             currentVIP=%parm[#2]%
@@ -767,7 +767,7 @@
 
             nicEvent&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveNetExternalInterfaceDownTrap trap received
             nicEvent=%parm[#1]%&lt;/p>
         </logmsg>
@@ -795,7 +795,7 @@
 
             nodeName&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveClusterDeleteTrap trap received
             nodeName=%parm[#1]%&lt;/p>
         </logmsg>
@@ -823,7 +823,7 @@
 
             nicEvent&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             iveNetInternalInterfaceDownTrap trap received
             nicEvent=%parm[#1]%&lt;/p>
         </logmsg>

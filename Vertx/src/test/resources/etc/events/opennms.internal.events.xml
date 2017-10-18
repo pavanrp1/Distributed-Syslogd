@@ -5,7 +5,7 @@
       <descr>&lt;p>The interface %interface% is being
             remanaged.&lt;/p> &lt;p>This interface will now
             participate in service polling.&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             The interface %interface% is being remanaged.
         </logmsg>
       <severity>Warning</severity>
@@ -17,7 +17,7 @@
             unmanaged.&lt;/p> &lt;p>This interface and all
             associated services will &lt;b>NOT&lt;/b> be polled
             until the interface is remanaged.&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             The interface %interface% is being forcibly unmanaged.
         </logmsg>
       <severity>Minor</severity>
@@ -27,7 +27,7 @@
       <event-label>OpenNMS-defined internal event: notificationWithoutUsers</event-label>
       <descr>&lt;p>A destination path in a notification has not been
             assigned any users.&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             A destination path in a notification has not been assigned
             any users.
         </logmsg>
@@ -44,7 +44,7 @@
             Responsible user: &lt;em>%parm[remoteUser]%&lt;/em>
             at &lt;em>%parm[remoteHost]% (%parm[remoteAddr]%)&lt;/em>
             &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>Notifications have been disabled.&lt;/p>
         </logmsg>
       <severity>Minor</severity>
@@ -60,7 +60,7 @@
             Responsible user: &lt;em>%parm[remoteUser]%&lt;/em>
             at &lt;em>%parm[remoteHost]% (%parm[remoteAddr]%)&lt;/em>
             &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>Notifications have been enabled.&lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -103,7 +103,7 @@
       <event-label>OpenNMS-defined internal event: serviceManaged</event-label>
       <descr>&lt;p>The service %service% on interface %interface% is
             being remanaged.&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             The service %service% on interface %interface% is being
             remanaged.
         </logmsg>
@@ -113,7 +113,7 @@
       <uei>uei.opennms.org/internal/demandPollService</uei>
       <event-label>OpenNMS-defined node event: DemandPoll</event-label>
       <descr>&lt;p>The Demand Poll requested on %nodeid% (%nodelabel%)</descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>The Demand Poll requested on %nodeid% (%nodelabel%).&lt;/p>
         </logmsg>
       <severity>Normal</severity>
@@ -123,7 +123,7 @@
       <event-label>OpenNMS-defined internal event: scehduled outage configuration changed</event-label>
       <descr>This event is sent by the WebUI or the user when scheduled outage configuration has changed and shoule be
             reloaded</descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             The scheduled outage configuration has been changed and should be reloaded
         </logmsg>
       <severity>Normal</severity>
@@ -151,7 +151,7 @@
       <uei>uei.opennms.org/internal/authentication/failure</uei>
       <event-label>OpenNMS-defined internal event: an authentication failure has occurred in WebUI</event-label>
       <descr>This event is sent by the WebUI when an authentication failure occurs.</descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             OpenNMS user '%parm[user]%' (may be blank) has failed to login
             from %parm[ip]%. The failure event is %parm[exceptionName]% with
             the message '%parm[exceptionMessage]%'.
@@ -163,7 +163,7 @@
       <uei>uei.opennms.org/internal/authentication/loggedOut</uei>
       <event-label>OpenNMS-defined internal event: a user logged out of the web UI</event-label>
       <descr>This event is sent by the WebUI when a user logs out of the WebUI.</descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             OpenNMS user '%parm[user]%' logged out of the WebUI.
         </logmsg>
       <severity>Normal</severity>
@@ -175,7 +175,7 @@
       <descr>This event is sent by the WebUI when a user's session is removed for any
             reason other than a user-initiated logout. This generally means that
             the session timed out due to inactivity.</descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             OpenNMS user '%parm[user]%' has been logged out of the WebUI, most likely
             due to a session timeout.
         </logmsg>
@@ -191,14 +191,14 @@
             exist, the resource type
             is not valid or doesn't exist on the node, the resource name is not valid or doesn't exist on the node.&lt;/p>
             &lt;p>Check the logs for more details.&lt;/p></descr>
-      <logmsg dest="donotpersist">The KSC Report %parm[reportTitle]% has been updated.</logmsg>
+      <logmsg dest="logndisplay">The KSC Report %parm[reportTitle]% has been updated.</logmsg>
       <severity>Warning</severity>
    </event>
    <event>
       <uei>uei.opennms.org/services/passiveServiceStatus</uei>
       <event-label>OpenNMS-defined service event: passiveServiceStatus</event-label>
       <descr>&lt;p>Status information for service %parm[passiveServiceName]% has been updated.&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>Status information for service %parm[passiveServiceName]% has been updated.&lt;/p>
         </logmsg>
       <severity>Normal</severity>
@@ -207,7 +207,7 @@
       <uei>uei.opennms.org/asset/maintenance/expirationWarning</uei>
       <event-label>Maintenance contract will expire in less then %parm[#4]% days</event-label>
       <descr>&lt;p>Maintenance contract of %nodelabel% will expire in less then %parm[#4]% days.&lt;/p></descr>
-      <logmsg dest="donotpersist">&lt;p>Maintenance contract %parm[#3]% of %nodelabel% will expire at %parm[#2]%.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Maintenance contract %parm[#3]% of %nodelabel% will expire at %parm[#2]%.&lt;/p></logmsg>
       <severity>Warning</severity>
       <alarm-data reduction-key="%uei%:%nodeid%" alarm-type="1"/>
    </event>
@@ -215,7 +215,7 @@
       <uei>uei.opennms.org/internal/monitoringSystemAdded</uei>
       <event-label>Monitoring system Added</event-label>
       <descr>A new monitoring system has been added</descr>
-      <logmsg dest="donotpersist">A new monitoring system of type '%parm[monitoringSystemType]%' has been added with ID
+      <logmsg dest="logndisplay">A new monitoring system of type '%parm[monitoringSystemType]%' has been added with ID
             '%parm[monitoringSystemId]%' at location '%parm[monitoringSystemLocation]%'.
         </logmsg>
       <severity>Normal</severity>
@@ -224,7 +224,7 @@
       <uei>uei.opennms.org/internal/monitoringSystemLocationChanged</uei>
       <event-label>Monitoring system Location Changed</event-label>
       <descr>Monitoring system location changed</descr>
-      <logmsg dest="donotpersist">Monitoring system of type '%parm[monitoringSystemType]%' with ID
+      <logmsg dest="logndisplay">Monitoring system of type '%parm[monitoringSystemType]%' with ID
             '%parm[monitoringSystemId]%' has changed its location from '%parm[monitoringSystemPreviousLocation]%' to
             '%parm[monitoringSystemLocation]%'.
         </logmsg>
@@ -234,7 +234,7 @@
       <uei>uei.opennms.org/internal/monitoringSystemDeleted</uei>
       <event-label>Monitoring system Deleted</event-label>
       <descr>Monitoring system Deleted</descr>
-      <logmsg dest="donotpersist">Monitoring system of type '%parm[monitoringSystemType]%' with ID
+      <logmsg dest="logndisplay">Monitoring system of type '%parm[monitoringSystemType]%' with ID
             '%parm[monitoringSystemId]%' at location '%parm[monitoringSystemLocation]%' has been deleted.
         </logmsg>
       <severity>Normal</severity>

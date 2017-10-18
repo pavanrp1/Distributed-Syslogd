@@ -21,7 +21,7 @@
 
 	fvSysSerial&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fvTrapStorageDiskHighThreshold trap received
 	fvSysSerial=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -61,7 +61,7 @@
 		logDiskFormat(6)
 		storageDiskFormat(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fvTrapSystemEvent trap received
 	fvSysSerial=%parm[#1]%
 	fvSysEventCode=%parm[#2]%&lt;/p>
@@ -116,7 +116,7 @@
 
 	fvHAEventReason&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fvTrapHAEvent trap received
 	fvSysSerial=%parm[#1]%
 	fvHAEventId=%parm[#2]%

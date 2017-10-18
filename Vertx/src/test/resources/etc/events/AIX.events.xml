@@ -23,7 +23,7 @@ aixFsTable.&lt;/p>&lt;table>
 
 	aixFsName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			aixFileSystemMounted trap received 
 			aixFsName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -77,7 +77,7 @@ aixFsThreshold - the threshold for the file system size&lt;/p>&lt;table>
 
 	aixFsThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			aixFileSystemFull trap received 
 			aixFsName=%parm[#1]% 
 			aixFsSize=%parm[#2]% 
@@ -130,7 +130,7 @@ aixFsThreshold - the threshold for the file system size&lt;/p>&lt;table>
 
 	aixFsThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			aixFileSystemFull trap received 
 			aixFsName=%parm[#1]% 
 			aixFsSize=%parm[#2]% 
@@ -183,7 +183,7 @@ aixVgThreshold - the threshold for the volume group.&lt;/p>&lt;table>
 
 	aixVgThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			aixVolumeGroupFull trap received 
 			aixVgName=%parm[#1]% 
 			aixVgSize=%parm[#2]% 
@@ -237,7 +237,7 @@ aixPageThreshold - the threshold value of the paging
 
 	aixPageThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			aixPageFull trap received 
 			aixPageName=%parm[#1]% 
 			aixPagePercentUsed=%parm[#2]% 
@@ -286,7 +286,7 @@ aixPageThreshold - the threshold value of the paging
 
 	aixPageThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			aixPageFull trap received 
 			aixPageName=%parm[#1]% 
 			aixPagePercentUsed=%parm[#2]% 
@@ -323,7 +323,7 @@ attempts occurred.&lt;/p>&lt;table>
 
 	aixFailedLoginTimePeriod&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			aixUserLoginFailed trap received 
 			aixFailedLoginTimePeriod=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -360,7 +360,7 @@ aixSeThresholdCPU - Threshold value.  &lt;/p>&lt;table>
 
 	aixSeCPUThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			aixUtilizationCPU trap received 
 			aixSeCPUUtilization=%parm[#1]% 
 			aixSeCPUThreshold=%parm[#2]%&lt;/p>
@@ -389,7 +389,7 @@ aixSeThresholdCPU - Threshold value.  &lt;/p>&lt;table>
 delivered. The snmptrap command sends a trap message 
 to the agent. This object is place holder for 
 snmptrap command. &lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			aixSnmptrapHolder trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -411,7 +411,7 @@ snmptrap command. &lt;/p>&lt;table>&lt;/table></descr>
 AIX-specific trap is received for which no event definition
 has been configured.
 &lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Unknown AIX-specific trap received (enterprise:%id% generic:%generic%
                         specific:%specific%. %parm[##]% varbinds:%parm[all]%&lt;/p>
 		</logmsg>

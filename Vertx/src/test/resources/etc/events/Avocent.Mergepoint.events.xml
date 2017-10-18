@@ -23,7 +23,7 @@ in trapObjectUserName.&lt;/p>&lt;table>
 
 	trapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rebootStartedTrap trap received 
 			trapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -62,7 +62,7 @@ and the method used to log into appliance is contained in trapObjectSessionType.
 		webui(3)
 		spshell(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			userLoginTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectSessionType=%parm[#2]%&lt;/p>
@@ -102,7 +102,7 @@ and the method used to log into appliance is contained in trapObjectSessionType.
 		webui(3)
 		spshell(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			userLogoutTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectSessionType=%parm[#2]%&lt;/p>
@@ -132,7 +132,7 @@ trapObjectUserName: The name of the user who failed to log into appliance.&lt;/p
 
 	trapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loginFailed trap received 
 			trapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -181,7 +181,7 @@ trapObjectAlertMessage: contains the alert message.&lt;/p>&lt;table>
 
 	trapObjectAlertMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			portAlertTrap trap received 
 			trapObjectDeviceName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -219,7 +219,7 @@ trapObjectDaemonName is name of the daemon.&lt;/p>&lt;table>
 
 	trapObjectDaemonName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			daemonStarted trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDaemonName=%parm[#2]%&lt;/p>
@@ -254,7 +254,7 @@ trapObjectDaemonName is name of the daemon.&lt;/p>&lt;table>
 
 	trapObjectDaemonName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			daemonStopped trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDaemonName=%parm[#2]%&lt;/p>
@@ -289,7 +289,7 @@ trapObjectTargetUserName contains name of the user whose session was terminated.
 
 	trapObjectTargetUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			adminSessionTerminatedTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectTargetUserName=%parm[#2]%&lt;/p>
@@ -319,7 +319,7 @@ trapObjectUserName is name of the user who executed saveconf.&lt;/p>&lt;table>
 
 	trapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			configurationSavedTrap trap received 
 			trapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -348,7 +348,7 @@ trapObjectUserName is name of the user who activated new configuration.&lt;/p>&l
 
 	trapObjectUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			configurationActivatedTrap trap received 
 			trapObjectUserName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -382,7 +382,7 @@ trapObjectTargetUserName is name of the new user.&lt;/p>&lt;table>
 
 	trapObjectTargetUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			localUserAddedTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectTargetUserName=%parm[#2]%&lt;/p>
@@ -417,7 +417,7 @@ trapObjectTargetUserName is name of the user who was deleted.&lt;/p>&lt;table>
 
 	trapObjectTargetUserName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			localUserDeletedTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectTargetUserName=%parm[#2]%&lt;/p>
@@ -448,7 +448,7 @@ trapObjectDataBufferSize is current size of the buffer.       &lt;/p>&lt;table>
 
 	trapObjectDataBufferSize&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dataBufferFullThresholdLowTrap trap received 
 			trapObjectDataBufferSize=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -478,7 +478,7 @@ trapObjectDataBufferSize is current size of the buffer.       &lt;/p>&lt;table>
 
 	trapObjectDataBufferSize&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dataBufferFullThresholdMedTrap trap received 
 			trapObjectDataBufferSize=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -503,7 +503,7 @@ trapObjectDataBufferSize is current size of the buffer.       &lt;/p>&lt;table>
       <event-label>AVOCENT-MERGEPOINT-TRAP-MIB defined trap event: dataBufferFullLostDataTrap</event-label>
       <descr>&lt;p>This trap is generated when OnBoard is managed by DSView and global data buffer has exceeded 
 beyond the size of buffer and data lost has occurred.     &lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dataBufferFullLostDataTrap trap received&lt;/p>
 		</logmsg>
       <severity>Critical</severity>
@@ -527,7 +527,7 @@ beyond the size of buffer and data lost has occurred.     &lt;/p>&lt;table>&lt;/
       <event-label>AVOCENT-MERGEPOINT-TRAP-MIB defined trap event: applianceDataBufferLostTrap</event-label>
       <descr>&lt;p>This trap is generated when OnBoard is managed by DSView and data lost occurred while
 collecting data from ssh, or telnet session to Appliance.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			applianceDataBufferLostTrap trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -571,7 +571,7 @@ trapObjectCyPMSocketCount indicates total number of Sockets on serial port.&lt;/
 
 	trapObjectPMSocketCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pmOnlineTrap trap received 
 			trapObjectAuxPortName=%parm[#1]% 
 			trapObjectAuxPortNumber=%parm[#2]% 
@@ -608,7 +608,7 @@ trapObjectAuxPortNumber indicates the serial port number.&lt;/p>&lt;table>
 
 	trapObjectAuxPortNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pmOfflineTrap trap received 
 			trapObjectAuxPortName=%parm[#1]% 
 			trapObjectAuxPortNumber=%parm[#2]%&lt;/p>
@@ -653,7 +653,7 @@ trapObjectPMSocketName is either outlet name in PM or associated Target Device N
 
 	trapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pmSocketTurnedOnTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectAuxPortNumber=%parm[#2]% 
@@ -700,7 +700,7 @@ trapObjectPMSocketName is either outlet name in PM or associated Target Device N
 
 	trapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pmSocketTurnedOffTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectAuxPortNumber=%parm[#2]% 
@@ -747,7 +747,7 @@ trapObjectPMSocketName is either outlet name in PM or associated Target Device N
 
 	trapObjectPMSocketName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pmSocketCycledTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectAuxPortNumber=%parm[#2]% 
@@ -794,7 +794,7 @@ trapObjectCyPMCurrentValue is current value detected when this trap was originat
 
 	trapObjectCyPMCurrentValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pmMaxLoadThresholdReachedTrap trap received 
 			trapObjectAuxPortName=%parm[#1]% 
 			trapObjectAuxPortNumber=%parm[#2]% 
@@ -841,7 +841,7 @@ trapObjectCyPMCurrentValue is current value detected when this trap was originat
 
 	trapObjectCyPMCurrentValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pmMinLoadThresholdReachedTrap trap received 
 			trapObjectAuxPortName=%parm[#1]% 
 			trapObjectAuxPortNumber=%parm[#2]% 
@@ -891,7 +891,7 @@ in trapObjectAlertMessage.&lt;/p>&lt;table>
 
 	trapObjectAlertMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			applianceAlertTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectAlertIndex=%parm[#2]% 
@@ -933,7 +933,7 @@ trapNewFirmwareVersion is NEW FW version of OnBoard.&lt;/p>&lt;table>
 
 	trapNewFirmwareVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			firmwareUpgradeStarted trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapFirmwareVersion=%parm[#2]% 
@@ -972,7 +972,7 @@ trapNewFirmwareVersion is NEW FW version of OnBoard.&lt;/p>&lt;table>
 
 	trapNewFirmwareVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			firmwareUpgradeResultsTrap trap received 
 			trapFirmwareUpdateResult=%parm[#1]% 
 			trapNewFirmwareVersion=%parm[#2]%&lt;/p>
@@ -1027,7 +1027,7 @@ trapNewFirmwareVersion is NEW FW version of OnBoard.&lt;/p>&lt;table>
 
 	trapNewFirmwareVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pmFirmwareUpgradeStarted trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectAuxPortName=%parm[#2]% 
@@ -1084,7 +1084,7 @@ trapNewFirmwareVersion is NEW FW version of OnBoard.&lt;/p>&lt;table>
 
 	trapNewFirmwareVersion&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			pmFirmwareUpgradeResultsTrap trap received 
 			trapObjectAuxPortName=%parm[#1]% 
 			trapObjectAuxPortNumber=%parm[#2]% 
@@ -1127,7 +1127,7 @@ trapObjectDeviceName: contains the name of the device&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceAuth trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1173,7 +1173,7 @@ trapObjectDeviceName: is the name of the device&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceCommandFailureTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectCommand=%parm[#2]% 
@@ -1216,7 +1216,7 @@ trapObjectDeviceName:   The name of the device
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceSPConsoleLoginTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1257,7 +1257,7 @@ The name of the device is contained in trapObjectDeviceName.&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceSPConsoleLogoutTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1299,7 +1299,7 @@ trapObjectDeviceName:   The name of the device
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceConsoleLoginTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1340,7 +1340,7 @@ The name of the device is contained in trapObjectDeviceName.&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceDirectLogoutTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1381,7 +1381,7 @@ trapObjectDeviceName: contains the name of the device accessed&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			nativeIPEnabledTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1422,7 +1422,7 @@ trapObjectDeviceName: contains the name of the device accessed&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			nativeIPDisabledTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1463,7 +1463,7 @@ trapObjectDeviceName: contains the name of the device accessed&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sshTunnelInUseTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1504,7 +1504,7 @@ trapObjectDeviceName: contains the name of the device accessed&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sshTunnelNotInUseTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1545,7 +1545,7 @@ trapObjectDeviceName: contains the name of the device accessed&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceDirectCommandEnableTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1586,7 +1586,7 @@ trapObjectDeviceName: contains the name of the device accessed&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceDirectCommandDisableTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1627,7 +1627,7 @@ trapObjectDeviceName: contains the name of the device&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceResetTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1668,7 +1668,7 @@ trapObjectDeviceName: contains the name of the device&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			devicePowerUpTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1709,7 +1709,7 @@ trapObjectDeviceName: contains the name of the device&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			devicePowerDownTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1750,7 +1750,7 @@ trapObjectDeviceName: contains the name of the device&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			devicePowerCycleTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1791,7 +1791,7 @@ trapObjectDeviceName: contains the name of the device&lt;/p>&lt;table>
 
 	trapObjectDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceEventLogClearedTrap trap received 
 			trapObjectUserName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1832,7 +1832,7 @@ trapObjectDataBufferSize: contains the size of the devices data log.&lt;/p>&lt;t
 
 	trapObjectDataBufferSize&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceEventLogFullLostTrap trap received 
 			trapObjectDeviceName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1879,7 +1879,7 @@ trapObjectAlertString is string that matched and contain in trapObjectPortAlertM
 
 	trapObjectAlertString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceAlertTrap trap received 
 			trapObjectDeviceName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 
@@ -1926,7 +1926,7 @@ trapObjectDeviceSensorAlarmId: is the id of the sensor alarm&lt;/p>&lt;table>
 
 	trapObjectDeviceSensorAlarmId&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			deviceSensorAlarmTrap trap received 
 			trapObjectDeviceName=%parm[#1]% 
 			trapObjectDeviceNumber=%parm[#2]% 

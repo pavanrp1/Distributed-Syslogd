@@ -20,7 +20,7 @@
  &lt;table>&lt;tr>&lt;td>&lt;b>
  InputName&lt;/b>&lt;/td>&lt;td>%parm[#1]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>KSM-1 coldStart&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>KSM-1 coldStart&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -54,7 +54,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  TimeOff&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -88,7 +88,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  TimeOff&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -122,7 +122,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  TimeOff&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -156,7 +156,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  TimeOff&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -190,7 +190,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  TimeOff&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
       <severity>Critical</severity>
    </event>
    <event>
@@ -224,7 +224,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  TimeOff&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -258,7 +258,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  TimeOff&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -292,7 +292,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  TimeOff&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
       <severity>Minor</severity>
    </event>
    <event>
@@ -326,7 +326,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  TimeOff&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -360,7 +360,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  TimeOff&lt;/b>&lt;/td>&lt;td>%parm[#6]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>%parm[#4]% %parm[#1]% %parm[#2]%&lt;/p></logmsg>
       <severity>Critical</severity>
    </event>
 </events>

@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vendor/Dell/traps/alertCMCTestTrap</uei>
       <event-label>DELL-RAC-MIB defined trap event: alertCMCTestTrap</event-label>
       <descr>&lt;p>The CMC has generated a test trap&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertCMCTestTrap trap received&lt;/p>
       </logmsg>
       <severity>Normal</severity>
@@ -93,7 +93,7 @@
 
 	  drsCAMessage&lt;/b>&lt;/td>&lt;td>
 	  %parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertCMCNormalTrap trap received
 	  drsProductChassisName=%parm[#1]%
 	  drsProductChassisLocation=%parm[#2]%
@@ -204,7 +204,7 @@
 
 	  drsCAMessage&lt;/b>&lt;/td>&lt;td>
 	  %parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertCMCWarningTrap trap received
 	  drsProductChassisName=%parm[#1]%
 	  drsProductChassisLocation=%parm[#2]%
@@ -315,7 +315,7 @@
 
 	  drsCAMessage&lt;/b>&lt;/td>&lt;td>
 	  %parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertCMCCriticalTrap trap received
 	  drsProductChassisName=%parm[#1]%
 	  drsProductChassisLocation=%parm[#2]%
@@ -426,7 +426,7 @@
 
 	  drsCAMessage&lt;/b>&lt;/td>&lt;td>
 	  %parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertCMCNonRecoverableTrap trap received
 	  drsProductChassisName=%parm[#1]%
 	  drsProductChassisLocation=%parm[#2]%
@@ -522,7 +522,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscTestTrapEvent trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -607,7 +607,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscAuthError trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -692,7 +692,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscLostESM trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -777,7 +777,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscFoundESM trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -862,7 +862,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscPowerOff trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -947,7 +947,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscPowerOn trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1032,7 +1032,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscWatchdogExpired trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1117,7 +1117,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscBattLow trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1202,7 +1202,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscTempNormal trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1287,7 +1287,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscTempWarning trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1372,7 +1372,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscTempCritical trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1457,7 +1457,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscVoltNormal trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1542,7 +1542,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscVoltWarning trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1627,7 +1627,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscVoltCritical trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1712,7 +1712,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscSELWarning trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1797,7 +1797,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscSELCritical trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1882,7 +1882,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscSEL80percentFull trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -1967,7 +1967,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscSEL90percentFull trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -2052,7 +2052,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscSEL100percentFull trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%
@@ -2137,7 +2137,7 @@
 
 	  drsAlertData&lt;/b>&lt;/td>&lt;td>
 	  %parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	  alertDrscSELNormal trap received
 	  drsAlertSystem=%parm[#1]%
 	  drsAlertTableIndexOID=%parm[#2]%

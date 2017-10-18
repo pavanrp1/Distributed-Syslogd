@@ -42,7 +42,7 @@ is about to transition into the down state.&lt;/p>&lt;table>
 		unknown(4)
 		dormant(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rcCardDown trap received 
 			rcCardIndex=%parm[#1]% 
 			rcCardAdminStatus=%parm[#2]% 
@@ -93,7 +93,7 @@ is about to transition into the up state.&lt;/p>&lt;table>
 		unknown(4)
 		dormant(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rcCardUp trap received 
 			rcCardIndex=%parm[#1]% 
 			rcCardAdminStatus=%parm[#2]% 
@@ -133,7 +133,7 @@ detected that an error condition has occured.&lt;/p>&lt;table>
 
 	rcErrorText&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rcErrorNotification trap received 
 			rcErrorLevel=%parm[#1]% 
 			rcErrorCode=%parm[#2]% 
@@ -167,7 +167,7 @@ the device to be the new root of the spanning
 
 	rcStgId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rcStpNewRoot trap received 
 			rcStgId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -202,7 +202,7 @@ a topology change event.&lt;/p>&lt;table>
 
 	rcPortIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rcStpTopologyChange trap received 
 			rcStgId=%parm[#1]% 
 			rcPortIndex=%parm[#2]%&lt;/p>
@@ -244,7 +244,7 @@ about to transition into the down state.&lt;/p>&lt;table>
 		up(3)
 		down(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rcChasPowerSupplyDown trap received 
 			rcChasPowerSupplyId=%parm[#1]% 
 			rcChasPowerSupplyOperStatus=%parm[#2]%&lt;/p>
@@ -285,7 +285,7 @@ transition into the down state.&lt;/p>&lt;table>
 		up(2)
 		down(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rcChasFanDown trap received 
 			rcChasFanId=%parm[#1]% 
 			rcChasFanOperStatus=%parm[#2]%&lt;/p>
@@ -317,7 +317,7 @@ transitions on the specified port.&lt;/p>&lt;table>
 
 	rcPortIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			rcLinkOscillation trap received 
 			rcPortIndex=%parm[#1]%&lt;/p>
 		</logmsg>

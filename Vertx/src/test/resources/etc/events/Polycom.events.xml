@@ -25,7 +25,7 @@
 
 	polycomVSAuthClientAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loginOK trap received 
 			polycomVSAuthLocation=%parm[#1]% 
 			polycomVSAuthClientAddress=%parm[#2]%&lt;/p>
@@ -58,7 +58,7 @@
 
 	polycomVSAuthClientAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loginFail trap received 
 			polycomVSAuthLocation=%parm[#1]% 
 			polycomVSAuthClientAddress=%parm[#2]%&lt;/p>
@@ -83,7 +83,7 @@
       <uei>uei.opennms.org/vendor/polycom/traps/lowBattery</uei>
       <event-label>POLYCOM-VIDEO-MIB defined trap event: lowBattery</event-label>
       <descr>&lt;p>Sent when the remote has a low battery.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			lowBattery trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -110,7 +110,7 @@
 
 	polycomVSPhoneNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			callUp trap received 
 			polycomVSPhoneNumber=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -138,7 +138,7 @@
 
 	polycomVSPhoneNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			callDown trap received 
 			polycomVSPhoneNumber=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -171,7 +171,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSPhoneNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			callFail trap received 
 			polycomVSReason=%parm[#1]% 
 			polycomVSPhoneNumber=%parm[#2]%&lt;/p>
@@ -200,7 +200,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSPlead&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			userAssist trap received 
 			polycomVSPlead=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -224,7 +224,7 @@ of the reason.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/polycom/traps/visualConcertUp</uei>
       <event-label>POLYCOM-VIDEO-MIB defined trap event: visualConcertUp</event-label>
       <descr>&lt;p>Sent when a visual concert pod is connected.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			visualConcertUp trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -247,7 +247,7 @@ of the reason.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/polycom/traps/visualConcertOff</uei>
       <event-label>POLYCOM-VIDEO-MIB defined trap event: visualConcertOff</event-label>
       <descr>&lt;p>Sent when a visual concert pod is disconnected.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			visualConcertOff trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -274,7 +274,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSMicData&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			micChange trap received 
 			polycomVSMicData=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -302,7 +302,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSAutoAnswerSetting&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			autoAnswerChange trap received 
 			polycomVSAutoAnswerSetting=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -330,7 +330,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSTimeServerAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			timeServerUp trap received 
 			polycomVSTimeServerAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -358,7 +358,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSTimeServerAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			timeServerDown trap received 
 			polycomVSTimeServerAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -386,7 +386,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSTimeServerSetting&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			timeServerOn trap received 
 			polycomVSTimeServerSetting=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -410,7 +410,7 @@ of the reason.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/polycom/traps/timeServerOff</uei>
       <event-label>POLYCOM-VIDEO-MIB defined trap event: timeServerOff</event-label>
       <descr>&lt;p>Sent when the time server is disabled.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			timeServerOff trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -437,7 +437,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSGDSAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			gdsUp trap received 
 			polycomVSGDSAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -465,7 +465,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSGDSAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			gdsDown trap received 
 			polycomVSGDSAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -493,7 +493,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSGDSAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			gdsOff trap received 
 			polycomVSGDSAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -521,7 +521,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSGatekeeperAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			gatekeeperReg trap received 
 			polycomVSGatekeeperAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -549,7 +549,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSGatekeeperAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			gatekeeperDown trap received 
 			polycomVSGatekeeperAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -573,7 +573,7 @@ of the reason.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/polycom/traps/gatekeeperOff</uei>
       <event-label>POLYCOM-VIDEO-MIB defined trap event: gatekeeperOff</event-label>
       <descr>&lt;p>Sent when a gatekeeper is disabled.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			gatekeeperOff trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -604,7 +604,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSCurrentIPAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ipAddressChange trap received 
 			polycomVSPreviousIPAddress=%parm[#1]% 
 			polycomVSCurrentIPAddress=%parm[#2]%&lt;/p>
@@ -637,7 +637,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSCurrentNicType&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			interfaceTypeChange trap received 
 			polycomVSPreviousNicType=%parm[#1]% 
 			polycomVSCurrentNicType=%parm[#2]%&lt;/p>
@@ -666,7 +666,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSNicLineNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			lineEnabled trap received 
 			polycomVSNicLineNumber=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -694,7 +694,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSNicLineNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			lineDisabled trap received 
 			polycomVSNicLineNumber=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -722,7 +722,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSNicLineNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			lineUp trap received 
 			polycomVSNicLineNumber=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -750,7 +750,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSNicLineNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			lineDown trap received 
 			polycomVSNicLineNumber=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -778,7 +778,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSV35PortsEnabled&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			v35PortsEnabled trap received 
 			polycomVSV35PortsEnabled=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -810,7 +810,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSCurrentNicLineCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			lineCountChange trap received 
 			polycomVSPreviousNicLineCount=%parm[#1]% 
 			polycomVSCurrentNicLineCount=%parm[#2]%&lt;/p>
@@ -835,7 +835,7 @@ of the reason.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/polycom/traps/mainCameraUp</uei>
       <event-label>POLYCOM-VIDEO-MIB defined trap event: mainCameraUp</event-label>
       <descr>&lt;p>Sent when the main camera is working correctly.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mainCameraUp trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -858,7 +858,7 @@ of the reason.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/polycom/traps/mainCameraDown</uei>
       <event-label>POLYCOM-VIDEO-MIB defined trap event: mainCameraDown</event-label>
       <descr>&lt;p>Sent when the main camera is not working correctly.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mainCameraDown trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -885,7 +885,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSUPnPStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			upnpChange trap received 
 			polycomVSUPnPStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -913,7 +913,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSPercentPacketLoss&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			percentPacketLossExcessive trap received 
 			polycomVSPercentPacketLoss=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -941,7 +941,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSJitter&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jitterExcessive trap received 
 			polycomVSJitter=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -969,7 +969,7 @@ of the reason.&lt;/p>&lt;table>
 
 	polycomVSLatency&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			latencyExcessive trap received 
 			polycomVSLatency=%parm[#1]%&lt;/p>
 		</logmsg>

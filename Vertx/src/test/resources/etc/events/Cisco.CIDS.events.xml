@@ -66,7 +66,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsAlertVictimAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsAlert trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -150,7 +150,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsAlertVictimAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsAlert trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -234,7 +234,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsAlertVictimAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsAlert trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -318,7 +318,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsAlertVictimAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsAlert trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -398,7 +398,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsAlertVictimAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsAlert trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -481,7 +481,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -560,7 +560,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -639,7 +639,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -718,7 +718,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -797,7 +797,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -876,7 +876,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -955,7 +955,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -1034,7 +1034,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -1113,7 +1113,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -1192,7 +1192,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -1271,7 +1271,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -1350,7 +1350,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -1429,7 +1429,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -1508,7 +1508,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 
@@ -1583,7 +1583,7 @@ activity has been detected on a monitored network.&lt;/p>&lt;table>
 
 	cidsErrorMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoCidsError trap received 
 			cidsGeneralEventId=%parm[#1]% 
 			cidsGeneralLocalTime=%parm[#2]% 

@@ -42,7 +42,7 @@
 		waiting(3)
 		stopping(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			snaNodeStateChangeTrap trap received 
 			snaNodeOperName=%parm[#1]% 
 			snaNodeOperState=%parm[#2]%&lt;/p>
@@ -91,7 +91,7 @@
 		waiting(3)
 		stopping(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			snaNodeStateChangeTrap trap received 
 			snaNodeOperName=%parm[#1]% 
 			snaNodeOperState=%parm[#2]%&lt;/p>
@@ -144,7 +144,7 @@ the failure reason.&lt;/p>&lt;table>
 		badConfiguration(4)
 		internalError(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			snaNodeActFailTrap trap received 
 			snaNodeOperName=%parm[#1]% 
 			snaNodeOperState=%parm[#2]% 
@@ -197,7 +197,7 @@ state after change.&lt;/p>&lt;table>
 		inactive(1)
 		active(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			snaLuStateChangeTrap trap received 
 			snaLuOperName=%parm[#1]% 
 			snaLuOperSnaName=%parm[#2]% 
@@ -250,7 +250,7 @@ state after change.&lt;/p>&lt;table>
 		inactive(1)
 		active(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			snaLuStateChangeTrap trap received 
 			snaLuOperName=%parm[#1]% 
 			snaLuOperSnaName=%parm[#2]% 
@@ -309,7 +309,7 @@ traffic on the network.&lt;/p>&lt;table>
 
 	snaLuSessnSenseData&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			snaLuSessnBindFailTrap trap received 
 			snaLuSessnLocalApplName=%parm[#1]% 
 			snaLuSessnRemoteLuName=%parm[#2]% 

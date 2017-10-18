@@ -45,7 +45,7 @@
 
 	svUserDefinedSeverityLevel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	svEvent trap received
 	svTrapTime=%parm[#1]%
 	svRuleName=%parm[#2]%

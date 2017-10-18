@@ -3,7 +3,7 @@
       <uei>uei.opennms.org/provisioner/provisioningAdapterFailed</uei>
       <event-label>OpenNMS-defined Provisioning Adapter Failed message</event-label>
       <descr>A provisioning adapter failed for host %host% with the following condition: %parm[reason]%.&lt;p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>A provisioning adapter failed for host.&lt;/p>
         </logmsg>
       <severity>Major</severity>
@@ -16,7 +16,7 @@
             &lt;p>The Node with Id: %nodeid%; ForeignSource: %parm[foreignSource]%; ForeignId:%parm[foreignId]% has
             completed.&lt;/p>
             Typically the result of a request of an import request or a scheduled/user forced rescan.</descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>The Node with Id: %nodeid%; ForeignSource: %parm[foreignSource]%; ForeignId:%parm[foreignId]% has
             completed.&lt;/p>
         </logmsg>
@@ -28,7 +28,7 @@
       <descr>A message from the Provisiond NodeScan lifecycle that a NodeScan has Aborted:
             &lt;p>The Node with Id: %nodeid%; ForeignSource: %parm[foreignSource]%; ForeignId:%parm[foreignId]% has
             aborted for the following reason: %parm[reason]% &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>The Node with Id: %nodeid%; ForeignSource: %parm[foreignSource]%; ForeignId:%parm[foreignId]% has
             aborted.&lt;/p>
         </logmsg>
@@ -40,7 +40,7 @@
       <descr>&lt;p>This event will cause the importer to run the model-import process.
             The parameters include foreignSource, url, and deleteThreshold that override
             configuration properties as well as XML and default values.&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>A request had been made to run the model-import process with the
             parms: %parm[all]%.&lt;/p>
         </logmsg>
@@ -50,7 +50,7 @@
       <uei>uei.opennms.org/internal/importer/importStarted</uei>
       <event-label>OpenNMS-defined internal event: importer process has started</event-label>
       <descr>&lt;p>This event indicates the model-importer process has started&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>This event indicates the model-importer process has started from resource: %parm[importResource]%
             &lt;/p>
         </logmsg>
@@ -61,7 +61,7 @@
       <event-label>OpenNMS-defined internal event: importer process successfully completed</event-label>
       <descr>&lt;p>This event indicates the model-importer process has completed successfully. There
             is 1 parameter called importStats: %parm[importStats]%&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>This event indicates the model-importer process has completed successfully from resource:
             %parm[importResource]%&lt;/p>
         </logmsg>
@@ -73,7 +73,7 @@
       <event-label>OpenNMS-defined internal event: importer process failed.</event-label>
       <descr>&lt;p>This event indicates the model-importer process has failed. There is 1 parameter
             called failureMessage: %parm[failureMessage]%&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>This event indicates the model-importer process has failed from resource: %parm[importResource]%&lt;/p>
         </logmsg>
       <severity>Warning</severity>

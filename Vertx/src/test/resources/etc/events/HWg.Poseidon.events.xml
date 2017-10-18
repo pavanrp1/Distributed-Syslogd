@@ -44,7 +44,7 @@
 		normal(0)
 		alarm(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	inpAlarmStateChanged trap received
 	sysName=%parm[#1]%
 	infoAddressMAC=%parm[#2]%
@@ -129,7 +129,7 @@
 		pressure(11)
 		universal(12)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	sensAlarmStateChanged trap received
 	sysName=%parm[#1]%
 	infoAddressMAC=%parm[#2]%
@@ -202,7 +202,7 @@
 		inputStateAlarm(1)
 		temperatureOutOfRange(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	tsTrapAlarmStart trap received
 	sysName=%parm[#1]%
 	infoAddressMAC=%parm[#2]%
@@ -255,7 +255,7 @@
 		inputStateAlarm(1)
 		temperatureOutOfRange(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	tsTrapAlarmEnd trap received
 	sysName=%parm[#1]%
 	infoAddressMAC=%parm[#2]%

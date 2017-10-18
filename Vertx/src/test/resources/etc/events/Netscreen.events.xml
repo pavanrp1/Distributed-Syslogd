@@ -162,7 +162,7 @@ occured.&lt;/p>&lt;table>
 
 	netscreenTrapDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			netscreenTrapHw trap received 
 			netscreenTrapType=%parm[#1]% 
 			netscreenTrapDesc=%parm[#2]%&lt;/p>
@@ -332,7 +332,7 @@ been triggered.&lt;/p>&lt;table>
 
 	netscreenTrapDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			netscreenTrapFw trap received 
 			netscreenTrapType=%parm[#1]% 
 			netscreenTrapDesc=%parm[#2]%&lt;/p>
@@ -502,7 +502,7 @@ occured.&lt;/p>&lt;table>
 
 	netscreenTrapDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			netscreenTrapSw trap received 
 			netscreenTrapType=%parm[#1]% 
 			netscreenTrapDesc=%parm[#2]%&lt;/p>
@@ -672,7 +672,7 @@ been triggered.&lt;/p>&lt;table>
 
 	netscreenTrapDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			netscreenTrapTrf trap received 
 			netscreenTrapType=%parm[#1]% 
 			netscreenTrapDesc=%parm[#2]%&lt;/p>
@@ -841,7 +841,7 @@ been triggered.&lt;/p>&lt;table>
 
 	netscreenTrapDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			netscreenTrapVpn trap received 
 			netscreenTrapType=%parm[#1]% 
 			netscreenTrapDesc=%parm[#2]%&lt;/p>
@@ -1010,7 +1010,7 @@ been triggered.&lt;/p>&lt;table>
 
 	netscreenTrapDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			netscreenTrapNsrp trap received 
 			netscreenTrapType=%parm[#1]% 
 			netscreenTrapDesc=%parm[#2]%&lt;/p>
@@ -1180,7 +1180,7 @@ occurred.&lt;/p>&lt;table>
 
 	netscreenTrapDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			netscreenTrapGPRO trap received 
 			netscreenTrapType=%parm[#1]% 
 			netscreenTrapDesc=%parm[#2]%&lt;/p>
@@ -1349,7 +1349,7 @@ occurred.&lt;/p>&lt;table>
 
 	netscreenTrapDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			netscreenTrapDrp trap received 
 			netscreenTrapType=%parm[#1]% 
 			netscreenTrapDesc=%parm[#2]%&lt;/p>
@@ -1519,7 +1519,7 @@ occured.&lt;/p>&lt;table>
 
 	netscreenTrapDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			netscreenTrapIFFailover trap received 
 			netscreenTrapType=%parm[#1]% 
 			netscreenTrapDesc=%parm[#2]%&lt;/p>
@@ -1688,7 +1688,7 @@ occured.&lt;/p>&lt;table>
 
 	netscreenTrapDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			netscreenTrapIDPAttack trap received 
 			netscreenTrapType=%parm[#1]% 
 			netscreenTrapDesc=%parm[#2]%&lt;/p>

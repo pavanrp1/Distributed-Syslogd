@@ -21,7 +21,7 @@
 
 	wlsxSwitchIp&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxSwitchIPChanged trap received
 	wlsxSwitchIp=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -53,7 +53,7 @@
 		local(2)
 		standbymaster(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxSwitchRoleChange trap received
 	wlsxSwitchRole=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -88,7 +88,7 @@
 
 	userPhyAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxUserEntryCreated trap received
 	userPhyAddress=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -117,7 +117,7 @@
 
 	userPhyAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxUserEntryDeleted trap received
 	userPhyAddress=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -165,7 +165,7 @@
 
 	userRole&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxUserEntryAuthenticated trap received
 	userPhyAddress=%parm[#1]%
 	userName=%parm[#2]%
@@ -206,7 +206,7 @@
 
 	userPhyAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxUserEntryDeAuthenticated trap received
 	userPhyAddress=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -235,7 +235,7 @@
 
 	userPhyAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxUserAuthenticationFailed trap received
 	userPhyAddress=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -265,7 +265,7 @@
 
 	wlsxAuthServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxAuthServerReqTimedOut trap received
 	wlsxAuthServerName=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -299,7 +299,7 @@
 
 	wlsxAuthServerTimeout&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxAuthServerTimedOut trap received
 	wlsxAuthServerName=%parm[#1]%
 	wlsxAuthServerTimeout=%parm[#2]%&lt;/p></logmsg>
@@ -329,7 +329,7 @@
 
 	wlsxAuthServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxAuthServerIsUp trap received
 	wlsxAuthServerName=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -355,7 +355,7 @@
 			A trap which indicates that the User Entries table is full and
 			cannot add any more entries.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxAuthMaxUserEntries trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -380,7 +380,7 @@
 			A trap which indicates that the Acl Entries table is full and
 			cannot add any more entries.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxAuthMaxAclEntries trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -405,7 +405,7 @@
 			A trap which indicates that the switch reached the maximum number of
 			configurable Bandwidth contracts.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxAuthMaxBWContracts trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -429,7 +429,7 @@
       <descr>&lt;p>
 			A trap which indicates that the power supply has failed.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxPowerSupplyFailure trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -457,7 +457,7 @@
 
 	wlsxFanNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxFanFailure trap received
 	wlsxFanNumber=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -491,7 +491,7 @@
 
 	wlsxVoltageValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxOutOfRangeVoltage trap received
 	wlsxVoltageType=%parm[#1]%
 	wlsxVoltageValue=%parm[#2]%&lt;/p></logmsg>
@@ -521,7 +521,7 @@
 
 	wlsxTemperatureValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxOutOfRangeTemperature trap received
 	wlsxTemperatureValue=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -554,7 +554,7 @@
 
 	wlsxSlotNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxLCInserted trap received
 	wlsxLineCardNumber=%parm[#1]%
 	wlsxSlotNumber=%parm[#2]%&lt;/p></logmsg>
@@ -580,7 +580,7 @@
       <descr>&lt;p>
 			A trap which indicates that a supervisory card is inserted.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxSCInserted trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -604,7 +604,7 @@
       <descr>&lt;p>
 			A trap which indicates that a GBIC is inserted in a line card. 
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxGBICInserted trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -632,7 +632,7 @@
 
 	wlsxProcessName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxProcessDied trap received
 	wlsxProcessName=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -662,7 +662,7 @@
 
 	wlsxProcessName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxProcessExceedsMemoryLimits trap received
 	wlsxProcessName=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -687,7 +687,7 @@
       <descr>&lt;p>
 			A trap which indicates that the switch is running low on flash space.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxLowOnFlashSpace trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -711,7 +711,7 @@
       <descr>&lt;p>
 			A trap which indicates that the system free memory is low.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxLowMemory trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -735,7 +735,7 @@
       <descr>&lt;p>
 			A trap which indicates that the fan tray is removed.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxFanTrayRemoved trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -759,7 +759,7 @@
       <descr>&lt;p>
 			A trap which indicates that the fan tray is removed.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxFanTrayInserted trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -791,7 +791,7 @@
 
 	wlsxSlotNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxLCRemoved trap received
 	wlsxLineCardNumber=%parm[#1]%
 	wlsxSlotNumber=%parm[#2]%&lt;/p></logmsg>
@@ -817,7 +817,7 @@
       <descr>&lt;p>
 			A trap which indicates that a supervisory card is removed.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxSCRemoved trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -841,7 +841,7 @@
       <descr>&lt;p>
 			A trap which indicates that the power supply is missing.
 			&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxPowerSupplyMissing trap received&lt;/p></logmsg>
       <severity>Indeterminate</severity>
    </event>
@@ -874,7 +874,7 @@
 
 	apIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxAccessPointIsUp trap received
 	apLocation=%parm[#1]%
 	apIpAddress=%parm[#2]%&lt;/p></logmsg>
@@ -909,7 +909,7 @@
 
 	apIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxAccessPointIsDown trap received
 	apLocation=%parm[#1]%
 	apIpAddress=%parm[#2]%&lt;/p></logmsg>
@@ -948,7 +948,7 @@
 
 	wlsxStationMacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxCoverageHoleDetected trap received
 	apLocation=%parm[#1]%
 	apIpAddress=%parm[#2]%
@@ -989,7 +989,7 @@
 
 	apCurrentChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxChannelChanged trap received
 	apLocation=%parm[#1]%
 	apIpAddress=%parm[#2]%
@@ -1036,7 +1036,7 @@
 		ipSpoofing(8)
 		other(100)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxStationAddedToBlackList trap received
 	wlsxStationMacAddress=%parm[#1]%
 	wlsxStationBlackListReason=%parm[#2]%&lt;/p></logmsg>
@@ -1079,7 +1079,7 @@
 
 	wlsxStationMacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxStationRemovedFromBlackList trap received
 	wlsxStationMacAddress=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>
@@ -1116,7 +1116,7 @@
 
 	wlsxSpoofedNewPhyAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxIpSpoofingDetected trap received
 	wlsxSpoofedIpAddress=%parm[#1]%
 	wlsxSpoofedOldPhyAddress=%parm[#2]%
@@ -1162,7 +1162,7 @@
 		mssql(1)
 		mysql(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxDBCommunicationFailure trap received
 	wlsxDBName=%parm[#1]%
 	wlsxDBUserName=%parm[#2]%
@@ -1211,7 +1211,7 @@
 		backup(2)
 		master(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxVrrpStateChange trap received
 	wlsxVrID=%parm[#1]%
 	wlsxVrMasterIp=%parm[#2]%
@@ -1263,7 +1263,7 @@
 
 	wlsxApTxPower&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxAPRadioAttributesChanged trap received
 	apLocation=%parm[#1]%
 	apIpAddress=%parm[#2]%
@@ -1304,7 +1304,7 @@
 
 	wlsxESIServerIpaddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxESIServerUp trap received
 	wlsxESIServerGrpName=%parm[#1]%
 	wlsxESIServerName=%parm[#2]%
@@ -1344,7 +1344,7 @@
 
 	wlsxESIServerIpaddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxESIServerDown trap received
 	wlsxESIServerGrpName=%parm[#1]%
 	wlsxESIServerName=%parm[#2]%
@@ -1376,7 +1376,7 @@
 
 	wlsxLicenseDaysRemaining&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	wlsxLicenseExpiry trap received
 	wlsxLicenseDaysRemaining=%parm[#1]%&lt;/p></logmsg>
       <severity>Indeterminate</severity>

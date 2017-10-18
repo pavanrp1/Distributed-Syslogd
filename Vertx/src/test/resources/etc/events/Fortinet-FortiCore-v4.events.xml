@@ -25,7 +25,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fnTrapCpuThreshold trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -58,7 +58,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fnTrapMemThreshold trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -92,7 +92,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fnTrapLogDiskThreshold trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -126,7 +126,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fnTrapTempHigh trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -160,7 +160,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fnTrapVoltageOutOfRange trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -195,7 +195,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fnTrapPowerSupplyFailure trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>
@@ -232,7 +232,7 @@
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fnTrapIpChange trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%
@@ -266,7 +266,7 @@
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	fnTrapTest trap received
 	fnSysSerial=%parm[#1]%
 	sysName=%parm[#2]%&lt;/p>

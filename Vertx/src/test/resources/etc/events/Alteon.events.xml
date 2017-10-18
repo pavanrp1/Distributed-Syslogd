@@ -18,7 +18,7 @@
       <event-label>ALTEON-TRAP-MIB defined trap event: altSwPrimaryPowerSupplyFailure</event-label>
       <descr>&lt;p>A altSwPrimaryPowerSupplyFailure trap signifies that the 
 primary power supply failed.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: Alteon Event: altSwPrimaryPowerSupplyFailure trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -42,7 +42,7 @@ primary power supply failed.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>ALTEON-TRAP-MIB defined trap event: altSwRedunPowerSupplyFailure</event-label>
       <descr>&lt;p>A altSwRedunPowerSupplyFailure trap signifies that the 
 redundant power supply failed.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: Alteon Event: altSwRedunPowerSupplyFailure trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -86,7 +86,7 @@ gateway is alive.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwDefGwUp trap received 
 			ipCurCfgGwIndex=%parm[#1]% 
 			ipCurCfgGwAddr=%parm[#2]% 
@@ -135,7 +135,7 @@ gateway is down.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwDefGwDown trap received 
 			ipCurCfgGwIndex=%parm[#1]% 
 			ipCurCfgGwAddr=%parm[#2]% 
@@ -184,7 +184,7 @@ gateway is up and in service.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwDefGwInService trap received 
 			ipCurCfgGwIndex=%parm[#1]% 
 			ipCurCfgGwAddr=%parm[#2]% 
@@ -233,7 +233,7 @@ gateway is alive but not in service.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwDefGwNotInService trap received 
 			ipCurCfgGwIndex=%parm[#1]% 
 			ipCurCfgGwAddr=%parm[#2]% 
@@ -286,7 +286,7 @@ server is up and operational.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbRealServerUp trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -340,7 +340,7 @@ server is down and out of service.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbRealServerDown trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -394,7 +394,7 @@ real server has reached maximum connections.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbRealServerMaxConnReached trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -449,7 +449,7 @@ primary real server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbBkupRealServerAct trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -504,7 +504,7 @@ server is available.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbBkupRealServerDeact trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -559,7 +559,7 @@ real server is overflowed.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbBkupRealServerActOverflow trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -614,7 +614,7 @@ real server is out from overflow situation.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbBkupRealServerDeactOverflow trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -644,7 +644,7 @@ real server is out from overflow situation.&lt;/p>&lt;table>
       <event-label>ALTEON-TRAP-MIB defined trap event: altSwSlbFailoverStandby</event-label>
       <descr>&lt;p>A altSwSlbFailoverStandby trap signifies that the switch
 is now a standby switch.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbFailoverStandby trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -668,7 +668,7 @@ is now a standby switch.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>ALTEON-TRAP-MIB defined trap event: altSwSlbFailoverActive</event-label>
       <descr>&lt;p>A altSwSlbFailoverActive trap signifies that the switch
 is now an active switch.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbFailoverActive trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -692,7 +692,7 @@ is now an active switch.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>ALTEON-TRAP-MIB defined trap event: altSwSlbFailoverSwitchUp</event-label>
       <descr>&lt;p>A altSwSlbFailoverSwitchUp trap signifies that the failover
 switch is alive.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbFailoverSwitchUp trap received&lt;/p>
 		</logmsg>
       <severity>Cleared</severity>
@@ -716,7 +716,7 @@ switch is alive.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>ALTEON-TRAP-MIB defined trap event: altSwSlbFailoverSwitchDown</event-label>
       <descr>&lt;p>A altSwSlbFailoverSwitchDown trap signifies that the failover
 switch is down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbFailoverSwitchDown trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -760,7 +760,7 @@ received on a switch port matches the filter rule.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwfltFilterFired trap received 
 			fltCurCfgIndx=%parm[#1]% 
 			fltCurCfgPortIndx=%parm[#2]% 
@@ -817,7 +817,7 @@ service port of the real server is up and operational.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbRealServerServiceUp trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -876,7 +876,7 @@ service port of the real server is down and out of service.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwSlbRealServerServiceDown trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -927,7 +927,7 @@ has transitioned to 'Master' state.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwVrrpNewMaster trap received 
 			vrrpCurCfgVirtRtrIndx=%parm[#1]% 
 			vrrpCurCfgVirtRtrAddr=%parm[#2]% 
@@ -976,7 +976,7 @@ has transitioned to 'Backup' state.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwVrrpNewBackup trap received 
 			vrrpCurCfgVirtRtrIndx=%parm[#1]% 
 			vrrpCurCfgVirtRtrAddr=%parm[#2]% 
@@ -1028,7 +1028,7 @@ of this trap is optional.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwVrrpAuthFailure trap received 
 			vrrpCurCfgIfIndx=%parm[#1]% 
 			vrrpCurCfgIfPasswd=%parm[#2]% 
@@ -1073,7 +1073,7 @@ enter a valid username/password combination.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwLoginFailure trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1117,7 +1117,7 @@ switch temperature has exceeded maximum safety limits.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Alteon Event: altSwTempExceedThreshold trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -1145,7 +1145,7 @@ switch temperature has exceeded maximum safety limits.&lt;/p>&lt;table>
       <event-label>CHEETAH-TRAP-MIB defined trap event: altSwPrimaryPowerSupplyFailure</event-label>
       <descr>&lt;p>A altSwPrimaryPowerSupplyFailure trap signifies that the 
 primary power supply failed.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwPrimaryPowerSupplyFailure trap received&lt;/p>
 		</logmsg>
       <severity>Critical</severity>
@@ -1191,7 +1191,7 @@ ipCurCfgGwAddr is the IP address of the default gateway.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwDefGwUp trap received 
 			ipCurCfgGwIndex=%parm[#1]% 
 			ipCurCfgGwAddr=%parm[#2]% 
@@ -1242,7 +1242,7 @@ ipCurCfgGwAddr is the IP address of the default gateway.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwDefGwDown trap received 
 			ipCurCfgGwIndex=%parm[#1]% 
 			ipCurCfgGwAddr=%parm[#2]% 
@@ -1294,7 +1294,7 @@ ipCurCfgGwAddr is the IP address of the default gateway.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwDefGwInService trap received 
 			ipCurCfgGwIndex=%parm[#1]% 
 			ipCurCfgGwAddr=%parm[#2]% 
@@ -1346,7 +1346,7 @@ ipCurCfgGwAddr is the IP address of the default gateway.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwDefGwNotInService trap received 
 			ipCurCfgGwIndex=%parm[#1]% 
 			ipCurCfgGwAddr=%parm[#2]% 
@@ -1405,7 +1405,7 @@ affected Real Server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRealServerUp trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -1465,7 +1465,7 @@ affected Real Server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRealServerDown trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -1529,7 +1529,7 @@ affected Real Server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRealServerMaxConnReached trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -1591,7 +1591,7 @@ affected Real Server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbBkupRealServerAct trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -1653,7 +1653,7 @@ affected Real Server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbBkupRealServerDeact trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -1717,7 +1717,7 @@ affected Real Server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbBkupRealServerActOverflow trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -1780,7 +1780,7 @@ affected Real Server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbBkupRealServerDeactOverflow trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -1834,7 +1834,7 @@ fltCurCfgPortTable. The range is from 1 to agPortTableMaxEnt.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwfltFilterFired trap received 
 			fltCurCfgIndx=%parm[#1]% 
 			fltCurCfgPortIndx=%parm[#2]% 
@@ -1900,7 +1900,7 @@ the service.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRealServerServiceUp trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -1968,7 +1968,7 @@ This is the layer 4 real port number of the service.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRealServerServiceDown trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -2023,7 +2023,7 @@ vrrpCurCfgVirtRtrAddr is the VRRP virtual router IP address.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwVrrpNewMaster trap received 
 			vrrpCurCfgVirtRtrIndx=%parm[#1]% 
 			vrrpCurCfgVirtRtrAddr=%parm[#2]% 
@@ -2076,7 +2076,7 @@ vrrpCurCfgVirtRtrAddr is the VRRP virtual router IP address.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwVrrpNewBackup trap received 
 			vrrpCurCfgVirtRtrIndx=%parm[#1]% 
 			vrrpCurCfgVirtRtrAddr=%parm[#2]% 
@@ -2131,7 +2131,7 @@ DisplayString of 0 to 7 characters.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwVrrpAuthFailure trap received 
 			vrrpCurCfgIfIndx=%parm[#1]% 
 			vrrpCurCfgIfPasswd=%parm[#2]% 
@@ -2179,7 +2179,7 @@ address of the host from which the attempt was made.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwLoginFailure trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2225,7 +2225,7 @@ second.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbSynAttack trap received 
 			altSwTrapRate=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2279,7 +2279,7 @@ particular client will be blocked.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwTcpHoldDown trap received 
 			fltCurCfgSrcIp=%parm[#1]% 
 			altSwTrapRate=%parm[#2]% 
@@ -2326,7 +2326,7 @@ temperature and the threshold for the particular sensor.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwTempExceedThreshold trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2371,7 +2371,7 @@ altSwTrapRate specifies the number of new sessions per second.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbSessAttack trap received 
 			altSwTrapRate=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2414,7 +2414,7 @@ altSwTrapRate specifies the number of new sessions per second.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwFanFailure trap received 
 			altSwTrapDisplayString=%parm[#1]% 
 			sysName=%parm[#2]% 
@@ -2472,7 +2472,7 @@ Virtal Server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbVirtServerServicesUp trap received 
 			slbCurCfgVirtServerIndex=%parm[#1]% 
 			slbCurCfgVirtServerIpAddress=%parm[#2]% 
@@ -2532,7 +2532,7 @@ Virtual Server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbVirtServerServicesDown trap received 
 			slbCurCfgVirtServerIndex=%parm[#1]% 
 			slbCurCfgVirtServerIpAddress=%parm[#2]% 
@@ -2591,7 +2591,7 @@ actual health of a virtual service.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRealGroupAdvhlUp trap received 
 			slbCurCfgGroupIndex=%parm[#1]% 
 			slbCurCfgGroupName=%parm[#2]% 
@@ -2650,7 +2650,7 @@ actual health of a virtual service.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRealGroupAdvhlDown trap received 
 			slbCurCfgGroupIndex=%parm[#1]% 
 			slbCurCfgGroupName=%parm[#2]% 
@@ -2705,7 +2705,7 @@ trap message.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbBkupGroupAct trap received 
 			slbCurCfgGroupIndex=%parm[#1]% 
 			slbCurCfgGroupName=%parm[#2]% 
@@ -2759,7 +2759,7 @@ trap message.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbBkupGroupDeact trap received 
 			slbCurCfgGroupIndex=%parm[#1]% 
 			slbCurCfgGroupName=%parm[#2]% 
@@ -2818,7 +2818,7 @@ affected real server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRemoteRealServerUp trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -2878,7 +2878,7 @@ affected real server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRemoteRealServerDown trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -2939,7 +2939,7 @@ affected real server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRealServerOperDis trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -2999,7 +2999,7 @@ affected real server.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwSlbRealServerOperEna trap received 
 			slbCurCfgRealServerIndex=%parm[#1]% 
 			slbCurCfgRealServerIpAddr=%parm[#2]% 
@@ -3051,7 +3051,7 @@ vlanCurCfgVlanName is the optional name given to the affected vlan.&lt;/p>&lt;ta
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwIfcVlanDown trap received 
 			vlanCurCfgVlanId=%parm[#1]% 
 			vlanCurCfgVlanName=%parm[#2]% 
@@ -3102,7 +3102,7 @@ vlanCurCfgVlanName is the optional name given to the affected vlan.&lt;/p>&lt;ta
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwPortVlanDown trap received 
 			vlanCurCfgVlanId=%parm[#1]% 
 			vlanCurCfgVlanName=%parm[#2]% 
@@ -3153,7 +3153,7 @@ vlanCurCfgVlanName is the optional name given to the affected vlan.&lt;/p>&lt;ta
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwIfcVlanUp trap received 
 			vlanCurCfgVlanId=%parm[#1]% 
 			vlanCurCfgVlanName=%parm[#2]% 
@@ -3204,7 +3204,7 @@ vlanCurCfgVlanName is the optional name given to the affected vlan.&lt;/p>&lt;ta
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwPortVlanUp trap received 
 			vlanCurCfgVlanId=%parm[#1]% 
 			vlanCurCfgVlanName=%parm[#2]% 
@@ -3245,7 +3245,7 @@ has been applied.&lt;/p>&lt;table>
 
 	sysContact&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			altSwBulkApply trap received 
 			sysName=%parm[#1]% 
 			sysLocation=%parm[#2]% 

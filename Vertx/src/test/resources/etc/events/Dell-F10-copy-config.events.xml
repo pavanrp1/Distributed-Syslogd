@@ -54,7 +54,7 @@
                     &lt;td>&lt;/td>
                 &lt;/tr>
             &lt;/table></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>
                 copyConfigCompleted trap received
                 copyAlarmLevel=%parm1%

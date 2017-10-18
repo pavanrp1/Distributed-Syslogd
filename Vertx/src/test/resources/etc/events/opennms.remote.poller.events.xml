@@ -5,7 +5,7 @@
       <descr>&lt;p>A %service% outage was identified on interface
             %interface% from remote poller %parm[locationMonitorId]% from location: %parm[location]%.
             &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             %service% outage identified on interface %interface% from the remote poller %parm[locationMonitorId]%
             in location %parm[location]% with reason code: %parm[eventReason]%.
         </logmsg>
@@ -21,7 +21,7 @@
             &lt;p>This event is generated when a service which had
             previously failed polling attempts is again responding to
             polls by OpenNMS. &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             %service% outage identified on interface %interface% from the remote poller %parm[locationMonitorId]%
             in location %parm[location]% has cleared.
         </logmsg>
@@ -36,7 +36,7 @@
             &lt;p>&lt;b>Report ID:&lt;/b> &lt;a href=&quot;scanreports/index.jsp?_s=id%%3D%%3D%parm[scanReportId]%&quot;>%parm[scanReportId]%&lt;/a>&lt;/p>
             &lt;p>&lt;b>Location:&lt;/b> %parm[scanReportLocation]%&lt;/p>
             &lt;/ul></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             A remote poller has submitted a scan report for a successful scan for location %parm[scanReportLocation]%.
         </logmsg>
       <severity>Normal</severity>
@@ -50,7 +50,7 @@
             &lt;li>&lt;b>Location:&lt;/b> %parm[scanReportLocation]%&lt;/li>
             &lt;/ul>
             %parm[scanReportFailureMessage]%</descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             A remote poller has submitted a scan report for an unsuccessful scan for location
             %parm[scanReportLocation]%.
         </logmsg>

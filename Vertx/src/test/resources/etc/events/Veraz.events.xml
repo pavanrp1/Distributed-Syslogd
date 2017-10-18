@@ -89,7 +89,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -182,7 +182,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -279,7 +279,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -372,7 +372,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -469,7 +469,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -562,7 +562,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -659,7 +659,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -752,7 +752,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -849,7 +849,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -942,7 +942,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1039,7 +1039,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1132,7 +1132,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1229,7 +1229,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1322,7 +1322,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1419,7 +1419,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1512,7 +1512,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1601,7 +1601,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1690,7 +1690,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1779,7 +1779,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1868,7 +1868,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -1957,7 +1957,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2046,7 +2046,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2135,7 +2135,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2224,7 +2224,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2313,7 +2313,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2402,7 +2402,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2491,7 +2491,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2580,7 +2580,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2669,7 +2669,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2758,7 +2758,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2847,7 +2847,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -2936,7 +2936,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3025,7 +3025,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3114,7 +3114,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3203,7 +3203,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3292,7 +3292,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3381,7 +3381,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3470,7 +3470,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3559,7 +3559,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3648,7 +3648,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3737,7 +3737,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3826,7 +3826,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -3915,7 +3915,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4004,7 +4004,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4093,7 +4093,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4182,7 +4182,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4271,7 +4271,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4360,7 +4360,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4449,7 +4449,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4538,7 +4538,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4627,7 +4627,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4716,7 +4716,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4805,7 +4805,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4894,7 +4894,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -4983,7 +4983,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5072,7 +5072,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5161,7 +5161,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5250,7 +5250,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5339,7 +5339,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5428,7 +5428,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5517,7 +5517,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5606,7 +5606,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5695,7 +5695,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5784,7 +5784,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5873,7 +5873,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -5962,7 +5962,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6051,7 +6051,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6140,7 +6140,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6229,7 +6229,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6318,7 +6318,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6407,7 +6407,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6496,7 +6496,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6585,7 +6585,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6674,7 +6674,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6763,7 +6763,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6852,7 +6852,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -6941,7 +6941,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7030,7 +7030,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7119,7 +7119,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7208,7 +7208,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7297,7 +7297,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7386,7 +7386,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7475,7 +7475,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7564,7 +7564,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7653,7 +7653,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7742,7 +7742,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7831,7 +7831,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -7920,7 +7920,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8009,7 +8009,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8098,7 +8098,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8187,7 +8187,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8276,7 +8276,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8365,7 +8365,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8454,7 +8454,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8543,7 +8543,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8632,7 +8632,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8721,7 +8721,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8810,7 +8810,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8899,7 +8899,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -8988,7 +8988,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9077,7 +9077,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9166,7 +9166,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9255,7 +9255,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9344,7 +9344,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9433,7 +9433,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9522,7 +9522,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9611,7 +9611,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9700,7 +9700,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9789,7 +9789,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9878,7 +9878,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -9967,7 +9967,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10056,7 +10056,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10145,7 +10145,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10234,7 +10234,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10323,7 +10323,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10412,7 +10412,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10501,7 +10501,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10590,7 +10590,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10679,7 +10679,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10768,7 +10768,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10857,7 +10857,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -10946,7 +10946,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11035,7 +11035,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11124,7 +11124,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11213,7 +11213,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11302,7 +11302,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11391,7 +11391,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11480,7 +11480,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11569,7 +11569,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11658,7 +11658,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11747,7 +11747,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11836,7 +11836,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -11925,7 +11925,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12014,7 +12014,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12103,7 +12103,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12192,7 +12192,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12281,7 +12281,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12370,7 +12370,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12459,7 +12459,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12548,7 +12548,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12637,7 +12637,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12726,7 +12726,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12815,7 +12815,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12904,7 +12904,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -12993,7 +12993,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13082,7 +13082,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13171,7 +13171,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13260,7 +13260,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13349,7 +13349,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13438,7 +13438,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13527,7 +13527,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13616,7 +13616,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13705,7 +13705,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13794,7 +13794,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13883,7 +13883,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -13972,7 +13972,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -14061,7 +14061,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -14150,7 +14150,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -14239,7 +14239,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -14328,7 +14328,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -14417,7 +14417,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -14506,7 +14506,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -14595,7 +14595,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -14684,7 +14684,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -14773,7 +14773,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -14862,7 +14862,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15040,7 +15040,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15129,7 +15129,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15218,7 +15218,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15307,7 +15307,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15396,7 +15396,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15493,7 +15493,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15586,7 +15586,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15683,7 +15683,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15776,7 +15776,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15873,7 +15873,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -15966,7 +15966,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -16063,7 +16063,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -16156,7 +16156,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -16253,7 +16253,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -16346,7 +16346,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -16443,7 +16443,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -16536,7 +16536,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -16633,7 +16633,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -16726,7 +16726,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -16823,7 +16823,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -16916,7 +16916,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17013,7 +17013,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17106,7 +17106,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17203,7 +17203,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17296,7 +17296,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17393,7 +17393,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17486,7 +17486,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17583,7 +17583,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17676,7 +17676,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17773,7 +17773,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17866,7 +17866,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -17963,7 +17963,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -18056,7 +18056,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -18153,7 +18153,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -18246,7 +18246,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -18343,7 +18343,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -18436,7 +18436,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -18533,7 +18533,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -18626,7 +18626,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -18723,7 +18723,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -18816,7 +18816,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -18913,7 +18913,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19006,7 +19006,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19103,7 +19103,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19196,7 +19196,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19293,7 +19293,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19386,7 +19386,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19483,7 +19483,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19576,7 +19576,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19673,7 +19673,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19766,7 +19766,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19863,7 +19863,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -19956,7 +19956,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -20053,7 +20053,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -20146,7 +20146,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -20243,7 +20243,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -20336,7 +20336,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -20433,7 +20433,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -20526,7 +20526,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -20623,7 +20623,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -20716,7 +20716,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -20813,7 +20813,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -20906,7 +20906,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21003,7 +21003,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21096,7 +21096,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21193,7 +21193,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21286,7 +21286,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21383,7 +21383,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21476,7 +21476,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21573,7 +21573,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21666,7 +21666,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21763,7 +21763,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21856,7 +21856,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -21953,7 +21953,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22046,7 +22046,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22143,7 +22143,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22236,7 +22236,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22333,7 +22333,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22426,7 +22426,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22523,7 +22523,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22616,7 +22616,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22713,7 +22713,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22806,7 +22806,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22903,7 +22903,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -22996,7 +22996,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -23093,7 +23093,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -23186,7 +23186,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -23283,7 +23283,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -23376,7 +23376,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -23473,7 +23473,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -23566,7 +23566,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -23663,7 +23663,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -23756,7 +23756,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -23853,7 +23853,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -23946,7 +23946,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24043,7 +24043,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24136,7 +24136,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24233,7 +24233,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24326,7 +24326,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24423,7 +24423,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24516,7 +24516,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24613,7 +24613,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24706,7 +24706,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24803,7 +24803,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24896,7 +24896,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -24993,7 +24993,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -25086,7 +25086,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -25183,7 +25183,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -25276,7 +25276,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -25373,7 +25373,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -25466,7 +25466,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -25563,7 +25563,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -25656,7 +25656,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -25753,7 +25753,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -25846,7 +25846,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -25943,7 +25943,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26036,7 +26036,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26133,7 +26133,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26226,7 +26226,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26323,7 +26323,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26416,7 +26416,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26513,7 +26513,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26606,7 +26606,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26703,7 +26703,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26796,7 +26796,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26893,7 +26893,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -26986,7 +26986,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -27083,7 +27083,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -27176,7 +27176,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -27273,7 +27273,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -27366,7 +27366,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -27463,7 +27463,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -27556,7 +27556,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -27653,7 +27653,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -27746,7 +27746,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -27843,7 +27843,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -27936,7 +27936,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28033,7 +28033,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28126,7 +28126,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28223,7 +28223,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28316,7 +28316,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28413,7 +28413,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28506,7 +28506,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28603,7 +28603,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28696,7 +28696,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28793,7 +28793,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28886,7 +28886,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -28983,7 +28983,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -29076,7 +29076,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -29173,7 +29173,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -29266,7 +29266,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -29363,7 +29363,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -29456,7 +29456,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -29553,7 +29553,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -29646,7 +29646,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -29743,7 +29743,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -29836,7 +29836,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -29933,7 +29933,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30026,7 +30026,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30123,7 +30123,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30216,7 +30216,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30313,7 +30313,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30406,7 +30406,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30503,7 +30503,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30596,7 +30596,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30693,7 +30693,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30786,7 +30786,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30883,7 +30883,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -30976,7 +30976,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -31073,7 +31073,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -31166,7 +31166,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -31263,7 +31263,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -31356,7 +31356,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -31453,7 +31453,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -31546,7 +31546,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -31643,7 +31643,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -31736,7 +31736,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -31833,7 +31833,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -31926,7 +31926,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32023,7 +32023,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32116,7 +32116,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32213,7 +32213,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32306,7 +32306,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32403,7 +32403,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32496,7 +32496,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32593,7 +32593,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32686,7 +32686,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32783,7 +32783,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32876,7 +32876,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -32973,7 +32973,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -33066,7 +33066,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -33163,7 +33163,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -33256,7 +33256,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -33353,7 +33353,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -33446,7 +33446,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -33543,7 +33543,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -33636,7 +33636,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -33733,7 +33733,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -33826,7 +33826,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -33923,7 +33923,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34016,7 +34016,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34113,7 +34113,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34206,7 +34206,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34303,7 +34303,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34396,7 +34396,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34493,7 +34493,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34586,7 +34586,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34683,7 +34683,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34776,7 +34776,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34873,7 +34873,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -34966,7 +34966,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -35063,7 +35063,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -35156,7 +35156,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -35253,7 +35253,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -35346,7 +35346,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -35443,7 +35443,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -35536,7 +35536,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -35633,7 +35633,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -35726,7 +35726,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -35823,7 +35823,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -35916,7 +35916,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36013,7 +36013,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36106,7 +36106,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36203,7 +36203,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36296,7 +36296,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36393,7 +36393,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36486,7 +36486,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36583,7 +36583,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36676,7 +36676,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36773,7 +36773,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36866,7 +36866,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -36963,7 +36963,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -37056,7 +37056,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -37153,7 +37153,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -37246,7 +37246,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -37343,7 +37343,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -37436,7 +37436,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -37533,7 +37533,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -37626,7 +37626,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -37723,7 +37723,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -37816,7 +37816,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -37913,7 +37913,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38006,7 +38006,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38103,7 +38103,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38196,7 +38196,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38293,7 +38293,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38386,7 +38386,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38483,7 +38483,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38576,7 +38576,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38673,7 +38673,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38766,7 +38766,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38863,7 +38863,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -38956,7 +38956,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -39053,7 +39053,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -39146,7 +39146,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -39243,7 +39243,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -39336,7 +39336,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -39433,7 +39433,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -39526,7 +39526,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -39623,7 +39623,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -39716,7 +39716,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -39813,7 +39813,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -39906,7 +39906,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40003,7 +40003,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40096,7 +40096,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40193,7 +40193,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40286,7 +40286,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40383,7 +40383,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40476,7 +40476,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40573,7 +40573,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40666,7 +40666,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40763,7 +40763,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40856,7 +40856,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -40953,7 +40953,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41046,7 +41046,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41143,7 +41143,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41236,7 +41236,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41333,7 +41333,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41426,7 +41426,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41523,7 +41523,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41616,7 +41616,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41713,7 +41713,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41806,7 +41806,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41903,7 +41903,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -41996,7 +41996,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -42093,7 +42093,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -42186,7 +42186,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -42283,7 +42283,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -42376,7 +42376,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -42473,7 +42473,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -42566,7 +42566,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -42663,7 +42663,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -42756,7 +42756,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -42853,7 +42853,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -42946,7 +42946,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43043,7 +43043,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43136,7 +43136,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43233,7 +43233,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43326,7 +43326,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43423,7 +43423,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43516,7 +43516,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43613,7 +43613,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43706,7 +43706,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43803,7 +43803,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43896,7 +43896,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -43993,7 +43993,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -44086,7 +44086,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -44183,7 +44183,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -44276,7 +44276,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -44373,7 +44373,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -44466,7 +44466,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -44563,7 +44563,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -44656,7 +44656,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -44753,7 +44753,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -44846,7 +44846,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -44943,7 +44943,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45036,7 +45036,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45133,7 +45133,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45226,7 +45226,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45323,7 +45323,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45416,7 +45416,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45513,7 +45513,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45606,7 +45606,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45703,7 +45703,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45796,7 +45796,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45893,7 +45893,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -45986,7 +45986,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -46083,7 +46083,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -46176,7 +46176,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -46273,7 +46273,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -46366,7 +46366,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -46463,7 +46463,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -46556,7 +46556,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -46653,7 +46653,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -46746,7 +46746,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -46843,7 +46843,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -46936,7 +46936,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47033,7 +47033,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47126,7 +47126,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47223,7 +47223,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47316,7 +47316,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47413,7 +47413,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47506,7 +47506,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47603,7 +47603,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47696,7 +47696,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47793,7 +47793,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47886,7 +47886,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -47983,7 +47983,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -48076,7 +48076,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -48173,7 +48173,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -48266,7 +48266,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -48363,7 +48363,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -48456,7 +48456,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -48553,7 +48553,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -48646,7 +48646,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -48743,7 +48743,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -48836,7 +48836,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -48933,7 +48933,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49026,7 +49026,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49123,7 +49123,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49216,7 +49216,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49313,7 +49313,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49406,7 +49406,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49503,7 +49503,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49596,7 +49596,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49693,7 +49693,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Warning Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49786,7 +49786,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Warning Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49883,7 +49883,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Warning Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -49976,7 +49976,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Warning Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50073,7 +50073,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Warning Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50166,7 +50166,7 @@
 	%parm[#1]%&lt;/td>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Warning Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50258,7 +50258,7 @@
 	%parm[#1]%&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50350,7 +50350,7 @@
 	%parm[#1]%&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50442,7 +50442,7 @@
 	%parm[#1]%&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50534,7 +50534,7 @@
 	%parm[#1]%&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz RESOLVED Warning Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50622,7 +50622,7 @@
 	%parm[#1]%&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Critical Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50710,7 +50710,7 @@
 	%parm[#1]%&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Major Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50798,7 +50798,7 @@
 	%parm[#1]%&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Minor Event: %parm[#12]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50882,7 +50882,7 @@
 	%parm[#1]%&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>
@@ -50966,7 +50966,7 @@
 	%parm[#1]%&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>
 
 	&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Veraz Informational Event: %parm[#11]% - %parm[#1]%
 			&lt;/p>
 		</logmsg>

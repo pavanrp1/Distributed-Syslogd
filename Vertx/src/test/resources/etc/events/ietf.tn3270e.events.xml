@@ -40,7 +40,7 @@
             &lt;/td>&lt;td>&lt;p;>
             none(0) responses(1) timingMark(2)&lt;/p>
             &lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>TN3270 Event: Average Response Time Exceeds Threshold.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>TN3270 Event: Average Response Time Exceeds Threshold.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -81,7 +81,7 @@
             &lt;/td>&lt;td>&lt;p;>
             none(0) responses(1) timingMark(2)&lt;/p>
             &lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>TN3270 Event: Average Response Time Now Below Threshold.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>TN3270 Event: Average Response Time Now Below Threshold.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -117,7 +117,7 @@
             &lt;/td>&lt;td>&lt;p;>
             other(1) terminal(2) printer(3) terminalOrPrinter(4)&lt;/p>
             &lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>TN3270 Event: Response Time Data Collection Enabled.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>TN3270 Event: Response Time Data Collection Enabled.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
    <event>
@@ -179,7 +179,7 @@
             tn3270eRtDataRtMethod&lt;/b>&lt;/td>&lt;td>%parm[#17]%
             &lt;/td>&lt;td>&lt;p;>
             none(0) responses(1) timingMark(2)&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>TN3270 Event: Response Time Data Collection Ended.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>TN3270 Event: Response Time Data Collection Ended.&lt;/p></logmsg>
       <severity>Normal</severity>
    </event>
 </events>

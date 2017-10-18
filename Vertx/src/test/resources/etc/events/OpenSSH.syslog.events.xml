@@ -14,7 +14,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>Invalid user %parm[user]% from host %parm[remoteHost]% failed OpenSSH %parm[authMethod]% authentication &lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -35,7 +35,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>User %parm[user]% from host %parm[remoteHost]% failed OpenSSH %parm[authMethod]% authentication &lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -52,7 +52,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>OpenSSH server on node %nodelabel% refused to perform some authentication &lt;/p>
         </logmsg>
       <severity>Warning</severity>
@@ -71,7 +71,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>OpenSSH sshd failed to bind to port %parm[bindPort]% of address %parm[bindAddress]% &lt;/p>
         </logmsg>
       <severity>Minor</severity>
@@ -87,7 +87,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>OpenSSH sshd failed to bind any address on host %nodelabel%  &lt;/p>
         </logmsg>
       <severity>Major</severity>
@@ -104,7 +104,7 @@
         Process: %parm[process]% &lt;br>
         PID: %parm[processid]%
         &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
         &lt;p>An unknown OpenSSH syslog message has been received &lt;/p>
         Message: %parm[syslogmessage]% &lt;br>
         </logmsg>

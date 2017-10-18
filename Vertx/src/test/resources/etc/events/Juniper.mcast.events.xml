@@ -23,7 +23,7 @@ OIFs are blocked due to exceded admission limit on the port.&lt;/p>&lt;table>
 
 	juniMRouteIfLocIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			juniMRoutePortBwExceded trap received 
 			juniMRouteIfLocIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -55,7 +55,7 @@ value on the port.&lt;/p>&lt;table>
 
 	juniMRouteIfLocIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			juniMRoutePortBwReceded trap received 
 			juniMRouteIfLocIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -86,7 +86,7 @@ OIFs are blocked due to exceded admission limit on the port.&lt;/p>&lt;table>
 
 	juniMRouteIfLocIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			juniMRoutePortPriorityBwExceded trap received 
 			juniMRouteIfLocIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -118,7 +118,7 @@ value on the port.&lt;/p>&lt;table>
 
 	juniMRouteIfLocIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			juniMRoutePortPriorityBwReceded trap received 
 			juniMRouteIfLocIndex=%parm[#1]%&lt;/p>
 		</logmsg>

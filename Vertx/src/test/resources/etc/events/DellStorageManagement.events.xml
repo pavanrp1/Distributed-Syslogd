@@ -26,7 +26,7 @@
 
 	    descriptionEvent&lt;/b>&lt;/td>&lt;td>
 	    %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertStorageManagementInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%&lt;/p>
@@ -59,7 +59,7 @@
 
 	    descriptionEvent&lt;/b>&lt;/td>&lt;td>
 	    %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertStorageManagementNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%&lt;/p>
@@ -93,7 +93,7 @@
 
 	    descriptionEvent&lt;/b>&lt;/td>&lt;td>
 	    %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertStorageManagementWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%&lt;/p>
@@ -127,7 +127,7 @@
 
 	    descriptionEvent&lt;/b>&lt;/td>&lt;td>
 	    %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertStorageManagementFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%&lt;/p>
@@ -161,7 +161,7 @@
 
 	    descriptionEvent&lt;/b>&lt;/td>&lt;td>
 	    %parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertStorageManagementNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%&lt;/p>
@@ -232,7 +232,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertControllerInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -327,7 +327,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertControllerNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -422,7 +422,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertControllerWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -517,7 +517,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertControllerFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -612,7 +612,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertControllerNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -707,7 +707,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertChannelInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -802,7 +802,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertChannelNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -897,7 +897,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertChannelWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -992,7 +992,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertChannelFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -1087,7 +1087,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertChannelNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -1182,7 +1182,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertEnclosureInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -1277,7 +1277,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertEnclosureNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -1372,7 +1372,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertEnclosureWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -1467,7 +1467,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertEnclosureFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -1562,7 +1562,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertEnclosureNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -1657,7 +1657,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertArrayDiskInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -1752,7 +1752,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertArrayDiskNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -1847,7 +1847,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertArrayDiskWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -1942,7 +1942,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertArrayDiskFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2037,7 +2037,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertArrayDiskNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2132,7 +2132,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertEMMInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2227,7 +2227,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertEMMNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2322,7 +2322,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertEMMWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2417,7 +2417,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertEMMFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2512,7 +2512,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertEMMNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2607,7 +2607,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertPowerSupplyInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2702,7 +2702,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertPowerSupplyNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2797,7 +2797,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertPowerSupplyWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2892,7 +2892,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertPowerSupplyFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -2987,7 +2987,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertPowerSupplyNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -3082,7 +3082,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertTemperatureProbeInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -3177,7 +3177,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertTemperatureProbeNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -3272,7 +3272,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertTemperatureProbeWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -3367,7 +3367,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertTemperatureProbeFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -3462,7 +3462,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertTemperatureProbeNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -3557,7 +3557,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertFanInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -3652,7 +3652,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertFanNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -3747,7 +3747,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertFanWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -3842,7 +3842,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertFanFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -3937,7 +3937,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertFanNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4032,7 +4032,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertBatteryInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4127,7 +4127,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertBatteryNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4222,7 +4222,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertBatteryWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4317,7 +4317,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertBatteryFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4412,7 +4412,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertBatteryNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4507,7 +4507,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertVirtualDiskInformation trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4602,7 +4602,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertVirtualDiskNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4697,7 +4697,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertVirtualDiskWarning trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4792,7 +4792,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertVirtualDiskFailure trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4887,7 +4887,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertVirtualDiskNonRecoverable trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -4982,7 +4982,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertRedundancyNormal trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -5077,7 +5077,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertRedundancyDegraded trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%
@@ -5172,7 +5172,7 @@
 	    critical(5)
 	    nonRecoverable(6)
 	    &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	    Dell Storage Management: alertRedundancyLost trap received
 	    messageIDEvent=%parm[#1]%
 	    descriptionEvent=%parm[#2]%

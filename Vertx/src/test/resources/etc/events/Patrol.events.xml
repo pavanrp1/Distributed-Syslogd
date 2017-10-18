@@ -18,7 +18,7 @@
       <event-label>PATROL-MIB defined trap event: patrolTrapWarmStart</event-label>
       <descr>&lt;p>A patrolTrapWarmStart is sent when Patrol SNMP sub-agent
 succefully started&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			PATROL Event: patrolTrapWarmStart trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -55,7 +55,7 @@ The trap is sent to SNMP V1 entity according to piV1mTable.&lt;/p>&lt;table>
 
 	patrolTrapExtra&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			PATROL Event: patrolInformation trap received 
 			patrolTrapText=%parm[#1]% 
 			patrolTrapOrigin=%parm[#2]% 
@@ -95,7 +95,7 @@ The trap is sent to SNMP V1 entity according to piV1mTable.&lt;/p>&lt;table>
 
 	patrolTrapExtra&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			PATROL Event: patrolChangeStatus trap received 
 			patrolTrapText=%parm[#1]% 
 			patrolTrapOrigin=%parm[#2]% 
@@ -135,7 +135,7 @@ The trap is sent to SNMP V1 entity according to piV1mTable.&lt;/p>&lt;table>
 
 	patrolTrapExtra&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			PATROL Event: patrolError trap received 
 			patrolTrapText=%parm[#1]% 
 			patrolTrapOrigin=%parm[#2]% 
@@ -175,7 +175,7 @@ The trap is sent to SNMP V1 entity according to piV1mTable.&lt;/p>&lt;table>
 
 	patrolTrapExtra&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			PATROL Event: patrolWarning trap received 
 			patrolTrapText=%parm[#1]% 
 			patrolTrapOrigin=%parm[#2]% 
@@ -215,7 +215,7 @@ The trap is sent to SNMP V1 entity according to piV1mTable.&lt;/p>&lt;table>
 
 	patrolTrapExtra&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			PATROL Event: patrolAlarm trap received 
 			patrolTrapText=%parm[#1]% 
 			patrolTrapOrigin=%parm[#2]% 
@@ -248,7 +248,7 @@ entity according to piV1mTable.&lt;/p>&lt;table>
 
 	patrolTrapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			PATROL Event: patrolTrapV1Raised trap received 
 			patrolTrapText=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -278,7 +278,7 @@ This trap is sent to SNMP V1 entity according to piV1mTable.&lt;/p>&lt;table>
 
 	patrolTrapText&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			PATROL Event: patrolTrapV1StateChanged trap received 
 			patrolTrapText=%parm[#1]%&lt;/p>
 		</logmsg>

@@ -46,7 +46,7 @@ FSM state changes&lt;/p>&lt;table>
 		incomingRecoveryPending(9)
 		concurrentResyncPending(10)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoAtmIfEvent trap received 
 			ciscoAtmIfIlmiFSMState=%parm[#1]% 
 			ciscoAtmIfSscopFSMState=%parm[#2]%&lt;/p>
@@ -81,7 +81,7 @@ since the last catmIntfPvcUpTrap was sent.&lt;/p>&lt;table>
 
 	catmIntfCurrentlyDownToUpPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcUpTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfCurrentlyDownToUpPVcls=%parm[#2]%&lt;/p>
@@ -120,7 +120,7 @@ since the last catmIntfPvcOAMFailuresTrap was sent.&lt;/p>&lt;table>
 
 	catmIntfCurrentOAMFailingPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcOAMFailureTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfOAMFailedPVcls=%parm[#2]% 
@@ -160,7 +160,7 @@ since the last catmIntfPvcSegCCOAMFailureTrap was sent.&lt;/p>&lt;table>
 
 	catmIntfCurSegCCOAMFailingPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcSegCCOAMFailureTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfSegCCOAMFailedPVcls=%parm[#2]% 
@@ -200,7 +200,7 @@ since the last catmIntfPvcEndCCOAMFailureTrap was sent.&lt;/p>&lt;table>
 
 	catmIntfCurEndCCOAMFailingPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcEndCCOAMFailureTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfEndCCOAMFailedPVcls=%parm[#2]% 
@@ -240,7 +240,7 @@ since the last catmIntfPvcAISRDIOAMFailureTrap was sent.&lt;/p>&lt;table>
 
 	catmIntfCurAISRDIOAMFailingPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcAISRDIOAMFailureTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfAISRDIOAMFailedPVcls=%parm[#2]% 
@@ -289,7 +289,7 @@ since the last catmIntfPvcAnyOAMFailureTrap was sent.&lt;/p>&lt;table>
 		catmEndCCOAMFailure(4)
 		catmAISRDIOAMFailure(8)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcAnyOAMFailureTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfAnyOAMFailedPVcls=%parm[#2]% 
@@ -330,7 +330,7 @@ since the last catmIntfPvcOAMRecoversTrap was sent.&lt;/p>&lt;table>
 
 	catmIntfCurrentOAMRcovingPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcOAMRecoverTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfOAMRcovedPVcls=%parm[#2]% 
@@ -370,7 +370,7 @@ since the last catmIntfPvcSegCCOAMRecoverTrap was sent.&lt;/p>&lt;table>
 
 	catmIntfCurSegCCOAMRcovingPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcSegCCOAMRecoverTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfSegCCOAMRcovedPVcls=%parm[#2]% 
@@ -410,7 +410,7 @@ since the last catmIntfPvcEndCCOAMRecoverTrap was sent.&lt;/p>&lt;table>
 
 	catmIntfCurEndCCOAMRcovingPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcEndCCOAMRecoverTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfEndCCOAMRcovedPVcls=%parm[#2]% 
@@ -450,7 +450,7 @@ since the last catmIntfPvcAISRDIOAMRecoverTrap was sent.&lt;/p>&lt;table>
 
 	catmIntfCurAISRDIOAMRcovingPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcAISRDIOAMRecoverTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfAISRDIOAMRcovedPVcls=%parm[#2]% 
@@ -499,7 +499,7 @@ since the last catmIntfPvcAnyOAMRecoverTrap was sent.&lt;/p>&lt;table>
 		catmEndCCOAMRecover(4)
 		catmAISRDIOAMRecover(8)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcAnyOAMRecoverTrap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfAnyOAMRcovedPVcls=%parm[#2]% 
@@ -536,7 +536,7 @@ since the last catmIntfPvcUp2Trap was sent.&lt;/p>&lt;table>
 
 	catmIntfCurrentlyDownToUpPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcUp2Trap trap received 
 			ifIndex=%parm[#1]% 
 			catmIntfCurrentlyDownToUpPVcls=%parm[#2]%&lt;/p>
@@ -575,7 +575,7 @@ since the last catmIntfPvcDownTrap was sent.&lt;/p>&lt;table>
 
 	atmIntfCurrentlyFailingPVcls&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: catmIntfPvcDownTrap trap received 
 			ifIndex=%parm[#1]% 
 			atmIntfPvcFailures=%parm[#2]% 
@@ -639,7 +639,7 @@ cbbsmEventType = 2
 
 	cbbsmEventTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoBbsmEvent trap received 
 			cbbsmEventDescription=%parm[#1]% 
 			cbbsmEventSource=%parm[#2]% 
@@ -700,7 +700,7 @@ value is attached to the notification object ID.&lt;/p>&lt;table>
 		openconfirm(5)
 		established(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cbgpFsmStateChange trap received 
 			bgpPeerLastError=%parm[#1]% 
 			bgpPeerState=%parm[#2]% 
@@ -761,7 +761,7 @@ to the notification object ID.&lt;/p>&lt;table>
 		openconfirm(5)
 		established(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cbgpBackwardTransition trap received 
 			bgpPeerLastError=%parm[#1]% 
 			bgpPeerState=%parm[#2]% 
@@ -801,7 +801,7 @@ notification object ID.&lt;/p>&lt;table>
 
 	cbgpPeerPrefixThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cbgpPrefixThresholdExceeded trap received 
 			cbgpPeerPrefixAdminLimit=%parm[#1]% 
 			cbgpPeerPrefixThreshold=%parm[#2]%&lt;/p>
@@ -842,7 +842,7 @@ notification object ID.&lt;/p>&lt;table>
 
 	cbgpPeerPrefixClearThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cbgpPrefixThresholdClear trap received 
 			cbgpPeerPrefixAdminLimit=%parm[#1]% 
 			cbgpPeerPrefixClearThreshold=%parm[#2]%&lt;/p>
@@ -901,7 +901,7 @@ has transitioned to active (connected) or inactive
 
 	bstunRouteTxPackets&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: bstunPeerStateChangeNotification2 trap received 
 			bstunRoutePeerState=%parm[#1]% 
 			bstunRouteType=%parm[#2]% 
@@ -958,7 +958,7 @@ device state has changed.&lt;/p>&lt;table>
 		unitspecify(10)
 		devicebusy(11)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: bstunCUStatusChangeNotification trap received 
 			bstunRouteIP=%parm[#1]% 
 			bstunRouteBIPForeignPort=%parm[#2]% 
@@ -1009,7 +1009,7 @@ the following conditions :
 
 	cbfStatusFileCompletionTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cbfDefineFileCompletion trap received 
 			cbfStatusFileState=%parm[#1]% 
 			cbfStatusFileCompletionTime=%parm[#2]%&lt;/p>
@@ -1040,7 +1040,7 @@ upon detecting RPS failure.&lt;/p>&lt;table>
 
 	sysName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: c2900RpsFailed trap received 
 			sysName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1099,7 +1099,7 @@ notification is sent by Working.&lt;/p>&lt;table>
 		standby(2)
 		nonFunctional(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccaHCCPOnNotification trap received 
 			ccaHCCPGroupIfStatus=%parm[#1]% 
 			ccaHCCPGroupIfLastSwitchReason=%parm[#2]% 
@@ -1161,7 +1161,7 @@ notification is sent by Protect.&lt;/p>&lt;table>
 		standby(2)
 		nonFunctional(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccaHCCPOffNotification trap received 
 			ccaHCCPGroupIfStatus=%parm[#1]% 
 			ccaHCCPGroupIfLastSwitchReason=%parm[#2]% 
@@ -1218,7 +1218,7 @@ of local storage.&lt;/p>&lt;table>
 
 	ccmtrCollectionTimestamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccmtrCollectionNotification trap received 
 			ccmtrCollectionStatus=%parm[#1]% 
 			ccmtrCollectionDestination=%parm[#2]% 
@@ -1267,7 +1267,7 @@ the enforced QoS. &lt;/p>&lt;table>
 
 	ccqmEnfRuleViolateByteCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccqmEnfRuleViolateNotification trap received 
 			ccqmEnfRuleViolateMacAddr=%parm[#1]% 
 			ccqmEnfRuleViolateRuleName=%parm[#2]% 
@@ -1331,7 +1331,7 @@ SNR or modemOffline that caused the hopping.&lt;/p>&lt;table>
 
 	ccsUpSpecMgmtToModProfile&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccsHoppingNotification trap received 
 			ccsUpSpecMgmtHopCondition=%parm[#1]% 
 			ccsUpSpecMgmtFromCenterFreq=%parm[#2]% 
@@ -1367,7 +1367,7 @@ ccmSmtpServersTable.&lt;/p>&lt;table>
 
 	ccmSmtpServersPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccmSmtpServerFailNotif trap received 
 			ccmSmtpServersPort=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1399,7 +1399,7 @@ callHomeAlertGroupTypeTable.&lt;/p>&lt;table>
 
 	callHomeAlertGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccmAlertGroupTypeAddedNotif trap received 
 			callHomeAlertGroupName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1430,7 +1430,7 @@ from the callHomeAlertGroupTypeTable.&lt;/p>&lt;table>
 
 	callHomeAlertGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccmAlertGroupTypeDeletedNotif trap received 
 			callHomeAlertGroupName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1469,7 +1469,7 @@ monited by cc6kxbarSwBusSwitchingStatus.&lt;/p>&lt;table>
 
 	cc6kxbarSwBusFailureDuration&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cc6kxbarSwBusStatusChangeNotif trap received 
 			cc6kxbarSwBusSwitchingStatus=%parm[#1]% 
 			cc6kxbarSwBusFailureDuration=%parm[#2]%&lt;/p>
@@ -1535,7 +1535,7 @@ call as malicious with the local call manager.&lt;/p>&lt;table>
 
 	ccmMaliCallTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccmMaliciousCall trap received 
 			ccmAlarmSeverity=%parm[#1]% 
 			ccmMaliCallCalledPartyName=%parm[#2]% 
@@ -1600,7 +1600,7 @@ quality problem using the Quality Report Tool.&lt;/p>&lt;table>
 
 	ccmQualityRprtTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccmQualityReport trap received 
 			ccmAlarmSeverity=%parm[#1]% 
 			ccmQualityRprtSourceDevName=%parm[#2]% 
@@ -1675,7 +1675,7 @@ open TLS connection for the indicated device.&lt;/p>&lt;table>
 
 	ccmTLSConnFailTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ccmTLSConnectionFailure trap received 
 			ccmAlarmSeverity=%parm[#1]% 
 			ccmTLSDevName=%parm[#2]% 
@@ -1738,7 +1738,7 @@ notification.
 
 	coCdlRxAggDefectIndLastChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: coCdlRxAggDefectIndChange trap received 
 			coCdlRxAggDefectIndCurrStatus=%parm[#1]% 
 			coCdlRxAggDefectIndLastChange=%parm[#2]%&lt;/p>
@@ -1799,7 +1799,7 @@ notification.
 
 	coCdlFromCdlNetFlowDILastChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: coCdlFromCdlNetFlowDIChange trap received 
 			coCdlFromCdlNetFlowDICurrStatus=%parm[#1]% 
 			coCdlFromCdlNetFlowDILastChange=%parm[#2]%&lt;/p>
@@ -1841,7 +1841,7 @@ state of the engine is 'up'.&lt;/p>&lt;table>
 		up(1)
 		down(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaAhdlcEngineDownNotif trap received 
 			cCdmaAhdlcEngineOperState=%parm[#1]% 
 			cCdmaAhdlcEngineAdminState=%parm[#2]%&lt;/p>
@@ -1874,7 +1874,7 @@ Service affected level: critical&lt;/p>&lt;table>
 
 	cCdmaSessionMaxAllowed&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaSessionMaxAllowedNotif trap received 
 			cCdmaSessionMaxAllowed=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1906,7 +1906,7 @@ Service affected level: critical&lt;/p>&lt;table>
 
 	cCdmaPcfMaxAllowed&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaPcfMaxAllowedNotif trap received 
 			cCdmaPcfMaxAllowed=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -1953,7 +1953,7 @@ traffic on the network&lt;/p>&lt;table>
 
 	cCdmaFailSessionConnId&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaSessionFormatErrorNotif trap received 
 			cCdmaFailSessionMsid=%parm[#1]% 
 			cCdmaFailSessionA11HaIp=%parm[#2]% 
@@ -2037,7 +2037,7 @@ Service affected level: minor&lt;/p>&lt;table>
 		pppIpcpTimeout(20)
 		pppIpcpNegotiationFailed(21)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaSessionRegReqFailedNotif trap received 
 			cCdmaFailSessionMsid=%parm[#1]% 
 			cCdmaFailSessionA11HaIp=%parm[#2]% 
@@ -2084,7 +2084,7 @@ Service affected level: minor&lt;/p>&lt;table>
 		testing(3)
 		insufficientResources(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaPdsnStatusChange trap received 
 			cCdmaServiceAffectedLevel=%parm[#1]% 
 			cCdmaSystemStatus=%parm[#2]%&lt;/p>
@@ -2123,7 +2123,7 @@ threshold has been has been reached.&lt;/p>&lt;table>
 
 	cCdmaSessionHighThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaSessionHighReached trap received 
 			cCdmaServiceAffectedLevel=%parm[#1]% 
 			cCdmaSessionHighThreshold=%parm[#2]%&lt;/p>
@@ -2162,7 +2162,7 @@ threshold has been has been reached.&lt;/p>&lt;table>
 
 	cCdmaSessionHighThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaSessionLowReached trap received 
 			cCdmaServiceAffectedLevel=%parm[#1]% 
 			cCdmaSessionHighThreshold=%parm[#2]%&lt;/p>
@@ -2202,7 +2202,7 @@ controller.&lt;/p>&lt;table>
 
 	cCdmaClusterSessHighThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaClusterSessionHighReached trap received 
 			cCdmaServiceAffectedLevel=%parm[#1]% 
 			cCdmaClusterSessHighThreshold=%parm[#2]%&lt;/p>
@@ -2244,7 +2244,7 @@ Service affected level: Major/Warning&lt;/p>&lt;table>
 
 	cCdmaClusterSessLowThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaClusterSessionLowReached trap received 
 			cCdmaServiceAffectedLevel=%parm[#1]% 
 			cCdmaClusterSessLowThreshold=%parm[#2]%&lt;/p>
@@ -2301,7 +2301,7 @@ change&lt;/p>&lt;table>
 		ready(1)
 		adminProhibit(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaClusterMemberStatusChange trap received 
 			cCdmaServiceAffectedLevel=%parm[#1]% 
 			cCdmaAffectedAddressType=%parm[#2]% 
@@ -2360,7 +2360,7 @@ change&lt;/p>&lt;table>
 		configured(1)
 		alive(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaClusterCtrlStatusChange trap received 
 			cCdmaServiceAffectedLevel=%parm[#1]% 
 			cCdmaAffectedAddressType=%parm[#2]% 
@@ -2396,7 +2396,7 @@ change&lt;/p>&lt;table>
 		ready(2)
 		adminProhibit(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaClusterMemberStatusChange2 trap received 
 			cCdmaClusterMemberStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2429,7 +2429,7 @@ change&lt;/p>&lt;table>
 		configured(2)
 		alive(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaClusterCtrlStatusChange2 trap received 
 			cCdmaClusterCtrlStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2467,7 +2467,7 @@ threshold has been has been reached.&lt;/p>&lt;table>
 
 	cCdmaSessionLowThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cCdmaSessionLowReached2 trap received 
 			cCdmaServiceAffectedLevel=%parm[#1]% 
 			cCdmaSessionLowThreshold=%parm[#2]%&lt;/p>
@@ -2492,7 +2492,7 @@ threshold has been has been reached.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/Cisco/traps/ccnNotifOffline</uei>
       <event-label>CISCO-CONTENT-NETWORK-MIB defined trap event: ccnNotifOffline</event-label>
       <descr>&lt;p>The device is about to disconnect from the network.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccnNotifOffline trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2519,7 +2519,7 @@ associated with any CDN) or needs some other adjustment which
 cannot be done via the CDM administrator interface (such as
 repairing a disk, completing a software upgrade, or configuring
 the CDM database).&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccnNotifNeedsAttention trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2546,7 +2546,7 @@ from the CDM.  The device is on the network and is either
 failing to communicate with the CDM or is being told explictly
 by the CDM to continue waiting pending activation by the CDN
 administrator.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccnNotifWaitingForCdm trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2569,7 +2569,7 @@ administrator.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/Cisco/traps/ccnNotifOnline</uei>
       <event-label>CISCO-CONTENT-NETWORK-MIB defined trap event: ccnNotifOnline</event-label>
       <descr>&lt;p>The device is operational and ready to participate in the CDN.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ccnNotifOnline trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -2635,7 +2635,7 @@ cause an excessive number of notifications.&lt;/p>&lt;table>
 
 	csgAgentRetransmit&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoCsgAgentStateChange trap received 
 			csgAgentState=%parm[#1]% 
 			csgAgentLostRecords=%parm[#2]% 
@@ -2709,7 +2709,7 @@ cause an excessive number of notifications.&lt;/p>&lt;table>
 
 	csgQuotaMgrRetransmit&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoCsgQuotaMgrStateChange trap received 
 			csgQuotaMgrState=%parm[#1]% 
 			csgQuotaMgrLostRecords=%parm[#2]% 
@@ -2769,7 +2769,7 @@ is set to 'true', and the user database changes state.&lt;/p>&lt;table>
 
 	csgUserDbReqErrors&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoCsgUserDbStateChange trap received 
 			csgUserDbState=%parm[#1]% 
 			csgUserDbRequests=%parm[#2]% 
@@ -2857,7 +2857,7 @@ is repeated.&lt;/p>&lt;table>
 
 	csgAgentRetransmit&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoCsgAgentLostRecordEvent trap received 
 			csgAgentState=%parm[#1]% 
 			csgAgentLostRecords=%parm[#2]% 
@@ -2931,7 +2931,7 @@ ciscoCsgAgentLostRecordEvent.&lt;/p>&lt;table>
 
 	csgQuotaMgrRetransmit&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoCsgQuotaMgrLostRecordEvent trap received 
 			csgQuotaMgrState=%parm[#1]% 
 			csgQuotaMgrLostRecords=%parm[#2]% 
@@ -2972,7 +2972,7 @@ via the cDdpIappRogueApNotifEnabled object.&lt;/p>&lt;table>
 
 	cDdpIappLastRogueApMacAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cDdpIappLastRogueApNotif trap received 
 			cDdpIappLastRogueApMacAddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3034,7 +3034,7 @@ cderNotificationEnable.&lt;/p>&lt;table>
 
 	cderExcepReportedBy&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cderMonitoredExceptionEvent trap received 
 			cderExcepId=%parm[#1]% 
 			cderExcepHostAddressType=%parm[#2]% 
@@ -3074,7 +3074,7 @@ cddServerPortStatus object is from 'down' or
 		down(2)
 		undetermined(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoDistDirEventServerUp trap received 
 			cddServerPortStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3108,7 +3108,7 @@ cddServerPortStatus object is from 'up' or
 		down(2)
 		undetermined(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoDistDirEventServerDown trap received 
 			cddServerPortStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3139,7 +3139,7 @@ this notification.&lt;/p>&lt;table>
 
 	cddGeneralQueryRate&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoDistDirEventHitRateHigh trap received 
 			cddGeneralQueryRate=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3184,7 +3184,7 @@ on which the condition happened.&lt;/p>&lt;table>
 
 	cffFcFeElementName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: dmDomainIdNotAssignedNotify trap received 
 			notifyVsanIndex=%parm[#1]% 
 			cffFcFeElementName=%parm[#2]%&lt;/p>
@@ -3227,7 +3227,7 @@ Switch.&lt;/p>&lt;table>
 
 	cffFcFeElementName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: dmNewPrincipalSwitchNotify trap received 
 			notifyVsanIndex=%parm[#1]% 
 			cffFcFeElementName=%parm[#2]%&lt;/p>
@@ -3280,7 +3280,7 @@ on which RCF was issued.&lt;/p>&lt;table>
 
 	notifyVsanIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: dmFabricChangeNotify trap received 
 			notifyVsanIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3309,7 +3309,7 @@ has got elected to offer Wireless Domain Services.&lt;/p>&lt;table>
 
 	ifPhysAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cDot11csElectedAsWds trap received 
 			ifPhysAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3356,7 +3356,7 @@ entity. &lt;/p>&lt;table>
 
 	ifPhysAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cDot11csInRegisteredWithWs trap received 
 			cDot11csDescendantInIpAddressType=%parm[#1]% 
 			cDot11csDescendantInIpAddress=%parm[#2]% 
@@ -3405,7 +3405,7 @@ service entity. &lt;/p>&lt;table>
 
 	ifPhysAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cDot11csInDeRegisteredWithWs trap received 
 			cDot11csDescendantInIpAddressType=%parm[#1]% 
 			cDot11csDescendantInIpAddress=%parm[#2]% 
@@ -3475,7 +3475,7 @@ notification. &lt;/p>&lt;table>
 		unsupported(3)
 		incompatible(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cefcUnrecognizedFRU trap received 
 			entPhysicalClass=%parm[#1]% 
 			entPhysicalVendorType=%parm[#2]% 
@@ -3513,7 +3513,7 @@ cefcFanTrayOperStatus changes. &lt;/p>&lt;table>
 		down(3)
 		warning(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cefcFanTrayStatusChange trap received 
 			cefcFanTrayOperStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3567,7 +3567,7 @@ below the threshold value.&lt;/p>&lt;table>
 
 	cePfeHistValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cePfeHistThldEvent trap received 
 			cePfeHistEntPhysIndex=%parm[#1]% 
 			cePfeHistType=%parm[#2]% 
@@ -3604,7 +3604,7 @@ occurred and the cePfeHistNotifiesEnable is set to
 
 	cePfeHistRestartReason&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cePfeHistRestartEvent trap received 
 			cePfeHistEntPhysIndex=%parm[#1]% 
 			cePfeHistRestartReason=%parm[#2]%&lt;/p>
@@ -3650,7 +3650,7 @@ by ciscoEnvMonVoltageState.&lt;/p>&lt;table>
 		notPresent(5)
 		notFunctioning(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEnvMonVoltStatusChangeNotif trap received 
 			ciscoEnvMonVoltageStatusDescr=%parm[#1]% 
 			ciscoEnvMonVoltageStatusValue=%parm[#2]% 
@@ -3701,7 +3701,7 @@ by ciscoEnvMonTemperatureState.&lt;/p>&lt;table>
 		notPresent(5)
 		notFunctioning(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEnvMonTempStatusChangeNotif trap received 
 			ciscoEnvMonTemperatureStatusDescr=%parm[#1]% 
 			ciscoEnvMonTemperatureStatusValue=%parm[#2]% 
@@ -3753,7 +3753,7 @@ by ciscoEnvMonTemperatureState.&lt;/p>&lt;table>
 		notPresent(5)
 		notFunctioning(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEnvMonTempStatusChangeNotif trap received 
 			ciscoEnvMonTemperatureStatusDescr=%parm[#1]% 
 			ciscoEnvMonTemperatureStatusValue=%parm[#2]% 
@@ -3805,7 +3805,7 @@ by ciscoEnvMonTemperatureState.&lt;/p>&lt;table>
 		notPresent(5)
 		notFunctioning(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEnvMonTempStatusChangeNotif trap received 
 			ciscoEnvMonTemperatureStatusDescr=%parm[#1]% 
 			ciscoEnvMonTemperatureStatusValue=%parm[#2]% 
@@ -3857,7 +3857,7 @@ by ciscoEnvMonTemperatureState.&lt;/p>&lt;table>
 		notPresent(5)
 		notFunctioning(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEnvMonTempStatusChangeNotif trap received 
 			ciscoEnvMonTemperatureStatusDescr=%parm[#1]% 
 			ciscoEnvMonTemperatureStatusValue=%parm[#2]% 
@@ -3909,7 +3909,7 @@ by ciscoEnvMonTemperatureState.&lt;/p>&lt;table>
 		notPresent(5)
 		notFunctioning(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEnvMonTempStatusChangeNotif trap received 
 			ciscoEnvMonTemperatureStatusDescr=%parm[#1]% 
 			ciscoEnvMonTemperatureStatusValue=%parm[#2]% 
@@ -3965,7 +3965,7 @@ by ciscoEnvMonTemperatureState.&lt;/p>&lt;table>
 		notPresent(5)
 		notFunctioning(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEnvMonTempStatusChangeNotif trap received 
 			ciscoEnvMonTemperatureStatusDescr=%parm[#1]% 
 			ciscoEnvMonTemperatureStatusValue=%parm[#2]% 
@@ -4013,7 +4013,7 @@ by ciscoEnvMonTemperatureState.&lt;/p>&lt;table>
 		notPresent(5)
 		notFunctioning(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEnvMonTempStatusChangeNotif trap received 
 			ciscoEnvMonTemperatureStatusDescr=%parm[#1]% 
 			ciscoEnvMonTemperatureStatusValue=%parm[#2]% 
@@ -4057,7 +4057,7 @@ by ciscoEnvMonFanState.&lt;/p>&lt;table>
 		notPresent(5)
 		notFunctioning(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEnvMonFanStatusChangeNotif trap received 
 			ciscoEnvMonFanStatusDescr=%parm[#1]% 
 			ciscoEnvMonFanState=%parm[#2]%&lt;/p>
@@ -4099,7 +4099,7 @@ by ciscoEnvMonSupplyState.&lt;/p>&lt;table>
 		notPresent(5)
 		notFunctioning(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEnvMonSuppStatusChangeNotif trap received 
 			ciscoEnvMonSupplyStatusDescr=%parm[#1]% 
 			ciscoEnvMonSupplyState=%parm[#2]%&lt;/p>
@@ -4232,7 +4232,7 @@ generated by the  management server.&lt;/p>&lt;table>
 
 	cenUserMessage3&lt;/b>&lt;/td>&lt;td>
 	%parm[#22]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoEpmNotificationAlarm trap received 
 			cenAlarmVersion=%parm[#1]% 
 			cenAlarmTimestamp=%parm[#2]% 
@@ -4286,7 +4286,7 @@ Lun discovery cycle is completed.&lt;/p>&lt;table>
 		completed(2)
 		failure(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoExtScsiLunDiscDoneNotify trap received 
 			ciscoExtScsiLunDiscStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4327,7 +4327,7 @@ entPhysicalName.&lt;/p>&lt;table>
 
 	entPhysicalName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoFabricC12kMIBFabMasterSchCh trap received 
 			cfcGenericGlobalFabMasterSched=%parm[#1]% 
 			entPhysicalName=%parm[#2]%&lt;/p>
@@ -4362,7 +4362,7 @@ state transition occurs.&lt;/p>&lt;table>
 		down(2)
 		mcastDown(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cfhPlaneStateNotification trap received 
 			cfhPlaneOperStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4403,7 +4403,7 @@ state transition occurs.&lt;/p>&lt;table>
 
 	cfhBundleName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cfhBundleStateNotification trap received 
 			cfhBundleOperStatus=%parm[#1]% 
 			cfhBundlePlane=%parm[#2]% 
@@ -4451,7 +4451,7 @@ is 'up' and the value of cfhBundleDownedLinks is changed from
 
 	cfhBundleName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cfhBundleDownedLinkNotification trap received 
 			cfhBundleOperStatus=%parm[#1]% 
 			cfhBundlePlane=%parm[#2]% 
@@ -4603,7 +4603,7 @@ the included value of fcTrunkifOperStatus.&lt;/p>&lt;table>
 
 	fcTrunkIfOperStatusCauseDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: fcTrunkIfDownNotify trap received 
 			fcTrunkIfOperStatus=%parm[#1]% 
 			fcTrunkIfOperStatusCause=%parm[#2]% 
@@ -4755,7 +4755,7 @@ fcTrunkifOperStatus.&lt;/p>&lt;table>
 
 	fcTrunkIfOperStatusCauseDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: fcTrunkIfUpNotify trap received 
 			fcTrunkIfOperStatus=%parm[#1]% 
 			fcTrunkIfOperStatusCause=%parm[#2]% 
@@ -4799,7 +4799,7 @@ rejected it. &lt;/p>&lt;table>
 
 	fcIfElpRejectReasonCodeExpl&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: fcIfElpReject trap received 
 			fcIfElpNbrNodeName=%parm[#1]% 
 			fcIfElpNbrPortName=%parm[#2]% 
@@ -4840,7 +4840,7 @@ the new state of the port.&lt;/p>&lt;table>
 		congested(2)
 		severelyCongested(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoFCCCongestionStateChange trap received 
 			ifIndex=%parm[#1]% 
 			cFCCCongestionState=%parm[#2]%&lt;/p>
@@ -4882,7 +4882,7 @@ begun on this port for a source-destination pair.&lt;/p>&lt;table>
 
 	cFCCCongestionNotifyVSANIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoFCCCongestionRateLimitStart trap received 
 			ifIndex=%parm[#1]% 
 			cFCCCongestionSourceID=%parm[#2]% 
@@ -4927,7 +4927,7 @@ pair.&lt;/p>&lt;table>
 
 	cFCCCongestionNotifyVSANIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoFCCCongestionRateLimitEnd trap received 
 			ifIndex=%parm[#1]% 
 			cFCCCongestionSourceID=%parm[#2]% 
@@ -4969,7 +4969,7 @@ of fcPingTrapOnCompletion object has been set to
 
 	fcPingRxPackets&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: fcPingCompletionNotify trap received 
 			fcPingAddress=%parm[#1]% 
 			fcPingTxPackets=%parm[#2]% 
@@ -5042,7 +5042,7 @@ notification.&lt;/p>&lt;table>
 		platformNodeNameNoExists(19)
 		platformNodeNameAlreadyExists(20)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: fcsReqRejNotify trap received 
 			fcsRejReasonCode=%parm[#1]% 
 			fcsRejReasonCodeExplanation=%parm[#2]%&lt;/p>
@@ -5075,7 +5075,7 @@ is completed.&lt;/p>&lt;table>
 
 	fcsVsanDiscoveryName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: fcsDiscoveryCompleteNotify trap received 
 			fcsVsanDiscoveryName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -5126,7 +5126,7 @@ truncated suitably.&lt;/p>&lt;table>
 		failure(4)
 		disabled(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: fcTraceRouteCompletionNotify trap received 
 			fcTraceRouteTargetAddr=%parm[#1]% 
 			fcTraceRouteOperStatus=%parm[#2]%&lt;/p>
@@ -5201,7 +5201,7 @@ notification to provide the reason for the reject.&lt;/p>&lt;table>
 		invalidPortAttrBlockLen(12)
 		none(13)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cfdmiRejectRegNotify trap received 
 			notifyVsanIndex=%parm[#1]% 
 			cfdmiNotifyRegOperType=%parm[#2]% 
@@ -5239,7 +5239,7 @@ indicates the new state of the feature.&lt;/p>&lt;table>
 		enabled(2)
 		disabled(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoFeatureOpStatusChange trap received 
 			cfcFeatureCtrlOpStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -5272,7 +5272,7 @@ whenever a removable Flash device is inserted.&lt;/p>&lt;table>
 
 	ciscoFlashDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoFlashDeviceInsertedNotif trap received 
 			ciscoFlashDeviceMinPartitionSize=%parm[#1]% 
 			ciscoFlashDeviceName=%parm[#2]%&lt;/p>
@@ -5302,7 +5302,7 @@ whenever a removable Flash device is removed.&lt;/p>&lt;table>
 
 	ciscoFlashDeviceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoFlashDeviceRemovedNotif trap received 
 			ciscoFlashDeviceName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -5369,7 +5369,7 @@ of the neighbor after the change.&lt;/p>&lt;table>
 		dbWait(5)
 		full(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: fspfNbrStateChangeNotify trap received 
 			ifIndex=%parm[#1]% 
 			notifyVsanIndex=%parm[#2]% 
@@ -5452,7 +5452,7 @@ notification in additional varbinds.&lt;/p>&lt;table>
 
 	cGgsnHistNotifInfo&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cGgsnNotification trap received 
 			cGgsnHistNotifType=%parm[#1]% 
 			cGgsnHistNotifSeverity=%parm[#2]% 
@@ -5483,7 +5483,7 @@ notification in additional varbinds.&lt;/p>&lt;table>
       <descr>&lt;p>A notification of this type is generated when GGSN is
 placed in inService mode which is specified by
 cGgsnServiceModeStatus.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cGgsnInServiceNotif trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -5508,7 +5508,7 @@ cGgsnServiceModeStatus.&lt;/p>&lt;table>&lt;/table></descr>
       <descr>&lt;p>A notification of this type is generated when GGSN is
 placed in maintenance mode which is specified by
 cGgsnServiceModeStatus.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cGgsnMaintenanceNotif trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -5533,7 +5533,7 @@ cGgsnServiceModeStatus.&lt;/p>&lt;table>&lt;/table></descr>
       <descr>&lt;p>A notification of this type is generated when GGSN
 reaches the memory threshold value specified by
 cGgsnMemoryThreshold.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cGgsnMemThresholdReachedNotif trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -5558,7 +5558,7 @@ cGgsnMemoryThreshold.&lt;/p>&lt;table>&lt;/table></descr>
       <descr>&lt;p>A notification of this type is generated when GGSN 
 retains the memory and falls below threshold value 
 speficied by cGgsnMemoryThreshold.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cGgsnMemThresholdClearedNotif trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -5597,7 +5597,7 @@ connection comes UP.&lt;/p>&lt;table>
 
 	cGgsnPdfServerAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cGgsnPdfStateUpNotif trap received 
 			cGgsnPdfServerAddrType=%parm[#1]% 
 			cGgsnPdfServerAddr=%parm[#2]%&lt;/p>
@@ -5638,7 +5638,7 @@ connection goes DOWN.&lt;/p>&lt;table>
 
 	cGgsnPdfServerAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cGgsnPdfStateDownNotif trap received 
 			cGgsnPdfServerAddrType=%parm[#1]% 
 			cGgsnPdfServerAddr=%parm[#2]%&lt;/p>
@@ -5678,7 +5678,7 @@ cgprsAccPtCfgNotifEnable is set to true.&lt;/p>&lt;table>
 		creation(2)
 		deletion(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cgprsAccPtCfgNotif trap received 
 			cgprsAccPtCfgNotifAccPtIndex=%parm[#1]% 
 			cgprsAccPtCfgNotifReason=%parm[#2]%&lt;/p>
@@ -5728,7 +5728,7 @@ cgprsAccPtVerifyUpStrTpduSrcAddr occurs on an APN.&lt;/p>&lt;table>
 
 	cgprsAccPtMsNewAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cgprsAccPtSecSrcViolNotif trap received 
 			cgprsAccPtCfgNotifAccPtIndex=%parm[#1]% 
 			cgprsAccPtMsAddrType=%parm[#2]% 
@@ -5780,7 +5780,7 @@ cgprsAccPtVerifyUpStrTpduDstAddr occurs on an APN.&lt;/p>&lt;table>
 
 	cgprsAccPtMsTpduDstAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cgprsAccPtSecDestViolNotif trap received 
 			cgprsAccPtCfgNotifAccPtIndex=%parm[#1]% 
 			cgprsAccPtMsAddrType=%parm[#2]% 
@@ -5813,7 +5813,7 @@ cgprsAccPtOperationMode.&lt;/p>&lt;table>
 
 	cgprsAccPtCfgNotifAccPtIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cgprsAccPtMaintenanceNotif trap received 
 			cgprsAccPtCfgNotifAccPtIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -5843,7 +5843,7 @@ cgprsAccPtOperationMode.&lt;/p>&lt;table>
 
 	cgprsAccPtCfgNotifAccPtIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cgprsAccPtInServiceNotif trap received 
 			cgprsAccPtCfgNotifAccPtIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -5918,7 +5918,7 @@ cgprsCgAlarmHistTable.&lt;/p>&lt;table>
 
 	cgprsCgAlarmHistInfo&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cgprsCgAlarmNotif trap received 
 			cgprsCgAlarmHistType=%parm[#1]% 
 			cgprsCgAlarmHistAddrType=%parm[#2]% 
@@ -5974,7 +5974,7 @@ cgprsCgSwitchOverPriority.&lt;/p>&lt;table>
 
 	cgprsCgOldChgGatewayAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cgprsCgGatewaySwitchoverNotif trap received 
 			cgprsCgActiveChgGatewayAddrType=%parm[#1]% 
 			cgprsCgActiveChgGatewayAddress=%parm[#2]% 
@@ -6002,7 +6002,7 @@ cgprsCgSwitchOverPriority.&lt;/p>&lt;table>
       <descr>&lt;p>A notification of this type is generated when the 
 GGSN charging function is in normal mode. This can
 be identified by cgprsCgServiceMode object.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cgprsCgInServiceModeNotif trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -6027,7 +6027,7 @@ be identified by cgprsCgServiceMode object.&lt;/p>&lt;table>&lt;/table></descr>
       <descr>&lt;p>A notification of this type is generated when the 
 GGSN charging function is in maintenance mode. This
 can be identified by cgprsCgServiceMode object.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cgprsCgMaintenanceModeNotif trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -6059,7 +6059,7 @@ related alarm.
 		gdmServiceUp(1)
 		gdmServiceDown(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGtpDirectorNotification trap received 
 			cgdNotifType=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -6101,7 +6101,7 @@ the waiting interval.
 
 	cGtpLastNoRespToEchoGSNIpAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cGtpPathFailedNotification trap received 
 			cGtpLastNoRespToEchoGSNIpAddrTyp=%parm[#1]% 
 			cGtpLastNoRespToEchoGSNIpAddr=%parm[#2]%&lt;/p>
@@ -6176,7 +6176,7 @@ be generated.&lt;/p>&lt;table>
 
 	cHcAlarmRisingEventIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cHcRisingAlarm trap received 
 			cHcAlarmVariable=%parm[#1]% 
 			cHcAlarmSampleType=%parm[#2]% 
@@ -6257,7 +6257,7 @@ be generated.&lt;/p>&lt;table>
 
 	cHcAlarmFallingEventIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cHcFallingAlarm trap received 
 			cHcAlarmVariable=%parm[#1]% 
 			cHcAlarmSampleType=%parm[#2]% 
@@ -6296,7 +6296,7 @@ as described above.&lt;/p>&lt;table>
 
 	ciscoHealthMonitorHealth&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoHealthMonitorHealthLevel trap received 
 			ciscoHealthMonitorHealth=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -6333,7 +6333,7 @@ the cid11QosExtNotifEnabled object.&lt;/p>&lt;table>
 
 	cid11TrafficPriority&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoIetfDot11QosExtChangeNotif trap received 
 			cid11TrafficPriority=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -6399,7 +6399,7 @@ cpwVcOperStatus objects MUST be identical.&lt;/p>&lt;table>
 		notPresent(6)
 		lowerLayerDown(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cpwVcDown trap received 
 			cpwVcOperStatus=%parm[#1]% 
 			cpwVcOperStatus=%parm[#2]%&lt;/p>
@@ -6466,7 +6466,7 @@ cpwVcOperStatus objects MUST be the identical.&lt;/p>&lt;table>
 		notPresent(6)
 		lowerLayerDown(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cpwVcUp trap received 
 			cpwVcOperStatus=%parm[#1]% 
 			cpwVcOperStatus=%parm[#2]%&lt;/p>
@@ -6499,7 +6499,7 @@ transition of cSctpAssocRemAddressStatus has occurred.&lt;/p>&lt;table>
 		active(0)
 		inactive(1)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cSctpExtDestAddressStateChange trap received 
 			cSctpAssocRemAddressStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -6539,7 +6539,7 @@ potential reasons.&lt;/p>&lt;table>
 		protocolInitFailure(8)
 		noPeerVtuPresent(9)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cvdslInitFailureNotification trap received 
 			cvdslCurrStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -6591,7 +6591,7 @@ requested when the operation was initiated.&lt;/p>&lt;table>
 
 	ciuUpgradeOpTimeCompleted&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciuUpgradeOpCompletionNotify trap received 
 			ciuUpgradeOpCommand=%parm[#1]% 
 			ciuUpgradeOpStatus=%parm[#2]% 
@@ -6627,7 +6627,7 @@ cIpLocalPoolStatInUseAddrThldHi.&lt;/p>&lt;table>
 
 	cIpLocalPoolStatInUseAddrs&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoIpLocalPoolInUseAddrNoti trap received 
 			cIpLocalPoolStatFreeAddrs=%parm[#1]% 
 			cIpLocalPoolStatInUseAddrs=%parm[#2]%&lt;/p>
@@ -6682,7 +6682,7 @@ The implementation of this trap should not send more than
 
 	cIscsiTgtLastIntrFailureAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cIscsiTgtLoginFailure trap received 
 			cIscsiTgtLoginFailures=%parm[#1]% 
 			cIscsiTgtLastFailureType=%parm[#2]% 
@@ -6740,7 +6740,7 @@ The implementation of this trap should not send more than
 
 	cIscsiIntrLastTgtFailureAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cIscsiIntrLoginFailure trap received 
 			cIscsiIntrLoginFailures=%parm[#1]% 
 			cIscsiIntrLastFailureType=%parm[#2]% 
@@ -6784,7 +6784,7 @@ The implementation of this trap should not send more than
 
 	cIscsiInstLastSsnRmtNodeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cIscsiInstSessionFailure trap received 
 			cIscsiInstSsnFailures=%parm[#1]% 
 			cIscsiInstLastSsnFailureType=%parm[#2]% 
@@ -6823,7 +6823,7 @@ D-channel of an interface changes state.&lt;/p>&lt;table>
 		l1Active(2)
 		l2Active(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: demandNbrLayer2Change trap received 
 			ifIndex=%parm[#1]% 
 			isdnLapdOperStatus=%parm[#2]%&lt;/p>
@@ -6865,7 +6865,7 @@ ifIndex is the interface index of the requested bearer channel
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: demandNbrCNANotification trap received 
 			isdnSignalingIfIndex=%parm[#1]% 
 			ifIndex=%parm[#2]%&lt;/p>
@@ -6927,7 +6927,7 @@ of the window.&lt;/p>&lt;table>
 
 	cgrtDestNotifChanges&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGrtDestStateChange trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -6991,7 +6991,7 @@ of the window.&lt;/p>&lt;table>
 
 	cgrtMgmtNotifChanges&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGrtMgmtStateChange trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -7049,7 +7049,7 @@ tables to be reloaded whenever a device restarts.&lt;/p>&lt;table>
 
 	cgrtInstLastURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGrtRouteTableLoad trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -7103,7 +7103,7 @@ the new state for the subsystem.&lt;/p>&lt;table>
 		allowed(1)
 		prohibited(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGsccpGttMapStateChange trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -7154,7 +7154,7 @@ operation is started or completes.&lt;/p>&lt;table>
 
 	cgsccpInstLastURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGsccpGttLoadTable trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -7211,7 +7211,7 @@ cgspLinksetState  indicates the new state.&lt;/p>&lt;table>
 		shutdown(2)
 		unavailable(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGspLinksetStateChange trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -7324,7 +7324,7 @@ cgspLinkState  indicates the new state.&lt;/p>&lt;table>
 		nonAdjacent(7)
 		failed(8)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGspLinkStateChange trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -7381,7 +7381,7 @@ by cgspLinkCongestionState object.&lt;/p>&lt;table>
 
 	cgspLinkCongestionState&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGspCongestionChange trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -7443,7 +7443,7 @@ the cgspLinkUtilStateRcvd changes states.&lt;/p>&lt;table>
 
 	cgspLinkUtilizationRcvd&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGspLinkRcvdUtilChange trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -7506,7 +7506,7 @@ the cgspLinkUtilStateSent changes states.&lt;/p>&lt;table>
 
 	cgspLinkUtilizationSent&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoGspLinkSentUtilChange trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -7563,7 +7563,7 @@ tables to be reloaded whenever a device restarts.&lt;/p>&lt;table>
 
 	cmlrInstLastURL&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoMlrTableLoad trap received 
 			cgspEventSequenceNumber=%parm[#1]% 
 			cgspCLLICode=%parm[#2]% 
@@ -7599,7 +7599,7 @@ cItpmConnCongestion indicates new state.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoItpMonitorCongestion trap received 
 			cItpmConnCongestion=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -7657,7 +7657,7 @@ of the window.&lt;/p>&lt;table>
 
 	cItpRtNotifInfoStateChanges&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cItpRouteStateChange trap received 
 			cItpRtStateChangeCount=%parm[#1]% 
 			cItpRtNotifInfoSuppressedFlag=%parm[#2]% 
@@ -7712,7 +7712,7 @@ the cItpSpLinkUtilStateRcvd changes states.&lt;/p>&lt;table>
 
 	cItpSpLinkUtilizationRcvd&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cItpSpLinkRcvdUtilChange trap received 
 			cItpSpCLLICode=%parm[#1]% 
 			cItpSpLinkUtilStateRcvd=%parm[#2]% 
@@ -7770,7 +7770,7 @@ the cItpSpLinkUtilStateSent changes states.&lt;/p>&lt;table>
 
 	cItpSpLinkUtilizationSent&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cItpSpLinkSentUtilChange trap received 
 			cItpSpCLLICode=%parm[#1]% 
 			cItpSpLinkUtilStateSent=%parm[#2]% 
@@ -7823,7 +7823,7 @@ serving the AS specified by cItpXuaAsDisplayName.&lt;/p>&lt;table>
 		active(3)
 		undefined(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoItpXuaAspStateChange trap received 
 			cItpSpCLLICode=%parm[#1]% 
 			cItpXuaAspDisplayName=%parm[#2]% 
@@ -7870,7 +7870,7 @@ the SG Mate.&lt;/p>&lt;table>
 		active(3)
 		undefined(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoItpXuaSgmStateChange trap received 
 			cItpSpCLLICode=%parm[#1]% 
 			cItpXuaSgmDisplayName=%parm[#2]% 
@@ -7916,7 +7916,7 @@ indicates the new state for the AS.&lt;/p>&lt;table>
 		pending(4)
 		undefined(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoItpXuaAsStateChange trap received 
 			cItpSpCLLICode=%parm[#1]% 
 			cItpXuaAsDisplayName=%parm[#2]% 
@@ -7957,7 +7957,7 @@ level for the ASP.&lt;/p>&lt;table>
 
 	cItpXuaAspCongLevel&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoItpXuaAspCongChange trap received 
 			cItpSpCLLICode=%parm[#1]% 
 			cItpXuaAspDisplayName=%parm[#2]% 
@@ -7998,7 +7998,7 @@ level for the SG Mate.&lt;/p>&lt;table>
 
 	cItpXuaSgmCongLevel&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoItpXuaSgmCongChange trap received 
 			cItpSpCLLICode=%parm[#1]% 
 			cItpXuaSgmDisplayName=%parm[#2]% 
@@ -8058,7 +8058,7 @@ activation was successful.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: civrZoneActivationDoneNotify trap received 
 			civrZoneSetName=%parm[#1]% 
 			civrZoneSetActvatDeactvatResult=%parm[#2]% 
@@ -8118,7 +8118,7 @@ deactivation was successful.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: civrZoneDeactivationDoneNotify trap received 
 			civrZoneSetName=%parm[#1]% 
 			civrZoneSetActvatDeactvatResult=%parm[#2]% 
@@ -8165,7 +8165,7 @@ could be domainID conflicts.&lt;/p>&lt;table>
 
 	civDomainIdConflictVsan&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: civrDomainConflictNotify trap received 
 			civrZoneEnforcedZoneMemberID=%parm[#1]% 
 			civrZoneEnforcedZoneMemberVsan=%parm[#2]% 
@@ -8203,7 +8203,7 @@ either rising above or falling below it.&lt;/p>&lt;table>
 
 	clcVlanMaxMacLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: clcVlanMacLimitNotif trap received 
 			clcFdbVlanMacUsage=%parm[#1]% 
 			clcVlanMaxMacLimit=%parm[#2]%&lt;/p>
@@ -8241,7 +8241,7 @@ via the cl2DevMonNotifEnabled object.&lt;/p>&lt;table>
 
 	cl2DevMonActivePollingTimeOut&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cl2DevMonSwitchover trap received 
 			cl2DevMonActivePollingFrequency=%parm[#1]% 
 			cl2DevMonActivePollingTimeOut=%parm[#2]%&lt;/p>
@@ -8271,7 +8271,7 @@ feature license expires.&lt;/p>&lt;table>
 
 	clmLicenseExpiryDate&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: clmLicenseExpiryNotify trap received 
 			clmLicenseExpiryDate=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8307,7 +8307,7 @@ notification is sent once every hour.&lt;/p>&lt;table>
 
 	clmLicenseGracePeriod&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: clmNoLicenseForFeatureNotify trap received 
 			clmLicenseGracePeriod=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8341,7 +8341,7 @@ license' messages.&lt;/p>&lt;table>
 
 	clmNoOfMissingUsageLicenses&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: clmLicenseFileMissingNotify trap received 
 			clmNoOfMissingUsageLicenses=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8378,7 +8378,7 @@ this notification.&lt;/p>&lt;table>
 
 	clmLicenseExpiryDate&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: clmLicenseExpiryWarningNotify trap received 
 			clmLicenseExpiryDate=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8420,7 +8420,7 @@ will be generated.&lt;/p>&lt;table>
 
 	cmnHistTimestamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cmnMacChangedNotification trap received 
 			cmnHistMacChangedMsg=%parm[#1]% 
 			cmnHistTimestamp=%parm[#2]%&lt;/p>
@@ -8466,7 +8466,7 @@ moved between two interfaces.&lt;/p>&lt;table>
 
 	cmnMACMoveTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cmnMacMoveNotification trap received 
 			cmnMACMoveAddress=%parm[#1]% 
 			cmnMACMoveVlanNumber=%parm[#2]% 
@@ -8508,7 +8508,7 @@ cmnMACThresholdLimit for a given entPhysicalIndex.&lt;/p>&lt;table>
 
 	cmnUtilizationTimeStamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cmnMacThresholdExceedNotif trap received 
 			cmnUtilizationUtilization=%parm[#1]% 
 			cmnMACThresholdLimit=%parm[#2]% 
@@ -8548,7 +8548,7 @@ is controlled by the cmiTrapControl object.&lt;/p>&lt;table>
 		isolated(4)
 		unknown(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cmiMrStateChange trap received 
 			mnState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8584,7 +8584,7 @@ object.&lt;/p>&lt;table>
 
 	mnRegAgentAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cmiMrCoaChange trap received 
 			mnRegCOA=%parm[#1]% 
 			mnRegAgentAddress=%parm[#2]%&lt;/p>
@@ -8636,7 +8636,7 @@ cmiTrapControl object.&lt;/p>&lt;table>
 
 	cmiMrMaAdvRcvIf&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cmiMrNewMA trap received 
 			cmiMrMaIsHa=%parm[#1]% 
 			cmiMrMaAdvFlags=%parm[#2]% 
@@ -8730,7 +8730,7 @@ request from MN is rejected by Home Agent.&lt;/p>&lt;table>
 		reverseTunnelBitNotSet(138)
 		encapsulationUnavailable(139)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cmiHaMnRegReqFailed trap received 
 			cmiNtRegCOAType=%parm[#1]% 
 			cmiNtRegCOA=%parm[#2]% 
@@ -8778,7 +8778,7 @@ shutdown feature shuts down a module.&lt;/p>&lt;table>
 
 	cmasModuleLastResetReason&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cmasModuleAutoShutdown trap received 
 			entPhysicalName=%parm[#1]% 
 			entPhysicalModelName=%parm[#2]% 
@@ -8835,7 +8835,7 @@ event only.&lt;/p>&lt;table>
 		modifiedMvrfDefMdtConfig(3)
 		modifiedMvrfDataMdtConfig(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoMvpnMvrfChange trap received 
 			ciscoMvpnGenOperStatusChange=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -8896,7 +8896,7 @@ cnpdThresholdHistoryTable.&lt;/p>&lt;table>
 
 	cnpdThresholdHistoryTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cnpdThresholdRisingEvent trap received 
 			cnpdThresholdConfigIfIndex=%parm[#1]% 
 			cnpdThresholdConfigStatsSelect=%parm[#2]% 
@@ -8962,7 +8962,7 @@ that is added to the cnpdThresholdHistoryTable.&lt;/p>&lt;table>
 
 	cnpdThresholdHistoryTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cnpdThresholdFallingEvent trap received 
 			cnpdThresholdConfigIfIndex=%parm[#1]% 
 			cnpdThresholdConfigStatsSelect=%parm[#2]% 
@@ -9034,7 +9034,7 @@ intermediate health/status (ex: busy etc.), failed or exit status.&lt;/p>&lt;tab
 
 	cnaHealthStatusDesc&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cnaHealthNotif trap received 
 			cnaHealthNotifSeqNum=%parm[#1]% 
 			cnaHealthStatusChangeTime=%parm[#2]% 
@@ -9116,7 +9116,7 @@ notification to provide the reason for the reject.&lt;/p>&lt;table>
 		databaseEmpty(19)
 		noObjectRegInSpecifiedScope(20)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: fcNameServerRejectRegNotify trap received 
 			fcNameServerPortName=%parm[#1]% 
 			fcNameServerRejectReasonCode=%parm[#2]% 
@@ -9148,7 +9148,7 @@ a new entry.&lt;/p>&lt;table>
 
 	notifyVsanIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: fcNameServerDatabaseFull trap received 
 			notifyVsanIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -9209,7 +9209,7 @@ conditions:
 
 	cOpticalParamAlarmLastChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cOpticalMonParameterStatus trap received 
 			cOpticalParameterValue=%parm[#1]% 
 			cOpticalParamAlarmStatus=%parm[#2]% 
@@ -9284,7 +9284,7 @@ router.&lt;/p>&lt;table>
 		lsAck(5)
 		nullPacket(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cospfIfConfigError trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -9355,7 +9355,7 @@ on a virtual interface  from  a router.&lt;/p>&lt;table>
 		lsAck(5)
 		nullPacket(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cospfVirtIfConfigError trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -9428,7 +9428,7 @@ on a non-virtual interface.&lt;/p>&lt;table>
 
 	ospfLsdbRouterId&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cospfTxRetransmit trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -9500,7 +9500,7 @@ on a non-virtual interface.&lt;/p>&lt;table>
 
 	ospfLsdbRouterId&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cospfVirtIfTxRetransmit trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -9561,7 +9561,7 @@ MaxAge.&lt;/p>&lt;table>
 
 	ospfLsdbRouterId&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cospfOriginateLsa trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfLsdbAreaId=%parm[#2]% 
@@ -9621,7 +9621,7 @@ has aged to MaxAge.&lt;/p>&lt;table>
 
 	ospfLsdbRouterId&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cospfMaxAgeLsa trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfLsdbAreaId=%parm[#2]% 
@@ -9670,7 +9670,7 @@ any defined status on a per area basis.&lt;/p>&lt;table>
 		elected(2)
 		disabled(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cospfNssaTranslatorStatusChange trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfAreaId=%parm[#2]% 
@@ -9723,7 +9723,7 @@ to Down or progresses  to  Down to Point-to-Point.&lt;/p>&lt;table>
 		down(1)
 		pointToPoint(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cospfShamLinkStateChange trap received 
 			ospfRouterId=%parm[#1]% 
 			cospfShamLinkAreaId=%parm[#2]% 
@@ -9780,7 +9780,7 @@ cOutageNotificationsEnabled object.&lt;/p>&lt;table>
 
 	cOutageEventInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoOutageEvent trap received 
 			cOutageEventObjectType=%parm[#1]% 
 			cOutageEventMonObjectIndex=%parm[#2]% 
@@ -9823,7 +9823,7 @@ is set to 'dropNotify'. &lt;/p>&lt;table>
 
 	cpsIfSecureLastMacAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cpsSecureMacAddrViolation trap received 
 			ifIndex=%parm[#1]% 
 			ifName=%parm[#2]% 
@@ -9861,7 +9861,7 @@ a particular traffic type.&lt;/p>&lt;table>
 		allTrafficFiltered(4)
 		shutdown(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cpscEvent trap received 
 			cpscStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10036,7 +10036,7 @@ when a PSA microcode reload occurs..&lt;/p>&lt;table>
 		linkBundle(26)
 		atomDisposition(27)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoPsaMicrocodeReload trap received 
 			entPhysicalName=%parm[#1]% 
 			entPhysicalDescr=%parm[#2]% 
@@ -10079,7 +10079,7 @@ local device on a F/FL port.&lt;/p>&lt;table>
 
 	cpsmPortBindLoginTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoPsmPortBindFPortDenyNotify trap received 
 			cpsmPortBindLoginPwwn=%parm[#1]% 
 			cpsmPortBindLoginPort=%parm[#2]% 
@@ -10119,7 +10119,7 @@ local device on a E port.&lt;/p>&lt;table>
 
 	cpsmPortBindLoginTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoPsmPortBindEPortDenyNotify trap received 
 			cpsmPortBindLoginSwwn=%parm[#1]% 
 			cpsmPortBindLoginPort=%parm[#2]% 
@@ -10159,7 +10159,7 @@ enforced fabric bindings on the local device.&lt;/p>&lt;table>
 
 	cpsmFabricBindDenialTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoPsmFabricBindDenyNotify trap received 
 			cpsmFabricBindSwwn=%parm[#1]% 
 			cpsmFabricBindLocalPort=%parm[#2]% 
@@ -10208,7 +10208,7 @@ NOTE: A threshold low water mark is by default 90% of the
 
 	crpmsAlarmThresholdObject&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: crpmsRisingAlarm trap received 
 			crpmsAlarmObject=%parm[#1]% 
 			crpmsAlarmValue=%parm[#2]% 
@@ -10257,7 +10257,7 @@ NOTE: A threshold low water mark is by default 90% of the
 
 	crpmsAlarmThresholdObject&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: crpmsFallingAlarm trap received 
 			crpmsAlarmObject=%parm[#1]% 
 			crpmsAlarmValue=%parm[#2]% 
@@ -10311,7 +10311,7 @@ sender of the request that was rejected.&lt;/p>&lt;table>
 
 	rscnNotifyFcId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: rscnElsRejectReqNotify trap received 
 			rscnElsRejReasonCode=%parm[#1]% 
 			rscnNotifyFcId=%parm[#2]%&lt;/p>
@@ -10364,7 +10364,7 @@ sender of the request that was rejected.&lt;/p>&lt;table>
 
 	rscnNotifyFcId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: rscnIlsRejectReqNotify trap received 
 			rscnIlsRejReasonCode=%parm[#1]% 
 			rscnNotifyFcId=%parm[#2]%&lt;/p>
@@ -10408,7 +10408,7 @@ period.&lt;/p>&lt;table>
 		nonAddrFailReadying(7)
 		nonAddrFailAbnormal(8)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoScsiTgtDevStatusChanged trap received 
 			ciscoScsiTgtDeviceStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10449,7 +10449,7 @@ more than three SCSI identical notifications in any
 		readying(5)
 		abnormal(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoScsiLuStatusChanged trap received 
 			ciscoScsiLuStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10484,7 +10484,7 @@ cslbxFtState indicates the new state.&lt;/p>&lt;table>
 		activeFT(3)
 		standbyFT(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cslbxFtStateChange trap received 
 			cslbxFtState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10517,7 +10517,7 @@ sonetSectionCurrentStatus changes.&lt;/p>&lt;table>
 
 	ifDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoSonetSectionStatusChange trap received 
 			sonetSectionCurrentStatus=%parm[#1]% 
 			ifDescr=%parm[#2]%&lt;/p>
@@ -10551,7 +10551,7 @@ sonetLineCurrentStatus changes.&lt;/p>&lt;table>
 
 	ifDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoSonetLineStatusChange trap received 
 			sonetLineCurrentStatus=%parm[#1]% 
 			ifDescr=%parm[#2]%&lt;/p>
@@ -10585,7 +10585,7 @@ sonetPathCurrentStatus changes.&lt;/p>&lt;table>
 
 	ifDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoSonetPathStatusChange trap received 
 			sonetPathCurrentStatus=%parm[#1]% 
 			ifDescr=%parm[#2]%&lt;/p>
@@ -10619,7 +10619,7 @@ sonetVTCurrentStatus changes.&lt;/p>&lt;table>
 
 	ifDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoSonetVTStatusChange trap received 
 			sonetVTCurrentStatus=%parm[#1]% 
 			ifDescr=%parm[#2]%&lt;/p>
@@ -10645,7 +10645,7 @@ sonetVTCurrentStatus changes.&lt;/p>&lt;table>
       <event-label>CISCO-SSG-MIB defined trap event: ciscoSsgRadiusClientReboot</event-label>
       <descr>&lt;p>The notification is sent when the connectivity to GGSN is
 lost.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoSsgRadiusClientReboot trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -10669,7 +10669,7 @@ lost.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>CISCO-SSG-MIB defined trap event: ciscoSsgRadiusAAAServerDown</event-label>
       <descr>&lt;p>The notification is sent when the connectivity to AAA is
 lost or when AAA Server is down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoSsgRadiusAAAServerDown trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -10717,7 +10717,7 @@ reason of the proxy service.&lt;/p>&lt;table>
 		noCert(6)
 		certNotConfigured(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cspServOperStatus trap received 
 			cspPsOperStatus=%parm[#1]% 
 			cspPsOperDownReason=%parm[#2]%&lt;/p>
@@ -10779,7 +10779,7 @@ and the end date on the certificate.&lt;/p>&lt;table>
 
 	cspPskcCertEndDate&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cspServCertExpiring trap received 
 			cspPskcCertSubjName=%parm[#1]% 
 			cspPskcCertSerialNum=%parm[#2]% 
@@ -10824,7 +10824,7 @@ states (2, 3, 4, 5, 6 and 8).&lt;/p>&lt;table>
 		writeError(8)
 		success(9)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: csilLoggingFailNotif trap received 
 			csilServerLastStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10878,7 +10878,7 @@ supervisor is restarted.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cseHaRestartNotify trap received 
 			cseHaRestartReason=%parm[#1]% 
 			cseHaRestartService=%parm[#2]% 
@@ -10919,7 +10919,7 @@ acknowledged, as and when such mechanisms are available; for
 example, with SNMPv3, this would be an InformRequest.  Filter
 installation can take a long period of time, during which call
 progress may be delayed.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cTapMIBActive trap received&lt;/p>
 		</logmsg>
       <severity>Indeterminate</severity>
@@ -10956,7 +10956,7 @@ of the action.&lt;/p>&lt;table>
 		createAndWait(5)
 		destroy(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cTapMediationTimedOut trap received 
 			cTapMediationStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -10997,7 +10997,7 @@ example, with SNMPv3, this would be an InformRequest.&lt;/p>&lt;table>
 
 	cTapDebugIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cTapMediationDebug trap received 
 			cTapMediationContentId=%parm[#1]% 
 			cTapDebugIndex=%parm[#2]%&lt;/p>
@@ -11043,7 +11043,7 @@ example, with SNMPv3, this would be an InformRequest.&lt;/p>&lt;table>
 
 	cTapDebugIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cTapStreamIpDebug trap received 
 			cTapMediationContentId=%parm[#1]% 
 			cTapStreamIpIndex=%parm[#2]% 
@@ -11082,7 +11082,7 @@ entry. &lt;/p>&lt;table>
 
 	ifName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: virtualNwIfCreateEntryNotify trap received 
 			virtualNwIfIndex=%parm[#1]% 
 			ifName=%parm[#2]%&lt;/p>
@@ -11113,7 +11113,7 @@ whenever an virtual interface is deleted from the
 
 	virtualNwIfIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: virtualNwIfDeleteEntryNotify trap received 
 			virtualNwIfIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -11246,7 +11246,7 @@ The value of vismTrapIntIndex1 gives the vismRtpConnNum.&lt;/p>&lt;table>
 
 	vismRtpLcn&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismRtpConnAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -11387,7 +11387,7 @@ vismTrapIntIndex1 gives the vismRtpConnNum.&lt;/p>&lt;table>
 
 	vismRtpLcn&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismRtpConnDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -11544,7 +11544,7 @@ The value of vismTrapIntIndex1 gives the vismRtpConnNum.&lt;/p>&lt;table>
 		both(3)
 		notFail(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismRtpConnStateChg trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -11691,7 +11691,7 @@ value of vismLapdTrunkNum.&lt;/p>&lt;table>
 		is(2)
 		unknown(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismLapdTrStateIs trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -11836,7 +11836,7 @@ the value of vismLapdTrunkNum.&lt;/p>&lt;table>
 		is(2)
 		unknown(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismLapdTrStateOos trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -11973,7 +11973,7 @@ gives the value of vismLapdTrunkNum.&lt;/p>&lt;table>
 
 	vismTrapIntIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismLapdTrunkAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -12109,7 +12109,7 @@ gives the value of vismLapdTrunkNum.&lt;/p>&lt;table>
 
 	vismTrapIntIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismLapdTrunkDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -12251,7 +12251,7 @@ value of mgcNumber.&lt;/p>&lt;table>
 
 	vismTrapIntIndex2&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcRedundancyGrpAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -12394,7 +12394,7 @@ value of mgcNumber.&lt;/p>&lt;table>
 
 	vismTrapIntIndex2&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcRedundancyGrpDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -12535,7 +12535,7 @@ mgcRedundancyGrpNum.&lt;/p>&lt;table>
 
 	vismTrapIntIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcRedundancyGrpCommOk trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -12675,7 +12675,7 @@ mgcRedundancyGrpNum.&lt;/p>&lt;table>
 
 	vismTrapIntIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcRedundancyGrpCommLoss trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -12818,7 +12818,7 @@ value of mgProtocolNumber.&lt;/p>&lt;table>
 
 	vismTrapIntIndex2&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcRedundancyGrpProtocolAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -12962,7 +12962,7 @@ value of mgProtocolNumber.&lt;/p>&lt;table>
 
 	vismTrapIntIndex2&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcRedundancyGrpProtocolDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -13106,7 +13106,7 @@ mgcRedundancyGrpNum.&lt;/p>&lt;table>
 
 	srcpPeerGrpTimeSinceHeartbeat&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: peerGrpHeartbeatLost trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -13250,7 +13250,7 @@ gives the value of mgcRedundancyGrpNum.&lt;/p>&lt;table>
 
 	srcpPeerGrpTimeSinceHeartbeat&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: peerGrpHeartbeatDetected trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -13401,7 +13401,7 @@ value of mgcNumber.&lt;/p>&lt;table>
 		mgcActive(1)
 		mgcInactive(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcActiveInGrp trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -13552,7 +13552,7 @@ value of mgcNumber.&lt;/p>&lt;table>
 		mgcActive(1)
 		mgcInactive(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcInactiveInGrp trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -13695,7 +13695,7 @@ mgcRedundancyGrpTable by the user.&lt;/p>&lt;table>
 
 	vismTrapIntIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcRedundancyGrpParamEntryAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -13836,7 +13836,7 @@ mgcRedundancyGrpTable by the user.&lt;/p>&lt;table>
 
 	vismTrapIntIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcRedundancyGrpParamEntryDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -13976,7 +13976,7 @@ the MGC Redundancy Group.&lt;/p>&lt;table>
 
 	vismTrapIntIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: srcpPeerGrpParamEntryAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -14116,7 +14116,7 @@ for the Mgc Redundancy Group is deleted.&lt;/p>&lt;table>
 
 	vismTrapIntIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: srcpPeerGrpParamEntryDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -14304,7 +14304,7 @@ variable intSrvFlowStatus.&lt;/p>&lt;table>
 		createAndWait(5)
 		destroy(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: newFlow trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -14488,7 +14488,7 @@ classifier.&lt;/p>&lt;table>
 		createAndWait(5)
 		destroy(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: lostFlow trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -14662,7 +14662,7 @@ of cwAnnounceIndex.&lt;/p>&lt;table>
 		invalidFile(3)
 		loadFailed(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwAnnFileAddStarted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -14832,7 +14832,7 @@ cwAnnounceIndex.&lt;/p>&lt;table>
 		invalidFile(3)
 		loadFailed(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwAnnFileLoadComplete trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -15002,7 +15002,7 @@ cwAnnounceIndex.&lt;/p>&lt;table>
 		invalidFile(3)
 		loadFailed(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwAnnFileLoadFailed trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -15142,7 +15142,7 @@ of cwAnnounceIndex.&lt;/p>&lt;table>
 
 	vismTrapIntIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwAnnFileDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -15287,7 +15287,7 @@ of mgEndpointNumber.&lt;/p>&lt;table>
 
 	mgEndpointChannelMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: dspRASEndpointFailed trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -15434,7 +15434,7 @@ mgEndpointNumber.&lt;/p>&lt;table>
 
 	mgEndpointChannelMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: dspRASEndpointActive trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -15578,7 +15578,7 @@ mgEndpointNumber.&lt;/p>&lt;table>
 
 	vismFreeDs0Count&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapAvailFreeDs0Low trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -15722,7 +15722,7 @@ mgEndpointNumber.&lt;/p>&lt;table>
 
 	vismCPUUtilization&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapCpuUtilExceeded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -15866,7 +15866,7 @@ mgEndpointNumber.&lt;/p>&lt;table>
 
 	vismMemoryUtilization&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapMemoryUtilExceeded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -16017,7 +16017,7 @@ vismConfigToneDetectNum.&lt;/p>&lt;table>
 
 	vismFrequency2&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismConfigToneDetectAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -16169,7 +16169,7 @@ vismConfigToneDetectNum.&lt;/p>&lt;table>
 
 	vismFrequency2&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismConfigToneDetectDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -16321,7 +16321,7 @@ the name of the CAS template added.
 
 	cvcmCasTemplateName&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismCasTransTblAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -16472,7 +16472,7 @@ the name of the CAS template deleted.
 
 	cvcmCasTemplateName&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismCasTranTblDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -16609,7 +16609,7 @@ vismIpAddress contains the new IP address.&lt;/p>&lt;table>
 
 	vismIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismIpAddressChanged trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -16756,7 +16756,7 @@ is configured.&lt;/p>&lt;table>
 
 	vismChanPortNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismChanActive trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -16905,7 +16905,7 @@ is configured.&lt;/p>&lt;table>
 
 	vismChanPortNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismChanDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -17081,7 +17081,7 @@ was added with type vismPortType.&lt;/p>&lt;table>
 		voIP(1)
 		userPort(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismPortAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -17259,7 +17259,7 @@ The type of port is specified in vismPortType.&lt;/p>&lt;table>
 		voIP(1)
 		userPort(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismPortActive trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -17444,7 +17444,7 @@ The new state of the port is specified in vismPortState.&lt;/p>&lt;table>
 		notConfigured(1)
 		active(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismPortFailed trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -17603,7 +17603,7 @@ specified by vismChanActivityState .&lt;/p>&lt;table>
 		failed(3)
 		unknown(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapProtectedChanActive trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -17760,7 +17760,7 @@ specified by vismChanActivityState.&lt;/p>&lt;table>
 		failed(3)
 		unknown(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapProtectedChanStandby trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -17917,7 +17917,7 @@ specified by vismChanActivityState.&lt;/p>&lt;table>
 		failed(3)
 		unknown(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapProtectedChanFailed trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -18072,7 +18072,7 @@ specified by vismChanLockingState.&lt;/p>&lt;table>
 		unlock(1)
 		lock(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapProtectedChanLocked trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -18227,7 +18227,7 @@ specified by vismChanLockingState.&lt;/p>&lt;table>
 		unlock(1)
 		lock(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapProtectedChanUnlocked trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -18370,7 +18370,7 @@ The transition may be from unlocked to locked or from
 		commandedOutOfService(2)
 		pendingOutOfService(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgAdministrativeStateLocked trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -18509,7 +18509,7 @@ to unlocked.&lt;/p>&lt;table>
 		commandedOutOfService(2)
 		pendingOutOfService(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgAdministrativeStateUnlocked trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -18648,7 +18648,7 @@ to 'gracefulOutOfService'.&lt;/p>&lt;table>
 		commandedOutOfService(2)
 		pendingOutOfService(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgAdministrativeStateShuttingDown trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -18797,7 +18797,7 @@ The value of vismTrapIntIndex1 gives the value of mgcNumber.&lt;/p>&lt;table>
 		mgcAssociated(2)
 		mgcAssociatedCommLoss(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcAssociated trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -18948,7 +18948,7 @@ The value of vismTrapIntIndex1 gives the value of mgcNumber.&lt;/p>&lt;table>
 		mgcAssociated(2)
 		mgcAssociatedCommLoss(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcUnassociated trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -19099,7 +19099,7 @@ mgcNumber.&lt;/p>&lt;table>
 		mgcAssociated(2)
 		mgcAssociatedCommLoss(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcAssociatedCommLoss trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -19250,7 +19250,7 @@ mgcResolutionIndex.&lt;/p>&lt;table>
 		csActive(1)
 		csInactive(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcCommStateActive trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -19400,7 +19400,7 @@ the value of mgcResolutionIndex.&lt;/p>&lt;table>
 		csActive(1)
 		csInactive(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcCommStateInactive trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -19546,7 +19546,7 @@ mgEndpointNumber.&lt;/p>&lt;table>
 
 	mgEndpointChannelMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgEndpointCreated trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -19692,7 +19692,7 @@ mgEndpointNumber.&lt;/p>&lt;table>
 
 	mgEndpointChannelMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgEndpointDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -19847,7 +19847,7 @@ mgEndpointNumber.&lt;/p>&lt;table>
 		mgEndpointFailed(2)
 		mgEndpointDegraded(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgEndpointActive trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -20003,7 +20003,7 @@ mgEndpointNumber.&lt;/p>&lt;table>
 		mgEndpointFailed(2)
 		mgEndpointDegraded(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgEndpointFailed trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -20146,7 +20146,7 @@ value of mgcNumber.&lt;/p>&lt;table>
 
 	mgcName&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -20287,7 +20287,7 @@ of mgcNumber.&lt;/p>&lt;table>
 
 	mgcName&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -20429,7 +20429,7 @@ mgProtocolNumber.&lt;/p>&lt;table>
 
 	vismTrapIntIndex2&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcProtocolAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -20571,7 +20571,7 @@ mgProtocolNumber.&lt;/p>&lt;table>
 
 	vismTrapIntIndex2&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcProtocolDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -20716,7 +20716,7 @@ mgcResolutionIndex.&lt;/p>&lt;table>
 
 	mgcResolutionIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcResolutionAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -20862,7 +20862,7 @@ mgcResolutionIndex.&lt;/p>&lt;table>
 
 	mgcResolutionIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgcResolutionDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -21006,7 +21006,7 @@ The value of vismTrapIntIndex1 gives the value of srcpPeerId.&lt;/p>&lt;table>
 
 	srcpPeerTimeSinceHeartbeat&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: peerHeartbeatLost trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -21150,7 +21150,7 @@ The value of vismTrapIntIndex1 gives the value of srcpPeerId.&lt;/p>&lt;table>
 
 	srcpPeerTimeSinceHeartbeat&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: peerHeartbeatDetected trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -21303,7 +21303,7 @@ configured or not configured.
 		configInProgress(2)
 		configured(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismCasVariantAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -21440,7 +21440,7 @@ has been deleted from vismCasVariantTable.&lt;/p>&lt;table>
 
 	vismCasVariantName&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismCasVariantDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -21575,7 +21575,7 @@ to configured.&lt;/p>&lt;table>
 
 	vismCasVariantName&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismCasVariantConfigured trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -21710,7 +21710,7 @@ to not configured.&lt;/p>&lt;table>
 
 	vismCasVariantName&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismCasVariantNotConfigured trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -21845,7 +21845,7 @@ vismAppliedTemplate is the new template number.&lt;/p>&lt;table>
 
 	vismAppliedTemplate&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismCodecTemplateChanged trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -21993,7 +21993,7 @@ vismMode specifies the new mode of the card.&lt;/p>&lt;table>
 		superMode(99)
 		unknownMode(100)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismModeChanged trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -22132,7 +22132,7 @@ in that group.&lt;/p>&lt;table>
 
 	vismConfigChangeTypeBitMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismScalarChange trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -22285,7 +22285,7 @@ vismTrapStrIndex1.&lt;/p>&lt;table>
 
 	vismTrapStrIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismTableChange trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -22429,7 +22429,7 @@ vismAal2CidCnfTable.&lt;/p>&lt;table>
 
 	vismAal2CidLcn&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismAal2CidAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -22570,7 +22570,7 @@ corresponding entry from the table vismAal2CidCnfTable.&lt;/p>&lt;table>
 
 	vismAal2CidLcn&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismAal2CidDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -22707,7 +22707,7 @@ vismHdlcChanTable.&lt;/p>&lt;table>
 
 	vismHdlcChanNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismHdlcChanAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -22843,7 +22843,7 @@ vismHdlcChanTable.&lt;/p>&lt;table>
 
 	vismHdlcChanNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismHdlcChanDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -23017,7 +23017,7 @@ has been deleted.&lt;/p>&lt;table>
 		voIP(1)
 		userPort(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismPortDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -23165,7 +23165,7 @@ to VISM.&lt;/p>&lt;table>
 
 	vismChanPortNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismChanAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -23315,7 +23315,7 @@ to VISM.&lt;/p>&lt;table>
 
 	vismChanStatusBitMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismChanFailed trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -23469,7 +23469,7 @@ to VISM.&lt;/p>&lt;table>
 
 	vismChanStatusBitMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismConDown trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -23625,7 +23625,7 @@ channel must be outOfService.&lt;/p>&lt;table>
 
 	vismChanStatusBitMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismConUp trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -23773,7 +23773,7 @@ channel must be outOfService.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismChanReroute trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -23914,7 +23914,7 @@ muxing is enabled or disabled.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismAal2Muxing trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -24049,7 +24049,7 @@ vismLapdTable with an index vismLapdIndex.&lt;/p>&lt;table>
 
 	vismLapdIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapLapdAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -24184,7 +24184,7 @@ has been deleted from vismLapdTable.&lt;/p>&lt;table>
 
 	vismLapdIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapLapdDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -24319,7 +24319,7 @@ vismSessionSetTable.&lt;/p>&lt;table>
 
 	vismSessionSetNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapSessionSetAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -24454,7 +24454,7 @@ vismSessionSetTable.&lt;/p>&lt;table>
 
 	vismSessionSetNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapSessionSetDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -24589,7 +24589,7 @@ vismSessionGrpTable.&lt;/p>&lt;table>
 
 	vismSessionGrpNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapSessionGrpAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -24724,7 +24724,7 @@ vismSessionGrpTable.&lt;/p>&lt;table>
 
 	vismSessionGrpNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapSessionGrpDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -24859,7 +24859,7 @@ vismRudpSessionCnfTable.&lt;/p>&lt;table>
 
 	vismRudpSessionNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapRudpSessionAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -24994,7 +24994,7 @@ vismRudpSessionCnfTable.&lt;/p>&lt;table>
 
 	vismRudpSessionNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapRudpSessionDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -25139,7 +25139,7 @@ be minor severity.&lt;/p>&lt;table>
 		is(2)
 		unknown(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapRudpSessionOos trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -25284,7 +25284,7 @@ The severity should be informational.&lt;/p>&lt;table>
 		is(2)
 		unknown(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapRudpSessionIs trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -25429,7 +25429,7 @@ The severity should be informational.&lt;/p>&lt;table>
 		is(2)
 		unknown(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapRudpSessionPrimaryIs trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -25575,7 +25575,7 @@ The severity should be informational.&lt;/p>&lt;table>
 		is(2)
 		unknown(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapRudpSessionActive trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -25723,7 +25723,7 @@ The severity should be 'minor', no alarm.&lt;/p>&lt;table>
 		is(3)
 		unknown(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapSessionGrpOos trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -25869,7 +25869,7 @@ The severity should be informational.&lt;/p>&lt;table>
 		is(3)
 		unknown(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapSessionGrpIs trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -26017,7 +26017,7 @@ The severity should be 'minor', no alarm.&lt;/p>&lt;table>
 		fullIs(5)
 		unknown(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapSessionSetOos trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -26166,7 +26166,7 @@ The severity should be informational.&lt;/p>&lt;table>
 		fullIs(5)
 		unknown(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapSessionSetActiveIs trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -26315,7 +26315,7 @@ The severity should be informational.&lt;/p>&lt;table>
 		fullIs(5)
 		unknown(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapSessionSetStandbyIs trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -26464,7 +26464,7 @@ The severity should be informational.&lt;/p>&lt;table>
 		fullIs(5)
 		unknown(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapSessionSetFullIs trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -26608,7 +26608,7 @@ vismLapdDlcTable.&lt;/p>&lt;table>
 
 	vismLapdDlcTei&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapLapdDlcAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -26753,7 +26753,7 @@ vismLapdDlcTable.&lt;/p>&lt;table>
 
 	vismLapdDlcTei&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapLapdDlcDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -26906,7 +26906,7 @@ specific D-channel changes to up.&lt;/p>&lt;table>
 		down(2)
 		unknown(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapLapdDlcUp trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -27060,7 +27060,7 @@ specific D-channel changes to down.&lt;/p>&lt;table>
 		down(2)
 		unknown(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapLapdDlcDown trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -27213,7 +27213,7 @@ CidCommandedOutOfService or vice versa. &lt;/p>&lt;table>
 
 	vismAal2CidLcn&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapCidAdministrativeStateChange trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -27375,7 +27375,7 @@ failed state as specified in vismAal2CidState.&lt;/p>&lt;table>
 		both(3)
 		notFail(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismCidState trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -27519,7 +27519,7 @@ name associated with that event num.&lt;/p>&lt;table>
 
 	persistentXgcpEventName&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: persistentXgcpEventCreated trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -27662,7 +27662,7 @@ with that event num.&lt;/p>&lt;table>
 
 	persistentXgcpEventName&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: persistentXgcpEventDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -27804,7 +27804,7 @@ with that event num.&lt;/p>&lt;table>
 		ok(1)
 		notOk(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapNetworkCacConfigState trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -27940,7 +27940,7 @@ vismTrapIntIndex1 specifies the mgDomainNameIndex.&lt;/p>&lt;table>
 
 	vismTrapIntIndex1&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgDomainNameDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -28077,7 +28077,7 @@ changed on the card.&lt;/p>&lt;table>
 
 	vismFeatureBitMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: trapVismFeatureChanged trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -28224,7 +28224,7 @@ changed on the card.&lt;/p>&lt;table>
 		internalFirst(3)
 		externalFirst(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: mgDomainNameAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -28374,7 +28374,7 @@ tonePlanIndex.&lt;/p>&lt;table>
 
 	tonePlanFileName&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismTonePlanAdded trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -28525,7 +28525,7 @@ tonePlanIndex.&lt;/p>&lt;table>
 
 	tonePlanFileName&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vismTonePlanDeleted trap received 
 			lastSequenceNumber=%parm[#1]% 
 			shelfNodeName=%parm[#2]% 
@@ -28622,7 +28622,7 @@ associated peer.&lt;/p>&lt;table>
 		g723Ar5300(24)
 		ietfg729r8000(25)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cvdcPoorQoVNotificationRev1 trap received 
 			cvVoIPCallHistoryConnectionId=%parm[#1]% 
 			cvVoIPCallHistoryIcpif=%parm[#2]% 
@@ -28662,7 +28662,7 @@ specified url is not accessible.
 
 	cvDnisMappingUrlAccessError&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cvDnisMappingUrlInaccessible trap received 
 			cvDnisMappingUrl=%parm[#1]% 
 			cvDnisMappingUrlAccessError=%parm[#2]%&lt;/p>
@@ -28707,7 +28707,7 @@ indicated session ID and Xconnect VCID.&lt;/p>&lt;table>
 
 	cvpdnSessionAttrVirtualCircuitID&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cvpdnNotifSession trap received 
 			cvpdnNotifSessionID=%parm[#1]% 
 			cvpdnNotifSessionEvent=%parm[#2]% 
@@ -28755,7 +28755,7 @@ in the notification.&lt;/p>&lt;table>
 		up(1)
 		down(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vsanStatusChange trap received 
 			notifyVsanIndex=%parm[#1]% 
 			vsanAdminState=%parm[#2]% 
@@ -28792,7 +28792,7 @@ managementDomainLocalMode is changed.&lt;/p>&lt;table>
 		transparent(3)
 		off(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vtpLocalModeChanged trap received 
 			managementDomainLocalMode=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -28828,7 +28828,7 @@ changed.&lt;/p>&lt;table>
 		none(3)
 		version3(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vtpVersionInUseChanged trap received 
 			managementDomainVersionInUse=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -28857,7 +28857,7 @@ device when a VLAN is created. &lt;/p>&lt;table>
 
 	vtpVlanName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vtpVlanCreated trap received 
 			vtpVlanName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -28886,7 +28886,7 @@ device when a VLAN is deleted. &lt;/p>&lt;table>
 
 	vtpVlanName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vtpVlanDeleted trap received 
 			vtpVlanName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -28938,7 +28938,7 @@ This notification is only applicable to VLANs of type
 
 	vtpVlanPortLocalSegment&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: vtpVlanRingNumberConflict trap received 
 			vtpVlanRingNumber=%parm[#1]% 
 			ifIndex=%parm[#2]% 
@@ -28976,7 +28976,7 @@ admin status is changed.&lt;/p>&lt;table>
 
 	cwtDBLastChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtConfigGatewayStatus trap received 
 			cwtGatewayAdminStatus=%parm[#1]% 
 			cwtDBLastChange=%parm[#2]%&lt;/p>
@@ -29532,7 +29532,7 @@ info entry is added in the topology database.&lt;/p>&lt;table>
 
 	cwtDBLastChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtTopoInfoAdd trap received 
 			cwtGatewayNodeFlag=%parm[#1]% 
 			cwtNodeId=%parm[#2]% 
@@ -30100,7 +30100,7 @@ info entry is modified in the topology database.&lt;/p>&lt;table>
 
 	cwtDBLastChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtTopoInfoModify trap received 
 			cwtGatewayNodeFlag=%parm[#1]% 
 			cwtNodeId=%parm[#2]% 
@@ -30146,7 +30146,7 @@ info entry is deleted in the topology database.&lt;/p>&lt;table>
 
 	cwtDBLastChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtTopoInfoDelete trap received 
 			cwtNodeId=%parm[#1]% 
 			cwtDBLastChange=%parm[#2]%&lt;/p>
@@ -30176,7 +30176,7 @@ becomes full.&lt;/p>&lt;table>
 
 	cwtDBLastChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtTopoDbFull trap received 
 			cwtDBLastChange=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -30287,7 +30287,7 @@ info entry is added in the database.&lt;/p>&lt;table>
 
 	cwtFeederModelNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtFeederInfoAdd trap received 
 			cwtLocalNodeId=%parm[#1]% 
 			cwtLocalIfIndex=%parm[#2]% 
@@ -30391,7 +30391,7 @@ info entry is modified in the database.&lt;/p>&lt;table>
 
 	cwtFeederAtmIP&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtFeederInfoModify trap received 
 			cwtLocalNodeId=%parm[#1]% 
 			cwtLocalIfIndex=%parm[#2]% 
@@ -30436,7 +30436,7 @@ info entry is deleted in the database.&lt;/p>&lt;table>
 
 	cwtFeederName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtFeederInfoDelete trap received 
 			cwtLocalNodeId=%parm[#1]% 
 			cwtLocalIfIndex=%parm[#2]% 
@@ -30487,7 +30487,7 @@ info entry is added in the 'link' database.&lt;/p>&lt;table>
 
 	cwtLinkRemotePhysicalId&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtLinkInfoAdd trap received 
 			cwtLinkLocalNodeId=%parm[#1]% 
 			cwtLinkRemoteNodeId=%parm[#2]% 
@@ -30540,7 +30540,7 @@ info entry is modified in the 'link' database.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtLinkInfoModify trap received 
 			cwtLinkLocalNodeId=%parm[#1]% 
 			cwtLinkRemoteNodeId=%parm[#2]% 
@@ -30585,7 +30585,7 @@ info entry is deleted in the 'link' database.&lt;/p>&lt;table>
 
 	cwtLinkRemoteIfIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwtLinkInfoDelete trap received 
 			cwtLinkLocalNodeId=%parm[#1]% 
 			cwtLinkRemoteNodeId=%parm[#2]% 
@@ -30622,7 +30622,7 @@ via the cwvlWlanWepChangeNotifEnabled object.&lt;/p>&lt;table>
 
 	cwvlWlanNUcastKeyValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: ciscoWlanVlanWepChangeNotif trap received 
 			cwvlWlanNUcastKeyValue=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -30658,7 +30658,7 @@ threshold.&lt;/p>&lt;table>
 
 	wwnmType1AvailableWwns&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: wwnmType1WwnShortageNotify trap received 
 			wwnmType1AvailableWwns=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -30692,7 +30692,7 @@ or 5% respectively.&lt;/p>&lt;table>
 
 	wwnmType1AvailableWwns&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: wwnmType1WwnAvailableNotify trap received 
 			wwnmType1AvailableWwns=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -30729,7 +30729,7 @@ threshold.&lt;/p>&lt;table>
 
 	wwnmTypeOtherAvailableWwns&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: wwnmTypeOtherWwnShortageNotify trap received 
 			wwnmTypeOtherAvailableWwns=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -30763,7 +30763,7 @@ generated for either 20% or 10% or 5% respectively.&lt;/p>&lt;table>
 
 	wwnmTypeOtherAvailableWwns&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: wwnmTypeOtherWwnAvailableNotify trap received 
 			wwnmTypeOtherAvailableWwns=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -30843,7 +30843,7 @@ source of the request.&lt;/p>&lt;table>
 		zoneMemberIDTypeNotSupp(12)
 		invalidZoneSetDefinition(13)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: zoneServiceReqRejNotify trap received 
 			zoneMemberFormat=%parm[#1]% 
 			zoneMemberID=%parm[#2]% 
@@ -30884,7 +30884,7 @@ has a zero value.&lt;/p>&lt;table>
 
 	zoneMergeFailureVSANNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: zoneMergeFailureNotify trap received 
 			ifIndex=%parm[#1]% 
 			zoneMergeFailureVSANNum=%parm[#2]%&lt;/p>
@@ -30923,7 +30923,7 @@ has a zero value.&lt;/p>&lt;table>
 
 	zoneMergeSuccessVSANNum&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: zoneMergeSuccessNotify trap received 
 			ifIndex=%parm[#1]% 
 			zoneMergeSuccessVSANNum=%parm[#2]%&lt;/p>
@@ -30956,7 +30956,7 @@ value of zoneDefaultZoneBehaviour changes.&lt;/p>&lt;table>
 		permit(1)
 		deny(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: zoneDefZoneBehaviourChngNotify trap received 
 			zoneDefaultZoneBehaviour=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -31007,7 +31007,7 @@ CiscoWorks Blue processes.&lt;/p>&lt;table>
 
 	cwLogMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwAppLogTrap trap received 
 			sysUpTime=%parm[#1]% 
 			cwLogDate=%parm[#2]% 
@@ -31057,7 +31057,7 @@ workstation.&lt;/p>&lt;table>
 
 	cwLogMsg&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Cisco Event: cwDevLogTrap trap received 
 			sysUpTime=%parm[#1]% 
 			cwLogDate=%parm[#2]% 
@@ -31105,7 +31105,7 @@ ciscoNetRegFreeAddrLowThreshold notification.&lt;/p>&lt;table>
 		value(1)
 		percent(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegFreeAddressLow trap received 
 			cnrDHCPScopeFreeAddrLowThreshold=%parm[#1]% 
 			cnrDHCPScopeFreeAddrValue=%parm[#2]% 
@@ -31153,7 +31153,7 @@ ciscoNetRegFreeAddrHighThreshold notification.&lt;/p>&lt;table>
 		value(1)
 		percent(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegFreeAddressHigh trap received 
 			cnrDHCPScopeFreeAddrHighThreshold=%parm[#1]% 
 			cnrDHCPScopeFreeAddrValue=%parm[#2]% 
@@ -31192,7 +31192,7 @@ host from which this notification has been sent.&lt;/p>&lt;table>
 		tftp(4)
 		ccm(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegServerStart trap received 
 			cnrNotifServerType=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -31229,7 +31229,7 @@ host from which this notification has been sent.&lt;/p>&lt;table>
 		tftp(4)
 		ccm(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegServerStop trap received 
 			cnrNotifServerType=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -31257,7 +31257,7 @@ host from which this notification has been sent.&lt;/p>&lt;table>
 DNS updates has reached its limit.  Successive updates
 may be dropped, and DHCP may stop responding to client
 requests until this problem has cleared.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegDNSQueueTooBig trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -31302,7 +31302,7 @@ ciscoNetRegOtherServerNotResp notification.&lt;/p>&lt;table>
 		tftp(4)
 		ccm(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegOtherServerNotResponding trap received 
 			cnrNotifServer=%parm[#1]% 
 			cnrNotifServerType=%parm[#2]%&lt;/p>
@@ -31352,7 +31352,7 @@ the client or server detected this condition.&lt;/p>&lt;table>
 		dhcpClient(1)
 		dhcpServer(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegDuplicateAddress trap received 
 			cnrNotifDupIpAddress=%parm[#1]% 
 			cnrNotifMACAddress=%parm[#2]% 
@@ -31392,7 +31392,7 @@ with which other server a conflict was detected.&lt;/p>&lt;table>
 
 	cnrNotifServer&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegAddressConflict trap received 
 			cnrNotifContestedIpAddress=%parm[#1]% 
 			cnrNotifServer=%parm[#2]%&lt;/p>
@@ -31447,7 +31447,7 @@ ciscoNetRegOtherServerResp notification.&lt;/p>&lt;table>
 		tftp(4)
 		ccm(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegOtherServerResponding trap received 
 			cnrNotifServer=%parm[#1]% 
 			cnrNotifServerType=%parm[#2]%&lt;/p>
@@ -31482,7 +31482,7 @@ by the cnrNotifServer object.&lt;/p>&lt;table>
 
 	cnrNotifServer&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegFailoverConfigMismatch trap received 
 			cnrNotifServer=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -31549,7 +31549,7 @@ selection-tag, then the value is the selection tag list.&lt;/p>&lt;table>
 
 	cnrNotifDHCPThresholdValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegFreeAddrLowThreshold trap received 
 			cnrNotifDHCPScopeFreeAddrLow=%parm[#1]% 
 			cnrNotifDHCPScopeFreeAddrValue=%parm[#2]% 
@@ -31619,7 +31619,7 @@ selection-tag, then the value is the selection tag list.&lt;/p>&lt;table>
 
 	cnrNotifDHCPThresholdValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegFreeAddrHighThreshold trap received 
 			cnrNotifDHCPScopeFreeAddrHigh=%parm[#1]% 
 			cnrNotifDHCPScopeFreeAddrValue=%parm[#2]% 
@@ -31671,7 +31671,7 @@ cnrNotifRelatedServerType object.&lt;/p>&lt;table>
 		ldap(2)
 		failoverPartner(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegOtherServerNotResp trap received 
 			cnrNotifServer=%parm[#1]% 
 			cnrNotifRelatedServerType=%parm[#2]%&lt;/p>
@@ -31725,7 +31725,7 @@ being sent.&lt;/p>&lt;table>
 		ldap(2)
 		failoverPartner(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegOtherServerResp trap received 
 			cnrNotifServer=%parm[#1]% 
 			cnrNotifRelatedServerType=%parm[#2]%&lt;/p>
@@ -31758,7 +31758,7 @@ given by the cnrNotifServer object.&lt;/p>&lt;table>
 
 	cnrNotifServer&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegHaDnsPartnerDown trap received 
 			cnrNotifServer=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -31790,7 +31790,7 @@ object.&lt;/p>&lt;table>
 
 	cnrNotifServer&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegHaDnsPartnerUp trap received 
 			cnrNotifServer=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -31837,7 +31837,7 @@ the zone is given by cnrNotifZoneName.&lt;/p>&lt;table>
 
 	cnrNotifDnsRemoteServersList&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegMastersNotResp trap received 
 			cnrNotifDnsServerIpAddress=%parm[#1]% 
 			cnrNotifZoneName=%parm[#2]% 
@@ -31886,7 +31886,7 @@ the zone is given by cnrNotifZoneName object.&lt;/p>&lt;table>
 
 	cnrNotifDnsRemoteServersList&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegMastersResp trap received 
 			cnrNotifDnsServerIpAddress=%parm[#1]% 
 			cnrNotifZoneName=%parm[#2]% 
@@ -31932,7 +31932,7 @@ the zone is given by cnrNotifZoneName object.&lt;/p>&lt;table>
 
 	cnrNotifDnsRemoteServersList&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegSecondaryZonesExpired trap received 
 			cnrNotifDnsServerIpAddress=%parm[#1]% 
 			cnrNotifZoneName=%parm[#2]% 
@@ -31975,7 +31975,7 @@ forwarders is given by the cnrRemoteServersList object.&lt;/p>&lt;table>
 
 	cnrNotifDnsRemoteServersList&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegDnsForwardersNotResp trap received 
 			cnrNotifDnsServerIpAddress=%parm[#1]% 
 			cnrNotifDnsRemoteServersList=%parm[#2]%&lt;/p>
@@ -32018,7 +32018,7 @@ forwarders is given by the cnrRemoteServersList object.&lt;/p>&lt;table>
 
 	cnrNotifDnsRemoteServersList&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegDnsForwardersResp trap received 
 			cnrNotifDnsServerIpAddress=%parm[#1]% 
 			cnrNotifDnsRemoteServersList=%parm[#2]%&lt;/p>
@@ -32056,7 +32056,7 @@ cnrNotifServer object.&lt;/p>&lt;table>
 
 	cnrNotifZoneName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoNetRegHaDnsConfigErr trap received 
 			cnrNotifServer=%parm[#1]% 
 			cnrNotifZoneName=%parm[#2]%&lt;/p>
@@ -32087,7 +32087,7 @@ cnrNotifServer object.&lt;/p>&lt;table>
 
         ifDescr&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
                 ciscoSmeInterfaceCreate trap received 
                 ifDescr=%parm[#1]%&lt;/p>
             </logmsg>
@@ -32117,7 +32117,7 @@ cnrNotifServer object.&lt;/p>&lt;table>
 
         ifDescr&lt;/b>&lt;/td>&lt;td>
         %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
                 ciscoSmeInterfaceDelete trap received 
                 ifDescr=%parm[#1]%&lt;/p>
             </logmsg>
@@ -32163,7 +32163,7 @@ cnrNotifServer object.&lt;/p>&lt;table>
 
         cSmeClusterMasterInetAddr&lt;/b>&lt;/td>&lt;td>
         %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
                 ciscoSmeClusterNewMaster trap received 
                 cSmeClusterName=%parm[#1]% 
                 cSmeClusterMasterInetAddrType=%parm[#2]% 
@@ -32208,7 +32208,7 @@ slbVirtualServerState indicates the new state.&lt;/p>&lt;table>
 		testReal(6)
 		outOfMemory(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualStateChange trap received 
 			slbVirtualServerState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32251,7 +32251,7 @@ slbVirtualServerState indicates the new state.&lt;/p>&lt;table>
 		testReal(6)
 		outOfMemory(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualStateChange trap received 
 			slbVirtualServerState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32294,7 +32294,7 @@ slbVirtualServerState indicates the new state.&lt;/p>&lt;table>
 		testReal(6)
 		outOfMemory(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualStateChange trap received 
 			slbVirtualServerState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32337,7 +32337,7 @@ slbVirtualServerState indicates the new state.&lt;/p>&lt;table>
 		testReal(6)
 		outOfMemory(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualStateChange trap received 
 			slbVirtualServerState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32380,7 +32380,7 @@ slbVirtualServerState indicates the new state.&lt;/p>&lt;table>
 		testReal(6)
 		outOfMemory(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualStateChange trap received 
 			slbVirtualServerState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32423,7 +32423,7 @@ slbVirtualServerState indicates the new state.&lt;/p>&lt;table>
 		testReal(6)
 		outOfMemory(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualStateChange trap received 
 			slbVirtualServerState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32466,7 +32466,7 @@ slbVirtualServerState indicates the new state.&lt;/p>&lt;table>
 		testReal(6)
 		outOfMemory(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualStateChange trap received 
 			slbVirtualServerState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32505,7 +32505,7 @@ slbVirtualServerState indicates the new state.&lt;/p>&lt;table>
 		testReal(6)
 		outOfMemory(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualStateChange trap received 
 			slbVirtualServerState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32555,7 +32555,7 @@ slbRealServerState indicates the new state.&lt;/p>&lt;table>
 		inbandProbeFailed(13)
 		returnCodeFailed(14)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealStateChange trap received 
 			slbRealState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32601,7 +32601,7 @@ slbRealServerState indicates the new state.&lt;/p>&lt;table>
 		inbandProbeFailed(13)
 		returnCodeFailed(14)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealStateChange trap received 
 			slbRealState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32638,7 +32638,7 @@ has been enabled or disabled on the Load Balancer.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbSaspStateChange trap received 
 			slbSaspEnabled=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32675,7 +32675,7 @@ has been enabled or disabled on the Load Balancer.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbSaspStateChange trap received 
 			slbSaspEnabled=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32708,7 +32708,7 @@ has been enabled or disabled on the Load Balancer.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbSaspStateChange trap received 
 			slbSaspEnabled=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32752,7 +32752,7 @@ to a new state.&lt;/p>&lt;table>
 		downDuplicate(8)
 		down(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbSaspAgentStateChange trap received 
 			slbSaspAgentState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32792,7 +32792,7 @@ to a new state.&lt;/p>&lt;table>
 		downDuplicate(8)
 		down(9)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbSaspAgentStateChange trap received 
 			slbSaspAgentState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -32846,7 +32846,7 @@ server state is changed.&lt;/p>&lt;table>
 
 	slbVServerPolicyMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -32903,7 +32903,7 @@ server state is changed.&lt;/p>&lt;table>
 
 	slbVServerPolicyMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -32960,7 +32960,7 @@ server state is changed.&lt;/p>&lt;table>
 
 	slbVServerPolicyMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33017,7 +33017,7 @@ server state is changed.&lt;/p>&lt;table>
 
 	slbVServerPolicyMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33074,7 +33074,7 @@ server state is changed.&lt;/p>&lt;table>
 
 	slbVServerPolicyMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33131,7 +33131,7 @@ server state is changed.&lt;/p>&lt;table>
 
 	slbVServerPolicyMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33188,7 +33188,7 @@ server state is changed.&lt;/p>&lt;table>
 
 	slbVServerPolicyMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33241,7 +33241,7 @@ server state is changed.&lt;/p>&lt;table>
 
 	slbVServerPolicyMap&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33318,7 +33318,7 @@ changes.&lt;/p>&lt;table>
 
 	slbVServerProtocol&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerVIPStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33398,7 +33398,7 @@ changes.&lt;/p>&lt;table>
 
 	slbVServerProtocol&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerVIPStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33478,7 +33478,7 @@ changes.&lt;/p>&lt;table>
 
 	slbVServerProtocol&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerVIPStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33558,7 +33558,7 @@ changes.&lt;/p>&lt;table>
 
 	slbVServerProtocol&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerVIPStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33638,7 +33638,7 @@ changes.&lt;/p>&lt;table>
 
 	slbVServerProtocol&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerVIPStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33718,7 +33718,7 @@ changes.&lt;/p>&lt;table>
 
 	slbVServerProtocol&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerVIPStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33798,7 +33798,7 @@ changes.&lt;/p>&lt;table>
 
 	slbVServerProtocol&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerVIPStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33874,7 +33874,7 @@ changes.&lt;/p>&lt;table>
 
 	slbVServerProtocol&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVServerVIPStateChange trap received 
 			slbVServerState=%parm[#1]% 
 			slbVServerStateChangeDescr=%parm[#2]% 
@@ -33960,7 +33960,7 @@ identified by slbVirtualServerName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbVirtualServerState=%parm[#2]% 
@@ -34045,7 +34045,7 @@ identified by slbVirtualServerName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbVirtualServerState=%parm[#2]% 
@@ -34130,7 +34130,7 @@ identified by slbVirtualServerName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbVirtualServerState=%parm[#2]% 
@@ -34215,7 +34215,7 @@ identified by slbVirtualServerName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbVirtualServerState=%parm[#2]% 
@@ -34300,7 +34300,7 @@ identified by slbVirtualServerName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbVirtualServerState=%parm[#2]% 
@@ -34385,7 +34385,7 @@ identified by slbVirtualServerName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbVirtualServerState=%parm[#2]% 
@@ -34470,7 +34470,7 @@ identified by slbVirtualServerName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbVirtualServerState=%parm[#2]% 
@@ -34551,7 +34551,7 @@ identified by slbVirtualServerName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbVirtualServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbVirtualServerState=%parm[#2]% 
@@ -34656,7 +34656,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -34761,7 +34761,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -34866,7 +34866,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -34971,7 +34971,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -35076,7 +35076,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -35181,7 +35181,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -35286,7 +35286,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -35391,7 +35391,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -35496,7 +35496,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -35601,7 +35601,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -35706,7 +35706,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -35811,7 +35811,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -35916,7 +35916,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -36021,7 +36021,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -36126,7 +36126,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -36231,7 +36231,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -36336,7 +36336,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -36441,7 +36441,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -36542,7 +36542,7 @@ slbRealServerFarmName.&lt;/p>&lt;table>
 
 	slbName&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ciscoSlbRealServerStateChange trap received 
 			entPhysicalParentRelPos=%parm[#1]% 
 			slbRealState=%parm[#2]% 
@@ -36580,7 +36580,7 @@ in that minute.&lt;/p>&lt;table>
 
 	cshMonSocketOverusageCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cshMonSocketOveruse trap received 
 			cshMonSocketOverusageCount=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -36615,7 +36615,7 @@ minute.&lt;/p>&lt;table>
 
 	cshMonSocketOverusageCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cshMonSocketNormalUse trap received 
 			cshMonSocketOverusageCount=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -36661,7 +36661,7 @@ of a stack port has changed.&lt;/p>&lt;table>
 
 	cswSwitchNumCurrent&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackPortChange trap received 
 			ifIndex=%parm[#1]% 
 			cswStackPortOperStatus=%parm[#2]% 
@@ -36709,7 +36709,7 @@ of a stack port has changed.&lt;/p>&lt;table>
 
 	cswSwitchNumCurrent&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackPortChange trap received 
 			ifIndex=%parm[#1]% 
 			cswStackPortOperStatus=%parm[#2]% 
@@ -36757,7 +36757,7 @@ of a stack port has changed.&lt;/p>&lt;table>
 
 	cswSwitchNumCurrent&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackPortChange trap received 
 			ifIndex=%parm[#1]% 
 			cswStackPortOperStatus=%parm[#2]% 
@@ -36801,7 +36801,7 @@ of a stack port has changed.&lt;/p>&lt;table>
 
 	cswSwitchNumCurrent&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackPortChange trap received 
 			ifIndex=%parm[#1]% 
 			cswStackPortOperStatus=%parm[#2]% 
@@ -36834,7 +36834,7 @@ object to indicate the new master ID.&lt;/p>&lt;table>
 
 	cswSwitchNumCurrent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackNewMaster trap received 
 			cswSwitchNumCurrent=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -36880,7 +36880,7 @@ cswSwitchState object will indicate the type of mismatch.&lt;/p>&lt;table>
 
 	cswSwitchNumCurrent&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackMismatch trap received 
 			cswSwitchState=%parm[#1]% 
 			cswSwitchNumCurrent=%parm[#2]%&lt;/p>
@@ -36918,7 +36918,7 @@ ring has changed.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackRingRedundant trap received 
 			cswRingRedundant=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -36955,7 +36955,7 @@ ring has changed.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackRingRedundant trap received 
 			cswRingRedundant=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -36988,7 +36988,7 @@ ring has changed.&lt;/p>&lt;table>
 		true(1)
 		false(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackRingRedundant trap received 
 			cswRingRedundant=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -37018,7 +37018,7 @@ stack.&lt;/p>&lt;table>
 
 	cswSwitchNumCurrent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackNewMember trap received 
 			cswSwitchNumCurrent=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -37048,7 +37048,7 @@ from the stack.&lt;/p>&lt;table>
 
 	cswSwitchNumCurrent&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cswStackMemberRemoved trap received 
 			cswSwitchNumCurrent=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -37140,7 +37140,7 @@ of cesServerFarmRserverPort.&lt;/p>&lt;table>
 
 	cesRserverIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cesRealServerStateUp trap received 
 			cesRealServerName=%parm[#1]% 
 			cesServerFarmRserverBackupPort=%parm[#2]% 
@@ -37242,7 +37242,7 @@ of cesServerFarmRserverPort.&lt;/p>&lt;table>
 
 	cesRserverIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cesRealServerStateDown trap received 
 			cesRealServerName=%parm[#1]% 
 			cesServerFarmRserverBackupPort=%parm[#2]% 
@@ -37361,7 +37361,7 @@ change is not due to probe failure.&lt;/p>&lt;table>
 
 	cesProbeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cesRealServerStateChange trap received 
 			cesRealServerName=%parm[#1]% 
 			cesServerFarmRserverBackupPort=%parm[#2]% 
@@ -37497,7 +37497,7 @@ change is not due to probe failure.&lt;/p>&lt;table>
 
 	cesProbeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cesRealServerStateChange trap received 
 			cesRealServerName=%parm[#1]% 
 			cesServerFarmRserverBackupPort=%parm[#2]% 
@@ -37613,7 +37613,7 @@ change is not due to probe failure.&lt;/p>&lt;table>
 
 	cesProbeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cesRealServerStateChange trap received 
 			cesRealServerName=%parm[#1]% 
 			cesServerFarmRserverBackupPort=%parm[#2]% 
@@ -37698,7 +37698,7 @@ identified in cesRserverTable changes state to
 
 	cesRserverIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cesRserverStateUp trap received 
 			cesRealServerName=%parm[#1]% 
 			cesRserverAdminStatus=%parm[#2]% 
@@ -37779,7 +37779,7 @@ identified in cesRserverTable changes to
 
 	cesRserverIpAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cesRserverStateDown trap received 
 			cesRealServerName=%parm[#1]% 
 			cesRserverAdminStatus=%parm[#2]% 
@@ -37880,7 +37880,7 @@ change is not due to probe failure.&lt;/p>&lt;table>
 
 	cesProbeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cesRserverStateChange trap received 
 			cesRealServerName=%parm[#1]% 
 			cesRserverAdminStatus=%parm[#2]% 
@@ -38000,7 +38000,7 @@ change is not due to probe failure.&lt;/p>&lt;table>
 
 	cesProbeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cesRserverStateChange trap received 
 			cesRealServerName=%parm[#1]% 
 			cesRserverAdminStatus=%parm[#2]% 
@@ -38099,7 +38099,7 @@ change is not due to probe failure.&lt;/p>&lt;table>
 
 	cesProbeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cesRserverStateChange trap received 
 			cesRealServerName=%parm[#1]% 
 			cesRserverAdminStatus=%parm[#2]% 
@@ -38138,7 +38138,7 @@ in that minute.&lt;/p>&lt;table>
 
 	cshMonSocketOverusageCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cshMonSocketOveruse trap received 
 			cshMonSocketOverusageCount=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -38173,7 +38173,7 @@ minute.&lt;/p>&lt;table>
 
 	cshMonSocketOverusageCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cshMonSocketNormalUse trap received 
 			cshMonSocketOverusageCount=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -38203,7 +38203,7 @@ when a virtual context is added.&lt;/p>&lt;table>
 
 	cmNotifVirtContextName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cmVirtContextAdded trap received 
 			cmNotifVirtContextName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -38233,7 +38233,7 @@ when a virtual context is removed/deleted.&lt;/p>&lt;table>
 
 	cmNotifVirtContextName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cmVirtContextRemoved trap received 
 			cmNotifVirtContextName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -38533,7 +38533,7 @@ link.&lt;/p>&lt;table>
 		aviciOpticalEther(233)
 		atmbond(234)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	cieLinkDown trap received
 	ifIndex=%parm[#1]%
 	ifAdminStatus=%parm[#2]%
@@ -39089,7 +39089,7 @@ information of the communication link.&lt;/p>&lt;table>
 		aviciOpticalEther(233)
 		atmbond(234)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	cieLinkUp trap received
 	ifIndex=%parm[#1]%
 	ifAdminStatus=%parm[#2]%
@@ -39909,7 +39909,7 @@ specified by cieDelayedLinkUpDownDelay.&lt;/p>&lt;table>
 		domainIdsInvalid(267)
 		fabricNameInvalid(268)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	cieDelayedLinkUpDownNotif trap received
 	ifAdminStatus=%parm[#1]%
 	ifOperStatus=%parm[#2]%

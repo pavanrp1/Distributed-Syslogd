@@ -59,7 +59,7 @@ the BGP FSM enters the ESTABLISHED state.&lt;/p>&lt;table>
 		openconfirm(5)
 		established(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxBgpM2Established trap received 
 			jnxBgpM2PeerLocalAddrType=%parm[#1]% 
 			jnxBgpM2PeerLocalAddr=%parm[#2]% 
@@ -136,7 +136,7 @@ state to a lower numbered state.&lt;/p>&lt;table>
 		openconfirm(5)
 		established(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxBgpM2BackwardTransition trap received 
 			jnxBgpM2PeerLocalAddrType=%parm[#1]% 
 			jnxBgpM2PeerLocalAddr=%parm[#2]% 
@@ -197,7 +197,7 @@ recorded in jnxCmCfgChgEventTable.&lt;/p>&lt;table>
 
 	jnxCmCfgChgEventLog&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxCmCfgChange trap received 
 			jnxCmCfgChgEventTime=%parm[#1]% 
 			jnxCmCfgChgEventDate=%parm[#2]% 
@@ -258,7 +258,7 @@ change.&lt;/p>&lt;table>
 		nonexistant(1)
 		updated(2)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxCmRescueChange trap received 
 			jnxCmRescueChgTime=%parm[#1]% 
 			jnxCmRescueChgDate=%parm[#2]% 
@@ -322,7 +322,7 @@ condition.&lt;/p>&lt;table>
 		down(6)
 		standby(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPowerSupplyFailure trap received 
 			jnxContentsContainerIndex=%parm[#1]% 
 			jnxContentsL1Index=%parm[#2]% 
@@ -388,7 +388,7 @@ condition.&lt;/p>&lt;table>
 		down(6)
 		standby(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFanFailure trap received 
 			jnxContentsContainerIndex=%parm[#1]% 
 			jnxContentsL1Index=%parm[#2]% 
@@ -446,7 +446,7 @@ condition.&lt;/p>&lt;table>
 
 	jnxOperatingTemp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOverTemperature trap received 
 			jnxContentsContainerIndex=%parm[#1]% 
 			jnxContentsL1Index=%parm[#2]% 
@@ -538,7 +538,7 @@ vice versa.&lt;/p>&lt;table>
 		userSwitched(3)
 		autoSwitched(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxRedundancySwitchover trap received 
 			jnxRedundancyContentsIndex=%parm[#1]% 
 			jnxRedundancyL1Index=%parm[#2]% 
@@ -617,7 +617,7 @@ has been removed from the chassis.&lt;/p>&lt;table>
 
 	jnxFruSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFruRemoval trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -694,7 +694,7 @@ inserted into the chassis.&lt;/p>&lt;table>
 
 	jnxFruSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFruInsertion trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -808,7 +808,7 @@ has been powered off in the chassis.&lt;/p>&lt;table>
 
 	jnxFruLastPowerOn&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFruPowerOff trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -925,7 +925,7 @@ powered on in the chassis.&lt;/p>&lt;table>
 
 	jnxFruLastPowerOn&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFruPowerOn trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -1005,7 +1005,7 @@ able to load ukernel. In these cases, fru is replaced.&lt;/p>&lt;table>
 
 	jnxFruSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFruFailed trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -1119,7 +1119,7 @@ has gone offline in the chassis.&lt;/p>&lt;table>
 
 	jnxFruLastPowerOn&lt;/b>&lt;/td>&lt;td>
 	%parm[#10]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFruOffline trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -1199,7 +1199,7 @@ gone online in the chassis.&lt;/p>&lt;table>
 
 	jnxFruSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFruOnline trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -1277,7 +1277,7 @@ check state in the chassis.&lt;/p>&lt;table>
 
 	jnxFruSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFruCheck trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -1355,7 +1355,7 @@ switched over.&lt;/p>&lt;table>
 
 	jnxFruSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFEBSwitchover trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -1435,7 +1435,7 @@ failed state in the chassis.&lt;/p>&lt;table>
 
 	jnxFruSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxHardDiskFailed trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -1514,7 +1514,7 @@ from boot device list.&lt;/p>&lt;table>
 
 	jnxFruSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxHardDiskMissing trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -1581,7 +1581,7 @@ condition.&lt;/p>&lt;table>
 		down(6)
 		standby(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPowerSupplyOK trap received 
 			jnxContentsContainerIndex=%parm[#1]% 
 			jnxContentsL1Index=%parm[#2]% 
@@ -1646,7 +1646,7 @@ has recovered from the failure (not spinning) condition.&lt;/p>&lt;table>
 		down(6)
 		standby(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFanOK trap received 
 			jnxContentsContainerIndex=%parm[#1]% 
 			jnxContentsL1Index=%parm[#2]% 
@@ -1704,7 +1704,7 @@ condition.&lt;/p>&lt;table>
 
 	jnxOperatingTemp&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxTemperatureOK trap received 
 			jnxContentsContainerIndex=%parm[#1]% 
 			jnxContentsL1Index=%parm[#2]% 
@@ -1783,7 +1783,7 @@ is in ok state in the chassis.&lt;/p>&lt;table>
 
 	jnxFruSlot&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFruOK trap received 
 			jnxFruContentsIndex=%parm[#1]% 
 			jnxFruL1Index=%parm[#2]% 
@@ -1830,7 +1830,7 @@ is in ok state in the chassis.&lt;/p>&lt;table>
 
 	jnxLdpInstanceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxLdpLspUp trap received 
 			jnxLdpLspFec=%parm[#1]% 
 			jnxLdpRtrid=%parm[#2]% 
@@ -1883,7 +1883,7 @@ is in ok state in the chassis.&lt;/p>&lt;table>
 
 	jnxLdpInstanceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxLdpLspDown trap received 
 			jnxLdpLspFec=%parm[#1]% 
 			jnxLdpRtrid=%parm[#2]% 
@@ -1920,7 +1920,7 @@ enters the 'operational(5) state.&lt;/p>&lt;table>
 
 	jnxLdpSesUpIf&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxLdpSesUp trap received 
 			mplsLdpSesState=%parm[#1]% 
 			jnxLdpSesUpIf=%parm[#2]%&lt;/p>
@@ -1975,7 +1975,7 @@ the last neighbor when jnxLdpSesDownReason is allAdjacenciesDown (3).&lt;/p>&lt;
 
 	jnxLdpSesDownIf&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxLdpSesDown trap received 
 			mplsLdpSesState=%parm[#1]% 
 			jnxLdpSesDownReason=%parm[#2]% 
@@ -2011,7 +2011,7 @@ path for the LSP is mplsPathInfoName.&lt;/p>&lt;table>
 
 	mplsPathInfoName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspInfoUp trap received 
 			mplsLspInfoName=%parm[#1]% 
 			mplsPathInfoName=%parm[#2]%&lt;/p>
@@ -2046,7 +2046,7 @@ active path mplsPathInfoName went down.&lt;/p>&lt;table>
 
 	mplsPathInfoName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspInfoDown trap received 
 			mplsLspInfoName=%parm[#1]% 
 			mplsPathInfoName=%parm[#2]%&lt;/p>
@@ -2082,7 +2082,7 @@ the specified LSP has switched traffic to
 
 	mplsPathInfoName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspInfoChange trap received 
 			mplsLspInfoName=%parm[#1]% 
 			mplsPathInfoName=%parm[#2]%&lt;/p>
@@ -2117,7 +2117,7 @@ LSP mplsLspInfoName went down&lt;/p>&lt;table>
 
 	mplsPathInfoName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspInfoPathDown trap received 
 			mplsLspInfoName=%parm[#1]% 
 			mplsPathInfoName=%parm[#2]%&lt;/p>
@@ -2152,7 +2152,7 @@ LSP mplsLspInfoName came up&lt;/p>&lt;table>
 
 	mplsPathInfoName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspInfoPathUp trap received 
 			mplsLspInfoName=%parm[#1]% 
 			mplsPathInfoName=%parm[#2]%&lt;/p>
@@ -2187,7 +2187,7 @@ path for the LSP is mplsPathName.&lt;/p>&lt;table>
 
 	mplsPathName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspUp trap received 
 			mplsLspName=%parm[#1]% 
 			mplsPathName=%parm[#2]%&lt;/p>
@@ -2222,7 +2222,7 @@ active path mplsPathName went down.&lt;/p>&lt;table>
 
 	mplsPathName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspDown trap received 
 			mplsLspName=%parm[#1]% 
 			mplsPathName=%parm[#2]%&lt;/p>
@@ -2258,7 +2258,7 @@ the specified LSP has switched traffic to
 
 	mplsPathName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspChange trap received 
 			mplsLspName=%parm[#1]% 
 			mplsPathName=%parm[#2]%&lt;/p>
@@ -2293,7 +2293,7 @@ LSP mplsLspName went down&lt;/p>&lt;table>
 
 	mplsPathName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspPathDown trap received 
 			mplsLspName=%parm[#1]% 
 			mplsPathName=%parm[#2]%&lt;/p>
@@ -2328,7 +2328,7 @@ LSP mplsLspName came up&lt;/p>&lt;table>
 
 	mplsPathName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspPathUp trap received 
 			mplsLspName=%parm[#1]% 
 			mplsPathName=%parm[#2]%&lt;/p>
@@ -2361,7 +2361,7 @@ of the 'jnxMplsLdpEntityInitSesThreshold' object.&lt;/p>&lt;table>
 
 	jnxMplsLdpEntityInitSesThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxMplsLdpInitSesThresholdExceeded trap received 
 			jnxMplsLdpEntityInitSesThreshold=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2398,7 +2398,7 @@ a specific Entity.&lt;/p>&lt;table>
 
 	jnxMplsLdpPeerPathVectorLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxMplsLdpPathVectorLimitMismatch trap received 
 			jnxMplsLdpEntityPathVectorLimit=%parm[#1]% 
 			jnxMplsLdpPeerPathVectorLimit=%parm[#2]%&lt;/p>
@@ -2448,7 +2448,7 @@ the 'operational(5)' state.&lt;/p>&lt;table>
 
 	jnxMplsLdpSesStatsUnkTlvErrors&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxMplsLdpSessionUp trap received 
 			jnxMplsLdpSesState=%parm[#1]% 
 			jnxMplsLdpSesDiscontinuityTime=%parm[#2]% 
@@ -2500,7 +2500,7 @@ the 'operational(5)' state.&lt;/p>&lt;table>
 
 	jnxMplsLdpSesStatsUnkTlvErrors&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxMplsLdpSessionDown trap received 
 			jnxMplsLdpSesState=%parm[#1]% 
 			jnxMplsLdpSesDiscontinuityTime=%parm[#2]% 
@@ -2586,7 +2586,7 @@ set in jnxPingCtlTrapGeneration.&lt;/p>&lt;table>
 
 	jnxPingResultsRttUs&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPingRttThresholdExceeded trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -2682,7 +2682,7 @@ rttStdDevThreshold bit is set in jnxPingCtlTrapGeneration.&lt;/p>&lt;table>
 
 	jnxPingResultsStdDevRttUs&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPingRttStdDevThresholdExceeded trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -2774,7 +2774,7 @@ rttJitterThreshold bit is set in jnxPingCtlTrapGeneration.&lt;/p>&lt;table>
 
 	jnxPingCtlRttJitterThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#13]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPingRttJitterThresholdExceeded trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -2865,7 +2865,7 @@ egressThreshold bit is set in jnxPingCtlTrapGeneration.&lt;/p>&lt;table>
 
 	jnxPingResultsEgressUs&lt;/b>&lt;/td>&lt;td>
 	%parm[#13]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPingEgressThresholdExceeded trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -2960,7 +2960,7 @@ egressStdDevThreshold bit is set in jnxPingCtlTrapGeneration.&lt;/p>&lt;table>
 
 	jnxPingResultsStddevEgressUs&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPingEgressStdDevThresholdExceeded trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -3049,7 +3049,7 @@ jnxPingCtlTrapGeneration.&lt;/p>&lt;table>
 
 	jnxPingCtlEgressJitterThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPingEgressJitterThresholdExceeded trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -3139,7 +3139,7 @@ ingressThreshold bit is set in jnxPingCtlTrapGeneration.&lt;/p>&lt;table>
 
 	jnxPingResultsIngressUs&lt;/b>&lt;/td>&lt;td>
 	%parm[#13]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPingIngressThresholdExceeded trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -3234,7 +3234,7 @@ ingressStdDevThreshold bit is set in jnxPingCtlTrapGeneration.&lt;/p>&lt;table>
 
 	jnxPingResultsStddevIngressUs&lt;/b>&lt;/td>&lt;td>
 	%parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPingIngressStddevThresholdExceeded trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -3323,7 +3323,7 @@ jnxPingCtlTrapGeneration.&lt;/p>&lt;table>
 
 	jnxPingCtlIngressJitterThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPingIngressJitterThresholdExceeded trap received 
 			pingCtlTargetAddressType=%parm[#1]% 
 			pingCtlTargetAddress=%parm[#2]% 
@@ -3385,7 +3385,7 @@ Monitoring interface.&lt;/p>&lt;table>
 
 	jnxPMonLastOverloadDate&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPMonOverloadSet trap received 
 			ifDescr=%parm[#1]% 
 			jnxPMonLastOverload=%parm[#2]% 
@@ -3439,7 +3439,7 @@ Monitoring interface.&lt;/p>&lt;table>
 
 	jnxPMonLastOverloadDate&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPMonOverloadCleared trap received 
 			ifDescr=%parm[#1]% 
 			jnxPMonLastOverload=%parm[#2]% 
@@ -3492,7 +3492,7 @@ jnxRmonAlarmGetFailReason.&lt;/p>&lt;table>
 		badObjType(10)
 		processRestarted(11)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxRmonAlarmGetFailure trap received 
 			alarmIndex=%parm[#1]% 
 			alarmVariable=%parm[#2]% 
@@ -3528,7 +3528,7 @@ were unsuccessful.&lt;/p>&lt;table>
 
 	alarmVariable&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxRmonGetOk trap received 
 			alarmIndex=%parm[#1]% 
 			alarmVariable=%parm[#2]%&lt;/p>
@@ -3647,7 +3647,7 @@ were unsuccessful.&lt;/p>&lt;table>
 
 	jnxSonetLastAlarmDate&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSonetAlarmSet trap received 
 			ifDescr=%parm[#1]% 
 			jnxSonetLastAlarmId=%parm[#2]% 
@@ -3768,7 +3768,7 @@ were unsuccessful.&lt;/p>&lt;table>
 
 	jnxSonetLastAlarmDate&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSonetAlarmCleared trap received 
 			ifDescr=%parm[#1]% 
 			jnxSonetLastAlarmId=%parm[#2]% 
@@ -3810,7 +3810,7 @@ value of an instance of apsChanStatusSwitchovers increments.&lt;/p>&lt;table>
 		switched(3)
 		wtr(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			apsEventSwitchover trap received 
 			apsChanStatusSwitchovers=%parm[#1]% 
 			apsChanStatusCurrent=%parm[#2]%&lt;/p>
@@ -3850,7 +3850,7 @@ value of an instance of apsStatusModeMismatches increments.&lt;/p>&lt;table>
 		feplf(3)
 		extraTraffic(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			apsEventModeMismatch trap received 
 			apsStatusModeMismatches=%parm[#1]% 
 			apsStatusCurrent=%parm[#2]%&lt;/p>
@@ -3890,7 +3890,7 @@ value of an instance of apsStatusChannelMismatches increments.&lt;/p>&lt;table>
 		feplf(3)
 		extraTraffic(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			apsEventChannelMismatch trap received 
 			apsStatusChannelMismatches=%parm[#1]% 
 			apsStatusCurrent=%parm[#2]%&lt;/p>
@@ -3930,7 +3930,7 @@ value of an instance of apsStatusPSBFs increments.&lt;/p>&lt;table>
 		feplf(3)
 		extraTraffic(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			apsEventPSBF trap received 
 			apsStatusPSBFs=%parm[#1]% 
 			apsStatusCurrent=%parm[#2]%&lt;/p>
@@ -3970,7 +3970,7 @@ value of an instance of apsStatusFEPLFs increments.&lt;/p>&lt;table>
 		feplf(3)
 		extraTraffic(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			apsEventFEPLF trap received 
 			apsStatusFEPLFs=%parm[#1]% 
 			apsStatusCurrent=%parm[#2]%&lt;/p>
@@ -4020,7 +4020,7 @@ of type jnxVpnIfVpnType transitions out of the 'down' state.&lt;/p>&lt;table>
 
 	jnxVpnIfIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxVpnIfUp trap received 
 			jnxVpnIfVpnType=%parm[#1]% 
 			jnxVpnIfVpnName=%parm[#2]% 
@@ -4071,7 +4071,7 @@ of type jnxVpnIfVpnType transitions to the 'down' state.&lt;/p>&lt;table>
 
 	jnxVpnIfIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxVpnIfDown trap received 
 			jnxVpnIfVpnType=%parm[#1]% 
 			jnxVpnIfVpnName=%parm[#2]% 
@@ -4122,7 +4122,7 @@ of type jnxVpnPwVpnType transitions out of the 'down' state.&lt;/p>&lt;table>
 
 	jnxVpnPwIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxVpnPwUp trap received 
 			jnxVpnPwVpnType=%parm[#1]% 
 			jnxVpnPwVpnName=%parm[#2]% 
@@ -4173,7 +4173,7 @@ of type jnxVpnPwVpnType transitions to the 'down' state.&lt;/p>&lt;table>
 
 	jnxVpnPwIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxVpnPwDown trap received 
 			jnxVpnPwVpnType=%parm[#1]% 
 			jnxVpnPwVpnName=%parm[#2]% 
@@ -4200,7 +4200,7 @@ of type jnxVpnPwVpnType transitions to the 'down' state.&lt;/p>&lt;table>
       <event-label>JUNIPER-USER-AAA-MIB defined trap event: jnxAccessAuthServiceUp</event-label>
       <descr>&lt;p>An access authentication trap signifies that the 
 specified service has started. &lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxAccessAuthServiceUp trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -4224,7 +4224,7 @@ specified service has started. &lt;/p>&lt;table>&lt;/table></descr>
       <event-label>JUNIPER-USER-AAA-MIB defined trap event: jnxAccessAuthServiceDown</event-label>
       <descr>&lt;p>An access authentication trap signifies that the 
 specified service has been stopped.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxAccessAuthServiceDown trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -4252,7 +4252,7 @@ the External authentication server is not responding.&lt;/p>&lt;table>
 
 	jnxUserAAAServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxAccessAuthServerDisabled trap received 
 			jnxUserAAAServerName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4282,7 +4282,7 @@ again.&lt;/p>&lt;table>
 
 	jnxUserAAAServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxAccessAuthServerEnabled trap received 
 			jnxUserAAAServerName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4334,7 +4334,7 @@ while transferring a collector file.&lt;/p>&lt;table>
 
 	jnxCollNotifyInetAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxCollUnavailableDest trap received 
 			ifDescr=%parm[#1]% 
 			jnxCollNotifyDate=%parm[#2]% 
@@ -4390,7 +4390,7 @@ has been resolved.&lt;/p>&lt;table>
 
 	jnxCollNotifyInetAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxCollUnavailableDestCleared trap received 
 			ifDescr=%parm[#1]% 
 			jnxCollNotifyDate=%parm[#2]% 
@@ -4462,7 +4462,7 @@ a file transfer.&lt;/p>&lt;table>
 
 	jnxCollNotifyFtpErrorText&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxCollUnsuccessfulTransfer trap received 
 			ifDescr=%parm[#1]% 
 			jnxCollNotifyDate=%parm[#2]% 
@@ -4522,7 +4522,7 @@ triggered.&lt;/p>&lt;table>
 
 	jnxCollPicIfDestroyedFiles&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxCollFlowOverload trap received 
 			ifDescr=%parm[#1]% 
 			jnxCollPicIfStateChangeDate=%parm[#2]% 
@@ -4579,7 +4579,7 @@ cleared.&lt;/p>&lt;table>
 
 	jnxCollPicIfDestroyedFiles&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxCollFlowOverloadCleared trap received 
 			ifDescr=%parm[#1]% 
 			jnxCollPicIfStateChangeDate=%parm[#2]% 
@@ -4629,7 +4629,7 @@ triggered.&lt;/p>&lt;table>
 
 	jnxCollNotifyMemFree&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxCollMemoryUnavailable trap received 
 			ifDescr=%parm[#1]% 
 			jnxCollPicIfStateChangeDate=%parm[#2]% 
@@ -4678,7 +4678,7 @@ cleared.&lt;/p>&lt;table>
 
 	jnxCollNotifyMemFree&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxCollMemoryAvailable trap received 
 			ifDescr=%parm[#1]% 
 			jnxCollPicIfStateChangeDate=%parm[#2]% 
@@ -4765,7 +4765,7 @@ cleared.&lt;/p>&lt;table>
 		cli(1)
 		automatic(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxCollFtpSwitchover trap received 
 			ifDescr=%parm[#1]% 
 			jnxCollNotifyDate=%parm[#2]% 
@@ -4812,7 +4812,7 @@ is identified by jnxSpSvcSetIfMemoryZone.&lt;/p>&lt;table>
 
 	jnxSpSvcSetIfTableName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSpSvcSetZoneEntered trap received 
 			jnxSpSvcSetIfMemoryZone=%parm[#1]% 
 			jnxSpSvcSetIfTableName=%parm[#2]%&lt;/p>
@@ -4852,7 +4852,7 @@ identified by jnxSpSvcSetIfMemoryZone.&lt;/p>&lt;table>
 
 	jnxSpSvcSetIfTableName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSpSvcSetZoneExited trap received 
 			jnxSpSvcSetIfMemoryZone=%parm[#1]% 
 			jnxSpSvcSetIfTableName=%parm[#2]%&lt;/p>
@@ -4886,7 +4886,7 @@ for CPU utilization (85%).&lt;/p>&lt;table>
 
 	jnxSpSvcSetIfTableName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSpSvcSetCpuExceeded trap received 
 			jnxSpSvcSetIfCpuUtil=%parm[#1]% 
 			jnxSpSvcSetIfTableName=%parm[#2]%&lt;/p>
@@ -4920,7 +4920,7 @@ threshold for CPU utilization (85%).&lt;/p>&lt;table>
 
 	jnxSpSvcSetIfTableName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSpSvcSetCpuOk trap received 
 			jnxSpSvcSetIfCpuUtil=%parm[#1]% 
 			jnxSpSvcSetIfTableName=%parm[#2]%&lt;/p>
@@ -4962,7 +4962,7 @@ or progresses to a terminal state (i.e., Point-to-Point).&lt;/p>&lt;table>
 		down(1)
 		pointToPoint(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3VirtIfStateChange trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3VirtIfState=%parm[#2]%&lt;/p>
@@ -5015,7 +5015,7 @@ ospfIfStateChange.&lt;/p>&lt;table>
 		loading(7)
 		full(8)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3NbrStateChange trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3NbrState=%parm[#2]%&lt;/p>
@@ -5062,7 +5062,7 @@ progresses to a terminal state (e.g., Full).&lt;/p>&lt;table>
 		loading(7)
 		full(8)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3VirtNbrStateChange trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3VirtNbrState=%parm[#2]%&lt;/p>
@@ -5139,7 +5139,7 @@ prevents an adjacency from forming.&lt;/p>&lt;table>
 		lsAck(5)
 		nullPacket(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3IfConfigError trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3IfState=%parm[#2]% 
@@ -5210,7 +5210,7 @@ adjacency from forming.&lt;/p>&lt;table>
 		lsAck(5)
 		nullPacket(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3VirtIfConfigError trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3VirtIfState=%parm[#2]% 
@@ -5270,7 +5270,7 @@ non-virtual interface.&lt;/p>&lt;table>
 		lsAck(5)
 		nullPacket(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3IfRxBadPacket trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3IfState=%parm[#2]% 
@@ -5321,7 +5321,7 @@ on a virtual interface.&lt;/p>&lt;table>
 		lsAck(5)
 		nullPacket(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3VirtIfRxBadPacket trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3VirtIfState=%parm[#2]% 
@@ -5357,7 +5357,7 @@ database has exceeded ospfv3ExtAreaLsdbLimit.&lt;/p>&lt;table>
 
 	jnxOspfv3ExtAreaLsdbLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3LsdbOverflow trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3ExtAreaLsdbLimit=%parm[#2]%&lt;/p>
@@ -5393,7 +5393,7 @@ ospfv3ExtAreaLsdbLimit.&lt;/p>&lt;table>
 
 	jnxOspfv3ExtAreaLsdbLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3LsdbApproachingOverflow trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3ExtAreaLsdbLimit=%parm[#2]%&lt;/p>
@@ -5440,7 +5440,7 @@ Backup).&lt;/p>&lt;table>
 		backupDesignatedRouter(6)
 		otherDesignatedRouter(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3IfStateChange trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3IfState=%parm[#2]%&lt;/p>
@@ -5482,7 +5482,7 @@ status on a per area basis.&lt;/p>&lt;table>
 		elected(2)
 		disabled(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3NssaTranslatorStatusChange trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3AreaNssaTranslatorState=%parm[#2]%&lt;/p>
@@ -5537,7 +5537,7 @@ changes.&lt;/p>&lt;table>
 		timedOut(4)
 		topologyChanged(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3RestartStatusChange trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3RestartStatus=%parm[#2]% 
@@ -5593,7 +5593,7 @@ neighbor restart helper status transitions for a neighbor.&lt;/p>&lt;table>
 		timedOut(4)
 		topologyChanged(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3NbrRestartHelperStatusChange trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3NbrRestartHelperStatus=%parm[#2]% 
@@ -5650,7 +5650,7 @@ transitions for a virtual neighbor.&lt;/p>&lt;table>
 		timedOut(4)
 		topologyChanged(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOspfv3VirtNbrRestartHelperStatusChange trap received 
 			jnxOspfv3RouterId=%parm[#1]% 
 			jnxOspfv3VirtNbrRestartHelperStatus=%parm[#2]% 
@@ -5750,7 +5750,7 @@ the jnxSyslogTrap objects, this notification can include
 
 	jnxSyslogMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSyslogTrap emergency trap received 
 			jnxSyslogEventName=%parm[#1]% 
 			jnxSyslogTimestamp=%parm[#2]% 
@@ -5854,7 +5854,7 @@ the jnxSyslogTrap objects, this notification can include
 
 	jnxSyslogMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSyslogTrap alert trap received 
 			jnxSyslogEventName=%parm[#1]% 
 			jnxSyslogTimestamp=%parm[#2]% 
@@ -5958,7 +5958,7 @@ the jnxSyslogTrap objects, this notification can include
 
 	jnxSyslogMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSyslogTrap critical trap received 
 			jnxSyslogEventName=%parm[#1]% 
 			jnxSyslogTimestamp=%parm[#2]% 
@@ -6062,7 +6062,7 @@ the jnxSyslogTrap objects, this notification can include
 
 	jnxSyslogMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSyslogTrap error trap received 
 			jnxSyslogEventName=%parm[#1]% 
 			jnxSyslogTimestamp=%parm[#2]% 
@@ -6162,7 +6162,7 @@ the jnxSyslogTrap objects, this notification can include
 
 	jnxSyslogMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxSyslogTrap trap received 
 			jnxSyslogEventName=%parm[#1]% 
 			jnxSyslogTimestamp=%parm[#2]% 
@@ -6217,7 +6217,7 @@ the jnxSyslogTrap objects, this notification can include
 
 	jnxJsChClusterSwitchoverInfoReason&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	Juniper Chassis Cluster Event: jnxJsChassisClusterSwitchover trap received
 	jnxJsChClusterSwitchoverInfoRedundancyGroup=%parm[#1]%
 	jnxJsChClusterSwitchoverInfoClusterId=%parm[#2]%
@@ -6271,7 +6271,7 @@ jnxJsFwAuthServiceDesc&lt;/b>&lt;/td>&lt;td>
 
 jnxJsFwAuthReason&lt;/b>&lt;/td>&lt;td>
 %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 jnxJsFwAuthFailure trap received
 jnxJsFwAuthUserName=%parm[#1]%
 jnxJsFwAuthClientIpAddr=%parm[#2]%
@@ -6299,7 +6299,7 @@ jnxJsFwAuthReason=%parm[#4]%&lt;/p>
       <uei>uei.opennms.org/vendor/Juniper/traps/jnxJsFwAuthServiceUp</uei>
       <event-label>JUNIPER-JS-AUTH-MIB defined trap event: jnxJsFwAuthServiceUp</event-label>
       <descr>&lt;p>Firewall user authentication service has started.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 jnxJsFwAuthServiceUp trap received&lt;/p>
 	</logmsg>
       <severity>Normal</severity>
@@ -6323,7 +6323,7 @@ jnxJsFwAuthServiceUp trap received&lt;/p>
       <uei>uei.opennms.org/vendor/Juniper/traps/jnxJsFwAuthServiceDown</uei>
       <event-label>JUNIPER-JS-AUTH-MIB defined trap event: jnxJsFwAuthServiceDown</event-label>
       <descr>&lt;p>Firewall user authentication service has stopped.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 jnxJsFwAuthServiceDown trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>
@@ -6351,7 +6351,7 @@ jnxJsFwAuthServiceDown trap received&lt;/p>
 jnxJsFwAuthTotalUsers indicates the total number of users 
 being authenticated.  And it has exceeds the maximum allowable
 users. &lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 jnxJsFwAuthCapacityExceeded trap received&lt;/p>
 	</logmsg>
       <severity>Minor</severity>

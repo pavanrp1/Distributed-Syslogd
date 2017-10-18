@@ -42,7 +42,7 @@ event has occured&lt;/p>&lt;table>
 		adapterEnabledOrDisabled(3)
 		adapterAddedOrRemoved(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	failoverEvent trap received
 	trapAdapterName=%parm[#1]%
 	trapTeamName=%parm[#2]%

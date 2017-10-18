@@ -27,7 +27,7 @@
  &lt;/td>&lt;td>&lt;p;>
  other(1) active(2) available(3) restricted(4) unavailable(5)
  &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Oracle Event: RDBMS State Change.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Oracle Event: RDBMS State Change.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -55,7 +55,7 @@
  &lt;tr>&lt;td>&lt;b>
  rdbmsSrvInfoDiskOutOfSpaces&lt;/b>&lt;/td>&lt;td>%parm[#1]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Oracle Event: RDBMS Out of Space.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Oracle Event: RDBMS Out of Space.&lt;/p></logmsg>
       <severity>Major</severity>
    </event>
    <event>
@@ -83,7 +83,7 @@
  &lt;/td>&lt;td>&lt;p;>
  up(1) down(2)
  &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Oracle Event: Oracle Listener State Change.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Oracle Event: Oracle Listener State Change.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -110,7 +110,7 @@
  &lt;/td>&lt;td>&lt;p;>
  up(1) down(2)
  &lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Oracle Event: Navigator State Change.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Oracle Event: Navigator State Change.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -136,7 +136,7 @@
  oraCmanagerState&lt;/b>&lt;/td>&lt;td>%parm[#1]%
  &lt;/td>&lt;td>&lt;p;>
  up(1) down(2)&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Oracle Event: Connection Manager State Change.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Oracle Event: Connection Manager State Change.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -181,7 +181,7 @@
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
  oraAgentEventResults&lt;/b>&lt;/td>&lt;td>%parm[#10]%
  &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>Oracle Event: Enterprise Manager unknown event notification.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>Oracle Event: Enterprise Manager unknown event notification.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
    <event>
@@ -246,7 +246,7 @@
 
         oraEM4AlertRuleOwner&lt;/b>&lt;/td>&lt;td>
         %parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
                         oraEM4Alert trap received 
                         oraEM4AlertTargetName=%parm[#1]% 
                         oraEM4AlertTargetType=%parm[#2]% 
@@ -279,7 +279,7 @@
  enterprise specific event (trap) is received from a Oracle device for which no
  format has been configured (i.e. no event definition
  exists).&lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
  Received unformatted enterprise event (enterprise:%id% generic:%generic%
  specific:%specific%). %parm[##]%
  args: %parm[all]%

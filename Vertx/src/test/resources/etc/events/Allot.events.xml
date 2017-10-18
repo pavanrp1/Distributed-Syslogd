@@ -36,7 +36,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 
 	alGenericLastChangeAddrVal&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alDeviceConfChangeTrap trap received 
 			alGenericLastChangeVar=%parm[#1]% 
 			alGenericLastChangeIntVal=%parm[#2]% 
@@ -75,7 +75,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 
 	alCatalogLastChangeOrigin&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alCatalogConfChangeTrap trap received 
 			alCatalogLastCommand=%parm[#1]% 
 			alCatalogLastChangeOrigin=%parm[#2]%&lt;/p>
@@ -112,7 +112,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 
 	alLineLastChangeOrigin&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alLineConfChangeTrap trap received 
 			alLineLastCommand=%parm[#1]% 
 			alLineLastChangeOrigin=%parm[#2]%&lt;/p>
@@ -149,7 +149,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 
 	alPipeLastChangeOrigin&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alPipeConfChangeTrap trap received 
 			alPipeLastCommand=%parm[#1]% 
 			alPipeLastChangeOrigin=%parm[#2]%&lt;/p>
@@ -186,7 +186,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 
 	alVCLastChangeOrigin&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alVCConfChangeTrap trap received 
 			alVCLastCommand=%parm[#1]% 
 			alVCLastChangeOrigin=%parm[#2]%&lt;/p>
@@ -227,7 +227,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 
 	alAlertConfRegInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alAlertRisingTrap trap received 
 			alAlertConfVariable=%parm[#1]% 
 			alAlertConfValue=%parm[#2]% 
@@ -270,7 +270,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 
 	alAlertConfUnRegInterval&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alAlertFallingTrap trap received 
 			alAlertConfVariable=%parm[#1]% 
 			alAlertConfValue=%parm[#2]% 
@@ -304,7 +304,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 		active(1)
 		finish(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alDosAttackOnTrap trap received 
 			alDOSAttackStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -335,7 +335,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 		active(1)
 		finish(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alDosAttackOffTrap trap received 
 			alDOSAttackStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -374,7 +374,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 		tftp(5)
 		ntp(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alDataSourceDownTrap trap received 
 			alDataSourceIPAddr=%parm[#1]% 
 			alDataSourceType=%parm[#2]%&lt;/p>
@@ -414,7 +414,7 @@ alGenericLastChangeVar&lt;/p>&lt;table>
 		tftp(5)
 		ntp(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alDataSourceUpTrap trap received 
 			alDataSourceIPAddr=%parm[#1]% 
 			alDataSourceType=%parm[#2]%&lt;/p>
@@ -458,7 +458,7 @@ blocked (disabled).&lt;/p>&lt;table>
 
 	alLastMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alSoftwareProblemTrap trap received 
 			alSevereSoftwareProblem=%parm[#1]% 
 			alLastMessage=%parm[#2]%&lt;/p>
@@ -487,7 +487,7 @@ blocked (disabled).&lt;/p>&lt;table>
 
 	alLastMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alAccessViolationTrap trap received 
 			alLastMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -526,7 +526,7 @@ blocked (disabled).&lt;/p>&lt;table>
 
 	alIpXAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alIpAddrConfChangeTrap trap received 
 			alIpXEntryStatus=%parm[#1]% 
 			alIpXAddr=%parm[#2]%&lt;/p>
@@ -566,7 +566,7 @@ blocked (disabled).&lt;/p>&lt;table>
 
 	alConnRouteIfIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alConnRouteConfChangeTrap trap received 
 			alConnRouteEntryStatus=%parm[#1]% 
 			alConnRouteIfIndex=%parm[#2]%&lt;/p>
@@ -599,7 +599,7 @@ blocked (disabled).&lt;/p>&lt;table>
 
 	alGenericLastChangeIntVal&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alDeviceStatusUpTrap trap received 
 			alGenericLastChangeVar=%parm[#1]% 
 			alGenericLastChangeIntVal=%parm[#2]%&lt;/p>
@@ -632,7 +632,7 @@ blocked (disabled).&lt;/p>&lt;table>
 
 	alGenericLastChangeIntVal&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alDeviceStatusDownTrap trap received 
 			alGenericLastChangeVar=%parm[#1]% 
 			alGenericLastChangeIntVal=%parm[#2]%&lt;/p>
@@ -662,7 +662,7 @@ blocked (disabled).&lt;/p>&lt;table>
 
 	alLastMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alApplicationInfoTrap trap received 
 			alLastMessage=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -720,7 +720,7 @@ blocked (disabled).&lt;/p>&lt;table>
 		off(1)
 		on(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alBoardStatusChangeTrap trap received 
 			alBoardType=%parm[#1]% 
 			alBoardSoftwareStatus=%parm[#2]% 
@@ -790,7 +790,7 @@ blocked (disabled).&lt;/p>&lt;table>
 		aSyncSwapRequest(6)
 		requestTimeout(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alWebUpdateTrap trap received 
 			alCurrentVersion=%parm[#1]% 
 			alLastUpdateStatus=%parm[#2]%&lt;/p>
@@ -830,7 +830,7 @@ blocked (disabled).&lt;/p>&lt;table>
 		createAndWait(5)
 		destroy(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alAsymmetricRemoteDeviceConfTrap trap received 
 			alAsymmetricGroupId=%parm[#1]% 
 			alAsymmetricEntryStatus=%parm[#2]%&lt;/p>
@@ -871,7 +871,7 @@ blocked (disabled).&lt;/p>&lt;table>
 		up(2)
 		down(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alAsymmetricRemoteDeviceStatusTrap trap received 
 			alAsymmetricGroupId=%parm[#1]% 
 			alAsymmetricOwnDeviceId=%parm[#2]% 
@@ -944,7 +944,7 @@ blocked (disabled).&lt;/p>&lt;table>
 
 	alLastMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alLicenseWarnEventTrap trap received 
 			alLicenseAttrType=%parm[#1]% 
 			alLicenseLimitType=%parm[#2]% 
@@ -1018,7 +1018,7 @@ blocked (disabled).&lt;/p>&lt;table>
 
 	alLastMessage&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alLicenseCritEventTrap trap received 
 			alLicenseAttrType=%parm[#1]% 
 			alLicenseLimitType=%parm[#2]% 
@@ -1071,7 +1071,7 @@ blocked (disabled).&lt;/p>&lt;table>
 		middle(2)
 		high(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			alBoardTemperatureStatusTrap trap received 
 			alBoardType=%parm[#1]% 
 			alBoardTemperatureRange=%parm[#2]%&lt;/p>

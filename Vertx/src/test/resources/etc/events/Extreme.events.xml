@@ -30,7 +30,7 @@ the unit has come back on line.&lt;/p>&lt;table>
 
 	sysDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			overheat trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]%&lt;/p>
@@ -67,7 +67,7 @@ normal operation.&lt;/p>&lt;table>
 
 	sysDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			fanfailed trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]%&lt;/p>
@@ -102,7 +102,7 @@ is now operating correctly.&lt;/p>&lt;table>
 
 	sysDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			fanOK trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]%&lt;/p>
@@ -137,7 +137,7 @@ access due to incorrect username or password&lt;/p>&lt;table>
 
 	sysDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			invalidLoginAttempt trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]%&lt;/p>
@@ -184,7 +184,7 @@ whether Diagnostics for a particular port failed&lt;/p>&lt;table>
 		run(3)
 		diagfail(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeTrapDiagPortDiagnostics trap received 
 			extremeDiagPortCfgPortIfIndex=%parm[#1]% 
 			extremeDiagPortCfgMode=%parm[#2]% 
@@ -246,7 +246,7 @@ whether Diagnostics for a particular port failed&lt;/p>&lt;table>
 
 	extremeClearflowPortName&lt;/b>&lt;/td>&lt;td>
 	%parm[#9]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeClearflowMessage trap received 
 			extremeClearflowMsgId=%parm[#1]% 
 			extremeClearflowMsg=%parm[#2]% 
@@ -283,7 +283,7 @@ the DOS threshold is cleared .&lt;/p>&lt;table>
 
 	extremeDosAlertLevel&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeDosThresholdCleared trap received 
 			extremeDosAlertLevel=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -313,7 +313,7 @@ the DOS threshold is crossed for any of the ports.&lt;/p>&lt;table>
 
 	extremeDosAlertLevel&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeDosThresholdReached trap received 
 			extremeDosAlertLevel=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -347,7 +347,7 @@ the DOS threshold is crossed for any of the ports.&lt;/p>&lt;table>
 
 	extremeEnhDosPortRateLimitThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEnhDosThresholdReached trap received 
 			extremeEnhDosPortIfIndex=%parm[#1]% 
 			extremeEnhDosPortRateLimitThreshold=%parm[#2]%&lt;/p>
@@ -382,7 +382,7 @@ the DOS threshold is cleared for any of the ports.&lt;/p>&lt;table>
 
 	extremeEnhDosPortRateLimitThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEnhDosThresholdCleared trap received 
 			extremeEnhDosPortIfIndex=%parm[#1]% 
 			extremeEnhDosPortRateLimitThreshold=%parm[#2]%&lt;/p>
@@ -462,7 +462,7 @@ the DOS threshold is cleared for any of the ports.&lt;/p>&lt;table>
 
 	extremeEsrpDmnTrackedActivePortWeight&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEsrpDomainStateChange trap received 
 			extremeEsrpDmnName=%parm[#1]% 
 			extremeEsrpDmnGroup=%parm[#2]% 
@@ -529,7 +529,7 @@ Security protections&lt;/p>&lt;table>
 		badIpInArpPacket(3)
 		badMacInArpPacket(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeIpSecurityViolation trap received 
 			extremeIpSecurityVlanIfIndex=%parm[#1]% 
 			extremeIpSecurityVlanDescr=%parm[#2]% 
@@ -623,7 +623,7 @@ received on that port if the packet's source IP == destination IP&lt;/p>&lt;tabl
 		tcp(6)
 		udp(17)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeIpSecurityAnomalyIpViolation trap received 
 			esAnomalyPortIfIndex=%parm[#1]% 
 			esAnomalyVlanIfIndex=%parm[#2]% 
@@ -732,7 +732,7 @@ received on that port if
 
 	esAnomalyDestL4Port&lt;/b>&lt;/td>&lt;td>
 	%parm[#13]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeIpSecurityAnomalyL4PortViolation trap received 
 			esAnomalyPortIfIndex=%parm[#1]% 
 			esAnomalyVlanIfIndex=%parm[#2]% 
@@ -854,7 +854,7 @@ packet received on that port if
 
 	esAnomalyTcpSeq&lt;/b>&lt;/td>&lt;td>
 	%parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeIpSecurityAnomalyTcpFlagViolation trap received 
 			esAnomalyPortIfIndex=%parm[#1]% 
 			esAnomalyVlanIfIndex=%parm[#2]% 
@@ -962,7 +962,7 @@ received on that port if
 
 	esAnomalyTcpHdrSize&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeIpSecurityAnomalyTcpFragmentViolation trap received 
 			esAnomalyPortIfIndex=%parm[#1]% 
 			esAnomalyVlanIfIndex=%parm[#2]% 
@@ -1063,7 +1063,7 @@ packet received on that port if
 		icmpOverSize(1)
 		icmpFragmented(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeIpSecurityAnomalyIcmpViolation trap received 
 			esAnomalyPortIfIndex=%parm[#1]% 
 			esAnomalyVlanIfIndex=%parm[#2]% 
@@ -1112,7 +1112,7 @@ packet received on that port if
 		inserted(1)
 		empty(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremePortMauChangeTrap trap received 
 			ifIndex=%parm[#1]% 
 			extremePortMauType=%parm[#2]% 
@@ -1154,7 +1154,7 @@ packet received on that port if
 
 	extremeCpuMonitorThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeSwMonitorCpuUtilization trap received 
 			extremeCpuMonitorSlotId=%parm[#1]% 
 			extremeCpuMonitorProcessName=%parm[#2]% 
@@ -1198,7 +1198,7 @@ packet received on that port if
 
 	noOfDaysLeft&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeServiceLicenseExpiration trap received 
 			extremeServiceLicenseExpiryDate=%parm[#1]% 
 			extremeServiceLicenseType=%parm[#2]% 
@@ -1238,7 +1238,7 @@ packet received on that port if
 
 	noOfDaysLeft&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeTrialLicenseExpiration trap received 
 			trialPeriod=%parm[#1]% 
 			imageDescription=%parm[#2]% 
@@ -1283,7 +1283,7 @@ threshold temperature&lt;/p>&lt;table>
 
 	extremeStackMemberSlotId&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeStackMemberOverheat trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -1324,7 +1324,7 @@ changes&lt;/p>&lt;table>
 		down(2)
 		mismatch(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeStackMemberStatusChanged trap received 
 			extremeStackMemberSlotId=%parm[#1]% 
 			extremeStackMemberOperStatus=%parm[#2]%&lt;/p>
@@ -1370,7 +1370,7 @@ changes&lt;/p>&lt;table>
 		up(1)
 		down(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeStackingPortStatusChanged trap received 
 			ifIndex=%parm[#1]% 
 			extremeStackingPortRemoteMac=%parm[#2]% 
@@ -1411,7 +1411,7 @@ The trap will not be generated for discovering state.&lt;/p>&lt;table>
 		redundantPowerAvailable(3)
 		insufficientPower(4)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeSystemPowerStatus trap received 
 			sysDescr=%parm[#1]% 
 			extremeSystemPowerState=%parm[#2]%&lt;/p>
@@ -1454,7 +1454,7 @@ the unit has come back on line.&lt;/p>&lt;table>
 
 	extremeCurrentTemperature&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeOverheat trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -1496,7 +1496,7 @@ normal operation.&lt;/p>&lt;table>
 
 	extremeFanNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeFanfailed trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -1536,7 +1536,7 @@ is now operating correctly.&lt;/p>&lt;table>
 
 	extremeFanNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeFanOK trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -1572,7 +1572,7 @@ refused access due to incorrect username or password&lt;/p>&lt;table>
 
 	sysDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeInvalidLoginAttempt trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]%&lt;/p>
@@ -1611,7 +1611,7 @@ Presumably a redundant power-supply has taken over.&lt;/p>&lt;table>
 
 	extremePowerSupplyNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremePowerSupplyFail trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -1651,7 +1651,7 @@ has come back to life without causing an agent restart.&lt;/p>&lt;table>
 
 	extremePowerSupplyNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremePowerSupplyGood trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -1687,7 +1687,7 @@ an alarm condition.&lt;/p>&lt;table>
 
 	sysDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeRpsAlarm trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]%&lt;/p>
@@ -1722,7 +1722,7 @@ indicating an alarm condition.&lt;/p>&lt;table>
 
 	sysDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeRpsNoAlarm trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]%&lt;/p>
@@ -1762,7 +1762,7 @@ was created in the last thirty seconds.&lt;/p>&lt;table>
 
 	sysDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeSmartTrap trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]%&lt;/p>
@@ -1975,7 +1975,7 @@ the specified extremeSlotNumber has changed.&lt;/p>&lt;table>
 		initializing(14)
 		invalid(100)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeModuleStateChanged trap received 
 			sysUpTime=%parm[#1]% 
 			extremeSlotNumber=%parm[#2]% 
@@ -2056,7 +2056,7 @@ the specified extremeSlotNumber has changed.&lt;/p>&lt;table>
 
 	extremeEsrpTrackedIpRoutes&lt;/b>&lt;/td>&lt;td>
 	%parm[#12]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEsrpStateChange trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -2094,7 +2094,7 @@ the specified extremeSlotNumber has changed.&lt;/p>&lt;table>
       <descr>&lt;p>The server load balancer has activated a group of virtual
 servers that it normally would not activate.  This may be
 due to the failure of another server load balancer.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeSlbUnitAdded trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -2121,7 +2121,7 @@ due to the failure of another server load balancer.&lt;/p>&lt;table>&lt;/table><
 servers that it normally has active.  This indicates that
 something is wrong in the server load balancer; for example,
 its ping check may be failing.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeSlbUnitRemoved trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -2170,7 +2170,7 @@ Protocol.&lt;/p>&lt;table>
 
 	ifDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEdpNeighborAdded trap received 
 			sysUpTime=%parm[#1]% 
 			extremeEdpPortIfIndex=%parm[#2]% 
@@ -2225,7 +2225,7 @@ out by the device.&lt;/p>&lt;table>
 
 	ifDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEdpNeighborRemoved trap received 
 			sysUpTime=%parm[#1]% 
 			extremeEdpPortIfIndex=%parm[#2]% 
@@ -2266,7 +2266,7 @@ out by the device.&lt;/p>&lt;table>
 
 	extremeSlotNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeCpuHealthCheckFailed trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -2331,7 +2331,7 @@ out by the device.&lt;/p>&lt;table>
 
 	upmTimerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			upmProfileEventExecution trap received 
 			upmProfileName=%parm[#1]% 
 			upmExecutionId=%parm[#2]% 
@@ -2393,7 +2393,7 @@ out by the device.&lt;/p>&lt;table>
 
 	extremeHealthCheckMaxRetries&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeHealthCheckFailed trap received 
 			sysDescr=%parm[#1]% 
 			extremeSlotNumber=%parm[#2]% 
@@ -2435,7 +2435,7 @@ extremeCpuUtilRisingThreshold is touched/crossed &lt;/p>&lt;table>
 
 	extremeCpuUtilRisingThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeCpuUtilizationRisingTrap trap received 
 			extremeCpuTaskUtilPair=%parm[#1]% 
 			extremeCpuAggregateUtilization=%parm[#2]% 
@@ -2476,7 +2476,7 @@ extremeCpuUtilRisingThreshold&lt;/p>&lt;table>
 
 	extremeCpuUtilRisingThreshold&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeCpuUtilizationFallingTrap trap received 
 			extremeCpuTaskUtilPair=%parm[#1]% 
 			extremeCpuAggregateUtilization=%parm[#2]% 
@@ -2515,7 +2515,7 @@ extremeCpuUtilRisingThreshold&lt;/p>&lt;table>
 
 	extremeNPModuleProcessorState&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeProcessorStateChangeTrap trap received 
 			sysDescr=%parm[#1]% 
 			extremeSlotNumber=%parm[#2]% 
@@ -2562,7 +2562,7 @@ extremeCpuUtilRisingThreshold&lt;/p>&lt;table>
 		watchdog(6)
 		keepalive(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeMsmFailoverTrap trap received 
 			sysDescr=%parm[#1]% 
 			extremeMasterMSMSlot=%parm[#2]% 
@@ -2611,7 +2611,7 @@ Thus, a new master (this switch) was elected.&lt;/p>&lt;table>
 		master(2)
 		slave(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEsrpTimedOutFailedOverMaster trap received 
 			sysDescr=%parm[#1]% 
 			extremeVlanIfIndex=%parm[#2]% 
@@ -2665,7 +2665,7 @@ Thus, a new master (this switch) was elected.&lt;/p>&lt;table>
 
 	extremeExceededByteCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeRateLimitExceededTrap trap received 
 			extremeRateLimitExceededTrapType=%parm[#1]% 
 			extremeRateLimitExceededTrapIndicator=%parm[#2]% 
@@ -2700,7 +2700,7 @@ peer session reaches the threshold limit.&lt;/p>&lt;table>
 
 	bgpPeerRemoteAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeBgpPrefixReachedThreshold trap received 
 			bgpPeerRemoteAddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2731,7 +2731,7 @@ peer session reaches the maximum configured limit.&lt;/p>&lt;table>
 
 	bgpPeerRemoteAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeBgpPrefixMaxExceeded trap received 
 			bgpPeerRemoteAddr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -2778,7 +2778,7 @@ port.&lt;/p>&lt;table>
 
 	extremeMacSecurityVlanId&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeMacLimitExceeded trap received 
 			extremeMacSecurityVlanIfIndex=%parm[#1]% 
 			extremeMacSecurityVlanDescr=%parm[#2]% 
@@ -2829,7 +2829,7 @@ configured  as a 'secure mac' on some other port(s).&lt;/p>&lt;table>
 
 	extremeMacSecurityPortIfIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeUnauthorizedPortForMacDetected trap received 
 			extremeMacSecurityVlanIfIndex=%parm[#1]% 
 			extremeMacSecurityVlanDescr=%parm[#2]% 
@@ -2879,7 +2879,7 @@ configured, when a new MAC address is learnt on that port.&lt;/p>&lt;table>
 
 	extremeMacSecurityPortIfIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeMacDetectedOnLockedPort trap received 
 			extremeMacSecurityVlanIfIndex=%parm[#1]% 
 			extremeMacSecurityVlanDescr=%parm[#2]% 
@@ -2961,7 +2961,7 @@ authentication and logs in successfully into the network.&lt;/p>&lt;table>
 		authenticationFailure(6)
 		remoteAuthenticationServerFailure(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeNetloginUserLogin trap received 
 			extremeNetloginStationMac=%parm[#1]% 
 			extremeNetloginStationAddr=%parm[#2]% 
@@ -3048,7 +3048,7 @@ authenticated and logged in supplicant. &lt;/p>&lt;table>
 		authenticationFailure(6)
 		remoteAuthenticationServerFailure(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeNetloginUserLogout trap received 
 			extremeNetloginStationMac=%parm[#1]% 
 			extremeNetloginStationAddr=%parm[#2]% 
@@ -3134,7 +3134,7 @@ netlogin supplicant&lt;/p>&lt;table>
 		authenticationFailure(6)
 		remoteAuthenticationServerFailure(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeNetloginAuthFailure trap received 
 			extremeNetloginStationMac=%parm[#1]% 
 			extremeNetloginStationAddr=%parm[#2]% 
@@ -3188,7 +3188,7 @@ configured, when a gratuitous ARP does not match the internal static or secured 
 
         extremeArpSecurityMacAddress&lt;/b>&lt;/td>&lt;td>
         %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
                         extremeGratuitousArpViolation trap received
                         extremeArpSecurityVlanIfIndex=%parm[#1]%
                         extremeArpSecurityVlanDescr=%parm[#2]%
@@ -3222,7 +3222,7 @@ in its inventory database occurs. This trap is not send by a router or switch.&l
 
 	extremeNMSDeviceAddress&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeNMSInventoryChanged trap received 
 			extremeNMSDeviceAddress=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3247,7 +3247,7 @@ in its inventory database occurs. This trap is not send by a router or switch.&l
       <event-label>EXTREME-V2TRAP-MIB defined trap event: extremeNMSTopologyChanged</event-label>
       <descr>&lt;p>This trap is sent by Extreme's Network Management Applications when a change 
 in its Topology database occurs. This trap is not send by a router or switch.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeNMSTopologyChanged trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -3275,7 +3275,7 @@ when the ELRP client detects a loop in the vlan.&lt;/p>&lt;table>
 
 	extremeVlanIfDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeElrpVlanLoopDetected trap received 
 			extremeVlanIfDescr=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3336,7 +3336,7 @@ when the EAPS domain has a state change.&lt;/p>&lt;table>
 		preforwarding(5)
 		init(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsStateChange trap received 
 			extremeEapsName=%parm[#1]% 
 			extremeEapsMode=%parm[#2]% 
@@ -3402,7 +3402,7 @@ for the first time, while its state is not in Fail state.&lt;/p>&lt;table>
 		preforwarding(5)
 		init(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsFailTimerExpFlagSet trap received 
 			extremeEapsName=%parm[#1]% 
 			extremeEapsMode=%parm[#2]% 
@@ -3468,7 +3468,7 @@ is cleared.&lt;/p>&lt;table>
 		preforwarding(5)
 		init(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsFailTimerExpFlagClear trap received 
 			extremeEapsName=%parm[#1]% 
 			extremeEapsMode=%parm[#2]% 
@@ -3535,7 +3535,7 @@ switch that has issued this trap message.&lt;/p>&lt;table>
 		preforwarding(5)
 		init(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsLinkDownRingComplete trap received 
 			extremeEapsName=%parm[#1]% 
 			extremeEapsMode=%parm[#2]% 
@@ -3590,7 +3590,7 @@ generated when an EAPS primary or secondary port changes state.&lt;/p>&lt;table>
 
 	extremeEapsLastStatusChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsPortStatusChange trap received 
 			extremeEapsName=%parm[#1]% 
 			extremeEapsPrimaryStatus=%parm[#2]% 
@@ -3624,7 +3624,7 @@ after the first change is made to limit the number of traps sent&lt;/p>&lt;table
 
 	extremeEapsLastConfigurationChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsConfigChange trap received 
 			extremeEapsLastConfigurationChange=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -3662,7 +3662,7 @@ traps are dropped due to be being sent while the network is converging.&lt;/p>&l
 
 	extremeEapsStatusTrapCount&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsLastStatusChangeTime trap received 
 			extremeEapsLastStatusChange=%parm[#1]% 
 			extremeEapsStatusTrapCount=%parm[#2]%&lt;/p>
@@ -3705,7 +3705,7 @@ peer session reaches the threshold limit.&lt;/p>&lt;table>
 
 	bgpM2PeerLocalAddrType&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeBgpM2PrefixReachedThreshold trap received 
 			bgpM2PeerRemoteAddr=%parm[#1]% 
 			bgpM2PeerRemoteAddrType=%parm[#2]% 
@@ -3751,7 +3751,7 @@ peer session reaches the maximum configured limit.&lt;/p>&lt;table>
 
 	bgpM2PeerLocalAddrType&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeBgpM2PrefixMaxExceeded trap received 
 			bgpM2PeerRemoteAddr=%parm[#1]% 
 			bgpM2PeerRemoteAddrType=%parm[#2]% 
@@ -3789,7 +3789,7 @@ for the first time.&lt;/p>&lt;table>
 
 	extremeSharedPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsSegmentTimerExpFlagSet trap received 
 			extremeSegmentPort=%parm[#1]% 
 			extremeSharedPort=%parm[#2]%&lt;/p>
@@ -3824,7 +3824,7 @@ expired flag is cleared.&lt;/p>&lt;table>
 
 	extremeSharedPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsSegmentTimerExpFlagClear trap received 
 			extremeSegmentPort=%parm[#1]% 
 			extremeSharedPort=%parm[#2]%&lt;/p>
@@ -3887,7 +3887,7 @@ when the EAPS shared port state changes.&lt;/p>&lt;table>
 
 	extremeEapsLastStatusChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsSharedPortStateChange trap received 
 			extremeEapsSharedPortIfIndex=%parm[#1]% 
 			extremeEapsSharedPortLinkId=%parm[#2]% 
@@ -3937,7 +3937,7 @@ when each switch detects a new rootblocker ID on the networks.&lt;/p>&lt;table>
 
 	extremeEapsLastStatusChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeEapsRootBlockerStatusChange trap received 
 			extremeEapsSharedPortIfIndex=%parm[#1]% 
 			extremeEapsSharedPortRootBlockerStatus=%parm[#2]% 
@@ -3976,7 +3976,7 @@ when each switch detects a new rootblocker ID on the networks.&lt;/p>&lt;table>
 
 	extremePethSlotMainPseIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremePethPSUStatusNotification trap received 
 			extremePethSlotPSUActive=%parm[#1]% 
 			extremePethSlotMainPseIndex=%parm[#2]%&lt;/p>
@@ -4009,7 +4009,7 @@ when each switch detects a new rootblocker ID on the networks.&lt;/p>&lt;table>
 
 	extremeLacpMemberPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeLacpAddPortToAggregator trap received 
 			extremeLacpGroup=%parm[#1]% 
 			extremeLacpMemberPort=%parm[#2]%&lt;/p>
@@ -4042,7 +4042,7 @@ when each switch detects a new rootblocker ID on the networks.&lt;/p>&lt;table>
 
 	extremeLacpMemberPort&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeLacpDeletePortFromAggregator trap received 
 			extremeLacpGroup=%parm[#1]% 
 			extremeLacpMemberPort=%parm[#2]%&lt;/p>
@@ -4085,7 +4085,7 @@ into enabled, disabled or online.&lt;/p>&lt;table>
 		online(7)
 		error(8)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessPortStateChange trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessPortState=%parm[#2]%&lt;/p>
@@ -4115,7 +4115,7 @@ port fails to boot too many times.&lt;/p>&lt;table>
 
 	extremeWirelessPortIfIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessPortBootFailure trap received 
 			extremeWirelessPortIfIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4148,7 +4148,7 @@ of the table.&lt;/p>&lt;table>
 
 	extremeWirelessClientID&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessClientStationAgedOut trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessClientID=%parm[#2]%&lt;/p>
@@ -4183,7 +4183,7 @@ enabled.&lt;/p>&lt;table>
 
 	extremeWirelessClientID&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessNetloginClientAssociated trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessClientID=%parm[#2]%&lt;/p>
@@ -4312,7 +4312,7 @@ is true.&lt;/p>&lt;table>
 
 	extremeWirelessScanResultsExtRateSet&lt;/b>&lt;/td>&lt;td>
 	%parm[#18]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessAPAdded trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessScanResultsStationId=%parm[#2]% 
@@ -4364,7 +4364,7 @@ is true.&lt;/p>&lt;table>
 
 	extremeWirelessScanResultsStationId&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessAPRemoved trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessScanResultsStationId=%parm[#2]%&lt;/p>
@@ -4492,7 +4492,7 @@ generated if the value of SendAPUpdatedTrap is true.&lt;/p>&lt;table>
 
 	extremeWirelessScanResultsExtRateSet&lt;/b>&lt;/td>&lt;td>
 	%parm[#18]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessAPUpdated trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessScanResultsStationId=%parm[#2]% 
@@ -4543,7 +4543,7 @@ value of extremeWirelessProbeInfoSendAddedTrap is true.&lt;/p>&lt;table>
 
 	extremeWirelessProbeInfoSource&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessProbeInfoAdded trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessProbeInfoSource=%parm[#2]%&lt;/p>
@@ -4579,7 +4579,7 @@ true.&lt;/p>&lt;table>
 
 	extremeWirelessProbeInfoSource&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessProbeInfoRemoved trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessProbeInfoSource=%parm[#2]%&lt;/p>
@@ -4654,7 +4654,7 @@ running.&lt;/p>&lt;table>
 		scanChannel161(38)
 		scanChannel165(39)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessOffChannelScanStarted trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessOffChannelScanList=%parm[#2]%&lt;/p>
@@ -4729,7 +4729,7 @@ running.&lt;/p>&lt;table>
 		scanChannel161(38)
 		scanChannel165(39)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessOffChannelScanFinished trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessOffChannelScanList=%parm[#2]%&lt;/p>
@@ -4766,7 +4766,7 @@ on a wireless interface.&lt;/p>&lt;table>
 		clientReport(1)
 		micFailure(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessCounterMeasureStarted trap received 
 			ifIndex=%parm[#1]% 
 			extremeWirelessCounterMeasureSource=%parm[#2]%&lt;/p>
@@ -4796,7 +4796,7 @@ on a wireless interface.&lt;/p>&lt;table>
 
 	ifIndex&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			extremeWirelessCounterMeasureStopped trap received 
 			ifIndex=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -4841,7 +4841,7 @@ successful, or if it failed then the reason for the failure.&lt;/p>&lt;table>
                 radarInterferenceDuringOperation(4)
                 restartedDueToInterference(5)
         &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
                         extremeWirelessInterfaceChannelRescan trap received
                         ifIndex=%parm[#1]%
                         extremeWirelessPhysInterfacePHYChannel=%parm[#2]%
@@ -4867,7 +4867,7 @@ successful, or if it failed then the reason for the failure.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/extreme/traps/loadBalTrapMisc</uei>
       <event-label>LOAD-BAL-SYSTEM-MIB defined trap event: loadBalTrapMisc</event-label>
       <descr>&lt;p>Uncatagorized trap.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loadBalTrapMisc trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -4890,7 +4890,7 @@ successful, or if it failed then the reason for the failure.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/extreme/traps/loadBalTrapServiceDown</uei>
       <event-label>LOAD-BAL-SYSTEM-MIB defined trap event: loadBalTrapServiceDown</event-label>
       <descr>&lt;p>Service Came Down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loadBalTrapServiceDown trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -4913,7 +4913,7 @@ successful, or if it failed then the reason for the failure.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/extreme/traps/loadBalTrapServiceUP</uei>
       <event-label>LOAD-BAL-SYSTEM-MIB defined trap event: loadBalTrapServiceUP</event-label>
       <descr>&lt;p>Service Came Up.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loadBalTrapServiceUP trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -4936,7 +4936,7 @@ successful, or if it failed then the reason for the failure.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/extreme/traps/loadBalTrapReset</uei>
       <event-label>LOAD-BAL-SYSTEM-MIB defined trap event: loadBalTrapReset</event-label>
       <descr>&lt;p>System Reset.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loadBalTrapReset trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -4959,7 +4959,7 @@ successful, or if it failed then the reason for the failure.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/extreme/traps/loadBalTrapDenial</uei>
       <event-label>LOAD-BAL-SYSTEM-MIB defined trap event: loadBalTrapDenial</event-label>
       <descr>&lt;p>REQUEST DENIAL&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loadBalTrapDenial trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -4982,7 +4982,7 @@ successful, or if it failed then the reason for the failure.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/extreme/traps/loadBalTrapLogin</uei>
       <event-label>LOAD-BAL-SYSTEM-MIB defined trap event: loadBalTrapLogin</event-label>
       <descr>&lt;p>Root Login.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loadBalTrapLogin trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -5005,7 +5005,7 @@ successful, or if it failed then the reason for the failure.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/extreme/traps/loadBalTrapRemoveUnit</uei>
       <event-label>LOAD-BAL-SYSTEM-MIB defined trap event: loadBalTrapRemoveUnit</event-label>
       <descr>&lt;p>Removing unit. Potential failover of this load balancer.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loadBalTrapRemoveUnit trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -5028,7 +5028,7 @@ successful, or if it failed then the reason for the failure.&lt;/p>&lt;table>
       <uei>uei.opennms.org/vendor/extreme/traps/loadBalTrapAddUnit</uei>
       <event-label>LOAD-BAL-SYSTEM-MIB defined trap event: loadBalTrapAddUnit</event-label>
       <descr>&lt;p>Adding unit. This load balancer has taken responsibility for a new unit id.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			loadBalTrapAddUnit trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -5072,7 +5072,7 @@ the specified interface has been detected.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			wanDsx1LineStatusChange trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -5122,7 +5122,7 @@ the specified interface has been detected.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			wanDsx1LossOfMasterClock trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -5172,7 +5172,7 @@ the specified interface has been detected.&lt;/p>&lt;table>
 
 	dsx1LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			wanDsx1NoLossOfMasterClock trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -5222,7 +5222,7 @@ the specified interface has been detected.&lt;/p>&lt;table>
 
 	dsx3LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			wanDsx3LineStatusChange trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -5272,7 +5272,7 @@ the specified interface has been detected.&lt;/p>&lt;table>
 
 	dsx3LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			wanDsx3LossOfMasterClock trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 
@@ -5322,7 +5322,7 @@ the specified interface has been detected.&lt;/p>&lt;table>
 
 	dsx3LineStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			wanDsx3NoLossOfMasterClock trap received 
 			sysUpTime=%parm[#1]% 
 			sysDescr=%parm[#2]% 

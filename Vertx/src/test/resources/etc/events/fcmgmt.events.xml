@@ -37,7 +37,7 @@ Recommended severity level (for filtering): alert&lt;/p>&lt;table>
 		online(2)
 		offline(3)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			connUnitStatusChange trap received 
 			connUnitStatus=%parm[#1]% 
 			connUnitState=%parm[#2]%&lt;/p>
@@ -67,7 +67,7 @@ Recommended severity level (for filtering): warning&lt;/p>&lt;table>
 
 	connUnitId&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			connUnitDeletedTrap trap received 
 			connUnitId=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -115,7 +115,7 @@ Recommended severity level (for filtering): info&lt;/p>&lt;table>
 
 	connUnitEventDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			connUnitEventTrap trap received 
 			connUnitEventId=%parm[#1]% 
 			connUnitEventType=%parm[#2]% 
@@ -154,7 +154,7 @@ Recommended severity level (for filtering): alert&lt;/p>&lt;table>
 		warning(4)
 		failed(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			connUnitSensorStatusChange trap received 
 			connUnitSensorStatus=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -205,7 +205,7 @@ Recommended severity level (for filtering): alert&lt;/p>&lt;table>
 		bypassed(4)
 		diagnostics(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			connUnitPortStatusChange trap received 
 			connUnitPortStatus=%parm[#1]% 
 			connUnitPortState=%parm[#2]%&lt;/p>

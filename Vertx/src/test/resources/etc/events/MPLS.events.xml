@@ -21,7 +21,7 @@ a. The ifOperStatus of an interface associated with a VRF
    changes to the up(1) state.
 b. When an interface with ifOperStatus = up(1) is 
    associated with a VRF.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsVrfIfUp trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -49,7 +49,7 @@ a. The ifOperStatus of an interface associated with a VRF
    changes to the down(1) state.
 b. When an interface with ifOperStatus = up(1) state is 
    disassociated with a VRF.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsVrfIfDown trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -75,7 +75,7 @@ b. When an interface with ifOperStatus = up(1) state is
       <descr>&lt;p>This notification is generated when the number of routes
 contained by the specified VRF exceeds the value indicated by
 mplsVrfMidRouteThreshold.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsNumVrfRouteMidThreshExceeded trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -102,7 +102,7 @@ mplsVrfMidRouteThreshold.&lt;/p>&lt;table>&lt;/table></descr>
 contained by the specified VRF reaches or attempts to exceed
 the maximum allowed value as indicated by
 mplsVrfMaxRouteThreshold.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsNumVrfRouteMaxThreshExceeded trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -132,7 +132,7 @@ mplsVpnVrfSecIllegalLabelRcvThresh. The threshold is not
 included in the varbind here because the value of 
 mplsVpnVrfSecIllegalLabelViolations should be one greater than 
 the threshold at the time this notification is issued.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsNumVrfSecIllegalLabelThreshExceeded trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -184,7 +184,7 @@ c. Multiple interfaces are associated with this VRF, and the
 		up(1)
 		down(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsL3VpnVrfUp trap received 
 			mplsL3VpnIfConfRowStatus=%parm[#1]% 
 			mplsL3VpnVrfOperStatus=%parm[#2]%&lt;/p>
@@ -239,7 +239,7 @@ c. The last interface with ifOperStatus equal to up(1)
 		up(1)
 		down(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsL3VpnVrfDown trap received 
 			mplsL3VpnIfConfRowStatus=%parm[#1]% 
 			mplsL3VpnVrfOperStatus=%parm[#2]%&lt;/p>
@@ -279,7 +279,7 @@ mplsL3VpnVrfConfMidRteThresh.&lt;/p>&lt;table>
 
 	mplsL3VpnVrfConfMidRteThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsL3VpnVrfRouteMidThreshExceeded trap received 
 			mplsL3VpnVrfPerfCurrNumRoutes=%parm[#1]% 
 			mplsL3VpnVrfConfMidRteThresh=%parm[#2]%&lt;/p>
@@ -334,7 +334,7 @@ value.&lt;/p>&lt;table>
 
 	mplsL3VpnVrfConfHighRteThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsL3VpnVrfNumVrfRouteMaxThreshExceeded trap received 
 			mplsL3VpnVrfPerfCurrNumRoutes=%parm[#1]% 
 			mplsL3VpnVrfConfHighRteThresh=%parm[#2]%&lt;/p>
@@ -371,7 +371,7 @@ the threshold at the time this notification is issued.&lt;/p>&lt;table>
 
 	mplsL3VpnVrfSecIllegalLblVltns&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsL3VpnNumVrfSecIllglLblThrshExcd trap received 
 			mplsL3VpnVrfSecIllegalLblVltns=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -430,7 +430,7 @@ whenever the maximum threshold has been cleared.&lt;/p>&lt;table>
 
 	mplsL3VpnVrfConfHighRteThresh&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsL3VpnNumVrfRouteMaxThreshCleared trap received 
 			mplsL3VpnVrfPerfCurrNumRoutes=%parm[#1]% 
 			mplsL3VpnVrfConfHighRteThresh=%parm[#2]%&lt;/p>
@@ -498,7 +498,7 @@ mplsXCOperStatus objects MUST be the identical.&lt;/p>&lt;table>
 		notPresent(6)
 		lowerLayerDown(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsXCUp trap received 
 			mplsXCOperStatus=%parm[#1]% 
 			mplsXCOperStatus=%parm[#2]%&lt;/p>
@@ -566,7 +566,7 @@ mplsXCOperStatus objects MUST be identical.&lt;/p>&lt;table>
 		notPresent(6)
 		lowerLayerDown(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsXCDown trap received 
 			mplsXCOperStatus=%parm[#1]% 
 			mplsXCOperStatus=%parm[#2]%&lt;/p>
@@ -618,7 +618,7 @@ mplsTunnelOperStatus.&lt;/p>&lt;table>
 		notPresent(6)
 		lowerLayerDown(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	mplsTunnelUp trap received
 	mplsTunnelAdminStatus=%parm[#1]%
 	mplsTunnelOperStatus=%parm[#2]%&lt;/p>
@@ -684,7 +684,7 @@ included value of mplsTunnelOperStatus.&lt;/p>&lt;table>
 		notPresent(6)
 		lowerLayerDown(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	mplsTunnelDown trap received
 	mplsTunnelAdminStatus=%parm[#1]%
 	mplsTunnelOperStatus=%parm[#2]%&lt;/p>
@@ -750,7 +750,7 @@ the agent.&lt;/p>&lt;table>
 		notPresent(6)
 		lowerLayerDown(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	mplsTunnelRerouted trap received
 	mplsTunnelAdminStatus=%parm[#1]%
 	mplsTunnelOperStatus=%parm[#2]%&lt;/p>
@@ -816,7 +816,7 @@ the agent.&lt;/p>&lt;table>
 		notPresent(6)
 		lowerLayerDown(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	mplsTunnelReoptimized trap received
 	mplsTunnelAdminStatus=%parm[#1]%
 	mplsTunnelOperStatus=%parm[#2]%&lt;/p>

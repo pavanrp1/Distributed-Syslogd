@@ -67,7 +67,7 @@
 
 	situation_fullname&lt;/b>&lt;/td>&lt;td>
 	%parm[situation_fullname]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			IBM: EIF Event received&lt;br>
 			cms_hostname=%parm[cms_hostname]%;
 			cms_port=%parm[cms_port]%;

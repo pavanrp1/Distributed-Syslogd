@@ -41,7 +41,7 @@
 
 	sniHdTrapAdapterNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniSMARTFailurePredicted trap received 
 			sniHdTrapServerName=%parm[#1]% 
 			sniHdTrapTime=%parm[#2]% 
@@ -94,7 +94,7 @@
 
 	sniHdTrapAdapterNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniSMARTMonitoringDisabled trap received 
 			sniHdTrapServerName=%parm[#1]% 
 			sniHdTrapTime=%parm[#2]% 
@@ -151,7 +151,7 @@
 
 	mylexRebuildNewChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexAutoRebuildStarted trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -193,7 +193,7 @@
 
 	mylexTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexManualRebuildStarted trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -231,7 +231,7 @@
 
 	mylexTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildDone trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -269,7 +269,7 @@
 
 	mylexTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildCanceled trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -319,7 +319,7 @@
 
 	mylexStatusBlocksRemaining&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildStatus trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -364,7 +364,7 @@
 
 	mylexBadBlocks&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildError trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -403,7 +403,7 @@
 
 	mylexTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildNewDeviceFailed trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -445,7 +445,7 @@
 
 	mylexBadBlocks&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildLogicalDriveFailed trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -484,7 +484,7 @@
 
 	mylexTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexParityCheckStarted trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -522,7 +522,7 @@
 
 	mylexTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexParityCheckDone trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -560,7 +560,7 @@
 
 	mylexTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexParityCheckCanceled trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -610,7 +610,7 @@
 
 	mylexStatusBlocksRemaining&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexParityCheckStatus trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -655,7 +655,7 @@
 
 	mylexBadBlocks&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexParityCheckError trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -698,7 +698,7 @@
 
 	mylexBadBlocks&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexParityCheckLogicalDriveFailed trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -741,7 +741,7 @@
 
 	mylexLogicalDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexLogicalDriveOffline trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -784,7 +784,7 @@
 
 	mylexLogicalDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexLogicalDriveCritical trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -827,7 +827,7 @@
 
 	mylexLogicalDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexLogicalDriveOnline trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -874,7 +874,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDeviceDied trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -922,7 +922,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDeviceAlive trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -966,7 +966,7 @@
 
 	mylexBadBlocks&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexWriteBackError trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1005,7 +1005,7 @@
 
 	mylexTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexStateChangeTableFull trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1043,7 +1043,7 @@
 
 	mylexTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexAdapterDied trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1085,7 +1085,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexAutoRebuildStarted2 trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1128,7 +1128,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexManualRebuildStarted2 trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1171,7 +1171,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildDone2 trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1214,7 +1214,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildCanceled2 trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1257,7 +1257,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildError2 trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1300,7 +1300,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildNewDeviceFailed2 trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1343,7 +1343,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRebuildLogicalDriveFailed2 trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1386,7 +1386,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexInitializationStarted trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1429,7 +1429,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexInitializationDone trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1472,7 +1472,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexInitializationCanceled trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1515,7 +1515,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexInitializationFailed trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1558,7 +1558,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexSystemDriveCreated trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1601,7 +1601,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexSystemDriveDeleted trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1644,7 +1644,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRaidExpansionStarted trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1687,7 +1687,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRaidExpansionDone trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1730,7 +1730,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRaidExpansionFailed trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1773,7 +1773,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexSystemDriveBadBlock trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1816,7 +1816,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexSystemDriveSizeChanged trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1859,7 +1859,7 @@
 
 	mylexStatusCurrentDrive&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexRaidTypeChanged trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1906,7 +1906,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDeviceHotspare trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -1954,7 +1954,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDeviceHardError trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2002,7 +2002,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDeviceSoftError trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2050,7 +2050,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDeviceParityError trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2098,7 +2098,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDeviceMiscError trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2146,7 +2146,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDevicePrefailure trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2194,7 +2194,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDeviceUnconfigured trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2242,7 +2242,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDeviceAdded trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2290,7 +2290,7 @@
 
 	mylexPhysChannel&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexPhysicalDeviceRemoved trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2330,7 +2330,7 @@
 
 	mylexTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexWriteBackError2 trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2372,7 +2372,7 @@
 
 	mylexTrapString1&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexGamDriverMissing trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2419,7 +2419,7 @@
 
 	mylexTrapString2&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mylexGamDriverIncorrectVersion trap received 
 			mylexTrapServerName=%parm[#1]% 
 			mylexTrapSlotNumber=%parm[#2]% 
@@ -2455,7 +2455,7 @@
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			testTrap trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -2496,7 +2496,7 @@
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			fanError trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -2540,7 +2540,7 @@ decreased to the normal level.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tempOk trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -2584,7 +2584,7 @@ reached the warning level.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tempWarn trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -2628,7 +2628,7 @@ The system will shut down and power off if shutdown is enabled.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tempCritical trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -2682,7 +2682,7 @@ until the mains returns or the system is switched off.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapOnBattery trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -2723,7 +2723,7 @@ until the mains returns or the system is switched off.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapOnMains trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -2761,7 +2761,7 @@ until the mains returns or the system is switched off.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			selftestWarning trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -2799,7 +2799,7 @@ until the mains returns or the system is switched off.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			selftestError trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -2837,7 +2837,7 @@ until the mains returns or the system is switched off.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			svCommunicationFailure trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -2872,7 +2872,7 @@ until the condition is removed.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			scbUnconfiguredUPSDetected trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -2906,7 +2906,7 @@ until the condition is removed.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			scbUPSNotdetected trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -2940,7 +2940,7 @@ until the condition is removed.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			scbUnconfiguredBBUDetected trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -2978,7 +2978,7 @@ until the condition is removed.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			scbBBUNotdetected trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3012,7 +3012,7 @@ until the condition is removed.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			notEnoughCabinets trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -3045,7 +3045,7 @@ until the condition is removed.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tooManyCabinets trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -3088,7 +3088,7 @@ cabinet is switched off.&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cabinetSwitchedOff trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3133,7 +3133,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cabinetSwitchedOn trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3176,7 +3176,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			internalError trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3215,7 +3215,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			serverShutdown trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3257,7 +3257,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			fanCriticalError trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3296,7 +3296,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			cabinetNotConfigured trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3338,7 +3338,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			powerSupplyRemoved trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3381,7 +3381,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			powerSupplyAdded trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3424,7 +3424,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			powerSupplyFailed trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3467,7 +3467,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			powerSupplyOk trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3506,7 +3506,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			powerSupplyStatusCritical trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3548,7 +3548,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			fanOk trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3591,7 +3591,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tempSensorBroken trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3626,7 +3626,7 @@ cabinet is switched on.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			serverManagementDisabled trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -3665,7 +3665,7 @@ time to send this trap.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapAcFail trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3704,7 +3704,7 @@ The system will not run properly.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapDuplicateCabinetId trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3741,7 +3741,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			trapEventLog trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -3782,7 +3782,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			tempSensorOk trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3821,7 +3821,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			svCommunicationEstablished trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3863,7 +3863,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			correctableMemErrorAddr trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3906,7 +3906,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			uncorrectableMemErrorAddr trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3949,7 +3949,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			correctableMemErrorBank trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -3992,7 +3992,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			uncorrectableMemErrorBank trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4035,7 +4035,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			correctableMemErrorModule trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4078,7 +4078,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			uncorrectableMemErrorModule trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4117,7 +4117,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			correctableMemError trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4155,7 +4155,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			uncorrectableMemError trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4197,7 +4197,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapMinutesRemaining&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			powerOffTimeReached trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4236,7 +4236,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			frontDoorStatusChanged trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4274,7 +4274,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			housingOpenStatusChanged trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4316,7 +4316,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScRedundantFanFailed trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4359,7 +4359,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScRedundantPowerSupplyFailed trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4406,7 +4406,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScVoltageOk trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4454,7 +4454,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScVoltageTooLow trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4502,7 +4502,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScVoltageTooHigh trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4546,7 +4546,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScFanAdded trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4589,7 +4589,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScFanRemoved trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4624,7 +4624,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScShutdownCancelled trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -4661,7 +4661,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	trapNumValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScCpuSpeedChanged trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4700,7 +4700,7 @@ the reason why the power on is performed&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScPowerOn trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4735,7 +4735,7 @@ cpu has been found.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScNoBootCpu trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -4773,7 +4773,7 @@ selftest (POST) has reported an error.&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScPostError trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4807,7 +4807,7 @@ selftest (POST) has reported an error.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScSetupEntered trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -4844,7 +4844,7 @@ selftest (POST) has reported an error.&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScBootError trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4878,7 +4878,7 @@ selftest (POST) has reported an error.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScBootWatchdogExpired trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -4911,7 +4911,7 @@ selftest (POST) has reported an error.&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScSoftwareWatchdogExpired trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -4953,7 +4953,7 @@ HTTP or telnet fails.&lt;/p>&lt;table>
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScUserAuthenticationFailure trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -4991,7 +4991,7 @@ may be derived).&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScDiagnosticBoot trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -5024,7 +5024,7 @@ may be derived).&lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScBootRetryCountZero trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -5062,7 +5062,7 @@ This trap will not occur on wrap-around log types.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScMessageLogFull trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5104,7 +5104,7 @@ This trap will not occur on wrap-around log types.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			memErrorModulePrefailure trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5147,7 +5147,7 @@ This trap will not occur on wrap-around log types.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			memErrorModuleFailing trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5190,7 +5190,7 @@ This trap will not occur on wrap-around log types.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			memErrorModuleReplaced trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5229,7 +5229,7 @@ This trap will not occur on wrap-around log types.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScPowerSupplyRedundancyLost trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5271,7 +5271,7 @@ This trap will not occur on wrap-around log types.&lt;/p>&lt;table>
 
 	trapNumValue&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScMessageLogWarning trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5314,7 +5314,7 @@ This trap will not occur on wrap-around log types.&lt;/p>&lt;table>
 
 	trapObjectNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScCpuPrefailure trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5354,7 +5354,7 @@ power-good sensor monitoring. The system may stop when this condition occurs.&lt
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScPowerFail trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5393,7 +5393,7 @@ to clear the error condition.&lt;/p>&lt;table>
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScBiosSelftestError trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5428,7 +5428,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScBiosSelftestWatchdogExpired trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -5473,7 +5473,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScVoltageFailure trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5521,7 +5521,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	trapString&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniScBatteryVoltagePrefailure trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5561,7 +5561,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	trapCabinetNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieScSevereSystemError trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]% 
@@ -5595,7 +5595,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapTest trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]%&lt;/p>
@@ -5632,7 +5632,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapCommunicationFailure trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -5670,7 +5670,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapCommunicationEstablished trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -5708,7 +5708,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapControllerSelftestWarning trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -5746,7 +5746,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapControllerSelftestError trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -5784,7 +5784,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapBiosSelftestError trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -5822,7 +5822,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapSevereSystemError trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -5864,7 +5864,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapFanAdded trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -5907,7 +5907,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapFanRemoved trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -5950,7 +5950,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapFanOk trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -5993,7 +5993,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapFanCritical trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6036,7 +6036,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapFanFailed trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6079,7 +6079,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapRedundantFanFailed trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6122,7 +6122,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapTempOk trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6165,7 +6165,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapTempWarning trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6208,7 +6208,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapTempCritical trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6251,7 +6251,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapTempSensorOk trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6294,7 +6294,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapTempSensorBroken trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6337,7 +6337,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapPowerSupplyAdded trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6380,7 +6380,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapPowerSupplyRemoved trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6423,7 +6423,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapPowerSupplyOk trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6462,7 +6462,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapPowerSupplyCritical trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6504,7 +6504,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapPowerSupplyFailed trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6547,7 +6547,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapRedundantPowerSupplyFailed trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6586,7 +6586,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapPowerSupplyRedundancyLost trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6624,7 +6624,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapAcFail trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6662,7 +6662,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapDcFail trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6708,7 +6708,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoInteger2&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapOnBattery trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6748,7 +6748,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapOnMains trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6790,7 +6790,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapVoltageOk trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6833,7 +6833,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapVoltageTooLow trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6876,7 +6876,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapVoltageTooHigh trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6919,7 +6919,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapVoltageFailed trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -6962,7 +6962,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapBatteryVoltagePrefail trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7005,7 +7005,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoInteger&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapCorrectableMemErrorAddr trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7048,7 +7048,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoInteger&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapUncorrectableMemErrorAddr trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7091,7 +7091,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoInteger&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapCorrectableMemErrorBank trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7134,7 +7134,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoInteger&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapUncorrectableMemErrorBank trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7177,7 +7177,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapCorrectableMemErrorModule trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7220,7 +7220,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapUncorrectableMemErrorModule trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7259,7 +7259,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapCorrectableMemError trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7297,7 +7297,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapUncorrectableMemError trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7339,7 +7339,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapMemErrorModulePrefail trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7382,7 +7382,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapMemErrorModuleFailing trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7425,7 +7425,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapMemErrorModuleReplaced trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7464,7 +7464,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapMemErrorLoggingDisabled trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7502,7 +7502,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapMemErrorLoggingEnabled trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7540,7 +7540,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoInteger&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapCpuSpeedChanged trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7582,7 +7582,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoObjectDesignation&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapCpuPrefail trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7625,7 +7625,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapCabinetSwitchedOff trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7668,7 +7668,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapCabinetSwitchedOn trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7711,7 +7711,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoInteger&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapPowerOffTimeReached trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7750,7 +7750,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoString&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapServerShutdown trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7784,7 +7784,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapShutdownCancelled trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]%&lt;/p>
@@ -7817,7 +7817,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapBootRetryCountZero trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]%&lt;/p>
@@ -7854,7 +7854,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapMessageLogFull trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7896,7 +7896,7 @@ expires when the BIOS selftest cannot be finished in a certain time period.&lt;/
 
 	sc2TrapInfoInteger&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapMessageLogWarning trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -7934,7 +7934,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sc2TrapInfoTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapBootMessageLogEntry trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]%&lt;/p>
@@ -7971,7 +7971,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapIntrusionAssertion trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -8009,7 +8009,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapIntrusionDeassertion trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -8047,7 +8047,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sc2TrapInfoCabinetNr&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sc2TrapIntrusionChanged trap received 
 			sc2TrapInfoServerName=%parm[#1]% 
 			sc2TrapInfoTime=%parm[#2]% 
@@ -8081,7 +8081,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieStTrapParamTimestamp&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sieStTrapStatusChanged trap received 
 			sieStTrapParamServerName=%parm[#1]% 
 			sieStTrapParamTimestamp=%parm[#2]%&lt;/p>
@@ -8130,7 +8130,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmNewConfig trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8183,7 +8183,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmPieceRemoved trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8236,7 +8236,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmConfigRemoved trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8289,7 +8289,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmStatusSet trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8342,7 +8342,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmUpdateStatus trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8395,7 +8395,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmPieceRecovered trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8448,7 +8448,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmRecoverAborted trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8501,7 +8501,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmReservationConflict trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8554,7 +8554,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmConfigChanged trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8607,7 +8607,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmConfigInvalidated trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8660,7 +8660,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmActiveLunChanged trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8713,7 +8713,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmPieceFailed trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8766,7 +8766,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmRootFlagChanged trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8819,7 +8819,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmForceActive trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8872,7 +8872,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmNameChanged trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8925,7 +8925,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmPathFailed trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -8978,7 +8978,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmRetry trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -9031,7 +9031,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmActivePortChanged trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -9084,7 +9084,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmReconfigured trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -9137,7 +9137,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmStatusChanged trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -9190,7 +9190,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmAutoRecovered trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -9243,7 +9243,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmErrorCleared trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -9296,7 +9296,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmPnPRemove trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -9349,7 +9349,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmPnPNew trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -9402,7 +9402,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	fscDdmTrapLun&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscDdmCluster trap received 
 			fscDdmTrapServerName=%parm[#1]% 
 			fscDdmTrapTime=%parm[#2]% 
@@ -9463,7 +9463,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWNewConfig trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -9526,7 +9526,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWPieceRemoved trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -9589,7 +9589,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWConfigRemoved trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -9652,7 +9652,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWStatusSet trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -9715,7 +9715,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWUpdateStatus trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -9778,7 +9778,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWPieceRecovered trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -9841,7 +9841,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWRecoverAborted trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -9904,7 +9904,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWReservationConflict trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -9967,7 +9967,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWConfigChanged trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -10030,7 +10030,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWConfigInvalidated trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -10093,7 +10093,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWActiveLunChanged trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -10156,7 +10156,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWPieceFailed trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -10219,7 +10219,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWRootFlagChanged trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -10282,7 +10282,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWNameChanged trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -10345,7 +10345,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWForceActive trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -10408,7 +10408,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWRefreshFinished trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -10471,7 +10471,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieDWTrapError&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDWDiskRegistered trap received 
 			sieDWTrapServerName=%parm[#1]% 
 			sieDWTrapTime=%parm[#2]% 
@@ -10561,7 +10561,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniTrapError trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -10653,7 +10653,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniSmartOK trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -10745,7 +10745,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniSmartWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -10837,7 +10837,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniSmartError trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -10929,7 +10929,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniCoverClosed trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11021,7 +11021,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniCoverOpened trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11113,7 +11113,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniCoverSensorincorporated trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11205,7 +11205,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniCoverSensorMissing trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11297,7 +11297,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniCoverRecognition trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11389,7 +11389,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniCoverRecognitionMissing trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11481,7 +11481,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNoShortCurcuit trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11573,7 +11573,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniShortCurcuit trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11665,7 +11665,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniTemperatureOK trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11757,7 +11757,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniTemperatureWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11849,7 +11849,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniTemperatureCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -11941,7 +11941,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFanRunning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12033,7 +12033,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFanNotRunning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12125,7 +12125,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFanWornOK trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12217,7 +12217,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFanWornWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12309,7 +12309,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFanWornCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12401,7 +12401,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniVoltageOk trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12493,7 +12493,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniVoltageWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12585,7 +12585,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniVoltageCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12677,7 +12677,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWatchdogOk trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12769,7 +12769,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWatchdogCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12861,7 +12861,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniInternalError trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -12953,7 +12953,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniBIOSErrorLogOK trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13045,7 +13045,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniBIOSErrorLogWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13137,7 +13137,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniBIOSErrorLogCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13229,7 +13229,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLPOSTCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13321,7 +13321,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLWatchdogCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13413,7 +13413,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLCoverOpened trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13505,7 +13505,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLCPUMissingCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13597,7 +13597,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLHeartbeatCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13689,7 +13689,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFreeDiskSpaceOK trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13781,7 +13781,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFreeDiskSpaceWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13873,7 +13873,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFreeDiskSpaceError trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -13965,7 +13965,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniMemoryChangesOK trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14057,7 +14057,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniMemoryChangesWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14149,7 +14149,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniMemoryChangesError trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14241,7 +14241,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniDeviceChangesOK trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14333,7 +14333,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniDeviceChangesWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14425,7 +14425,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniDeviceChangesError trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14517,7 +14517,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLVoltage_Fan_TemperatureCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14609,7 +14609,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLLANLeashCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14701,7 +14701,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLProcessorTemperatureCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14793,7 +14793,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLProcessor0MissingCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14885,7 +14885,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLProcessor1MissingCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -14977,7 +14977,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLVoltage_FanCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15069,7 +15069,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLVoltageCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15161,7 +15161,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLFanCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15253,7 +15253,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLFan_TemperatureCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15345,7 +15345,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLVoltage_TemperatureCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15437,7 +15437,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLNICSMBusSlotCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15529,7 +15529,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLPresencePongCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15621,7 +15621,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLHardwareMonitorCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15713,7 +15713,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOL1_5VGTLVoltageCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15805,7 +15805,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLCPUCoreVoltageCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15897,7 +15897,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOL3_3VStandbyCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -15989,7 +15989,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOL5VoltageCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -16081,7 +16081,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLHardwareMonitorInternalTemperatureCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -16173,7 +16173,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLCPUDiodeSensorCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -16265,7 +16265,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLCPUFanCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -16357,7 +16357,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLChassisFanCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -16449,7 +16449,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOL12VoltageCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -16541,7 +16541,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOL3_3VoltageCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -16633,7 +16633,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLCPUDiodeCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -16725,7 +16725,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOL2_5VoltageCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -16817,7 +16817,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLAmbientTemperatureCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -16909,7 +16909,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLRemoteTemperatureCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17001,7 +17001,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniAOLUndockEventCritical trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17093,7 +17093,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFreeSystemDiskSpaceOK trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17185,7 +17185,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFreeSystemDiskSpaceWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17277,7 +17277,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniFreeSystemDiskSpaceError trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17369,7 +17369,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniLeaseExpirationOK trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17461,7 +17461,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniLeaseExpirationWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17553,7 +17553,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniLeaseExpirationError trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17645,7 +17645,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniProcessorChangeOK trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17737,7 +17737,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniProcessorChangeWarning trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17829,7 +17829,7 @@ for detailed error description.&lt;/p>&lt;table>
 		st-warning(2)
 		st-critical(3)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniProcessorChangeError trap received 
 			sniTrapDesktop=%parm[#1]% 
 			sniTrapTimeInt=%parm[#2]% 
@@ -17886,7 +17886,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieMPTrapLunID&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieMPError trap received 
 			sieMPTrapServerName=%parm[#1]% 
 			sieMPTrapTime=%parm[#2]% 
@@ -17939,7 +17939,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieMPTrapLunID&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieMPRetry trap received 
 			sieMPTrapServerName=%parm[#1]% 
 			sieMPTrapTime=%parm[#2]% 
@@ -17992,7 +17992,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieMPTrapLunID&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieMPActivePortChanged trap received 
 			sieMPTrapServerName=%parm[#1]% 
 			sieMPTrapTime=%parm[#2]% 
@@ -18045,7 +18045,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieMPTrapLunID&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieMPReconfigured trap received 
 			sieMPTrapServerName=%parm[#1]% 
 			sieMPTrapTime=%parm[#2]% 
@@ -18098,7 +18098,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieMPTrapLunID&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieMPStatusChanged trap received 
 			sieMPTrapServerName=%parm[#1]% 
 			sieMPTrapTime=%parm[#2]% 
@@ -18151,7 +18151,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieMPTrapLunID&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieMPAutoRecovered trap received 
 			sieMPTrapServerName=%parm[#1]% 
 			sieMPTrapTime=%parm[#2]% 
@@ -18204,7 +18204,7 @@ for detailed error description.&lt;/p>&lt;table>
 
 	sieMPTrapLunID&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieMPErrorCleared trap received 
 			sieMPTrapServerName=%parm[#1]% 
 			sieMPTrapTime=%parm[#2]% 
@@ -18246,7 +18246,7 @@ for which no other trap is currently defined.&lt;/p>&lt;table>
 
 	sniWpNotificationType&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeUnknown trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18281,7 +18281,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeClusterNotFoundActive trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -18315,7 +18315,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeClusterActiveAgain trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -18349,7 +18349,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeClusterNoLongerActive trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -18386,7 +18386,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNodeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNodeDeleted trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18424,7 +18424,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNodeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNodeAdded trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18462,7 +18462,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNodeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNodeState trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18500,7 +18500,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationResourceTypeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeResourceTypeDeleted trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18538,7 +18538,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationResourceTypeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeResourceTypeAdded trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18576,7 +18576,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeGroupDeleted trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18614,7 +18614,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeGroupAdded trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18652,7 +18652,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeGroupState trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18690,7 +18690,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeGroupProperty trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18728,7 +18728,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationResourceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeResourceDeleted trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18766,7 +18766,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationResourceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeResourceAdded trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18804,7 +18804,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationResourceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeResourceState trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18842,7 +18842,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationResourceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeResourceProperty trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18880,7 +18880,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationClusterKeyName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeRegistryAttributes trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18918,7 +18918,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationClusterKeyName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeRegistryKey trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18956,7 +18956,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationClusterKeyName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeRegistryValue trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -18994,7 +18994,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetworkName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNetworkDeleted trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19032,7 +19032,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetworkName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNetworkAdded trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19070,7 +19070,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetworkName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNetworkState trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19108,7 +19108,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetworkName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNetworkProperty trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19146,7 +19146,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetInterfaceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNetInterfaceDeleted trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19184,7 +19184,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetInterfaceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNetInterfaceAdded trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19222,7 +19222,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetInterfaceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNetInterfaceState trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19260,7 +19260,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetInterfaceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpChangeNetInterfaceProperty trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19298,7 +19298,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNodeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNodeUp trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19336,7 +19336,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNodeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNodeDown trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19374,7 +19374,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNodeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNodePaused trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19412,7 +19412,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNodeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNodeJoining trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19450,7 +19450,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpGroupOnline trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19488,7 +19488,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpGroupPartialOnline trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19526,7 +19526,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpGroupPending trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19564,7 +19564,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpGroupOffline trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19602,7 +19602,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationGroupName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpGroupFailed trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19640,7 +19640,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationResourceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpResourceOnline trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19678,7 +19678,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationResourceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpResourceOffline trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19716,7 +19716,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationResourceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpResourceFailed trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19754,7 +19754,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetworkName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNetworkUp trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19792,7 +19792,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetworkName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNetworkDown trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19830,7 +19830,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetworkName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNetworkUnavailable trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19868,7 +19868,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetInterfaceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNetInterfaceUp trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19906,7 +19906,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetInterfaceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNetInterfaceFailed trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19944,7 +19944,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetInterfaceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNetInterfaceUnreachable trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -19982,7 +19982,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	sniWpNotificationNetInterfaceName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniWpNetInterfaceUnavailable trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -20016,7 +20016,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	siePciHotPlugTrapPhysicalSlotNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: siePciHotPlugTrapHotRemoval trap received 
 			siePciHotPlugTrapServerName=%parm[#1]% 
 			siePciHotPlugTrapPhysicalSlotNumber=%parm[#2]%&lt;/p>
@@ -20049,7 +20049,7 @@ with the cluster service.&lt;/p>&lt;table>
 
 	siePciHotPlugTrapPhysicalSlotNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: siePciHotPlugTrapHotReplace trap received 
 			siePciHotPlugTrapServerName=%parm[#1]% 
 			siePciHotPlugTrapPhysicalSlotNumber=%parm[#2]%&lt;/p>
@@ -20091,7 +20091,7 @@ siePciHotPlugTrapPhysicalSlotNumber object is finished.&lt;/p>&lt;table>
 
 	siePciHotPlugTrapCardState&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: siePciHotPlugTrapEndHotPlugAction trap received 
 			siePciHotPlugTrapServerName=%parm[#1]% 
 			siePciHotPlugTrapPhysicalSlotNumber=%parm[#2]% 
@@ -20138,7 +20138,7 @@ siePciHotPlugTrapPhysicalSlotNumber object is finished.&lt;/p>&lt;table>
 
 	sieDeviceHotPlugTrapDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDeviceHotPlugTrapHotRemoval trap received 
 			siePciHotPlugTrapServerName=%parm[#1]% 
 			sieDeviceHotPlugTrapDeviceName=%parm[#2]% 
@@ -20186,7 +20186,7 @@ siePciHotPlugTrapPhysicalSlotNumber object is finished.&lt;/p>&lt;table>
 
 	sieDeviceHotPlugTrapDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDeviceHotPlugTrapHotReplace trap received 
 			siePciHotPlugTrapServerName=%parm[#1]% 
 			sieDeviceHotPlugTrapDeviceName=%parm[#2]% 
@@ -20234,7 +20234,7 @@ siePciHotPlugTrapPhysicalSlotNumber object is finished.&lt;/p>&lt;table>
 
 	sieDeviceHotPlugTrapDeviceNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieDeviceHotPlugTrapHotAdd trap received 
 			siePciHotPlugTrapServerName=%parm[#1]% 
 			sieDeviceHotPlugTrapDeviceName=%parm[#2]% 
@@ -20279,7 +20279,7 @@ it is a generic trap&lt;/p>&lt;table>
 
 	sniServerViewOrigTrapName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniSvGenericTrapForward trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20320,7 +20320,7 @@ a trap ID conflict with SNI Mylex-MIB.&lt;/p>&lt;table>
 
 	sniServerViewNumber&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniSvPagerOff trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20358,7 +20358,7 @@ a trap ID conflict with SNI Mylex-MIB.&lt;/p>&lt;table>
 
 	sniServerViewState&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniSvServerStateChanged trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20405,7 +20405,7 @@ the original ServerName and Severity is retained&lt;/p>&lt;table>
 
 	sniServerViewOrigTrapDetails&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniSvPassThroughTrapForward trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20451,7 +20451,7 @@ and Front End.&lt;/p>&lt;table>
 		ping(3)
 		echo(4)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sieSvAlarmServiceCommand trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20491,7 +20491,7 @@ The argument fscSvObjectName may be empty. In that case the SeverView database m
 
 	fscSvObjectName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscSvServerAdded trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20531,7 +20531,7 @@ The argument fscSvObjectName may be empty. In that case the SeverView database m
 
 	fscSvObjectName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscSvServerRemoved trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20571,7 +20571,7 @@ The argument fscSvObjectName may be empty. In that case the SeverView database m
 
 	fscSvObjectName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscSvServerChanged trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20611,7 +20611,7 @@ The argument fscSvObjectName may be empty. In that case the SeverView database m
 
 	fscSvObjectName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscSvServerStatusChanged trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20654,7 +20654,7 @@ a group was added to the server list.&lt;/p>&lt;table>
 
 	fscSvObjectId&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscSvGroupAdded trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20698,7 +20698,7 @@ a group was removed from the server list.&lt;/p>&lt;table>
 
 	fscSvObjectId&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscSvGroupRemoved trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20742,7 +20742,7 @@ a group was changed in the server list.&lt;/p>&lt;table>
 
 	fscSvObjectId&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscSvGroupChanged trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20783,7 +20783,7 @@ The argument fscSvObjectName may be empty. In that case the SeverView database m
 
 	fscSvObjectName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscSvExploreServer trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]% 
@@ -20817,7 +20817,7 @@ The argument fscSvObjectName may be empty. In that case the SeverView database m
 
 	sniServerViewTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscAsTestMail trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]%&lt;/p>
@@ -20850,7 +20850,7 @@ The argument fscSvObjectName may be empty. In that case the SeverView database m
 
 	sniServerViewTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscAsTestPager trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]%&lt;/p>
@@ -20883,7 +20883,7 @@ The argument fscSvObjectName may be empty. In that case the SeverView database m
 
 	sniServerViewTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			fscAsStopTrapListenService trap received 
 			sniServerViewServerName=%parm[#1]% 
 			sniServerViewTrapTime=%parm[#2]%&lt;/p>
@@ -20916,7 +20916,7 @@ The argument fscSvObjectName may be empty. In that case the SeverView database m
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWVolSysMounted trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -20951,7 +20951,7 @@ be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWSysVolumeDismounted trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -20988,7 +20988,7 @@ be possible&lt;/p>&lt;table>
 
 	sniVolumeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWVolumeMounted trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -21026,7 +21026,7 @@ be possible&lt;/p>&lt;table>
 
 	sniVolumeName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWVolumeDismounted trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -21061,7 +21061,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWDownServer trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21094,7 +21094,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWExitToDos trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21131,7 +21131,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniModuleName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWModuleUnloaded trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -21165,7 +21165,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWClearConnection trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21198,7 +21198,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWLoginUser trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21231,7 +21231,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWCreateBinderyObj trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21264,7 +21264,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWDeleteBinderyObj trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21297,7 +21297,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWChangeSecurity trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21330,7 +21330,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWActivateScreen trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21363,7 +21363,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWUpdateScreen trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21396,7 +21396,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWUpdateCursor trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21429,7 +21429,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWKeyWasPressed trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21462,7 +21462,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			sniNWDeactivateScreen trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21495,7 +21495,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWTrusteeChange trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21528,7 +21528,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWOpenScreen trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21561,7 +21561,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWCloseScreen trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21594,7 +21594,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWModifyDirEntry trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21631,7 +21631,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniModuleName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWNoRelinquishControl trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -21665,7 +21665,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWThreadSwitch trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21702,7 +21702,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniModuleName&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWModuleLoaded trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -21736,7 +21736,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWCreateProcess trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21769,7 +21769,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWDestroyProcess trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21802,7 +21802,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWNewPublic trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21835,7 +21835,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWProtocolBind trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21868,7 +21868,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWProtocolUnbind trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21901,7 +21901,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWAllocateConnection trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21934,7 +21934,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWLogoutConnection trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -21967,7 +21967,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWMLIDRegister trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22000,7 +22000,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWMLIDDeRegister trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22033,7 +22033,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWDataMigration trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22066,7 +22066,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWDataDeMigration trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22099,7 +22099,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWQueueAction trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22141,7 +22141,7 @@ console&lt;/p>&lt;table>
 
 	sniControlString&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWAlert trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -22176,7 +22176,7 @@ console&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWCreateObject trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22209,7 +22209,7 @@ console&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWDeleteObject trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22242,7 +22242,7 @@ console&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWRenameObject trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22275,7 +22275,7 @@ console&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWValueChanged trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22308,7 +22308,7 @@ console&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWCloseFile trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22341,7 +22341,7 @@ console&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNWChangeTime trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22384,7 +22384,7 @@ will be given in the sniInvPollAlarm field&lt;/p>&lt;table>
 
 	sniVarName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniInvPollTrapExceeded trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -22429,7 +22429,7 @@ will be given in the sniInvPollAlarm field&lt;/p>&lt;table>
 
 	sniVarName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniInvPollTrapUnderflow trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -22474,7 +22474,7 @@ will be given in the sniInvPollAlarm field&lt;/p>&lt;table>
 
 	sniVarName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniInvPollDeltaExceeded trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -22519,7 +22519,7 @@ will be given in the sniInvPollAlarm field&lt;/p>&lt;table>
 
 	sniVarName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniInvDeltaTrapUnderflow trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -22562,7 +22562,7 @@ will be given in the sniInvPollAlarm field&lt;/p>&lt;table>
 
 	sniVarName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniInvTrapInvalid trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -22605,7 +22605,7 @@ will be given in the sniInvPollAlarm field&lt;/p>&lt;table>
 
 	sniVarName&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniInvTrapValid trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -22641,7 +22641,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTDownServer trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22674,7 +22674,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTLoginUser trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22707,7 +22707,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTChangeSecurity trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22740,7 +22740,7 @@ interaction with the server will be possible&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTTrusteeChange trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22778,7 +22778,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniControlString&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTAlert trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]% 
@@ -22812,7 +22812,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTChangeTime trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22845,7 +22845,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTRegChangeName trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22878,7 +22878,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTRegChangeAttr trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22911,7 +22911,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTRegChangeLastWrite trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22944,7 +22944,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTRegChangeSecurity trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -22977,7 +22977,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTFileChangeName trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23010,7 +23010,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTFileChangeDirName trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23043,7 +23043,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTFileChangeAttr trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23076,7 +23076,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTFileChangeSize trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23109,7 +23109,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTFileChangeLastWrite trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23142,7 +23142,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTFileChangeSecurity trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23175,7 +23175,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTEventLogError trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23208,7 +23208,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTEventLogWarning trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23241,7 +23241,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTEventLogInformation trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23274,7 +23274,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTEventLogSuccess trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23307,7 +23307,7 @@ eventlog&lt;/p>&lt;table>
 
 	sniTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: sniNTEventLogFailure trap received 
 			sniServerName=%parm[#1]% 
 			sniTrapTime=%parm[#2]%&lt;/p>
@@ -23349,7 +23349,7 @@ changed to 'all', 'subset' or 'local'.&lt;/p>&lt;table>
 		local(5)
 		no(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscHaClClusterInfAvailable trap received 
 			fscHaClClusterName=%parm[#1]% 
 			fscHaClSubAgentInfoOperScope=%parm[#2]%&lt;/p>
@@ -23391,7 +23391,7 @@ changed to 'noInformation' 'unknown', or 'other'.&lt;/p>&lt;table>
 		local(5)
 		no(6)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscHaClClusterInfNotAvailable trap received 
 			fscHaClClusterName=%parm[#1]% 
 			fscHaClSubAgentInfoOperScope=%parm[#2]%&lt;/p>
@@ -23433,7 +23433,7 @@ for the agent has changed its state.&lt;/p>&lt;table>
 		runningDown(6)
 		pending(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscHaClMonitorStateChanged trap received 
 			fscHaClClusterName=%parm[#1]% 
 			fscHaClClusterMonitoringState=%parm[#2]%&lt;/p>
@@ -23476,7 +23476,7 @@ for the agent has changed its state.&lt;/p>&lt;table>
 		down(4)
 		crashed(5)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscHaClSystemStateChanged trap received 
 			fscHaClClusterName=%parm[#1]% 
 			fscHaClSystemName=%parm[#2]% 
@@ -23526,7 +23526,7 @@ for the agent has changed its state.&lt;/p>&lt;table>
 		down(6)
 		faulted(7)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscHaClApplicationStateChanged trap received 
 			fscHaClClusterName=%parm[#1]% 
 			fscHaClApplicationName=%parm[#2]% 
@@ -23582,7 +23582,7 @@ has changed. &lt;/p>&lt;table>
 
 	fscHaClSystemName&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: fscHaClResourceStateChanged trap received 
 			fscHaClClusterName=%parm[#1]% 
 			fscHaClResourceName=%parm[#2]% 
@@ -23618,7 +23618,7 @@ has changed. &lt;/p>&lt;table>
 
 	trapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: testTrap trap received 
 			trapServerName=%parm[#1]% 
 			trapTime=%parm[#2]%&lt;/p>
@@ -23659,7 +23659,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaLarHardwareDefectSet trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -23702,7 +23702,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaLarHardwareDefectUnset trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -23745,7 +23745,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaLarHardwareErrorSet trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -23788,7 +23788,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaLarHardwareErrorUnset trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -23819,7 +23819,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaServerName&lt;/b>&lt;/td>&lt;td>
 	%parm[#1]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaAgentStart trap received 
 			wsaServerName=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -23859,7 +23859,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaErrorRepair trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -23902,7 +23902,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaDefectRepair trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -23941,7 +23941,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaNodeStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaNodeStatusIntegrated trap received 
 			wsaServerName=%parm[#1]% 
 			wsaTrapTime=%parm[#2]% 
@@ -23979,7 +23979,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaNodeStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaNodeStatusNotavail trap received 
 			wsaServerName=%parm[#1]% 
 			wsaTrapTime=%parm[#2]% 
@@ -24017,7 +24017,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaNodeStatus&lt;/b>&lt;/td>&lt;td>
 	%parm[#3]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaNodeStatusNotrunning trap received 
 			wsaServerName=%parm[#1]% 
 			wsaTrapTime=%parm[#2]% 
@@ -24063,7 +24063,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaLUNStateChanged trap received 
 			wsaServerName=%parm[#1]% 
 			wsaHw=%parm[#2]% 
@@ -24111,7 +24111,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaRAIDControllerDefect trap received 
 			wsaServerName=%parm[#1]% 
 			wsaHw=%parm[#2]% 
@@ -24159,7 +24159,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaRAIDDiskDefect trap received 
 			wsaServerName=%parm[#1]% 
 			wsaHw=%parm[#2]% 
@@ -24203,7 +24203,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaEnvironmentHardwareDefectSet trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24246,7 +24246,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaEnvironmentHardwareErrorSet trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24289,7 +24289,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaEnvironmentRepair trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24332,7 +24332,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaStorageHardwareDefectSet trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24375,7 +24375,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaStorageHardwareErrorSet trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24418,7 +24418,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaStorageRepair trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24461,7 +24461,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaControllerHardwareDefectSet trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24504,7 +24504,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaControllerHardwareErrorSet trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24547,7 +24547,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaControllerRepair trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24590,7 +24590,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaMonitoringRuleMatched trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24633,7 +24633,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaMonitoringRuleInitialized trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24676,7 +24676,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaDROperationStarted trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24719,7 +24719,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaDROperationFinished trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24762,7 +24762,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaHardwareDeactiveSet trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24805,7 +24805,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaHardwareActiveSet trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24848,7 +24848,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaHWComponentAttached trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24891,7 +24891,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaHWConfAddr&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaHWComponentDetached trap received 
 			wsaServerName=%parm[#1]% 
 			wsaLarComment=%parm[#2]% 
@@ -24942,7 +24942,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaGenLogMessage trap received 
 			wsaServerName=%parm[#1]% 
 			wsaModule=%parm[#2]% 
@@ -24995,7 +24995,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaGenLogMessageInfo trap received 
 			wsaServerName=%parm[#1]% 
 			wsaModule=%parm[#2]% 
@@ -25048,7 +25048,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaGenLogMessageMinor trap received 
 			wsaServerName=%parm[#1]% 
 			wsaModule=%parm[#2]% 
@@ -25101,7 +25101,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaGenLogMessageMajor trap received 
 			wsaServerName=%parm[#1]% 
 			wsaModule=%parm[#2]% 
@@ -25154,7 +25154,7 @@ has changed. &lt;/p>&lt;table>
 
 	wsaTrapTime&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Fujitsu-Siemens Event: wsaGenLogMessageCritical trap received 
 			wsaServerName=%parm[#1]% 
 			wsaModule=%parm[#2]% 

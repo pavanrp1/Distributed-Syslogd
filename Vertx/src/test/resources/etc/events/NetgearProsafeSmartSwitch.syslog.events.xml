@@ -16,7 +16,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear debug syslog message has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -39,7 +39,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear informational syslog message WebConsoleLogin has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -62,7 +62,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear informational syslog message WebConsoleLogout has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -83,7 +83,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear informational syslog message PortStatusLinkUp has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -102,7 +102,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear informational syslog message DHCPAddressRenewed has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -121,7 +121,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear notice syslog message FirmwareCopyCompletedSuccessfully has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -159,7 +159,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear notice syslog message SwitchConfigUpdateEnd has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -180,7 +180,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear warning syslog message EnergyEfficientEthernetStateTrue has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -201,7 +201,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear warning syslog message EnergyEfficientEthernetStateFalse has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -223,7 +223,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear warning syslog message PortSTPStatusForwarding has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -244,7 +244,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear warning syslog message PortStatusLinkDown has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -267,7 +267,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear warning syslog message WebConsoleLoginFailure has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>
@@ -288,7 +288,7 @@
        Process: %parm[process]% &lt;br>
        PID: %parm[processid]%
        &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
        &lt;p>A Netgear critical syslog message SwitchBootingUp has been received&lt;/p>
        Message: %parm[process]%: %parm[syslogmessage]% &lt;br>
      </logmsg>

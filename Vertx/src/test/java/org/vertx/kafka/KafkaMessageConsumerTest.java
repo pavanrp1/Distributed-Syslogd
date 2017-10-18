@@ -21,9 +21,15 @@ import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.dao.api.DistPollerDao;
 import org.opennms.netmgt.dao.api.EventDao;
+import org.opennms.netmgt.dao.api.MonitoringSystemDao;
 import org.opennms.netmgt.dao.api.ServiceTypeDao;
+import org.opennms.netmgt.dao.hibernate.DistPollerDaoHibernate;
 import org.opennms.netmgt.dao.hibernate.EventDaoHibernate;
 import org.opennms.netmgt.dao.hibernate.InterfaceToNodeCacheDaoImpl;
+import org.opennms.netmgt.dao.hibernate.MonitoredServiceDaoHibernate;
+import org.opennms.netmgt.dao.hibernate.MonitoringSystemDaoHibernate;
+import org.opennms.netmgt.dao.hibernate.NodeDaoHibernate;
+import org.opennms.netmgt.dao.hibernate.ServiceTypeDaoHibernate;
 import org.opennms.netmgt.dao.mock.MockDistPollerDao;
 import org.opennms.netmgt.dao.mock.MockEventDao;
 import org.opennms.netmgt.dao.mock.MockNodeDao;
@@ -141,10 +147,11 @@ public class KafkaMessageConsumerTest {
 
 		hibernateWriter = new HibernateEventWriter(metric);
 		hibernateWriter.setEventUtil(eventutil);
-		hibernateWriter.setDistPollerDao(new MockDistPollerDao());
-		hibernateWriter.setServiceTypeDao(new MockServiceTypeDao());
-		hibernateWriter.setEventDao(new MockEventDao());
-		hibernateWriter.setNodeDao(new MockNodeDao());
+		hibernateWriter.setDistPollerDao(new DistPollerDaoHibernate());
+		hibernateWriter.setServiceTypeDao(new ServiceTypeDaoHibernate());
+		hibernateWriter.setEventDao(new EventDaoHibernate());
+		hibernateWriter.setNodeDao(new NodeDaoHibernate());
+		hibernateWriter.setMonitoringSystemDao(new MonitoringSystemDaoHibernate());
 
 		hibernateWriter.setTransactionManager(hibernateSessionFactory.getTransactionTemplate());
 	}

@@ -10,7 +10,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>Apache HTTPD DocumentRoot %parm[documentRoot]% does not exist &lt;/p>
         </logmsg>
       <severity>Minor</severity>
@@ -27,7 +27,7 @@
             Process: %parm[process]% &lt;br>
             PID: %parm[processid]%
             &lt;/p></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>An unknown Apache HTTPD syslog message has been received &lt;/p>
             Message: %parm[syslogmessage]% &lt;br>
         </logmsg>

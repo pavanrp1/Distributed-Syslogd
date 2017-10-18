@@ -89,7 +89,7 @@ Alert is found applicable.&lt;/p>&lt;table>
 
         sidaAlertDstPort&lt;/b>&lt;/td>&lt;td>
         %parm[#14]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
                         Snort Event: sidaAlertGeneric trap received
                         sidaSensorVersion=%parm[#1]%
                         sidaSensorAddressType=%parm[#2]%

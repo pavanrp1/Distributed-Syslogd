@@ -17,7 +17,7 @@
       <uei>uei.opennms.org/vendor/netsnmp/traps/nsNotifyStart</uei>
       <event-label>NET-SNMP-AGENT-MIB defined trap event: nsNotifyStart</event-label>
       <descr>&lt;p>An indication that the agent has started running.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			nsNotifyStart trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>
@@ -40,7 +40,7 @@
       <uei>uei.opennms.org/vendor/netsnmp/traps/nsNotifyShutdown</uei>
       <event-label>NET-SNMP-AGENT-MIB defined trap event: nsNotifyShutdown</event-label>
       <descr>&lt;p>An indication that the agent is in the process of being shut down.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			nsNotifyShutdown trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -65,7 +65,7 @@
       <descr>&lt;p>An indication that the agent has been restarted.
 This does not imply anything about whether the configuration has
 changed or not (unlike the standard coldStart or warmStart traps)&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			nsNotifyRestart trap received&lt;/p>
 		</logmsg>
       <severity>Normal</severity>

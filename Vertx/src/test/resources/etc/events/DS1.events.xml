@@ -30,7 +30,7 @@ the ds1 are sent.&lt;/p>&lt;table>
 
 	dsx1LineStatusLastChange&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			dsx1LineStatusChange trap received 
 			dsx1LineStatus=%parm[#1]% 
 			dsx1LineStatusLastChange=%parm[#2]%&lt;/p>

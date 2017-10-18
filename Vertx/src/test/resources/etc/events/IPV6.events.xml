@@ -35,7 +35,7 @@ status transitions to or from the up(1) state.&lt;/p>&lt;table>
 		unknown(4)
 		notPresent(5)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ipv6IfStateChange trap received 
 			ipv6IfDescr=%parm[#1]% 
 			ipv6IfOperStatus=%parm[#2]%&lt;/p>

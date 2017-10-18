@@ -26,7 +26,7 @@ the BGP FSM enters the ESTABLISHED state.&lt;/p>&lt;table>
 
 	bgpPeerState&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bgpEstablishedV1 trap received 
 			bgpPeerLastError=%parm[#1]% 
 			bgpPeerState=%parm[#2]%&lt;/p>
@@ -61,7 +61,7 @@ state to a lower numbered state.&lt;/p>&lt;table>
 
 	bgpPeerState&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			bgpBackwardTransitionV1 trap received 
 			bgpPeerLastError=%parm[#1]% 
 			bgpPeerState=%parm[#2]%&lt;/p>
@@ -108,7 +108,7 @@ been in the failure (bad DC output) condition.&lt;/p>&lt;table>
 
 	jnxContentsDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxPowerSupplyFailureV1 trap received 
 			jnxContentsContainerIndex=%parm[#1]% 
 			jnxContentsL1Index=%parm[#2]% 
@@ -158,7 +158,7 @@ the failure (not spinning) condition.&lt;/p>&lt;table>
 
 	jnxContentsDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxFanFailureV1 trap received 
 			jnxContentsContainerIndex=%parm[#1]% 
 			jnxContentsL1Index=%parm[#2]% 
@@ -208,7 +208,7 @@ experienced over temperature condition.&lt;/p>&lt;table>
 
 	jnxContentsDescr&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			jnxOverTemperatureV1 trap received 
 			jnxContentsContainerIndex=%parm[#1]% 
 			jnxContentsL1Index=%parm[#2]% 
@@ -246,7 +246,7 @@ path for the LSP is mplsPathName.&lt;/p>&lt;table>
 
 	mplsPathName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspUpV1 trap received 
 			mplsLspName=%parm[#1]% 
 			mplsPathName=%parm[#2]%&lt;/p>
@@ -281,7 +281,7 @@ active path mplsPathName went down.&lt;/p>&lt;table>
 
 	mplsPathName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspDownV1 trap received 
 			mplsLspName=%parm[#1]% 
 			mplsPathName=%parm[#2]%&lt;/p>
@@ -317,7 +317,7 @@ up state before and after the switch over&lt;/p>&lt;table>
 
 	mplsPathName&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			mplsLspChangeV1 trap received 
 			mplsLspName=%parm[#1]% 
 			mplsPathName=%parm[#2]%&lt;/p>
@@ -364,7 +364,7 @@ state (i.e., Point-to-Point).&lt;/p>&lt;table>
 
 	ospfVirtIfState&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfVirtIfStateChangeV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -422,7 +422,7 @@ ospfIfStateChange.&lt;/p>&lt;table>
 
 	ospfNbrState&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfNbrStateChangeV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfNbrIpAddr=%parm[#2]% 
@@ -471,7 +471,7 @@ progresses to a terminal state (e.g., Full).&lt;/p>&lt;table>
 
 	ospfVirtNbrState&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfVirtNbrStateChangeV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtNbrArea=%parm[#2]% 
@@ -528,7 +528,7 @@ prevents an adjacency from forming.&lt;/p>&lt;table>
 
 	ospfPacketType&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfIfConfigErrorV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -583,7 +583,7 @@ jacency from forming.&lt;/p>&lt;table>
 
 	ospfPacketType&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfVirtIfConfigErrorV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -640,7 +640,7 @@ type.&lt;/p>&lt;table>
 
 	ospfPacketType&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfIfAuthFailureV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -693,7 +693,7 @@ authentication key or authentication type.&lt;/p>&lt;table>
 
 	ospfPacketType&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfVirtIfAuthFailureV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -743,7 +743,7 @@ interface that cannot be parsed.&lt;/p>&lt;table>
 
 	ospfPacketType&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfIfRxBadPacketV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -789,7 +789,7 @@ that cannot be parsed.&lt;/p>&lt;table>
 
 	ospfPacketType&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfVirtIfRxBadPacketV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -853,7 +853,7 @@ identify the LSDB entry.&lt;/p>&lt;table>
 
 	ospfLsdbRouterId&lt;/b>&lt;/td>&lt;td>
 	%parm[#8]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfTxRetransmitV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 
@@ -917,7 +917,7 @@ the LSDB entry.&lt;/p>&lt;table>
 
 	ospfLsdbRouterId&lt;/b>&lt;/td>&lt;td>
 	%parm[#7]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfVirtIfTxRetransmitV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfVirtIfAreaId=%parm[#2]% 
@@ -975,7 +975,7 @@ MaxAge.&lt;/p>&lt;table>
 
 	ospfLsdbRouterId&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfOriginateLsaV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfLsdbAreaId=%parm[#2]% 
@@ -1025,7 +1025,7 @@ aged to MaxAge.&lt;/p>&lt;table>
 
 	ospfLsdbRouterId&lt;/b>&lt;/td>&lt;td>
 	%parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfMaxAgeLsaV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfLsdbAreaId=%parm[#2]% 
@@ -1063,7 +1063,7 @@ base has exceeded ospfExtLsdbLimit.&lt;/p>&lt;table>
 
 	ospfExtLsdbLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfLsdbOverflowV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfExtLsdbLimit=%parm[#2]%&lt;/p>
@@ -1099,7 +1099,7 @@ ospfExtLsdbLimit.&lt;/p>&lt;table>
 
 	ospfExtLsdbLimit&lt;/b>&lt;/td>&lt;td>
 	%parm[#2]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfLsdbApproachingOverflowV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfExtLsdbLimit=%parm[#2]%&lt;/p>
@@ -1146,7 +1146,7 @@ Backup).&lt;/p>&lt;table>
 
 	ospfIfState&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ospfIfStateChangeV1 trap received 
 			ospfRouterId=%parm[#1]% 
 			ospfIfIpAddress=%parm[#2]% 

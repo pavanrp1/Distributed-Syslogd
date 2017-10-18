@@ -42,7 +42,7 @@
 		overTemperature(18)
 		pktpMailbox(19)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	cdm625UnitAlarm trap received
 	cdm625UnitAlarms=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -102,7 +102,7 @@
 		bucSummaryAlarm(6)
 		g703lossOfSignal(7)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	cdm625TxTrafficAlarm trap received
 	cdm625TxAlarms=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -153,7 +153,7 @@
 		lnbSummaryAlarm(9)
 		qdiDeframerUnlocked(10)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	cdm625RxTrafficAlarm trap received
 	cdm625RxAlarms=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -211,7 +211,7 @@
 		idrTxBWA3(13)
 		idrTxBWA4(14)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	cdm625OpenNetworkAlarm trap received
 	cdm625OpenNetworkAlarms=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -264,7 +264,7 @@
 		bucPLL(5)
 		bucTemperature(6)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	cdm625BUCAlarm trap received
 	cdm625BUCAlarms=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -305,7 +305,7 @@
 		lnbCurrent(1)
 		lnbVoltage(2)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	cdm625LNBAlarm trap received
 	cdm625LNBAlarms=%parm[#1]%&lt;/p>
 	</logmsg>
@@ -342,7 +342,7 @@
 		offline(0)
 		online(1)
 	&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 	cdm625RedundancyStateTrap trap received
 	cdm625RedundancyState=%parm[#1]%&lt;/p>
 	</logmsg>

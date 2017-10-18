@@ -40,7 +40,7 @@ notifications are throttled by the agent, as specified by the
 
 	lldpStatsRemTablesAgeouts&lt;/b>&lt;/td>&lt;td>
 	%parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			lldpRemTablesChange trap received 
 			lldpStatsRemTablesInserts=%parm[#1]% 
 			lldpStatsRemTablesDeletes=%parm[#2]% 

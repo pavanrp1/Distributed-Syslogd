@@ -93,7 +93,7 @@ for.  The details of the event are contained in the trap.&lt;/p>&lt;table>
 
 	eventEntryUserActionList&lt;/b>&lt;/td>&lt;td>
 	%parm[#16]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ISS: eventinfo trap received: 
 			eventEntryUserActionList=%parm[#16]%&lt;/p>
 		</logmsg>
@@ -142,7 +142,7 @@ Only configured types of log data which will be sent as a trap.&lt;/p>&lt;table>
 
 	logEntryData&lt;/b>&lt;/td>&lt;td>
 	%parm[#6]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ISS: logdatatrap trap received: 
 			logEntryDescription=%parm[#5]% 
 		</logmsg>
@@ -212,7 +212,7 @@ for.  The details of the event are contained in the trap.&lt;/p>&lt;table>
 
 	eventEntryEventSpecificInfo25&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ISS: highpriorityevent trap received: 
 			eventEntryEventSpecificInfo25=%parm[#11]%&lt;/p>
 		</logmsg>
@@ -282,7 +282,7 @@ for.  The details of the event are contained in the trap.&lt;/p>&lt;table>
 
 	eventEntryEventSpecificInfo25&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ISS: mediumpriorityevent trap received: 
 			eventEntryEventSpecificInfo25=%parm[#11]%&lt;/p>
 		</logmsg>
@@ -352,7 +352,7 @@ for.  The details of the event are contained in the trap.&lt;/p>&lt;table>
 
 	eventEntryEventSpecificInfo25&lt;/b>&lt;/td>&lt;td>
 	%parm[#11]%;&lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			ISS: lowpriorityevent trap received:
 			eventEntryEventSpecificInfo25=%parm[#11]%&lt;/p>
 		</logmsg>

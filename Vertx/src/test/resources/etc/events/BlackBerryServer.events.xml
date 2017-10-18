@@ -24,7 +24,7 @@
 		disabled(-4263520)
 		enabled(-4263520)
 	&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Blackberry Event: besSRPConnectEvent trap received 
 			besSRPConnectState=%parm[#1]%&lt;/p>
 		</logmsg>
@@ -49,7 +49,7 @@
       <event-label>BLACKBERRYSERVER-MIB defined trap event: besHungThreadEvent</event-label>
       <descr>&lt;p>Event related to detection of hung threads 
 in Exchange BES.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Blackberry Event: besHungThreadEvent trap received&lt;/p>
 		</logmsg>
       <severity>Minor</severity>
@@ -75,7 +75,7 @@ in Exchange BES.&lt;/p>&lt;table>&lt;/table></descr>
 if there is only one) gets more than one error connecting 
 to a particular mail server, and those errors are not 
 Access Control related.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Blackberry Event: besMailServerDownEvent trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>
@@ -98,7 +98,7 @@ Access Control related.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/rim/traps/BlackBerryServer/besMDStoBESConnectionEvent</uei>
       <event-label>BLACKBERRYSERVER-MIB defined trap event: besMDStoBESConnectionEvent</event-label>
       <descr>&lt;p>MDS to BES connection state has changed.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Blackberry Event: besMDStoBESConnectionEvent trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -121,7 +121,7 @@ Access Control related.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/rim/traps/BlackBerryServer/besMDSStartStopEvent</uei>
       <event-label>BLACKBERRYSERVER-MIB defined trap event: besMDSStartStopEvent</event-label>
       <descr>&lt;p>MDS has started or stopped.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Blackberry Event: besMDSStartStopEvent trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -144,7 +144,7 @@ Access Control related.&lt;/p>&lt;table>&lt;/table></descr>
       <uei>uei.opennms.org/vendor/rim/traps/BlackBerryServer/besMDStoDBConnectionEvent</uei>
       <event-label>BLACKBERRYSERVER-MIB defined trap event: besMDStoDBConnectionEvent</event-label>
       <descr>&lt;p>MDS to database connection state has changed.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Blackberry Event: besMDStoDBConnectionEvent trap received&lt;/p>
 		</logmsg>
       <severity>Warning</severity>
@@ -168,7 +168,7 @@ Access Control related.&lt;/p>&lt;table>&lt;/table></descr>
       <event-label>BLACKBERRYSERVER-MIB defined trap event: besCriticalEvent</event-label>
       <descr>&lt;p>Critical event has happened. These are the events normally
 logged with 1xxxx and 5xxxx event IDs.&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
 			Blackberry Event: besCriticalEvent trap received&lt;/p>
 		</logmsg>
       <severity>Major</severity>

@@ -96,7 +96,7 @@
 
             nodelabel&lt;/b>&lt;/td>&lt;td>
             %parm[#19]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>An OpenNMS Event has been received as an SNMP Trap
             with UEI: %parm[#5]%.&lt;/p>
         </logmsg>
@@ -175,7 +175,7 @@
 
             tl1amAdditionalParams&lt;/b>&lt;/td>&lt;td>
             %parm[#13]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             tl1AutonomousMessageTrap trap received
             nodeid=%parm[#1]%
             time=%parm[#2]%
@@ -295,7 +295,7 @@
 
             synchronizing&lt;/b>&lt;/td>&lt;td>
             %parm[#21]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">
+      <logmsg dest="logndisplay">
             &lt;p>An OpenNMS Event has been received as an SNMP Trap
             with UEI: %parm[#5]%.&lt;/p>
         </logmsg>
@@ -319,7 +319,7 @@
       <uei>uei.opennms.org/traps/heartbeatTrap</uei>
       <event-label>OPENNMS-MIB defined trap event: heartbeatTrap</event-label>
       <descr>&lt;p>Trap sent periodically by OpenNMS to keep alive external SNMP Manager&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             heartbeatTrap trap received&lt;/p>
         </logmsg>
       <severity>Normal</severity>
@@ -342,7 +342,7 @@
       <uei>uei.opennms.org/traps/startSyncTrap</uei>
       <event-label>OPENNMS-MIB defined trap event: startSyncTrap</event-label>
       <descr>&lt;p>OpenNMS Synchronization Process is starting&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             startSyncTrap trap received&lt;/p>
         </logmsg>
       <severity>Normal</severity>
@@ -365,7 +365,7 @@
       <uei>uei.opennms.org/traps/endSyncTrap</uei>
       <event-label>OPENNMS-MIB defined trap event: endSyncTrap</event-label>
       <descr>&lt;p>OpenNMS Synchronization Process is successfully ended&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             endSyncTrap trap received&lt;/p>
         </logmsg>
       <severity>Normal</severity>
@@ -388,7 +388,7 @@
       <uei>uei.opennms.org/traps/syncRequestTrap</uei>
       <event-label>OPENNMS-MIB defined trap event: syncRequestTrap</event-label>
       <descr>&lt;p>OpenNMS synchronization request&lt;/p>&lt;table>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             syncRequestTrap trap received&lt;/p>
         </logmsg>
       <severity>Normal</severity>

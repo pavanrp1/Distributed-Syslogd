@@ -32,7 +32,7 @@
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;tr>&lt;td>&lt;b>
             ptopoConnTabAgeouts&lt;/b>&lt;/td>&lt;td>%parm[#4]%
             &lt;/td>&lt;td>&lt;p;>&lt;/p>&lt;/td;>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>PTOPO Event: Physical Topology Change.&lt;/p></logmsg>
+      <logmsg dest="logndisplay">&lt;p>PTOPO Event: Physical Topology Change.&lt;/p></logmsg>
       <severity>Warning</severity>
    </event>
 </events>

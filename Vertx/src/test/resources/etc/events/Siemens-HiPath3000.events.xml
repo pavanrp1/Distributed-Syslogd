@@ -67,7 +67,7 @@
             major(4)
             critical(5)
             &lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             sendAlarm trap received
             h150eErrorIndex=%parm[#1]%
             h150eErrorDateTime=%parm[#2]%
@@ -128,7 +128,7 @@
 
             h150eDescriptionOfLastCdrNotificationTrap&lt;/b>&lt;/td>&lt;td>
             %parm[#3]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             sendCdrNotification trap received
             h150eIndexOfLastCdrNotificationTrap=%parm[#1]%
             h150etypeOfLastCdrNotificationTrap=%parm[#2]%
@@ -160,7 +160,7 @@
 
             indexOfLastPortStatusNotificationTrap&lt;/b>&lt;/td>&lt;td>
             %parm[#1]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             sendPortStatusNotification trap received
             indexOfLastPortStatusNotificationTrap=%parm[#1]%&lt;/p>
         </logmsg>
@@ -204,7 +204,7 @@
 
             umNetworkElementKey&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             sendUmRelatedChangeNotification trap received
             umTrapIdentifier=%parm[#1]%
             umTrapType=%parm[#2]%

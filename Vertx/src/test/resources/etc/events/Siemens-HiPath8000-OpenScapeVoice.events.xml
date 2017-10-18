@@ -44,7 +44,7 @@
 
             hiQSurvivalCommunityString&lt;/b>&lt;/td>&lt;td>
             %parm[#5]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQPartnerNodeLeftClusterTrap trap received
             hiQSurvivalTrapType=%parm[#1]%
             hiQSurvivalNodeName=%parm[#2]%
@@ -98,7 +98,7 @@
 
             hiQSurvivalNodeIPAddress&lt;/b>&lt;/td>&lt;td>
             %parm[#4]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQResetSurvivalModeTrap trap received
             hiQSurvivalTrapType=%parm[#1]%
             hiQSurvivalNodeName=%parm[#2]%
@@ -202,7 +202,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQProcessExitedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -326,7 +326,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAuditStartingTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -454,7 +454,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudAvailDiskSpBelowCritThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -582,7 +582,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudAvailDiskSpBelowMajorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -710,7 +710,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudAvailDiskSpBelowMinorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -836,7 +836,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileSystemBelowMin1Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -965,7 +965,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileSystemBelowMin2Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -1094,7 +1094,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileSystemBelowMin3Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -1223,7 +1223,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileSystemBelowMin4Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -1347,7 +1347,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileSystemAboveMinTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -1472,7 +1472,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileGrpAboveCritThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -1597,7 +1597,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileGrpAboveMajorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -1722,7 +1722,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileGrpAboveMinorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -1846,7 +1846,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileGroupSizeChanged1Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -1970,7 +1970,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileGroupSizeChanged2Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -2094,7 +2094,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileGroupSizeChanged3Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -2218,7 +2218,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileGroupSizeChanged4Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -2344,7 +2344,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudFileGrpBelowThreshTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -2472,7 +2472,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcHeapAboveCritThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -2600,7 +2600,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcHeapAboveMajorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -2728,7 +2728,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcHeapAboveMinorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -2853,7 +2853,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcHeapSizeChanged1Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -2978,7 +2978,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcHeapSizeChanged2Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -3103,7 +3103,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcHeapSizeChanged3Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -3228,7 +3228,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcHeapSizeChanged4Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -3352,7 +3352,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcHeapSizeOkTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -3479,7 +3479,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcStackAboveCritThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -3606,7 +3606,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcStackAboveMajorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -3733,7 +3733,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcStackAboveMinorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -3858,7 +3858,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcStackSizeChanged1Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -3983,7 +3983,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcStackSizeChanged2Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -4108,7 +4108,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcStackSizeChanged3Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -4233,7 +4233,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcStackSizeChanged4Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -4357,7 +4357,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcStackSizeOkTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -4481,7 +4481,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudOSProcNotRunningTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -4605,7 +4605,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudOSProcInstanceNotRunningTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -4729,7 +4729,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcNotRunningCriticalTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -4853,7 +4853,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcessNotRunningMajorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -4977,7 +4977,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcessNotRunningMinorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -5101,7 +5101,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudProcessRunningTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -5227,7 +5227,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudCpuUtilAboveCritThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -5353,7 +5353,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudCpuUtilAboveMajorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -5479,7 +5479,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudCpuUtilAboveMinorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -5603,7 +5603,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudCpuUtilTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -5727,7 +5727,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudCpuUtilBelowThreshTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -5851,7 +5851,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudCpuUtilChangedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -5978,7 +5978,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapSpaceAboveCritThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -6105,7 +6105,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapSpaceAboveMajorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -6232,7 +6232,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapSpaceAboveMinorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -6356,7 +6356,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapUtilTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -6480,7 +6480,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapUtilBelowThreshTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -6604,7 +6604,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapUtilChangedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -6732,7 +6732,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudShMemUtilTooAboveCritThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -6860,7 +6860,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudShMemUtilTooAboveMajorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -6988,7 +6988,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudShMemUtilTooAboveMinorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -7112,7 +7112,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudShMemUtilTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -7237,7 +7237,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudShMemUtilBelowThreshTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -7362,7 +7362,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudShMemUtilChangedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -7490,7 +7490,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSemUtilAboveCritThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -7618,7 +7618,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSemUtilAboveMajorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -7746,7 +7746,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSemUtilAboveMinorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -7870,7 +7870,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSemUtilTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -7994,7 +7994,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSemUtilBelowThreshTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -8119,7 +8119,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSemUtilChangedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -8248,7 +8248,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapFrequencyAboveCritThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -8376,7 +8376,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapFrequencyAboveMajorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -8504,7 +8504,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapFrequencyAboveMinorThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -8632,7 +8632,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapFrequenyAboveWarningThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -8756,7 +8756,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapFrequencyUtilTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -8880,7 +8880,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapFrequencyBelowThreshTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -9004,7 +9004,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudSwapFrequencyUtilChangedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -9128,7 +9128,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAudCouldNotGetSwapFrequencyTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -9253,7 +9253,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmProcessInitCompleteTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -9377,7 +9377,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmDbUnreachable1Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -9502,7 +9502,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmDbMaxProcGrpExceededTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -9626,7 +9626,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmDbUnreachable2Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -9750,7 +9750,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmDbTableNotOpenedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -9874,7 +9874,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmDbTableNotClosedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -9999,7 +9999,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmProcessReadyTimeoutTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -10125,7 +10125,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmProcessHealthChkTimeoutTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -10249,7 +10249,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmNodeShutdownTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -10374,7 +10374,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmQueueCorruptedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -10498,7 +10498,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmNodeMgrStartingTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -10623,7 +10623,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmProcessRestartShortTimeTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -10748,7 +10748,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmQueueAllocErrorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -10873,7 +10873,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmResizeGlobalProcTblTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -10998,7 +10998,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmAliasTableLenExceededTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -11124,7 +11124,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmAliasMembersExceededTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -11249,7 +11249,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmProcessExecvErrorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -11376,7 +11376,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmProcessExitedwithCodeTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -11501,7 +11501,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmProcessCoreCreatedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -11627,7 +11627,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmDiagnosticErrorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -11752,7 +11752,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmNodeDownMsgErrorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -11877,7 +11877,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNmNodeMgrSignalRestartTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -12001,7 +12001,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmSubsysAlreadyRunningTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -12126,7 +12126,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmSubsystemStartErrorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -12251,7 +12251,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmSubsysAdmInterventionTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -12377,7 +12377,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmRtpRestartForSubsystemTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -12502,7 +12502,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmRebootForSubsystemTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -12627,7 +12627,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmSystemSwitchOffTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -12753,7 +12753,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmSpecialActScrExecTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -12877,7 +12877,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmSpecialActScrSuccessTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -13002,7 +13002,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmStartupSuccessTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -13128,7 +13128,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmStartupFailedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -13253,7 +13253,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmSubsysRestartSuccessTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -13378,7 +13378,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmRtpNodeUpTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -13502,7 +13502,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmRtpNodeUpWasDownTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -13627,7 +13627,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmRtpNodeDownTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -13752,7 +13752,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmRtpNodeDownWasUpTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -13878,7 +13878,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSnmNodeInfoMismatchTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -14002,7 +14002,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidUserConnected trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -14126,7 +14126,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidTooManyClientsTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -14250,7 +14250,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidNewConnsAllowedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -14374,7 +14374,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidNoNewConnsAllowedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -14498,7 +14498,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidShutdownTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -14622,7 +14622,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidServerStartFailedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -14747,7 +14747,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidFlowEngineIntErrorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -14872,7 +14872,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidFatalErrSrvShutdownTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -14996,7 +14996,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidFatalErrSrvNotStartTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -15120,7 +15120,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDatabaseStartedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -15244,7 +15244,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDbConvertedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -15368,7 +15368,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidOldDbVersionTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -15492,7 +15492,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidNewDbNotCreatedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -15617,7 +15617,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDbDoesNotExistsTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -15741,7 +15741,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDbOpenFailureTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -15865,7 +15865,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDbIndexTestSuccessTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -15989,7 +15989,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDbIndexErrorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -16113,7 +16113,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDbTstOpenFailureTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -16237,7 +16237,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDbTstConnectFailureTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -16361,7 +16361,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidCreateNewDbFailedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -16485,7 +16485,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidTableConvertedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -16609,7 +16609,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDbOpeningProblemTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -16733,7 +16733,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDbBrokenCopyTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -16857,7 +16857,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidBackupSuccessTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -16981,7 +16981,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidBackupFailedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -17105,7 +17105,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidStartedHSBPrimaryTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -17229,7 +17229,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidStartedHSBSecondaryTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -17353,7 +17353,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidHSBSwitchPrimErrTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -17477,7 +17477,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidHSBSwitchSecErrTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -17601,7 +17601,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidBothHSBDbPrimaryTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -17725,7 +17725,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDatabaseStarted2Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -17849,7 +17849,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidDbServerCorruptTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -17974,7 +17974,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSolidLocalDbServerCorruptTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -18098,7 +18098,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAucUscServerTxCdrTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -18223,7 +18223,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAucUscPriStorNotPossibleTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -18347,7 +18347,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAucUscPriStorOKTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -18472,7 +18472,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAucUscSecStorNotPossibleTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -18597,7 +18597,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAucUscFileSeqNumberErrorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -18721,7 +18721,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAucUscLocalSecStorageOk trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -18847,7 +18847,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQOvlCongLevelToCL3Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -18973,7 +18973,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQOvlCongLevelToCL2Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -19099,7 +19099,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQOvlCongLevelToCL1Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -19224,7 +19224,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQOvlCongLevelToCL0Trap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -19349,7 +19349,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQOvlCongLevelChangeTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -19473,7 +19473,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQUCEServicesRegistrationFailedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -19597,7 +19597,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQUCEServicesRegisteringTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -19721,7 +19721,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSubMgmtRemoveResourceError trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -19845,7 +19845,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSubMgmtRemoveResourceSuccess trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -19970,7 +19970,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSmdiREcvIPAddrPortError trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -20095,7 +20095,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSmdiRecvIPAddrPortOk trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -20220,7 +20220,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQDatabaseSizeOK trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -20344,7 +20344,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQDatabaseSizeHigh trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -20470,7 +20470,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQDatabaseSizeTooHigh trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -20595,7 +20595,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQDatabaseFull trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -20732,7 +20732,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL3CommunicationTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -20869,7 +20869,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL2CommunicationTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -21006,7 +21006,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL1CommunicationTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -21132,7 +21132,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL3ServiceTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -21258,7 +21258,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL2ServiceTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -21384,7 +21384,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL1ServiceTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -21518,7 +21518,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL3ProcessingTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -21652,7 +21652,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL2ProcessingTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -21786,7 +21786,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL1ProcessingTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -21912,7 +21912,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL3EquipmentTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -22038,7 +22038,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL2EquipmentTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -22164,7 +22164,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL1EquipmentTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -22290,7 +22290,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL3EnvironmentTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -22416,7 +22416,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL2EnvironmentTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -22542,7 +22542,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL1EnvironmentTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -22672,7 +22672,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL3DatabaseTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -22802,7 +22802,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL2DatabaseTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -22932,7 +22932,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL1DatabaseTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -23058,7 +23058,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL3MibTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -23184,7 +23184,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL2MibTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -23310,7 +23310,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL1MibTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -23436,7 +23436,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL3SecurityTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -23562,7 +23562,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL2SecurityTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -23688,7 +23688,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL1SecurityTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -23814,7 +23814,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL3IndicationTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -23940,7 +23940,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL2IndicationTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -24066,7 +24066,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL1IndicationTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -24203,7 +24203,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL4CommunicationTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -24330,7 +24330,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL4ServiceTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -24464,7 +24464,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL4ProcessingTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -24590,7 +24590,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL4EquipmentTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -24716,7 +24716,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL4EnvironmentTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -24846,7 +24846,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL4DatabaseTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -24972,7 +24972,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL4MibTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -25098,7 +25098,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL4SecurityTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -25224,7 +25224,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaL4IndicationTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -25349,7 +25349,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTcaClearedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -25487,7 +25487,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalCriticalLossOfCommsTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -25625,7 +25625,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalMajorLossOfCommsTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -25763,7 +25763,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalMinorLossOfCommsTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -25888,7 +25888,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalCommsEstablishedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -26012,7 +26012,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalProcessInitActiveTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -26137,7 +26137,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalProcSevereInitFailTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -26262,7 +26262,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalProcPartialInitFailTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -26386,7 +26386,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalProcAbnormalTermTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -26511,7 +26511,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalProcessAliasGrpAvail trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -26637,7 +26637,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalProcessAliasGrpUnavail trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -26764,7 +26764,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalResourceExceedLimitTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -26888,7 +26888,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalResourceWithinLimitTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -27014,7 +27014,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQVeryImportantFuncUnavailTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -27138,7 +27138,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQImportantFuncUnavailTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -27262,7 +27262,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalFuncUnavailTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -27386,7 +27386,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalFuncAvailTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -27512,7 +27512,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalMsgQueueAboveHighThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -27638,7 +27638,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalMsgQueueAboveMedThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -27764,7 +27764,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalMsgQueueAboveLowThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -27889,7 +27889,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalMsgQueueBelowThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -28015,7 +28015,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalVerySevereDegradedCommsTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -28141,7 +28141,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalSevereDegradedCommsTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -28267,7 +28267,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalDegradedCommsTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -28391,7 +28391,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQGlobalCommsOperationalTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -28534,7 +28534,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQOperationModeStateChange trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -28677,7 +28677,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQMinorOperationModeStateChange trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -28820,7 +28820,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQMajorOperationModeStateChange trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -28963,7 +28963,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQCritOperationModeStateChange trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -29106,7 +29106,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNormalOperationMode trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -29230,7 +29230,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQResourceMediumLimitExceeded trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -29354,7 +29354,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQResourceHIghLimitExceeded trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -29479,7 +29479,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCSTAAppConnectionStateUp trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -29605,7 +29605,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCSTAAppConnectionStateDown trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -29732,7 +29732,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCSTAAppConnectionStateFailed trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -29857,7 +29857,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCSTAAppConnectionStateRetrieved trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -29982,7 +29982,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCSTASystemStatusChanged trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -30106,7 +30106,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqSOAPServerOverload trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -30230,7 +30230,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqSOAPServerNormal trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -30356,7 +30356,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSecurityFirewallTrigTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -30480,7 +30480,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSecurityFirewallTrigClearTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -30605,7 +30605,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSIPRegistrationCountingStarted trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -30730,7 +30730,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSIPDeviceRegistrationQuarantined trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -30855,7 +30855,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSIPDeviceRegistrationAccepted trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -30984,7 +30984,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQVerySevereHardwareFailureTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -31113,7 +31113,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSevereHardwareTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -31242,7 +31242,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQHardwareFailureTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -31371,7 +31371,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQHardwareInServiceTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -31500,7 +31500,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicensesExceededTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -31625,7 +31625,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicenseCountOkTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -31757,7 +31757,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicenseCountMismatchTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -31882,7 +31882,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicenseCountSyncTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -32008,7 +32008,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicenseSessionsTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -32133,7 +32133,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicenseSessionCountOkTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -32258,7 +32258,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicenseRestoreTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -32382,7 +32382,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicenseGracePeriodWaringTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -32506,7 +32506,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicenseGracePeriodMajorTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -32630,7 +32630,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicenseGracePeriodCriticalTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -32754,7 +32754,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLicenseGracePeriodOkTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -32879,7 +32879,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAccountInactiveTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -33004,7 +33004,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAccountDisabledTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -33130,7 +33130,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAccountDeletedTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -33254,7 +33254,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSSHDisabled trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -33378,7 +33378,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQAccountDisabled2 trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -33502,7 +33502,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQLogonAttempts trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -33626,7 +33626,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQCertificateNearExpiration trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -33750,7 +33750,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSessionDenied trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -33874,7 +33874,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSessionTerminated trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -33999,7 +33999,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQOCSPNotResponding trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -34123,7 +34123,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQCRLDownloadFailure trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -34248,7 +34248,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQClientAuthenticationFailure trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -34373,7 +34373,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQClearClientAuthenticationFailure trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -34498,7 +34498,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiPathSIPCounterAboveHighThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -34623,7 +34623,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiPathSIPCounterAboveLowThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -34748,7 +34748,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiPathSIPCounterBelowThld trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -34872,7 +34872,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQCacHighThreshTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -34996,7 +34996,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQCacLowThreshTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -35120,7 +35120,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTestCallGeneratorOkTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -35244,7 +35244,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTestCallGeneratorProvErrTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -35369,7 +35369,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTestCallGenOverloadDetTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -35494,7 +35494,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTestCallGeneratorNotOkTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -35618,7 +35618,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTestCallGenNotOkProcRestart trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -35743,7 +35743,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQTestCallGenNotOkNodeRestart trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -35868,7 +35868,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQRollingProcessRestart trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -35993,7 +35993,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQRollingProcessRestartAlarmReset trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -36118,7 +36118,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNoMoreRollingProcessRestarts trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -36243,7 +36243,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNodeRecoveryByRestart trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -36368,7 +36368,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNodeDownAfterFailedRecovery trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -36493,7 +36493,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNodeRecovery trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -36618,7 +36618,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQNodeRecoveryFailed trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -36742,7 +36742,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSwapSpaceFull trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -36867,7 +36867,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSwapSpaceAlarmReset trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -36991,7 +36991,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSwapSpaceOk trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -37116,7 +37116,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQRebootBecauseStopRTPHasFailedPreviously trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -37240,7 +37240,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQPstackMonitoringStarted trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -37367,7 +37367,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQPstackDetected trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -37492,7 +37492,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQRapidStatStarting trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -37616,7 +37616,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQRapidStatWarningsFound trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -37740,7 +37740,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQRapidStatErrorsFound trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -37864,7 +37864,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQRapidStatSevereErrorsFound trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -37988,7 +37988,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQRapidStatVerySevereErrorsFound trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -38112,7 +38112,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCertificateExpirationWarning trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -38237,7 +38237,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCertificateRemovedOrUpdated trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -38361,7 +38361,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCertificateExpired trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -38486,7 +38486,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCRLDownloadFailure trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -38612,7 +38612,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCRLRemovedOrUpdated trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -38736,7 +38736,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCRLExpired trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -38860,7 +38860,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCRLInvalid trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -38984,7 +38984,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCRLCopyFailure trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -39110,7 +39110,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqTLSConnectionAcceptWithoutCRLCheck trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -39234,7 +39234,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqCRLCheckOnTLSConnectionOK trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -39358,7 +39358,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqTLSConnectionClearedRevokedCert trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -39483,7 +39483,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiqTLSSIPIdentityMismatch trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -39607,7 +39607,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteError trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -39731,7 +39731,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteInternal trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -39855,7 +39855,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLitePerm trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -39979,7 +39979,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteNoMem trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -40103,7 +40103,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteReadOnly trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -40227,7 +40227,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteIOError trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -40351,7 +40351,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteCorrupt trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -40475,7 +40475,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteFull trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -40599,7 +40599,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteCantOpen trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -40723,7 +40723,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteNoLfs trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -40847,7 +40847,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteFormat trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -40971,7 +40971,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteClearError trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -41095,7 +41095,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteClearPerm trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -41219,7 +41219,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteClearNoMem trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -41343,7 +41343,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteClearReadOnly trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -41467,7 +41467,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteClearIOError trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -41591,7 +41591,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteClearCorrupt trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -41715,7 +41715,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteClearFull trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -41839,7 +41839,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQSQLiteClearCantOpen trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
@@ -41963,7 +41963,7 @@
 
             rtpClusterName&lt;/b>&lt;/td>&lt;td>
             %parm[#15]%;&lt;/td>&lt;td>&lt;p>&lt;/p>&lt;/td>&lt;/tr>&lt;/table></descr>
-      <logmsg dest="donotpersist">&lt;p>
+      <logmsg dest="logndisplay">&lt;p>
             hiQEmergencyCallIdTrap trap received
             rtpEvtSequenceNumberIndex=%parm[#1]%
             rtpEvtCurrId=%parm[#2]%
