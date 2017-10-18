@@ -33,7 +33,7 @@ import org.opennms.netmgt.eventd.EventIpcManagerDefaultImpl;
 import org.opennms.netmgt.eventd.EventUtilDaoImpl;
 import org.opennms.netmgt.eventd.processor.EventIpcBroadcastProcessor;
 import org.opennms.netmgt.eventd.processor.HibernateEventWriter;
-import org.opennms.netmgt.eventd.processor.SpringConfiguration;
+import org.opennms.netmgt.eventd.processor.HibernateSessionFactory;
 import org.opennms.netmgt.syslogd.SyslogSinkConsumer;
 import org.opennms.netmgt.syslogd.SyslogSinkModule;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
@@ -56,6 +56,10 @@ import io.vertx.ext.unit.TestContext;
 import io.vertx.ext.unit.junit.Timeout;
 import io.vertx.ext.unit.junit.VertxUnitRunner;
 
+/**
+ * @author ms043660
+ *
+ */
 @RunWith(VertxUnitRunner.class)
 public class KafkaMessageConsumerTest {
 
@@ -65,8 +69,6 @@ public class KafkaMessageConsumerTest {
 	public Timeout timeoutRule = Timeout.seconds(Long.MAX_VALUE);
 
 	private KafkaMessageConsumer kafkaMessageConsumer;
-
-	private KafkaMessageConsumer kafkaMessageConsumer1;
 
 	private SyslogSinkConsumer syslogSinkConsumer;
 
@@ -82,8 +84,6 @@ public class KafkaMessageConsumerTest {
 
 	private MessageConsumer<SyslogConnection, SyslogMessageLogDTO> messageConsumer;
 
-	private DeploymentOptions deploymentOption;
-
 	private EventExpander eventExpander;
 
 	private EventIpcManagerDefaultImpl eventImpl;
@@ -93,6 +93,8 @@ public class KafkaMessageConsumerTest {
 	private EventIpcBroadcastProcessor eventBroadCaster;
 
 	private HibernateEventWriter hibernateWriter;
+
+	private HibernateSessionFactory hibernateSessionFactory;
 
 	@Before
 	public void setUp() throws Exception {
@@ -120,6 +122,8 @@ public class KafkaMessageConsumerTest {
 		eventExpander = new EventExpander(metric);
 		DefaultEventConfDao eventConfDao = new DefaultEventConfDao();
 
+		hibernateSessionFactory = new HibernateSessionFactory();
+
 		// TODO
 		File test = new File(
 				"/Users/ms043660/OneDrive - Cerner Corporation/Office/ProjectWorkspace/DistributedSyslogdPoc/Distributed-Syslogd/Vertx/src/test/resources/etc/eventconf.xml");
@@ -135,14 +139,11 @@ public class KafkaMessageConsumerTest {
 		eventBroadCaster.setEventIpcBroadcaster(eventImpl);
 
 		hibernateWriter = new HibernateEventWriter(metric);
-		// DatabasePopulator pop = new DatabasePopulator();
-		SpringConfiguration infra = new SpringConfiguration();
 		hibernateWriter.setEventUtil(eventutil);
 		hibernateWriter.setDistPollerDao(new MockDistPollerDao());
 		hibernateWriter.setServiceTypeDao(new MockServiceTypeDao());
 		hibernateWriter.setEventDao(new MockEventDao());
-		hibernateWriter
-				.setTransactionManager(infra.transactionTemplate(infra.transactionManager(infra.getSessionFactory())));
+		hibernateWriter.setTransactionManager(hibernateSessionFactory.getTransactionTemplate());
 	}
 
 	private SyslogSinkConsumer SyslogSinkProperties() throws Exception {
@@ -184,7 +185,6 @@ public class KafkaMessageConsumerTest {
 	}
 
 	private void VertxOptionProperties() {
-		deploymentOption = new DeploymentOptions().setWorker(true);
 		vxOptions = new VertxOptions().setBlockedThreadCheckInterval(2000000000);
 		vxOptions.setMaxEventLoopExecuteTime(Long.MAX_VALUE);
 	}
