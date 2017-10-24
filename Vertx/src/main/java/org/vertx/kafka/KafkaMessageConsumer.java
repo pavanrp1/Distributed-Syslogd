@@ -183,7 +183,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 		try {
 			// Marshalling into SyslogDTO and sending across event bus
 			SyslogMessageLogDTO syslogMessageDTO = getSyslogMessageLogDTO(record.value());
-			kafkaEventBus.send(busAddress, syslogMessageDTO);
+			kafkaEventBus.send(SYSLOGD_CONSUMER_ADDRESS, syslogMessageDTO);
 		} catch (Exception ex) {
 			String error = String.format("Error sending messages on event bus - record: %s", record.toString());
 			logger.error(error, ex);

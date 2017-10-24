@@ -176,8 +176,8 @@ public class SyslogSinkConsumer extends AbstractVerticle
 
 	@Override
 	public void start(final Future<Void> startedResult) throws Exception {
-		
-		System.out.println("Hi");
+
+		System.out.println(this);
 		syslogdEventBus = vertx.eventBus();
 
 		// syslogSinkConsumer = new SyslogSinkConsumer();
@@ -189,19 +189,10 @@ public class SyslogSinkConsumer extends AbstractVerticle
 
 		concurrentRunning = new AtomicBoolean(true);
 
-		backgroundConsumer = Executors.newSingleThreadExecutor();
-		backgroundConsumer.submit(() -> {
+		// to ensure codec register is at start and its only once
 
-			// to ensure codec register is at start and its only once
-			if (isMessageCodeRegistered) {
-				syslogdEventBus.registerDefaultCodec(Log.class, new SyslogdMessageCodec());
-				isMessageCodeRegistered = false;
-			}
-
-			startedResult.complete();
-			consumeFromKafkaEventBus();
-
-		});
+		startedResult.complete();
+		consumeFromKafkaEventBus();
 
 	}
 
@@ -209,19 +200,23 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	 * Handles looping and consuming
 	 */
 	private void consumeFromKafkaEventBus() {
-		while (concurrentRunning.get()) {
-			try {
-				io.vertx.core.eventbus.MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = syslogdEventBus
-						.consumer(getSyslogdConsumerAddress());
-				consumerFromEventBus.handler(syslogDTOMessage -> {
-					handleMessage(syslogDTOMessage.body());
-					syslogdEventBus.send(EVENTD_CONSUMER_ADDRESS, getEventLog());
-				});
+		// while (concurrentRunning.get()) {
+		try {
+			// if (isMessageCodeRegistered) {
+			// syslogdEventBus.registerDefaultCodec(Log.class, new SyslogdMessageCodec());
+			// isMessageCodeRegistered = false;
+			// }
+			io.vertx.core.eventbus.MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = syslogdEventBus
+					.consumer(getSyslogdConsumerAddress());
+			consumerFromEventBus.handler(syslogDTOMessage -> {
+				handleMessage(syslogDTOMessage.body());
+				syslogdEventBus.send(EVENTD_CONSUMER_ADDRESS, getEventLog());
+			});
 
-			} catch (Exception e) {
-				LOG.error("Failed to consume from Kafka Event Bus : " + e.getMessage());
-			}
+		} catch (Exception e) {
+			LOG.error("Failed to consume from Kafka Event Bus : " + this + e.getMessage());
 		}
+		// }
 	}
 
 	public static void loadGrokParserList() throws IOException {
@@ -236,7 +231,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 			try (MDCCloseable mdc = Logging.withPrefixCloseable(Syslogd.LOG4J_CATEGORY)) {
 				try (Context toEventCtx = toEventTimer.time()) {
 					m_eventLog = toEventLog(syslogDTO);
-
+					//
 				}
 			}
 		}
@@ -248,6 +243,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		elog.setEvents(events);
 		for (SyslogMessageDTO message : messageLog.getMessages()) {
 			try {
+				// System.out.println(this);
 				LOG.debug("Converting syslog message into event.");
 				ConvertToEvent re = new ConvertToEvent(messageLog.getSystemId(), messageLog.getLocation(),
 						messageLog.getSourceAddress(), messageLog.getSourcePort(),
