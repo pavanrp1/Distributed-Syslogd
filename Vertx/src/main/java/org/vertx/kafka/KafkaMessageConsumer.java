@@ -94,13 +94,18 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 			// creating event bus at the startup
 			kafkaEventBus = vertx.eventBus();
 
-			// // to ensure codec register is at start and its only once
-			if (isMessageCodeRegistered) {
-				kafkaEventBus.registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
-				isMessageCodeRegistered = false;
-			}
 
 			concurrentRunning = new AtomicBoolean(true);
+			
+//			verticleConfig = new JsonObject();
+//			verticleConfig.put(ConfigConstants.GROUP_ID, "syslogd");
+//			verticleConfig.put(ConfigConstants.ZK_CONNECT, "localhost:2181");
+//			verticleConfig.put(ConfigConstants.BOOTSTRAP_SERVERS, "localhost:9092");
+//			topics = new ArrayList<String>();
+//			topics.add("syslogd");
+//			verticleConfig.put("topics", new JsonArray(topics));
+			
+			verticleConfig = (JsonObject) config().getValue("kafkaConfiguration");
 
 			// creating kafka configuration and properties
 			Properties kafkaConfig = populateKafkaConfig(verticleConfig);
@@ -181,9 +186,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 	 */
 	private void sendConsumedMessage(ConsumerRecord<String, String> record) {
 		try {
-			// Marshalling into SyslogDTO and sending across event bus
-			SyslogMessageLogDTO syslogMessageDTO = getSyslogMessageLogDTO(record.value());
-			kafkaEventBus.send(SYSLOGD_CONSUMER_ADDRESS, syslogMessageDTO);
+			kafkaEventBus.send(SYSLOGD_CONSUMER_ADDRESS, record.value());
 		} catch (Exception ex) {
 			String error = String.format("Error sending messages on event bus - record: %s", record.toString());
 			logger.error(error, ex);
@@ -248,17 +251,6 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 
 	public void setVerticleConfig(JsonObject verticleConfig) {
 		this.verticleConfig = verticleConfig;
-	}
-
-	public static synchronized SyslogMessageLogDTO getSyslogMessageLogDTO(String message) {
-		try {
-			synchronized (message) {
-				return kafkaMessageConsumer.getModule().unmarshal(message);
-			}
-		} catch (Exception e) {
-			logger.error("Unable to load syslogmessagelogdto " + e.getMessage());
-			return null;
-		}
 	}
 
 }

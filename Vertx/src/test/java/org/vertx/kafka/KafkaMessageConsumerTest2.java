@@ -63,9 +63,9 @@ import io.vertx.ext.unit.junit.VertxUnitRunner;
  *
  */
 @RunWith(VertxUnitRunner.class)
-public class KafkaMessageConsumerTest {
+public class KafkaMessageConsumerTest2 {
 
-	private static final Logger logger = LoggerFactory.getLogger(KafkaMessageConsumerTest.class);
+	private static final Logger logger = LoggerFactory.getLogger(KafkaMessageConsumerTest2.class);
 
 	@Rule
 	public Timeout timeoutRule = Timeout.seconds(Long.MAX_VALUE);
@@ -219,13 +219,12 @@ public class KafkaMessageConsumerTest {
 			vertx = Vertx.vertx();
 			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
 			vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
-			JsonObject config = new JsonObject().put("kafkaConfiguration", consumerConfig);
 			// Consumer<Vertx> runner = vertx -> {
-			vertx.deployVerticle(KafkaMessageConsumer.class.getName(), new DeploymentOptions().setInstances(1).setWorker(true).setConfig(config));
+			vertx.deployVerticle(KafkaMessageConsumer.class.getName(), new DeploymentOptions().setInstances(200).setWorker(true));
 			// vertx.deployVerticle(syslogSinkConsumer);
 			// vertx.deployVerticle(syslogSinkConsumer1);
 			// vertx.deployVerticle(syslogSinkConsumer2);
-			vertx.deployVerticle(SyslogSinkConsumer.class.getName(), new DeploymentOptions().setInstances(1).setWorker(true));
+			vertx.deployVerticle(SyslogSinkConsumer.class.getName(), new DeploymentOptions().setInstances(200).setWorker(true));
 			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
 			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
 			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());

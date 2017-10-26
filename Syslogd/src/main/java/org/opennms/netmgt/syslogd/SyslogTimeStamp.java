@@ -39,6 +39,7 @@ import java.util.Locale;
 import java.util.NoSuchElementException;
 import java.util.StringTokenizer;
 import java.util.TimeZone;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * The TimestampFormat class implements the code necessary to format and parse
@@ -52,6 +53,8 @@ public class SyslogTimeStamp extends Format {
 
     /** Constant <code>DEFAULT_GMT_TZID="GMT+00"</code> */
     public static final String DEFAULT_GMT_TZID = "GMT+00";
+    
+    public static AtomicInteger broadcastCount = new AtomicInteger();
 
     /**
      * <p>getInstance</p>

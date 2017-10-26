@@ -50,6 +50,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 import org.apache.commons.io.IOUtils;
@@ -96,10 +97,10 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	private MessageConsumerManager messageConsumerManager;
 
 	@Autowired
-	private SyslogdConfig syslogdConfig;
+	private static SyslogdConfig syslogdConfig;
 
 	@Autowired
-	private DistPollerDao distPollerDao;
+	private static DistPollerDao distPollerDao;
 
 	public static int eventCount = 0;
 
@@ -109,15 +110,10 @@ public class SyslogSinkConsumer extends AbstractVerticle
 
 	private final Timer consumerTimer;
 	private final Timer toEventTimer;
+
 	private Log m_eventLog;
 
 	private EventBus syslogdEventBus;
-
-	private AtomicBoolean concurrentRunning;
-
-	private ExecutorService backgroundConsumer;
-
-	private boolean isMessageCodeRegistered = true;
 
 	public Log getEventLog() {
 		return m_eventLog;
@@ -167,7 +163,10 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	 */
 	static {
 		try {
-			loadGrokParserList();
+			grokPatternsList = SyslogSinkConsumer.readPropertiesInOrderFrom(
+					ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
+			distPollerDao = new DistPollerDaoHibernate();
+			syslogdConfig = loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml");
 		} catch (IOException e) {
 			LOG.debug("Failed to load Grok pattern list." + e);
 		}
@@ -177,19 +176,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	@Override
 	public void start(final Future<Void> startedResult) throws Exception {
 
-		System.out.println(this);
 		syslogdEventBus = vertx.eventBus();
-
-		// syslogSinkConsumer = new SyslogSinkConsumer();
-		// SyslogSinkConsumer.eventCount = 0;
-		grokPatternsList = SyslogSinkConsumer.readPropertiesInOrderFrom(
-				ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
-		distPollerDao = new DistPollerDaoHibernate();
-		syslogdConfig = loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml");
-
-		concurrentRunning = new AtomicBoolean(true);
-
-		// to ensure codec register is at start and its only once
 
 		startedResult.complete();
 		consumeFromKafkaEventBus();
@@ -200,23 +187,16 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	 * Handles looping and consuming
 	 */
 	private void consumeFromKafkaEventBus() {
-		// while (concurrentRunning.get()) {
 		try {
-			// if (isMessageCodeRegistered) {
-			// syslogdEventBus.registerDefaultCodec(Log.class, new SyslogdMessageCodec());
-			// isMessageCodeRegistered = false;
-			// }
-			io.vertx.core.eventbus.MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = syslogdEventBus
+			io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = syslogdEventBus
 					.consumer(getSyslogdConsumerAddress());
 			consumerFromEventBus.handler(syslogDTOMessage -> {
-				handleMessage(syslogDTOMessage.body());
-				syslogdEventBus.send(EVENTD_CONSUMER_ADDRESS, getEventLog());
+				handleMessage(getSyslogMessageLogDTO(syslogDTOMessage.body()));
 			});
 
 		} catch (Exception e) {
 			LOG.error("Failed to consume from Kafka Event Bus : " + this + e.getMessage());
 		}
-		// }
 	}
 
 	public static void loadGrokParserList() throws IOException {
@@ -226,15 +206,16 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	}
 
 	@Override
-	public synchronized void handleMessage(SyslogMessageLogDTO syslogDTO) {
-		try (Context consumerCtx = consumerTimer.time()) {
-			try (MDCCloseable mdc = Logging.withPrefixCloseable(Syslogd.LOG4J_CATEGORY)) {
-				try (Context toEventCtx = toEventTimer.time()) {
-					m_eventLog = toEventLog(syslogDTO);
-					//
-				}
-			}
-		}
+	public void handleMessage(SyslogMessageLogDTO syslogDTO) {
+		// try (Context consumerCtx = consumerTimer.time()) {
+		// try (MDCCloseable mdc = Logging.withPrefixCloseable(Syslogd.LOG4J_CATEGORY))
+		// {
+		// try (Context toEventCtx = toEventTimer.time()) {
+		m_eventLog = toEventLog(syslogDTO);
+		syslogdEventBus.send(EVENTD_CONSUMER_ADDRESS, getEventLog());
+		// }
+		// }
+		// }
 	}
 
 	public Log toEventLog(SyslogMessageLogDTO messageLog) {
@@ -243,7 +224,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		elog.setEvents(events);
 		for (SyslogMessageDTO message : messageLog.getMessages()) {
 			try {
-				// System.out.println(this);
+
 				LOG.debug("Converting syslog message into event.");
 				ConvertToEvent re = new ConvertToEvent(messageLog.getSystemId(), messageLog.getLocation(),
 						messageLog.getSourceAddress(), messageLog.getSourcePort(),
@@ -252,8 +233,8 @@ public class SyslogSinkConsumer extends AbstractVerticle
 						StandardCharsets.US_ASCII.decode(message.getBytes()).toString(), syslogdConfig,
 						parse(message.getBytes()));
 				events.addEvent(re.getEvent());
-				eventCount++;
-				System.out.println("Events at consumer " + eventCount);
+				System.out.println("Event at consumer : " + SyslogTimeStamp.broadcastCount);
+				// System.out.println("Events at consumer " + );
 			} catch (final UnsupportedEncodingException e) {
 				LOG.info("Failure to convert package", e);
 			} catch (final MessageDiscardedException e) {
@@ -352,15 +333,24 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		return grokPatternsList;
 	}
 
-	private SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
+	private static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
 		InputStream stream = null;
 		try {
-			stream = ConfigurationTestUtils.getInputStreamForResource(this, configuration);
+			stream = ConfigurationTestUtils.getInputStreamForResource(new SyslogSinkConsumer(), configuration);
 			return new SyslogdConfigFactory(stream);
 		} finally {
 			if (stream != null) {
 				IOUtils.closeQuietly(stream);
 			}
+		}
+	}
+
+	public synchronized SyslogMessageLogDTO getSyslogMessageLogDTO(String message) {
+		try {
+			return getModule().unmarshal(message);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
 		}
 	}
 
