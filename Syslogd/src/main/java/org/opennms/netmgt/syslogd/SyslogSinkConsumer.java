@@ -191,7 +191,9 @@ public class SyslogSinkConsumer extends AbstractVerticle
 			io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = syslogdEventBus
 					.consumer(getSyslogdConsumerAddress());
 			consumerFromEventBus.handler(syslogDTOMessage -> {
-				handleMessage(getSyslogMessageLogDTO(syslogDTOMessage.body()));
+				eventCount++;
+				System.out.println("Recieved message from kafka " + eventCount);
+				// handleMessage(getSyslogMessageLogDTO(syslogDTOMessage.body()));
 			});
 
 		} catch (Exception e) {

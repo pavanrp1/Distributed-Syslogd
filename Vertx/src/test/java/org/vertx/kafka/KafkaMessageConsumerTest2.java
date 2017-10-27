@@ -104,6 +104,7 @@ public class KafkaMessageConsumerTest2 {
 	public void setUp() throws Exception {
 
 		System.setProperty("opennms.home", "src/test/resources");
+		System.setProperty("org.opennms.core.test.mockLogger.defaultLogLevel", "WARN");
 
 		KafkaProperties();
 
@@ -219,12 +220,13 @@ public class KafkaMessageConsumerTest2 {
 			vertx = Vertx.vertx();
 			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
 			vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
+			JsonObject config = new JsonObject().put("kafkaConfiguration", consumerConfig);
 			// Consumer<Vertx> runner = vertx -> {
-			vertx.deployVerticle(KafkaMessageConsumer.class.getName(), new DeploymentOptions().setInstances(200).setWorker(true));
+			vertx.deployVerticle(KafkaMessageConsumer.class.getName(), new DeploymentOptions().setInstances(100).setWorker(true).setConfig(config));
 			// vertx.deployVerticle(syslogSinkConsumer);
 			// vertx.deployVerticle(syslogSinkConsumer1);
 			// vertx.deployVerticle(syslogSinkConsumer2);
-			vertx.deployVerticle(SyslogSinkConsumer.class.getName(), new DeploymentOptions().setInstances(200).setWorker(true));
+			vertx.deployVerticle(SyslogSinkConsumer.class.getName(), new DeploymentOptions().setInstances(100).setWorker(true));
 			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
 			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
 			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
