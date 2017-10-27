@@ -104,6 +104,7 @@ public class KafkaMessageConsumerTest2 {
 	public void setUp() throws Exception {
 
 		System.setProperty("opennms.home", "src/test/resources");
+		System.setProperty("org.opennms.core.test.mockLogger.defaultLogLevel", "WARN");
 
 		KafkaProperties();
 
@@ -132,7 +133,7 @@ public class KafkaMessageConsumerTest2 {
 
 		// TODO
 		File test = new File(
-				"/Users/ms043660/OneDrive - Cerner Corporation/Office/ProjectWorkspace/DistributedSyslogdPoc/Distributed-Syslogd/Vertx/src/test/resources/etc/eventconf.xml");
+				"/Users/pk015603/OneDrive - Cerner Corporation/Workset_Distributed_OpenNMS/Distributed-Syslogd/Vertx/src/test/resources/etc/eventconf.xml");
 		eventConfDao.setConfigResource(new FileSystemResource(test));
 		eventConfDao.afterPropertiesSet();
 		eventExpander.setEventConfDao(eventConfDao);
