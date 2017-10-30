@@ -33,6 +33,7 @@ import static org.opennms.core.utils.InetAddressUtils.str;
 import java.io.UnsupportedEncodingException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
+import java.nio.charset.StandardCharsets;
 import java.text.ParseException;
 import java.util.Collections;
 import java.util.List;
@@ -53,6 +54,7 @@ import org.opennms.netmgt.config.syslogd.UeiMatch;
 import org.opennms.netmgt.dao.api.AbstractInterfaceToNodeCache;
 import org.opennms.netmgt.dao.api.InterfaceToNodeCache;
 import org.opennms.netmgt.model.events.EventBuilder;
+import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.xml.event.Event;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -60,6 +62,8 @@ import org.slf4j.LoggerFactory;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
+
+import io.vertx.core.AbstractVerticle;
 
 /**
  * This routine does the majority of Syslogd's work. Improvements are most
@@ -75,7 +79,7 @@ import com.google.common.cache.LoadingCache;
  * @author <a href="mailto:jeffg@opennms.org">Jeff Gehlbach</a>
  * @author <a href="mailto:weave@oculan.com">Brian Weaver </a>
  */
-public class ConvertToEvent {
+public class ConvertToEvent extends AbstractVerticle {
 
 	private static final Logger LOG = LoggerFactory.getLogger(ConvertToEvent.class);
 
@@ -85,7 +89,10 @@ public class ConvertToEvent {
 	 */
 	protected static final String HIDDEN_MESSAGE = "The message logged has been removed due to configuration of Syslogd; it may contain sensitive data.";
 
-	private final Event m_event;
+	private Event m_event;
+
+	public ConvertToEvent() {
+	}
 
 	private static final LoadingCache<String, Pattern> CACHED_PATTERNS = CacheBuilder.newBuilder()
 			.build(new CacheLoader<String, Pattern>() {
@@ -98,6 +105,37 @@ public class ConvertToEvent {
 					}
 				}
 			});
+
+	@Override
+	public void start() throws Exception {
+		io.vertx.core.eventbus.MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = vertx.eventBus()
+				.consumer("parms.message.consumer");
+		consumerFromEventBus.handler(syslogDTOMessage -> {
+
+			CallConvertToEvent(syslogDTOMessage.body());
+
+		});
+
+	}
+
+	private void CallConvertToEvent(SyslogMessageLogDTO syslog) {
+		try {
+			new ConvertToEvent(syslog.getSystemId(), syslog.getLocation(), syslog.getSourceAddress(),
+					syslog.getSourcePort(),
+					StandardCharsets.US_ASCII.decode(syslog.getMessages().get(0).getBytes()).toString(),
+					syslog.getSyslogdConfig(), syslog.getParamsMap());
+			System.out.println("Message recieved at Event :" + SyslogTimeStamp.broadcastCount);
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (MessageDiscardedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	/**
 	 * Constructs a new event encapsulation instance based upon the information
@@ -143,6 +181,7 @@ public class ConvertToEvent {
 			final String data, final SyslogdConfig config, Map<String, String> params)
 			throws UnsupportedEncodingException, MessageDiscardedException, ParseException {
 		SyslogTimeStamp.broadcastCount.incrementAndGet();
+		m_event = new Event();
 		if (config == null) {
 			throw new IllegalArgumentException("Config cannot be null");
 		}
@@ -200,14 +239,14 @@ public class ConvertToEvent {
 		// Updated the code from foundation-2017
 		if (hostAddress != null) {
 			// Set nodeId
-			InterfaceToNodeCache cache = AbstractInterfaceToNodeCache.getInstance();
-			if (cache != null) {
-				int nodeId = cache.getNodeId(location, hostAddress);
-				if (nodeId > 0) {
-					bldr.setNodeid(nodeId);
-				}
-			}
-
+			// InterfaceToNodeCache cache = AbstractInterfaceToNodeCache.getInstance();
+			// if (cache != null) {
+			// int nodeId = cache.getNodeId(location, hostAddress);
+			// if (nodeId > 0) {
+			// bldr.setNodeid(nodeId);
+			// }
+			// }
+			bldr.setNodeid(0);
 			bldr.setInterface(hostAddress);
 		}
 
@@ -299,7 +338,6 @@ public class ConvertToEvent {
 		if (message.getProcessId() != null) {
 			bldr.addParam("processid", message.getProcessId().toString());
 		}
-
 		m_event = bldr.getEvent();
 	}
 

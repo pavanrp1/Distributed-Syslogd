@@ -67,9 +67,9 @@ import io.vertx.ext.unit.junit.VertxUnitRunner;
  *
  */
 @RunWith(VertxUnitRunner.class)
-public class KafkaMessageConsumerTest3 {
+public class KafkaMessageConsumerTest6 {
 
-	private static final Logger logger = LoggerFactory.getLogger(KafkaMessageConsumerTest3.class);
+	private static final Logger logger = LoggerFactory.getLogger(KafkaMessageConsumerTest6.class);
 
 	@Rule
 	public Timeout timeoutRule = Timeout.seconds(Long.MAX_VALUE);

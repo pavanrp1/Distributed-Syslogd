@@ -10,6 +10,7 @@ import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
@@ -25,6 +26,7 @@ import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
 import io.vertx.core.Vertx;
 import io.vertx.core.eventbus.EventBus;
+import io.vertx.core.eventbus.EventBusOptions;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.logging.Logger;
@@ -57,6 +59,8 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 	private static MessageConsumer<SyslogConnection, SyslogMessageLogDTO> kafkaMessageConsumer;
 
 	private ExecutorService backgroundConsumer;
+
+	private AtomicInteger eventCount = new AtomicInteger();
 
 	private int pollIntervalMs = 10;
 
@@ -94,17 +98,16 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 			// creating event bus at the startup
 			kafkaEventBus = vertx.eventBus();
 
-
 			concurrentRunning = new AtomicBoolean(true);
-			
-//			verticleConfig = new JsonObject();
-//			verticleConfig.put(ConfigConstants.GROUP_ID, "syslogd");
-//			verticleConfig.put(ConfigConstants.ZK_CONNECT, "localhost:2181");
-//			verticleConfig.put(ConfigConstants.BOOTSTRAP_SERVERS, "localhost:9092");
-//			topics = new ArrayList<String>();
-//			topics.add("syslogd");
-//			verticleConfig.put("topics", new JsonArray(topics));
-			
+
+			// verticleConfig = new JsonObject();
+			// verticleConfig.put(ConfigConstants.GROUP_ID, "syslogd");
+			// verticleConfig.put(ConfigConstants.ZK_CONNECT, "localhost:2181");
+			// verticleConfig.put(ConfigConstants.BOOTSTRAP_SERVERS, "localhost:9092");
+			// topics = new ArrayList<String>();
+			// topics.add("syslogd");
+			// verticleConfig.put("topics", new JsonArray(topics));
+
 			verticleConfig = (JsonObject) config().getValue("kafkaConfiguration");
 
 			// creating kafka configuration and properties
@@ -186,6 +189,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 	 */
 	private void sendConsumedMessage(ConsumerRecord<String, String> record) {
 		try {
+			System.out.println("Records recieved at consumer " + eventCount.incrementAndGet());
 			kafkaEventBus.send(SYSLOGD_CONSUMER_ADDRESS, record.value());
 		} catch (Exception ex) {
 			String error = String.format("Error sending messages on event bus - record: %s", record.toString());

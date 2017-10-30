@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.InetAddress;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -33,6 +34,8 @@ import org.opennms.netmgt.eventd.EventUtilDaoImpl;
 import org.opennms.netmgt.eventd.processor.EventIpcBroadcastProcessor;
 import org.opennms.netmgt.eventd.processor.HibernateEventWriter;
 import org.opennms.netmgt.eventd.processor.HibernateSessionFactory;
+import org.opennms.netmgt.syslogd.ConvertToEvent;
+import org.opennms.netmgt.syslogd.ParamsLoader;
 import org.opennms.netmgt.syslogd.SyslogSinkConsumer;
 import org.opennms.netmgt.syslogd.SyslogSinkModule;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
@@ -41,6 +44,7 @@ import org.opennms.netmgt.syslogd.api.SyslogdMessageCodec;
 import org.opennms.netmgt.xml.event.Log;
 import org.springframework.core.io.FileSystemResource;
 import org.vertx.kafka.util.ConfigConstants;
+import org.vertx.kafka.util.HashMapCodec;
 import org.vertx.kafka.util.MockInterfaceCacheDao;
 import org.vertx.kafka.util.SyslogdDTOMessageCodec;
 
@@ -107,10 +111,10 @@ public class KafkaMessageConsumerTest {
 		System.setProperty("org.opennms.core.test.mockLogger.defaultLogLevel", "WARN");
 
 		KafkaProperties();
-
-		syslogSinkConsumer = SyslogSinkProperties();
-		syslogSinkConsumer1 = SyslogSinkProperties();
-		syslogSinkConsumer2 = SyslogSinkProperties();
+		SyslogSinkProperties();
+		// syslogSinkConsumer = SyslogSinkProperties();
+		// syslogSinkConsumer1 = SyslogSinkProperties();
+		// syslogSinkConsumer2 = SyslogSinkProperties();
 
 		kafkaMessageConsumer = KafkaMessageConsumerProperties();
 
@@ -165,8 +169,8 @@ public class KafkaMessageConsumerTest {
 
 		syslogSinkConsumer = new SyslogSinkConsumer();
 		SyslogSinkConsumer.eventCount = 0;
-		syslogSinkConsumer.setGrokPatternsList(SyslogSinkConsumer.readPropertiesInOrderFrom(
-				ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES)));
+		// syslogSinkConsumer.setGrokPatternsList(SyslogSinkConsumer.readPropertiesInOrderFrom(
+		// ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES)));
 		syslogSinkConsumer.setDistPollerDao(new MockDistPollerDao());
 		syslogSinkConsumer.setSyslogdConfig(loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml"));
 		sinkModule = syslogSinkConsumer.getModule();
@@ -220,36 +224,15 @@ public class KafkaMessageConsumerTest {
 			vertx = Vertx.vertx();
 			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
 			vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
+			vertx.eventBus().registerDefaultCodec(HashMap.class, new HashMapCodec());
 			JsonObject config = new JsonObject().put("kafkaConfiguration", consumerConfig);
-			// Consumer<Vertx> runner = vertx -> {
-			vertx.deployVerticle(KafkaMessageConsumer.class.getName(), new DeploymentOptions().setInstances(1).setWorker(true).setConfig(config));
-			// vertx.deployVerticle(syslogSinkConsumer);
-			// vertx.deployVerticle(syslogSinkConsumer1);
-			// vertx.deployVerticle(syslogSinkConsumer2);
-			vertx.deployVerticle(SyslogSinkConsumer.class.getName(), new DeploymentOptions().setInstances(1).setWorker(true));
-			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
-			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
-			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
-			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
-			// vertx.deployVerticle(SyslogSinkConsumer.class.getName());
-			// vertx.deployVerticle(eventImpl);
-			// vertx.deployVerticle(eventExpander);
-			// vertx.deployVerticle(hibernateWriter);
-			// vertx.deployVerticle(eventBroadCaster);
-			// };
-			// if (vxOptions.isClustered()) {
-			// Vertx.clusteredVertx(vxOptions, res -> {
-			// if (res.succeeded()) {
-			// vertx = res.result();
-			// runner.accept(vertx);
-			// } else {
-			// res.cause().printStackTrace();
-			// }
-			// });
-			// } else {
-			// vertx = Vertx.vertx(vxOptions);
-			// runner.accept(vertx);
-			// }
+			vertx.deployVerticle(KafkaMessageConsumer.class.getName(),
+					new DeploymentOptions().setInstances(1).setWorker(true).setConfig(config));
+			vertx.deployVerticle(SyslogSinkConsumer.class.getName(),
+					new DeploymentOptions().setInstances(1).setWorker(true));
+			vertx.deployVerticle(ParamsLoader.class.getName(), new DeploymentOptions().setInstances(1).setWorker(true));
+			vertx.deployVerticle(ConvertToEvent.class.getName(),
+					new DeploymentOptions().setInstances(1).setWorker(true));
 			asyncRunnable.awaitSuccess();
 		} catch (Exception e) {
 			e.printStackTrace();

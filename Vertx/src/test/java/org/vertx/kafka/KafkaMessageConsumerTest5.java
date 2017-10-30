@@ -51,8 +51,11 @@ import org.vertx.kafka.util.SyslogdDTOMessageCodec;
 import com.codahale.metrics.MetricRegistry;
 
 import io.vertx.core.DeploymentOptions;
+import io.vertx.core.Handler;
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
+import io.vertx.core.eventbus.EventBus;
+import io.vertx.core.eventbus.EventBusOptions;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.logging.Logger;
@@ -67,9 +70,9 @@ import io.vertx.ext.unit.junit.VertxUnitRunner;
  *
  */
 @RunWith(VertxUnitRunner.class)
-public class KafkaMessageConsumerTest3 {
+public class KafkaMessageConsumerTest5 {
 
-	private static final Logger logger = LoggerFactory.getLogger(KafkaMessageConsumerTest3.class);
+	private static final Logger logger = LoggerFactory.getLogger(KafkaMessageConsumerTest5.class);
 
 	@Rule
 	public Timeout timeoutRule = Timeout.seconds(Long.MAX_VALUE);
@@ -118,7 +121,7 @@ public class KafkaMessageConsumerTest3 {
 
 		kafkaMessageConsumer = KafkaMessageConsumerProperties();
 
-		EventImplProperties();
+		// EventImplProperties();
 
 		VertxOptionProperties();
 
@@ -221,18 +224,52 @@ public class KafkaMessageConsumerTest3 {
 
 			Async asyncRunnable = context.async();
 			vxOptions.setClustered(true);
-			vertx = Vertx.vertx();
-			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
-			vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
-			vertx.eventBus().registerDefaultCodec(HashMap.class, new HashMapCodec());
+
+			vxOptions.setEventBusOptions(
+					new EventBusOptions().setClusterPublicHost("SyslogdScaling").setClusterPublicPort(1234));
+
+			// vertx = Vertx.vertx();
+
 			JsonObject config = new JsonObject().put("kafkaConfiguration", consumerConfig);
-			vertx.deployVerticle(KafkaMessageConsumer.class.getName(),
-					new DeploymentOptions().setInstances(50).setWorker(true).setConfig(config));
-			vertx.deployVerticle(SyslogSinkConsumer.class.getName(),
-					new DeploymentOptions().setInstances(1000).setWorker(true));
-			vertx.deployVerticle(ParamsLoader.class.getName(), new DeploymentOptions().setInstances(1000).setWorker(true));
-			vertx.deployVerticle(ConvertToEvent.class.getName(),
-					new DeploymentOptions().setInstances(1000).setWorker(true));
+			Consumer<Vertx> runner = vertx -> {
+				System.out.println(vertx.eventBus());
+				vertx.deployVerticle(KafkaMessageConsumer.class.getName(),
+						new DeploymentOptions().setInstances(1).setWorker(true).setConfig(config));
+
+				io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = vertx.eventBus()
+						.consumer("malatesh");
+				consumerFromEventBus.handler(syslogDTOMessage -> {
+					System.out.println(syslogDTOMessage);
+				});
+
+				// vertx.deployVerticle(SyslogSinkConsumer.class.getName(),
+				// new DeploymentOptions().setInstances(1000).setWorker(true));
+				// vertx.deployVerticle(ParamsLoader.class.getName(),
+				// new DeploymentOptions().setInstances(1000).setWorker(true));
+				// vertx.deployVerticle(ConvertToEvent.class.getName(),
+				// new DeploymentOptions().setInstances(1000).setWorker(true));
+			};
+			if (vxOptions.isClustered()) {
+				Vertx.clusteredVertx(vxOptions, res -> {
+					if (res.succeeded()) {
+						vertx = res.result();
+						vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
+						vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
+						vertx.eventBus().registerDefaultCodec(HashMap.class, new HashMapCodec());
+						EventBus eventBus = vertx.eventBus();
+						runner.accept(vertx);
+						System.out.println("We now have a clustered event bus: " + eventBus);
+					} else {
+						System.out.println("Failed: " + res.cause());
+					}
+				});
+			} else {
+				vertx = Vertx.vertx(vxOptions);
+				vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
+				vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
+				vertx.eventBus().registerDefaultCodec(HashMap.class, new HashMapCodec());
+				runner.accept(vertx);
+			}
 			asyncRunnable.awaitSuccess();
 		} catch (Exception e) {
 			e.printStackTrace();

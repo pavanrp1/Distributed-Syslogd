@@ -161,17 +161,18 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	/**
 	 * Static block to load grokPatterns during the start of SyslogSink class call.
 	 */
-	static {
-		try {
-			grokPatternsList = SyslogSinkConsumer.readPropertiesInOrderFrom(
-					ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
-			distPollerDao = new DistPollerDaoHibernate();
-			syslogdConfig = loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml");
-		} catch (IOException e) {
-			LOG.debug("Failed to load Grok pattern list." + e);
-		}
-
-	}
+	// static {
+	// try {
+	// grokPatternsList = SyslogSinkConsumer.readPropertiesInOrderFrom(
+	// ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
+	// distPollerDao = new DistPollerDaoHibernate();
+	// syslogdConfig =
+	// loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml");
+	// } catch (IOException e) {
+	// LOG.debug("Failed to load Grok pattern list." + e);
+	// }
+	//
+	// }
 
 	@Override
 	public void start(final Future<Void> startedResult) throws Exception {
@@ -191,9 +192,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 			io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = syslogdEventBus
 					.consumer(getSyslogdConsumerAddress());
 			consumerFromEventBus.handler(syslogDTOMessage -> {
-				eventCount++;
-				System.out.println("Recieved message from kafka " + eventCount);
-				// handleMessage(getSyslogMessageLogDTO(syslogDTOMessage.body()));
+				handleMessage(getSyslogMessageLogDTO(syslogDTOMessage.body()));
 			});
 
 		} catch (Exception e) {
@@ -201,51 +200,9 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		}
 	}
 
-	public static void loadGrokParserList() throws IOException {
-		grokPatternsList = new ArrayList<String>();
-		File syslogConfigFile = ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES);
-		readPropertiesInOrderFrom(syslogConfigFile);
-	}
-
 	@Override
 	public void handleMessage(SyslogMessageLogDTO syslogDTO) {
-		// try (Context consumerCtx = consumerTimer.time()) {
-		// try (MDCCloseable mdc = Logging.withPrefixCloseable(Syslogd.LOG4J_CATEGORY))
-		// {
-		// try (Context toEventCtx = toEventTimer.time()) {
-		m_eventLog = toEventLog(syslogDTO);
-		syslogdEventBus.send(EVENTD_CONSUMER_ADDRESS, getEventLog());
-		// }
-		// }
-		// }
-	}
-
-	public Log toEventLog(SyslogMessageLogDTO messageLog) {
-		final Log elog = new Log();
-		final Events events = new Events();
-		elog.setEvents(events);
-		for (SyslogMessageDTO message : messageLog.getMessages()) {
-			try {
-
-				LOG.debug("Converting syslog message into event.");
-				ConvertToEvent re = new ConvertToEvent(messageLog.getSystemId(), messageLog.getLocation(),
-						messageLog.getSourceAddress(), messageLog.getSourcePort(),
-						// Decode the packet content as ASCII
-						// TODO: Support more character encodings?
-						StandardCharsets.US_ASCII.decode(message.getBytes()).toString(), syslogdConfig,
-						parse(message.getBytes()));
-				events.addEvent(re.getEvent());
-				System.out.println("Event at consumer : " + SyslogTimeStamp.broadcastCount);
-				// System.out.println("Events at consumer " + );
-			} catch (final UnsupportedEncodingException e) {
-				LOG.info("Failure to convert package", e);
-			} catch (final MessageDiscardedException e) {
-				LOG.info("Message discarded, returning without enqueueing event.", e);
-			} catch (final Throwable e) {
-				LOG.error("Unexpected exception while processing SyslogConnection", e);
-			}
-		}
-		return elog;
+		syslogdEventBus.send(EVENTD_CONSUMER_ADDRESS, syslogDTO);
 	}
 
 	@Override
@@ -267,72 +224,6 @@ public class SyslogSinkConsumer extends AbstractVerticle
 
 	public void setDistPollerDao(DistPollerDao distPollerDao) {
 		this.distPollerDao = distPollerDao;
-	}
-
-	/**
-	 * This method will parse the message against the grok patterns
-	 * 
-	 * @param messageBytes
-	 * 
-	 * @return Parameter list
-	 */
-	public static Map<String, String> parse(ByteBuffer messageBytes) {
-		String grokPattern;
-		Map<String, String> paramsMap = new HashMap<String, String>();
-		if (null == getGrokPatternsList() || getGrokPatternsList().isEmpty()) {
-			LOG.error("No Grok Pattern has been defined");
-			return null;
-		}
-		for (int i = 0; i < getGrokPatternsList().size(); i++) {
-			grokPattern = getGrokPatternsList().get(i);
-			BufferParserFactory grokFactory = GrokParserFactory.parseGrok(grokPattern);
-			ByteBuffer incoming = ByteBuffer.wrap(messageBytes.array());
-			try {
-				paramsMap = loadParamsMap(
-						grokFactory.parse(incoming.asReadOnlyBuffer(), m_executor).get().getParmCollection());
-				return paramsMap;
-			} catch (InterruptedException | ExecutionException e) {
-				// LOG.debug("Parse Exception occured !!!Grok Pattern "+grokPattern+" didn't
-				// match");
-				continue;
-			}
-		}
-		return null;
-
-	}
-
-	public static Map<String, String> loadParamsMap(List<Parm> paramsList) {
-		return paramsList.stream().collect(Collectors.toMap(Parm::getParmName, param -> param.getValue().getContent(),
-				(paramKey1, paramKey2) -> paramKey2));
-	}
-
-	public static List<String> readPropertiesInOrderFrom(File syslogdConfigdFile) throws IOException {
-		InputStream propertiesFileInputStream = new FileInputStream(syslogdConfigdFile);
-		Set<String> grookSet = new LinkedHashSet<String>();
-		final Properties properties = new Properties();
-		final BufferedReader reader = new BufferedReader(new InputStreamReader(propertiesFileInputStream));
-
-		String bufferedReader = reader.readLine();
-
-		while (bufferedReader != null) {
-			final ByteArrayInputStream lineStream = new ByteArrayInputStream(bufferedReader.getBytes("ISO-8859-1"));
-			properties.load(lineStream);
-
-			final Enumeration<?> propertyNames = properties.<String>propertyNames();
-
-			if (propertyNames.hasMoreElements()) {
-
-				final String paramKey = (String) propertyNames.nextElement();
-				final String paramsValue = properties.getProperty(paramKey);
-
-				grookSet.add(paramsValue);
-				properties.clear();
-			}
-			bufferedReader = reader.readLine();
-		}
-		grokPatternsList = new ArrayList<String>(grookSet);
-		reader.close();
-		return grokPatternsList;
 	}
 
 	private static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
