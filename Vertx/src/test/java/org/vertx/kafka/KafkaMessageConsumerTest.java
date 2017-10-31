@@ -44,7 +44,6 @@ import org.opennms.netmgt.syslogd.api.SyslogdMessageCodec;
 import org.opennms.netmgt.xml.event.Log;
 import org.springframework.core.io.FileSystemResource;
 import org.vertx.kafka.util.ConfigConstants;
-import org.vertx.kafka.util.HashMapCodec;
 import org.vertx.kafka.util.MockInterfaceCacheDao;
 import org.vertx.kafka.util.SyslogdDTOMessageCodec;
 
