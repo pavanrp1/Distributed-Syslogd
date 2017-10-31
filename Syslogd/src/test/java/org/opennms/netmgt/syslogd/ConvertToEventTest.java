@@ -28,16 +28,8 @@ package org.opennms.netmgt.syslogd;
  *     http://www.opennms.com/
  *******************************************************************************/
 
-import static org.junit.Assert.fail;
-
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.DatagramPacket;
-import java.net.InetAddress;
 import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
-import java.text.ParseException;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -45,18 +37,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import org.junit.Test;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.netmgt.config.SyslogdConfig;
-import org.opennms.netmgt.config.SyslogdConfigFactory;
-import org.opennms.netmgt.dao.api.DistPollerDao;
-import org.opennms.netmgt.dao.api.MonitoringLocationDao;
-import org.opennms.netmgt.dao.hibernate.InterfaceToNodeCacheDaoImpl;
-import org.opennms.netmgt.dao.mock.MockInterfaceToNodeCache;
 import org.opennms.netmgt.syslogd.BufferParser.BufferParserFactory;
-import org.opennms.netmgt.syslogd.ConvertToEvent;
 import org.opennms.netmgt.syslogd.GrokParserFactory;
-import org.opennms.netmgt.syslogd.MessageDiscardedException;
-import org.opennms.netmgt.syslogd.SyslogSinkConsumer;
 import org.opennms.netmgt.xml.event.Event;
 import org.opennms.netmgt.xml.event.Parm;
 import org.slf4j.Logger;

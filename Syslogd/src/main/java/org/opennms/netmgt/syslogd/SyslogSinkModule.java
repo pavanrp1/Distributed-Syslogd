@@ -87,8 +87,8 @@ public class SyslogSinkModule extends AbstractXmlSinkModule<SyslogConnection, Sy
                 if (oldLog == null) {
                     oldLog = new SyslogMessageLogDTO(systemLocation, systemId, connection.getSource());
                 }
-                SyslogMessageDTO messageDTO = new SyslogMessageDTO(connection.getBuffer());
-                oldLog.getMessages().add(messageDTO);
+              //  SyslogMessageDTO messageDTO = new SyslogMessageDTO(connection.getBuffer());
+             //   oldLog.getMessages().add(messageDTO);
                 return oldLog;
             }
         };
@@ -126,8 +126,8 @@ public class SyslogSinkModule extends AbstractXmlSinkModule<SyslogConnection, Sy
         final SyslogMessageLogDTO messageLog = new SyslogMessageLogDTO(systemLocation, systemId,
                 connections[0].getSource());
         for (SyslogConnection connection : connections) {
-            final SyslogMessageDTO messageDTO = new SyslogMessageDTO(connection.getBuffer());
-            messageLog.getMessages().add(messageDTO);
+           // final SyslogMessageDTO messageDTO = new SyslogMessageDTO(connection.getBuffer());
+         //   messageLog.getMessages().add(messageDTO);
         }
         return messageLog;
     }

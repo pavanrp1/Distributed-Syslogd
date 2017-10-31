@@ -54,6 +54,7 @@ import org.opennms.netmgt.config.syslogd.UeiMatch;
 import org.opennms.netmgt.dao.api.AbstractInterfaceToNodeCache;
 import org.opennms.netmgt.dao.api.InterfaceToNodeCache;
 import org.opennms.netmgt.model.events.EventBuilder;
+import org.opennms.netmgt.syslogd.api.Runner;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.xml.event.Event;
 import org.slf4j.Logger;
@@ -105,6 +106,10 @@ public class ConvertToEvent extends AbstractVerticle {
 					}
 				}
 			});
+
+	public static void main(String[] args) {
+		Runner.runClusteredExample(ConvertToEvent.class);
+	}
 
 	@Override
 	public void start() throws Exception {

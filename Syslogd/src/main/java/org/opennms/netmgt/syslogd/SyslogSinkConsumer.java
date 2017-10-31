@@ -28,65 +28,35 @@
 
 package org.opennms.netmgt.syslogd;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
-import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
 
 import org.apache.commons.io.IOUtils;
 import org.opennms.core.ipc.sink.api.MessageConsumer;
 import org.opennms.core.ipc.sink.api.MessageConsumerManager;
-import org.opennms.core.logging.Logging;
-import org.opennms.core.logging.Logging.MDCCloseable;
-import org.opennms.core.test.ConfigurationTestUtils;
-import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.SyslogdConfig;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.dao.api.DistPollerDao;
-import org.opennms.netmgt.dao.hibernate.DistPollerDaoHibernate;
 import org.opennms.netmgt.dao.mock.MockDistPollerDao;
 import org.opennms.netmgt.events.api.EventForwarder;
-import org.opennms.netmgt.syslogd.BufferParser.BufferParserFactory;
+import org.opennms.netmgt.syslogd.api.Runner;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
-import org.opennms.netmgt.syslogd.api.SyslogMessageDTO;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.syslogd.api.SyslogdMessageCodec;
-import org.opennms.netmgt.xml.event.Events;
 import org.opennms.netmgt.xml.event.Log;
-import org.opennms.netmgt.xml.event.Parm;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
-import com.codahale.metrics.Timer.Context;
 
 import io.vertx.core.AbstractVerticle;
-import io.vertx.core.Future;
 import io.vertx.core.eventbus.EventBus;
+import io.vertx.core.logging.Logger;
+import io.vertx.core.logging.LoggerFactory;
 
 public class SyslogSinkConsumer extends AbstractVerticle
 		implements MessageConsumer<SyslogConnection, SyslogMessageLogDTO>, InitializingBean {
@@ -111,6 +81,8 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	private final Timer consumerTimer;
 	private final Timer toEventTimer;
 
+	private ExecutorService backgroundConsumer;
+
 	private Log m_eventLog;
 
 	private EventBus syslogdEventBus;
@@ -121,12 +93,6 @@ public class SyslogSinkConsumer extends AbstractVerticle
 
 	private final static ExecutorService m_executor = Executors.newSingleThreadExecutor();
 
-	private static List<String> grokPatternsList;
-
-	public static List<String> getGrokPatternsList() {
-		return grokPatternsList;
-	}
-
 	public static String getSyslogdConsumerAddress() {
 		return SYSLOGD_CONSUMER_ADDRESS;
 	}
@@ -135,8 +101,10 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		return EVENTD_CONSUMER_ADDRESS;
 	}
 
-	public void setGrokPatternsList(List<String> grokPatternsListValue) {
-		grokPatternsList = grokPatternsListValue;
+	public static void main(String[] args) throws IOException {
+		distPollerDao = new MockDistPollerDao();
+		syslogdConfig = loadSyslogConfiguration("/syslogd-loadtest-configuration.xml");
+		Runner.runClusteredExample(SyslogSinkConsumer.class);
 	}
 
 	public SyslogSinkConsumer() {
@@ -175,12 +143,12 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	// }
 
 	@Override
-	public void start(final Future<Void> startedResult) throws Exception {
-
+	public void start() throws Exception {
 		syslogdEventBus = vertx.eventBus();
-
-		startedResult.complete();
-		consumeFromKafkaEventBus();
+//		backgroundConsumer = Executors.newSingleThreadExecutor();
+//		backgroundConsumer.submit(() -> {
+			consumeFromKafkaEventBus();
+//		});
 
 	}
 
@@ -202,6 +170,8 @@ public class SyslogSinkConsumer extends AbstractVerticle
 
 	@Override
 	public void handleMessage(SyslogMessageLogDTO syslogDTO) {
+		syslogDTO.setSyslogdConfig(syslogdConfig);
+		System.out.println(syslogDTO);
 		syslogdEventBus.send(EVENTD_CONSUMER_ADDRESS, syslogDTO);
 	}
 
@@ -218,32 +188,24 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		this.messageConsumerManager = messageConsumerManager;
 	}
 
-	public void setSyslogdConfig(SyslogdConfig syslogdConfig) {
-		this.syslogdConfig = syslogdConfig;
-	}
-
-	public void setDistPollerDao(DistPollerDao distPollerDao) {
-		this.distPollerDao = distPollerDao;
-	}
-
-	private static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
-		InputStream stream = null;
-		try {
-			stream = ConfigurationTestUtils.getInputStreamForResource(new SyslogSinkConsumer(), configuration);
-			return new SyslogdConfigFactory(stream);
-		} finally {
-			if (stream != null) {
-				IOUtils.closeQuietly(stream);
-			}
-		}
-	}
-
 	public synchronized SyslogMessageLogDTO getSyslogMessageLogDTO(String message) {
 		try {
 			return getModule().unmarshal(message);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
+		}
+	}
+
+	private static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
+		InputStream stream = null;
+		try {
+			stream = new SyslogSinkConsumer().getClass().getResourceAsStream(configuration);
+			return new SyslogdConfigFactory(stream);
+		} finally {
+			if (stream != null) {
+				IOUtils.closeQuietly(stream);
+			}
 		}
 	}
 

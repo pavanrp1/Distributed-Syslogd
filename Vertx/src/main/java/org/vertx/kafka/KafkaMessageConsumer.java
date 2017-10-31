@@ -15,19 +15,12 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
-import org.opennms.core.ipc.sink.api.MessageConsumer;
-import org.opennms.netmgt.syslogd.api.SyslogConnection;
-import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
-import org.opennms.netmgt.xml.event.Log;
-import org.vertx.cluster.Runner;
+import org.opennms.netmgt.syslogd.api.Runner;
 import org.vertx.kafka.util.ConfigConstants;
-import org.vertx.kafka.util.SyslogdDTOMessageCodec;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
-import io.vertx.core.Vertx;
 import io.vertx.core.eventbus.EventBus;
-import io.vertx.core.eventbus.EventBusOptions;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.logging.Logger;
@@ -53,11 +46,9 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 
 	private KafkaConsumer kafkaConsumer;
 
-	private List<String> topics;
+	private static List<String> topics;
 
-	private JsonObject verticleConfig;
-
-	private static MessageConsumer<SyslogConnection, SyslogMessageLogDTO> kafkaMessageConsumer;
+	private static JsonObject verticleConfig;
 
 	private ExecutorService backgroundConsumer;
 
@@ -65,23 +56,11 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 
 	private int pollIntervalMs = 10;
 
-	private boolean isMessageCodeRegistered = true;
-
-	private int count = 1;
-
 	public static String getSyslogdConsumerAddress() {
 		return SYSLOGD_CONSUMER_ADDRESS;
 	}
 
 	public KafkaMessageConsumer() {
-	}
-
-	public MessageConsumer<SyslogConnection, SyslogMessageLogDTO> getMessageConsumer() {
-		return kafkaMessageConsumer;
-	}
-
-	public void setMessageConsumer(MessageConsumer<SyslogConnection, SyslogMessageLogDTO> messageConsumer) {
-		kafkaMessageConsumer = messageConsumer;
 	}
 
 	public EventBus getBus() {
@@ -92,29 +71,27 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 		this.kafkaEventBus = bus;
 	}
 
-	private void KafkaMessageConsumer() {
+	public static void main(String[] args) {
+		System.setProperty("opennms.home", "src/test/resources");
+		System.setProperty("org.opennms.core.test.mockLogger.defaultLogLevel", "WARN");
+		verticleConfig = new JsonObject();
+		verticleConfig.put(ConfigConstants.GROUP_ID, "syslogd");
+		verticleConfig.put(ConfigConstants.ZK_CONNECT, "localhost:2181");
+		verticleConfig.put(ConfigConstants.BOOTSTRAP_SERVERS, "localhost:9092");
+		topics = new ArrayList<String>();
+		topics.add("syslogd");
+		verticleConfig.put("topics", new JsonArray(topics));
 		Runner.runClusteredExample(KafkaMessageConsumer.class);
-
 	}
 
 	@Override
-	public void start(final Future<Void> startedResult) {
+	public void start() {
 		try {
 
 			// creating event bus at the startup
 			kafkaEventBus = vertx.eventBus();
 
 			concurrentRunning = new AtomicBoolean(true);
-
-			// verticleConfig = new JsonObject();
-			// verticleConfig.put(ConfigConstants.GROUP_ID, "syslogd");
-			// verticleConfig.put(ConfigConstants.ZK_CONNECT, "localhost:2181");
-			// verticleConfig.put(ConfigConstants.BOOTSTRAP_SERVERS, "localhost:9092");
-			// topics = new ArrayList<String>();
-			// topics.add("syslogd");
-			// verticleConfig.put("topics", new JsonArray(topics));
-
-			verticleConfig = (JsonObject) config().getValue("kafkaConfiguration");
 
 			// creating kafka configuration and properties
 			Properties kafkaConfig = populateKafkaConfig(verticleConfig);
@@ -138,7 +115,6 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 					logger.info("Subscribing to topic ");
 				}
 
-				startedResult.complete();
 				consumeFromKafka();
 			});
 
@@ -147,7 +123,6 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 			logger.error(error, ex);
 			kafkaEventBus.publish(ConfigConstants.CONSUMER_ERROR_TOPIC,
 					getErrorString("Failed to startup", ex.getMessage()));
-			startedResult.fail(ex);
 		}
 	}
 
@@ -195,7 +170,6 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 	 */
 	private void sendConsumedMessage(ConsumerRecord<String, String> record) {
 		try {
-			System.out.println("Records recieved at consumer " + eventCount.incrementAndGet());
 			kafkaEventBus.send(SYSLOGD_CONSUMER_ADDRESS, record.value());
 		} catch (Exception ex) {
 			String error = String.format("Error sending messages on event bus - record: %s", record.toString());

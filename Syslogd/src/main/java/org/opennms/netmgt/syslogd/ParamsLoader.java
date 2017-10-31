@@ -22,18 +22,23 @@ import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
 import org.apache.commons.io.IOUtils;
-import org.opennms.core.test.ConfigurationTestUtils;
 import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.dao.hibernate.DistPollerDaoHibernate;
 import org.opennms.netmgt.syslogd.BufferParser.BufferParserFactory;
+import org.opennms.netmgt.syslogd.api.Runner;
+import org.opennms.netmgt.syslogd.api.SyslogMessageDTO;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.xml.event.Parm;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
+import io.vertx.core.eventbus.EventBus;
+import io.vertx.core.eventbus.MessageConsumer;
 
 public class ParamsLoader extends AbstractVerticle {
+
+	private ExecutorService backgroundConsumer;
 
 	private static List<String> grokPatternsList;
 	private static SyslogdConfigFactory syslogdConfig;
@@ -44,35 +49,41 @@ public class ParamsLoader extends AbstractVerticle {
 
 	private final static ExecutorService m_executor = Executors.newSingleThreadExecutor();
 
-	/**
-	 * Static block to load grokPatterns during the start of SyslogSink class call.
-	 */
-	static {
+	public static void main(String[] args) {
+		System.setProperty("opennms.home", "src/test/resources");
 		try {
 			grokPatternsList = readPropertiesInOrderFrom(
 					ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
-			syslogdConfig = loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml");
 		} catch (IOException e) {
+			e.printStackTrace();
 		}
-
+		Runner.runClusteredExample(ParamsLoader.class);
 	}
 
+	static {
+
+	}
 	private Map<String, String> paramsMap;
+
+	private EventBus syslogdEventbus;
 
 	public ParamsLoader() {
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
-	public void start(Future<Void> startFuture) throws Exception {
+	public void start() throws Exception {
+		syslogdEventbus = vertx.eventBus();
 
-		io.vertx.core.eventbus.MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = vertx.eventBus()
-				.consumer("eventd.message.consumer");
+		System.out.println("Recieved " + SyslogTimeStamp.broadcastCount.incrementAndGet());
+		MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = syslogdEventbus.consumer("eventd.message.consumer");
 		consumerFromEventBus.handler(syslogDTOMessage -> {
-			parse(syslogDTOMessage.body().getMessages().get(0).getBytes());
-			syslogDTOMessage.body().setParamsMap(paramsMap);
-			syslogDTOMessage.body().setSyslogdConfig(syslogdConfig);
-			vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
+			SyslogMessageDTO syslog = syslogDTOMessage.body().getMessages().get(0);
+			System.out.println(syslog.getBytes());
+			// parse(syslog.getBytes());
+			// syslogDTOMessage.body().setParamsMap(paramsMap);
+			// syslogDTOMessage.body().setSyslogdConfig(syslogdConfig);
+			// vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
 		});
 	}
 
@@ -85,6 +96,7 @@ public class ParamsLoader extends AbstractVerticle {
 	 * @return Parameter list
 	 */
 	public Map<String, String> parse(ByteBuffer messageBytes) {
+		System.out.println(messageBytes);
 		String grokPattern;
 		paramsMap = new HashMap<String, String>();
 		if (null == getGrokPatternsList() || getGrokPatternsList().isEmpty()) {
@@ -142,18 +154,6 @@ public class ParamsLoader extends AbstractVerticle {
 		grokPatternsList = new ArrayList<String>(grookSet);
 		reader.close();
 		return grokPatternsList;
-	}
-
-	private static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
-		InputStream stream = null;
-		try {
-			stream = ConfigurationTestUtils.getInputStreamForResource(new SyslogSinkConsumer(), configuration);
-			return new SyslogdConfigFactory(stream);
-		} finally {
-			if (stream != null) {
-				IOUtils.closeQuietly(stream);
-			}
-		}
 	}
 
 	public static void loadGrokParserList() throws IOException {

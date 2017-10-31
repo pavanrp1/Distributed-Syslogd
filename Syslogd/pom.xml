@@ -71,15 +71,17 @@
 			<groupId>org.distributed.syslogd</groupId>
 			<artifactId>Eventd</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.opennms.core.test-api</groupId>
+					<artifactId>org.opennms.core.test-api.lib</artifactId>
+				</exclusion>
+			</exclusions>
 			<!-- <scope>test</scope> -->
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.opennms.features.events</groupId>
-			<artifactId>org.opennms.features.events.api</artifactId>
-			<version>20.1.0-SNAPSHOT</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/Jar/org.opennms.features.events.api-20.1.0-SNAPSHOT.jar</systemPath>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.opennms.features.events</groupId> <artifactId>org.opennms.features.events.api</artifactId> 
+			<version>20.1.0-SNAPSHOT</version> <scope>system</scope> <systemPath>${basedir}/Jar/org.opennms.features.events.api-20.1.0-SNAPSHOT.jar</systemPath> 
+			</dependency> -->
 		<dependency>
 			<groupId>org.opennms</groupId>
 			<artifactId>opennms-dao-api</artifactId>
@@ -146,13 +148,9 @@
 			<scope>system</scope>
 			<systemPath>${basedir}/Jar/org.opennms.core.test-api.services-20.1.0-SNAPSHOT.jar</systemPath>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.opennms.features.events</groupId>
-			<artifactId>org.opennms.features.events.daemon</artifactId>
-			<version>20.1.0-SNAPSHOT</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/Jar/org.opennms.features.events.daemon-20.1.0-SNAPSHOT.jar</systemPath>
-		</dependency> -->
+		<!-- <dependency> <groupId>org.opennms.features.events</groupId> <artifactId>org.opennms.features.events.daemon</artifactId> 
+			<version>20.1.0-SNAPSHOT</version> <scope>system</scope> <systemPath>${basedir}/Jar/org.opennms.features.events.daemon-20.1.0-SNAPSHOT.jar</systemPath> 
+			</dependency> -->
 		<dependency>
 			<groupId>org.opennms.features.minion</groupId>
 			<artifactId>core-api</artifactId>
@@ -280,13 +278,12 @@
 			<scope>system</scope>
 			<systemPath>${basedir}/Jar/org.opennms.core.daemon-20.1.0-SNAPSHOT.jar</systemPath>
 		</dependency>
-		<dependency>
-			<groupId>org.opennms.core.test-api</groupId>
-			<artifactId>org.opennms.core.test-api.lib</artifactId>
-			<version>20.1.0-SNAPSHOT</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/Jar/org.opennms.core.test-api.lib-20.1.0-SNAPSHOT.jar</systemPath>
-		</dependency>
+		<!-- <dependency> <groupId>org.opennms.core.test-api</groupId> <artifactId>org.opennms.core.test-api.lib</artifactId> 
+			<version>20.1.0-SNAPSHOT</version> <exclusions> <exclusion> <groupId>log4j</groupId> 
+			<artifactId>log4j</artifactId> </exclusion> <exclusion> <groupId>org.slf4j</groupId> 
+			<artifactId>slf4j-log4j12</artifactId> </exclusion> </exclusions> <scope>system</scope> 
+			<systemPath>${basedir}/Jar/org.opennms.core.test-api.lib-20.1.0-SNAPSHOT.jar</systemPath> 
+			</dependency> -->
 		<dependency>
 			<groupId>org.opennms.core</groupId>
 			<artifactId>org.opennms.core.api</artifactId>
@@ -473,5 +470,28 @@
 			<artifactId>ozark</artifactId>
 			<version>1.0.0-m02</version>
 		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-hazelcast</artifactId>
+			<version>3.4.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>4.0.4.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+
 	</dependencies>
 </project>

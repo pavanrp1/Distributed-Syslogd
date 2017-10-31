@@ -16,7 +16,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.opennms.core.ipc.sink.api.MessageConsumer;
 import org.opennms.core.ipc.sink.api.SinkModule;
-import org.opennms.core.test.ConfigurationTestUtils;
 import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
@@ -43,7 +42,6 @@ import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.syslogd.api.SyslogdMessageCodec;
 import org.opennms.netmgt.xml.event.Log;
 import org.springframework.core.io.FileSystemResource;
-import org.vertx.cluster.Runner;
 import org.vertx.cluster.Sender;
 import org.vertx.kafka.util.ConfigConstants;
 import org.vertx.kafka.util.MockInterfaceCacheDao;
@@ -107,7 +105,7 @@ public class KafkaMessageConsumerMainTest {
 
 	@Before
 	public void setUp() throws Exception {
-		
+
 		System.setProperty("opennms.home", "src/test/resources");
 		System.setProperty("org.opennms.core.test.mockLogger.defaultLogLevel", "WARN");
 
@@ -172,8 +170,8 @@ public class KafkaMessageConsumerMainTest {
 		SyslogSinkConsumer.eventCount = 0;
 		// syslogSinkConsumer.setGrokPatternsList(SyslogSinkConsumer.readPropertiesInOrderFrom(
 		// ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES)));
-		syslogSinkConsumer.setDistPollerDao(new MockDistPollerDao());
-		syslogSinkConsumer.setSyslogdConfig(loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml"));
+//		syslogSinkConsumer.setDistPollerDao(new MockDistPollerDao());
+//		syslogSinkConsumer.setSyslogdConfig(loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml"));
 		sinkModule = syslogSinkConsumer.getModule();
 		return syslogSinkConsumer;
 
@@ -194,7 +192,7 @@ public class KafkaMessageConsumerMainTest {
 		};
 		kafkaMessageConsumer = new KafkaMessageConsumer();
 		kafkaMessageConsumer.setVerticleConfig(consumerConfig);
-		kafkaMessageConsumer.setMessageConsumer(messageConsumer);
+		// kafkaMessageConsumer.setMessageConsumer(messageConsumer);
 		return kafkaMessageConsumer;
 
 	}
@@ -226,13 +224,14 @@ public class KafkaMessageConsumerMainTest {
 			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
 			vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
 			JsonObject config = new JsonObject().put("kafkaConfiguration", consumerConfig);
-//			vertx.deployVerticle(KafkaMessageConsumer.class.getName(),
-//					new DeploymentOptions().setInstances(1).setWorker(true).setConfig(config));
-//			vertx.deployVerticle(SyslogSinkConsumer.class.getName(),
-//					new DeploymentOptions().setInstances(1).setWorker(true));
-//			vertx.deployVerticle(ParamsLoader.class.getName(), new DeploymentOptions().setInstances(1).setWorker(true));
-//			vertx.deployVerticle(ConvertToEvent.class.getName(),
-//					new DeploymentOptions().setInstances(1).setWorker(true));
+			// vertx.deployVerticle(KafkaMessageConsumer.class.getName(),
+			// new DeploymentOptions().setInstances(1).setWorker(true).setConfig(config));
+			// vertx.deployVerticle(SyslogSinkConsumer.class.getName(),
+			// new DeploymentOptions().setInstances(1).setWorker(true));
+			// vertx.deployVerticle(ParamsLoader.class.getName(), new
+			// DeploymentOptions().setInstances(1).setWorker(true));
+			// vertx.deployVerticle(ConvertToEvent.class.getName(),
+			// new DeploymentOptions().setInstances(1).setWorker(true));
 			asyncRunnable.awaitSuccess();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -243,7 +242,7 @@ public class KafkaMessageConsumerMainTest {
 	private SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
 		InputStream stream = null;
 		try {
-			stream = ConfigurationTestUtils.getInputStreamForResource(this, configuration);
+		//	stream = ConfigurationTestUtils.getInputStreamForResource(this, configuration);
 			return new SyslogdConfigFactory(stream);
 		} finally {
 			if (stream != null) {

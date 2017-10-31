@@ -1,4 +1,4 @@
-package org.vertx.cluster;
+package org.opennms.netmgt.syslogd.api;
 
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
@@ -8,13 +8,15 @@ import java.io.File;
 import java.io.IOException;
 import java.util.function.Consumer;
 
+import org.opennms.netmgt.xml.event.Log;
+
 /*
  * @author <a href="http://tfox.org">Tim Fox</a>
  */
 public class Runner {
 
 	private static final String CORE_EXAMPLES_DIR = "core-examples";
-	private static final String CORE_EXAMPLES_JAVA_DIR = CORE_EXAMPLES_DIR + "/src/test/java/";
+	private static final String CORE_EXAMPLES_JAVA_DIR = CORE_EXAMPLES_DIR + "/src/main/java/";
 
 	public static void runClusteredExample(Class clazz) {
 		runExample(CORE_EXAMPLES_JAVA_DIR, clazz, new VertxOptions().setClustered(true), null);
@@ -74,6 +76,8 @@ public class Runner {
 			Vertx.clusteredVertx(options, res -> {
 				if (res.succeeded()) {
 					Vertx vertx = res.result();
+					vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
+					vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
 					runner.accept(vertx);
 				} else {
 					res.cause().printStackTrace();
@@ -81,6 +85,8 @@ public class Runner {
 			});
 		} else {
 			Vertx vertx = Vertx.vertx(options);
+			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
+			vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
 			runner.accept(vertx);
 		}
 	}

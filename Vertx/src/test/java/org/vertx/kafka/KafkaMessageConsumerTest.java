@@ -16,7 +16,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.opennms.core.ipc.sink.api.MessageConsumer;
 import org.opennms.core.ipc.sink.api.SinkModule;
-import org.opennms.core.test.ConfigurationTestUtils;
 import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
@@ -170,8 +169,8 @@ public class KafkaMessageConsumerTest {
 		SyslogSinkConsumer.eventCount = 0;
 		// syslogSinkConsumer.setGrokPatternsList(SyslogSinkConsumer.readPropertiesInOrderFrom(
 		// ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES)));
-		syslogSinkConsumer.setDistPollerDao(new MockDistPollerDao());
-		syslogSinkConsumer.setSyslogdConfig(loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml"));
+//		syslogSinkConsumer.setDistPollerDao(new MockDistPollerDao());
+//		syslogSinkConsumer.setSyslogdConfig(loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml"));
 		sinkModule = syslogSinkConsumer.getModule();
 		return syslogSinkConsumer;
 
@@ -192,7 +191,7 @@ public class KafkaMessageConsumerTest {
 		};
 		kafkaMessageConsumer = new KafkaMessageConsumer();
 		kafkaMessageConsumer.setVerticleConfig(consumerConfig);
-		kafkaMessageConsumer.setMessageConsumer(messageConsumer);
+	//	kafkaMessageConsumer.setMessageConsumer(messageConsumer);
 		return kafkaMessageConsumer;
 
 	}
@@ -241,7 +240,7 @@ public class KafkaMessageConsumerTest {
 	private SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
 		InputStream stream = null;
 		try {
-			stream = ConfigurationTestUtils.getInputStreamForResource(this, configuration);
+			//stream = ConfigurationTestUtils.getInputStreamForResource(this, configuration);
 			return new SyslogdConfigFactory(stream);
 		} finally {
 			if (stream != null) {

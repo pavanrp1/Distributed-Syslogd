@@ -65,6 +65,7 @@ public class SyslogMessageLogDTO implements Message {
 
 	private SyslogdConfig syslogdConfig;
 
+
 	public SyslogdConfig getSyslogdConfig() {
 		return syslogdConfig;
 	}
