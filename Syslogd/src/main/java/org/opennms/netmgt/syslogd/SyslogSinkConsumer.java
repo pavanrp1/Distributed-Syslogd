@@ -145,10 +145,10 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	@Override
 	public void start() throws Exception {
 		syslogdEventBus = vertx.eventBus();
-//		backgroundConsumer = Executors.newSingleThreadExecutor();
-//		backgroundConsumer.submit(() -> {
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
 			consumeFromKafkaEventBus();
-//		});
+		});
 
 	}
 
@@ -171,7 +171,6 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	@Override
 	public void handleMessage(SyslogMessageLogDTO syslogDTO) {
 		syslogDTO.setSyslogdConfig(syslogdConfig);
-		System.out.println(syslogDTO);
 		syslogdEventBus.send(EVENTD_CONSUMER_ADDRESS, syslogDTO);
 	}
 

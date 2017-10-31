@@ -74,16 +74,17 @@ public class ParamsLoader extends AbstractVerticle {
 	@Override
 	public void start() throws Exception {
 		syslogdEventbus = vertx.eventBus();
-
-		System.out.println("Recieved " + SyslogTimeStamp.broadcastCount.incrementAndGet());
-		MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = syslogdEventbus.consumer("eventd.message.consumer");
-		consumerFromEventBus.handler(syslogDTOMessage -> {
-			SyslogMessageDTO syslog = syslogDTOMessage.body().getMessages().get(0);
-			System.out.println(syslog.getBytes());
-			// parse(syslog.getBytes());
-			// syslogDTOMessage.body().setParamsMap(paramsMap);
-			// syslogDTOMessage.body().setSyslogdConfig(syslogdConfig);
-			// vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
+			MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = syslogdEventbus
+					.consumer("eventd.message.consumer");
+			consumerFromEventBus.handler(syslogDTOMessage -> {
+				// SyslogMessageDTO syslog = syslogDTOMessage.body().getMessages().get(0);
+				// parse(syslog.getBytes());
+				// syslogDTOMessage.body().setParamsMap(paramsMap);
+				// vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
+				System.out.println("At Paarams " + SyslogTimeStamp.broadcastCount.incrementAndGet());
+			});
 		});
 	}
 
@@ -96,7 +97,6 @@ public class ParamsLoader extends AbstractVerticle {
 	 * @return Parameter list
 	 */
 	public Map<String, String> parse(ByteBuffer messageBytes) {
-		System.out.println(messageBytes);
 		String grokPattern;
 		paramsMap = new HashMap<String, String>();
 		if (null == getGrokPatternsList() || getGrokPatternsList().isEmpty()) {

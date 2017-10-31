@@ -28,32 +28,55 @@
 
 package org.opennms.netmgt.syslogd;
 
+import java.lang.reflect.Type;
 import java.nio.ByteBuffer;
+import java.util.Base64;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
-public class ByteBufferXmlAdapter extends XmlAdapter<byte[], ByteBuffer> {
+import com.google.gson.JsonDeserializationContext;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParseException;
+import com.google.gson.JsonSerializationContext;
+import com.google.gson.JsonSerializer;
 
-    @Override
-    public ByteBuffer unmarshal(byte[] bytes) {
-        return ByteBuffer.wrap(bytes);
-    }
+public class ByteBufferXmlAdapter extends XmlAdapter<byte[], ByteBuffer>
+		implements JsonSerializer<ByteBuffer>, JsonDeserializer<ByteBuffer> {
 
-    @Override
-    public byte[] marshal(ByteBuffer bb) {
-        if (bb.hasArray()) {
-            // Use the backing array when available
-            return bb.array();
-        } else {
-            // Otherwise, create a new array, and copy the available
-            // bytes while preserving the original position
-            final int originalPosition = bb.position();
-            bb.rewind();
-            byte[] bytes = new byte[bb.remaining()];
-            bb.get(bytes);
-            bb.position(originalPosition);
-            return bytes;
-        }
-    }
+	@Override
+	public ByteBuffer unmarshal(byte[] bytes) {
+		return ByteBuffer.wrap(bytes);
+	}
+
+	@Override
+	public byte[] marshal(ByteBuffer bb) {
+		if (bb.hasArray()) {
+			// Use the backing array when available
+			return bb.array();
+		} else {
+			// Otherwise, create a new array, and copy the available
+			// bytes while preserving the original position
+			final int originalPosition = bb.position();
+			bb.rewind();
+			byte[] bytes = new byte[bb.remaining()];
+			bb.get(bytes);
+			bb.position(originalPosition);
+			return bytes;
+		}
+	}
+
+	@Override
+	public ByteBuffer deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context)
+			throws JsonParseException {
+		byte[] bytes = Base64.getMimeDecoder().decode(json.toString());
+		return ByteBuffer.wrap(bytes);
+	}
+
+	@Override
+	public JsonElement serialize(ByteBuffer src, Type typeOfSrc, JsonSerializationContext context) {
+		System.out.println("ser");
+		return null;
+	}
 
 }

@@ -30,8 +30,8 @@ public class Runner {
 		runExample(CORE_EXAMPLES_JAVA_DIR, clazz, new VertxOptions().setClustered(false), null);
 	}
 
-	public static void runExample(Class clazz, DeploymentOptions options) {
-		runExample(CORE_EXAMPLES_JAVA_DIR, clazz, new VertxOptions().setClustered(false), options);
+	public static void runClusteredExample(Class clazz, DeploymentOptions options) {
+		runExample(CORE_EXAMPLES_JAVA_DIR, clazz, new VertxOptions().setClustered(true), options);
 	}
 
 	public static void runExample(String exampleDir, Class clazz, VertxOptions options,

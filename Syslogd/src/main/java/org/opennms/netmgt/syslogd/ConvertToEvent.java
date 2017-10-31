@@ -42,7 +42,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
 import org.opennms.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.SyslogdConfig;
 import org.opennms.netmgt.config.syslogd.HideMatch;
@@ -51,8 +50,6 @@ import org.opennms.netmgt.config.syslogd.HostnameMatch;
 import org.opennms.netmgt.config.syslogd.ParameterAssignment;
 import org.opennms.netmgt.config.syslogd.ProcessMatch;
 import org.opennms.netmgt.config.syslogd.UeiMatch;
-import org.opennms.netmgt.dao.api.AbstractInterfaceToNodeCache;
-import org.opennms.netmgt.dao.api.InterfaceToNodeCache;
 import org.opennms.netmgt.model.events.EventBuilder;
 import org.opennms.netmgt.syslogd.api.Runner;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
@@ -65,6 +62,7 @@ import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.DeploymentOptions;
 
 /**
  * This routine does the majority of Syslogd's work. Improvements are most
@@ -108,7 +106,12 @@ public class ConvertToEvent extends AbstractVerticle {
 			});
 
 	public static void main(String[] args) {
-		Runner.runClusteredExample(ConvertToEvent.class);
+		System.setProperty("opennms.home", "src/test/resources");
+
+		org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
+		logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
+
+		Runner.runClusteredExample(ConvertToEvent.class, new DeploymentOptions().setWorker(true));
 	}
 
 	@Override
@@ -194,7 +197,6 @@ public class ConvertToEvent extends AbstractVerticle {
 		final List<HideMatch> hideMatch = (config.getHideMessages() == null ? Collections.emptyList()
 				: config.getHideMessages());
 		final String discardUei = config.getDiscardUei();
-
 		String syslogString = data;
 		// Trim trailing nulls from the string
 		while (syslogString.endsWith("\0")) {
@@ -213,6 +215,7 @@ public class ConvertToEvent extends AbstractVerticle {
 		try {
 			message = parser.parse(params);
 		} catch (final Exception ex) {
+			ex.printStackTrace();
 			LOG.debug("Unable to parse '{}'", syslogString, ex);
 			throw new MessageDiscardedException(ex);
 		}
@@ -279,52 +282,52 @@ public class ConvertToEvent extends AbstractVerticle {
 		final String fullText = message.getFullText();
 		final String matchedText = message.getMatchedMessage();
 
-		for (final UeiMatch uei : ueiMatch) {
-			final boolean messageMatchesUeiListEntry = containsIgnoreCase(uei.getFacilities(), facilityTxt)
-					&& containsIgnoreCase(uei.getSeverities(), priorityTxt)
-					&& matchProcess(uei.getProcessMatch().orElse(null), message.getProcessName())
-					&& matchHostname(uei.getHostnameMatch().orElse(null), message.getHostName())
-					&& matchHostAddr(uei.getHostaddrMatch().orElse(null), str(message.getHostAddress()));
-
-			if (messageMatchesUeiListEntry) {
-				if (uei.getMatch().getType().equals("substr")) {
-					if (matchSubstring(message.getMessage(), uei, bldr, config.getDiscardUei())) {
-						break;
-					}
-				} else if ((uei.getMatch().getType().startsWith("regex"))) {
-					if (matchRegex(message.getMessage(), uei, bldr, config.getDiscardUei())) {
-						break;
-					}
-				}
-			}
-		}
-
-		// Time to verify if we need to hide the message
-		boolean doHide = false;
-		if (hideMatch.size() > 0) {
-			for (final HideMatch hide : hideMatch) {
-				if (hide.getMatch().getType().equals("substr")) {
-					if (fullText.contains(hide.getMatch().getExpression())) {
-						// We should hide the message based on this match
-						doHide = true;
-						break;
-					}
-				} else if (hide.getMatch().getType().equals("regex")) {
-					try {
-						msgPat = getPattern(hide.getMatch().getExpression());
-						msgMat = msgPat.matcher(fullText);
-						if (msgMat.find()) {
-							// We should hide the message based on this match
-							doHide = true;
-							break;
-						}
-					} catch (PatternSyntaxException pse) {
-						LOG.warn("Failed to compile hide-match regex pattern '{}'", hide.getMatch().getExpression(),
-								pse);
-					}
-				}
-			}
-		}
+//		for (final UeiMatch uei : ueiMatch) {
+//			final boolean messageMatchesUeiListEntry = containsIgnoreCase(uei.getFacilities(), facilityTxt)
+//					&& containsIgnoreCase(uei.getSeverities(), priorityTxt)
+//					&& matchProcess(uei.getProcessMatch().orElse(null), message.getProcessName())
+//					&& matchHostname(uei.getHostnameMatch().orElse(null), message.getHostName())
+//					&& matchHostAddr(uei.getHostaddrMatch().orElse(null), str(message.getHostAddress()));
+//
+//			if (messageMatchesUeiListEntry) {
+//				if (uei.getMatch().getType().equals("substr")) {
+//					if (matchSubstring(message.getMessage(), uei, bldr, config.getDiscardUei())) {
+//						break;
+//					}
+//				} else if ((uei.getMatch().getType().startsWith("regex"))) {
+//					if (matchRegex(message.getMessage(), uei, bldr, config.getDiscardUei())) {
+//						break;
+//					}
+//				}
+//			}
+//		}
+//
+//		// Time to verify if we need to hide the message
+//		boolean doHide = false;
+//		if (hideMatch.size() > 0) {
+//			for (final HideMatch hide : hideMatch) {
+//				if (hide.getMatch().getType().equals("substr")) {
+//					if (fullText.contains(hide.getMatch().getExpression())) {
+//						// We should hide the message based on this match
+//						doHide = true;
+//						break;
+//					}
+//				} else if (hide.getMatch().getType().equals("regex")) {
+//					try {
+//						msgPat = getPattern(hide.getMatch().getExpression());
+//						msgMat = msgPat.matcher(fullText);
+//						if (msgMat.find()) {
+//							// We should hide the message based on this match
+//							doHide = true;
+//							break;
+//						}
+//					} catch (PatternSyntaxException pse) {
+//						LOG.warn("Failed to compile hide-match regex pattern '{}'", hide.getMatch().getExpression(),
+//								pse);
+//					}
+//				}
+//			}
+//		}
 
 		// Using parms provides configurability.
 		bldr.setLogMessage(message.getMessage());

@@ -45,45 +45,49 @@ import org.opennms.netmgt.syslogd.ByteBufferXmlAdapter;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class SyslogMessageDTO {
 
-    @XmlAttribute(name = "timestamp")
-    private Date timestamp;
+	@XmlAttribute(name = "timestamp")
+	private Date timestamp;
 
-    @XmlValue
-    @XmlJavaTypeAdapter(ByteBufferXmlAdapter.class)
-    private ByteBuffer bytes;
+	@XmlValue
+	@XmlJavaTypeAdapter(ByteBufferXmlAdapter.class)
+	private ByteBuffer bytes;
 
-    public SyslogMessageDTO() { }
+	public SyslogMessageDTO() {
+	}
 
-    public SyslogMessageDTO(ByteBuffer bytes) {
-        this.timestamp = new Date();
-        this.bytes = bytes;
-    }
+	public SyslogMessageDTO(ByteBuffer bytes) {
+		this.timestamp = new Date();
+		this.bytes = bytes;
+	}
 
-    public Date getTimestamp() {
-        return timestamp;
-    }
-    public void setTimestamp(Date timestamp) {
-        this.timestamp = timestamp;
-    }
-    public ByteBuffer getBytes() {
-        return bytes;
-    }
-    public void setBytes(ByteBuffer bytes) {
-        this.bytes = bytes;
-    }
+	public Date getTimestamp() {
+		return timestamp;
+	}
 
-    @Override
-    public boolean equals(final Object other) {
-        if (!(other instanceof SyslogMessageDTO)) {
-            return false;
-        }
-        SyslogMessageDTO castOther = (SyslogMessageDTO) other;
-        return Objects.equals(timestamp, castOther.timestamp)
-                && Objects.equals(bytes, castOther.bytes);
-    }
+	public void setTimestamp(Date timestamp) {
+		this.timestamp = timestamp;
+	}
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(timestamp, bytes);
-    }
+	public ByteBuffer getBytes() {
+		return bytes;
+	}
+
+	public void setBytes(ByteBuffer bytes) {
+		System.out.println(bytes);
+		this.bytes = bytes;
+	}
+
+	@Override
+	public boolean equals(final Object other) {
+		if (!(other instanceof SyslogMessageDTO)) {
+			return false;
+		}
+		SyslogMessageDTO castOther = (SyslogMessageDTO) other;
+		return Objects.equals(timestamp, castOther.timestamp) && Objects.equals(bytes, castOther.bytes);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(timestamp, bytes);
+	}
 }
