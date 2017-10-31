@@ -36,7 +36,7 @@ public class SimpleProducer2 {
 				+ iso8601OffsetString(new Date(0), ZoneId.systemDefault(), ChronoUnit.SECONDS)
 				+ "\">PDMxPm1haW46IDIwMTctMTAtMDMgbG9jYWxob3N0IGZvbyVkOiBsb2FkIHRlc3RwYXZhbiAlZCBvbiB0dHkx</messages>\n"
 				+ "</syslog-message-log>";
-		for (int i = 0; i < 10; i++)
+		for (int i = 0; i < 10000; i++)
 			producer.send(new ProducerRecord<String, String>(topicName, test));
 		System.out.println("Message sent successfully");
 		producer.close();

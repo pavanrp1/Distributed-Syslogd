@@ -224,7 +224,6 @@ public class KafkaMessageConsumerMainTest {
 			vertx = Vertx.vertx();
 			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
 			vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
-			vertx.eventBus().registerDefaultCodec(HashMap.class, new HashMapCodec());
 			JsonObject config = new JsonObject().put("kafkaConfiguration", consumerConfig);
 			vertx.deployVerticle(KafkaMessageConsumer.class.getName(),
 					new DeploymentOptions().setInstances(1).setWorker(true).setConfig(config));

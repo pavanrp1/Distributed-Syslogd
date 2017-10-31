@@ -106,6 +106,25 @@
 			<artifactId>netty-all</artifactId>
 			<version>4.0.4.Final</version>
 		</dependency>
+		
+		<dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-tcnative-boringssl-static</artifactId>
+      <version>1.1.33.Fork21</version>
+    </dependency>
+
+<!--     <dependency> -->
+<!--       <groupId>io.vertx</groupId> -->
+<!--       <artifactId>examples-utils</artifactId> -->
+<!--       <version>${project.version}</version> -->
+<!--       <optional>true</optional> -->
+<!--     </dependency> -->
+
+    <dependency>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-hazelcast</artifactId>
+      <version>3.4.1</version>
+    </dependency>
 
 	</dependencies>
 </project>

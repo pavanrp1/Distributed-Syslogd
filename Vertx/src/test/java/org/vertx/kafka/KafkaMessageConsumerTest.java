@@ -137,7 +137,7 @@ public class KafkaMessageConsumerTest {
 
 		// TODO
 		File test = new File(
-				"/Users/ms043660/OneDrive - Cerner Corporation/Office/ProjectWorkspace/DistributedSyslogdPoc/Distributed-Syslogd/Vertx/src/test/resources/etc/eventconf.xml");
+				"/Users/pk015603/OneDrive - Cerner Corporation/Workset_Distributed_OpenNMS/Distributed-Syslogd/Vertx/src/test/resources/etc/eventconf.xml");
 		eventConfDao.setConfigResource(new FileSystemResource(test));
 		eventConfDao.afterPropertiesSet();
 		eventExpander.setEventConfDao(eventConfDao);
@@ -224,7 +224,6 @@ public class KafkaMessageConsumerTest {
 			vertx = Vertx.vertx();
 			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
 			vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
-			vertx.eventBus().registerDefaultCodec(HashMap.class, new HashMapCodec());
 			JsonObject config = new JsonObject().put("kafkaConfiguration", consumerConfig);
 			vertx.deployVerticle(KafkaMessageConsumer.class.getName(),
 					new DeploymentOptions().setInstances(1).setWorker(true).setConfig(config));
