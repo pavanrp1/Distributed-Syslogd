@@ -43,6 +43,8 @@ import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.syslogd.api.SyslogdMessageCodec;
 import org.opennms.netmgt.xml.event.Log;
 import org.springframework.core.io.FileSystemResource;
+import org.vertx.cluster.Runner;
+import org.vertx.cluster.Sender;
 import org.vertx.kafka.util.ConfigConstants;
 import org.vertx.kafka.util.MockInterfaceCacheDao;
 import org.vertx.kafka.util.SyslogdDTOMessageCodec;
@@ -105,7 +107,7 @@ public class KafkaMessageConsumerMainTest {
 
 	@Before
 	public void setUp() throws Exception {
-
+		
 		System.setProperty("opennms.home", "src/test/resources");
 		System.setProperty("org.opennms.core.test.mockLogger.defaultLogLevel", "WARN");
 
@@ -224,8 +226,8 @@ public class KafkaMessageConsumerMainTest {
 			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
 			vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
 			JsonObject config = new JsonObject().put("kafkaConfiguration", consumerConfig);
-			vertx.deployVerticle(KafkaMessageConsumer.class.getName(),
-					new DeploymentOptions().setInstances(1).setWorker(true).setConfig(config));
+//			vertx.deployVerticle(KafkaMessageConsumer.class.getName(),
+//					new DeploymentOptions().setInstances(1).setWorker(true).setConfig(config));
 //			vertx.deployVerticle(SyslogSinkConsumer.class.getName(),
 //					new DeploymentOptions().setInstances(1).setWorker(true));
 //			vertx.deployVerticle(ParamsLoader.class.getName(), new DeploymentOptions().setInstances(1).setWorker(true));

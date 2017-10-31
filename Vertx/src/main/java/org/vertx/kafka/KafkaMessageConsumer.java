@@ -19,6 +19,7 @@ import org.opennms.core.ipc.sink.api.MessageConsumer;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.xml.event.Log;
+import org.vertx.cluster.Runner;
 import org.vertx.kafka.util.ConfigConstants;
 import org.vertx.kafka.util.SyslogdDTOMessageCodec;
 
@@ -89,6 +90,11 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 
 	public void setBus(EventBus bus) {
 		this.kafkaEventBus = bus;
+	}
+
+	private void KafkaMessageConsumer() {
+		Runner.runClusteredExample(KafkaMessageConsumer.class);
+
 	}
 
 	@Override
