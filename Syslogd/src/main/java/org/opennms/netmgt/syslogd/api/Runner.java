@@ -1,14 +1,14 @@
 package org.opennms.netmgt.syslogd.api;
 
-import io.vertx.core.DeploymentOptions;
-import io.vertx.core.Vertx;
-import io.vertx.core.VertxOptions;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.function.Consumer;
 
 import org.opennms.netmgt.xml.event.Log;
+
+import io.vertx.core.DeploymentOptions;
+import io.vertx.core.Vertx;
+import io.vertx.core.VertxOptions;
 
 /*
  * @author <a href="http://tfox.org">Tim Fox</a>
@@ -20,6 +20,8 @@ public class Runner {
 
 	public static void runClusteredExample(Class clazz) {
 		runExample(CORE_EXAMPLES_JAVA_DIR, clazz, new VertxOptions().setClustered(true), null);
+		// runExample(CORE_EXAMPLES_JAVA_DIR, clazz, new
+		// VertxOptions().setClustered(true).setClusterManager(clusterManager), null);
 	}
 
 	public static void runClusteredExample(Class clazz, VertxOptions options) {

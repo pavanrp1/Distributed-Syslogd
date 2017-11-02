@@ -19,6 +19,7 @@ import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 import org.apache.commons.io.IOUtils;
@@ -32,6 +33,7 @@ import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.xml.event.Parm;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Future;
 import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.eventbus.MessageConsumer;
@@ -41,6 +43,11 @@ public class ParamsLoader extends AbstractVerticle {
 	private ExecutorService backgroundConsumer;
 
 	private static List<String> grokPatternsList;
+
+	public void setGrokPatternsList(List<String> grokPatternsList) {
+		ParamsLoader.grokPatternsList = grokPatternsList;
+	}
+
 	private static SyslogdConfigFactory syslogdConfig;
 
 	public static List<String> getGrokPatternsList() {
@@ -49,21 +56,36 @@ public class ParamsLoader extends AbstractVerticle {
 
 	private final static ExecutorService m_executor = Executors.newSingleThreadExecutor();
 
+	private static final String EVENTD_CONSUMER_ADDRESS = "eventd.message.consumer";
+
 	public static void main(String[] args) {
-		System.setProperty("opennms.home", "src/test/resources");
-		try {
-			grokPatternsList = readPropertiesInOrderFrom(
-					ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		Runner.runClusteredExample(ParamsLoader.class);
+		SyslogTimeStamp.broadcastCount = new AtomicInteger();
+		// System.setProperty("opennms.home", "src/test/resources");
+		// try {
+		// grokPatternsList = readPropertiesInOrderFrom(
+		// ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
+		// } catch (IOException e) {
+		// e.printStackTrace();
+		// }
+		DeploymentOptions deployment = new DeploymentOptions();
+		deployment.setWorker(true);
+		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployment.setInstances(50);
+		Runner.runClusteredExample(ParamsLoader.class, deployment);
 	}
 
 	static {
 
 	}
-	private Map<String, String> paramsMap;
+	private static Map<String, String> paramsMap;
+
+	public Map<String, String> getParamsMap() {
+		return paramsMap;
+	}
+
+	public static void setParamsMap(Map<String, String> paramsMap) {
+		ParamsLoader.paramsMap = paramsMap;
+	}
 
 	private EventBus syslogdEventbus;
 
@@ -74,18 +96,17 @@ public class ParamsLoader extends AbstractVerticle {
 	@Override
 	public void start() throws Exception {
 		syslogdEventbus = vertx.eventBus();
-		backgroundConsumer = Executors.newSingleThreadExecutor();
-		backgroundConsumer.submit(() -> {
-			MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = syslogdEventbus
-					.consumer("eventd.message.consumer");
-			consumerFromEventBus.handler(syslogDTOMessage -> {
-				// SyslogMessageDTO syslog = syslogDTOMessage.body().getMessages().get(0);
-				// parse(syslog.getBytes());
-				// syslogDTOMessage.body().setParamsMap(paramsMap);
-				// vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
-				System.out.println("At Paarams " + SyslogTimeStamp.broadcastCount.incrementAndGet());
-			});
+		// backgroundConsumer = Executors.newSingleThreadExecutor();
+		// backgroundConsumer.submit(() -> {
+		MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = syslogdEventbus.consumer("eventd.message.consumer");
+		consumerFromEventBus.handler(syslogDTOMessage -> {
+			 SyslogMessageDTO syslog = syslogDTOMessage.body().getMessages().get(0);
+			 parse(syslog.getBytes());
+			// syslogDTOMessage.body().setParamsMap(paramsMap);
+			// vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
+			System.out.println("At Params " + SyslogTimeStamp.broadcastCount.incrementAndGet());
 		});
+		// });
 	}
 
 	/**
@@ -127,7 +148,7 @@ public class ParamsLoader extends AbstractVerticle {
 				(paramKey1, paramKey2) -> paramKey2));
 	}
 
-	public static List<String> readPropertiesInOrderFrom(File syslogdConfigdFile) throws IOException {
+	public List<String> readPropertiesInOrderFrom(File syslogdConfigdFile) throws IOException {
 		InputStream propertiesFileInputStream = new FileInputStream(syslogdConfigdFile);
 		Set<String> grookSet = new LinkedHashSet<String>();
 		final Properties properties = new Properties();
@@ -156,7 +177,7 @@ public class ParamsLoader extends AbstractVerticle {
 		return grokPatternsList;
 	}
 
-	public static void loadGrokParserList() throws IOException {
+	public void loadGrokParserList() throws IOException {
 		grokPatternsList = new ArrayList<String>();
 		File syslogConfigFile = ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES);
 		readPropertiesInOrderFrom(syslogConfigFile);

@@ -32,6 +32,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.commons.io.IOUtils;
 import org.opennms.core.ipc.sink.api.MessageConsumer;
@@ -54,6 +55,7 @@ import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.DeploymentOptions;
 import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
@@ -66,6 +68,22 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	@Autowired
 	private MessageConsumerManager messageConsumerManager;
 
+	public static SyslogdConfig getSyslogdConfig() {
+		return syslogdConfig;
+	}
+
+	public void setSyslogdConfig(SyslogdConfig syslogdConfig) {
+		SyslogSinkConsumer.syslogdConfig = syslogdConfig;
+	}
+
+	public static DistPollerDao getDistPollerDao() {
+		return distPollerDao;
+	}
+
+	public void setDistPollerDao(DistPollerDao distPollerDao) {
+		SyslogSinkConsumer.distPollerDao = distPollerDao;
+	}
+
 	@Autowired
 	private static SyslogdConfig syslogdConfig;
 
@@ -73,10 +91,6 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	private static DistPollerDao distPollerDao;
 
 	public static int eventCount = 0;
-
-	private static final String SYSLOGD_CONSUMER_ADDRESS = "syslogd.message.consumer";
-
-	private static final String EVENTD_CONSUMER_ADDRESS = "eventd.message.consumer";
 
 	private final Timer consumerTimer;
 	private final Timer toEventTimer;
@@ -93,18 +107,14 @@ public class SyslogSinkConsumer extends AbstractVerticle
 
 	private final static ExecutorService m_executor = Executors.newSingleThreadExecutor();
 
-	public static String getSyslogdConsumerAddress() {
-		return SYSLOGD_CONSUMER_ADDRESS;
-	}
-
-	public static String getEventdConsumerAddress() {
-		return EVENTD_CONSUMER_ADDRESS;
-	}
-
 	public static void main(String[] args) throws IOException {
+		SyslogTimeStamp.broadcastCount = new AtomicInteger();
 		distPollerDao = new MockDistPollerDao();
 		syslogdConfig = loadSyslogConfiguration("/syslogd-loadtest-configuration.xml");
-		Runner.runClusteredExample(SyslogSinkConsumer.class);
+		DeploymentOptions deployment = new DeploymentOptions();
+		deployment.setWorker(true);
+		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
+		Runner.runClusteredExample(SyslogSinkConsumer.class, deployment);
 	}
 
 	public SyslogSinkConsumer() {
@@ -145,10 +155,10 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	@Override
 	public void start() throws Exception {
 		syslogdEventBus = vertx.eventBus();
-		backgroundConsumer = Executors.newSingleThreadExecutor();
-		backgroundConsumer.submit(() -> {
-			consumeFromKafkaEventBus();
-		});
+		// backgroundConsumer = Executors.newSingleThreadExecutor();
+		// backgroundConsumer.submit(() -> {
+		consumeFromKafkaEventBus();
+		// });
 
 	}
 
@@ -158,9 +168,11 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	private void consumeFromKafkaEventBus() {
 		try {
 			io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = syslogdEventBus
-					.consumer(getSyslogdConsumerAddress());
+					.consumer("syslogd.message.consumer");
 			consumerFromEventBus.handler(syslogDTOMessage -> {
 				handleMessage(getSyslogMessageLogDTO(syslogDTOMessage.body()));
+				// System.out.println("At Sink " +
+				// SyslogTimeStamp.broadcastCount.incrementAndGet());
 			});
 
 		} catch (Exception e) {
@@ -171,7 +183,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	@Override
 	public void handleMessage(SyslogMessageLogDTO syslogDTO) {
 		syslogDTO.setSyslogdConfig(syslogdConfig);
-		syslogdEventBus.send(EVENTD_CONSUMER_ADDRESS, syslogDTO);
+		syslogdEventBus.send("eventd.message.consumer", syslogDTO);
 	}
 
 	@Override

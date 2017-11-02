@@ -30,6 +30,8 @@ package org.opennms.netmgt.syslogd;
 
 import static org.opennms.core.utils.InetAddressUtils.str;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
@@ -42,20 +44,28 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
+import org.apache.commons.io.IOUtils;
+import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.SyslogdConfig;
+import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.config.syslogd.HideMatch;
 import org.opennms.netmgt.config.syslogd.HostaddrMatch;
 import org.opennms.netmgt.config.syslogd.HostnameMatch;
 import org.opennms.netmgt.config.syslogd.ParameterAssignment;
 import org.opennms.netmgt.config.syslogd.ProcessMatch;
 import org.opennms.netmgt.config.syslogd.UeiMatch;
+import org.opennms.netmgt.dao.api.AbstractInterfaceToNodeCache;
+import org.opennms.netmgt.dao.api.DistPollerDao;
+import org.opennms.netmgt.dao.api.InterfaceToNodeCache;
+import org.opennms.netmgt.dao.mock.MockDistPollerDao;
 import org.opennms.netmgt.model.events.EventBuilder;
 import org.opennms.netmgt.syslogd.api.Runner;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.xml.event.Event;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
@@ -78,9 +88,9 @@ import io.vertx.core.DeploymentOptions;
  * @author <a href="mailto:jeffg@opennms.org">Jeff Gehlbach</a>
  * @author <a href="mailto:weave@oculan.com">Brian Weaver </a>
  */
-public class ConvertToEvent extends AbstractVerticle {
+public class ConvertToEvent2 extends AbstractVerticle {
 
-	private static final Logger LOG = LoggerFactory.getLogger(ConvertToEvent.class);
+	private static final Logger LOG = LoggerFactory.getLogger(ConvertToEvent2.class);
 
 	/**
 	 * Constant
@@ -90,7 +100,13 @@ public class ConvertToEvent extends AbstractVerticle {
 
 	private Event m_event;
 
-	public ConvertToEvent() {
+	private static SyslogdConfig syslogdConfig;
+
+	private static DistPollerDao distPollerDao;
+
+	private static ParamsLoader param;
+
+	public ConvertToEvent2() {
 	}
 
 	private static final LoadingCache<String, Pattern> CACHED_PATTERNS = CacheBuilder.newBuilder()
@@ -105,22 +121,59 @@ public class ConvertToEvent extends AbstractVerticle {
 				}
 			});
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		System.setProperty("opennms.home", "src/test/resources");
+		distPollerDao = new MockDistPollerDao();
+		syslogdConfig = loadSyslogConfiguration("/syslogd-loadtest-configuration.xml");
+		param = new ParamsLoader();
+		param.setGrokPatternsList(param.readPropertiesInOrderFrom(
+				ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES)));
 
 		org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
 		logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
+		DeploymentOptions deployment = new DeploymentOptions();
+		deployment.setWorker(true);
+		deployment.setInstances(500);
+		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
+		Runner.runClusteredExample(ConvertToEvent2.class, deployment);
+	}
 
-		Runner.runClusteredExample(ConvertToEvent.class, new DeploymentOptions().setWorker(true));
+	public synchronized SyslogMessageLogDTO getSyslogMessageLogDTO(String message) {
+		try {
+			SyslogSinkConsumer sink = new SyslogSinkConsumer();
+			sink.setDistPollerDao(distPollerDao);
+			sink.setSyslogdConfig(syslogdConfig);
+			return sink.getModule().unmarshal(message);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+
+	private static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
+		InputStream stream = null;
+		try {
+			stream = new SyslogSinkConsumer().getClass().getResourceAsStream(configuration);
+			return new SyslogdConfigFactory(stream);
+		} finally {
+			if (stream != null) {
+				IOUtils.closeQuietly(stream);
+			}
+		}
 	}
 
 	@Override
 	public void start() throws Exception {
-		io.vertx.core.eventbus.MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = vertx.eventBus()
-				.consumer("params.message.consumer");
+		io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = vertx.eventBus()
+				.consumer("syslogd.message.consumer");
 		consumerFromEventBus.handler(syslogDTOMessage -> {
-			System.out.println("At CE " + SyslogTimeStamp.broadcastCount.incrementAndGet());
-			 CallConvertToEvent(syslogDTOMessage.body());
+			// System.out.println("At CE " +
+			// SyslogTimeStamp.broadcastCount.incrementAndGet());
+			SyslogMessageLogDTO syslog = getSyslogMessageLogDTO(syslogDTOMessage.body());
+			param.parse(syslog.getMessages().get(0).getBytes());
+			syslog.setSyslogdConfig(syslogdConfig);
+			syslog.setParamsMap(param.getParamsMap());
+			CallConvertToEvent(syslog);
 
 		});
 
@@ -128,7 +181,7 @@ public class ConvertToEvent extends AbstractVerticle {
 
 	private void CallConvertToEvent(SyslogMessageLogDTO syslog) {
 		try {
-			new ConvertToEvent(syslog.getSystemId(), syslog.getLocation(), syslog.getSourceAddress(),
+			new ConvertToEvent2(syslog.getSystemId(), syslog.getLocation(), syslog.getSourceAddress(),
 					syslog.getSourcePort(),
 					StandardCharsets.US_ASCII.decode(syslog.getMessages().get(0).getBytes()).toString(),
 					syslog.getSyslogdConfig(), syslog.getParamsMap());
@@ -158,7 +211,7 @@ public class ConvertToEvent extends AbstractVerticle {
 	 * @throws MessageDiscardedException
 	 * @throws ParseException
 	 */
-	public ConvertToEvent(final String systemId, final String location, final DatagramPacket packet,
+	public ConvertToEvent2(final String systemId, final String location, final DatagramPacket packet,
 			final SyslogdConfig config, final Map<String, String> params)
 			throws UnsupportedEncodingException, MessageDiscardedException, ParseException {
 		this(systemId, location, packet.getAddress(), packet.getPort(),
@@ -185,7 +238,7 @@ public class ConvertToEvent extends AbstractVerticle {
 	 * @throws MessageDiscardedException
 	 * @throws ParseException
 	 */
-	public ConvertToEvent(final String systemId, final String location, final InetAddress addr, final int port,
+	public ConvertToEvent2(final String systemId, final String location, final InetAddress addr, final int port,
 			final String data, final SyslogdConfig config, Map<String, String> params)
 			throws UnsupportedEncodingException, MessageDiscardedException, ParseException {
 		SyslogTimeStamp.broadcastCount.incrementAndGet();
@@ -247,13 +300,13 @@ public class ConvertToEvent extends AbstractVerticle {
 		// Updated the code from foundation-2017
 		if (hostAddress != null) {
 			// Set nodeId
-			// InterfaceToNodeCache cache = AbstractInterfaceToNodeCache.getInstance();
-			// if (cache != null) {
-			// int nodeId = cache.getNodeId(location, hostAddress);
-			// if (nodeId > 0) {
-			// bldr.setNodeid(nodeId);
-			// }
-			// }
+			InterfaceToNodeCache cache = AbstractInterfaceToNodeCache.getInstance();
+			if (cache != null) {
+				int nodeId = cache.getNodeId(location, hostAddress);
+				if (nodeId > 0) {
+					bldr.setNodeid(nodeId);
+				}
+			}
 			bldr.setNodeid(0);
 			bldr.setInterface(hostAddress);
 		}
@@ -282,56 +335,52 @@ public class ConvertToEvent extends AbstractVerticle {
 		final String fullText = message.getFullText();
 		final String matchedText = message.getMatchedMessage();
 
-		for (final UeiMatch uei : ueiMatch) {
-			final boolean messageMatchesUeiListEntry =
-					containsIgnoreCase(uei.getFacilities(), facilityTxt)
-					&& containsIgnoreCase(uei.getSeverities(), priorityTxt)
-					&& matchProcess(uei.getProcessMatch().orElse(null), message.getProcessName())
-					&& matchHostname(uei.getHostnameMatch().orElse(null), message.getHostName())
-					&& matchHostAddr(uei.getHostaddrMatch().orElse(null),
-							str(message.getHostAddress()));
-
-			if (messageMatchesUeiListEntry) {
-				if (uei.getMatch().getType().equals("substr")) {
-					if (matchSubstring(message.getMessage(), uei, bldr, config.getDiscardUei()))
-					{
-						break;
-					}
-				} else if ((uei.getMatch().getType().startsWith("regex"))) {
-					if (matchRegex(message.getMessage(), uei, bldr, config.getDiscardUei())) {
-						break;
-					}
-				}
-			}
-		}
-
-		// Time to verify if we need to hide the message
-		boolean doHide = false;
-		if (hideMatch.size() > 0) {
-			for (final HideMatch hide : hideMatch) {
-				if (hide.getMatch().getType().equals("substr")) {
-					if (fullText.contains(hide.getMatch().getExpression())) {
-						// We should hide the message based on this match
-						doHide = true;
-						break;
-					}
-				} else if (hide.getMatch().getType().equals("regex")) {
-					try {
-						msgPat = getPattern(hide.getMatch().getExpression());
-						msgMat = msgPat.matcher(fullText);
-						if (msgMat.find()) {
-							// We should hide the message based on this match
-							doHide = true;
-							break;
-						}
-					} catch (PatternSyntaxException pse) {
-						LOG.warn("Failed to compile hide-match regex pattern '{}'",
-								hide.getMatch().getExpression(),
-								pse);
-					}
-				}
-			}
-		}
+//		for (final UeiMatch uei : ueiMatch) {
+//			final boolean messageMatchesUeiListEntry = containsIgnoreCase(uei.getFacilities(), facilityTxt)
+//					&& containsIgnoreCase(uei.getSeverities(), priorityTxt)
+//					&& matchProcess(uei.getProcessMatch().orElse(null), message.getProcessName())
+//					&& matchHostname(uei.getHostnameMatch().orElse(null), message.getHostName())
+//					&& matchHostAddr(uei.getHostaddrMatch().orElse(null), str(message.getHostAddress()));
+//
+//			if (messageMatchesUeiListEntry) {
+//				if (uei.getMatch().getType().equals("substr")) {
+//					if (matchSubstring(message.getMessage(), uei, bldr, config.getDiscardUei())) {
+//						break;
+//					}
+//				} else if ((uei.getMatch().getType().startsWith("regex"))) {
+//					if (matchRegex(message.getMessage(), uei, bldr, config.getDiscardUei())) {
+//						break;
+//					}
+//				}
+//			}
+//		}
+//
+//		// Time to verify if we need to hide the message
+//		boolean doHide = false;
+//		if (hideMatch.size() > 0) {
+//			for (final HideMatch hide : hideMatch) {
+//				if (hide.getMatch().getType().equals("substr")) {
+//					if (fullText.contains(hide.getMatch().getExpression())) {
+//						// We should hide the message based on this match
+//						doHide = true;
+//						break;
+//					}
+//				} else if (hide.getMatch().getType().equals("regex")) {
+//					try {
+//						msgPat = getPattern(hide.getMatch().getExpression());
+//						msgMat = msgPat.matcher(fullText);
+//						if (msgMat.find()) {
+//							// We should hide the message based on this match
+//							doHide = true;
+//							break;
+//						}
+//					} catch (PatternSyntaxException pse) {
+//						LOG.warn("Failed to compile hide-match regex pattern '{}'", hide.getMatch().getExpression(),
+//								pse);
+//					}
+//				}
+//			}
+//		}
 
 		// Using parms provides configurability.
 		bldr.setLogMessage(message.getMessage());
