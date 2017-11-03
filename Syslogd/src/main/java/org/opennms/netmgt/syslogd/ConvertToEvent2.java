@@ -40,6 +40,8 @@ import java.text.ParseException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
@@ -105,6 +107,8 @@ public class ConvertToEvent2 extends AbstractVerticle {
 	private static DistPollerDao distPollerDao;
 
 	private static ParamsLoader param;
+	
+	private ExecutorService backgroundConsumer;
 
 	public ConvertToEvent2() {
 	}
@@ -133,7 +137,7 @@ public class ConvertToEvent2 extends AbstractVerticle {
 		logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
 		DeploymentOptions deployment = new DeploymentOptions();
 		deployment.setWorker(true);
-		deployment.setInstances(500);
+		//deployment.setInstances(500);
 		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
 		Runner.runClusteredExample(ConvertToEvent2.class, deployment);
 	}
@@ -164,17 +168,20 @@ public class ConvertToEvent2 extends AbstractVerticle {
 
 	@Override
 	public void start() throws Exception {
-		io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = vertx.eventBus()
-				.consumer("syslogd.message.consumer");
-		consumerFromEventBus.handler(syslogDTOMessage -> {
-			// System.out.println("At CE " +
-			// SyslogTimeStamp.broadcastCount.incrementAndGet());
-			SyslogMessageLogDTO syslog = getSyslogMessageLogDTO(syslogDTOMessage.body());
-			param.parse(syslog.getMessages().get(0).getBytes());
-			syslog.setSyslogdConfig(syslogdConfig);
-			syslog.setParamsMap(param.getParamsMap());
-			CallConvertToEvent(syslog);
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
+			io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = vertx.eventBus()
+					.consumer("syslogd.message.consumer");
+			consumerFromEventBus.handler(syslogDTOMessage -> {
+				// System.out.println("At CE " +
+				// SyslogTimeStamp.broadcastCount.incrementAndGet());
+				SyslogMessageLogDTO syslog = getSyslogMessageLogDTO(syslogDTOMessage.body());
+				param.parse(syslog.getMessages().get(0).getBytes());
+				syslog.setSyslogdConfig(syslogdConfig);
+				syslog.setParamsMap(param.getParamsMap());
+				CallConvertToEvent(syslog);
 
+			});
 		});
 
 	}
@@ -335,52 +342,52 @@ public class ConvertToEvent2 extends AbstractVerticle {
 		final String fullText = message.getFullText();
 		final String matchedText = message.getMatchedMessage();
 
-//		for (final UeiMatch uei : ueiMatch) {
-//			final boolean messageMatchesUeiListEntry = containsIgnoreCase(uei.getFacilities(), facilityTxt)
-//					&& containsIgnoreCase(uei.getSeverities(), priorityTxt)
-//					&& matchProcess(uei.getProcessMatch().orElse(null), message.getProcessName())
-//					&& matchHostname(uei.getHostnameMatch().orElse(null), message.getHostName())
-//					&& matchHostAddr(uei.getHostaddrMatch().orElse(null), str(message.getHostAddress()));
-//
-//			if (messageMatchesUeiListEntry) {
-//				if (uei.getMatch().getType().equals("substr")) {
-//					if (matchSubstring(message.getMessage(), uei, bldr, config.getDiscardUei())) {
-//						break;
-//					}
-//				} else if ((uei.getMatch().getType().startsWith("regex"))) {
-//					if (matchRegex(message.getMessage(), uei, bldr, config.getDiscardUei())) {
-//						break;
-//					}
-//				}
-//			}
-//		}
-//
-//		// Time to verify if we need to hide the message
-//		boolean doHide = false;
-//		if (hideMatch.size() > 0) {
-//			for (final HideMatch hide : hideMatch) {
-//				if (hide.getMatch().getType().equals("substr")) {
-//					if (fullText.contains(hide.getMatch().getExpression())) {
-//						// We should hide the message based on this match
-//						doHide = true;
-//						break;
-//					}
-//				} else if (hide.getMatch().getType().equals("regex")) {
-//					try {
-//						msgPat = getPattern(hide.getMatch().getExpression());
-//						msgMat = msgPat.matcher(fullText);
-//						if (msgMat.find()) {
-//							// We should hide the message based on this match
-//							doHide = true;
-//							break;
-//						}
-//					} catch (PatternSyntaxException pse) {
-//						LOG.warn("Failed to compile hide-match regex pattern '{}'", hide.getMatch().getExpression(),
-//								pse);
-//					}
-//				}
-//			}
-//		}
+		for (final UeiMatch uei : ueiMatch) {
+			final boolean messageMatchesUeiListEntry = containsIgnoreCase(uei.getFacilities(), facilityTxt)
+					&& containsIgnoreCase(uei.getSeverities(), priorityTxt)
+					&& matchProcess(uei.getProcessMatch().orElse(null), message.getProcessName())
+					&& matchHostname(uei.getHostnameMatch().orElse(null), message.getHostName())
+					&& matchHostAddr(uei.getHostaddrMatch().orElse(null), str(message.getHostAddress()));
+
+			if (messageMatchesUeiListEntry) {
+				if (uei.getMatch().getType().equals("substr")) {
+					if (matchSubstring(message.getMessage(), uei, bldr, config.getDiscardUei())) {
+						break;
+					}
+				} else if ((uei.getMatch().getType().startsWith("regex"))) {
+					if (matchRegex(message.getMessage(), uei, bldr, config.getDiscardUei())) {
+						break;
+					}
+				}
+			}
+		}
+
+		// Time to verify if we need to hide the message
+		boolean doHide = false;
+		if (hideMatch.size() > 0) {
+			for (final HideMatch hide : hideMatch) {
+				if (hide.getMatch().getType().equals("substr")) {
+					if (fullText.contains(hide.getMatch().getExpression())) {
+						// We should hide the message based on this match
+						doHide = true;
+						break;
+					}
+				} else if (hide.getMatch().getType().equals("regex")) {
+					try {
+						msgPat = getPattern(hide.getMatch().getExpression());
+						msgMat = msgPat.matcher(fullText);
+						if (msgMat.find()) {
+							// We should hide the message based on this match
+							doHide = true;
+							break;
+						}
+					} catch (PatternSyntaxException pse) {
+						LOG.warn("Failed to compile hide-match regex pattern '{}'", hide.getMatch().getExpression(),
+								pse);
+					}
+				}
+			}
+		}
 
 		// Using parms provides configurability.
 		bldr.setLogMessage(message.getMessage());

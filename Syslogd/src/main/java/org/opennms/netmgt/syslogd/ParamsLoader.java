@@ -60,18 +60,18 @@ public class ParamsLoader extends AbstractVerticle {
 
 	public static void main(String[] args) {
 		SyslogTimeStamp.broadcastCount = new AtomicInteger();
-		// System.setProperty("opennms.home", "src/test/resources");
-		// try {
-		// grokPatternsList = readPropertiesInOrderFrom(
-		// ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
-		// } catch (IOException e) {
-		// e.printStackTrace();
-		// }
+		System.setProperty("opennms.home", "src/test/resources");
+		try {
+			grokPatternsList = readPropertiesInOrderFrom(
+					ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		DeploymentOptions deployment = new DeploymentOptions();
 		deployment.setWorker(true);
 		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
-		deployment.setInstances(50);
-		Runner.runClusteredExample(ParamsLoader.class, deployment);
+		deployment.setInstances(200);
+		Runner.runClusteredExample1(ParamsLoader.class, deployment);
 	}
 
 	static {
@@ -96,17 +96,18 @@ public class ParamsLoader extends AbstractVerticle {
 	@Override
 	public void start() throws Exception {
 		syslogdEventbus = vertx.eventBus();
-		// backgroundConsumer = Executors.newSingleThreadExecutor();
-		// backgroundConsumer.submit(() -> {
-		MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = syslogdEventbus.consumer("eventd.message.consumer");
-		consumerFromEventBus.handler(syslogDTOMessage -> {
-			 SyslogMessageDTO syslog = syslogDTOMessage.body().getMessages().get(0);
-			 parse(syslog.getBytes());
-			// syslogDTOMessage.body().setParamsMap(paramsMap);
-			// vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
-			System.out.println("At Params " + SyslogTimeStamp.broadcastCount.incrementAndGet());
-		});
-		// });
+//		backgroundConsumer = Executors.newSingleThreadExecutor();
+//		backgroundConsumer.submit(() -> {
+			MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = syslogdEventbus
+					.consumer("eventd.message.consumer");
+			consumerFromEventBus.handler(syslogDTOMessage -> {
+				SyslogMessageDTO syslog = syslogDTOMessage.body().getMessages().get(0);
+				parse(syslog.getBytes());
+				syslogDTOMessage.body().setParamsMap(paramsMap);
+				vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
+			//	System.out.println("At Params " + SyslogTimeStamp.broadcastCount.incrementAndGet());
+			});
+//		});
 	}
 
 	/**
@@ -148,7 +149,7 @@ public class ParamsLoader extends AbstractVerticle {
 				(paramKey1, paramKey2) -> paramKey2));
 	}
 
-	public List<String> readPropertiesInOrderFrom(File syslogdConfigdFile) throws IOException {
+	public static List<String> readPropertiesInOrderFrom(File syslogdConfigdFile) throws IOException {
 		InputStream propertiesFileInputStream = new FileInputStream(syslogdConfigdFile);
 		Set<String> grookSet = new LinkedHashSet<String>();
 		final Properties properties = new Properties();

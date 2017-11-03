@@ -6,9 +6,13 @@ import java.util.function.Consumer;
 
 import org.opennms.netmgt.xml.event.Log;
 
+import com.hazelcast.config.Config;
+
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
+import io.vertx.core.spi.cluster.ClusterManager;
+import io.vertx.spi.cluster.hazelcast.HazelcastClusterManager;
 
 /*
  * @author <a href="http://tfox.org">Tim Fox</a>
@@ -33,7 +37,23 @@ public class Runner {
 	}
 
 	public static void runClusteredExample(Class clazz, DeploymentOptions options) {
-		runExample(CORE_EXAMPLES_JAVA_DIR, clazz, new VertxOptions().setClustered(true), options);
+		// Config hazelcastConfig = new Config();
+		// hazelcastConfig.getNetworkConfig().getJoin().getTcpIpConfig().addMember("127.0.0.1").setEnabled(true);
+		// hazelcastConfig.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
+		// ClusterManager mgr = new JGroupsClusterManager();
+		runExample(CORE_EXAMPLES_JAVA_DIR, clazz, new VertxOptions().setClustered(true).setClusterHost("127.0.0.1"),
+				options);
+	}
+
+	public static void runClusteredExample1(Class clazz, DeploymentOptions options) {
+
+		Config hazelcastConfig = new Config();
+		hazelcastConfig.getNetworkConfig().getJoin().getTcpIpConfig().addMember("127.0.0.1").setEnabled(true);
+		hazelcastConfig.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
+
+		ClusterManager mgr = new HazelcastClusterManager(hazelcastConfig);
+		runExample(CORE_EXAMPLES_JAVA_DIR, clazz, new VertxOptions().setClustered(true).setClusterManager(mgr),
+				options);
 	}
 
 	public static void runExample(String exampleDir, Class clazz, VertxOptions options,

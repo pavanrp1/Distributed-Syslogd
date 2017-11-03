@@ -69,7 +69,8 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 
 	public static void main(String[] args) {
 		System.setProperty("opennms.home", "src/test/resources");
-		//System.setProperty("org.opennms.core.test.mockLogger.defaultLogLevel", "WARN");
+		// System.setProperty("org.opennms.core.test.mockLogger.defaultLogLevel",
+		// "WARN");
 		verticleConfig = new JsonObject();
 		verticleConfig.put(ConfigConstants.GROUP_ID, "syslogd");
 		verticleConfig.put(ConfigConstants.ZK_CONNECT, "localhost:2181");
@@ -80,7 +81,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 		DeploymentOptions deployment = new DeploymentOptions();
 		deployment.setWorker(true);
 		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
-		Runner.runClusteredExample(KafkaMessageConsumer.class, deployment);
+		Runner.runClusteredExample1(KafkaMessageConsumer.class, deployment);
 	}
 
 	@Override

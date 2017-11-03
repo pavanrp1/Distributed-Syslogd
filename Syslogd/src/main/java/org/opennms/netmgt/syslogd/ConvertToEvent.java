@@ -107,7 +107,7 @@ public class ConvertToEvent extends AbstractVerticle {
 
 	public static void main(String[] args) {
 		System.setProperty("opennms.home", "src/test/resources");
-
+		System.setProperty("jgroups.bind_addr", "127.0.0.1");
 		org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
 		logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
 
@@ -120,7 +120,7 @@ public class ConvertToEvent extends AbstractVerticle {
 				.consumer("params.message.consumer");
 		consumerFromEventBus.handler(syslogDTOMessage -> {
 			System.out.println("At CE " + SyslogTimeStamp.broadcastCount.incrementAndGet());
-			 CallConvertToEvent(syslogDTOMessage.body());
+			CallConvertToEvent(syslogDTOMessage.body());
 
 		});
 
@@ -283,18 +283,15 @@ public class ConvertToEvent extends AbstractVerticle {
 		final String matchedText = message.getMatchedMessage();
 
 		for (final UeiMatch uei : ueiMatch) {
-			final boolean messageMatchesUeiListEntry =
-					containsIgnoreCase(uei.getFacilities(), facilityTxt)
+			final boolean messageMatchesUeiListEntry = containsIgnoreCase(uei.getFacilities(), facilityTxt)
 					&& containsIgnoreCase(uei.getSeverities(), priorityTxt)
 					&& matchProcess(uei.getProcessMatch().orElse(null), message.getProcessName())
 					&& matchHostname(uei.getHostnameMatch().orElse(null), message.getHostName())
-					&& matchHostAddr(uei.getHostaddrMatch().orElse(null),
-							str(message.getHostAddress()));
+					&& matchHostAddr(uei.getHostaddrMatch().orElse(null), str(message.getHostAddress()));
 
 			if (messageMatchesUeiListEntry) {
 				if (uei.getMatch().getType().equals("substr")) {
-					if (matchSubstring(message.getMessage(), uei, bldr, config.getDiscardUei()))
-					{
+					if (matchSubstring(message.getMessage(), uei, bldr, config.getDiscardUei())) {
 						break;
 					}
 				} else if ((uei.getMatch().getType().startsWith("regex"))) {
@@ -325,8 +322,7 @@ public class ConvertToEvent extends AbstractVerticle {
 							break;
 						}
 					} catch (PatternSyntaxException pse) {
-						LOG.warn("Failed to compile hide-match regex pattern '{}'",
-								hide.getMatch().getExpression(),
+						LOG.warn("Failed to compile hide-match regex pattern '{}'", hide.getMatch().getExpression(),
 								pse);
 					}
 				}

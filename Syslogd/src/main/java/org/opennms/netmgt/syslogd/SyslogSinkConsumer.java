@@ -114,7 +114,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		DeploymentOptions deployment = new DeploymentOptions();
 		deployment.setWorker(true);
 		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
-		Runner.runClusteredExample(SyslogSinkConsumer.class, deployment);
+		Runner.runClusteredExample1(SyslogSinkConsumer.class, deployment);
 	}
 
 	public SyslogSinkConsumer() {
@@ -171,8 +171,6 @@ public class SyslogSinkConsumer extends AbstractVerticle
 					.consumer("syslogd.message.consumer");
 			consumerFromEventBus.handler(syslogDTOMessage -> {
 				handleMessage(getSyslogMessageLogDTO(syslogDTOMessage.body()));
-				// System.out.println("At Sink " +
-				// SyslogTimeStamp.broadcastCount.incrementAndGet());
 			});
 
 		} catch (Exception e) {
