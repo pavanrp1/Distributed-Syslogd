@@ -107,17 +107,17 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 				}
 			});
 
-			// backgroundConsumer = Executors.newSingleThreadExecutor();
-			// backgroundConsumer.submit(() -> {
-			kafkaConsumer = new KafkaConsumer(kafkaConfig);
-			topics = new ArrayList<>();
-			for (int i = 0; i < topicConfig.size(); i++) {
-				topics.add(topicConfig.getString(i));
-				logger.info("Subscribing to topic ");
-			}
+			backgroundConsumer = Executors.newSingleThreadExecutor();
+			backgroundConsumer.submit(() -> {
+				kafkaConsumer = new KafkaConsumer(kafkaConfig);
+				topics = new ArrayList<>();
+				for (int i = 0; i < topicConfig.size(); i++) {
+					topics.add(topicConfig.getString(i));
+					logger.info("Subscribing to topic ");
+				}
 
-			consumeFromKafka();
-			// });
+				consumeFromKafka();
+			});
 
 		} catch (Exception ex) {
 			String error = "Failed to startup";

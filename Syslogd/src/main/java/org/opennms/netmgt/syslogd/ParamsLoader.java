@@ -96,23 +96,23 @@ public class ParamsLoader extends AbstractVerticle {
 	@Override
 	public void start() throws Exception {
 		syslogdEventbus = vertx.eventBus();
-		// backgroundConsumer = Executors.newSingleThreadExecutor();
-		// backgroundConsumer.submit(() -> {
-		vertx.eventBus().consumer("eventd.message.consumer", e -> {
-			System.out.println("At Params " + SyslogTimeStamp.broadcastCount.incrementAndGet());
-		});
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
+			vertx.eventBus().consumer("eventd.message.consumer", e -> {
+				System.out.println("At Params " + SyslogTimeStamp.broadcastCount.incrementAndGet());
+			});
 
-		// MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus =
-		// syslogdEventbus.consumer("eventd.message.consumer");
-		// consumerFromEventBus.handler(syslogDTOMessage -> {
-		// // SyslogMessageDTO syslog = syslogDTOMessage.body().getMessages().get(0);
-		// // parse(syslog.getBytes());
-		// // syslogDTOMessage.body().setParamsMap(paramsMap);
-		// // vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
-		// System.out.println("At Params " +
-		// SyslogTimeStamp.broadcastCount.incrementAndGet());
-		// });
-		// });
+			// MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus =
+			// syslogdEventbus.consumer("eventd.message.consumer");
+			// consumerFromEventBus.handler(syslogDTOMessage -> {
+			// // SyslogMessageDTO syslog = syslogDTOMessage.body().getMessages().get(0);
+			// // parse(syslog.getBytes());
+			// // syslogDTOMessage.body().setParamsMap(paramsMap);
+			// // vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
+			// System.out.println("At Params " +
+			// SyslogTimeStamp.broadcastCount.incrementAndGet());
+			// });
+		});
 	}
 
 	/**

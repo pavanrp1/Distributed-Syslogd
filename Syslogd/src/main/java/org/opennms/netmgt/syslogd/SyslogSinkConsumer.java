@@ -140,10 +140,10 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	@Override
 	public void start() throws Exception {
 		syslogdEventBus = vertx.eventBus();
-		// backgroundConsumer = Executors.newSingleThreadExecutor();
-		// backgroundConsumer.submit(() -> {
-		consumeFromKafkaEventBus();
-		// });
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
+			consumeFromKafkaEventBus();
+		});
 
 	}
 
@@ -172,8 +172,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		// f.complete();
 		// }, false, r -> {
 		// });
-		// System.out.println("At Sink : " +
-		// SyslogTimeStamp.broadcastCount.incrementAndGet());
+		System.out.println("At Sink : " + SyslogTimeStamp.broadcastCount.incrementAndGet());
 	}
 
 	@Override
