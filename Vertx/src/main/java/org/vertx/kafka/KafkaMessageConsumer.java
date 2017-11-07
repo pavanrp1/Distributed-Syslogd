@@ -81,6 +81,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 		DeploymentOptions deployment = new DeploymentOptions();
 		deployment.setWorker(true);
 		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployment.setMultiThreaded(true);
 		Runner.runClusteredExample1(KafkaMessageConsumer.class, deployment);
 	}
 
@@ -106,17 +107,17 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 				}
 			});
 
-			backgroundConsumer = Executors.newSingleThreadExecutor();
-			backgroundConsumer.submit(() -> {
-				kafkaConsumer = new KafkaConsumer(kafkaConfig);
-				topics = new ArrayList<>();
-				for (int i = 0; i < topicConfig.size(); i++) {
-					topics.add(topicConfig.getString(i));
-					logger.info("Subscribing to topic ");
-				}
+			// backgroundConsumer = Executors.newSingleThreadExecutor();
+			// backgroundConsumer.submit(() -> {
+			kafkaConsumer = new KafkaConsumer(kafkaConfig);
+			topics = new ArrayList<>();
+			for (int i = 0; i < topicConfig.size(); i++) {
+				topics.add(topicConfig.getString(i));
+				logger.info("Subscribing to topic ");
+			}
 
-				consumeFromKafka();
-			});
+			consumeFromKafka();
+			// });
 
 		} catch (Exception ex) {
 			String error = "Failed to startup";
@@ -171,6 +172,13 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 	private void sendConsumedMessage(ConsumerRecord<String, String> record) {
 		try {
 			kafkaEventBus.send("syslogd.message.consumer", record.value());
+
+			// vertx.executeBlocking(f -> {
+			// vertx.eventBus().send("syslogd.message.consumer", record.value());
+			// f.complete();
+			// }, false, r -> {
+			// });
+
 		} catch (Exception ex) {
 			String error = String.format("Error sending messages on event bus - record: %s", record.toString());
 			logger.error(error, ex);

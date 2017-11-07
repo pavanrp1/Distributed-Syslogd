@@ -114,6 +114,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		DeploymentOptions deployment = new DeploymentOptions();
 		deployment.setWorker(true);
 		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployment.setMultiThreaded(true);
 		Runner.runClusteredExample1(SyslogSinkConsumer.class, deployment);
 	}
 
@@ -135,22 +136,6 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	public SyslogSinkModule getModule() {
 		return new SyslogSinkModule(syslogdConfig, distPollerDao);
 	}
-
-	/**
-	 * Static block to load grokPatterns during the start of SyslogSink class call.
-	 */
-	// static {
-	// try {
-	// grokPatternsList = SyslogSinkConsumer.readPropertiesInOrderFrom(
-	// ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
-	// distPollerDao = new DistPollerDaoHibernate();
-	// syslogdConfig =
-	// loadSyslogConfiguration("/etc/syslogd-loadtest-configuration.xml");
-	// } catch (IOException e) {
-	// LOG.debug("Failed to load Grok pattern list." + e);
-	// }
-	//
-	// }
 
 	@Override
 	public void start() throws Exception {
@@ -182,6 +167,13 @@ public class SyslogSinkConsumer extends AbstractVerticle
 	public void handleMessage(SyslogMessageLogDTO syslogDTO) {
 		syslogDTO.setSyslogdConfig(syslogdConfig);
 		syslogdEventBus.send("eventd.message.consumer", syslogDTO);
+		// vertx.executeBlocking(f -> {
+		// vertx.eventBus().send("eventd.message.consumer", syslogDTO);
+		// f.complete();
+		// }, false, r -> {
+		// });
+		// System.out.println("At Sink : " +
+		// SyslogTimeStamp.broadcastCount.incrementAndGet());
 	}
 
 	@Override
