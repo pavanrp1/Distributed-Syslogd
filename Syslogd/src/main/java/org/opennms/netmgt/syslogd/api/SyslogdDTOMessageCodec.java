@@ -54,8 +54,6 @@ public class SyslogdDTOMessageCodec implements MessageCodec<SyslogMessageLogDTO,
 			// objectToGson = new GsonBuilder().registerTypeAdapter(ByteBuffer.class, new
 			// ByteBufferXmlAdapter()).create();
 			objectToGson = new GsonBuilder().registerTypeAdapter(ByteBuffer.class, new ByteBufferXmlAdapter()).create();
-			Type listType = new TypeToken<List<SyslogMessageDTO>>() {
-			}.getType();
 			Type mapType = new TypeToken<Map<String, String>>() {
 			}.getType();
 
@@ -69,7 +67,8 @@ public class SyslogdDTOMessageCodec implements MessageCodec<SyslogMessageLogDTO,
 			syslogMessageDTO.setSourceAddress(
 					objectToGson.fromJson((String) contentJson.getValue(SOURCE_ADDRESS), InetAddress.class));
 			syslogMessageDTO.setSourcePort((int) contentJson.getValue(SOURCE_PORT));
-			syslogMessageDTO.setMessages(objectToGson.fromJson((String) contentJson.getValue(MESSAGE), listType));
+			syslogMessageDTO
+					.setMessages(objectToGson.fromJson((String) contentJson.getValue(MESSAGE), SyslogMessageDTO.class));
 			syslogMessageDTO.setParamsMap(objectToGson.fromJson((String) contentJson.getValue(PARAM), mapType));
 			syslogMessageDTO.setSyslogdConfig(
 					objectToGson.fromJson((String) contentJson.getValue(CONFIG), SyslogdConfigFactory.class));

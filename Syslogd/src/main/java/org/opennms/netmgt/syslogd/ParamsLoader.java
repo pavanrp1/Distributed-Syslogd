@@ -99,6 +99,11 @@ public class ParamsLoader extends AbstractVerticle {
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
 			vertx.eventBus().consumer("eventd.message.consumer", e -> {
+				SyslogMessageLogDTO syslogMessage = (SyslogMessageLogDTO) e.body();
+				SyslogMessageDTO syslog = syslogMessage.getMessages();
+				parse(syslog.getBytes());
+				syslogMessage.setParamsMap(paramsMap);
+				vertx.eventBus().send("parms.message.consumer", syslogMessage);
 				System.out.println("At Params " + SyslogTimeStamp.broadcastCount.incrementAndGet());
 			});
 
