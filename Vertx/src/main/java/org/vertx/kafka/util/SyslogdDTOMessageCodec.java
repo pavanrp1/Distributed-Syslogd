@@ -45,7 +45,7 @@ public class SyslogdDTOMessageCodec implements MessageCodec<SyslogMessageLogDTO,
 		syslogMessageDTO.setSystemId((String) contentJson.getValue(SYSTEM_ID));
 		syslogMessageDTO.setSourceAddress((InetAddress) contentJson.getValue(SOURCE_ADDRESS));
 		syslogMessageDTO.setSourcePort((int) contentJson.getValue(SOURCE_PORT));
-		syslogMessageDTO.setMessages((List<SyslogMessageDTO>) contentJson.getValue(MESSAGE));
+		syslogMessageDTO.setMessages((SyslogMessageDTO) contentJson.getValue(MESSAGE));
 		return syslogMessageDTO;
 	}
 

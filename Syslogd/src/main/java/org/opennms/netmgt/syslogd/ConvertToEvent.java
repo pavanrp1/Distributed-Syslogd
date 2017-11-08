@@ -130,7 +130,7 @@ public class ConvertToEvent extends AbstractVerticle {
 		try {
 			new ConvertToEvent(syslog.getSystemId(), syslog.getLocation(), syslog.getSourceAddress(),
 					syslog.getSourcePort(),
-					StandardCharsets.US_ASCII.decode(syslog.getMessages().get(0).getBytes()).toString(),
+					StandardCharsets.US_ASCII.decode(syslog.getMessages().getBytes()).toString(),
 					syslog.getSyslogdConfig(), syslog.getParamsMap());
 			System.out.println("Message recieved at Event :" + SyslogTimeStamp.broadcastCount);
 		} catch (UnsupportedEncodingException e) {

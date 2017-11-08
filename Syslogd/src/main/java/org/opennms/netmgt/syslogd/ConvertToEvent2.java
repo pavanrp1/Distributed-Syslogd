@@ -176,7 +176,7 @@ public class ConvertToEvent2 extends AbstractVerticle {
 				// System.out.println("At CE " +
 				// SyslogTimeStamp.broadcastCount.incrementAndGet());
 				SyslogMessageLogDTO syslog = getSyslogMessageLogDTO(syslogDTOMessage.body());
-				param.parse(syslog.getMessages().get(0).getBytes());
+				param.parse(syslog.getMessages().getBytes());
 				syslog.setSyslogdConfig(syslogdConfig);
 				syslog.setParamsMap(param.getParamsMap());
 				CallConvertToEvent(syslog);
@@ -190,7 +190,7 @@ public class ConvertToEvent2 extends AbstractVerticle {
 		try {
 			new ConvertToEvent2(syslog.getSystemId(), syslog.getLocation(), syslog.getSourceAddress(),
 					syslog.getSourcePort(),
-					StandardCharsets.US_ASCII.decode(syslog.getMessages().get(0).getBytes()).toString(),
+					StandardCharsets.US_ASCII.decode(syslog.getMessages().getBytes()).toString(),
 					syslog.getSyslogdConfig(), syslog.getParamsMap());
 			System.out.println("Message recieved at Event :" + SyslogTimeStamp.broadcastCount);
 		} catch (UnsupportedEncodingException e) {

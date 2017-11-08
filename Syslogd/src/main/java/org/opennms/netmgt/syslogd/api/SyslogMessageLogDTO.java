@@ -61,10 +61,9 @@ public class SyslogMessageLogDTO implements Message {
 	@XmlAttribute(name = "location")
 	private String location;
 	@XmlElement(name = "messages")
-	private List<SyslogMessageDTO> messages;
+	private SyslogMessageDTO messages;
 
 	private SyslogdConfig syslogdConfig;
-
 
 	public SyslogdConfig getSyslogdConfig() {
 		return syslogdConfig;
@@ -85,15 +84,14 @@ public class SyslogMessageLogDTO implements Message {
 	}
 
 	public SyslogMessageLogDTO() {
-		messages = new ArrayList<>(0);
+		messages = new SyslogMessageDTO();
 	}
 
 	public SyslogMessageLogDTO(String location, String systemId, InetSocketAddress source) {
-		this(location, systemId, source, new ArrayList<>(0));
+		this(location, systemId, source, new SyslogMessageDTO());
 	}
 
-	public SyslogMessageLogDTO(String location, String systemId, InetSocketAddress source,
-			List<SyslogMessageDTO> messages) {
+	public SyslogMessageLogDTO(String location, String systemId, InetSocketAddress source, SyslogMessageDTO messages) {
 		this.location = location;
 		this.systemId = systemId;
 		this.sourceAddress = source.getAddress();
@@ -133,11 +131,11 @@ public class SyslogMessageLogDTO implements Message {
 		this.location = location;
 	}
 
-	public List<SyslogMessageDTO> getMessages() {
+	public SyslogMessageDTO getMessages() {
 		return messages;
 	}
 
-	public void setMessages(List<SyslogMessageDTO> messages) {
+	public void setMessages(SyslogMessageDTO messages) {
 		this.messages = messages;
 	}
 
