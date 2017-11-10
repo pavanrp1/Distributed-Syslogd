@@ -53,6 +53,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
+import com.google.gson.Gson;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
@@ -155,6 +156,7 @@ public class SyslogSinkConsumer extends AbstractVerticle
 			io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = syslogdEventBus
 					.consumer("syslogd.message.consumer");
 			consumerFromEventBus.handler(syslogDTOMessage -> {
+				syslogdEventBus.send("eventd.message.consumer", syslogDTOMessage.body());
 				handleMessage(getSyslogMessageLogDTO(syslogDTOMessage.body()));
 			});
 
@@ -165,14 +167,8 @@ public class SyslogSinkConsumer extends AbstractVerticle
 
 	@Override
 	public void handleMessage(SyslogMessageLogDTO syslogDTO) {
-		syslogDTO.setSyslogdConfig(syslogdConfig);
-		syslogdEventBus.send("eventd.message.consumer", syslogDTO);
-		// vertx.executeBlocking(f -> {
-		// vertx.eventBus().send("eventd.message.consumer", syslogDTO);
-		// f.complete();
-		// }, false, r -> {
-		// });
-		System.out.println("At Sink : " + SyslogTimeStamp.broadcastCount.incrementAndGet());
+		// syslogDTO.setSyslogdConfig(syslogdConfig);
+		// syslogdEventBus.send("eventd.message.consumer", getString(syslogDTO));
 	}
 
 	@Override
@@ -209,4 +205,9 @@ public class SyslogSinkConsumer extends AbstractVerticle
 		}
 	}
 
+	public String getString(SyslogMessageLogDTO message) {
+		Gson gson = new Gson();
+		String sb = gson.toJson(message);
+		return sb;
+	}
 }

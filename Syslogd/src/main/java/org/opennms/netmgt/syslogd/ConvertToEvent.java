@@ -30,6 +30,8 @@ package org.opennms.netmgt.syslogd;
 
 import static org.opennms.core.utils.InetAddressUtils.str;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.DatagramPacket;
 import java.net.InetAddress;
@@ -38,21 +40,28 @@ import java.text.ParseException;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
+import org.apache.commons.io.IOUtils;
 import org.opennms.core.utils.InetAddressUtils;
 import org.opennms.netmgt.config.SyslogdConfig;
+import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.config.syslogd.HideMatch;
 import org.opennms.netmgt.config.syslogd.HostaddrMatch;
 import org.opennms.netmgt.config.syslogd.HostnameMatch;
 import org.opennms.netmgt.config.syslogd.ParameterAssignment;
 import org.opennms.netmgt.config.syslogd.ProcessMatch;
 import org.opennms.netmgt.config.syslogd.UeiMatch;
+import org.opennms.netmgt.dao.api.AbstractInterfaceToNodeCache;
+import org.opennms.netmgt.dao.api.InterfaceToNodeCache;
 import org.opennms.netmgt.model.events.EventBuilder;
 import org.opennms.netmgt.syslogd.api.Runner;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
+import org.opennms.netmgt.syslogd.api.UtilMarshler;
 import org.opennms.netmgt.xml.event.Event;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -88,7 +97,17 @@ public class ConvertToEvent extends AbstractVerticle {
 	 */
 	protected static final String HIDDEN_MESSAGE = "The message logged has been removed due to configuration of Syslogd; it may contain sensitive data.";
 
-	private Event m_event;
+	private static UtilMarshler utilMarshler;
+
+	private static SyslogdConfigFactory syslogdConfig;
+
+	private static Event m_event;
+
+	private ExecutorService backgroundConsumer;
+
+	private static List<UeiMatch> ueiMatch;
+
+	private static List<HideMatch> hideMatch;
 
 	public ConvertToEvent() {
 	}
@@ -105,34 +124,57 @@ public class ConvertToEvent extends AbstractVerticle {
 				}
 			});
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		m_event = new Event();
+		utilMarshler = new UtilMarshler(SyslogMessageLogDTO.class);
+		syslogdConfig = loadSyslogConfiguration("/syslogd-loadtest-configuration.xml");
+		ueiMatch = (syslogdConfig.getUeiList() == null ? Collections.emptyList() : syslogdConfig.getUeiList());
+		hideMatch = (syslogdConfig.getHideMessages() == null ? Collections.emptyList()
+				: syslogdConfig.getHideMessages());
 		System.setProperty("opennms.home", "src/test/resources");
-		System.setProperty("jgroups.bind_addr", "127.0.0.1");
 		org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
 		logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
-
-		Runner.runClusteredExample(ConvertToEvent.class, new DeploymentOptions().setWorker(true));
+		DeploymentOptions deployment = new DeploymentOptions();
+		deployment.setWorker(true);
+		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployment.setMultiThreaded(true);
+		// deployment.setInstances(100);
+		Runner.runClusteredExample(ConvertToEvent.class, deployment);
 	}
 
 	@Override
 	public void start() throws Exception {
-		io.vertx.core.eventbus.MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus = vertx.eventBus()
-				.consumer("params.message.consumer");
-		consumerFromEventBus.handler(syslogDTOMessage -> {
-			System.out.println("At CE " + SyslogTimeStamp.broadcastCount.incrementAndGet());
-			CallConvertToEvent(syslogDTOMessage.body());
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
+			io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = vertx.eventBus()
+					.consumer("parms.message.consumer");
+			consumerFromEventBus.handler(syslogDTOMessage -> {
+				CallConvertToEvent(utilMarshler.unmarshal(syslogDTOMessage.body()));
+				System.out.println("At CE " + SyslogTimeStamp.broadcastCount.incrementAndGet());
 
+			});
 		});
 
 	}
 
-	private void CallConvertToEvent(SyslogMessageLogDTO syslog) {
+	private static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
+		InputStream stream = null;
+		try {
+			stream = new SyslogSinkConsumer().getClass().getResourceAsStream(configuration);
+			return new SyslogdConfigFactory(stream);
+		} finally {
+			if (stream != null) {
+				IOUtils.closeQuietly(stream);
+			}
+		}
+	}
+
+	private synchronized void CallConvertToEvent(SyslogMessageLogDTO syslog) {
 		try {
 			new ConvertToEvent(syslog.getSystemId(), syslog.getLocation(), syslog.getSourceAddress(),
 					syslog.getSourcePort(),
-					StandardCharsets.US_ASCII.decode(syslog.getMessages().getBytes()).toString(),
-					syslog.getSyslogdConfig(), syslog.getParamsMap());
-			System.out.println("Message recieved at Event :" + SyslogTimeStamp.broadcastCount);
+					StandardCharsets.US_ASCII.decode(syslog.getMessages().getBytes()).toString(), syslogdConfig,
+					syslog.getParamsMap());
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -188,14 +230,9 @@ public class ConvertToEvent extends AbstractVerticle {
 	public ConvertToEvent(final String systemId, final String location, final InetAddress addr, final int port,
 			final String data, final SyslogdConfig config, Map<String, String> params)
 			throws UnsupportedEncodingException, MessageDiscardedException, ParseException {
-		SyslogTimeStamp.broadcastCount.incrementAndGet();
-		m_event = new Event();
 		if (config == null) {
 			throw new IllegalArgumentException("Config cannot be null");
 		}
-		final List<UeiMatch> ueiMatch = (config.getUeiList() == null ? Collections.emptyList() : config.getUeiList());
-		final List<HideMatch> hideMatch = (config.getHideMessages() == null ? Collections.emptyList()
-				: config.getHideMessages());
 		final String discardUei = config.getDiscardUei();
 		String syslogString = data;
 		// Trim trailing nulls from the string
@@ -247,13 +284,13 @@ public class ConvertToEvent extends AbstractVerticle {
 		// Updated the code from foundation-2017
 		if (hostAddress != null) {
 			// Set nodeId
-			// InterfaceToNodeCache cache = AbstractInterfaceToNodeCache.getInstance();
-			// if (cache != null) {
-			// int nodeId = cache.getNodeId(location, hostAddress);
-			// if (nodeId > 0) {
-			// bldr.setNodeid(nodeId);
-			// }
-			// }
+			InterfaceToNodeCache cache = AbstractInterfaceToNodeCache.getInstance();
+			if (cache != null) {
+				int nodeId = cache.getNodeId(location, hostAddress);
+				if (nodeId > 0) {
+					bldr.setNodeid(nodeId);
+				}
+			}
 			bldr.setNodeid(0);
 			bldr.setInterface(hostAddress);
 		}
@@ -281,7 +318,6 @@ public class ConvertToEvent extends AbstractVerticle {
 
 		final String fullText = message.getFullText();
 		final String matchedText = message.getMatchedMessage();
-
 		for (final UeiMatch uei : ueiMatch) {
 			final boolean messageMatchesUeiListEntry = containsIgnoreCase(uei.getFacilities(), facilityTxt)
 					&& containsIgnoreCase(uei.getSeverities(), priorityTxt)

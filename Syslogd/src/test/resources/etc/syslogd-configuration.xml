@@ -2,87 +2,51 @@
 <syslogd-configuration>
     <configuration
             syslog-port="10514"
-            listen-address="127.0.0.1"
             new-suspect-on-message="false"
-            forwarding-regexp="^.*\s*(19|20)\d\d([-/.])(0[1-9]|1[012])\2(0[1-9]|[12][0-9]|3[01])(\s+)(\S+)(\s)(\S.+)"
+            parser="org.opennms.netmgt.syslogd.CustomSyslogParser"
+            forwarding-regexp="^.*\s(19|20)\d\d([-/.])(0[1-9]|1[012])\2(0[1-9]|[12][0-9]|3[01])(\s+)(\S+)(\s)(\S.+)"
             matching-group-host="6"
             matching-group-message="8"
             discard-uei="DISCARD-MATCHING-MESSAGES"
             />
 
-    <ueiList>
-        <ueiMatch>
-            <match type="substr" expression="CRISCO"/>
-            <uei>uei.opennms.org/tests/syslogd/substrUeiRewriteTest</uei>
-        </ueiMatch>
-        <ueiMatch>
-            <match type="regex" expression="foo: (\d+) out of (\d+) tests failed for (\S+)$"/>
-            <uei>uei.opennms.org/tests/syslogd/regexUeiRewriteTest</uei>
-        </ueiMatch>
-        <ueiMatch>
-            <match type="regex" expression="[Cc]ritical"/>
-            <uei>uei.opennms.org/tests/syslogd/regexUeiRewriteUnanchoredTest</uei>
-        </ueiMatch>
-        <ueiMatch>
-        	<match type="substr" expression="JUNK"/>
-        	<uei>DISCARD-MATCHING-MESSAGES</uei>
-        </ueiMatch>
-        <ueiMatch>
-        	<match type="regex" expression="[Tt][Rr][Aa][Ss][Hh]"/>
-        	<uei>DISCARD-MATCHING-MESSAGES</uei>
-        </ueiMatch>
-        <ueiMatch>
-        	<match type="regex" expression="coffee: Secretly replaced (\S+) coffee with (\d+) (\S+)$"/>
-        	<uei>uei.opennms.org/tests/syslogd/regexParameterAssignmentTest/bothKinds</uei>
-        	<parameter-assignment matching-group="1" parameter-name="whoseBeverage" />
-        	<parameter-assignment matching-group="2" parameter-name="count" />
-        	<parameter-assignment matching-group="3" parameter-name="replacementItem" />        	
-        </ueiMatch>
-        <ueiMatch>
-        	<match type="regex" expression="tea: Secretly replaced (\S+) tea with (\d+) (\S+)$" default-parameter-mapping="false"/>
-        	<uei>uei.opennms.org/tests/syslogd/regexParameterAssignmentTest/userSpecifiedOnly</uei>
-        	<parameter-assignment matching-group="1" parameter-name="whoseBeverage" />
-        	<parameter-assignment matching-group="2" parameter-name="count" />
-        	<parameter-assignment matching-group="3" parameter-name="replacementItem" />
-        </ueiMatch>
-        <ueiMatch>
-        	<process-match expression="beerd" />
-        	<match type="regex" expression=".*" default-parameter-mapping="false"/>
-        	<uei>uei.opennms.org/tests/syslogd/nonMessageMatch/processOnly</uei>
-        </ueiMatch>
-        <ueiMatch>
-        	<facility>local0</facility>
-        	<match type="regex" expression=".*" default-parameter-mapping="false"/>
-        	<uei>uei.opennms.org/tests/syslogd/nonMessageMatch/facilityOnly</uei>
-        </ueiMatch>
-        <ueiMatch>
-        	<facility>local1</facility>
-        	<severity>Warning</severity>
-        	<process-match expression="maltd" />
-        	<match type="regex" expression=".*" default-parameter-mapping="false"/>
-        	<uei>uei.opennms.org/tests/syslogd/nonMessageMatch/facilitySeverityProcess</uei>
-        </ueiMatch>
-        <ueiMatch>
-        	<facility>local1</facility>
-        	<severity>Warning</severity>
-        	<match type="regex" expression=".*" default-parameter-mapping="false"/>
-        	<uei>uei.opennms.org/tests/syslogd/nonMessageMatch/facilitySeverity</uei>
-        </ueiMatch>
-        <ueiMatch>
-        	<severity>Critical</severity>
-        	<match type="regex" expression=".*" default-parameter-mapping="false"/>
-        	<uei>uei.opennms.org/tests/syslogd/nonMessageMatch/severityOnly</uei>
-        </ueiMatch>
-    </ueiList>
+    <!--
+        NOTE: This uses the CustomSyslogParser and forwarding-regexp for backwards compatibility.  If your
+        syslog sources will always use a particular format, it's better to use one of the more specific parsers
+        in the "parser" attribute, above.
 
-    <hideMessage>
-        <hideMatch>
-            <match type="substr" expression="TESTHIDING"/>
-        </hideMatch>
-        <hideMatch>
-            <match type="regex" expression="[Dd]ouble[Ss]ecret"/>
-        </hideMatch>
-    </hideMessage>
+        Available parsers:
 
+        * org.opennms.netmgt.syslogd.CustomSyslogParser: A backwards-compatible parser that has the same behavior
+          as OpenNMS 1.8 (and previous).  It has relaxed standards and can usually pull data out of most BSD-
+          or Syslog-NG-style traps.
+        * org.opennms.netmgt.syslogd.RadixTreeSyslogParser: This parser uses a set of patterns to match all 
+          RFC 3164, RFC 5424, and syslog-ng message formats. Because it is the most flexible parser, it is the
+          preferred implementation in most cases. Like the legacy Rfc5424SyslogParser, it currently discards 
+          RFC 5424 structured data. It ignores the forwarding-regexp, matching-group-host, and matching-group-message 
+          parameters in favor of using an internal set of patterns.
+        * DEPRECATED: org.opennms.netmgt.syslogd.SyslogNGParser: A stricter variant of the CustomSyslogParser which parses
+          Syslog-NG's default format.  It ignores forwarding-regexp, matching-group-host, and matching-group-message
+          and instead relies on a well-known properly-formatted syslog message.
+        * DEPRECATED: org.opennms.netmgt.syslogd.Rfc5424SyslogParser: A parser that handles the new Syslog standard (as
+          defined in RFC5424).  It has strict parsing that should match the grammar specified in the RFC, although
+          it currently discards structured data.  Like the SyslogNGParser, it ignores forwarding-regexp,
+          matching-group-host, and matching-group-message in favor of stricter parsing of the known grammer.
+
+        *** PERFORMANCE NOTES ***
+
+        For the most deterministic performance of OpenNMS when matching syslog messages, you should *always*
+        anchor your regular expression matches with ^ and $, like in the examples below.  Failure to do so can
+        cause extreme slowdowns, especially with large amounts of <ueiMatch> tags.
+    -->
+
+    <import-file>syslog/ApacheHTTPD.syslog.xml</import-file>
+    <import-file>syslog/LinuxKernel.syslog.xml</import-file>
+    <import-file>syslog/NetgearProsafeSmartSwitch.syslog.xml</import-file>
+    <import-file>syslog/OpenSSH.syslog.xml</import-file>
+    <import-file>syslog/OpenWrt.syslog.xml</import-file>
+    <import-file>syslog/Procmail.syslog.xml</import-file>
+    <import-file>syslog/Postfix.syslog.xml</import-file>
+    <import-file>syslog/Sudo.syslog.xml</import-file>
 
 </syslogd-configuration>

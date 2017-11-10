@@ -98,8 +98,10 @@ public class Runner {
 			Vertx.clusteredVertx(options, res -> {
 				if (res.succeeded()) {
 					Vertx vertx = res.result();
-					vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
-					vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
+					// vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
+					// vertx.eventBus().registerDefaultCodec(StringBuilder.class, new Builder());
+					// vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new
+					// SyslogdDTOMessageCodec());
 					runner.accept(vertx);
 				} else {
 					res.cause().printStackTrace();
@@ -107,8 +109,10 @@ public class Runner {
 			});
 		} else {
 			Vertx vertx = Vertx.vertx(options);
-			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
-			vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new SyslogdDTOMessageCodec());
+			// vertx.eventBus().registerDefaultCodec(StringBuilder.class, new Builder());
+			// vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
+			// vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new
+			// SyslogdDTOMessageCodec());
 			runner.accept(vertx);
 		}
 	}

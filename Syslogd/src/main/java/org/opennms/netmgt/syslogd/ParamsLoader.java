@@ -7,6 +7,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.StringReader;
+import java.io.StringWriter;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -22,21 +24,24 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import org.apache.commons.io.IOUtils;
+import javax.xml.bind.JAXBException;
+
+import org.eclipse.persistence.jaxb.JAXBUnmarshaller;
 import org.opennms.core.utils.ConfigFileConstants;
+import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
-import org.opennms.netmgt.dao.hibernate.DistPollerDaoHibernate;
 import org.opennms.netmgt.syslogd.BufferParser.BufferParserFactory;
 import org.opennms.netmgt.syslogd.api.Runner;
-import org.opennms.netmgt.syslogd.api.SyslogMessageDTO;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
+import org.opennms.netmgt.syslogd.api.UtilMarshler;
 import org.opennms.netmgt.xml.event.Parm;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
-import io.vertx.core.Future;
 import io.vertx.core.eventbus.EventBus;
-import io.vertx.core.eventbus.MessageConsumer;
 
 public class ParamsLoader extends AbstractVerticle {
 
@@ -44,11 +49,15 @@ public class ParamsLoader extends AbstractVerticle {
 
 	private static List<String> grokPatternsList;
 
+	private static UtilMarshler utilMarshler;
+
 	public void setGrokPatternsList(List<String> grokPatternsList) {
 		ParamsLoader.grokPatternsList = grokPatternsList;
 	}
 
 	private static SyslogdConfigFactory syslogdConfig;
+
+	private static Gson gson;
 
 	public static List<String> getGrokPatternsList() {
 		return grokPatternsList;
@@ -71,12 +80,12 @@ public class ParamsLoader extends AbstractVerticle {
 		deployment.setWorker(true);
 		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
 		deployment.setMultiThreaded(true);
+		// deployment.setInstances(100);
+		// gson = new GsonBuilder().registerTypeAdapter(ByteBuffer.class, new
+		// ByteBufferXmlAdapter()).create();
 		Runner.runClusteredExample1(ParamsLoader.class, deployment);
 	}
 
-	static {
-
-	}
 	private static Map<String, String> paramsMap;
 
 	public Map<String, String> getParamsMap() {
@@ -95,29 +104,25 @@ public class ParamsLoader extends AbstractVerticle {
 
 	@Override
 	public void start() throws Exception {
+		utilMarshler = new UtilMarshler(SyslogMessageLogDTO.class);
 		syslogdEventbus = vertx.eventBus();
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
 			vertx.eventBus().consumer("eventd.message.consumer", e -> {
-				SyslogMessageLogDTO syslogMessage = (SyslogMessageLogDTO) e.body();
-				SyslogMessageDTO syslog = syslogMessage.getMessages();
-				parse(syslog.getBytes());
-				syslogMessage.setParamsMap(paramsMap);
-				vertx.eventBus().send("parms.message.consumer", syslogMessage);
-				System.out.println("At Params " + SyslogTimeStamp.broadcastCount.incrementAndGet());
+
+				SyslogMessageLogDTO syslogMessage = utilMarshler.unmarshal((String) e.body());
+				syslogMessage.setParamsMap(parse(syslogMessage.getMessages().getBytes()));
+				vertx.eventBus().send("parms.message.consumer", utilMarshler.marshal(syslogMessage));
+				// System.out.println("At Params " +
+				// SyslogTimeStamp.broadcastCount.incrementAndGet());
 			});
 
-			// MessageConsumer<SyslogMessageLogDTO> consumerFromEventBus =
-			// syslogdEventbus.consumer("eventd.message.consumer");
-			// consumerFromEventBus.handler(syslogDTOMessage -> {
-			// // SyslogMessageDTO syslog = syslogDTOMessage.body().getMessages().get(0);
-			// // parse(syslog.getBytes());
-			// // syslogDTOMessage.body().setParamsMap(paramsMap);
-			// // vertx.eventBus().send("parms.message.consumer", syslogDTOMessage.body());
-			// System.out.println("At Params " +
-			// SyslogTimeStamp.broadcastCount.incrementAndGet());
-			// });
 		});
+	}
+
+	private SyslogMessageLogDTO getSyslogDto(String body) {
+
+		return gson.fromJson(body, SyslogMessageLogDTO.class);
 	}
 
 	/**

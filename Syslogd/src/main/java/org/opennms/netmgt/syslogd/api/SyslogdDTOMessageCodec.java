@@ -49,7 +49,7 @@ public class SyslogdDTOMessageCodec implements MessageCodec<SyslogMessageLogDTO,
 	}
 
 	@Override
-	public SyslogMessageLogDTO decodeFromWire(int position, Buffer buffer) {
+	public synchronized SyslogMessageLogDTO decodeFromWire(int position, Buffer buffer) {
 		try {
 			// objectToGson = new GsonBuilder().registerTypeAdapter(ByteBuffer.class, new
 			// ByteBufferXmlAdapter()).create();

@@ -171,7 +171,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 	 */
 	private void sendConsumedMessage(ConsumerRecord<String, String> record) {
 		try {
-			kafkaEventBus.send("syslogd.message.consumer", record.value());
+			kafkaEventBus.send("eventd.message.consumer", record.value());
 
 			// vertx.executeBlocking(f -> {
 			// vertx.eventBus().send("syslogd.message.consumer", record.value());

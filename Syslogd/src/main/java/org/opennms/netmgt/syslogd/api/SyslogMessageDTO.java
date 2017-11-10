@@ -90,4 +90,5 @@ public class SyslogMessageDTO {
 	public int hashCode() {
 		return Objects.hash(timestamp, bytes);
 	}
+	
 }

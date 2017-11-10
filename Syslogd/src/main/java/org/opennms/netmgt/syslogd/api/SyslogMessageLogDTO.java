@@ -46,6 +46,9 @@ import org.opennms.core.ipc.sink.api.Message;
 import org.opennms.core.network.InetAddressXmlAdapter;
 import org.opennms.netmgt.config.SyslogdConfig;
 
+import com.google.gson.Gson;
+import com.sun.xml.bind.v2.runtime.RuntimeUtil.ToStringAdapter;
+
 import java.util.Objects;
 
 @XmlRootElement(name = "syslog-message-log")
@@ -154,5 +157,4 @@ public class SyslogMessageLogDTO implements Message {
 	public int hashCode() {
 		return Objects.hash(sourceAddress, sourcePort, systemId, location, messages);
 	}
-
 }
