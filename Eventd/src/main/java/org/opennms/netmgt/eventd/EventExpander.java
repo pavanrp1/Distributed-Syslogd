@@ -161,8 +161,8 @@ public final class EventExpander extends AbstractVerticle
 		m_eventUtil = new EventUtilDaoImpl(new MetricRegistry());
 		DefaultEventConfDao eventConfDao = new DefaultEventConfDao();
 
-		eventConfDao.setConfigResource(
-				new FileSystemResource(ConfigFileConstants.getConfigFileByName("eventconf.xml")));
+		eventConfDao
+				.setConfigResource(new FileSystemResource(ConfigFileConstants.getConfigFileByName("eventconf.xml")));
 		eventConfDao.afterPropertiesSet();
 		m_eventConfDao = eventConfDao;
 		DeploymentOptions deployOptions = new DeploymentOptions();
