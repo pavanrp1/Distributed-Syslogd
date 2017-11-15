@@ -33,7 +33,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.eventd.util.ClusteredVertx;
@@ -92,8 +91,6 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 	private ExecutorService backgroundConsumer;
 
 	private EventBus eventIpcEventBus;
-
-	private AtomicBoolean running;
 
 	private static UtiliMarshlerUnmarshaler eventXmlHandler;
 
@@ -239,7 +236,6 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 
 	@Override
 	public void start() throws Exception {
-		running = new AtomicBoolean(true);
 		eventIpcEventBus = vertx.eventBus();
 
 		backgroundConsumer = Executors.newSingleThreadExecutor();
@@ -254,14 +250,12 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 	}
 
 	private synchronized void consumeFromEventBus() {
-		while (running.get()) {
-			try {
-				eventIpcEventBus.consumer(ConfigConstants.DEFAULT_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
-					sendNowSyncEvent((Event) eventXmlHandler.unmarshal((String) eventLog.body()));
-				});
-			} catch (Exception ex) {
-				LOG.error("Failed to start up ! " + ex.getMessage());
-			}
+		try {
+			eventIpcEventBus.consumer(ConfigConstants.DEFAULT_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
+				sendNowSyncEvent((Event) eventXmlHandler.unmarshal((String) eventLog.body()));
+			});
+		} catch (Exception ex) {
+			LOG.error("Failed to start up ! " + ex.getMessage());
 		}
 	}
 

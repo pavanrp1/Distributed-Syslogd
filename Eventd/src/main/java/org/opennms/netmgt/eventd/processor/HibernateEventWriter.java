@@ -35,7 +35,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
@@ -132,8 +131,6 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 	private static EventUtil eventUtil;
 
 	private Timer writeTimer;
-
-	private AtomicBoolean running;
 
 	private ExecutorService backgroundConsumer;
 
@@ -499,8 +496,6 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 
 	@Override
 	public void start() throws Exception {
-		running = new AtomicBoolean(true);
-
 		hibernateEventBus = vertx.eventBus();
 
 		backgroundConsumer = Executors.newSingleThreadExecutor();
@@ -517,20 +512,18 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 	}
 
 	private synchronized void consumeFromEventBus() {
-		while (running.get()) {
-			try {
-				hibernateEventBus.consumer(ConfigConstants.HIBERNATE_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
-					try {
-						process((Log) logXmlHandler.unmarshal((String) eventLog.body()));
-					} catch (EventProcessorException e) {
-						e.printStackTrace();
-					}
-					hibernateEventBus.send(ConfigConstants.EVENTBROADCASTER_TO_EVENT_CONSUMER_ADDRESS,
-							logXmlHandler.marshal(m_eventLog));
-				});
+		try {
+			hibernateEventBus.consumer(ConfigConstants.HIBERNATE_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
+				try {
+					process((Log) logXmlHandler.unmarshal((String) eventLog.body()));
+				} catch (EventProcessorException e) {
+					e.printStackTrace();
+				}
+				hibernateEventBus.send(ConfigConstants.EVENTBROADCASTER_TO_EVENT_CONSUMER_ADDRESS,
+						logXmlHandler.marshal(m_eventLog));
+			});
 
-			} catch (Exception ex) {
-			}
+		} catch (Exception ex) {
 		}
 	}
 }

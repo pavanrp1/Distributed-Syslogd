@@ -31,7 +31,6 @@ package org.opennms.netmgt.eventd.processor;
 import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.opennms.netmgt.eventd.EventIpcManagerDefaultImpl;
 import org.opennms.netmgt.eventd.processor.expandable.EventTemplate;
@@ -63,8 +62,6 @@ import io.vertx.core.eventbus.EventBus;
 public class EventIpcBroadcastProcessor extends AbstractVerticle implements EventProcessor, InitializingBean {
 	private static final Logger LOG = LoggerFactory.getLogger(EventIpcBroadcastProcessor.class);
 	private static EventIpcBroadcaster m_eventIpcBroadcaster;
-
-	private AtomicBoolean running;
 
 	private ExecutorService backgroundConsumer;
 	private EventBus broadCastEventBus;
@@ -150,8 +147,6 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 
 	@Override
 	public void start() throws Exception {
-		running = new AtomicBoolean(true);
-
 		broadCastEventBus = vertx.eventBus();
 
 		backgroundConsumer = Executors.newSingleThreadExecutor();
@@ -166,18 +161,16 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 	}
 
 	private synchronized void consumeFromEventBus() {
-		while (running.get()) {
-			try {
-				broadCastEventBus.consumer(ConfigConstants.EVENTBROADCASTER_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
-					try {
-						process((Log) logXmlMarshler.unmarshal((String) eventLog.body()));
-						System.out.println("Event at broadcaster " + EventTemplate.eventCount.incrementAndGet());
-					} catch (EventProcessorException e) {
-						e.printStackTrace();
-					}
-				});
-			} catch (Exception ex) {
-			}
+		try {
+			broadCastEventBus.consumer(ConfigConstants.HIBERNATE_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
+				try {
+					process((Log) logXmlMarshler.unmarshal((String) eventLog.body()));
+					System.out.println("Event at broadcaster " + EventTemplate.eventCount.incrementAndGet());
+				} catch (EventProcessorException e) {
+					e.printStackTrace();
+				}
+			});
+		} catch (Exception ex) {
 		}
 	}
 

@@ -28,7 +28,6 @@
 
 package org.opennms.netmgt.eventd;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,10 +35,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.opennms.core.utils.ConfigFileConstants;
-import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.api.EventConfDao;
 import org.opennms.netmgt.eventd.util.ClusteredVertx;
@@ -134,8 +131,6 @@ public final class EventExpander extends AbstractVerticle
 	 * event is loaded with information from this default UEI
 	 */
 	private static final String DEFAULT_EVENT_UEI = "uei.opennms.org/default/event";
-
-	private AtomicBoolean running;
 
 	private ExecutorService backgroundConsumer;
 
@@ -827,7 +822,7 @@ public final class EventExpander extends AbstractVerticle
 			}
 			// }
 		}
-		eventExpanderBus.send(ConfigConstants.HIBERNATE_TO_EVENT_CONSUMER_ADDRESS, logXmlHandler.marshal(eventLog));
+		eventExpanderBus.publish(ConfigConstants.HIBERNATE_TO_EVENT_CONSUMER_ADDRESS, logXmlHandler.marshal(eventLog));
 	}
 
 	/**
@@ -859,8 +854,6 @@ public final class EventExpander extends AbstractVerticle
 
 	@Override
 	public void start() throws Exception {
-		running = new AtomicBoolean(true);
-
 		eventExpanderBus = vertx.eventBus();
 
 		backgroundConsumer = Executors.newSingleThreadExecutor();
@@ -877,17 +870,15 @@ public final class EventExpander extends AbstractVerticle
 	}
 
 	private synchronized void consumeFromEventBus() {
-		while (running.get()) {
-			try {
-				eventExpanderBus.consumer(ConfigConstants.EVENTEXPANDER_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
-					try {
-						process((Log) logXmlHandler.unmarshal((String) eventLog.body()));
-					} catch (EventProcessorException e) {
-						e.printStackTrace();
-					}
-				});
-			} catch (Exception ex) {
-			}
+		try {
+			eventExpanderBus.consumer(ConfigConstants.EVENTEXPANDER_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
+				try {
+					process((Log) logXmlHandler.unmarshal((String) eventLog.body()));
+				} catch (EventProcessorException e) {
+					e.printStackTrace();
+				}
+			});
+		} catch (Exception ex) {
 		}
 	}
 
