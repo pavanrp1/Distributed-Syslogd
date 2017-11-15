@@ -3,7 +3,7 @@
  */
 package org.vertx.cluster;
 
-import org.opennms.netmgt.syslogd.api.Runner;
+import org.opennms.netmgt.eventd.Runner;
 
 /**
  * @author pk015603

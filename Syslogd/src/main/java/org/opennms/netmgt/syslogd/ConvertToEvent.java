@@ -58,11 +58,13 @@ import org.opennms.netmgt.config.syslogd.ProcessMatch;
 import org.opennms.netmgt.config.syslogd.UeiMatch;
 import org.opennms.netmgt.dao.api.AbstractInterfaceToNodeCache;
 import org.opennms.netmgt.dao.api.InterfaceToNodeCache;
+import org.opennms.netmgt.eventd.Runner;
 import org.opennms.netmgt.model.events.EventBuilder;
-import org.opennms.netmgt.syslogd.api.Runner;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.syslogd.api.UtilMarshler;
 import org.opennms.netmgt.xml.event.Event;
+import org.opennms.netmgt.xml.event.Events;
+import org.opennms.netmgt.xml.event.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -105,9 +107,15 @@ public class ConvertToEvent extends AbstractVerticle {
 
 	private ExecutorService backgroundConsumer;
 
+	private EventBuilder m_eventBuilder;
+
+	private SyslogMessage m_message;
+
 	private static List<UeiMatch> ueiMatch;
 
 	private static List<HideMatch> hideMatch;
+
+	private static UtilMarshler logMarshler;
 
 	public ConvertToEvent() {
 	}
@@ -127,6 +135,7 @@ public class ConvertToEvent extends AbstractVerticle {
 	public static void main(String[] args) throws IOException {
 		m_event = new Event();
 		utilMarshler = new UtilMarshler(SyslogMessageLogDTO.class);
+		logMarshler = new UtilMarshler(Event.class);
 		syslogdConfig = loadSyslogConfiguration("/syslogd-loadtest-configuration.xml");
 		ueiMatch = (syslogdConfig.getUeiList() == null ? Collections.emptyList() : syslogdConfig.getUeiList());
 		hideMatch = (syslogdConfig.getHideMessages() == null ? Collections.emptyList()
@@ -149,15 +158,18 @@ public class ConvertToEvent extends AbstractVerticle {
 			io.vertx.core.eventbus.MessageConsumer<String> consumerFromEventBus = vertx.eventBus()
 					.consumer("parms.message.consumer");
 			consumerFromEventBus.handler(syslogDTOMessage -> {
-				CallConvertToEvent(utilMarshler.unmarshal(syslogDTOMessage.body()));
-				System.out.println("At CE " + SyslogTimeStamp.broadcastCount.incrementAndGet());
+				SyslogMessageLogDTO syslogMessage = (SyslogMessageLogDTO) utilMarshler
+						.unmarshal(syslogDTOMessage.body());
+				CallConvertToEvent(syslogMessage);
+				// System.out.println("At CE " +
+				// SyslogTimeStamp.broadcastCount.incrementAndGet());
 
 			});
 		});
 
 	}
 
-	private static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
+	public static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {
 		InputStream stream = null;
 		try {
 			stream = new SyslogSinkConsumer().getClass().getResourceAsStream(configuration);
@@ -171,10 +183,14 @@ public class ConvertToEvent extends AbstractVerticle {
 
 	private synchronized void CallConvertToEvent(SyslogMessageLogDTO syslog) {
 		try {
-			new ConvertToEvent(syslog.getSystemId(), syslog.getLocation(), syslog.getSourceAddress(),
+			ConvertToEvent ce = new ConvertToEvent();
+			Event test = ce.ConvertToEvent(syslog.getSystemId(), syslog.getLocation(), syslog.getSourceAddress(),
 					syslog.getSourcePort(),
 					StandardCharsets.US_ASCII.decode(syslog.getMessages().getBytes()).toString(), syslogdConfig,
-					syslog.getParamsMap());
+					syslog.getParamsMap(), syslog);
+
+			vertx.eventBus().send("eventd.message.consumer", logMarshler.marshal(test));
+
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -200,12 +216,16 @@ public class ConvertToEvent extends AbstractVerticle {
 	 * @throws MessageDiscardedException
 	 * @throws ParseException
 	 */
-	public ConvertToEvent(final String systemId, final String location, final DatagramPacket packet,
-			final SyslogdConfig config, final Map<String, String> params)
-			throws UnsupportedEncodingException, MessageDiscardedException, ParseException {
-		this(systemId, location, packet.getAddress(), packet.getPort(),
-				new String(packet.getData(), 0, packet.getLength(), "US-ASCII"), config, params);
-	}
+	// public ConvertToEvent(final String systemId, final String location, final
+	// DatagramPacket packet,
+	// final SyslogdConfig config, final Map<String, String> params,
+	// SyslogMessageLogDTO syslog)
+	// throws UnsupportedEncodingException, MessageDiscardedException,
+	// ParseException {
+	// this(systemId, location, packet.getAddress(), packet.getPort(),
+	// new String(packet.getData(), 0, packet.getLength(), "US-ASCII"), config,
+	// params, syslog);
+	// }
 
 	/**
 	 * Constructs a new event encapsulation instance based upon the information
@@ -221,14 +241,15 @@ public class ConvertToEvent extends AbstractVerticle {
 	 * @param list
 	 * @param len
 	 *            The length of the XML data in the buffer.
+	 * @return
 	 * @throws java.io.UnsupportedEncodingException
 	 *             Thrown if the data buffer cannot be decoded using the US-ASCII
 	 *             encoding.
 	 * @throws MessageDiscardedException
 	 * @throws ParseException
 	 */
-	public ConvertToEvent(final String systemId, final String location, final InetAddress addr, final int port,
-			final String data, final SyslogdConfig config, Map<String, String> params)
+	public Event ConvertToEvent(final String systemId, final String location, final InetAddress addr, final int port,
+			final String data, final SyslogdConfig config, Map<String, String> params, SyslogMessageLogDTO syslog)
 			throws UnsupportedEncodingException, MessageDiscardedException, ParseException {
 		if (config == null) {
 			throw new IllegalArgumentException("Config cannot be null");
@@ -382,7 +403,11 @@ public class ConvertToEvent extends AbstractVerticle {
 		if (message.getProcessId() != null) {
 			bldr.addParam("processid", message.getProcessId().toString());
 		}
-		m_event = bldr.getEvent();
+		// m_event = bldr.getEvent();
+		// syslog.setEventBuilder(bldr);
+		// syslog.setSyslogMessage(message);
+		return bldr.getEvent();
+
 	}
 
 	private static boolean matchFind(final String expression, final String input, final String context) {

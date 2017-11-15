@@ -31,6 +31,7 @@ package org.opennms.netmgt.eventd.processor.expandable;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
@@ -42,96 +43,99 @@ import org.slf4j.LoggerFactory;
 import com.google.common.collect.Lists;
 
 /**
- * The {@link EventTemplate} represents the event input, containing place-holders, e.g. 'nodeLabel',
- * and support to expand the template.
+ * The {@link EventTemplate} represents the event input, containing
+ * place-holders, e.g. 'nodeLabel', and support to expand the template.
  *
- * For each placeholder in the {@link EventTemplate#input} a {@link ExpandableToken} is created.
- * The expandable state of the {@link EventTemplate} is the expanded state of all tokens ({@link EventTemplate#tokens}.
+ * For each placeholder in the {@link EventTemplate#input} a
+ * {@link ExpandableToken} is created. The expandable state of the
+ * {@link EventTemplate} is the expanded state of all tokens
+ * ({@link EventTemplate#tokens}.
  */
 public class EventTemplate implements ExpandableToken {
 
-    private static final Logger LOG = LoggerFactory.getLogger(EventTemplate.class);
+	private static final Logger LOG = LoggerFactory.getLogger(EventTemplate.class);
 
-    private static final char PERCENT = '%';
+	public static AtomicInteger eventCount = new AtomicInteger();
 
-    private static final Pattern WHITESPACE_PATTERN = Pattern.compile(".*\\s(?s).*");
+	private static final char PERCENT = '%';
 
-    private final String input;
+	private static final Pattern WHITESPACE_PATTERN = Pattern.compile(".*\\s(?s).*");
 
-    private final List<ExpandableToken> tokens = Lists.newArrayList();
+	private final String input;
 
-    private final EventUtil eventUtil;
+	private final List<ExpandableToken> tokens = Lists.newArrayList();
 
-    private final boolean requiresTransaction;
+	private final EventUtil eventUtil;
 
-    public EventTemplate(String input, EventUtil eventUtil) {
-        this.input = Objects.requireNonNull(input);
-        this.eventUtil = Objects.requireNonNull(eventUtil);
-        parse();
-        this.requiresTransaction = tokens.stream().filter(t -> t.requiresTransaction()).findAny().isPresent();
-    }
+	private final boolean requiresTransaction;
 
-    /**
-     * Parses the input and creates {@link ExpandableToken} to expand it.
-     */
-    private void parse() {
-        tokens.clear();
-        String tempInp = input;
-        int inpLen = input.length();
+	public EventTemplate(String input, EventUtil eventUtil) {
+		this.input = Objects.requireNonNull(input);
+		this.eventUtil = Objects.requireNonNull(eventUtil);
+		parse();
+		this.requiresTransaction = tokens.stream().filter(t -> t.requiresTransaction()).findAny().isPresent();
+	}
 
-        int index1 = -1;
-        int index2 = -1;
+	/**
+	 * Parses the input and creates {@link ExpandableToken} to expand it.
+	 */
+	private void parse() {
+		tokens.clear();
+		String tempInp = input;
+		int inpLen = input.length();
 
-        // check input string to see if it has any %xxx% substring
-        while ((tempInp != null) && ((index1 = tempInp.indexOf(PERCENT)) != -1)) {
+		int index1 = -1;
+		int index2 = -1;
 
-            LOG.debug("checking input {}", tempInp);
-            // copy till first %
-            tokens.add(new ExpandableConstant(tempInp.substring(0, index1)));
-            tempInp = tempInp.substring(index1);
+		// check input string to see if it has any %xxx% substring
+		while ((tempInp != null) && ((index1 = tempInp.indexOf(PERCENT)) != -1)) {
 
-            index2 = tempInp.indexOf(PERCENT, 1);
-            if (index2 != -1) {
-                // Get the value between the %s
-                String parm = tempInp.substring(1, index2);
-                LOG.debug("parm: {} found in value", parm);
+			LOG.debug("checking input {}", tempInp);
+			// copy till first %
+			tokens.add(new ExpandableConstant(tempInp.substring(0, index1)));
+			tempInp = tempInp.substring(index1);
 
-                // If there's any whitespace in between the % signs, then do not try to
-                // expand it with a parameter value
-                if (WHITESPACE_PATTERN.matcher(parm).matches()) {
-                    tokens.add(new ExpandableConstant(PERCENT));
-                    tempInp = tempInp.substring(1);
-                    LOG.debug("skipping parm: {} because whitespace found in value", parm);
-                    continue;
-                }
+			index2 = tempInp.indexOf(PERCENT, 1);
+			if (index2 != -1) {
+				// Get the value between the %s
+				String parm = tempInp.substring(1, index2);
+				LOG.debug("parm: {} found in value", parm);
 
-                tokens.add(new ExpandableParameter(parm, eventUtil));
+				// If there's any whitespace in between the % signs, then do not try to
+				// expand it with a parameter value
+				if (WHITESPACE_PATTERN.matcher(parm).matches()) {
+					tokens.add(new ExpandableConstant(PERCENT));
+					tempInp = tempInp.substring(1);
+					LOG.debug("skipping parm: {} because whitespace found in value", parm);
+					continue;
+				}
 
-                if (index2 < (inpLen - 1)) {
-                    tempInp = tempInp.substring(index2 + 1);
-                } else {
-                    tempInp = null;
-                }
-            } else {
-                break;
-            }
-        }
-        if ((index1 == -1 || index2 == -1) && (tempInp != null)) {
-            tokens.add(new ExpandableConstant(tempInp));
-        }
-    }
+				tokens.add(new ExpandableParameter(parm, eventUtil));
 
-    @Override
-    public String expand(Event event, Map<String, Map<String, String>> decode) {
-        final String collect = tokens.stream()
-                .map(t -> t.expand(event, decode))
-                .collect(Collectors.joining());
-        return collect;
-    }
+				if (index2 < (inpLen - 1)) {
+					tempInp = tempInp.substring(index2 + 1);
+				} else {
+					tempInp = null;
+				}
+			} else {
+				break;
+			}
+		}
+		if ((index1 == -1 || index2 == -1) && (tempInp != null)) {
+			tokens.add(new ExpandableConstant(tempInp));
+		}
+	}
 
-    // If we find any token which requires a transaction, the template itself requires a transaction as well
-    @Override
-    public boolean requiresTransaction() {
-        return requiresTransaction;
-    }
+	@Override
+	public String expand(Event event, Map<String, Map<String, String>> decode) {
+		final String collect = tokens.stream().map(t -> t.expand(event, decode)).collect(Collectors.joining());
+		return collect;
+	}
+
+	// If we find any token which requires a transaction, the template itself
+	// requires a transaction as well
+	@Override
+	public boolean requiresTransaction() {
+		return requiresTransaction;
+	}
 }

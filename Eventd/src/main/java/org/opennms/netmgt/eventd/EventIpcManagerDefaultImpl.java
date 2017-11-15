@@ -49,7 +49,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.opennms.core.concurrent.LogPreservingThreadFactory;
 import org.opennms.core.logging.Logging;
-import org.opennms.netmgt.dao.mock.EventWrapper;
+import org.opennms.netmgt.eventd.processor.expandable.EventTemplate;
 import org.opennms.netmgt.events.api.EventHandler;
 import org.opennms.netmgt.events.api.EventIpcBroadcaster;
 import org.opennms.netmgt.events.api.EventIpcManager;
@@ -58,17 +58,13 @@ import org.opennms.netmgt.events.api.EventProxyException;
 import org.opennms.netmgt.xml.event.Event;
 import org.opennms.netmgt.xml.event.Events;
 import org.opennms.netmgt.xml.event.Log;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
-import org.springframework.util.StringUtils;
 
 import com.codahale.metrics.Gauge;
 import com.codahale.metrics.MetricRegistry;
 
 import io.vertx.core.AbstractVerticle;
-import io.vertx.core.Future;
+import io.vertx.core.DeploymentOptions;
 import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.eventbus.MessageConsumer;
 
@@ -79,614 +75,667 @@ import io.vertx.core.eventbus.MessageConsumer;
  * @author <A HREF="mailto:sowmya@opennms.org">Sowmya Nataraj </A>
  * @author <A HREF="http://www.opennms.org">OpenNMS.org </A>
  */
-public class EventIpcManagerDefaultImpl extends AbstractVerticle implements EventIpcManager, EventIpcBroadcaster, InitializingBean {
-    
-    
-    private static final Logger LOG = LoggerFactory.getLogger(EventIpcManagerDefaultImpl.class);
+public class EventIpcManagerDefaultImpl extends AbstractVerticle
+		implements EventIpcManager, EventIpcBroadcaster {
 
-    public static class DiscardTrapsAndSyslogEvents implements RejectedExecutionHandler {
-        /**
-         * Creates a <tt>DiscardOldestPolicy</tt> for the given executor.
-         */
-        public DiscardTrapsAndSyslogEvents() { }
+	//private static final Logger LOG = LoggerFactory.getLogger(EventIpcManagerDefaultImpl.class);
 
-        /**
-         * Obtains and ignores the next task that the executor
-         * would otherwise execute, if one is immediately available,
-         * and then retries execution of task r, unless the executor
-         * is shut down, in which case task r is instead discarded.
-         * @param r the runnable task requested to be executed
-         * @param e the executor attempting to execute this task
-         */
-        @Override
-        public void rejectedExecution(Runnable r, ThreadPoolExecutor e) {
-            if (!e.isShutdown()) {
-                e.getQueue().poll();
-                e.execute(r);
-            }
-        }
-    }
+	public static class DiscardTrapsAndSyslogEvents implements RejectedExecutionHandler {
+		/**
+		 * Creates a <tt>DiscardOldestPolicy</tt> for the given executor.
+		 */
+		public DiscardTrapsAndSyslogEvents() {
+		}
 
-    /**
-     * Hash table of list of event listeners keyed by event UEI
-     */
-    private Map<String, List<EventListener>> m_ueiListeners = new HashMap<String, List<EventListener>>();
+		/**
+		 * Obtains and ignores the next task that the executor would otherwise execute,
+		 * if one is immediately available, and then retries execution of task r, unless
+		 * the executor is shut down, in which case task r is instead discarded.
+		 * 
+		 * @param r
+		 *            the runnable task requested to be executed
+		 * @param e
+		 *            the executor attempting to execute this task
+		 */
+		@Override
+		public void rejectedExecution(Runnable r, ThreadPoolExecutor e) {
+			if (!e.isShutdown()) {
+				e.getQueue().poll();
+				e.execute(r);
+			}
+		}
+	}
 
-    /**
-     * The list of event listeners interested in all events
-     */
-    private List<EventListener> m_listeners = new ArrayList<EventListener>();
+	/**
+	 * Hash table of list of event listeners keyed by event UEI
+	 */
+	private Map<String, List<EventListener>> m_ueiListeners = new HashMap<String, List<EventListener>>();
 
-    /**
-     * Hash table of event listener threads keyed by the listener's id
-     */
-    private Map<String, EventListenerExecutor> m_listenerThreads = new HashMap<String, EventListenerExecutor>();
+	/**
+	 * The list of event listeners interested in all events
+	 */
+	private List<EventListener> m_listeners = new ArrayList<EventListener>();
 
-    /**
-     * The thread pool handling the events
-     */
-    private ExecutorService m_eventHandlerPool;
+	/**
+	 * Hash table of event listener threads keyed by the listener's id
+	 */
+	private Map<String, EventListenerExecutor> m_listenerThreads = new HashMap<String, EventListenerExecutor>();
 
-    private EventHandler m_eventHandler;
+	/**
+	 * The thread pool handling the events
+	 */
+	private ExecutorService m_eventHandlerPool;
 
-    private Integer m_handlerPoolSize;
-    
-    private Integer m_handlerQueueLength;
+	private static EventHandler m_eventHandler;
 
-    private final MetricRegistry m_registry;
-    
+	private static org.opennms.netmgt.eventd.UtilMarshler logMarshler;
+
+	private Integer m_handlerPoolSize;
+
+	private Integer m_handlerQueueLength;
+
+	private final MetricRegistry m_registry;
+
 	private AtomicBoolean running;
-	
+
 	private ExecutorService backgroundConsumer;
-	
+
 	private static final String EVENTD_CONSUMER_ADDRESS = "eventd.message.consumer";
-	
+
 	private static final String DEFAULT_EVENTD_CONSUMER_ADDRESS = "default.eventd.message.consumer";
-	
+
 	private EventBus eventIpcEventBus;
 
-    /**
-     * A thread dedicated to each listener. The events meant for each listener
-     * is added to an execution queue when the 'sendNow()' is called. The
-     * ListenerThread reads events off of this queue and sends them to the
-     * appropriate listener.
-     */
-    private static class EventListenerExecutor {
-        /**
-         * Listener to which this thread is dedicated
-         */
-        private final EventListener m_listener;
+	/**
+	 * A thread dedicated to each listener. The events meant for each listener is
+	 * added to an execution queue when the 'sendNow()' is called. The
+	 * ListenerThread reads events off of this queue and sends them to the
+	 * appropriate listener.
+	 */
+	private static class EventListenerExecutor {
+		/**
+		 * Listener to which this thread is dedicated
+		 */
+		private final EventListener m_listener;
 
-        /**
-         * The thread that is running this runnable.
-         */
-        private final ExecutorService m_delegateThread;
+		/**
+		 * The thread that is running this runnable.
+		 */
+		private final ExecutorService m_delegateThread;
 
-        /**
-         * Constructor
-         */
-        EventListenerExecutor(EventListener listener, Integer handlerQueueLength) {
-            m_listener = listener;
-            // You could also do Executors.newSingleThreadExecutor() here
-            m_delegateThread = new ThreadPoolExecutor(
-                    1,
-                    1,
-                    0L,
-                    TimeUnit.MILLISECONDS,
-                    handlerQueueLength == null ? new LinkedBlockingQueue<Runnable>() : new LinkedBlockingQueue<Runnable>(handlerQueueLength),
-                    // This ThreadFactory will ensure that the log prefix of the calling thread
-                    // is used for all events that this listener handles. Therefore, if Notifd
-                    // registers for an event then all logs for handling that event will end up
-                    // inside notifd.log.
-                    new LogPreservingThreadFactory(m_listener.getName(), 1),
-                    new RejectedExecutionHandler() {
-                        @Override
-                        public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
-                            LOG.warn("Listener {}'s event queue is full, discarding event", m_listener.getName());
-                        }
-                    }
-            );
-        }
+		/**
+		 * Constructor
+		 */
+		EventListenerExecutor(EventListener listener, Integer handlerQueueLength) {
+			m_listener = listener;
+			// You could also do Executors.newSingleThreadExecutor() here
+			m_delegateThread = new ThreadPoolExecutor(1, 1, 0L, TimeUnit.MILLISECONDS,
+					handlerQueueLength == null ? new LinkedBlockingQueue<Runnable>()
+							: new LinkedBlockingQueue<Runnable>(handlerQueueLength),
+					// This ThreadFactory will ensure that the log prefix of the calling thread
+					// is used for all events that this listener handles. Therefore, if Notifd
+					// registers for an event then all logs for handling that event will end up
+					// inside notifd.log.
+					new LogPreservingThreadFactory(m_listener.getName(), 1), new RejectedExecutionHandler() {
+						@Override
+						public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
+						//	LOG.warn("Listener {}'s event queue is full, discarding event", m_listener.getName());
+						}
+					});
+		}
 
-        public CompletableFuture<Void> addEvent(final Event event) {
-            return CompletableFuture.runAsync(new Runnable() {
-                @Override
-                public void run() {
-                    try {
-                         if (LOG.isDebugEnabled()) LOG.debug("run: calling onEvent on {} for event {}", m_listener.getName(), event.toStringSimple());
+		public CompletableFuture<Void> addEvent(final Event event) {
+			return CompletableFuture.runAsync(new Runnable() {
+				@Override
+				public void run() {
+					try {
+//						if (LOG.isDebugEnabled())
+//							LOG.debug("run: calling onEvent on {} for event {}", m_listener.getName(),
+//									event.toStringSimple());
 
-                        // Make sure we restore our log4j logging prefix after onEvent is called
-                        Map<String,String> mdc = Logging.getCopyOfContextMap();
-                        try {
-                            m_listener.onEvent(event);
-                        } finally {
-                            Logging.setContextMap(mdc);
-                        }
-                    } catch (Throwable t) {
-                        LOG.warn("run: an unexpected error occured during ListenerThread {}", m_listener.getName(), t);
-                    }
-                }
-            }, m_delegateThread);
-        }
+						// Make sure we restore our log4j logging prefix after onEvent is called
+						Map<String, String> mdc = Logging.getCopyOfContextMap();
+						try {
+							m_listener.onEvent(event);
+						} finally {
+							Logging.setContextMap(mdc);
+						}
+					} catch (Throwable t) {
+						//LOG.warn("run: an unexpected error occured during ListenerThread {}", m_listener.getName(), t);
+					}
+				}
+			}, m_delegateThread);
+		}
 
-        /**
-         * Stops the execution of this listener.
-         */
-        public void stop() {
-            m_delegateThread.shutdown();
-        }
-    }
-    
-    @Override
-	public void start(final Future<Void> startedResult) throws Exception {
+		/**
+		 * Stops the execution of this listener.
+		 */
+		public void stop() {
+			m_delegateThread.shutdown();
+		}
+	}
+
+	public static void main(String[] args) {
+		m_eventHandler = new DefaultEventHandlerImpl(new MetricRegistry());
+		logMarshler = new UtilMarshler(Event.class);
+		System.setProperty("opennms.home", "src/test/resources");
+		// org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
+		// logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
+		DeploymentOptions deployment = new DeploymentOptions();
+		deployment.setWorker(true);
+		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployment.setMultiThreaded(true);
+		Runner.runClusteredExample(EventIpcManagerDefaultImpl.class, deployment);
+
+	}
+
+	@Override
+	public void start() throws Exception {
 		running = new AtomicBoolean(true);
-		
-		eventIpcEventBus=vertx.eventBus();
-		
+
+		eventIpcEventBus = vertx.eventBus();
+
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
 			try {
 
-				startedResult.complete();
 				consume();
-				
+
 			} catch (Exception ex) {
 				String error = "Failed to startup";
-				startedResult.fail(ex);
 			}
 		});
 	}
-	
+
 	private void consume() {
 		while (running.get()) {
 			try {
-				MessageConsumer<Log> eventIpcConsumer = eventIpcEventBus.consumer(EVENTD_CONSUMER_ADDRESS);
+				MessageConsumer<String> eventIpcConsumer = eventIpcEventBus.consumer(EVENTD_CONSUMER_ADDRESS);
 				eventIpcConsumer.handler(message -> {
-					sendNowSync(message.body());
-					eventIpcEventBus.send(DEFAULT_EVENTD_CONSUMER_ADDRESS, DefaultEventHandlerImpl.getEventdLog());
+					sendNowSync((Event) logMarshler.unmarshal(message.body()));
+					System.out.println("At EventHandler " + EventTemplate.eventCount.incrementAndGet());
+					// eventIpcEventBus.send(DEFAULT_EVENTD_CONSUMER_ADDRESS,
+					// DefaultEventHandlerImpl.getEventdLog());
 				});
 			} catch (Exception ex) {
 			}
 		}
 	}
 
-    /**
-     * <p>Constructor for EventIpcManagerDefaultImpl.</p>
-     */
-    public EventIpcManagerDefaultImpl(MetricRegistry registry) {
-        m_registry = Objects.requireNonNull(registry);
-    }
+	/**
+	 * <p>
+	 * Constructor for EventIpcManagerDefaultImpl.
+	 * </p>
+	 */
+	public EventIpcManagerDefaultImpl(MetricRegistry registry) {
+		m_registry = Objects.requireNonNull(registry);
+	}
 
-    /** {@inheritDoc} */
-    @Override
-    public void send(Event event) throws EventProxyException {
-        sendNow(event);
-    }
+	/** {@inheritDoc} */
+	@Override
+	public void send(Event event) throws EventProxyException {
+		sendNow(event);
+	}
 
-    /**
-     * <p>send</p>
-     *
-     * @param eventLog a {@link org.opennms.netmgt.xml.event.Log} object.
-     * @throws org.opennms.netmgt.events.api.EventProxyException if any.
-     */
-    @Override
-    public void send(Log eventLog) throws EventProxyException {
-        sendNow(eventLog);
-    }
+	/**
+	 * <p>
+	 * send
+	 * </p>
+	 *
+	 * @param eventLog
+	 *            a {@link org.opennms.netmgt.xml.event.Log} object.
+	 * @throws org.opennms.netmgt.events.api.EventProxyException
+	 *             if any.
+	 */
+	@Override
+	public void send(Log eventLog) throws EventProxyException {
+		sendNow(eventLog);
+	}
 
-    /**
-     * {@inheritDoc}
-     *
-     * Called by a service to send an event to other listeners.
-     */
-    @Override
-    public void sendNow(Event event) {
-        Assert.notNull(event, "event argument cannot be null");
+	/**
+	 * {@inheritDoc}
+	 *
+	 * Called by a service to send an event to other listeners.
+	 */
+	@Override
+	public void sendNow(Event event) {
+		Assert.notNull(event, "event argument cannot be null");
 
-        Events events = new Events();
-        events.addEvent(event);
+		Events events = new Events();
+		events.addEvent(event);
 
-        Log eventLog = new Log();
-        eventLog.setEvents(events);
+		Log eventLog = new Log();
+		eventLog.setEvents(events);
 
-        sendNow(eventLog);
-    }
+		sendNow(eventLog);
+	}
 
-    /**
-     * Called by a service to send a set of events to other listeners.
-     * Creates a new event handler for the event log and queues it to the
-     * event handler thread pool.
-     *
-     * @param eventLog a {@link org.opennms.netmgt.xml.event.Log} object.
-     */
-    @Override
-    public void sendNow(Log eventLog) {
-        Assert.notNull(eventLog, "eventLog argument cannot be null");
+	/**
+	 * Called by a service to send a set of events to other listeners. Creates a new
+	 * event handler for the event log and queues it to the event handler thread
+	 * pool.
+	 *
+	 * @param eventLog
+	 *            a {@link org.opennms.netmgt.xml.event.Log} object.
+	 */
+	@Override
+	public void sendNow(Log eventLog) {
+		Assert.notNull(eventLog, "eventLog argument cannot be null");
 
-        if (LOG.isDebugEnabled()) LOG.debug("sending: {}", eventLog);
+//		if (LOG.isDebugEnabled())
+//			LOG.debug("sending: {}", eventLog);
 
-        try {
-            m_eventHandlerPool.execute(m_eventHandler.createRunnable(eventLog));
-        } catch (RejectedExecutionException e) {
-            LOG.warn("Unable to queue event log to the event handler pool queue", e);
-            throw e;
-        }
-    }
+		try {
+			m_eventHandlerPool.execute(m_eventHandler.createRunnable(eventLog));
+		} catch (RejectedExecutionException e) {
+			//LOG.warn("Unable to queue event log to the event handler pool queue", e);
+			throw e;
+		}
+	}
 
-    @Override
-    public void sendNowSync(Event event) {
-        Objects.requireNonNull(event);
+	@Override
+	public void sendNowSync(Event event) {
+		Objects.requireNonNull(event);
 
-        Events events = new Events();
-        events.addEvent(event);
+		Events events = new Events();
+		events.addEvent(event);
 
-        Log eventLog = new Log();
-        eventLog.setEvents(events);
+		Log eventLog = new Log();
+		eventLog.setEvents(events);
 
-        sendNowSync(eventLog);
-    }
+		sendNowSync(eventLog);
+	}
 
-    @Override
-    public void sendNowSync(Log eventLog) {
-        Objects.requireNonNull(eventLog);
-        // Create the runnable and invoke it using the current thread
-        // Also set the logging prefix to ensure that the log messages are
-        // properly routed to eventd's log file
-        m_eventHandler.createRunnable(eventLog, true).run();
-     //   Logging.withPrefix(Eventd.LOG4J_CATEGORY, m_eventHandler.createRunnable(eventLog, true));
-    }
+	@Override
+	public void sendNowSync(Log eventLog) {
+		Objects.requireNonNull(eventLog);
+		// Create the runnable and invoke it using the current thread
+		// Also set the logging prefix to ensure that the log messages are
+		// properly routed to eventd's log file
+		m_eventHandler.createRunnable(eventLog, true).run();
+		// Logging.withPrefix(Eventd.LOG4J_CATEGORY,
+		// m_eventHandler.createRunnable(eventLog, true));
+	}
 
-    @Override
-    public void broadcastNow(Event event, boolean synchronous) {
-        if (LOG.isDebugEnabled()) {
-            LOG.debug("Event ID {} to be broadcasted: {}", event.getDbid(), event.getUei());
-        }
+	// public void sendNowSync1(Event eventLog) {
+	// Objects.requireNonNull(eventLog);
+	// // Create the runnable and invoke it using the current thread
+	// // Also set the logging prefix to ensure that the log messages are
+	// // properly routed to eventd's log file
+	// m_eventHandler.createRunnable(eventLog, true).run();
+	// // Logging.withPrefix(Eventd.LOG4J_CATEGORY,
+	// // m_eventHandler.createRunnable(eventLog, true));
+	// }
 
-        if (LOG.isDebugEnabled() && m_listeners.isEmpty()) {
-            LOG.debug("No listeners interested in all events");
-        }
+	@Override
+	public void broadcastNow(Event event, boolean synchronous) {
+//		if (LOG.isDebugEnabled()) {
+//			LOG.debug("Event ID {} to be broadcasted: {}", event.getDbid(), event.getUei());
+//		}
+//
+//		if (LOG.isDebugEnabled() && m_listeners.isEmpty()) {
+//			LOG.debug("No listeners interested in all events");
+//		}
 
-        List<CompletableFuture<Void>> listenerFutures = new ArrayList<>();
+		List<CompletableFuture<Void>> listenerFutures = new ArrayList<>();
 
-        // Send to listeners interested in receiving all events
-        for (EventListener listener : m_listeners) {
-            listenerFutures.add(queueEventToListener(event, listener));
-        }
+		// Send to listeners interested in receiving all events
+		for (EventListener listener : m_listeners) {
+			listenerFutures.add(queueEventToListener(event, listener));
+		}
 
-        if (event.getUei() == null) {
-            if (LOG.isDebugEnabled()) {
-                LOG.debug("Event ID {} does not have a UEI, so skipping UEI matching", event.getDbid());
-            }
-            return;
-        }
-      //  System.out.println("\n"+new EventWrapper(event));
-        
-        /*
-         * Send to listeners who are interested in this event UEI.
-         * Loop to attempt partial wild card "directory" matches.
-         */
-        Set<EventListener> sentToListeners = new HashSet<EventListener>();
-        for (String uei = event.getUei(); uei.length() > 0; ) {
-            if (m_ueiListeners.containsKey(uei)) {
-                for (EventListener listener : m_ueiListeners.get(uei)) {
-                    if (!sentToListeners.contains(listener)) {
-                        listenerFutures.add(queueEventToListener(event, listener));
-                        sentToListeners.add(listener);
-                    }
-                }
-            }
-            
-            // Try wild cards: Find / before last character
-            int i = uei.lastIndexOf("/", uei.length() - 2);
-            if (i > 0) {
-                // Split at "/", including the /
-                uei = uei.substring (0, i + 1);
-            } else {
-                // No more wild cards to match
-                break;
-            }
-        }
-        
-        if (sentToListeners.isEmpty()) {
-            if (LOG.isDebugEnabled()) {
-                LOG.debug("No listener interested in event ID {}: {}", event.getDbid(), event.getUei());
-            }
-        }
+		if (event.getUei() == null) {
+//			if (LOG.isDebugEnabled()) {
+//				LOG.debug("Event ID {} does not have a UEI, so skipping UEI matching", event.getDbid());
+//			}
+			return;
+		}
+		// System.out.println("\n"+new EventWrapper(event));
 
-        // If synchronous...
-        if (synchronous) {
-            // Wait for all of the listeners to complete before returning
-            CompletableFuture.allOf(listenerFutures.toArray(new CompletableFuture[0])).join();
-        }
-    }
+		/*
+		 * Send to listeners who are interested in this event UEI. Loop to attempt
+		 * partial wild card "directory" matches.
+		 */
+		Set<EventListener> sentToListeners = new HashSet<EventListener>();
+		for (String uei = event.getUei(); uei.length() > 0;) {
+			if (m_ueiListeners.containsKey(uei)) {
+				for (EventListener listener : m_ueiListeners.get(uei)) {
+					if (!sentToListeners.contains(listener)) {
+						listenerFutures.add(queueEventToListener(event, listener));
+						sentToListeners.add(listener);
+					}
+				}
+			}
 
-    private CompletableFuture<Void> queueEventToListener(Event event, EventListener listener) {
-        return m_listenerThreads.get(listener.getName()).addEvent(event);
-    }
+			// Try wild cards: Find / before last character
+			int i = uei.lastIndexOf("/", uei.length() - 2);
+			if (i > 0) {
+				// Split at "/", including the /
+				uei = uei.substring(0, i + 1);
+			} else {
+				// No more wild cards to match
+				break;
+			}
+		}
 
-    /**
-     * {@inheritDoc}
-     *
-     * Register an event listener that is interested in all events.
-     * Removes this listener from any UEI-specific matches.
-     */
-    @Override
-    public synchronized void addEventListener(EventListener listener) {
-        Assert.notNull(listener, "listener argument cannot be null");
+		if (sentToListeners.isEmpty()) {
+//			if (LOG.isDebugEnabled()) {
+//				LOG.debug("No listener interested in event ID {}: {}", event.getDbid(), event.getUei());
+//			}
+		}
 
-        createListenerThread(listener);
+		// If synchronous...
+		if (synchronous) {
+			// Wait for all of the listeners to complete before returning
+			CompletableFuture.allOf(listenerFutures.toArray(new CompletableFuture[0])).join();
+		}
+	}
 
-        addMatchAllForListener(listener);
+	private CompletableFuture<Void> queueEventToListener(Event event, EventListener listener) {
+		return m_listenerThreads.get(listener.getName()).addEvent(event);
+	}
 
-        // Since we have a match-all listener, remove any specific UEIs
-        for (String uei : m_ueiListeners.keySet()) {
-            removeUeiForListener(uei, listener);
-        }
-    }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * Register an event listener that is interested in all events. Removes this
+	 * listener from any UEI-specific matches.
+	 */
+	@Override
+	public synchronized void addEventListener(EventListener listener) {
+		Assert.notNull(listener, "listener argument cannot be null");
 
-    /**
-     * {@inheritDoc}
-     *
-     * Register an event listener interested in the UEIs in the passed list.
-     */
-    @Override
-    public synchronized void addEventListener(EventListener listener, Collection<String> ueis) {
-        Assert.notNull(listener, "listener argument cannot be null");
-        Assert.notNull(ueis, "ueilist argument cannot be null");
+		createListenerThread(listener);
 
-        if (ueis.isEmpty()) {
-            LOG.warn("Not adding event listener {} because the ueilist argument contains no entries", listener.getName());
-            return;
-        }
+		addMatchAllForListener(listener);
 
-        if (LOG.isDebugEnabled()) {
-            LOG.debug("Adding event listener {} for UEIs: {}", listener.getName(), StringUtils.collectionToCommaDelimitedString(ueis));
-        }
+		// Since we have a match-all listener, remove any specific UEIs
+		for (String uei : m_ueiListeners.keySet()) {
+			removeUeiForListener(uei, listener);
+		}
+	}
 
-        createListenerThread(listener);
+	/**
+	 * {@inheritDoc}
+	 *
+	 * Register an event listener interested in the UEIs in the passed list.
+	 */
+	@Override
+	public synchronized void addEventListener(EventListener listener, Collection<String> ueis) {
+		Assert.notNull(listener, "listener argument cannot be null");
+		Assert.notNull(ueis, "ueilist argument cannot be null");
 
-        for (String uei : ueis) {
-            addUeiForListener(uei, listener);
-        }
+		if (ueis.isEmpty()) {
+//			LOG.warn("Not adding event listener {} because the ueilist argument contains no entries",
+//					listener.getName());
+			return;
+		}
 
-        // Since we have a UEI-specific listener, remove the match-all listener
-        removeMatchAllForListener(listener);
-    }
+//		if (LOG.isDebugEnabled()) {
+//			LOG.debug("Adding event listener {} for UEIs: {}", listener.getName(),
+//					StringUtils.collectionToCommaDelimitedString(ueis));
+//		}
 
-    /**
-     * Register an event listener interested in the passed UEI.
-     *
-     * @param listener a {@link org.opennms.netmgt.events.api.EventListener} object.
-     * @param uei a {@link java.lang.String} object.
-     */
-    @Override
-    public synchronized void addEventListener(EventListener listener, String uei) {
-        Assert.notNull(listener, "listener argument cannot be null");
-        Assert.notNull(uei, "uei argument cannot be null");
-        
-        addEventListener(listener, Collections.singletonList(uei));
-    }
+		createListenerThread(listener);
 
-    /**
-     * {@inheritDoc}
-     *
-     * Removes a registered event listener. The UEI list indicates the list of
-     * events the listener is no more interested in.
-     *
-     * <strong>Note: </strong>The listener thread for this listener is not
-     * stopped until the 'removeEventListener(EventListener listener)' method is
-     * called.
-     */
-    @Override
-    public synchronized void removeEventListener(EventListener listener, Collection<String> ueis) {
-        Assert.notNull(listener, "listener argument cannot be null");
-        Assert.notNull(ueis, "ueilist argument cannot be null");
+		for (String uei : ueis) {
+			addUeiForListener(uei, listener);
+		}
 
-        for (String uei : ueis) {
-            removeUeiForListener(uei, listener);
-        }
-    }
+		// Since we have a UEI-specific listener, remove the match-all listener
+		removeMatchAllForListener(listener);
+	}
 
-    /**
-     * Removes a registered event listener. The UEI indicates one the listener
-     * is no more interested in.
-     *
-     * <strong>Note: </strong>The listener thread for this listener is not
-     * stopped until the 'removeEventListener(EventListener listener)' method is
-     * called.
-     *
-     * @param listener a {@link org.opennms.netmgt.events.api.EventListener} object.
-     * @param uei a {@link java.lang.String} object.
-     */
-    @Override
-    public synchronized void removeEventListener(EventListener listener, String uei) {
-        Assert.notNull(listener, "listener argument cannot be null");
-        Assert.notNull(uei, "uei argument cannot be null");
+	/**
+	 * Register an event listener interested in the passed UEI.
+	 *
+	 * @param listener
+	 *            a {@link org.opennms.netmgt.events.api.EventListener} object.
+	 * @param uei
+	 *            a {@link java.lang.String} object.
+	 */
+	@Override
+	public synchronized void addEventListener(EventListener listener, String uei) {
+		Assert.notNull(listener, "listener argument cannot be null");
+		Assert.notNull(uei, "uei argument cannot be null");
 
-        removeUeiForListener(uei, listener);
-    }
+		addEventListener(listener, Collections.singletonList(uei));
+	}
 
-    /**
-     * {@inheritDoc}
-     *
-     * Removes a registered event listener.
-     *
-     * <strong>Note: </strong>Only this method stops the listener thread for the
-     * listener passed.
-     */
-    @Override
-    public synchronized void removeEventListener(EventListener listener) {
-        Assert.notNull(listener, "listener argument cannot be null");
-        
-        removeMatchAllForListener(listener);
+	/**
+	 * {@inheritDoc}
+	 *
+	 * Removes a registered event listener. The UEI list indicates the list of
+	 * events the listener is no more interested in.
+	 *
+	 * <strong>Note: </strong>The listener thread for this listener is not stopped
+	 * until the 'removeEventListener(EventListener listener)' method is called.
+	 */
+	@Override
+	public synchronized void removeEventListener(EventListener listener, Collection<String> ueis) {
+		Assert.notNull(listener, "listener argument cannot be null");
+		Assert.notNull(ueis, "ueilist argument cannot be null");
 
-        for (String uei : m_ueiListeners.keySet()) {
-            removeUeiForListener(uei, listener);
-        }
+		for (String uei : ueis) {
+			removeUeiForListener(uei, listener);
+		}
+	}
 
-        // stop and remove the listener thread for this listener
-        if (m_listenerThreads.containsKey(listener.getName())) {
-            m_listenerThreads.get(listener.getName()).stop();
+	/**
+	 * Removes a registered event listener. The UEI indicates one the listener is no
+	 * more interested in.
+	 *
+	 * <strong>Note: </strong>The listener thread for this listener is not stopped
+	 * until the 'removeEventListener(EventListener listener)' method is called.
+	 *
+	 * @param listener
+	 *            a {@link org.opennms.netmgt.events.api.EventListener} object.
+	 * @param uei
+	 *            a {@link java.lang.String} object.
+	 */
+	@Override
+	public synchronized void removeEventListener(EventListener listener, String uei) {
+		Assert.notNull(listener, "listener argument cannot be null");
+		Assert.notNull(uei, "uei argument cannot be null");
 
-            m_listenerThreads.remove(listener.getName());
-        }
-    }
+		removeUeiForListener(uei, listener);
+	}
 
-    /**
-     * Create a new queue and listener thread for this listener if one does not
-     * already exist.
-     */
-    private void createListenerThread(EventListener listener) {
-        if (m_listenerThreads.containsKey(listener.getName())) {
-            return;
-        }
-        
-        EventListenerExecutor listenerThread = new EventListenerExecutor(listener, m_handlerQueueLength);
-        m_listenerThreads.put(listener.getName(), listenerThread);
-    }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * Removes a registered event listener.
+	 *
+	 * <strong>Note: </strong>Only this method stops the listener thread for the
+	 * listener passed.
+	 */
+	@Override
+	public synchronized void removeEventListener(EventListener listener) {
+		Assert.notNull(listener, "listener argument cannot be null");
 
-    /**
-     * Add to uei listeners.
-     */
-    private void addUeiForListener(String uei, EventListener listener) {
-        // Ensure there is a list for this UEI
-        if (!m_ueiListeners.containsKey(uei)) {
-            m_ueiListeners.put(uei, new ArrayList<EventListener>());
-        }
-        
-        List<EventListener> listenersList = m_ueiListeners.get(uei);
-        if (!listenersList.contains(listener)) {
-            listenersList.add(listener);
-        }
-    }
+		removeMatchAllForListener(listener);
 
-    /**
-     * Remove UEI for this listener.
-     */
-    private void removeUeiForListener(String uei, EventListener listener) {
-        if (m_ueiListeners.containsKey(uei)) {
-            m_ueiListeners.get(uei).remove(listener);
-        }
-    }
+		for (String uei : m_ueiListeners.keySet()) {
+			removeUeiForListener(uei, listener);
+		}
 
-    /**
-     * Add listener to list of listeners listening for all events.
-     */
-    private boolean addMatchAllForListener(EventListener listener) {
-        return m_listeners.add(listener);
-    }
+		// stop and remove the listener thread for this listener
+		if (m_listenerThreads.containsKey(listener.getName())) {
+			m_listenerThreads.get(listener.getName()).stop();
 
-    /**
-     * Remove from list of listeners listening for all events.
-     */
-    private boolean removeMatchAllForListener(EventListener listener) {
-        return m_listeners.remove(listener);
-    }
+			m_listenerThreads.remove(listener.getName());
+		}
+	}
 
-    /**
-     * <p>afterPropertiesSet</p>
-     */
-    @Override
-    public void afterPropertiesSet() {
-        Assert.state(m_eventHandlerPool == null, "afterPropertiesSet() has already been called");
+	/**
+	 * Create a new queue and listener thread for this listener if one does not
+	 * already exist.
+	 */
+	private void createListenerThread(EventListener listener) {
+		if (m_listenerThreads.containsKey(listener.getName())) {
+			return;
+		}
 
-        Assert.state(m_eventHandler != null, "eventHandler not set");
-        Assert.state(m_handlerPoolSize != null, "handlerPoolSize not set");
+		EventListenerExecutor listenerThread = new EventListenerExecutor(listener, m_handlerQueueLength);
+		m_listenerThreads.put(listener.getName(), listenerThread);
+	}
 
-        final LinkedBlockingQueue<Runnable> workQueue = m_handlerQueueLength == null ? new LinkedBlockingQueue<>() : new LinkedBlockingQueue<>(m_handlerQueueLength);
-        m_registry.remove("eventlogs.queued");
-        m_registry.register("eventlogs.queued", new Gauge<Integer>() {
-            @Override
-            public Integer getValue() {
-                return workQueue.size();
-            }
-        });
+	/**
+	 * Add to uei listeners.
+	 */
+	private void addUeiForListener(String uei, EventListener listener) {
+		// Ensure there is a list for this UEI
+		if (!m_ueiListeners.containsKey(uei)) {
+			m_ueiListeners.put(uei, new ArrayList<EventListener>());
+		}
 
-        Logging.withPrefix(Eventd.LOG4J_CATEGORY, new Runnable() {
+		List<EventListener> listenersList = m_ueiListeners.get(uei);
+		if (!listenersList.contains(listener)) {
+			listenersList.add(listener);
+		}
+	}
 
-            @Override
-            public void run() {
-                /**
-                 * Create a fixed-size thread pool. The number of threads can be configured by using
-                 * the "receivers" attribute in the config. The queue length for the pool can be configured
-                 * with the "queueLength" attribute in the config.
-                 */
-                m_eventHandlerPool = new ThreadPoolExecutor(
-                    m_handlerPoolSize,
-                    m_handlerPoolSize,
-                    0L,
-                    TimeUnit.MILLISECONDS,
-                    workQueue,
-                    new LogPreservingThreadFactory(EventIpcManagerDefaultImpl.class.getSimpleName(), m_handlerPoolSize)
-                );
-            }
-            
-        });
-    }
+	/**
+	 * Remove UEI for this listener.
+	 */
+	private void removeUeiForListener(String uei, EventListener listener) {
+		if (m_ueiListeners.containsKey(uei)) {
+			m_ueiListeners.get(uei).remove(listener);
+		}
+	}
 
-    /**
-     * <p>getEventHandler</p>
-     *
-     * @return a {@link org.opennms.netmgt.events.api.EventHandler} object.
-     */
-    public EventHandler getEventHandler() {
-        return m_eventHandler;
-    }
+	/**
+	 * Add listener to list of listeners listening for all events.
+	 */
+	private boolean addMatchAllForListener(EventListener listener) {
+		return m_listeners.add(listener);
+	}
 
-    /**
-     * <p>setEventHandler</p>
-     *
-     * @param eventHandler a {@link org.opennms.netmgt.events.api.EventHandler} object.
-     */
-    public void setEventHandler(EventHandler eventHandler) {
-        m_eventHandler = eventHandler;
-    }
+	/**
+	 * Remove from list of listeners listening for all events.
+	 */
+	private boolean removeMatchAllForListener(EventListener listener) {
+		return m_listeners.remove(listener);
+	}
 
-    /**
-     * <p>getHandlerPoolSize</p>
-     *
-     * @return a int.
-     */
-    public int getHandlerPoolSize() {
-        return m_handlerPoolSize;
-    }
+	/**
+	 * <p>
+	 * afterPropertiesSet
+	 * </p>
+	 */
+//	public void afterPropertiesSet() {
+//		Assert.state(m_eventHandlerPool == null, "afterPropertiesSet() has already been called");
+//
+//		Assert.state(m_eventHandler != null, "eventHandler not set");
+//		Assert.state(m_handlerPoolSize != null, "handlerPoolSize not set");
+//
+//		final LinkedBlockingQueue<Runnable> workQueue = m_handlerQueueLength == null ? new LinkedBlockingQueue<>()
+//				: new LinkedBlockingQueue<>(m_handlerQueueLength);
+//		m_registry.remove("eventlogs.queued");
+//		m_registry.register("eventlogs.queued", new Gauge<Integer>() {
+//			@Override
+//			public Integer getValue() {
+//				return workQueue.size();
+//			}
+//		});
+//
+//		Logging.withPrefix(Eventd.LOG4J_CATEGORY, new Runnable() {
+//
+//			@Override
+//			public void run() {
+//				/**
+//				 * Create a fixed-size thread pool. The number of threads can be configured by
+//				 * using the "receivers" attribute in the config. The queue length for the pool
+//				 * can be configured with the "queueLength" attribute in the config.
+//				 */
+//				m_eventHandlerPool = new ThreadPoolExecutor(m_handlerPoolSize, m_handlerPoolSize, 0L,
+//						TimeUnit.MILLISECONDS, workQueue, new LogPreservingThreadFactory(
+//								EventIpcManagerDefaultImpl.class.getSimpleName(), m_handlerPoolSize));
+//			}
+//
+//		});
+//	}
 
-    /**
-     * <p>setHandlerPoolSize</p>
-     *
-     * @param handlerPoolSize a int.
-     */
-    public void setHandlerPoolSize(int handlerPoolSize) {
-        Assert.state(m_eventHandlerPool == null, "handlerPoolSize property cannot be set after afterPropertiesSet() is called");
-        
-        m_handlerPoolSize = handlerPoolSize;
-    }
+	/**
+	 * <p>
+	 * getEventHandler
+	 * </p>
+	 *
+	 * @return a {@link org.opennms.netmgt.events.api.EventHandler} object.
+	 */
+	public EventHandler getEventHandler() {
+		return m_eventHandler;
+	}
 
-    /**
-     * <p>getHandlerQueueLength</p>
-     *
-     * @return a int.
-     */
-    public int getHandlerQueueLength() {
-        return m_handlerQueueLength;
-    }
+	/**
+	 * <p>
+	 * setEventHandler
+	 * </p>
+	 *
+	 * @param eventHandler
+	 *            a {@link org.opennms.netmgt.events.api.EventHandler} object.
+	 */
+	public void setEventHandler(EventHandler eventHandler) {
+		m_eventHandler = eventHandler;
+	}
 
-    /**
-     * <p>setHandlerQueueLength</p>
-     *
-     * @param size a int.
-     */
-    public void setHandlerQueueLength(int size) {
-        Assert.state(m_eventHandlerPool == null, "handlerQueueLength property cannot be set after afterPropertiesSet() is called");
-        m_handlerQueueLength = size;
-    }
+	/**
+	 * <p>
+	 * getHandlerPoolSize
+	 * </p>
+	 *
+	 * @return a int.
+	 */
+	public int getHandlerPoolSize() {
+		return m_handlerPoolSize;
+	}
 
-    @Override
-    public boolean hasEventListener(final String uei) {
-        if (this.m_ueiListeners.containsKey(uei)) {
-            return this.m_ueiListeners.get(uei).size() > 0;
-        } else {
-            return false;
-        }
-    }
+	/**
+	 * <p>
+	 * setHandlerPoolSize
+	 * </p>
+	 *
+	 * @param handlerPoolSize
+	 *            a int.
+	 */
+	public void setHandlerPoolSize(int handlerPoolSize) {
+		Assert.state(m_eventHandlerPool == null,
+				"handlerPoolSize property cannot be set after afterPropertiesSet() is called");
+
+		m_handlerPoolSize = handlerPoolSize;
+	}
+
+	/**
+	 * <p>
+	 * getHandlerQueueLength
+	 * </p>
+	 *
+	 * @return a int.
+	 */
+	public int getHandlerQueueLength() {
+		return m_handlerQueueLength;
+	}
+
+	/**
+	 * <p>
+	 * setHandlerQueueLength
+	 * </p>
+	 *
+	 * @param size
+	 *            a int.
+	 */
+	public void setHandlerQueueLength(int size) {
+		Assert.state(m_eventHandlerPool == null,
+				"handlerQueueLength property cannot be set after afterPropertiesSet() is called");
+		m_handlerQueueLength = size;
+	}
+
+	@Override
+	public boolean hasEventListener(final String uei) {
+		if (this.m_ueiListeners.containsKey(uei)) {
+			return this.m_ueiListeners.get(uei).size() > 0;
+		} else {
+			return false;
+		}
+	}
 }

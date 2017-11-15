@@ -1,4 +1,4 @@
-package org.opennms.netmgt.syslogd.api;
+package org.opennms.netmgt.eventd;
 
 import org.opennms.core.xml.XmlHandler;
 

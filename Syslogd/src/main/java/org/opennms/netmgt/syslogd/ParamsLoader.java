@@ -31,7 +31,7 @@ import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.syslogd.BufferParser.BufferParserFactory;
-import org.opennms.netmgt.syslogd.api.Runner;
+import org.opennms.netmgt.eventd.Runner;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.syslogd.api.UtilMarshler;
 import org.opennms.netmgt.xml.event.Parm;
@@ -80,7 +80,7 @@ public class ParamsLoader extends AbstractVerticle {
 		deployment.setWorker(true);
 		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
 		deployment.setMultiThreaded(true);
-		// deployment.setInstances(100);
+	//	deployment.setInstances(100);
 		// gson = new GsonBuilder().registerTypeAdapter(ByteBuffer.class, new
 		// ByteBufferXmlAdapter()).create();
 		Runner.runClusteredExample1(ParamsLoader.class, deployment);
@@ -108,9 +108,9 @@ public class ParamsLoader extends AbstractVerticle {
 		syslogdEventbus = vertx.eventBus();
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
-			vertx.eventBus().consumer("eventd.message.consumer", e -> {
+			vertx.eventBus().consumer("syslogd.message.consumer", e -> {
 
-				SyslogMessageLogDTO syslogMessage = utilMarshler.unmarshal((String) e.body());
+				SyslogMessageLogDTO syslogMessage = (SyslogMessageLogDTO) utilMarshler.unmarshal((String) e.body());
 				syslogMessage.setParamsMap(parse(syslogMessage.getMessages().getBytes()));
 				vertx.eventBus().send("parms.message.consumer", utilMarshler.marshal(syslogMessage));
 				// System.out.println("At Params " +

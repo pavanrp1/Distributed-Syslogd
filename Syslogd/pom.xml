@@ -470,11 +470,11 @@
 			<artifactId>ozark</artifactId>
 			<version>1.0.0-m02</version>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>io.vertx</groupId>
 			<artifactId>vertx-hazelcast</artifactId>
 			<version>3.4.2</version>
-		</dependency>
+		</dependency> -->
 		<!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
 		<dependency>
 			<groupId>io.netty</groupId>

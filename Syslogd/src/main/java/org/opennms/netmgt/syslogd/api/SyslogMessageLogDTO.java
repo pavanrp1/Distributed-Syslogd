@@ -45,6 +45,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.opennms.core.ipc.sink.api.Message;
 import org.opennms.core.network.InetAddressXmlAdapter;
 import org.opennms.netmgt.config.SyslogdConfig;
+import org.opennms.netmgt.model.events.EventBuilder;
+import org.opennms.netmgt.syslogd.SyslogMessage;
 
 import com.google.gson.Gson;
 import com.sun.xml.bind.v2.runtime.RuntimeUtil.ToStringAdapter;
@@ -65,6 +67,26 @@ public class SyslogMessageLogDTO implements Message {
 	private String location;
 	@XmlElement(name = "messages")
 	private SyslogMessageDTO messages;
+
+	private EventBuilder eventBuilder;
+
+	private SyslogMessage syslogMessage;
+
+	public SyslogMessage getSyslogMessage() {
+		return syslogMessage;
+	}
+
+	public void setSyslogMessage(SyslogMessage syslogMessage) {
+		this.syslogMessage = syslogMessage;
+	}
+
+	public EventBuilder getEventBuilder() {
+		return eventBuilder;
+	}
+
+	public void setEventBuilder(EventBuilder eventBuilder) {
+		this.eventBuilder = eventBuilder;
+	}
 
 	private SyslogdConfig syslogdConfig;
 

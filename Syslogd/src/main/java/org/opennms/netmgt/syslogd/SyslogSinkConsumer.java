@@ -43,7 +43,7 @@ import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.dao.api.DistPollerDao;
 import org.opennms.netmgt.dao.mock.MockDistPollerDao;
 import org.opennms.netmgt.events.api.EventForwarder;
-import org.opennms.netmgt.syslogd.api.Runner;
+import org.opennms.netmgt.eventd.Runner;
 import org.opennms.netmgt.syslogd.api.SyslogConnection;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.syslogd.api.SyslogdMessageCodec;

@@ -31,18 +31,20 @@ package org.opennms.netmgt.eventd;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.opennms.netmgt.events.api.EventHandler;
 import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.events.api.EventProcessorException;
 import org.opennms.netmgt.dao.api.NodeDao;
+import org.opennms.netmgt.eventd.processor.expandable.EventTemplate;
 import org.opennms.netmgt.model.OnmsNode;
 import org.opennms.netmgt.xml.event.Event;
 import org.opennms.netmgt.xml.event.Events;
 import org.opennms.netmgt.xml.event.Log;
 import org.opennms.netmgt.xml.event.Parm;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 
@@ -51,33 +53,38 @@ import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.DeploymentOptions;
+import io.vertx.core.eventbus.EventBus;
+import io.vertx.core.eventbus.MessageConsumer;
+import io.vertx.core.logging.Logger;
+import io.vertx.core.logging.LoggerFactory;
 
 /**
  * The EventHandler builds Runnables that essentially do all the work on an
  * incoming event.
  *
  * Operations done on an incoming event are handled by the List of injected
- * EventProcessors, in the order in which they are given in the list.  If any
- * of them throw an exception, further processing of that event Log is stopped.
+ * EventProcessors, in the order in which they are given in the list. If any of
+ * them throw an exception, further processing of that event Log is stopped.
  *
  * @author <A HREF="mailto:sowmya@opennms.org">Sowmya Nataraj </A>
  * @author <A HREF="http://www.opennms.org">OpenNMS.org </A>
  */
-public final class DefaultEventHandlerImpl implements InitializingBean, EventHandler {
-    
-    private static final Logger LOG = LoggerFactory.getLogger(DefaultEventHandlerImpl.class);
+public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHandler {
 
-    private List<EventProcessor> m_eventProcessors;
+	private static final Logger LOG = LoggerFactory.getLogger(DefaultEventHandlerImpl.class);
 
-    private boolean m_logEventSummaries;
+	private List<EventProcessor> m_eventProcessors;
 
-    private final Timer processTimer;
+	private boolean m_logEventSummaries;
 
-    private final Histogram logSizes;
-    
-    private static Log m_eventdLog;
-    
-    public static Log getEventdLog() {
+	private Timer processTimer;
+
+	private Histogram logSizes;
+
+	private static Log m_eventdLog;
+
+	public static Log getEventdLog() {
 		return m_eventdLog;
 	}
 
@@ -85,183 +92,287 @@ public final class DefaultEventHandlerImpl implements InitializingBean, EventHan
 		DefaultEventHandlerImpl.m_eventdLog = m_eventdLog;
 	}
 
-	private boolean isWaitingForLoginModule=true;
-    
-    private NodeDao m_nodeDao;
+	private boolean isWaitingForLoginModule = true;
 
-    /**
-     * <p>Constructor for DefaultEventHandlerImpl.</p>
-     */
-    public DefaultEventHandlerImpl(MetricRegistry registry) {
-        processTimer = Objects.requireNonNull(registry).timer("eventlogs.process");
-        logSizes = registry.histogram("eventlogs.sizes");
-    }
+	private NodeDao m_nodeDao;
 
-    @Override
-    public EventHandlerRunnable createRunnable(Log eventLog) {
-        return new EventHandlerRunnable(eventLog, false);
-    }
+	private ExecutorService backgroundConsumer;
 
-    @Override
-    public EventHandlerRunnable createRunnable(Log eventLog, boolean synchronous) {
-        return new EventHandlerRunnable(eventLog, synchronous);
-    }
+	private EventBus eventIpcEventBus;
 
-    private class EventHandlerRunnable implements Runnable {
-        /**
-         * log of events
-         */
-        private final Log m_eventLog;
+	private AtomicBoolean running;
+
+	private static UtilMarshler logMarshler;
+
+	public DefaultEventHandlerImpl() {
+	}
+
+	/**
+	 * <p>
+	 * Constructor for DefaultEventHandlerImpl.
+	 * </p>
+	 */
+	public DefaultEventHandlerImpl(MetricRegistry registry) {
+		processTimer = Objects.requireNonNull(registry).timer("eventlogs.process");
+		logSizes = registry.histogram("eventlogs.sizes");
+	}
+
+	public EventHandlerRunnable createRunnable(Event eventLog) {
+		return new EventHandlerRunnable(eventLog, false);
+	}
+
+	public EventHandlerRunnable createRunnable(Event eventLog, boolean synchronous) {
+		return new EventHandlerRunnable(eventLog, synchronous);
+	}
+
+	private class EventHandlerRunnable implements Runnable {
+		/**
+		 * log of events
+		 */
+		private final Event m_eventLog;
 
 		private final boolean m_synchronous;
 
-        public EventHandlerRunnable(Log eventLog, boolean synchronous) {
-            Assert.notNull(eventLog, "eventLog argument must not be null");
-            
-            m_eventLog = eventLog;
-            m_synchronous = synchronous;
-        }
-        
-        /**
-         * Process the received events. For each event, use the EventExpander to
-         * look up matching eventconf entry and load info from that match, expand
-         * event parms, add event to database and send event to appropriate
-         * listeners.
-         */
-        @Override
-        public void run() {
-        	
-        	//This will wait for 25 seconds to get login module up and also
-        	//for karaf and its features to get loaded
-//			if (isWaitingForLoginModule) {
-//				try {
-//					Thread.sleep(25000);
-//				} catch (InterruptedException e) {
-//					isWaitingForLoginModule = false;
-//				}
-//				isWaitingForLoginModule = false;
-//			}
-        	
-            Events events = m_eventLog.getEvents();
-            if (events == null || events.getEventCount() <= 0) {
-                // no events to process
-                return;
-            }
-            for (final Event event : events.getEventCollection()) {
-                if (event.getNodeid() == 0) {
-                    final Parm foreignSource = event.getParm("_foreignSource");
-                    if (foreignSource != null && foreignSource.getValue() != null) {
-                        final Parm foreignId = event.getParm("_foreignId");
-                        if (foreignId != null && foreignId.getValue() != null) {
-                            final OnmsNode node = getNodeDao().findByForeignId(foreignSource.getValue().getContent(), foreignId.getValue().getContent());
-                            if (node != null) {
-                                event.setNodeid(node.getId().longValue());
-                            } else {
-                                LOG.warn("Can't find node associated with foreignSource {} and foreignId {}", foreignSource, foreignId);
-                            }
-                        }
-                    }
-                }
+		public EventHandlerRunnable(Event eventLog, boolean synchronous) {
+			Assert.notNull(eventLog, "eventLog argument must not be null");
 
-                if (LOG.isInfoEnabled() && getLogEventSummaries()) {
-                    LOG.info("Received event: UEI={}, src={}, iface={}, svc={}, time={}, parms={}", event.getUei(), event.getSource(), event.getInterface(), event.getService(), event.getTime(), getPrettyParms(event));
-                }
+			m_eventLog = eventLog;
+			m_synchronous = synchronous;
+		}
 
-                if (LOG.isDebugEnabled()) {
-                    // Log the uei, source, and other important aspects
-                    final String uuid = event.getUuid();
-                    LOG.debug("Event {");
-                    LOG.debug("  uuid  = {}", (uuid != null && uuid.length() > 0 ? uuid : "<not-set>"));
-                    LOG.debug("  uei   = {}", event.getUei());
-                    LOG.debug("  src   = {}", event.getSource());
-                    LOG.debug("  iface = {}", event.getInterface());
-                    LOG.debug("  svc   = {}", event.getService());
-                    LOG.debug("  time  = {}", event.getTime());
-                    // NMS-8413: I'm seeing a ConcurrentModificationException in the logs here,
-                    // copy the parm collection to avoid this
-                    List<Parm> parms = new ArrayList<>(event.getParmCollection());
-                    if (parms.size() > 0) {
-                        LOG.debug("  parms {");
-                        for (final Parm parm : parms) {
-                            if ((parm.getParmName() != null) && (parm.getValue().getContent() != null)) {
-                                LOG.debug("    ({}, {})", parm.getParmName().trim(), parm.getValue().getContent().trim());
-                            }
-                        }
-                        LOG.debug("  }");
-                    }
-                    LOG.debug("}");
-                }
-            }
-            setEventdLog(m_eventLog);
-           // vertx.eventBus().send(DEFAULT_EVENTD_CONSUMER_ADDRESS, m_eventLog);
-            
-//            try (Timer.Context context = processTimer.time()) {
-//                for (final EventProcessor eventProcessor : m_eventProcessors) {
-//                    try {
-//                        eventProcessor.process(m_eventLog, m_synchronous);
-//                        logSizes.update(events.getEventCount());
-//                    } catch (EventProcessorException e) {
-//                        LOG.warn("Unable to process event using processor {}; not processing with any later processors.", eventProcessor, e);
-//                        break;
-//                    } catch (Throwable t) {
-//                        LOG.warn("Unknown exception processing event with processor {}; not processing with any later processors.", eventProcessor, t);
-//                        break;
-//                    }
-//                }
-//            }
-        }
+		/**
+		 * Process the received events. For each event, use the EventExpander to look up
+		 * matching eventconf entry and load info from that match, expand event parms,
+		 * add event to database and send event to appropriate listeners.
+		 */
+		@Override
+		public void run() {
 
-    }
+			// This will wait for 25 seconds to get login module up and also
+			// for karaf and its features to get loaded
+			// if (isWaitingForLoginModule) {
+			// try {
+			// Thread.sleep(25000);
+			// } catch (InterruptedException e) {
+			// isWaitingForLoginModule = false;
+			// }
+			// isWaitingForLoginModule = false;
+			// }
 
-    private static List<String> getPrettyParms(final Event event) {
-        final List<String> parms = new ArrayList<>();
-        for (final Parm p : event.getParmCollection()) {
-            parms.add(p.getParmName() + "=" + p.getValue().getContent());
-        }
-        return parms;
-    }
+			// no events to process
 
-    /**
-     * <p>afterPropertiesSet</p>
-     *
-     * @throws java.lang.IllegalStateException if any.
-     */
-    @Override
-    public void afterPropertiesSet() throws IllegalStateException {
-        Assert.state(m_eventProcessors != null, "property eventPersisters must be set");
-    }
+			// for (final Event event : events.getEventCollection()) {
+			Event event = m_eventLog;
+			if (event.getNodeid() == 0)
 
-    /**
-     * <p>getEventProcessors</p>
-     *
-     * @return a {@link java.util.List} object.
-     */
-    public List<EventProcessor> getEventProcessors() {
-        return m_eventProcessors;
-    }
+			{
 
-    /**
-     * <p>setEventProcessors</p>
-     *
-     * @param eventProcessors a {@link java.util.List} object.
-     */
-    public void setEventProcessors(List<EventProcessor> eventProcessors) {
-        m_eventProcessors = eventProcessors;
-    }
-    
-    public boolean getLogEventSummaries() {
-        return m_logEventSummaries;
-    }
-    
-    public void setLogEventSummaries(final boolean logEventSummaries) {
-        m_logEventSummaries = logEventSummaries;
-    }
+				final Parm foreignSource = event.getParm("_foreignSource");
+				if (foreignSource != null && foreignSource.getValue() != null) {
+					final Parm foreignId = event.getParm("_foreignId");
+					if (foreignId != null && foreignId.getValue() != null) {
+						final OnmsNode node = getNodeDao().findByForeignId(foreignSource.getValue().getContent(),
+								foreignId.getValue().getContent());
+						if (node != null) {
+							event.setNodeid(node.getId().longValue());
+						} else {
+							LOG.warn("Can't find node associated with foreignSource {} and foreignId {}", foreignSource,
+									foreignId);
+						}
+					}
+				}
+			}
 
-    public void setNodeDao(NodeDao nodeDao) {
-        m_nodeDao = nodeDao;
-    }
+			if (LOG.isInfoEnabled() &&
 
-    public NodeDao getNodeDao() {
-        return m_nodeDao;
-    }
+					getLogEventSummaries()) {
+				LOG.info("Received event: UEI={}, src={}, iface={}, svc={}, time={}, parms={}", event.getUei(),
+						event.getSource(), event.getInterface(), event.getService(), event.getTime(),
+						getPrettyParms(event));
+			}
+
+			if (LOG.isDebugEnabled()) {
+				// Log the uei, source, and other important aspects
+				final String uuid = event.getUuid();
+				LOG.debug("Event {");
+				LOG.debug("  uuid  = {}", (uuid != null && uuid.length() > 0 ? uuid : "<not-set>"));
+				LOG.debug("  uei   = {}", event.getUei());
+				LOG.debug("  src   = {}", event.getSource());
+				LOG.debug("  iface = {}", event.getInterface());
+				LOG.debug("  svc   = {}", event.getService());
+				LOG.debug("  time  = {}", event.getTime());
+				// NMS-8413: I'm seeing a ConcurrentModificationException in the logs here,
+				// copy the parm collection to avoid this
+				List<Parm> parms = new ArrayList<>(event.getParmCollection());
+				if (parms.size() > 0) {
+					LOG.debug("  parms {");
+					for (final Parm parm : parms) {
+						if ((parm.getParmName() != null) && (parm.getValue().getContent() != null)) {
+							LOG.debug("    ({}, {})", parm.getParmName().trim(), parm.getValue().getContent().trim());
+						}
+					}
+					LOG.debug("  }");
+				}
+				LOG.debug("}");
+			}
+
+			// setEventdLog(m_eventLog);
+			// vertx.eventBus().send(DEFAULT_EVENTD_CONSUMER_ADDRESS, m_eventLog);
+
+			// try (Timer.Context context = processTimer.time()) {
+			// for (final EventProcessor eventProcessor : m_eventProcessors) {
+			// try {
+			// eventProcessor.process(m_eventLog, m_synchronous);
+			// logSizes.update(events.getEventCount());
+			// } catch (EventProcessorException e) {
+			// LOG.warn("Unable to process event using processor {}; not processing with any
+			// later processors.", eventProcessor, e);
+			// break;
+			// } catch (Throwable t) {
+			// LOG.warn("Unknown exception processing event with processor {}; not
+			// processing with any later processors.", eventProcessor, t);
+			// break;
+			// }
+			// }
+			// }
+		}
+
+	}
+
+	private static List<String> getPrettyParms(final Event event) {
+		final List<String> parms = new ArrayList<>();
+		for (final Parm p : event.getParmCollection()) {
+			parms.add(p.getParmName() + "=" + p.getValue().getContent());
+		}
+		return parms;
+	}
+
+	/**
+	 * <p>
+	 * afterPropertiesSet
+	 * </p>
+	 *
+	 * @throws java.lang.IllegalStateException
+	 *             if any.
+	 */
+	// @Override
+	// public void afterPropertiesSet() throws IllegalStateException {
+	// Assert.state(m_eventProcessors != null, "property eventPersisters must be
+	// set");
+	// }
+
+	public static void main(String[] args) {
+		logMarshler = new UtilMarshler(Event.class);
+		System.setProperty("opennms.home", "src/test/resources");
+		// org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
+		// logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
+		DeploymentOptions deployment = new DeploymentOptions();
+		deployment.setWorker(true);
+		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployment.setMultiThreaded(true);
+		Runner.runClusteredExample(DefaultEventHandlerImpl.class, deployment);
+
+	}
+
+	@Override
+	public void start() throws Exception {
+		running = new AtomicBoolean(true);
+
+		eventIpcEventBus = vertx.eventBus();
+
+		backgroundConsumer = Executors.newSingleThreadExecutor();
+		backgroundConsumer.submit(() -> {
+			try {
+
+				consume();
+
+			} catch (Exception ex) {
+				String error = "Failed to startup";
+			}
+		});
+	}
+
+	private synchronized void consume() {
+		while (running.get()) {
+			try {
+				MessageConsumer<String> eventIpcConsumer = eventIpcEventBus.consumer("eventd.message.consumer");
+				eventIpcConsumer.handler(message -> {
+					sendNowSync((Event) logMarshler.unmarshal(message.body()));
+					System.out.println("At EventHandler " + EventTemplate.eventCount.incrementAndGet());
+					// eventIpcEventBus.send(DEFAULT_EVENTD_CONSUMER_ADDRESS,
+					// DefaultEventHandlerImpl.getEventdLog());
+				});
+			} catch (Exception ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	public void sendNowSync(Event event) {
+		Objects.requireNonNull(event);
+
+		// Events events = new Events();
+		// events.addEvent(event);
+		//
+		// Log eventLog = new Log();
+		// eventLog.setEvents(events);
+
+		createRunnable(event, true).run();
+	}
+
+	public void sendNowSync(Log event) {
+
+		createRunnable(event, true).run();
+	}
+
+	/**
+	 * <p>
+	 * getEventProcessors
+	 * </p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
+	public List<EventProcessor> getEventProcessors() {
+		return m_eventProcessors;
+	}
+
+	/**
+	 * <p>
+	 * setEventProcessors
+	 * </p>
+	 *
+	 * @param eventProcessors
+	 *            a {@link java.util.List} object.
+	 */
+	public void setEventProcessors(List<EventProcessor> eventProcessors) {
+		m_eventProcessors = eventProcessors;
+	}
+
+	public boolean getLogEventSummaries() {
+		return m_logEventSummaries;
+	}
+
+	public void setLogEventSummaries(final boolean logEventSummaries) {
+		m_logEventSummaries = logEventSummaries;
+	}
+
+	public void setNodeDao(NodeDao nodeDao) {
+		m_nodeDao = nodeDao;
+	}
+
+	public NodeDao getNodeDao() {
+		return m_nodeDao;
+	}
+
+	@Override
+	public Runnable createRunnable(Log eventLog, boolean synchronous) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Runnable createRunnable(Log eventLog) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

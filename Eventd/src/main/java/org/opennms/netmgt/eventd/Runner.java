@@ -1,4 +1,4 @@
-package org.opennms.netmgt.syslogd.api;
+package org.opennms.netmgt.eventd;
 
 import java.io.File;
 import java.io.IOException;
@@ -98,7 +98,7 @@ public class Runner {
 			Vertx.clusteredVertx(options, res -> {
 				if (res.succeeded()) {
 					Vertx vertx = res.result();
-					// vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
+					vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
 					// vertx.eventBus().registerDefaultCodec(StringBuilder.class, new Builder());
 					// vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new
 					// SyslogdDTOMessageCodec());
@@ -109,7 +109,7 @@ public class Runner {
 			});
 		} else {
 			Vertx vertx = Vertx.vertx(options);
-			// vertx.eventBus().registerDefaultCodec(StringBuilder.class, new Builder());
+			vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
 			// vertx.eventBus().registerDefaultCodec(Log.class, new SyslogdMessageCodec());
 			// vertx.eventBus().registerDefaultCodec(SyslogMessageLogDTO.class, new
 			// SyslogdDTOMessageCodec());

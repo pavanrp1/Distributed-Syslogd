@@ -16,7 +16,7 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.opennms.netmgt.syslogd.SyslogTimeStamp;
-import org.opennms.netmgt.syslogd.api.Runner;
+import org.opennms.netmgt.eventd.Runner;
 import org.vertx.kafka.util.ConfigConstants;
 
 import io.vertx.core.AbstractVerticle;
@@ -171,7 +171,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 	 */
 	private void sendConsumedMessage(ConsumerRecord<String, String> record) {
 		try {
-			kafkaEventBus.send("eventd.message.consumer", record.value());
+			kafkaEventBus.send("syslogd.message.consumer", record.value());
 
 			// vertx.executeBlocking(f -> {
 			// vertx.eventBus().send("syslogd.message.consumer", record.value());

@@ -1,6 +1,6 @@
 package org.vertx.cluster;
 
-import org.opennms.netmgt.syslogd.api.Runner;
+import org.opennms.netmgt.eventd.Runner;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.eventbus.EventBus;
