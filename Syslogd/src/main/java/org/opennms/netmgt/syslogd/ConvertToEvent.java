@@ -47,7 +47,6 @@ import java.util.regex.PatternSyntaxException;
 
 import org.apache.commons.io.IOUtils;
 import org.opennms.core.utils.InetAddressUtils;
-import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.config.SyslogdConfig;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.config.syslogd.HideMatch;
@@ -60,6 +59,7 @@ import org.opennms.netmgt.dao.api.AbstractInterfaceToNodeCache;
 import org.opennms.netmgt.dao.api.InterfaceToNodeCache;
 import org.opennms.netmgt.eventd.util.ClusteredVertx;
 import org.opennms.netmgt.eventd.util.ConfigConstants;
+import org.opennms.netmgt.eventd.util.UtiliMarshlerUnmarshaler;
 import org.opennms.netmgt.model.events.EventBuilder;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.xml.event.Event;
@@ -106,9 +106,9 @@ public class ConvertToEvent extends AbstractVerticle {
 
 	private static List<HideMatch> hideMatch;
 
-	private static XmlHandler<SyslogMessageLogDTO> syslogMessageHandler;
+	private static UtiliMarshlerUnmarshaler syslogMessageHandler;
 
-	private static XmlHandler<Event> eventXmlHandler;
+	private static UtiliMarshlerUnmarshaler eventXmlHandler;
 
 	private static SyslogdConfigFactory syslogdConfig;
 
@@ -135,8 +135,8 @@ public class ConvertToEvent extends AbstractVerticle {
 
 	public static void main(String[] args) throws IOException {
 		m_event = new Event();
-		syslogMessageHandler = new XmlHandler<>(SyslogMessageLogDTO.class);
-		eventXmlHandler = new XmlHandler<>(Event.class);
+		syslogMessageHandler = new UtiliMarshlerUnmarshaler(SyslogMessageLogDTO.class);
+		eventXmlHandler = new UtiliMarshlerUnmarshaler(Event.class);
 		System.setProperty(ConfigConstants.OPENNMS_HOME, "src/test/resources");
 		syslogdConfig = loadSyslogConfiguration("/syslogd-loadtest-configuration.xml");
 		org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();

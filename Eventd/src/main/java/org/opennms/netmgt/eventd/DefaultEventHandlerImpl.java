@@ -35,10 +35,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.dao.api.NodeDao;
 import org.opennms.netmgt.eventd.util.ClusteredVertx;
 import org.opennms.netmgt.eventd.util.ConfigConstants;
+import org.opennms.netmgt.eventd.util.UtiliMarshlerUnmarshaler;
 import org.opennms.netmgt.events.api.EventHandler;
 import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.model.OnmsNode;
@@ -95,9 +95,9 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 
 	private AtomicBoolean running;
 
-	private static XmlHandler<Event> eventXmlHandler;
+	private static UtiliMarshlerUnmarshaler eventXmlHandler;
 
-	private static XmlHandler<Log> logXmlHandler;
+	private static UtiliMarshlerUnmarshaler logXmlHandler;
 
 	public DefaultEventHandlerImpl() {
 	}
@@ -142,14 +142,14 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 
 			// This will wait for 25 seconds to get login module up and also
 			// for karaf and its features to get loaded
-//			if (isWaitingForLoginModule) {
-//				try {
-//					Thread.sleep(25000);
-//				} catch (InterruptedException e) {
-//					isWaitingForLoginModule = false;
-//				}
-//				isWaitingForLoginModule = false;
-//			}
+			// if (isWaitingForLoginModule) {
+			// try {
+			// Thread.sleep(25000);
+			// } catch (InterruptedException e) {
+			// isWaitingForLoginModule = false;
+			// }
+			// isWaitingForLoginModule = false;
+			// }
 
 			// no events to process
 			Event event = m_eventLog;
@@ -205,9 +205,13 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 				}
 				LOG.debug("}");
 			}
+			Events events = new Events();
+			events.addEvent(event);
 
+			Log eventLog = new Log();
+			eventLog.setEvents(events);
 			eventIpcEventBus.send(ConfigConstants.EVENTEXPANDER_TO_EVENT_CONSUMER_ADDRESS,
-					logXmlHandler.marshal(getEventLog(event)));
+					logXmlHandler.marshal(eventLog));
 
 		}
 
@@ -222,8 +226,8 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 	}
 
 	public static void main(String[] args) {
-		eventXmlHandler = new XmlHandler<>(Event.class);
-		logXmlHandler = new XmlHandler<>(Log.class);
+		eventXmlHandler = new UtiliMarshlerUnmarshaler(Event.class);
+		logXmlHandler = new UtiliMarshlerUnmarshaler(Log.class);
 		System.setProperty(ConfigConstants.OPENNMS_HOME, "src/test/resources");
 		ClusteredVertx.runClusteredWithDeploymentOptions(DefaultEventHandlerImpl.class, new DeploymentOptions(), true);
 

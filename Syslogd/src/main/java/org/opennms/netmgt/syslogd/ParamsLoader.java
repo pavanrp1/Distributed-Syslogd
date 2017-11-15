@@ -27,6 +27,7 @@ import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
 import org.opennms.netmgt.eventd.util.ClusteredVertx;
 import org.opennms.netmgt.eventd.util.ConfigConstants;
+import org.opennms.netmgt.eventd.util.UtiliMarshlerUnmarshaler;
 import org.opennms.netmgt.syslogd.BufferParser.BufferParserFactory;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 import org.opennms.netmgt.xml.event.Parm;
@@ -41,7 +42,7 @@ public class ParamsLoader extends AbstractVerticle {
 
 	private static List<String> grokPatternsList;
 
-	private static XmlHandler<SyslogMessageLogDTO> xmlHandler;
+	private static UtiliMarshlerUnmarshaler xmlHandler;
 
 	private SyslogMessageLogDTO syslogMessageLogDTO;
 
@@ -86,7 +87,7 @@ public class ParamsLoader extends AbstractVerticle {
 
 	@Override
 	public void start() throws Exception {
-		xmlHandler = new XmlHandler<>(SyslogMessageLogDTO.class);
+		xmlHandler = new UtiliMarshlerUnmarshaler(SyslogMessageLogDTO.class);
 		paramsEventBus = vertx.eventBus();
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {

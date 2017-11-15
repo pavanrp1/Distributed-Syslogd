@@ -33,11 +33,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.eventd.EventIpcManagerDefaultImpl;
 import org.opennms.netmgt.eventd.processor.expandable.EventTemplate;
 import org.opennms.netmgt.eventd.util.ClusteredVertx;
 import org.opennms.netmgt.eventd.util.ConfigConstants;
+import org.opennms.netmgt.eventd.util.UtiliMarshlerUnmarshaler;
 import org.opennms.netmgt.events.api.EventIpcBroadcaster;
 import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.events.api.EventProcessorException;
@@ -68,7 +68,7 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 
 	private ExecutorService backgroundConsumer;
 	private EventBus broadCastEventBus;
-	private static XmlHandler<Log> logXmlMarshler;
+	private static UtiliMarshlerUnmarshaler logXmlMarshler;
 
 	/**
 	 * <p>
@@ -88,7 +88,7 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 	}
 
 	public static void main(String[] args) throws IOException, Exception {
-		logXmlMarshler = new XmlHandler<>(Log.class);
+		logXmlMarshler = new UtiliMarshlerUnmarshaler(Log.class);
 		System.setProperty("opennms.home", "src/test/resources");
 		m_eventIpcBroadcaster = new EventIpcManagerDefaultImpl();
 		ClusteredVertx.runClusteredWithDeploymentOptions(EventIpcBroadcastProcessor.class, new DeploymentOptions(),

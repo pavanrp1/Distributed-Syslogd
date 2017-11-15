@@ -39,7 +39,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
-import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.dao.api.DistPollerDao;
 import org.opennms.netmgt.dao.api.EventDao;
 import org.opennms.netmgt.dao.api.MonitoringSystemDao;
@@ -59,6 +58,7 @@ import org.opennms.netmgt.eventd.EventUtil;
 import org.opennms.netmgt.eventd.EventUtilDaoImpl;
 import org.opennms.netmgt.eventd.util.ClusteredVertx;
 import org.opennms.netmgt.eventd.util.ConfigConstants;
+import org.opennms.netmgt.eventd.util.UtiliMarshlerUnmarshaler;
 import org.opennms.netmgt.events.api.EventDatabaseConstants;
 import org.opennms.netmgt.events.api.EventParameterUtils;
 import org.opennms.netmgt.events.api.EventProcessorException;
@@ -115,7 +115,7 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 	public static final String LOG_MSG_DEST_LOG_ONLY = "logonly";
 	public static final String LOG_MSG_DEST_DISPLAY_ONLY = "displayonly";
 
-	private static XmlHandler<Log> logXmlHandler;
+	private static UtiliMarshlerUnmarshaler logXmlHandler;
 
 	private static TransactionOperations m_transactionManager;
 
@@ -175,7 +175,7 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 	}
 
 	public static void main(String[] args) throws IOException, Exception {
-		logXmlHandler = new XmlHandler<>(Log.class);
+		logXmlHandler = new UtiliMarshlerUnmarshaler(Log.class);
 		System.setProperty(ConfigConstants.OPENNMS_HOME, "src/test/resources");
 		eventUtil = new EventUtilDaoImpl(new MetricRegistry());
 		distPollerDao = new DistPollerDaoHibernate();

@@ -44,6 +44,7 @@ import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.api.EventConfDao;
 import org.opennms.netmgt.eventd.util.ClusteredVertx;
 import org.opennms.netmgt.eventd.util.ConfigConstants;
+import org.opennms.netmgt.eventd.util.UtiliMarshlerUnmarshaler;
 import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.events.api.EventProcessorException;
 import org.opennms.netmgt.model.events.EventUtils;
@@ -122,7 +123,7 @@ public final class EventExpander extends AbstractVerticle
 
 	private static final Logger LOG = LoggerFactory.getLogger(EventExpander.class);
 
-	private static XmlHandler<Log> logXmlHandler;
+	private static UtiliMarshlerUnmarshaler logXmlHandler;
 
 	private static EventConfDao m_eventConfDao;
 
@@ -155,7 +156,7 @@ public final class EventExpander extends AbstractVerticle
 	}
 
 	public static void main(String[] args) throws IOException {
-		logXmlHandler = new XmlHandler<>(Log.class);
+		logXmlHandler = new UtiliMarshlerUnmarshaler(Log.class);
 		System.setProperty(ConfigConstants.OPENNMS_HOME, "src/test/resources");
 		m_eventUtil = new EventUtilDaoImpl(new MetricRegistry());
 		DefaultEventConfDao eventConfDao = new DefaultEventConfDao();
