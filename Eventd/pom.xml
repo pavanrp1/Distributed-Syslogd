@@ -243,6 +243,13 @@
 		</dependency>
 		<dependency>
 			<groupId>org.opennms</groupId>
+			<artifactId>opennms-config</artifactId>
+			<version>20.1.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/Jar/opennms-config-20.1.0-SNAPSHOT.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>org.opennms</groupId>
 			<artifactId>opennms-util</artifactId>
 			<version>20.1.0-SNAPSHOT</version>
 			<scope>system</scope>

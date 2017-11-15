@@ -161,8 +161,6 @@ public class ConvertToEvent extends AbstractVerticle {
 				SyslogMessageLogDTO syslogMessage = (SyslogMessageLogDTO) utilMarshler
 						.unmarshal(syslogDTOMessage.body());
 				CallConvertToEvent(syslogMessage);
-				// System.out.println("At CE " +
-				// SyslogTimeStamp.broadcastCount.incrementAndGet());
 
 			});
 		});

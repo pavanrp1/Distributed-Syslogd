@@ -104,6 +104,8 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 
 	private static UtilMarshler logMarshler;
 
+	private static UtilMarshler logMarshler1;
+
 	public DefaultEventHandlerImpl() {
 	}
 
@@ -215,9 +217,13 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 				}
 				LOG.debug("}");
 			}
+			Events events = new Events();
+			events.addEvent(event);
 
-			// setEventdLog(m_eventLog);
-			// vertx.eventBus().send(DEFAULT_EVENTD_CONSUMER_ADDRESS, m_eventLog);
+			Log eventLog = new Log();
+			eventLog.setEvents(events);
+			
+			eventIpcEventBus.send("default.eventd.message.consumer", logMarshler1.marshal(eventLog));
 
 			// try (Timer.Context context = processTimer.time()) {
 			// for (final EventProcessor eventProcessor : m_eventProcessors) {
@@ -263,6 +269,7 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 
 	public static void main(String[] args) {
 		logMarshler = new UtilMarshler(Event.class);
+		logMarshler1 = new UtilMarshler(Log.class);
 		System.setProperty("opennms.home", "src/test/resources");
 		// org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
 		// logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
@@ -298,9 +305,8 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 				MessageConsumer<String> eventIpcConsumer = eventIpcEventBus.consumer("eventd.message.consumer");
 				eventIpcConsumer.handler(message -> {
 					sendNowSync((Event) logMarshler.unmarshal(message.body()));
-					System.out.println("At EventHandler " + EventTemplate.eventCount.incrementAndGet());
-					// eventIpcEventBus.send(DEFAULT_EVENTD_CONSUMER_ADDRESS,
-					// DefaultEventHandlerImpl.getEventdLog());
+					// eventIpcEventBus.send("default.eventd.message.consumer",
+					// logMarshler1.marshal(m_eventdLog));
 				});
 			} catch (Exception ex) {
 				ex.printStackTrace();
@@ -318,6 +324,12 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 		// eventLog.setEvents(events);
 
 		createRunnable(event, true).run();
+	}
+
+	public void sendNowSync1(Event event) {
+		Objects.requireNonNull(event);
+
+		//m_eventdLog = eventLog;
 	}
 
 	public void sendNowSync(Log event) {

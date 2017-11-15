@@ -28,6 +28,8 @@
 
 package org.opennms.netmgt.eventd;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -37,6 +39,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.api.EventConfDao;
 import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.events.api.EventProcessorException;
@@ -58,6 +61,7 @@ import org.opennms.netmgt.xml.eventconf.Varbindsdecode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.util.Assert;
 
 import com.codahale.metrics.MetricRegistry;
@@ -65,6 +69,7 @@ import com.codahale.metrics.Timer;
 import com.codahale.metrics.Timer.Context;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Future;
 import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.eventbus.MessageConsumer;
@@ -118,9 +123,11 @@ public final class EventExpander extends AbstractVerticle
 
 	private static final Logger LOG = LoggerFactory.getLogger(EventExpander.class);
 
-	private EventConfDao m_eventConfDao;
+	private static UtilMarshler logMarshler;
 
-	private EventUtil m_eventUtil;
+	private static EventConfDao m_eventConfDao;
+
+	private static EventUtil m_eventUtil;
 
 	/**
 	 * The default event UEI - if the event lookup into the 'event.conf' fails, the
@@ -128,7 +135,7 @@ public final class EventExpander extends AbstractVerticle
 	 */
 	private static final String DEFAULT_EVENT_UEI = "uei.opennms.org/default/event";
 
-	private final Timer expandTimer;
+	private static Timer expandTimer;
 
 	private AtomicBoolean running;
 
@@ -142,9 +149,11 @@ public final class EventExpander extends AbstractVerticle
 
 	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
 
-	
 	public EventExpander(MetricRegistry registry) {
 		expandTimer = Objects.requireNonNull(registry).timer("eventlogs.process.expand");
+	}
+
+	public EventExpander() {
 	}
 
 	/**
@@ -156,6 +165,26 @@ public final class EventExpander extends AbstractVerticle
 	public void afterPropertiesSet() {
 		Assert.state(m_eventConfDao != null, "property eventConfDao must be set");
 		Assert.state(m_eventUtil != null, "property eventUtil must be set");
+	}
+
+	public static void main(String[] args) throws IOException {
+		logMarshler = new UtilMarshler(Log.class);
+		System.setProperty("opennms.home", "src/test/resources");
+		// org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
+		// logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
+		DeploymentOptions deployment = new DeploymentOptions();
+		deployment.setWorker(true);
+		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployment.setMultiThreaded(true);
+		m_eventUtil = new EventUtilDaoImpl(new MetricRegistry());
+		DefaultEventConfDao eventConfDao = new DefaultEventConfDao();
+		File test = new File(
+				"/Users/ms043660/OneDrive - Cerner Corporation/Office/ProjectWorkspace/DistributedSyslogdPoc/Distributed-Syslogd/Vertx/src/test/resources/etc/eventconf.xml");
+		eventConfDao.setConfigResource(new FileSystemResource(test));
+		eventConfDao.afterPropertiesSet();
+		m_eventConfDao = eventConfDao;
+		expandTimer = Objects.requireNonNull(new MetricRegistry()).timer("eventlogs.process.expand");
+		Runner.runClusteredExample(EventExpander.class, deployment);
 	}
 
 	/**
@@ -813,7 +842,7 @@ public final class EventExpander extends AbstractVerticle
 				}
 			}
 		}
-		eventExpanderBus.send(HIBERNATE_EVENTD_CONSUMER_ADDRESS, eventLog);
+		eventExpanderBus.send(HIBERNATE_EVENTD_CONSUMER_ADDRESS, logMarshler.marshal(eventLog));
 	}
 
 	/**
@@ -844,7 +873,7 @@ public final class EventExpander extends AbstractVerticle
 	}
 
 	@Override
-	public void start(final Future<Void> startedResult) throws Exception {
+	public void start() throws Exception {
 		running = new AtomicBoolean(true);
 
 		eventExpanderBus = vertx.eventBus();
@@ -853,24 +882,23 @@ public final class EventExpander extends AbstractVerticle
 		backgroundConsumer.submit(() -> {
 			try {
 
-				startedResult.complete();
 				consume();
 
 			} catch (Exception ex) {
 				String error = "Failed to startup";
-				startedResult.fail(ex);
 			}
 		});
 	}
 
-	private void consume() {
+	private synchronized void consume() {
 		while (running.get()) {
 			try {
-				MessageConsumer<Log> eventExanpderConsumer = eventExpanderBus.consumer(DEFAULT_EVENTD_CONSUMER_ADDRESS);
+				MessageConsumer<String> eventExanpderConsumer = eventExpanderBus
+						.consumer(DEFAULT_EVENTD_CONSUMER_ADDRESS);
 				eventExanpderConsumer.handler(message -> {
 
 					try {
-						process(message.body());
+						process((Log) logMarshler.unmarshal(message.body()));
 					} catch (EventProcessorException e) {
 						e.printStackTrace();
 					}

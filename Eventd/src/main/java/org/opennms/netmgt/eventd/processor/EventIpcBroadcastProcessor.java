@@ -28,11 +28,22 @@
 
 package org.opennms.netmgt.eventd.processor;
 
+import java.io.IOException;
 import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import org.opennms.netmgt.dao.hibernate.DistPollerDaoHibernate;
+import org.opennms.netmgt.dao.hibernate.EventDaoHibernate;
+import org.opennms.netmgt.dao.hibernate.MonitoringSystemDaoHibernate;
+import org.opennms.netmgt.dao.hibernate.NodeDaoHibernate;
+import org.opennms.netmgt.dao.hibernate.ServiceTypeDaoHibernate;
+import org.opennms.netmgt.eventd.EventIpcManagerDefaultImpl;
+import org.opennms.netmgt.eventd.EventUtilDaoImpl;
+import org.opennms.netmgt.eventd.Runner;
+import org.opennms.netmgt.eventd.UtilMarshler;
+import org.opennms.netmgt.eventd.processor.expandable.EventTemplate;
 import org.opennms.netmgt.events.api.EventIpcBroadcaster;
 import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.events.api.EventProcessorException;
@@ -50,6 +61,7 @@ import com.codahale.metrics.Timer;
 import com.codahale.metrics.Timer.Context;
 
 import io.vertx.core.AbstractVerticle;
+import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Future;
 import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.eventbus.MessageConsumer;
@@ -63,16 +75,17 @@ import io.vertx.core.eventbus.MessageConsumer;
  */
 public class EventIpcBroadcastProcessor extends AbstractVerticle implements EventProcessor, InitializingBean {
 	private static final Logger LOG = LoggerFactory.getLogger(EventIpcBroadcastProcessor.class);
-	private EventIpcBroadcaster m_eventIpcBroadcaster;
+	private static EventIpcBroadcaster m_eventIpcBroadcaster;
 
-	private final Timer logBroadcastTimer;
-	private final Meter eventBroadcastMeter;
+	private static Timer logBroadcastTimer;
+	private static Meter eventBroadcastMeter;
 
 	private AtomicBoolean running;
 
 	private ExecutorService backgroundConsumer;
 	private EventBus broadCastEventBus;
 	public static int eventWriter = 0;
+	private static UtilMarshler logMarshler;
 
 	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
 
@@ -92,6 +105,26 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 	@Override
 	public void afterPropertiesSet() throws IllegalStateException {
 		Assert.state(m_eventIpcBroadcaster != null, "property eventIpcBroadcaster must be set");
+	}
+
+	public EventIpcBroadcastProcessor() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) throws IOException, Exception {
+		logMarshler = new UtilMarshler(Log.class);
+		System.setProperty("opennms.home", "src/test/resources");
+		// org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
+		// logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
+		DeploymentOptions deployment = new DeploymentOptions();
+		deployment.setWorker(true);
+		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployment.setMultiThreaded(true);
+		MetricRegistry registry = new MetricRegistry();
+		logBroadcastTimer = Objects.requireNonNull(registry).timer("eventlogs.process.broadcast");
+		eventBroadcastMeter = registry.meter("events.process.broadcast");
+		m_eventIpcBroadcaster = new EventIpcManagerDefaultImpl(registry);
+		Runner.runClusteredExample(EventIpcBroadcastProcessor.class, deployment);
 	}
 
 	/**
@@ -170,14 +203,13 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 	private void consume() {
 		while (running.get()) {
 			try {
-				MessageConsumer<Log> broadCastEventConsumer = broadCastEventBus
+				MessageConsumer<String> broadCastEventConsumer = broadCastEventBus
 						.consumer(BROADCAST_EVENTD_CONSUMER_ADDRESS);
 				broadCastEventConsumer.handler(message -> {
 
 					try {
-						process(message.body());
-						eventWriter++;
-						System.out.println("Event at broadcaster " + eventWriter);
+						process((Log) logMarshler.unmarshal(message.body()));
+						System.out.println("Event at broadcaster " + EventTemplate.eventCount.incrementAndGet());
 					} catch (EventProcessorException e) {
 						e.printStackTrace();
 					}
