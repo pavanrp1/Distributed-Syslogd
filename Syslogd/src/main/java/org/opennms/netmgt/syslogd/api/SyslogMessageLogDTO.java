@@ -30,10 +30,8 @@ package org.opennms.netmgt.syslogd.api;
 
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -45,13 +43,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import org.opennms.core.ipc.sink.api.Message;
 import org.opennms.core.network.InetAddressXmlAdapter;
 import org.opennms.netmgt.config.SyslogdConfig;
-import org.opennms.netmgt.model.events.EventBuilder;
 import org.opennms.netmgt.syslogd.SyslogMessage;
-
-import com.google.gson.Gson;
-import com.sun.xml.bind.v2.runtime.RuntimeUtil.ToStringAdapter;
-
-import java.util.Objects;
 
 @XmlRootElement(name = "syslog-message-log")
 @XmlAccessorType(XmlAccessType.FIELD)
@@ -68,8 +60,6 @@ public class SyslogMessageLogDTO implements Message {
 	@XmlElement(name = "messages")
 	private SyslogMessageDTO messages;
 
-	private EventBuilder eventBuilder;
-
 	private SyslogMessage syslogMessage;
 
 	public SyslogMessage getSyslogMessage() {
@@ -78,24 +68,6 @@ public class SyslogMessageLogDTO implements Message {
 
 	public void setSyslogMessage(SyslogMessage syslogMessage) {
 		this.syslogMessage = syslogMessage;
-	}
-
-	public EventBuilder getEventBuilder() {
-		return eventBuilder;
-	}
-
-	public void setEventBuilder(EventBuilder eventBuilder) {
-		this.eventBuilder = eventBuilder;
-	}
-
-	private SyslogdConfig syslogdConfig;
-
-	public SyslogdConfig getSyslogdConfig() {
-		return syslogdConfig;
-	}
-
-	public void setSyslogdConfig(SyslogdConfig syslogdConfig) {
-		this.syslogdConfig = syslogdConfig;
 	}
 
 	private Map<String, String> paramsMap;

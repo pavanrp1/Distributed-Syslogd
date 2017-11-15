@@ -34,13 +34,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import org.opennms.core.utils.ConfigFileConstants;
+import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.config.DefaultEventConfDao;
 import org.opennms.netmgt.config.api.EventConfDao;
+import org.opennms.netmgt.eventd.util.ClusteredVertx;
+import org.opennms.netmgt.eventd.util.ConfigConstants;
 import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.events.api.EventProcessorException;
 import org.opennms.netmgt.model.events.EventUtils;
@@ -65,14 +68,10 @@ import org.springframework.core.io.FileSystemResource;
 import org.springframework.util.Assert;
 
 import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
-import com.codahale.metrics.Timer.Context;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
-import io.vertx.core.Future;
 import io.vertx.core.eventbus.EventBus;
-import io.vertx.core.eventbus.MessageConsumer;
 
 /**
  * <P>
@@ -123,7 +122,7 @@ public final class EventExpander extends AbstractVerticle
 
 	private static final Logger LOG = LoggerFactory.getLogger(EventExpander.class);
 
-	private static UtilMarshler logMarshler;
+	private static XmlHandler<Log> logXmlHandler;
 
 	private static EventConfDao m_eventConfDao;
 
@@ -135,23 +134,11 @@ public final class EventExpander extends AbstractVerticle
 	 */
 	private static final String DEFAULT_EVENT_UEI = "uei.opennms.org/default/event";
 
-	private static Timer expandTimer;
-
 	private AtomicBoolean running;
 
 	private ExecutorService backgroundConsumer;
 
 	private EventBus eventExpanderBus;
-
-	private static final String DEFAULT_EVENTD_CONSUMER_ADDRESS = "default.eventd.message.consumer";
-
-	private static final String HIBERNATE_EVENTD_CONSUMER_ADDRESS = "hibernate.eventd.message.consumer";
-
-	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
-
-	public EventExpander(MetricRegistry registry) {
-		expandTimer = Objects.requireNonNull(registry).timer("eventlogs.process.expand");
-	}
 
 	public EventExpander() {
 	}
@@ -168,23 +155,16 @@ public final class EventExpander extends AbstractVerticle
 	}
 
 	public static void main(String[] args) throws IOException {
-		logMarshler = new UtilMarshler(Log.class);
-		System.setProperty("opennms.home", "src/test/resources");
-		// org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
-		// logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
-		DeploymentOptions deployment = new DeploymentOptions();
-		deployment.setWorker(true);
-		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
-		deployment.setMultiThreaded(true);
+		logXmlHandler = new XmlHandler<>(Log.class);
+		System.setProperty(ConfigConstants.OPENNMS_HOME, "src/test/resources");
 		m_eventUtil = new EventUtilDaoImpl(new MetricRegistry());
 		DefaultEventConfDao eventConfDao = new DefaultEventConfDao();
-		File test = new File(
-				"/Users/ms043660/OneDrive - Cerner Corporation/Office/ProjectWorkspace/DistributedSyslogdPoc/Distributed-Syslogd/Vertx/src/test/resources/etc/eventconf.xml");
-		eventConfDao.setConfigResource(new FileSystemResource(test));
+
+		eventConfDao.setConfigResource(
+				new FileSystemResource(ConfigFileConstants.getConfigFileByName("eventconf.xml")));
 		eventConfDao.afterPropertiesSet();
 		m_eventConfDao = eventConfDao;
-		expandTimer = Objects.requireNonNull(new MetricRegistry()).timer("eventlogs.process.expand");
-		Runner.runClusteredExample(EventExpander.class, deployment);
+		ClusteredVertx.runClusteredWithDeploymentOptions(EventExpander.class, new DeploymentOptions(), true);
 	}
 
 	/**
@@ -836,13 +816,13 @@ public final class EventExpander extends AbstractVerticle
 	@Override
 	public void process(Log eventLog) throws EventProcessorException {
 		if (eventLog != null && eventLog.getEvents() != null && eventLog.getEvents().getEvent() != null) {
-			try (Context ctx = expandTimer.time()) {
-				for (Event event : eventLog.getEvents().getEvent()) {
-					expandEvent(event);
-				}
+			// try (Context ctx = expandTimer.time()) {
+			for (Event event : eventLog.getEvents().getEvent()) {
+				expandEvent(event);
 			}
+			// }
 		}
-		eventExpanderBus.send(HIBERNATE_EVENTD_CONSUMER_ADDRESS, logMarshler.marshal(eventLog));
+		eventExpanderBus.send(ConfigConstants.HIBERNATE_TO_EVENT_CONSUMER_ADDRESS, logXmlHandler.marshal(eventLog));
 	}
 
 	/**
@@ -882,23 +862,21 @@ public final class EventExpander extends AbstractVerticle
 		backgroundConsumer.submit(() -> {
 			try {
 
-				consume();
+				consumeFromEventBus();
 
 			} catch (Exception ex) {
 				String error = "Failed to startup";
+				LOG.error(error + ex.getMessage());
 			}
 		});
 	}
 
-	private synchronized void consume() {
+	private synchronized void consumeFromEventBus() {
 		while (running.get()) {
 			try {
-				MessageConsumer<String> eventExanpderConsumer = eventExpanderBus
-						.consumer(DEFAULT_EVENTD_CONSUMER_ADDRESS);
-				eventExanpderConsumer.handler(message -> {
-
+				eventExpanderBus.consumer(ConfigConstants.EVENTEXPANDER_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
 					try {
-						process((Log) logMarshler.unmarshal(message.body()));
+						process((Log) logXmlHandler.unmarshal((String) eventLog.body()));
 					} catch (EventProcessorException e) {
 						e.printStackTrace();
 					}

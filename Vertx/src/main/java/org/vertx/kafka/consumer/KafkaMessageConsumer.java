@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.vertx.kafka;
+package org.vertx.kafka.consumer;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -10,18 +10,15 @@ import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
-import org.opennms.netmgt.syslogd.SyslogTimeStamp;
-import org.opennms.netmgt.eventd.Runner;
-import org.vertx.kafka.util.ConfigConstants;
+import org.opennms.netmgt.eventd.util.ClusteredVertx;
+import org.opennms.netmgt.eventd.util.ConfigConstants;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
-import io.vertx.core.Future;
 import io.vertx.core.eventbus.EventBus;
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
@@ -38,8 +35,6 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 
 	private static final int DEFAULT_POLL_MS = 100;
 
-	private String busAddress;
-
 	private EventBus kafkaEventBus;
 
 	private AtomicBoolean concurrentRunning;
@@ -52,43 +47,28 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 
 	private ExecutorService backgroundConsumer;
 
-	private AtomicInteger eventCount = new AtomicInteger();
-
 	private int pollIntervalMs = 10;
+
+	private final static String SYSLOGD = "syslogd";
 
 	public KafkaMessageConsumer() {
 	}
 
-	public EventBus getBus() {
-		return kafkaEventBus;
-	}
-
-	public void setBus(EventBus bus) {
-		this.kafkaEventBus = bus;
-	}
-
 	public static void main(String[] args) {
-		System.setProperty("opennms.home", "src/test/resources");
-		// System.setProperty("org.opennms.core.test.mockLogger.defaultLogLevel",
-		// "WARN");
+		System.setProperty(ConfigConstants.OPENNMS_HOME, "src/test/resources");
 		verticleConfig = new JsonObject();
-		verticleConfig.put(ConfigConstants.GROUP_ID, "syslogd");
+		verticleConfig.put(ConfigConstants.GROUP_ID, SYSLOGD);
 		verticleConfig.put(ConfigConstants.ZK_CONNECT, "localhost:2181");
 		verticleConfig.put(ConfigConstants.BOOTSTRAP_SERVERS, "localhost:9092");
 		topics = new ArrayList<String>();
-		topics.add("syslogd");
-		verticleConfig.put("topics", new JsonArray(topics));
-		DeploymentOptions deployment = new DeploymentOptions();
-		deployment.setWorker(true);
-		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
-		deployment.setMultiThreaded(true);
-		Runner.runClusteredExample1(KafkaMessageConsumer.class, deployment);
+		topics.add(SYSLOGD);
+		verticleConfig.put(ConfigConstants.TOPICS, new JsonArray(topics));
+		ClusteredVertx.runClusteredWithDeploymentOptions(KafkaMessageConsumer.class, new DeploymentOptions(), true);
 	}
 
 	@Override
 	public void start() {
 		try {
-
 			// creating event bus at the startup
 			kafkaEventBus = vertx.eventBus();
 
@@ -98,7 +78,6 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 			Properties kafkaConfig = populateKafkaConfig(verticleConfig);
 			JsonArray topicConfig = verticleConfig.getJsonArray(ConfigConstants.TOPICS);
 
-			busAddress = verticleConfig.getString(ConfigConstants.EVENTBUS_ADDRESS, "syslogd.message.consumer");
 			pollIntervalMs = verticleConfig.getInteger(ConfigConstants.CONSUMER_POLL_INTERVAL_MS, DEFAULT_POLL_MS);
 
 			Runtime.getRuntime().addShutdownHook(new Thread() {
@@ -171,14 +150,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 	 */
 	private void sendConsumedMessage(ConsumerRecord<String, String> record) {
 		try {
-			kafkaEventBus.send("syslogd.message.consumer", record.value());
-
-			// vertx.executeBlocking(f -> {
-			// vertx.eventBus().send("syslogd.message.consumer", record.value());
-			// f.complete();
-			// }, false, r -> {
-			// });
-
+			kafkaEventBus.send(ConfigConstants.KAFKA_CONSUMER_ADDRESS, record.value());
 		} catch (Exception ex) {
 			String error = String.format("Error sending messages on event bus - record: %s", record.toString());
 			logger.error(error, ex);
@@ -235,14 +207,6 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 		} catch (Exception ex) {
 			logger.error("Failed to close consumer", ex);
 		}
-	}
-
-	public JsonObject getVerticleConfig() {
-		return verticleConfig;
-	}
-
-	public void setVerticleConfig(JsonObject verticleConfig) {
-		this.verticleConfig = verticleConfig;
 	}
 
 }

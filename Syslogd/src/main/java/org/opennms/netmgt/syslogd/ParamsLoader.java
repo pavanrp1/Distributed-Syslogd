@@ -7,8 +7,6 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.StringReader;
-import java.io.StringWriter;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -21,23 +19,17 @@ import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
-import javax.xml.bind.JAXBException;
-
-import org.eclipse.persistence.jaxb.JAXBUnmarshaller;
+import org.apache.commons.io.IOUtils;
 import org.opennms.core.utils.ConfigFileConstants;
 import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.config.SyslogdConfigFactory;
+import org.opennms.netmgt.eventd.util.ClusteredVertx;
+import org.opennms.netmgt.eventd.util.ConfigConstants;
 import org.opennms.netmgt.syslogd.BufferParser.BufferParserFactory;
-import org.opennms.netmgt.eventd.Runner;
 import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
-import org.opennms.netmgt.syslogd.api.UtilMarshler;
 import org.opennms.netmgt.xml.event.Parm;
-
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
@@ -49,41 +41,32 @@ public class ParamsLoader extends AbstractVerticle {
 
 	private static List<String> grokPatternsList;
 
-	private static UtilMarshler utilMarshler;
+	private static XmlHandler<SyslogMessageLogDTO> xmlHandler;
 
-	public void setGrokPatternsList(List<String> grokPatternsList) {
-		ParamsLoader.grokPatternsList = grokPatternsList;
-	}
-
-	private static SyslogdConfigFactory syslogdConfig;
-
-	private static Gson gson;
-
-	public static List<String> getGrokPatternsList() {
-		return grokPatternsList;
-	}
+	private SyslogMessageLogDTO syslogMessageLogDTO;
 
 	private final static ExecutorService m_executor = Executors.newSingleThreadExecutor();
 
-	private static final String EVENTD_CONSUMER_ADDRESS = "eventd.message.consumer";
-
-	public static void main(String[] args) {
-		SyslogTimeStamp.broadcastCount = new AtomicInteger();
-		System.setProperty("opennms.home", "src/test/resources");
+	static {
 		try {
+			System.setProperty(ConfigConstants.OPENNMS_HOME, "src/test/resources");
 			grokPatternsList = readPropertiesInOrderFrom(
 					ConfigFileConstants.getFile(ConfigFileConstants.SYSLOGD_CONFIGURATION_PROPERTIES));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		DeploymentOptions deployment = new DeploymentOptions();
-		deployment.setWorker(true);
-		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
-		deployment.setMultiThreaded(true);
-	//	deployment.setInstances(100);
-		// gson = new GsonBuilder().registerTypeAdapter(ByteBuffer.class, new
-		// ByteBufferXmlAdapter()).create();
-		Runner.runClusteredExample1(ParamsLoader.class, deployment);
+	}
+
+	public void setGrokPatternsList(List<String> grokPatternList) {
+		grokPatternsList = grokPatternList;
+	}
+
+	public static List<String> getGrokPatternsList() {
+		return grokPatternsList;
+	}
+
+	public static void main(String[] args) throws Exception {
+		ClusteredVertx.runClusteredWithDeploymentOptions(ParamsLoader.class, new DeploymentOptions(), true);
 	}
 
 	private static Map<String, String> paramsMap;
@@ -92,37 +75,29 @@ public class ParamsLoader extends AbstractVerticle {
 		return paramsMap;
 	}
 
-	public static void setParamsMap(Map<String, String> paramsMap) {
-		ParamsLoader.paramsMap = paramsMap;
+	public static void setParamsMap(Map<String, String> messageParamsMap) {
+		paramsMap = messageParamsMap;
 	}
 
-	private EventBus syslogdEventbus;
+	private EventBus paramsEventBus;
 
 	public ParamsLoader() {
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public void start() throws Exception {
-		utilMarshler = new UtilMarshler(SyslogMessageLogDTO.class);
-		syslogdEventbus = vertx.eventBus();
+		xmlHandler = new XmlHandler<>(SyslogMessageLogDTO.class);
+		paramsEventBus = vertx.eventBus();
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
-			vertx.eventBus().consumer("syslogd.message.consumer", e -> {
-
-				SyslogMessageLogDTO syslogMessage = (SyslogMessageLogDTO) utilMarshler.unmarshal((String) e.body());
-				syslogMessage.setParamsMap(parse(syslogMessage.getMessages().getBytes()));
-				vertx.eventBus().send("parms.message.consumer", utilMarshler.marshal(syslogMessage));
-				// System.out.println("At Params " +
-				// SyslogTimeStamp.broadcastCount.incrementAndGet());
+			paramsEventBus.consumer(ConfigConstants.KAFKA_CONSUMER_ADDRESS, syslogMessageDTO -> {
+				syslogMessageLogDTO = (SyslogMessageLogDTO) xmlHandler.unmarshal((String) syslogMessageDTO.body());
+				syslogMessageLogDTO.setParamsMap(parse(syslogMessageLogDTO.getMessages().getBytes()));
+				paramsEventBus.send(ConfigConstants.CONVERT_TO_EVENT_CONSUMER_ADDRESS,
+						xmlHandler.marshal(syslogMessageLogDTO));
 			});
 
 		});
-	}
-
-	private SyslogMessageLogDTO getSyslogDto(String body) {
-
-		return gson.fromJson(body, SyslogMessageLogDTO.class);
 	}
 
 	/**

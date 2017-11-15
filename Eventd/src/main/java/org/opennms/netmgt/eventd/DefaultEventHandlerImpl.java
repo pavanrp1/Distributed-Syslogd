@@ -35,27 +35,24 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import org.opennms.core.xml.XmlHandler;
+import org.opennms.netmgt.dao.api.NodeDao;
+import org.opennms.netmgt.eventd.util.ClusteredVertx;
+import org.opennms.netmgt.eventd.util.ConfigConstants;
 import org.opennms.netmgt.events.api.EventHandler;
 import org.opennms.netmgt.events.api.EventProcessor;
-import org.opennms.netmgt.events.api.EventProcessorException;
-import org.opennms.netmgt.dao.api.NodeDao;
-import org.opennms.netmgt.eventd.processor.expandable.EventTemplate;
 import org.opennms.netmgt.model.OnmsNode;
 import org.opennms.netmgt.xml.event.Event;
 import org.opennms.netmgt.xml.event.Events;
 import org.opennms.netmgt.xml.event.Log;
 import org.opennms.netmgt.xml.event.Parm;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 
-import com.codahale.metrics.Histogram;
 import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.eventbus.EventBus;
-import io.vertx.core.eventbus.MessageConsumer;
 import io.vertx.core.logging.Logger;
 import io.vertx.core.logging.LoggerFactory;
 
@@ -78,10 +75,6 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 
 	private boolean m_logEventSummaries;
 
-	private Timer processTimer;
-
-	private Histogram logSizes;
-
 	private static Log m_eventdLog;
 
 	public static Log getEventdLog() {
@@ -102,9 +95,9 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 
 	private AtomicBoolean running;
 
-	private static UtilMarshler logMarshler;
+	private static XmlHandler<Event> eventXmlHandler;
 
-	private static UtilMarshler logMarshler1;
+	private static XmlHandler<Log> logXmlHandler;
 
 	public DefaultEventHandlerImpl() {
 	}
@@ -115,8 +108,8 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 	 * </p>
 	 */
 	public DefaultEventHandlerImpl(MetricRegistry registry) {
-		processTimer = Objects.requireNonNull(registry).timer("eventlogs.process");
-		logSizes = registry.histogram("eventlogs.sizes");
+		Objects.requireNonNull(registry).timer("eventlogs.process");
+		registry.histogram("eventlogs.sizes");
 	}
 
 	public EventHandlerRunnable createRunnable(Event eventLog) {
@@ -133,13 +126,10 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 		 */
 		private final Event m_eventLog;
 
-		private final boolean m_synchronous;
-
 		public EventHandlerRunnable(Event eventLog, boolean synchronous) {
 			Assert.notNull(eventLog, "eventLog argument must not be null");
 
 			m_eventLog = eventLog;
-			m_synchronous = synchronous;
 		}
 
 		/**
@@ -152,18 +142,16 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 
 			// This will wait for 25 seconds to get login module up and also
 			// for karaf and its features to get loaded
-			// if (isWaitingForLoginModule) {
-			// try {
-			// Thread.sleep(25000);
-			// } catch (InterruptedException e) {
-			// isWaitingForLoginModule = false;
-			// }
-			// isWaitingForLoginModule = false;
-			// }
+//			if (isWaitingForLoginModule) {
+//				try {
+//					Thread.sleep(25000);
+//				} catch (InterruptedException e) {
+//					isWaitingForLoginModule = false;
+//				}
+//				isWaitingForLoginModule = false;
+//			}
 
 			// no events to process
-
-			// for (final Event event : events.getEventCollection()) {
 			Event event = m_eventLog;
 			if (event.getNodeid() == 0)
 
@@ -217,30 +205,10 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 				}
 				LOG.debug("}");
 			}
-			Events events = new Events();
-			events.addEvent(event);
 
-			Log eventLog = new Log();
-			eventLog.setEvents(events);
-			
-			eventIpcEventBus.send("default.eventd.message.consumer", logMarshler1.marshal(eventLog));
+			eventIpcEventBus.send(ConfigConstants.EVENTEXPANDER_TO_EVENT_CONSUMER_ADDRESS,
+					logXmlHandler.marshal(getEventLog(event)));
 
-			// try (Timer.Context context = processTimer.time()) {
-			// for (final EventProcessor eventProcessor : m_eventProcessors) {
-			// try {
-			// eventProcessor.process(m_eventLog, m_synchronous);
-			// logSizes.update(events.getEventCount());
-			// } catch (EventProcessorException e) {
-			// LOG.warn("Unable to process event using processor {}; not processing with any
-			// later processors.", eventProcessor, e);
-			// break;
-			// } catch (Throwable t) {
-			// LOG.warn("Unknown exception processing event with processor {}; not
-			// processing with any later processors.", eventProcessor, t);
-			// break;
-			// }
-			// }
-			// }
 		}
 
 	}
@@ -253,88 +221,58 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 		return parms;
 	}
 
-	/**
-	 * <p>
-	 * afterPropertiesSet
-	 * </p>
-	 *
-	 * @throws java.lang.IllegalStateException
-	 *             if any.
-	 */
-	// @Override
-	// public void afterPropertiesSet() throws IllegalStateException {
-	// Assert.state(m_eventProcessors != null, "property eventPersisters must be
-	// set");
-	// }
-
 	public static void main(String[] args) {
-		logMarshler = new UtilMarshler(Event.class);
-		logMarshler1 = new UtilMarshler(Log.class);
-		System.setProperty("opennms.home", "src/test/resources");
-		// org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
-		// logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
-		DeploymentOptions deployment = new DeploymentOptions();
-		deployment.setWorker(true);
-		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
-		deployment.setMultiThreaded(true);
-		Runner.runClusteredExample(DefaultEventHandlerImpl.class, deployment);
+		eventXmlHandler = new XmlHandler<>(Event.class);
+		logXmlHandler = new XmlHandler<>(Log.class);
+		System.setProperty(ConfigConstants.OPENNMS_HOME, "src/test/resources");
+		ClusteredVertx.runClusteredWithDeploymentOptions(DefaultEventHandlerImpl.class, new DeploymentOptions(), true);
 
 	}
 
 	@Override
 	public void start() throws Exception {
 		running = new AtomicBoolean(true);
-
 		eventIpcEventBus = vertx.eventBus();
 
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
 			try {
-
-				consume();
-
+				consumeFromEventBus();
 			} catch (Exception ex) {
 				String error = "Failed to startup";
+				LOG.error(error + ex.getMessage());
 			}
 		});
 	}
 
-	private synchronized void consume() {
+	private synchronized void consumeFromEventBus() {
 		while (running.get()) {
 			try {
-				MessageConsumer<String> eventIpcConsumer = eventIpcEventBus.consumer("eventd.message.consumer");
-				eventIpcConsumer.handler(message -> {
-					sendNowSync((Event) logMarshler.unmarshal(message.body()));
-					// eventIpcEventBus.send("default.eventd.message.consumer",
-					// logMarshler1.marshal(m_eventdLog));
+				eventIpcEventBus.consumer(ConfigConstants.DEFAULT_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
+					sendNowSyncEvent((Event) eventXmlHandler.unmarshal((String) eventLog.body()));
 				});
 			} catch (Exception ex) {
-				ex.printStackTrace();
+				LOG.error("Failed to start up ! " + ex.getMessage());
 			}
 		}
 	}
 
-	public void sendNowSync(Event event) {
+	public void sendNowSyncEvent(Event event) {
 		Objects.requireNonNull(event);
-
-		// Events events = new Events();
-		// events.addEvent(event);
-		//
-		// Log eventLog = new Log();
-		// eventLog.setEvents(events);
-
 		createRunnable(event, true).run();
 	}
 
-	public void sendNowSync1(Event event) {
-		Objects.requireNonNull(event);
-
-		//m_eventdLog = eventLog;
+	public void sendNowSyncLog(Log event) {
+		createRunnable(event, true).run();
 	}
 
-	public void sendNowSync(Log event) {
+	public Log getEventLog(Event event) {
+		Events events = new Events();
+		events.addEvent(event);
 
-		createRunnable(event, true).run();
+		Log eventLog = new Log();
+		eventLog.setEvents(events);
+		return eventLog;
 	}
 
 	/**
@@ -378,13 +316,11 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 
 	@Override
 	public Runnable createRunnable(Log eventLog, boolean synchronous) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public Runnable createRunnable(Log eventLog) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 }

@@ -1,4 +1,4 @@
-package org.vertx.kafka.util;
+package org.vertx.kafka.consumer;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
@@ -90,7 +90,7 @@ public class EventdSyslogStresser {
 		m_sleepMillis = 0;
 		int totalSyslogsSent = 0;
 
-		topicName = "testGroup";
+		topicName = "syslogd";
 		Properties props = new Properties();
 		props.put("bootstrap.servers", m_agentAddress.toString() + ":9092");
 		props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");

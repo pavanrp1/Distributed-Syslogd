@@ -75,10 +75,10 @@ import io.vertx.core.eventbus.MessageConsumer;
  * @author <A HREF="mailto:sowmya@opennms.org">Sowmya Nataraj </A>
  * @author <A HREF="http://www.opennms.org">OpenNMS.org </A>
  */
-public class EventIpcManagerDefaultImpl extends AbstractVerticle
-		implements EventIpcManager, EventIpcBroadcaster {
+public class EventIpcManagerDefaultImpl extends AbstractVerticle implements EventIpcManager, EventIpcBroadcaster {
 
-	//private static final Logger LOG = LoggerFactory.getLogger(EventIpcManagerDefaultImpl.class);
+	// private static final Logger LOG =
+	// LoggerFactory.getLogger(EventIpcManagerDefaultImpl.class);
 
 	public static class DiscardTrapsAndSyslogEvents implements RejectedExecutionHandler {
 		/**
@@ -128,13 +128,9 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 
 	private static EventHandler m_eventHandler;
 
-	private static org.opennms.netmgt.eventd.UtilMarshler logMarshler;
-
 	private Integer m_handlerPoolSize;
 
 	private Integer m_handlerQueueLength;
-
-	private final MetricRegistry m_registry;
 
 	private AtomicBoolean running;
 
@@ -179,7 +175,8 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 					new LogPreservingThreadFactory(m_listener.getName(), 1), new RejectedExecutionHandler() {
 						@Override
 						public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
-						//	LOG.warn("Listener {}'s event queue is full, discarding event", m_listener.getName());
+							// LOG.warn("Listener {}'s event queue is full, discarding event",
+							// m_listener.getName());
 						}
 					});
 		}
@@ -189,9 +186,9 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 				@Override
 				public void run() {
 					try {
-//						if (LOG.isDebugEnabled())
-//							LOG.debug("run: calling onEvent on {} for event {}", m_listener.getName(),
-//									event.toStringSimple());
+						// if (LOG.isDebugEnabled())
+						// LOG.debug("run: calling onEvent on {} for event {}", m_listener.getName(),
+						// event.toStringSimple());
 
 						// Make sure we restore our log4j logging prefix after onEvent is called
 						Map<String, String> mdc = Logging.getCopyOfContextMap();
@@ -201,7 +198,8 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 							Logging.setContextMap(mdc);
 						}
 					} catch (Throwable t) {
-						//LOG.warn("run: an unexpected error occured during ListenerThread {}", m_listener.getName(), t);
+						// LOG.warn("run: an unexpected error occured during ListenerThread {}",
+						// m_listener.getName(), t);
 					}
 				}
 			}, m_delegateThread);
@@ -215,9 +213,11 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 		}
 	}
 
+	public EventIpcManagerDefaultImpl() {
+	}
+
 	public static void main(String[] args) {
 		m_eventHandler = new DefaultEventHandlerImpl(new MetricRegistry());
-		logMarshler = new UtilMarshler(Event.class);
 		System.setProperty("opennms.home", "src/test/resources");
 		// org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
 		// logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
@@ -225,7 +225,6 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 		deployment.setWorker(true);
 		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
 		deployment.setMultiThreaded(true);
-		Runner.runClusteredExample(EventIpcManagerDefaultImpl.class, deployment);
 
 	}
 
@@ -252,23 +251,12 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 			try {
 				MessageConsumer<String> eventIpcConsumer = eventIpcEventBus.consumer(EVENTD_CONSUMER_ADDRESS);
 				eventIpcConsumer.handler(message -> {
-					sendNowSync((Event) logMarshler.unmarshal(message.body()));
-					System.out.println("At EventHandler " + EventTemplate.eventCount.incrementAndGet());
 					// eventIpcEventBus.send(DEFAULT_EVENTD_CONSUMER_ADDRESS,
 					// DefaultEventHandlerImpl.getEventdLog());
 				});
 			} catch (Exception ex) {
 			}
 		}
-	}
-
-	/**
-	 * <p>
-	 * Constructor for EventIpcManagerDefaultImpl.
-	 * </p>
-	 */
-	public EventIpcManagerDefaultImpl(MetricRegistry registry) {
-		m_registry = Objects.requireNonNull(registry);
 	}
 
 	/** {@inheritDoc} */
@@ -322,13 +310,13 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 	public void sendNow(Log eventLog) {
 		Assert.notNull(eventLog, "eventLog argument cannot be null");
 
-//		if (LOG.isDebugEnabled())
-//			LOG.debug("sending: {}", eventLog);
+		// if (LOG.isDebugEnabled())
+		// LOG.debug("sending: {}", eventLog);
 
 		try {
 			m_eventHandlerPool.execute(m_eventHandler.createRunnable(eventLog));
 		} catch (RejectedExecutionException e) {
-			//LOG.warn("Unable to queue event log to the event handler pool queue", e);
+			// LOG.warn("Unable to queue event log to the event handler pool queue", e);
 			throw e;
 		}
 	}
@@ -369,13 +357,14 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 
 	@Override
 	public void broadcastNow(Event event, boolean synchronous) {
-//		if (LOG.isDebugEnabled()) {
-//			LOG.debug("Event ID {} to be broadcasted: {}", event.getDbid(), event.getUei());
-//		}
-//
-//		if (LOG.isDebugEnabled() && m_listeners.isEmpty()) {
-//			LOG.debug("No listeners interested in all events");
-//		}
+		// if (LOG.isDebugEnabled()) {
+		// LOG.debug("Event ID {} to be broadcasted: {}", event.getDbid(),
+		// event.getUei());
+		// }
+		//
+		// if (LOG.isDebugEnabled() && m_listeners.isEmpty()) {
+		// LOG.debug("No listeners interested in all events");
+		// }
 
 		List<CompletableFuture<Void>> listenerFutures = new ArrayList<>();
 
@@ -385,9 +374,10 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 		}
 
 		if (event.getUei() == null) {
-//			if (LOG.isDebugEnabled()) {
-//				LOG.debug("Event ID {} does not have a UEI, so skipping UEI matching", event.getDbid());
-//			}
+			// if (LOG.isDebugEnabled()) {
+			// LOG.debug("Event ID {} does not have a UEI, so skipping UEI matching",
+			// event.getDbid());
+			// }
 			return;
 		}
 		// System.out.println("\n"+new EventWrapper(event));
@@ -419,9 +409,10 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 		}
 
 		if (sentToListeners.isEmpty()) {
-//			if (LOG.isDebugEnabled()) {
-//				LOG.debug("No listener interested in event ID {}: {}", event.getDbid(), event.getUei());
-//			}
+			// if (LOG.isDebugEnabled()) {
+			// LOG.debug("No listener interested in event ID {}: {}", event.getDbid(),
+			// event.getUei());
+			// }
 		}
 
 		// If synchronous...
@@ -466,15 +457,16 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 		Assert.notNull(ueis, "ueilist argument cannot be null");
 
 		if (ueis.isEmpty()) {
-//			LOG.warn("Not adding event listener {} because the ueilist argument contains no entries",
-//					listener.getName());
+			// LOG.warn("Not adding event listener {} because the ueilist argument contains
+			// no entries",
+			// listener.getName());
 			return;
 		}
 
-//		if (LOG.isDebugEnabled()) {
-//			LOG.debug("Adding event listener {} for UEIs: {}", listener.getName(),
-//					StringUtils.collectionToCommaDelimitedString(ueis));
-//		}
+		// if (LOG.isDebugEnabled()) {
+		// LOG.debug("Adding event listener {} for UEIs: {}", listener.getName(),
+		// StringUtils.collectionToCommaDelimitedString(ueis));
+		// }
 
 		createListenerThread(listener);
 
@@ -623,38 +615,42 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle
 	 * afterPropertiesSet
 	 * </p>
 	 */
-//	public void afterPropertiesSet() {
-//		Assert.state(m_eventHandlerPool == null, "afterPropertiesSet() has already been called");
-//
-//		Assert.state(m_eventHandler != null, "eventHandler not set");
-//		Assert.state(m_handlerPoolSize != null, "handlerPoolSize not set");
-//
-//		final LinkedBlockingQueue<Runnable> workQueue = m_handlerQueueLength == null ? new LinkedBlockingQueue<>()
-//				: new LinkedBlockingQueue<>(m_handlerQueueLength);
-//		m_registry.remove("eventlogs.queued");
-//		m_registry.register("eventlogs.queued", new Gauge<Integer>() {
-//			@Override
-//			public Integer getValue() {
-//				return workQueue.size();
-//			}
-//		});
-//
-//		Logging.withPrefix(Eventd.LOG4J_CATEGORY, new Runnable() {
-//
-//			@Override
-//			public void run() {
-//				/**
-//				 * Create a fixed-size thread pool. The number of threads can be configured by
-//				 * using the "receivers" attribute in the config. The queue length for the pool
-//				 * can be configured with the "queueLength" attribute in the config.
-//				 */
-//				m_eventHandlerPool = new ThreadPoolExecutor(m_handlerPoolSize, m_handlerPoolSize, 0L,
-//						TimeUnit.MILLISECONDS, workQueue, new LogPreservingThreadFactory(
-//								EventIpcManagerDefaultImpl.class.getSimpleName(), m_handlerPoolSize));
-//			}
-//
-//		});
-//	}
+	// public void afterPropertiesSet() {
+	// Assert.state(m_eventHandlerPool == null, "afterPropertiesSet() has already
+	// been called");
+	//
+	// Assert.state(m_eventHandler != null, "eventHandler not set");
+	// Assert.state(m_handlerPoolSize != null, "handlerPoolSize not set");
+	//
+	// final LinkedBlockingQueue<Runnable> workQueue = m_handlerQueueLength == null
+	// ? new LinkedBlockingQueue<>()
+	// : new LinkedBlockingQueue<>(m_handlerQueueLength);
+	// m_registry.remove("eventlogs.queued");
+	// m_registry.register("eventlogs.queued", new Gauge<Integer>() {
+	// @Override
+	// public Integer getValue() {
+	// return workQueue.size();
+	// }
+	// });
+	//
+	// Logging.withPrefix(Eventd.LOG4J_CATEGORY, new Runnable() {
+	//
+	// @Override
+	// public void run() {
+	// /**
+	// * Create a fixed-size thread pool. The number of threads can be configured by
+	// * using the "receivers" attribute in the config. The queue length for the
+	// pool
+	// * can be configured with the "queueLength" attribute in the config.
+	// */
+	// m_eventHandlerPool = new ThreadPoolExecutor(m_handlerPoolSize,
+	// m_handlerPoolSize, 0L,
+	// TimeUnit.MILLISECONDS, workQueue, new LogPreservingThreadFactory(
+	// EventIpcManagerDefaultImpl.class.getSimpleName(), m_handlerPoolSize));
+	// }
+	//
+	// });
+	// }
 
 	/**
 	 * <p>

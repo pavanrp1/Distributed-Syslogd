@@ -39,6 +39,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
+import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.dao.api.DistPollerDao;
 import org.opennms.netmgt.dao.api.EventDao;
 import org.opennms.netmgt.dao.api.MonitoringSystemDao;
@@ -54,11 +55,10 @@ import org.opennms.netmgt.dao.util.Correlation;
 import org.opennms.netmgt.dao.util.Forward;
 import org.opennms.netmgt.dao.util.OperatorAction;
 import org.opennms.netmgt.dao.util.SnmpInfo;
-import org.opennms.netmgt.eventd.EventExpander;
 import org.opennms.netmgt.eventd.EventUtil;
 import org.opennms.netmgt.eventd.EventUtilDaoImpl;
-import org.opennms.netmgt.eventd.Runner;
-import org.opennms.netmgt.eventd.UtilMarshler;
+import org.opennms.netmgt.eventd.util.ClusteredVertx;
+import org.opennms.netmgt.eventd.util.ConfigConstants;
 import org.opennms.netmgt.events.api.EventDatabaseConstants;
 import org.opennms.netmgt.events.api.EventParameterUtils;
 import org.opennms.netmgt.events.api.EventProcessorException;
@@ -70,7 +70,6 @@ import org.opennms.netmgt.xml.event.Log;
 import org.opennms.netmgt.xml.event.Operaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DeadlockLoserDataAccessException;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallbackWithoutResult;
@@ -83,9 +82,7 @@ import com.codahale.metrics.Timer.Context;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
-import io.vertx.core.Future;
 import io.vertx.core.eventbus.EventBus;
-import io.vertx.core.eventbus.MessageConsumer;
 
 /**
  * EventWriter loads the information in each 'Event' into the database.
@@ -118,7 +115,7 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 	public static final String LOG_MSG_DEST_LOG_ONLY = "logonly";
 	public static final String LOG_MSG_DEST_DISPLAY_ONLY = "displayonly";
 
-	private static UtilMarshler logMarshler;
+	private static XmlHandler<Log> logXmlHandler;
 
 	private static TransactionOperations m_transactionManager;
 
@@ -144,10 +141,6 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 
 	private EventBus hibernateEventBus;
 
-	private static final String HIBERNATE_EVENTD_CONSUMER_ADDRESS = "hibernate.eventd.message.consumer";
-
-	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
-
 	private Log m_eventLog;
 
 	public HibernateEventWriter(MetricRegistry registry) {
@@ -155,42 +148,35 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 	}
 
 	public void setNodeDao(NodeDao nodeDao) {
-		this.nodeDao = nodeDao;
+		HibernateEventWriter.nodeDao = nodeDao;
 	}
 
 	public void setMonitoringSystemDao(MonitoringSystemDao monitoringSystemDao) {
-		this.monitoringSystemDao = monitoringSystemDao;
+		HibernateEventWriter.monitoringSystemDao = monitoringSystemDao;
 	}
 
 	public void setDistPollerDao(DistPollerDao distPollerDao) {
-		this.distPollerDao = distPollerDao;
+		HibernateEventWriter.distPollerDao = distPollerDao;
 	}
 
 	public void setEventDao(EventDao eventDao) {
-		this.eventDao = eventDao;
+		HibernateEventWriter.eventDao = eventDao;
 	}
 
 	public void setServiceTypeDao(ServiceTypeDao serviceTypeDao) {
-		this.serviceTypeDao = serviceTypeDao;
+		HibernateEventWriter.serviceTypeDao = serviceTypeDao;
 	}
 
 	public void setEventUtil(EventUtil eventUtil) {
-		this.eventUtil = eventUtil;
+		HibernateEventWriter.eventUtil = eventUtil;
 	}
 
 	public HibernateEventWriter() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public static void main(String[] args) throws IOException, Exception {
-		logMarshler = new UtilMarshler(Log.class);
-		System.setProperty("opennms.home", "src/test/resources");
-		// org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
-		// logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
-		DeploymentOptions deployment = new DeploymentOptions();
-		deployment.setWorker(true);
-		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
-		deployment.setMultiThreaded(true);
+		logXmlHandler = new XmlHandler<>(Log.class);
+		System.setProperty(ConfigConstants.OPENNMS_HOME, "src/test/resources");
 		eventUtil = new EventUtilDaoImpl(new MetricRegistry());
 		distPollerDao = new DistPollerDaoHibernate();
 		serviceTypeDao = new ServiceTypeDaoHibernate();
@@ -199,7 +185,7 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 		monitoringSystemDao = new MonitoringSystemDaoHibernate();
 		hibernateSessionFactory = new HibernateSessionFactory();
 		m_transactionManager = hibernateSessionFactory.getTransactionTemplate();
-		Runner.runClusteredExample(HibernateEventWriter.class, deployment);
+		ClusteredVertx.runClusteredWithDeploymentOptions(HibernateEventWriter.class, new DeploymentOptions(), true);
 	}
 
 	/**
@@ -517,28 +503,28 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 		backgroundConsumer.submit(() -> {
 			try {
 
-				consume();
+				consumeFromEventBus();
 
 			} catch (Exception ex) {
 				String error = "Failed to startup";
+				LOG.error(error + ex.getMessage());
 			}
 		});
 	}
 
-	private void consume() {
+	private synchronized void consumeFromEventBus() {
 		while (running.get()) {
 			try {
-				MessageConsumer<String> broadCastEventConsumer = hibernateEventBus
-						.consumer(HIBERNATE_EVENTD_CONSUMER_ADDRESS);
-				broadCastEventConsumer.handler(message -> {
-
+				hibernateEventBus.consumer(ConfigConstants.HIBERNATE_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
 					try {
-						process((Log) logMarshler.unmarshal(message.body()));
-						hibernateEventBus.send(BROADCAST_EVENTD_CONSUMER_ADDRESS, logMarshler.marshal(m_eventLog));
+						process((Log) logXmlHandler.unmarshal((String) eventLog.body()));
 					} catch (EventProcessorException e) {
 						e.printStackTrace();
 					}
+					hibernateEventBus.send(ConfigConstants.EVENTBROADCASTER_TO_EVENT_CONSUMER_ADDRESS,
+							logXmlHandler.marshal(m_eventLog));
 				});
+
 			} catch (Exception ex) {
 			}
 		}

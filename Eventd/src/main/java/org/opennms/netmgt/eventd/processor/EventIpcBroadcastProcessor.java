@@ -29,21 +29,15 @@
 package org.opennms.netmgt.eventd.processor;
 
 import java.io.IOException;
-import java.util.Objects;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import org.opennms.netmgt.dao.hibernate.DistPollerDaoHibernate;
-import org.opennms.netmgt.dao.hibernate.EventDaoHibernate;
-import org.opennms.netmgt.dao.hibernate.MonitoringSystemDaoHibernate;
-import org.opennms.netmgt.dao.hibernate.NodeDaoHibernate;
-import org.opennms.netmgt.dao.hibernate.ServiceTypeDaoHibernate;
+import org.opennms.core.xml.XmlHandler;
 import org.opennms.netmgt.eventd.EventIpcManagerDefaultImpl;
-import org.opennms.netmgt.eventd.EventUtilDaoImpl;
-import org.opennms.netmgt.eventd.Runner;
-import org.opennms.netmgt.eventd.UtilMarshler;
 import org.opennms.netmgt.eventd.processor.expandable.EventTemplate;
+import org.opennms.netmgt.eventd.util.ClusteredVertx;
+import org.opennms.netmgt.eventd.util.ConfigConstants;
 import org.opennms.netmgt.events.api.EventIpcBroadcaster;
 import org.opennms.netmgt.events.api.EventProcessor;
 import org.opennms.netmgt.events.api.EventProcessorException;
@@ -55,16 +49,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.util.Assert;
 
-import com.codahale.metrics.Meter;
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
-import com.codahale.metrics.Timer.Context;
-
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.DeploymentOptions;
-import io.vertx.core.Future;
 import io.vertx.core.eventbus.EventBus;
-import io.vertx.core.eventbus.MessageConsumer;
 
 /**
  * EventProcessor that broadcasts events to other interested daemons with
@@ -77,22 +64,11 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 	private static final Logger LOG = LoggerFactory.getLogger(EventIpcBroadcastProcessor.class);
 	private static EventIpcBroadcaster m_eventIpcBroadcaster;
 
-	private static Timer logBroadcastTimer;
-	private static Meter eventBroadcastMeter;
-
 	private AtomicBoolean running;
 
 	private ExecutorService backgroundConsumer;
 	private EventBus broadCastEventBus;
-	public static int eventWriter = 0;
-	private static UtilMarshler logMarshler;
-
-	private static final String BROADCAST_EVENTD_CONSUMER_ADDRESS = "broadcast.eventd.message.consumer";
-
-	public EventIpcBroadcastProcessor(MetricRegistry registry) {
-		logBroadcastTimer = Objects.requireNonNull(registry).timer("eventlogs.process.broadcast");
-		eventBroadcastMeter = registry.meter("events.process.broadcast");
-	}
+	private static XmlHandler<Log> logXmlMarshler;
 
 	/**
 	 * <p>
@@ -112,19 +88,11 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 	}
 
 	public static void main(String[] args) throws IOException, Exception {
-		logMarshler = new UtilMarshler(Log.class);
+		logXmlMarshler = new XmlHandler<>(Log.class);
 		System.setProperty("opennms.home", "src/test/resources");
-		// org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
-		// logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
-		DeploymentOptions deployment = new DeploymentOptions();
-		deployment.setWorker(true);
-		deployment.setWorkerPoolSize(Integer.MAX_VALUE);
-		deployment.setMultiThreaded(true);
-		MetricRegistry registry = new MetricRegistry();
-		logBroadcastTimer = Objects.requireNonNull(registry).timer("eventlogs.process.broadcast");
-		eventBroadcastMeter = registry.meter("events.process.broadcast");
-		m_eventIpcBroadcaster = new EventIpcManagerDefaultImpl(registry);
-		Runner.runClusteredExample(EventIpcBroadcastProcessor.class, deployment);
+		m_eventIpcBroadcaster = new EventIpcManagerDefaultImpl();
+		ClusteredVertx.runClusteredWithDeploymentOptions(EventIpcBroadcastProcessor.class, new DeploymentOptions(),
+				true);
 	}
 
 	/**
@@ -139,11 +107,8 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 	@Override
 	public void process(Log eventLog, boolean synchronous) throws EventProcessorException {
 		if (eventLog != null && eventLog.getEvents() != null && eventLog.getEvents().getEvent() != null) {
-			try (Context context = logBroadcastTimer.time()) {
-				for (Event eachEvent : eventLog.getEvents().getEvent()) {
-					process(eventLog.getHeader(), eachEvent, synchronous);
-					eventBroadcastMeter.mark();
-				}
+			for (Event eachEvent : eventLog.getEvents().getEvent()) {
+				process(eventLog.getHeader(), eachEvent, synchronous);
 			}
 		}
 	}
@@ -181,7 +146,7 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 	}
 
 	@Override
-	public void start(final Future<Void> startedResult) throws Exception {
+	public void start() throws Exception {
 		running = new AtomicBoolean(true);
 
 		broadCastEventBus = vertx.eventBus();
@@ -189,26 +154,20 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 		backgroundConsumer = Executors.newSingleThreadExecutor();
 		backgroundConsumer.submit(() -> {
 			try {
-
-				startedResult.complete();
-				consume();
-
+				consumeFromEventBus();
 			} catch (Exception ex) {
 				String error = "Failed to startup";
-				startedResult.fail(ex);
+				LOG.error(error + ex.getMessage());
 			}
 		});
 	}
 
-	private void consume() {
+	private synchronized void consumeFromEventBus() {
 		while (running.get()) {
 			try {
-				MessageConsumer<String> broadCastEventConsumer = broadCastEventBus
-						.consumer(BROADCAST_EVENTD_CONSUMER_ADDRESS);
-				broadCastEventConsumer.handler(message -> {
-
+				broadCastEventBus.consumer(ConfigConstants.EVENTBROADCASTER_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
 					try {
-						process((Log) logMarshler.unmarshal(message.body()));
+						process((Log) logXmlMarshler.unmarshal((String) eventLog.body()));
 						System.out.println("Event at broadcaster " + EventTemplate.eventCount.incrementAndGet());
 					} catch (EventProcessorException e) {
 						e.printStackTrace();

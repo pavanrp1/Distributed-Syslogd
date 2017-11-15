@@ -41,110 +41,110 @@ import org.opennms.netmgt.syslogd.api.SyslogMessageLogDTO;
 
 public class SyslogSinkModule extends AbstractXmlSinkModule<SyslogConnection, SyslogMessageLogDTO> {
 
-    public static final String MODULE_ID = "Syslog";
+	public static final String MODULE_ID = "Syslog";
 
-    private final SyslogdConfig config;
-    private final DistPollerDao distPollerDao;
+	private final SyslogdConfig config;
+	private final DistPollerDao distPollerDao;
 
-    public SyslogSinkModule(SyslogdConfig config, DistPollerDao distPollerDao) {
-        super(SyslogMessageLogDTO.class);
-        this.config = Objects.requireNonNull(config);
-        this.distPollerDao = Objects.requireNonNull(distPollerDao);
-    }
+	public SyslogSinkModule(SyslogdConfig config, DistPollerDao distPollerDao) {
+		super(SyslogMessageLogDTO.class);
+		this.config = Objects.requireNonNull(config);
+		this.distPollerDao = Objects.requireNonNull(distPollerDao);
+	}
 
-    @Override
-    public String getId() {
-        return MODULE_ID;
-    }
+	@Override
+	public String getId() {
+		return MODULE_ID;
+	}
 
-    @Override
-    public int getNumConsumerThreads() {
-        return config.getNumThreads();
-    }
+	@Override
+	public int getNumConsumerThreads() {
+		return config.getNumThreads();
+	}
 
-    @Override
-    public AggregationPolicy<SyslogConnection, SyslogMessageLogDTO> getAggregationPolicy() {
-        final String systemId = distPollerDao.whoami().getId();
-        final String systemLocation = distPollerDao.whoami().getLocation();
-        return new AggregationPolicy<SyslogConnection, SyslogMessageLogDTO>() {
-            @Override
-            public int getCompletionSize() {
-                return config.getBatchSize();
-            }
+	@Override
+	public AggregationPolicy<SyslogConnection, SyslogMessageLogDTO> getAggregationPolicy() {
+		final String systemId = distPollerDao.whoami().getId();
+		final String systemLocation = distPollerDao.whoami().getLocation();
+		return new AggregationPolicy<SyslogConnection, SyslogMessageLogDTO>() {
+			@Override
+			public int getCompletionSize() {
+				return config.getBatchSize();
+			}
 
-            @Override
-            public int getCompletionIntervalMs() {
-                return config.getBatchIntervalMs();
-            }
+			@Override
+			public int getCompletionIntervalMs() {
+				return config.getBatchIntervalMs();
+			}
 
-            @Override
-            public Object key(SyslogConnection syslogConnection) {
-                return syslogConnection.getSource();
-            }
+			@Override
+			public Object key(SyslogConnection syslogConnection) {
+				return syslogConnection.getSource();
+			}
 
-            @Override
-            public SyslogMessageLogDTO aggregate(SyslogMessageLogDTO oldLog, SyslogConnection connection) {
-                if (oldLog == null) {
-                    oldLog = new SyslogMessageLogDTO(systemLocation, systemId, connection.getSource());
-                }
-              //  SyslogMessageDTO messageDTO = new SyslogMessageDTO(connection.getBuffer());
-             //   oldLog.getMessages().add(messageDTO);
-                return oldLog;
-            }
-        };
-    }
+			@Override
+			public SyslogMessageLogDTO aggregate(SyslogMessageLogDTO oldLog, SyslogConnection connection) {
+				if (oldLog == null) {
+					oldLog = new SyslogMessageLogDTO(systemLocation, systemId, connection.getSource());
+				}
+				// SyslogMessageDTO messageDTO = new SyslogMessageDTO(connection.getBuffer());
+				// oldLog.getMessages().add(messageDTO);
+				return oldLog;
+			}
+		};
+	}
 
-    @Override
-    public AsyncPolicy getAsyncPolicy() {
-        return new AsyncPolicy() {
-            @Override
-            public int getQueueSize() {
-                return config.getQueueSize();
-            }
+	@Override
+	public AsyncPolicy getAsyncPolicy() {
+		return new AsyncPolicy() {
+			@Override
+			public int getQueueSize() {
+				return config.getQueueSize();
+			}
 
-            @Override
-            public int getNumThreads() {
-                return config.getNumThreads();
-            }
+			@Override
+			public int getNumThreads() {
+				return config.getNumThreads();
+			}
 
-            @Override
-            public boolean isBlockWhenFull() {
-                return true;
-            }
-        };
-    }
+			@Override
+			public boolean isBlockWhenFull() {
+				return true;
+			}
+		};
+	}
 
-    /**
-     * Used for testing.
-     */
-    public SyslogMessageLogDTO toMessageLog(SyslogConnection... connections) {
-        final String systemId = distPollerDao.whoami().getId();
-        final String systemLocation = distPollerDao.whoami().getLocation();
-        if (connections.length < 1) {
-            throw new IllegalArgumentException("One or more connection are required.");
-        }
-        final SyslogMessageLogDTO messageLog = new SyslogMessageLogDTO(systemLocation, systemId,
-                connections[0].getSource());
-        for (SyslogConnection connection : connections) {
-           // final SyslogMessageDTO messageDTO = new SyslogMessageDTO(connection.getBuffer());
-         //   messageLog.getMessages().add(messageDTO);
-        }
-        return messageLog;
-    }
+	/**
+	 * Used for testing.
+	 */
+	public SyslogMessageLogDTO toMessageLog(SyslogConnection... connections) {
+		final String systemId = distPollerDao.whoami().getId();
+		final String systemLocation = distPollerDao.whoami().getLocation();
+		if (connections.length < 1) {
+			throw new IllegalArgumentException("One or more connection are required.");
+		}
+		final SyslogMessageLogDTO messageLog = new SyslogMessageLogDTO(systemLocation, systemId,
+				connections[0].getSource());
+		for (SyslogConnection connection : connections) {
+			final SyslogMessageDTO messageDTO = new SyslogMessageDTO(connection.getBuffer());
+			messageLog.setMessages(messageDTO);
+		}
+		return messageLog;
+	}
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(MODULE_ID);
-    }
+	@Override
+	public int hashCode() {
+		return Objects.hash(MODULE_ID);
+	}
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        return true;
-    }
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		return true;
+	}
 }
