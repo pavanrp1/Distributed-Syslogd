@@ -265,7 +265,7 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 		}
 	}
 
-	public synchronized void sendNowSyncEvent(Event event) {
+	public void sendNowSyncEvent(Event event) {
 		Objects.requireNonNull(event);
 		createRunnable(event, true).run();
 	}
