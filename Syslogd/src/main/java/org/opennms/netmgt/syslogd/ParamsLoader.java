@@ -67,7 +67,11 @@ public class ParamsLoader extends AbstractVerticle {
 	}
 
 	public static void main(String[] args) throws Exception {
-		ClusteredVertx.runClusteredWithDeploymentOptions(ParamsLoader.class, new DeploymentOptions(), true);
+		DeploymentOptions deployOptions = new DeploymentOptions();
+		deployOptions.setWorker(true);
+		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployOptions.setMultiThreaded(true);
+		ClusteredVertx.runClusteredWithDeploymentOptions(ParamsLoader.class, deployOptions);
 	}
 
 	private static Map<String, String> paramsMap;

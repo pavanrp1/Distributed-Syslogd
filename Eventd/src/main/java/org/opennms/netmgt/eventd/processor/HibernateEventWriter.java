@@ -185,7 +185,11 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 		monitoringSystemDao = new MonitoringSystemDaoHibernate();
 		hibernateSessionFactory = new HibernateSessionFactory();
 		m_transactionManager = hibernateSessionFactory.getTransactionTemplate();
-		ClusteredVertx.runClusteredWithDeploymentOptions(HibernateEventWriter.class, new DeploymentOptions(), true);
+		DeploymentOptions deployOptions = new DeploymentOptions();
+		deployOptions.setWorker(true);
+		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployOptions.setMultiThreaded(true);
+		ClusteredVertx.runClusteredWithDeploymentOptions(HibernateEventWriter.class, deployOptions);
 	}
 
 	/**

@@ -229,7 +229,11 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 		eventXmlHandler = new UtiliMarshlerUnmarshaler(Event.class);
 		logXmlHandler = new UtiliMarshlerUnmarshaler(Log.class);
 		System.setProperty(ConfigConstants.OPENNMS_HOME, "src/test/resources");
-		ClusteredVertx.runClusteredWithDeploymentOptions(DefaultEventHandlerImpl.class, new DeploymentOptions(), true);
+		DeploymentOptions deployOptions = new DeploymentOptions();
+		deployOptions.setWorker(true);
+		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployOptions.setMultiThreaded(true);
+		ClusteredVertx.runClusteredWithDeploymentOptions(DefaultEventHandlerImpl.class, deployOptions);
 
 	}
 
@@ -261,7 +265,7 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 		}
 	}
 
-	public void sendNowSyncEvent(Event event) {
+	public synchronized void sendNowSyncEvent(Event event) {
 		Objects.requireNonNull(event);
 		createRunnable(event, true).run();
 	}

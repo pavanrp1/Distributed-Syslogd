@@ -24,13 +24,7 @@ public class ClusteredVertx {
 		runnerWithVertxClustered(CORE_EXAMPLES_JAVA_DIR, clazz, options.setClustered(true), null);
 	}
 
-	public static void runClusteredWithDeploymentOptions(Class<?> clazz, DeploymentOptions options,
-			boolean isWorkerTrue) {
-		if (isWorkerTrue) {
-			options.setWorker(true);
-			options.setWorkerPoolSize(Integer.MAX_VALUE);
-			options.setMultiThreaded(true);
-		}
+	public static void runClusteredWithDeploymentOptions(Class<?> clazz, DeploymentOptions options) {
 		Config hazelcastConfig = new Config();
 		hazelcastConfig.getNetworkConfig().getJoin().getTcpIpConfig().addMember(ConfigConstants.LOCALHOST)
 				.setEnabled(true);

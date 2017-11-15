@@ -63,7 +63,11 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 		topics = new ArrayList<String>();
 		topics.add(SYSLOGD);
 		verticleConfig.put(ConfigConstants.TOPICS, new JsonArray(topics));
-		ClusteredVertx.runClusteredWithDeploymentOptions(KafkaMessageConsumer.class, new DeploymentOptions(), true);
+		DeploymentOptions deployOptions = new DeploymentOptions();
+		deployOptions.setWorker(true);
+		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployOptions.setMultiThreaded(true);
+		ClusteredVertx.runClusteredWithDeploymentOptions(KafkaMessageConsumer.class, deployOptions);
 	}
 
 	@Override

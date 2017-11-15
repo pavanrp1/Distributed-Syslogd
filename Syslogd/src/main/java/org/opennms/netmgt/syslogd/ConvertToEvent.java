@@ -141,7 +141,11 @@ public class ConvertToEvent extends AbstractVerticle {
 		syslogdConfig = loadSyslogConfiguration("/syslogd-loadtest-configuration.xml");
 		org.apache.log4j.Logger logger4j = org.apache.log4j.Logger.getRootLogger();
 		logger4j.setLevel(org.apache.log4j.Level.toLevel("ERROR"));
-		ClusteredVertx.runClusteredWithDeploymentOptions(ConvertToEvent.class, new DeploymentOptions(), true);
+		DeploymentOptions deployOptions = new DeploymentOptions();
+		deployOptions.setWorker(true);
+		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployOptions.setMultiThreaded(true);
+		ClusteredVertx.runClusteredWithDeploymentOptions(ConvertToEvent.class, deployOptions);
 	}
 
 	public static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {

@@ -91,8 +91,11 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 		logXmlMarshler = new UtiliMarshlerUnmarshaler(Log.class);
 		System.setProperty("opennms.home", "src/test/resources");
 		m_eventIpcBroadcaster = new EventIpcManagerDefaultImpl();
-		ClusteredVertx.runClusteredWithDeploymentOptions(EventIpcBroadcastProcessor.class, new DeploymentOptions(),
-				true);
+		DeploymentOptions deployOptions = new DeploymentOptions();
+		deployOptions.setWorker(true);
+		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployOptions.setMultiThreaded(true);
+		ClusteredVertx.runClusteredWithDeploymentOptions(EventIpcBroadcastProcessor.class, deployOptions);
 	}
 
 	/**

@@ -165,7 +165,11 @@ public final class EventExpander extends AbstractVerticle
 				new FileSystemResource(ConfigFileConstants.getConfigFileByName("eventconf.xml")));
 		eventConfDao.afterPropertiesSet();
 		m_eventConfDao = eventConfDao;
-		ClusteredVertx.runClusteredWithDeploymentOptions(EventExpander.class, new DeploymentOptions(), true);
+		DeploymentOptions deployOptions = new DeploymentOptions();
+		deployOptions.setWorker(true);
+		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
+		deployOptions.setMultiThreaded(true);
+		ClusteredVertx.runClusteredWithDeploymentOptions(EventExpander.class, deployOptions);
 	}
 
 	/**
