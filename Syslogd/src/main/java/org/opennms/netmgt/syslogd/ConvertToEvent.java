@@ -145,7 +145,7 @@ public class ConvertToEvent extends AbstractVerticle {
 		deployOptions.setWorker(true);
 		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
 		deployOptions.setMultiThreaded(true);
-		ClusteredVertx.runClusteredWithDeploymentOptions(ConvertToEvent.class, deployOptions);
+		ClusteredVertx.runClusteredWithDeploymentOptions(ConvertToEvent.class, deployOptions,"Convert-Event");
 	}
 
 	public static SyslogdConfigFactory loadSyslogConfiguration(final String configuration) throws IOException {

@@ -230,7 +230,7 @@ public class DefaultEventHandlerImpl extends AbstractVerticle implements EventHa
 		deployOptions.setWorker(true);
 		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
 		deployOptions.setMultiThreaded(true);
-		ClusteredVertx.runClusteredWithDeploymentOptions(DefaultEventHandlerImpl.class, deployOptions);
+		ClusteredVertx.runClusteredWithDeploymentOptions(DefaultEventHandlerImpl.class, deployOptions,"Event-Handler");
 
 	}
 

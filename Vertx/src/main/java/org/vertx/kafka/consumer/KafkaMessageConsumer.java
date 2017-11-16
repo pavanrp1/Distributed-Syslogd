@@ -67,7 +67,7 @@ public class KafkaMessageConsumer extends AbstractVerticle {
 		deployOptions.setWorker(true);
 		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
 		deployOptions.setMultiThreaded(true);
-		ClusteredVertx.runClusteredWithDeploymentOptions(KafkaMessageConsumer.class, deployOptions);
+		ClusteredVertx.runClusteredWithDeploymentOptions(KafkaMessageConsumer.class, deployOptions,"Kafka-Consumer");
 	}
 
 	@Override

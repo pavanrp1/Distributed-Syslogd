@@ -164,7 +164,7 @@ public final class EventExpander extends AbstractVerticle
 		deployOptions.setWorker(true);
 		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
 		deployOptions.setMultiThreaded(true);
-		ClusteredVertx.runClusteredWithDeploymentOptions(EventExpander.class, deployOptions);
+		ClusteredVertx.runClusteredWithDeploymentOptions(EventExpander.class, deployOptions,"Event-Expander");
 	}
 
 	/**

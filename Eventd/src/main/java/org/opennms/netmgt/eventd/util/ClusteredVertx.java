@@ -10,6 +10,7 @@ import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
 import io.vertx.core.spi.cluster.ClusterManager;
+import io.vertx.ext.dropwizard.DropwizardMetricsOptions;
 import io.vertx.spi.cluster.hazelcast.HazelcastClusterManager;
 
 public class ClusteredVertx {
@@ -33,6 +34,19 @@ public class ClusteredVertx {
 		ClusterManager mgr = new HazelcastClusterManager(hazelcastConfig);
 		runnerWithVertxClustered(CORE_EXAMPLES_JAVA_DIR, clazz,
 				new VertxOptions().setClustered(true).setClusterManager(mgr), options);
+	}
+
+	public static void runClusteredWithDeploymentOptions(Class<?> clazz, DeploymentOptions options, String domainName) {
+		Config hazelcastConfig = new Config();
+		hazelcastConfig.getNetworkConfig().getJoin().getTcpIpConfig().addMember(ConfigConstants.LOCALHOST)
+				.setEnabled(true);
+		hazelcastConfig.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
+
+		ClusterManager mgr = new HazelcastClusterManager(hazelcastConfig);
+		runnerWithVertxClustered(CORE_EXAMPLES_JAVA_DIR, clazz,
+				new VertxOptions().setClustered(true).setMetricsOptions(
+						new DropwizardMetricsOptions().setEnabled(true).setJmxEnabled(true).setJmxDomain(domainName)),
+				options);
 	}
 
 	public static void runnerWithVertxClustered(String exampleDir, Class<?> clazz, VertxOptions options,

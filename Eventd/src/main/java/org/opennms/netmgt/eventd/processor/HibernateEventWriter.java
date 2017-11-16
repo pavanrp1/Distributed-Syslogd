@@ -186,7 +186,7 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 		deployOptions.setWorker(true);
 		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
 		deployOptions.setMultiThreaded(true);
-		ClusteredVertx.runClusteredWithDeploymentOptions(HibernateEventWriter.class, deployOptions);
+		ClusteredVertx.runClusteredWithDeploymentOptions(HibernateEventWriter.class, deployOptions,"Hibernate-Writer");
 	}
 
 	/**

@@ -92,7 +92,7 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 		deployOptions.setWorker(true);
 		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
 		deployOptions.setMultiThreaded(true);
-		ClusteredVertx.runClusteredWithDeploymentOptions(EventIpcBroadcastProcessor.class, deployOptions);
+		ClusteredVertx.runClusteredWithDeploymentOptions(EventIpcBroadcastProcessor.class, deployOptions,"Broadcaster");
 	}
 
 	/**

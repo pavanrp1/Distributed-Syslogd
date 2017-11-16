@@ -71,7 +71,7 @@ public class ParamsLoader extends AbstractVerticle {
 		deployOptions.setWorker(true);
 		deployOptions.setWorkerPoolSize(Integer.MAX_VALUE);
 		deployOptions.setMultiThreaded(true);
-		ClusteredVertx.runClusteredWithDeploymentOptions(ParamsLoader.class, deployOptions);
+		ClusteredVertx.runClusteredWithDeploymentOptions(ParamsLoader.class, deployOptions,"Param-Loader");
 	}
 
 	private static Map<String, String> paramsMap;
