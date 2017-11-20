@@ -49,6 +49,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.opennms.core.concurrent.LogPreservingThreadFactory;
 import org.opennms.core.logging.Logging;
+import org.opennms.netmgt.dao.mock.EventWrapper;
 import org.opennms.netmgt.eventd.processor.expandable.EventTemplate;
 import org.opennms.netmgt.events.api.EventHandler;
 import org.opennms.netmgt.events.api.EventIpcBroadcaster;
@@ -380,7 +381,8 @@ public class EventIpcManagerDefaultImpl extends AbstractVerticle implements Even
 			// }
 			return;
 		}
-		// System.out.println("\n"+new EventWrapper(event));
+		// Utility to print event
+		// System.out.println(new EventWrapper(event));
 
 		/*
 		 * Send to listeners who are interested in this event UEI. Loop to attempt
