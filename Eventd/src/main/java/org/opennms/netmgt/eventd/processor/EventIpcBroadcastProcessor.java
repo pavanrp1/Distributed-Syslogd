@@ -162,7 +162,7 @@ public class EventIpcBroadcastProcessor extends AbstractVerticle implements Even
 
 	private synchronized void consumeFromEventBus() {
 		try {
-			broadCastEventBus.consumer(ConfigConstants.HIBERNATE_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
+			broadCastEventBus.consumer(ConfigConstants.EVENTBROADCASTER_TO_EVENT_CONSUMER_ADDRESS, eventLog -> {
 				try {
 					process((Log) logXmlMarshler.unmarshal((String) eventLog.body()));
 					System.out.println("Event at broadcaster " + EventTemplate.eventCount.incrementAndGet());

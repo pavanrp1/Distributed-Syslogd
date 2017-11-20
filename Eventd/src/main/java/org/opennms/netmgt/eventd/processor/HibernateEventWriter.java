@@ -519,8 +519,6 @@ public class HibernateEventWriter extends AbstractVerticle implements EventWrite
 				} catch (EventProcessorException e) {
 					e.printStackTrace();
 				}
-				hibernateEventBus.send(ConfigConstants.EVENTBROADCASTER_TO_EVENT_CONSUMER_ADDRESS,
-						logXmlHandler.marshal(m_eventLog));
 			});
 
 		} catch (Exception ex) {

@@ -822,7 +822,9 @@ public final class EventExpander extends AbstractVerticle
 			}
 			// }
 		}
-		eventExpanderBus.publish(ConfigConstants.HIBERNATE_TO_EVENT_CONSUMER_ADDRESS, logXmlHandler.marshal(eventLog));
+		eventExpanderBus.send(ConfigConstants.EVENTBROADCASTER_TO_EVENT_CONSUMER_ADDRESS,
+				logXmlHandler.marshal(eventLog));
+		eventExpanderBus.send(ConfigConstants.HIBERNATE_TO_EVENT_CONSUMER_ADDRESS, logXmlHandler.marshal(eventLog));
 	}
 
 	/**
