@@ -183,7 +183,6 @@ public class ConvertToEvent extends AbstractVerticle {
 					syslogMessageLogDTO.getSourcePort(),
 					StandardCharsets.US_ASCII.decode(syslogMessageLogDTO.getMessages().getBytes()).toString(),
 					syslogdConfig, syslogMessageLogDTO.getParamsMap(), syslogMessageLogDTO);
-
 			convertToEventBus.send(ConfigConstants.DEFAULT_TO_EVENT_CONSUMER_ADDRESS,
 					eventXmlHandler.marshal(convertedEvent));
 

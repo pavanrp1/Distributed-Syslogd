@@ -7,11 +7,11 @@ public class SyslogdTestRun {
 	private static ConvertToEvent convertToEvent;
 
 	public static void main(String[] args) throws Exception {
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 10; i++) {
 			paramsLoader = new ParamsLoader();
 			paramsLoader.main(args);
 		}
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 15; i++) {
 			convertToEvent = new ConvertToEvent();
 			convertToEvent.main(args);
 		}

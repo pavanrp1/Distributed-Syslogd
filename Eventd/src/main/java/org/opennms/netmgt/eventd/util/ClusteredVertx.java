@@ -2,13 +2,18 @@ package org.opennms.netmgt.eventd.util;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+import java.util.Arrays;
 import java.util.function.Consumer;
 
 import com.hazelcast.config.Config;
+import com.hazelcast.config.JoinConfig;
 
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Vertx;
 import io.vertx.core.VertxOptions;
+import io.vertx.core.eventbus.EventBusOptions;
 import io.vertx.core.spi.cluster.ClusterManager;
 import io.vertx.spi.cluster.hazelcast.HazelcastClusterManager;
 
@@ -26,13 +31,37 @@ public class ClusteredVertx {
 
 	public static void runClusteredWithDeploymentOptions(Class<?> clazz, DeploymentOptions options) {
 		Config hazelcastConfig = new Config();
-		hazelcastConfig.getNetworkConfig().getJoin().getTcpIpConfig().addMember(ConfigConstants.LOCALHOST)
-				.setEnabled(true);
+		hazelcastConfig.getGroupConfig().setName("group1");
+		hazelcastConfig.getNetworkConfig().getJoin().getTcpIpConfig().addMember("10.182.247.73")
+				.addMember("10.182.241.200").setEnabled(true);
+		// //
+		// hazelcastConfig.getNetworkConfig().getJoin().getTcpIpConfig().setEnabled(true);
 		hazelcastConfig.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
-
+		//
+		// hazelcastConfig.getNetworkConfig().getJoin().getAwsConfig().setEnabled(false);
+		// hazelcastConfig.getGroupConfig().setName("group1");
+		// JoinConfig join = hazelcastConfig.getNetworkConfig().getJoin();
+		// join.getMulticastConfig().setEnabled(false);
+		// join.getAwsConfig().setEnabled(false);
+		// join.getTcpIpConfig().setEnabled(true).setMembers(Arrays.asList("10.182.247.73",
+		// "10.182.241.200"));
+		// hazelcastConfig.getNetworkConfig().getInterfaces().setEnabled(true).addInterface("10.182.*.*");
 		ClusterManager mgr = new HazelcastClusterManager(hazelcastConfig);
-		runnerWithVertxClustered(CORE_EXAMPLES_JAVA_DIR, clazz,
-				new VertxOptions().setClustered(true).setClusterManager(mgr), options);
+
+		VertxOptions vertxOptions = new VertxOptions().setClustered(true).setClusterManager(mgr);
+		InetAddress IP;
+		try {
+			IP = InetAddress.getLocalHost();
+			vertxOptions.setClusterHost(IP.getHostAddress());
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// vertxOptions.setEventBusOptions(new
+		// EventBusOptions().setClustered(true).setClusterPublicHost("application"));
+
+		runnerWithVertxClustered(CORE_EXAMPLES_JAVA_DIR, clazz, vertxOptions, options);
 	}
 
 	public static void runnerWithVertxClustered(String exampleDir, Class<?> clazz, VertxOptions options,
