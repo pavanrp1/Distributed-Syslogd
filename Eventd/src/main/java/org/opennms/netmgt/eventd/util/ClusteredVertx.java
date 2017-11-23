@@ -32,8 +32,7 @@ public class ClusteredVertx {
 	public static void runClusteredWithDeploymentOptions(Class<?> clazz, DeploymentOptions options) {
 		Config hazelcastConfig = new Config();
 		hazelcastConfig.getGroupConfig().setName("group1");
-		hazelcastConfig.getNetworkConfig().getJoin().getTcpIpConfig().addMember("10.182.247.73")
-				.addMember("10.182.241.200").setEnabled(true);
+		hazelcastConfig.getNetworkConfig().getJoin().getTcpIpConfig().addMember(ConfigConstants.LOCALHOST).setEnabled(true);
 		// //
 		// hazelcastConfig.getNetworkConfig().getJoin().getTcpIpConfig().setEnabled(true);
 		hazelcastConfig.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
